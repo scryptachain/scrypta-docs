@@ -44,3 +44,6 @@ Il processo può essere riassunto in 4 step:
 ### Login a “Planum “ attraverso l’identità digitale di Scrypta
 Per iniziare a creare la propria sidechain, e’ necessario accedere a https://planum.dev effettuando il login attraverso uno dei diversi tools sviluppati e messi a disposizione da Scrypta per la creazione e la gestione dell’identità digitale.
 Per un’esperienza ottimale di usabilità e sicurezza si richiede di scaricare ed usare ["ManentApp"](https://manent.app) disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
+
+![planum](../.vuepress/public/assets/planum/manent_link.png)
+
