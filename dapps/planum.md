@@ -122,6 +122,8 @@ Tutte le informazioni immesse e scritte nella blockchain sono validate dagli [Id
 
 ## Manent Card Integration
 Tutte le identità digitali e i rispettivi balances possono essere collegati ad una Scrypta Card Wallet, uno strumento potente e affifabile che puo’ essere utilizzato per creare backup sicuri del vostro wallet, per la gestione quotidiana dei vostri fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
+
+
 ![planum](../.vuepress/public/assets/planum/card.png)
 
 Link references:
