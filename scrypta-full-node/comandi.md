@@ -286,7 +286,7 @@ Passa da un account nel tuo Wallet a un altro.
 > 
 > `enableall` - enables all addresses to be eligible to send MultiSend transactions.
 > 
-> Se hai fatto configurazioni precedenti, puoi verificare se ne hai già esistenti e conoscere il loro stato di attività: multisend print. Se non l'hai mai usato, il tuo messaggio sarà simile al seguente:
+> Se hai fatto configurazioni precedenti, puoi verificare se ne hai già esistenti e conoscere il loro stato di attività con `multisend print`. Se non l'hai mai usato, il tuo messaggio sarà simile al seguente:
 > `~ $ ./Lyra-cli multisend print
 [
   {
