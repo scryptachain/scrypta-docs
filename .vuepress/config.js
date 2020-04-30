@@ -44,9 +44,24 @@ module.exports = {
           '/scrypta-full-node/installazione',
           '/scrypta-full-node/data-directory',
           '/scrypta-full-node/comandi',
-          
+          '/scrypta-full-node/testnet', 
         ]
-      },        
+      },
+      {
+        title: 'dAPPs',   
+        path: '/dapps/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/dapps/manent-app',
+          '/dapps/manent-web',
+          '/dapps/extension-browser',
+          '/dapps/planum',
+          '/dapps/socialpay',
+          '/dapps/electio',
+          '/dapps/news', 
+        ]
+      },                
       {
         title: 'Scrypta Core',   
         path: '/core/',      

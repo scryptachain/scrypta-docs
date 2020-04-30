@@ -16,37 +16,21 @@ Ecco i passaggi per il processo di installazione di Lyra Wallet su **Linux**, ne
 2. Inserisci questo codice riga per riga (premendo invio ad ogni riga) in modo da compilare il LYRA Wallet nella versione GUI (con interfaccia grafica).
 ```
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
-
 sudo apt-get install -y software-properties-common python-software-properties
-
 sudo apt-get update
-
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-
 sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
-
 sudo apt-get install -y curl g++ git-core pkg-config libtool faketime bsdmainutils mingw-w64 g++-mingw-w64 nsis zip ca-certificates python
-
 sudo apt-get install libzmq3-dev
-
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-
 sudo apt-get install libqrencode-dev
-
 git clone https://github.com/scryptachain/scrypta
-
 cd scrypta
-
 ./autogen.sh
-
 ./configure
-
 sudo make
-
 cd src/qt
-
 chmod 777 -R *
-
 ./lyra-qt
 ```
 ::: warning Attenzione

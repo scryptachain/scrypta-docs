@@ -1,4 +1,5 @@
-# Planum - Panoramica
+# Planum 
+## Panoramica
 Sidechain Layer open-source e permissionless che fornisce a chiunque un’interfaccia chiara con cui creare, emettere e tracciare risorse tokenizzate.
 <hr>
 
