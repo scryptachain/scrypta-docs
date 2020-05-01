@@ -48,6 +48,17 @@ module.exports = {
         ]
       },
       {
+        title: 'Masternode Setup',   
+        path: '/masternode-setup/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/masternode/installazione-manuale',
+          '/masternode/servizi-hosting',
+          '/masternode/masternode-faq',
+        ]
+      },
+      {
         title: 'dAPPs',   
         path: '/dapps/',      
         collapsable: true,
