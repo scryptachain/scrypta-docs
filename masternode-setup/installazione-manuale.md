@@ -8,7 +8,7 @@ Assicurati di avere l'ultima versione del [LYRA Wallet](../scrypta-full-node/ins
 
 Per sviluppare un Masternode avrai bisogno collateral necessario di **15000 LYRA** (preferibilmente qualcosa in più, al fine di coprire le spese di commissione del network che verranno addebitate quando effettuerai la transazione verso l'indirizzo masternode.
 
-**Step 1: Cifratura e Backup del wallet**
+### **Step 1: Cifratura e Backup del wallet**
 
 Se non l'hai già fatto, assicurati di crittografare il tuo desktop wallet. 
 
@@ -17,7 +17,7 @@ Vai su *Settings > Encrypt Wallet*.
 ![encrypt](../.vuepress/public/assets/masternode/encrypt.png)
 
 
-::: tips NOTA
+::: tip NOTA
 
 Il file wallet.dat rappresenta il tuo portafogli elettronico ed è adesso crittografato; la password rappresenterà un ulteriore livello di sicurezza.
 :::
@@ -31,7 +31,7 @@ Si consiglia di effettuare un backup del wallet su un'unità fisica o pen drive 
 Per favore, non dimenticarla! 
 :::
 
-**Step 2: Genera una masternode genkey e deposita 15000 LYRA sul tuo indirizzo masternode**
+### **Step 2: Genera una masternode genkey e deposita 15000 LYRA sul tuo indirizzo masternode**
 
 Nel tuo desktop wallet, clicca su *Help > Debug Console* e digita le seguenti istruzioni:
 
@@ -87,7 +87,7 @@ Ripeti questo passaggio per ogni nuovo masternode che vuoi creare.
 Puoi anche verificare quali depositi sono elegibili per rappresentare un masternode: dalla consolle di debug Help > Debug Window , digita l'istruzione: masternode outputs verranno visualizzate le transazioni masternode valide.
 :::
 
-**Step 3: TXIn / TXOut**
+### **Step 3: TXIn / TXOut**
 
 Ora dobbiamo individuare l'ID della transazione del tuo deposito masternode. Per fare questo, sul  desktop locale vai su *Help > Debug Window* e scrivi:
 

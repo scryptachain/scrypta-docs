@@ -12,6 +12,7 @@ I masternode condivisi sono basati sulla fiducia verso l'operatore del servizio.
 Le piattaforme che consentono di partecipare a "share" di Masternode Scrypta sono:
 
 [EvoNodes](https://evonodes.com/)
+
 [Midas Platform](https://midas.investments/shares)
 
 **D: QUANTO E' POSSIBILE GUADAGNARE DA UN MASTERNODE SCRYPTA?**
