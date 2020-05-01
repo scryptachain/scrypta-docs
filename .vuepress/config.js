@@ -53,9 +53,9 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1, 
         children: [
-          '/masternode/installazione-manuale',
-          '/masternode/servizi-hosting',
-          '/masternode/masternode-faq',
+          '/masternode-setup/installazione-manuale',
+          '/masternode-setup/servizi-hosting',
+          '/masternode-setup/masternode-faq',
         ]
       },
       {
