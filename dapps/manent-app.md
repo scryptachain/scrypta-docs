@@ -140,7 +140,7 @@ Assicurati di conservarlo in un luogo sicuro!
 Verrai adesso reinderizzato alla **Dashboard**.
 ***
 
-### Ricevy LYRA
+### Ricevi LYRA
 Puoi ricevere **LYRA** coin sul tuo **LYRA Address**.
 Puoi facilmente copiare il tuo indirizzo di ricezione o creare un QR Code che contiene anche l'importo del quantitativo di LYRA da ricevere.
 
