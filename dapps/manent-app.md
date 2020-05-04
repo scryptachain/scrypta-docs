@@ -23,13 +23,6 @@ Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobil
 - [Browser App](https://web.manent.app)
 - [Scrypta ID](https://chrome.google.com/webstore/detail/scryptaid/kphclbededgemedgbfgblpmdccjbbhdm) - Estensione Browser  (addons)
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**Hai il nostro pieno supporto!**
-
-Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
-Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
-:::
-***
 
 ### Ecco cosa puoi fare:
 ##### CONSERVA, INVIA E RICEVI LYRA
@@ -52,9 +45,13 @@ Con Manent puoi recuperare il tuo account in tantissimi modi, anche se perdi il 
 
 I Dati e file caricati sulla blockchain di Scrypta vengono elaborati dall'infrastruttura e raggiungono un elevatissimo livello di **ridondanza e impermeabilità**, tale da renderli a tutti gli effetti immutabili e immuni da alterazioni e falsificazioni.
 
-##### TI SUPPORTIAMO IN OGNI MOMENTO
-Hai difficoltà? Invia una mail a: info@scryptachain.org 
-O unisciti al nostro canale [Discord](https://www.discord.me/scrypta).
+::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+**Hai il nostro pieno supporto!**
+
+Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
+Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
+:::
+***
 
 #### VUOI SAPERNE DI PIU'?
 - Puoi utilizzare Manent su **più dispositivi**.
@@ -65,10 +62,10 @@ O unisciti al nostro canale [Discord](https://www.discord.me/scrypta).
 - Ogni singolo dato o documento caricato con Manent avrà un hash: una funzione   matematica che trasforma i dati originali in un’impronta digitale garantendone l’unicità.
 - La tecnologia Blockchain di Timestamp garantisce la data certa di upload, conferendo una marcatura temporale inconfutabile.
 - Qualsiasi file caricato risiede in un archivio decentralizzato basato su **IPFS (Inter Planetary File System)** e **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
-
+***
 
 ## Guide & Tutorials
-***
+
  ### Creare un account
  Il processo per creare un account è semplice:
 Dovrai solo inserire due volte una **password** da te scelta.
