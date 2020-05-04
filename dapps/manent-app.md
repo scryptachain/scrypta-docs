@@ -198,6 +198,6 @@ Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non s
 Manent app è sviluppata da Scrypta Task Force e approvato da [Scrypta Foundation](https://scrypta.foundation/).
 
 Se hai bisogno di aiuto puoi contattare l'assistenza Scrypta attraverso i suoi canali ufficiali:
-- E-mail: info@scryptachain.org
-- Discord: https://discord.me/scryptachain
-- Telegram: https://t.me/scryptachain_official
+- E-mail: [info@scryptachain.org](mailto:info@scryptachain.org)
+- Discord: [https://discord.me/scryptachain](https://discord.me/scryptachain)
+- Telegram: [https://t.me/scryptachain_official](https://t.me/scryptachain_official)
