@@ -6,7 +6,7 @@ Questo documento descriverà tutte le dApp realizzate da Scrypta, fornendo sia d
 
 - **dApp Minimal:** [https://github.com/scryptachain/scrypta-dapp-minimal](https://github.com/scryptachain/scrypta-dapp-minimal)
 - **dApp Starter:** [https://github.com/scryptachain/scrypta-dapp-starter](https://github.com/scryptachain/scrypta-dapp-starter)
-- 
+
 ## Lista delle dApp in produzione
 
 - **Manent web:** [https://web.manent.app/#/](https://web.manent.app)
