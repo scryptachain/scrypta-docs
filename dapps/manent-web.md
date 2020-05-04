@@ -48,8 +48,28 @@ Sul lato destro troviamo i collegamenti per effettuare un backup del portafoglio
 
 ![manent_web](../.vuepress/public/assets/manent_web/up_web.png)
 
-### Backup e sincronizzazione
-Attraverso questo collegamento, si accede alle diverse opzioni disponibili per effettuare il backup del vostro portafoglio digitale.
+## Menu
+
+### Main menu
+
+La parte del menu principale dà accesso a tute le principali funzioni del wallet, e si presenta con le seguenti voci:
+![manent_web](../.vuepress/public/assets/manent_web/menu.png)
+
+- **Dashboard:** Pagina principale in cui ci si trova all'accesso al portafoglio
+
+- **Data explorer:**  Explorer per la ricerca di informazioni su indirizzi e transazioni.
+
+- **Sign:** Tool per la firma e la verifica di un messaggio su blockchain Scrypta.
+
+- **Vault:** Tool per effettuare l'upload di documenti e files sulla blockchain Scrypta.
+![manent_web](../.vuepress/public/assets/manent_web/vault.png)
+
+**Token:** Sezione in cui è possibile consultare il balance dei tokens creati o ricevuti, ed effettuare l'invio dei tokens ad altri indirizzi.
+
+### Funzioni aggiuntive
+
+#### Backup e sincronizzazione
+Attraverso questo collegamento situato sul lato destro in alto della dashboard, si accede alle diverse opzioni disponibili per effettuare il backup del vostro portafoglio digitale.
 
 ![manent_web](../.vuepress/public/assets/manent_web/backup.png)
 
@@ -63,16 +83,3 @@ Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e 
 Il **PAPER WALLET espone la tua chiave privata** sotto forma di codice QR. 
 Questa è la tua firma elettronica e rappresenta la tua identità digitale e vuoi che nessun'altro la utilizzi illecitamente.
 :::
-
-#### Data explorer
-Explorer per la ricerca di informazioni su indirizzi e transazioni.
-
-#### Sign
-Tool per la firma e la verifica di un messaggio su blockchain Scrypta.
-
-#### Vault
-Tool per effettuare l'upload di documenti e files sulla blockchain Scrypta.
-![manent_web](../.vuepress/public/assets/manent_web/vault.png)
-
-#### Token
-Sezione in cui è possibile consultare il balance dei tokens creati o ricevuti, ed effettuare l'invio dei tokens ad altri indirizzi.
