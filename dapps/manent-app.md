@@ -1,4 +1,6 @@
-## Manent - Panoramica
+# Manent APP
+
+## Panoramica
 
 ###### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
 ***
@@ -7,7 +9,7 @@
 Rendi i tuoi file immutabili con Scrypta Manent e porta sempre con te le tue **LYRA**!
 
 Manent è la prima app ufficiale di [Scrypta](https://scryptachain.org), sviluppata per interagire con la blockchain in maniera semplice, veloce e sicura!
-Gestisci le tue ##LYRA## coin con Manent, grazie alle sue funzioni di mobile wallet; proteggi le tue idee o le tue invenzioni grazie alla blockchain per certificarne la loro autenticità e renderle immutabili, permanenti e tenerle al sicuro!
+Gestisci le tue **LYRA** coin con Manent, grazie alle sue funzioni di mobile wallet; proteggi le tue idee o le tue invenzioni grazie alla blockchain per certificarne la loro autenticità e renderle immutabili, permanenti e tenerle al sicuro!
 
 Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
 
@@ -21,7 +23,8 @@ Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobil
 - [Browser App](https://web.manent.app)
 - [Scrypta ID](https://chrome.google.com/webstore/detail/scryptaid/kphclbededgemedgbfgblpmdccjbbhdm) - Estensione Browser  (addons)
 
-:::tip Hai il nostro pieno supporto!
+:::tip 
+Hai il nostro pieno supporto!
 Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
 Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
 :::
@@ -61,3 +64,23 @@ O unisciti al nostro canale [Discord](https://www.discord.me/scrypta).
 - Ogni singolo dato o documento caricato con Manent avrà un hash: una funzione   matematica che trasforma i dati originali in un’impronta digitale garantendone l’unicità.
 - La tecnologia Blockchain di Timestamp garantisce la data certa di upload, conferendo una marcatura temporale inconfutabile.
 - Qualsiasi file caricato risiede in un archivio decentralizzato basato su **IPFS (Inter Planetary File System)** e **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
+
+
+## Guide & Tutorials
+***
+ ### Creare un account
+ Il processo per creare un account è semplice:
+Dovrai solo inserire due volte una **password** da te scelta.
+
+Adesso metti in sicurezza il tuo account effettuando il backup seguendo le istruzioni riportate di seguito).
+Questo passaggio è fondamentale e consente di proteggere la tua firma digitale e il relativo portafoglio.
+
+::: warning
+**Manent è un'applicazione decentralizzata**, è quindi concepita per operare senza alcun server centrale. In questo modo tu sei l'unico responsabile della password e della relativa e-signature (firma digitale).
+:::
+
+::: danger
+**TIENI LA PASSWORD AL SICURO**
+Se perdi la password, il tuo account viene perso per sempre, nessuno sarà in grado di recuperarla per te.
+:::
+***
