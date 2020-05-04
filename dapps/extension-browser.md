@@ -13,16 +13,19 @@ L'estensione è scaricabile sia sui browser Chromium (Chrome, Brave, Vivaldi, et
 ## Schermata principale
 
 ![schermata principale dell'estensione](https://cdn.discordapp.com/attachments/550093442722562068/637214833212915712/unknown.png)
+
 Da questa schermata è possibile eliminare l'identità o usarla in una dApp. Per usare l'estensione basta andare su una delle dApp disponibili (ad esempio https://web.manent.app) e cliccare il pulsante "USE THIS IDENTITY". La pagina si ricaricherà e avrete eseguito l'accesso!
 
 ## dApp Explorer
 
 ![dApp Explorer](https://cdn.discordapp.com/attachments/550093442722562068/637217455604760577/unknown.png)
+
 Il dApp explorer fornisce dei collegamenti rapidi alle dApp ufficiali di Scrypta. 
 
 ## Manage IDs
 
 ![Manage IDs](https://cdn.discordapp.com/attachments/550093442722562068/637218092715606057/unknown.png)
+
 Da questa schermata è possibile importare l'identità, cambiare identità principale oppure crearne di nuove. 
 
 ## Creazione Identità
@@ -30,4 +33,5 @@ Da questa schermata è possibile importare l'identità, cambiare identità princ
 Per creare un'identità è sufficiente premere il pulsante in alto a destra nella pagina "Manage IDs" e comparirà questa schermata: 
 
 ![Create new Identity](https://cdn.discordapp.com/attachments/550093442722562068/637218375940177920/unknown.png)
+
 Basterà inserire una password, ripeterla e (opzionalmente) rinominare l'identità per identificarla in modo più facile.
