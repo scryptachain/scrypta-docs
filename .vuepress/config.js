@@ -59,6 +59,17 @@ module.exports = {
         ]
       },
       {
+        title: 'Staking Setup',   
+        path: '/staking-setup/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/staking-setup/desktop-wallet',
+          '/staking-setup/on-cloud',
+          '/staking-setup/staking-faq',
+        ]
+      },
+      {
         title: 'dAPPs',   
         path: '/dapps/',      
         collapsable: true,

@@ -73,7 +73,7 @@ Se stai sviluppando più di un masternode, è necessario prestare particolare at
 
 Per fare ciò, sul tuo wallet desktop attiva il "**coin control**" : vai su *Settings > Options > Wallet* e clicca su *Enable coin control features*. Ciò consentirà un controllo accurato sui fondi (utxo) da usare per effettuare il tuo prossimo deposito di 15000 LYRA.
 
-![encrypt](../.vuepress/public/assets/masternode/coin-control.png)
+![coin-control](../.vuepress/public/assets/masternode/coin-control.png)
 
 Quindi vai alla scheda *Send* , e vedrai le funzioni di controllo delle monete.
 
