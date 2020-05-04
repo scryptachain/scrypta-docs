@@ -25,7 +25,7 @@ Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobil
 
 
 ### Ecco cosa puoi fare:
-##### CONSERVA, INVIA E RICEVI LYRA
+#### CONSERVA, INVIA E RICEVI LYRA
 Gestisci le tue LYRA coin con Manent grazie alle sue **funzioni di mobile wallet** in maniera facile e veloce. Puoi inviare le tue LYRA coin semplicemente scannerizzando un QR Code. Quando invii LYRA tramite l’app, tutto è immediato e verificabile all’interno della blockchain grazie al suo **registro distribuito**.
 
 #### CERTIFICA I TUOI FILE O DOCUMENTI IMPORTANTI
