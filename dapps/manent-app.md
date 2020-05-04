@@ -2,7 +2,7 @@
 
 ## Panoramica
 
-###### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
+##### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
 ***
 ![manent_app](../.vuepress/public/assets/manent_app/manent_01.jpg)
 
