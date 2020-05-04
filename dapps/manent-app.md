@@ -2,7 +2,7 @@
 
 ## Panoramica
 
-##### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
+#### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
 ***
 ![manent_app](../.vuepress/public/assets/manent_app/manent_01.jpg)
 
@@ -23,8 +23,9 @@ Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobil
 - [Browser App](https://web.manent.app)
 - [Scrypta ID](https://chrome.google.com/webstore/detail/scryptaid/kphclbededgemedgbfgblpmdccjbbhdm) - Estensione Browser  (addons)
 
-:::tip 
-Hai il nostro pieno supporto!
+::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+**Hai il nostro pieno supporto!**
+
 Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
 Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
 :::
@@ -75,12 +76,62 @@ Dovrai solo inserire due volte una **password** da te scelta.
 Adesso metti in sicurezza il tuo account effettuando il backup seguendo le istruzioni riportate di seguito).
 Questo passaggio è fondamentale e consente di proteggere la tua firma digitale e il relativo portafoglio.
 
-::: warning
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
 **Manent è un'applicazione decentralizzata**, è quindi concepita per operare senza alcun server centrale. In questo modo tu sei l'unico responsabile della password e della relativa e-signature (firma digitale).
 :::
 
-::: danger
+::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
 **TIENI LA PASSWORD AL SICURO**
-Se perdi la password, il tuo account viene perso per sempre, nessuno sarà in grado di recuperarla per te.
+
+Se perdi la password, non sarà più possibile per nessuno recuperarla e il tuo account diventerà **per sempre** inaccessibile. 
+:::
+***
+
+### Backup dell' account
+- Tocca l'icona **Menu** (angolo in alto a destra) > **Backup**
+- Seleziona il metodo desiderato: 
+**DOWNLOAD .SID FILE** (.sid) - o  - **DOWNLOAD PAPER WALLET** (.pdf)
+** Questi file verranno archiviati sul dispositivo, nella cartella selezionata.
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Dopo aver scaricato il file **.SID**, è consigliabile salvarlo in un luogo sicuro come una chiavetta USB, e rimuovere il file dal dispositivo.
+:::
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. Successivamente, rimuovi il file .pdf dal tuo dispositivo.
+:::
+
+::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
+**CUSTODISCI CON CURA IL TUO PAPER WALLET**
+
+Il **PAPER WALLET espone la tua chiave privata** sotto forma di codice QR. 
+Questa è la tua firma elettronica e rappresenta la tua identità digitale e vuoi che nessun'altro la utilizzi illecitamente.
+:::
+
+***
+
+### Importazione dell'Account
+Con **MANENT** puoi gestire account multipli, potrai quindi effettuare l'importazione di più account.
+- Tocca l'icona **Menu** > **Accounts**
+- Tocca l'icona "**+**" (angolo in alto a destra dello schermo).
+
+Seleziona il metodo di importazione che preferisci tra quelli elencati di seguito:
+#### RESTORE SID FILE
+Naviga tra le cartelle del tuo dispositivo, seleziona il .SID File da importare  e conferma con **OK**.
+Adesso potrai gestire l'account importato.
+
+#### READ LYRA CARD
+Avvicina una LYRA Card al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Per leggere la LYRA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile..
+:::
+
+#### RESTORE PAPER WALLET
+Questa funzione abilita la fotocamera del tuo dispositivo in modo che tu possa inquadrare e scansionare il QR Code **"ENCRYPTED WALLET"** presente sul tuo PAPER WALLET.
+
+::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
+Il **PAPER WALLET ESPONE LA TUA CHIAVE PRIVATA** sotto forma di **QR CODE**.
+Assicurati di conservarlo in un luogo sicuro!
 :::
 ***
