@@ -52,7 +52,7 @@ Sul lato destro troviamo i collegamenti per effettuare un backup del portafoglio
 
 ### Main menu
 
-La parte del menu principale dà accesso a tute le principali funzioni del wallet, e si presenta con le seguenti voci:
+La parte del menu principale dà accesso a tutte le principali funzioni del wallet, e si presenta con le seguenti voci:
 ![manent_web](../.vuepress/public/assets/manent_web/menu.png)
 
 - **Dashboard:** Pagina principale in cui ci si trova all'accesso al portafoglio
