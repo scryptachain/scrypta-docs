@@ -124,7 +124,7 @@ Adesso potrai gestire l'account importato.
 Avvicina una LYRA Card al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Per leggere la LYRA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile..
+Per leggere la LYRA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile.
 :::
 
 #### RESTORE PAPER WALLET
@@ -135,3 +135,69 @@ Il **PAPER WALLET ESPONE LA TUA CHIAVE PRIVATA** sotto forma di **QR CODE**.
 Assicurati di conservarlo in un luogo sicuro!
 :::
 ***
+
+### Seleziona un account
+- Tocca l'icona **Menu** (angolo in alto a destra) > **Accounts**
+- Seleziona adesso l'account che preferisci
+- Tocca su **USE THIS ADDRESS**
+Verrai adesso reinderizzato alla **Dashboard**.
+***
+
+### Ricevy LYRA
+Puoi ricevere **LYRA** coin sul tuo **LYRA Address**.
+Puoi facilmente copiare il tuo indirizzo di ricezione o creare un QR Code che contiene anche l'importo del quantitativo di LYRA da ricevere.
+
+E' anche possibile acquisire uno screenshot, direttamente dal tuo dispositivo, del codice QR contenente la richiesta di pagamento e condividerlo a chi si desidera.
+
+***
+
+### Upload di file e documenti
+- Tocca l'icona **VAULT** (parte bassa dello schermo) > **UPLOAD NEW FILE**
+o tocca l'icona **"+"** symbol (angolo alto destra).
+- Usa lo slide per scegliere tra dati crittografati **Encrypted)** o pubblici **(Public data)**.
+
+##### Upload:
+- Inserisci un titolo **(Title)**
+- Scegli una password di cifratura **(Encryption password)** - solo se si desidera crittografare i dati
+- Seleziona il **File** dal tuo dispositivo
+- Inserisci un testo **(Text)** 
+- Inserisci la **Wallet Password** (la password del tuo account)
+- Tocca su **UPLOAD**
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Assicurati di ricordare la password di cifratura **(Encryption password)**.
+Se la perdi non sarai in grado di accedere nuovamente ai dati appena caricati.
+:::
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Non caricare file illegali o che violano il copyright.
+Solo tu sei responsabile dei file e dati caricati.
+:::
+
+***
+
+### Consulta i documenti importati
+- Tocca l'icona **VAULT** (part bassa dello schermo)
+- Ora puoi vedere una scheda di riepilogo per ogni documento caricato
+- Scegli il documento da consultare toccando la scheda relativa
+- Verranno mostrati i dettagli del documento.
+- Tocca il pulsante **SHARE PROOF OF EXISTENCE** e verrai reindirizzato a [Scrypta Proof](https://proof.scryptachain.org/) per conoscere i dettagli approfonditi del tuo documento. 
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non sarà piu possibile accedere a questi dati dall tua schermata VAULT e che il file eventualmente associato, trattenuto dagli IdA Nodes, verrà cancellato. In questo caso  la firma digitale, la marcatura temporale con hashing e la relativa prova dell'autore rimangono comuque indelebili grazie alla tecnologia del registro distribuito di Scrypta.
+:::
+
+### Settings
+- Puoi scegliere la tua valuta preferita **(Preferred Currency)** per semplificare il calcolo in funzioni come INVIA e RICEVI LYRA. 
+- Puoi scegliere il tema tra le modalità **Light** e **Dark**.
+***
+
+## Support
+
+#### Come contattare il supporto Manent
+Manent app è sviluppata da Scrypta Task Force e approvato da [Scrypta Foundation](https://scrypta.foundation/).
+
+Se hai bisogno di aiuto puoi contattare l'assistenza Scrypta attraverso i suoi canali ufficiali:
+- E-mail: info@scryptachain.org
+- Discord: https://discord.me/scryptachain
+- Telegram: https://t.me/scryptachain_official
