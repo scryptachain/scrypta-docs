@@ -117,11 +117,11 @@ Seleziona il metodo di importazione che preferisci tra quelli elencati di seguit
 Naviga tra le cartelle del tuo dispositivo, seleziona il .SID File da importare  e conferma con **OK**.
 Adesso potrai gestire l'account importato.
 
-#### READ LYRA CARD
-Avvicina una LYRA Card al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
+#### READ SCRYPTA CARD
+Avvicina una SCRYPTA CARD al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Per leggere la LYRA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile.
+Per leggere la SCRYPTA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile.
 :::
 
 #### RESTORE PAPER WALLET
