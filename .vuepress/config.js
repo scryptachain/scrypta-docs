@@ -8,6 +8,18 @@ module.exports = {
     ],
     sidebar: [
       {
+        title: 'General Info',   
+        path: '/general-info/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/general-info/cosa-è',
+          '/general-info/link',
+          '/general-info/exchange',
+          '/general-info/faq',
+        ]
+      },
+      {
         title: 'White Paper',   
         path: '/whitepaper/',      
         collapsable: true,
@@ -23,16 +35,6 @@ module.exports = {
           '/whitepaper/appendice-1',
           '/whitepaper/appendice-2',
           '/whitepaper/appendice-3',
-        ]
-      },
-      {
-        title: 'General Info',   
-        path: '/general-info/',      
-        collapsable: true,
-        sidebarDepth: 1, 
-        children: [
-          '/general-info/exchange',
-          '/general-info/faq',
         ]
       },
       {
