@@ -1,5 +1,8 @@
 # Wiki-Guide Scrypta
 
+![banner](./.vuepress/public/assets/other/scrypta-banner.png)
+
+
 La Wiki-Guide di Scrypta fornisce una panoramica completa dell'ecosistema Scrypta. Utilizzate il pannello di navigazione sul lato sinistro di questa pagina per selezionare la documentazione che desiderate leggere.
 
 Per una panoramica sintetica dell'ecosistema Scrypta vi consigliamo di consultare la sezione:
