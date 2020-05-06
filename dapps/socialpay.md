@@ -199,25 +199,59 @@ Per svolgere tutte le operazioni di transazioni o richieste rimborso,è necessar
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
 - Si consiglia di inviare **0.1 LYRA** per ciascun utente (sia **"Cittadino"** che **"Esercente"**), quantitativo sufficiente allo svolgimento di circa 100 operazioni.<br><br>
 - Si consiglia anche di inviare **0.1 LYRA** per le transazioni ogni qual volta è prevista una “ricarica” al **"Cittadino"**.<br><br>
-- Non è indispensabile re-inviare LYRA per l'**"Esercente",** poiché riceverà automaticamente **0.001 LYRA** ogni qual volta viene inviata la notifica di avvenuto rimborso; tale operazione verrà illustrata in seguito in modo più dettagliato.
+- Non è indispensabile re-inviare LYRA per l'**"Esercente"** poiché riceverà automaticamente **0.001 LYRA** ogni qual volta viene inviata la notifica di avvenuto rimborso; tale operazione verrà illustrata in seguito in modo più dettagliato.
 :::
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
 **Se si prevede di effettuare un numero di operazioni superiore a 100, sarà necessario inviare un quantitativo di LYRA adeguato al volume di transazioni previste.**<br>
 :::
 
+#### Azione **ELIMINA**
+Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/trash.svg" width="16">, l’utente selezionato viene eliminato dall’elenco.<br>Si raccomanda di procedere con cura verificando i dati prima dell'eliminazione.
 
+### Storico transazioni
+In questa sezione vengono visualizzate tuttee le transazioni effettuate all’interno del sistema.
 
+![socialpay](../.vuepress/public/assets/socialpay/storico.png)
 
+All'interno di questa sezione, tramoite gli appositi filtri, è possibile effettuare ricerche per **indirizzo** o per **transazione**.<br>Attraverso il pulsante **“SCARICA BACKUP”**  è possibile effettuare il backup dello storico transazioni in oggetto tramite file in formato **.csv** (Excel).  
 
+### Gestisci rimborso
+Non appena viene cliccato il pulsante **“CONTABILIZZA RIMBORSO”**, viene richiesto l’inserimento della password di amministratore.![socialpay](../.vuepress/public/assets/socialpay/rimborso.png)<br>A questo punto l’Esercente riceverà una speciale transazione di notifica che conferma l’avvenuto bonifico da parte del Comune.<br>Risulta quindi evidente che questa operazione è da effettuare **SUBITO DOPO** aver predisposto lo specifico bonifico bancario di rimborso.<br><br>L’operazione sarà quindi visibile sulla colonna **“RIMBORSATO”** (nello specifico il campo verrà automaticamente riempito con **“SI”**).
+Inoltre, questa speciale transazione, accrediterà nel conto dell’esercente la somma di **0.001 LYRA**, che gli permetterà di richiedere i rimborsi futuri.
 
+Questa funzione è infine corredata dalla possibilità di aggiungere delle note di testo aggiuntive che vengono inviate all’esercente.
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+**Attenzione**: Le note a corredo delle transazioni sono dei dati che vengono scritti **in chiaro** nel registro distribuito della blockchain Scrypta.<br>Si **RACCOMANDA** pertanto di non inserire informazioni sensibili, che possano violare il rispetto della privacy.<br>
+:::
+
+### Impostazioni
+Attraverso questa sezione è possibile effettuare operazioni come il salvataggio e la cancellazione di tutto l’elenco utenti.
+Per compiere l’operazione di **salvataggio**, è necessario cliccare sul pulsante **“SCARICA BACKUP”**.
+Il file generato, in formato .csv, permetterà di conservare una copia dell'intero archivio utenti, e sarà necessario per importare nuovamente l'archivio.
+![socialpay](../.vuepress/public/assets/socialpay/impostazioni.png)
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+**Attenzione**: Si **RACCOMANDA** fortemente di effettuare i backup dell'elenco utenti con regolarità, al fine di evitare o quantomeno limitare la perdita di dati.<br>
+:::
+
+Per compiere l’operazione di **cancellazione** dell'archivio, è necessario cliccare sul pulsante **"CANCELLA ARCHIVIO”**. A questo punto, l’intero elenco utenti verrà azzerato.
+
+::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"> 
+**Attenzione**: Utilizzando questa funzione, l'attuale archivio **VERRA' INTERAMENTE E DEFINITIVAMENTE CANCELLATO"**.
+<br>**L'operazione di cancellazione non e' annullabile**.
+<br>Pertanto, se non avete effettuato il backup in precedenza e cancellate i dati, l'intero archivio andra' **DISTRUTTO**.
+
+**PROCEDERE CON CAUTELA.**
+:::
 
 
 
 ***
 ***
 
-#### GITHUB
+## GITHUB
 
 Il [repository "SocialPay" di Github](https://github.com/scryptachain/socialpay) a cui si fa riferimento, contiene tutto il materiale necessario: è diviso per regioni e comuni e all'interno si trovano i file che generano due tipi di progetti:
 
