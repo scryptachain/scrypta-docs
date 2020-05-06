@@ -59,7 +59,7 @@ Il Comune fornisce gratuitamente all'esercente una Card Esercente dotata di **QR
 ### Procedura lato esercente
 #### Accesso al sistema
 
-| <div style="width:200px"></div>| <div style="width:300px"></div>|
+| <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
 | ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_01.png) | Accedi collegandoti con il tuo smartphone/tablet, da adibire a POS virtuale, al sito: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Tocca **“SCANNERIZZA CARD”** e inquadra il **QR Code** della carta che ti è stata consegnata (Card Esercente).<br><br>Ti verrà richiesto di inserire il **PIN** che ti è stato assegnato insieme alla **CARD**.<br><br>Adesso sei in grado di ricevere pagamenti attraverso i **BUONI SPESA DIGITALI** dei cittadini aventi diritto. 
 
@@ -98,7 +98,7 @@ Dopo aver effettuato la transazione, visualizzerai istantaneamente una notifica 
 :::
 
 #### Verifica Saldo Card Cittadino
-| <div style="width:200px"></div>| <div style="width:300px"></div>|
+| <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
 | L’applicazione permette di verificare il saldo della *Card-Cliente*, riscontrabile presso tutti gli esercenti abilitati.<br><br> Nella sezione **CONTROLLA CARD**, raggiungibile accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, premere il tasto **"CONTROLLA ORA"** e inquadrare il **QR CODE** della card del cliente.<br><br> Verrà così visualizzato il saldo disponibile. | ![socialpay](../.vuepress/public/assets/socialpay/mockup_controlla.png)
 
@@ -138,6 +138,79 @@ Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32">
 **NOTA:** Potrai verificare il tuo il saldo conto presso qualunque punto vendita convenzionato.
 :::
+
+## Gestionale
+### Istruzioni
+
+#### Accesso al gestionale
+
+| <div style="width:350px"></div>| <div style="width:250px"></div>|
+| :---: | :---: |
+| ![socialpay](../.vuepress/public/assets/socialpay/gest_accesso.png) | Il login avviene caricando o trascinando il **.sid file** in dotazione e, subito dopo, inserendo la password associata che vi è stata fornita. |
+
+#### Dashboard del gestionale
+
+| <div style="width:350px"></div>| <div style="width:250px"></div>|
+| :---: | :---: |
+|![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)|Effettuato l’accesso, verrete dirottati immediatamente sulla **Dashboard (Sezione HOME)** nella quale vengono visualizzati i dati generali di utilizzo. |
+
+::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+**NOTA:** La dicitura **sEUR “bruciati”** indica che le somme in oggetto non sono più disponibili, in quanto già inviate *(bruciate)* sotto forma di richiesta di rimborso.
+:::
+
+### Gestione utenti
+La finestra GESTIONE UTENTI si compone di due sezioni:
+- **“Carica file .csv di origine”**
+- **"Elenco utenti”**
+
+#### Carica file .csv di origine
+Utilizzare questa sezione se si vogliono caricare più utenti contemporaneamente.<br>Dopo aver caricato il **file .csv**, tutti gli utenti all'interno del file verranno aggiunti al gestionale e saranno disponibili e visualizzabili nella sezione **"Elenco utenti"**.<br><br>Il file .csv viene generato in automatico durante la fase di creazione delle card e sarà composto dai seguenti campi:<br>
+**SERIALE | WALLET | TIPOLOGIA | NOME | IDENTIFICATIVO | COMPONENTI NUCLEO FAMILIARE**<br>
+
+![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)
+
+::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+**NOTA:** In caso di nominativi o dati duplicati, tali nominativi verranno ignorati dal sistema.
+:::
+
+#### Elenco utenti
+La sezione **Elenco utenti** permette di visualizzare tutti gli elementi inseriti all'interno del sistema (**Esercenti** e **Cittadini**).<br>
+Oltre alla visualizzazione è possibile effettuare **ricerche** specifiche, avvalendosi dei filtri di ricerca disponibili.<br>Inoltre, dalla colonna **"AZIONI"** è possibile compiere operazioni aggiuntive sul singolo utente.<br><br>
+Le azioni disponibili sono nell'ordine:
+- **MODIFICA**
+- **VISUALIZZA**
+- **ELIMINA**
+![socialpay](../.vuepress/public/assets/socialpay/elenco_utenti.png)
+
+#### Azione **MODIFICA**
+Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/draw.svg" width="16">, è possibile modificare i dati dell’utente.![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
+
+Una volta effettuate le modifiche desiderate, per confermare tali modifiche è necessario cliccare su **“Salva utente”**.
+
+#### Azione **VISUALIZZA**
+Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/interface.svg" width="16">, è possibile visualizzare i dettagli dell'utente selezionato, il suo bilancio e lo storico transazioni.<br>Inoltre questa sezione permette di predisporre l’invio di importi in **sEUR** all’utente selezionato.<br>L’operazione è **istantanea** e richiede l’inserimento della vostra password.
+![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
+
+##### *Note sulle commissioni di transazione:
+
+Per svolgere tutte le operazioni di transazioni o richieste rimborso,è necessario pagare delle commissioni di transazione dell’infrastruttura blockchain. Tali commissioni sono nell'ordine di millesimi di euro.<br><br>
+**In fase di ricarica delle card**<br>
+- Durante la fase di ricarica delle card, al fine di fornire a ciascun utente la possibilità di effettuare operazioni sul network sin da subito, è necessario inviare una modica quantità di LYRA per ciascun utente.<br>
+::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+- Si consiglia di inviare **0.1 LYRA** per ciascun utente (sia **"Cittadino"** che **"Esercente"**), quantitativo sufficiente allo svolgimento di circa 100 operazioni.<br><br>
+- Si consiglia anche di inviare **0.1 LYRA** per le transazioni ogni qual volta è prevista una “ricarica” al **"Cittadino"**.<br><br>
+- Non è indispensabile re-inviare LYRA per l'**"Esercente",** poiché riceverà automaticamente **0.001 LYRA** ogni qual volta viene inviata la notifica di avvenuto rimborso; tale operazione verrà illustrata in seguito in modo più dettagliato.
+:::
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+**Se si prevede di effettuare un numero di operazioni superiore a 100, sarà necessario inviare un quantitativo di LYRA adeguato al volume di transazioni previste.**<br>
+:::
+
+
+
+
+
+
 
 
 
