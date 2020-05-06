@@ -20,7 +20,7 @@ Gli asset vengono trasferiti istantaneamente grazie alla lettura della mempool d
 
 ## Accessibilità
 
-Una volta emessi, gli asset sono immediatamente disponibili all'interno di Manent Web (https://web.manent.app) oppure di Manent Mobile (Android, iOS). Gli asset realizzati con Scrypta Sidechain non hanno bisogno di ulteriori integrazioni lato software. E' possibile, chiaramente, personalizzare le app in base alle proprie esigenze stilistiche (ad esempio per personalizzarne la grafica) in quanto entrambi i prodotti sopra citati sono open-source.
+Una volta emessi, gli asset sono immediatamente disponibili all'interno di [Manent Web](https://web.manent.app) oppure di Manent Mobile (Android, iOS). Gli asset realizzati con Scrypta Sidechain non hanno bisogno di ulteriori integrazioni lato software. E' possibile, chiaramente, personalizzare le app in base alle proprie esigenze stilistiche (ad esempio per personalizzarne la grafica) in quanto entrambi i prodotti sopra citati sono open-source.
 
 ![Visualizzazione asset disponibili all'interno di Manent App](https://media.discordapp.net/attachments/550091310233550850/679999843992600597/Screenshot_20200220-113521.jpg?width=315&height=665)
 

@@ -15,7 +15,8 @@ I campi necessari, definiti dall'utente, per la genesi del token sono i seguenti
  - **burnable**: Se il token si può bruciare o meno
  - **version**: La versione del protocollo, al momento è la `1`
 
-E' possibile testare l'emissione di una sidechain direttamente via interfaccia a questo link: https://sidechain.scryptachain.org/#/create
+E' possibile testare l'emissione di una sidechain direttamente via interfaccia a questo link:
+ [https://sidechain.scryptachain.org/#/create](https://sidechain.scryptachain.org/#/create)
 
 ## Processo di creazione
 

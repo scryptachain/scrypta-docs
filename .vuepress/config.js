@@ -102,6 +102,22 @@ module.exports = {
           '/core/progressive-data-management',
           '/core/p2p-network',
         ]
+      },
+      {
+        title: 'IdA Node',   
+        path: '/idanode/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/idanode/installazione',
+          '/idanode/block-explorer',
+          '/idanode/progressive-data-management',
+          '/idanode/ipfs',
+          '/idanode/wallet',
+          '/idanode/dapps-engine',
+          '/idanode/trustlink',
+          '/idanode/sidechain',
+        ]
       },        
       {
         title: 'ScryptaID',   
@@ -115,7 +131,7 @@ module.exports = {
         ]
       },        
       {
-        title: 'Planum',   
+        title: 'Planum Layer (for developer)',   
         path: '/planum/',      
         collapsable: true,
         sidebarDepth: 1, 
