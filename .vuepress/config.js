@@ -80,7 +80,6 @@ module.exports = {
           '/dapps/manent-app',
           '/dapps/manent-web',
           '/dapps/extension-browser',
-          '/dapps/planum',
           '/dapps/socialpay',
           '/dapps/electio',
           '/dapps/news', 
