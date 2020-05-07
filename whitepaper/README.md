@@ -1,7 +1,16 @@
-**Scrypta** è una **blockchain** con funzionalità decentralizzate avanzate ed è adatta come infrastruttura per la realizzazione di architetture complete a servizio di progetti illimitati e nuovi casi d'uso.
+# Manifesto
 
-L'ecosistema di Scrypta offre eccezionali funzionalità di **archiviazione**, **certificazione** e **verifica** che rappresentano strumenti eccellenti per tutte quelle aziende e pubbliche amministrazioni che desiderano sfruttare l'innovazione tecnologica offerta dalla blockchain.
+Il **Genesis block** di Scrypta Blockchain è stato creato il **21 dicembre 2018** da un gruppo di innovatori guidato dai valori dell'**open source**, della **decentralizzazione**, **distribuzione**  e **crittografia**, come strumenti di innovazione culturale e di emancipazione sociale.
 
-Scrypta è un'infrastruttura **peer-to-peer** progettata per nuovi modelli di business e gestione della governance pubblica. Il sistema si basa sulla valuta digitale denominata "**LYRA**". L'algoritmo di hashing di Scrypta garantisce transazioni ad alta velocità e pagamenti istantanei. Lo schema di emissione monetaria, e quindi la distribuzione delle ricompense per il network, si basa su **QUARK** che ha uno strato di consenso **PoS/Masternode** efficiente dal punto di vista energetico e sicuro. 
+Il documento che leggerete è stato redatto e pubblicato contestualmente alla generazione del primo blocco.
 
-Scrypta è un progetto in costante evoluzione di natura open-source che lo rende particolarmente adatto a collaborazioni e contributi di sviluppatori che vogliono creare soluzioni pratiche basate sulla sua architettura.
+
+::: tip NOTA
+
+Dalla pubblicazione del Whitepaper è passato più di un anno e l'ecosistema **permissionless** di Scrypta è cresciuto tecnologicamente in maniera esponenziale, per approfondire leggi anche:
+
+[Informazioni Generali](../general-info/README.md)
+
+[Link Utili](../general-info/link.md)
+
+:::

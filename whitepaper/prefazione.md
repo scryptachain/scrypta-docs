@@ -10,4 +10,13 @@ Lo schema di emissione monetaria, e quindi la distribuzione delle ricompense per
 
 Scrypta è un progetto in costante evoluzione di natura **open-source** che lo rende particolarmente adatto a collaborazioni e contributi di sviluppatori che vogliono creare soluzioni pratiche basate sulla sua architettura.
 
-Scrypta nasce dall’idea di un gruppo coeso di innovatori. Tutto quello che leggerete in questo documento è realmente funzionante, non si tratta del progetto visionario di una startup: il codice è già sviluppato, testato ed operativo. Potete richiedere una dimostrazione inviando una mail a: **info@scrypta.foundation**.
+Scrypta nasce dall’idea di un gruppo coeso di innovatori. Tutto quello che leggerete in questo documento è già funzionante: il codice è già sviluppato, testato ed operativo.
+
+Visitate il nostro Github:
+
+[**Scrypta Github**](https://github.com/scryptachain)
+
+
+Richiedete una dimostrazione inviando una mail a: 
+
+[**info@scrypta.foundation**](info@scrypta.foundation)
