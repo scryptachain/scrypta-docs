@@ -19,5 +19,5 @@ In alternativa, inizia subito con Scrypta installando il **LYRA Wallet** (Full N
 
 Ricordiamo infine che con Scrypta è possibile creare e gestire dei ***Tokenized Asset*** grazie alla tecnologia sidechain **Planum**, se sei interessato a questo aspetto, consulta questa sezione:
 
-[**Planum** - Sidechain Layer](dapps/planum.md)
+[**Planum** - Sidechain Layer](planum/README.md)
 

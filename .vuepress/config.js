@@ -140,6 +140,20 @@ module.exports = {
           '/id/scrypta-card-wallet-nfc',
           '/id/scrypta-card-wallet-qr',
         ]
+      },
+      {
+        title: 'Utilities',   
+        path: '/utilities/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/utilities/card-generator',
+          '/utilities/vanity-address',
+          '/utilities/p2p-network',
+          '/utilities/ipfs',
+          '/utilities/faucet',
+          '/utilities/bootstrap-generator',
+        ]
       }
     ]
   }
