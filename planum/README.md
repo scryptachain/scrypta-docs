@@ -127,7 +127,8 @@ Tutte le identità digitali e i rispettivi balances possono essere collegati ad 
 
 ![planum](../.vuepress/public/assets/planum/card.png)
 
-Link references:
-https://planum.dev
-https://wiki.scryptachain.org/developers/sidechain
-https://wiki.scryptachain.org/developers/scrypta-core/ida-node-management
+### Video Tutorial
+
+[PLANUM - Creare TOKEN tramite una Sidechain su Scrypta](https://www.youtube.com/watch?v=qWlfWYl6kfM) di Tiziano Tridico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qWlfWYl6kfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
