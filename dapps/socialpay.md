@@ -247,13 +247,9 @@ Per compiere l’operazione di **cancellazione** dell'archivio, è necessario cl
 :::
 
 
+## SocialPay per gli sviluppatori
 
-***
-***
-
-## Impostare il progetto
-
-Il [repository "SocialPay" di Github](https://github.com/scryptachain/socialpay) a cui si fa riferimento, contiene tutto il materiale necessario: è diviso per regioni e comuni e all'interno si trovano i file che generano due tipi di progetti:
+Il [repository "SocialPay" di Github](https://github.com/scryptachain/socialpay) a cui si fa riferimento, contiene tutto il materiale necessario ed è diviso per regioni e comuni. All'interno si trovano i file che generano tre diversi progetti:
 
 - **Admin:** questo progetto è una personalizzazione del software di gestione Scrypta Planum Admin, che serve a gestire le sidechain.
 - **Pos:** questo progetto serve a generare il front-end per i commercianti e che permette di spendere i buoni
