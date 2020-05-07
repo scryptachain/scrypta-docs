@@ -19,7 +19,7 @@ npm start
 ```
 Se tutto è stato installato correttamente, vedrete sulla vostra console qualcosa del genere:
 
-![npm start](https://cdn.discordapp.com/attachments/550093442722562068/637296882455937024/unknown.png)
+![npm start](../.vuepress/public/assets/ipfs/npmstart.png)
 
 Da questo momento è possibile utilizzare tutti gli endpoint già descritti su IdaNode semplicemente puntando il vostro localhost alla porta 3000.
 

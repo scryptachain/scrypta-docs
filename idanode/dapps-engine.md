@@ -143,7 +143,7 @@ Come vedete, effettivamente viene richiamato l'indirizzo che ha scritto l'inform
 Da questo momento il vostro dispositivo (se andate da browser) avrà una copia in cache, ed effettivamente sarà la potenza computazionale del dispositivo ad essere usata. In nessun caso questi file vengono scaricati sul dApp engine, che rimarrà quindi snello e servirà tutti gli asset on-the-fly. 
 
 Questo è un tipico log dell'engine:
-![enter image description here](https://cdn.discordapp.com/attachments/550093442722562068/636852547109519390/unknown.png)
+![](../.vuepress/public/assets/dappengine/npmstart.png)
 Come potete notare vengono effettuati tutti i passaggi appena descritti.
 
 **Complimenti, avete finalmente creato un'applicazione decentralizzata!**
