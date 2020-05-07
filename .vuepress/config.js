@@ -131,7 +131,7 @@ module.exports = {
         ]
       },        
       {
-        title: 'Planum Layer (for developer)',   
+        title: 'Planum',   
         path: '/planum/',      
         collapsable: true,
         sidebarDepth: 1, 
