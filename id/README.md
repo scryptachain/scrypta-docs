@@ -1,55 +1,40 @@
 # Introduzione
 
-Il sistema di identità di Scrypta si articola in due componenti fondamentali, la prima riguarda la gestione delle identità strettamente digitali, ovvero gli indirizzi Lyra; la seconda riguarda l'autenticazione degli indirizzi con autenticatori esterni.
+L’identità digitale all’interno della Blockchain di Scrypta viene gestita attraverso due diverse componenti:
 
-La prima componente può essere gestita in vari modi, ma sostanzialmente riguarda i file .sid che abbiamo menzionato nella documentazione di _Scrypta Core_. Questi payload di identità possono essere gestiti tramite:
+1. La componente di “identità pseudonima” - una stringa alfanumerica del tipo - *LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt* - che permette di accoppiare la firma digitale ad una persona fisica o giuridica.
 
-- **ScryptaID Browser Extension** (Chrome, Firefox, etc): https://github.com/scryptachain/scrypta-id
-- **Manent Mobile App** (iOS, Android): https://github.com/scryptachain/scrypta-manent-app
-- **Manent Web App** (Chrome, Firefox, Mobile browser): https://github.com/scryptachain/scrypta-manent-web
+2. La componente della “firma digitale”, che possiamo pensare come password di cifratura, che permette di effettuare le operazioni tecniche di firma di transazioni e di dati.
+   
+La corretta identificazione del soggetto porta alla creazione di un **payload di identità** che viene firmato digitalmente e scritto in blockchain per consolidare la sua rappresentazione (hash). 
 
-La seconda componente può essere utilizzata tramite un Gateway di identità, come quello che mette a disposizione Scrypta  attraverso l'URL: https://me.scrypta.id/ oppure attraverso altri Gateway messi a disposizione da altri soggetti esterni.
+## Gateway
 
-I payload di identità, la cui struttura ha a che fare unicamente con gli indirizzi, presentano un'ulteriore proprietà chiamata *identity*:
-```
-{
+Questa corretta identificazione viene effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
 
- "pub":"LLLjx7yV4nhUzSapBAHogb5BdgUR6VCB3o",
+Qui vediamo un **esempio** di identificazione:
 
- "api_secret":"33239857dbe3d37fd35b807578a0132b",
+[https://proof.scryptachain.org/#/uuid/b5e6914d.0198.4390.a85e.c9722fb1e259](https://proof.scryptachain.org/#/uuid/b5e6914d.0198.4390.a85e.c9722fb1e259)
 
- "key":"03097163386854cde5801aec574948e15b9e24c79da65414d4e5588e7140846165",
+Come è possibile intuire, all’interno della blockchain non viene salvato alcun dato di tipo personale , rivelandosi uno strumento dotato di ***privacy by design***. 
 
- "prv":"SnvpeER7kdeMFGRimBzV5EJfX2ZfxmAQwin1qAHD2kXb8XRF983g",
 
- "identity": {
-	Provider: {
-		"identity": {
-			"created_at": Timestamp,
-			"method": Provider,
-			"username": Username,
-			"token": TokenReleasedByProvider
-		},
-		"fingerprint": PayloadSignedByGateway
-	}
-  }
+> E' il Gateway che funge da "ente cerfificatore", sia esso un'azienda o un'organizzazione, o un ente governativo, e si farà carico di creare un archivio digitale **offline** (come consigliamo), che gli permetterà di risalire alla corretta identificazione degli utenti, e come strumento di KYC (Know Your Customer).
 
-}
-```
 
-Come possiamo intuire, per ogni **Provider** (Twitter, Github, E-mail) dopo la corretta verifica da parte del **Gateway**, viene scritto un payload contenente:
-- **created_at**: Il timestamp dell'operazione.
-- **method**: una ripetizione del provider utilizzato.
-- **id**: l'id dell'utente presso il provider.
-- **username**: l'username dell'utente presso il provider.
-- **token**: il token rilasciato dal provider (che potrà essere usato per la verifica dell'account).
+Il payload di identità viene consegnato anche all’utente il quale lo conserverà all’interno dei propri dispositivi (Card, Mobile, PC) e sarà necessario per i processi di scambio di informazioni personali tra utenti, aziende, enti.
 
-Questo payload viene firmato dal gateway (la cui chiave privata dovrà risiedere all'interno dello stesso) e la firma viene inserita all'interno della proprietà **fingerprint**.
+::: tip NOTA
+Attraverso la creazione della propria identità digitale, l'utente potrà inoltre utilizzare facilmente, anche in forma solo pseudonima, tutte le [dApps di Scrypta](../dapps/README.md).
 
-Questo stesso payload viene firmato dall'indirizzo che richiede l'autenticazione. La firma viene scritta all'interno della blockchain in modo da poterla comparare per verifica con quella presentata dall'utente in fase di identificazione.
 
-**N.B.** il payload di identità viene nuovamente cryptato e la custodia viene comunque demandata all'utente, questo per garantire decentralizzazione e sicurezza. 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0OTEwMTEyLC0xNTM4OTc0ODI2LC0xNT
-gwMjY0OTE0LDE1NzEzOTAzOTAsOTU0Njc2ODUzXX0=
--->
+Le identità (e il relativo address) possono essere create attraverso:
+
+- [Manent App](../dapps/manent-app.md)
+
+- [ScryptaID Browser Extension](../dapps/extension-browser.md)
+
+- [Scrypta Card](../dapps/manent-app.md#scrypta-card)
+
+:::
+

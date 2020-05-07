@@ -128,6 +128,8 @@ module.exports = {
           '/idanode/dapps-engine',
           '/idanode/trustlink',
           '/idanode/sidechain',
+          '/idanode/middleware-api',
+
         ]
       },        
       {
