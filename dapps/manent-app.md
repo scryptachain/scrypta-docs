@@ -201,16 +201,16 @@ E' possibile ottenere la Scrypta Card attraverso lo Shop di Scrypta Consortium:
 [https://scrypta.shop/​](https://scrypta.shop/​)
 
 ### Come acquistare Scrypta Card
-Ecco un video tutorial che illustra come acquistare la Scrypta Card utilizzando LYRA come metodo di pagamento:
+Ecco un video tutorial che illustra come acquistare la Scrypta Card utilizzando **LYRA** come metodo di pagamento:
 
-[https://www.youtube.com/watch?v=iqyEWYkSYWw​](https://www.youtube.com/watch?v=iqyEWYkSYWw​)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CJXpjN50zB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 E' possibile utilizzare anche altri metodi di pagamento: Paypal, carta di debito o bonifico bancario.
 
 ### Come utilizzare Scrypta Card
 Ecco un video tutorial che illustra come sincronizzare la card con Manent app e come utilizzarla:
 
-​[https://www.youtube.com/watch?v=y2shLdjy2Sg&t=2s](https://www.youtube.com/watch?v=y2shLdjy2Sg&t=2s)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2shLdjy2Sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Support
 
@@ -221,3 +221,9 @@ Se hai bisogno di aiuto puoi contattare l'assistenza Scrypta attraverso i suoi c
 - E-mail: [info@scryptachain.org](mailto:info@scryptachain.org)
 - Discord: [https://discord.me/scryptachain](https://discord.me/scryptachain)
 - Telegram: [https://t.me/scryptachain_official](https://t.me/scryptachain_official)
+
+## Video Tutorial
+
+[Un Wallet per archiviare i tuoi dati su Blockchain! - Scrypta Manent](https://www.youtube.com/watch?v=78HDl3ZZI9I) di Tiziano Tridico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78HDl3ZZI9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

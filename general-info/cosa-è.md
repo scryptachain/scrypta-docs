@@ -11,6 +11,9 @@ Il team di Scrypta ha sviluppato un secondo layer di funzionamento, attraverso g
 
 Questa documentazione comprende lo stato attuale delle librerie open-source attualmente sviluppate da Scrypta Foundation ed il loro sistema di funzionamento, per ulteriori chiarimenti potete contattarci inviando una mail a: info@scryptachain.org o unendovi al nostro canale [Discord](https://discord.me/scryptachain).
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eG3sYhHQbFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Architettura
 
 ### Pilastri
@@ -34,8 +37,8 @@ Attraverso l'utilizzo di questi strumenti è possibile sviluppare infinite appli
 
 Abbiamo deciso di ribaltare il concetto di "Smart Contract" e delle piattaforme che mettono a disposizione sistemi simili alle Ethereum Virtual Machine. Crediamo che la Blockchain debba essere contenitore di informazioni e non esecutore. Questo approccio chiaramente non permette la realizzazione di script e dApp che eseguono i loro codici all'interno dei nodi. Come vedremo, questo non è uno svantaggio in quanto sarà l'utente stesso ad eseguire la propria applicazione decentralizzata, che - a tutti gli effetti - opererà dall'interno del proprio dispositivo (Laptop, Mobile, Embedded).
 
+Inoltre la possibilità di creare delle **applicazioni decentralizzate** di questo tipo permette lo sviluppo di codice che può interagire sia con la blockchain di Scrypta che con altre blockchain o altri sistemi (anche centralizzati). Questo garantisce **massima elasticità e interoperabilità** in fase di realizzazione di progetti concreti.
+
 ::: tip NOTA
 Scrypta **non è** una piattaforma simile ad Ethereum, non permette di realizzare Smart Contract comunemente intesi, anche se è possibile realizzare una quantità vasta di applicazioni il cui funzionamento può essere accomunato a quello degli Smart Contract.
-
-Inoltre la possibilità di creare delle **applicazioni decentralizzate** di questo tipo permette lo sviluppo di codice che può interagire sia con la blockchain di Scrypta che con altre blockchain o altri sistemi (anche centralizzati). Questo garantisce **massima elasticità e interoperabilità** in fase di realizzazione di progetti concreti.
 :::

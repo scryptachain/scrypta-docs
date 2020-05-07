@@ -24,12 +24,26 @@ Un output di transazione non speso (UTXO) è un hash di transazione, situato in 
 Consulta anche la sezione domande frequenti:
 [Staking Faq](../staking-setup/staking-faq.md)
 
-## Coin Age
+### Coin Age
 La "Coin Age" (età della moneta) è una proprietà di ogni UTXO, ed è concepibile come il tempo che trascorre dal momento della creazione di un UTXO. E' espressa in numero di "conferme".
 
-## Maturazione
+### Maturazione
 Ogni volta che validi con successo un blocco, riceverai una ricompensa per mantenere sicuro il network. Quando vieni ricompensato, la Coin Age della tua UTXO vincente, contenente  X Lyra,  verrà resettata. 
 
 Questa operazione genera una nuova UTXO nella quale riceverai X + Ricompensa allo stesso indirizzo.
 
+::: tip Nota
 Per consolidare la stabilità della rete, le ricompense di staking non sono spendibili prima di **20 conferme** (20 blocchi) e non possono entrare in staking prima di **60 conferme** (60 blocchi). Queste monete non ancora spendibili sono considerate "*immature*".
+:::
+
+# Video Tutorial
+
+[Scrypta Wallet e Lyra Staking Tutorial](https://www.youtube.com/watch?v=bOlJ2xm_IcQ) di Tiziano Tridico
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bOlJ2xm_IcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Ottimizzare lo Staking - Lyra Inputs Tutorial](https://www.youtube.com/watch?v=0e5mewkVqys&t=5s) di Tiziano Tridico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0e5mewkVqys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
