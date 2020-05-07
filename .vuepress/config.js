@@ -85,6 +85,18 @@ module.exports = {
           '/dapps/electio',
           '/dapps/news', 
         ]
+      },
+      {
+        title: 'Planum',   
+        path: '/planum/',      
+        collapsable: true,
+        sidebarDepth: 1, 
+        children: [
+          '/planum/emissione',
+          '/planum/transazioni',
+          '/planum/software-di-gestione',
+          '/planum/point-of-sale',
+        ]
       },                
       {
         title: 'Scrypta Core',   
@@ -128,18 +140,6 @@ module.exports = {
           '/id/scrypta-identity-framework',
           '/id/scrypta-card-wallet-nfc',
           '/id/scrypta-card-wallet-qr',
-        ]
-      },        
-      {
-        title: 'Planum',   
-        path: '/planum/',      
-        collapsable: true,
-        sidebarDepth: 1, 
-        children: [
-          '/planum/emissione',
-          '/planum/transazioni',
-          '/planum/software-di-gestione',
-          '/planum/point-of-sale',
         ]
       }
     ]
