@@ -82,9 +82,9 @@ infine si avrà conferma dell’esito dell’operazione.
 ![confirm](../.vuepress/public/assets/news/article-written.png)
 
 
-Ora l’articolo è scritto indelebilmente sulla blockchain! E  comparirà presto nella sezione articoli di Scrypta News.
+Ora l’articolo è scritto indelebilmente in blockchain! E  comparirà presto nella sezione articoli di Scrypta News.
 
-Come si può vedere dall'esempio, viene impressa una marcatura temporale (timestamp) e l’indirizzo collegato all’autore (firma digitale):
+Come si può vedere dall'esempio, viene impressa una marcatura temporale (timestamp) e firma digitale (collegata all’indirizzo dell'autore):
 
 
 ![proof](../.vuepress/public/assets/news/article-proof.png)
