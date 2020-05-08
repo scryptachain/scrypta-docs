@@ -14,7 +14,7 @@ R: Scrypta è stato forkato da una versione precedente e stabile di PIVX. Abbiam
 
 **D: COSA HA LYRA CHE ALTRI CLONI DI PIVX/DASH NON HANNO?**
 
-R: IdA Nodes, IPFS storage ed altri strumenti appositamente pensati per la creazione di dApps orientate su processi di archiviazione e certificazione.
+R: IdANodes, IPFS storage ed altri strumenti appositamente pensati per la creazione di dApps orientate su processi di archiviazione e certificazione.
 
 **D: COSA E' LO SWIFTTX?**
 

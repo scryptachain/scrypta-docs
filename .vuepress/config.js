@@ -115,7 +115,7 @@ module.exports = {
         ]
       },
       {
-        title: 'IdA Node',   
+        title: 'IdANode',   
         path: '/idanode/',      
         collapsable: true,
         sidebarDepth: 1, 

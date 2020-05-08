@@ -181,7 +181,7 @@ Solo tu sei responsabile dei file e dati caricati.
 - Tocca il pulsante **SHARE PROOF OF EXISTENCE** e verrai reindirizzato a [Scrypta Proof](https://proof.scryptachain.org/) per conoscere i dettagli approfonditi del tuo documento. 
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non sarà piu possibile accedere a questi dati dall tua schermata VAULT e che il file eventualmente associato, trattenuto dagli IdA Nodes, verrà cancellato. In questo caso  la firma digitale, la marcatura temporale con hashing e la relativa prova dell'autore rimangono comuque indelebili grazie alla tecnologia del registro distribuito di Scrypta.
+Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non sarà piu possibile accedere a questi dati dall tua schermata VAULT e che il file eventualmente associato, trattenuto dagli IdANodes, verrà cancellato. In questo caso  la firma digitale, la marcatura temporale con hashing e la relativa prova dell'autore rimangono comuque indelebili grazie alla tecnologia del registro distribuito di Scrypta.
 :::
 
 ### Settings

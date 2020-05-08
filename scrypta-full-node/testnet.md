@@ -26,7 +26,7 @@ Per maggiori informazioni consultate la relativa sezione [Directory dei dati](da
  ::::
 
 ## Faucet tLYRA (testnet LYRA)
-Per ricevere delle LYRA di test (*tLyra*), puoi utilizzare il sistema Faucet realizzato attraverso la tecnologia IdA Node:
+Per ricevere delle LYRA di test (*tLyra*), puoi utilizzare il sistema Faucet realizzato attraverso la tecnologia IdANode:
 
 [Faucet Link](https://testnet.scryptachain.org/#)
 
@@ -34,4 +34,4 @@ Genera un indirizzo di ricezione Lyra testnet nel tuo wallet e inseriscilo nel c
 
 In questo modo riceverai **50 tLyra**.
 
-Attraverso l’IdA node Testnet puoi anche generare un nuovo indirizzo, inviare a quest’ultimo delle *tlyra* attraverso la funzione *INIT* ed importare nel desktop wallet la chiave privata attraverso la *console di debug*, utilizzando il comando `importprivkey YOURPRIVATEKEY`. 
+Attraverso l’IdANode Testnet puoi anche generare un nuovo indirizzo, inviare a quest’ultimo delle *tlyra* attraverso la funzione *INIT* ed importare nel desktop wallet la chiave privata attraverso la *console di debug*, utilizzando il comando `importprivkey YOURPRIVATEKEY`. 

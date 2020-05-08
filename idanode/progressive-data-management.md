@@ -1,18 +1,18 @@
 # Progressive data management
 
-Questi endpoint rappresentano il cuore delle funzionalità degli IdA Node. 
+Questi endpoint rappresentano il cuore delle funzionalità degli IdANode. 
 La scrittura, ma soprattutto la lettura, delle informazioni scritte sulla blockchain rappresentano le due funzionalità chiave dello sviluppo di qualsiasi dApp.
 
 Ricordiamo che la scrittura di dati arbitrari è permessa grazie all' **OP_RETURN**, che permette di inserire 8000 byte di dati su qualunque transazione. E' importante capire che gli output marcati con OP_RETURN sono delle transazioni **non** spendibili, infatti vengono spese le sole fee di **0.001 LYRA** per ogni transazione, ovvero per ogni 8000 byte.
 
-Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdaNode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdA Node riescono a ricostruire le informazioni scritte su più transazioni. 
+Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdaNode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
 
 ## Operazioni possibili
 
 Le operazioni possibili attraverso il Progressive Data Management sono di tre tipi:
 1) **Scrittura:** per operazioni di scrittura si intendono tutte quelle transazioni con OP_RETURN da e verso lo stesso indirizzo, questo significa che ogni indirizzo della blockchain può scrivere delle informazioni su se stesso. Questo comporta che un indirizzo può espressamente scrivere delle informazioni la cui proprietà è dimostrabile senza ombra di dubbio.
 2) **Aggiornamento:** le operazioni di aggiornamento prevedono la scrittura di dati sequenziali facendo riferimento sempre al medesimo UUID. Ciò non comporta che le informazioni possano essere alterate, quanto invece -per convenzione-  che vengano restituite quelle più aggiornate. E' sempre possibile recuperare lo storico degli aggiornamenti passando il parametro _history=**true**_ in fase di lettura, come vedremo di seguito. 
-3) **Invalidazione**: le operazioni di invalidazione servono a comunicare all'IdA Node che un determinato dato **non** deve essere mostrato in fase di lettura. Come già specificato, questa invalidazione (che consiste nell'aggiornamento del dato con metadata "END") non cancella effettivamente il dato che  può essere sempre recuperato in fase di lettura passando il parametro _history=**true**_. 
+3) **Invalidazione**: le operazioni di invalidazione servono a comunicare all'IdANode che un determinato dato **non** deve essere mostrato in fase di lettura. Come già specificato, questa invalidazione (che consiste nell'aggiornamento del dato con metadata "END") non cancella effettivamente il dato che  può essere sempre recuperato in fase di lettura passando il parametro _history=**true**_. 
 
 Un tipico dato strutturato secondo il nostro protocollo è il seguente:
 ```
@@ -54,7 +54,7 @@ Chiaramente però è presente un campo **sender** che definisce chi ha inviato i
 Scrive le informazioni all'interno della blockchain. Quando invocata attraverso l'IdaNode è necessario inviare anche la chiave privata dell'indirizzo che sta scrivendo le informazioni. 
 
 E' chiaro che le misure di sicurezza devono essere prese con la necessaria cautela affinché le chiavi private rimangano effettivamente al sicuro. 
-Sconsigliamo infatti di esporre l'IdA Node su Internet senza l'installazione dei certificati SSL. 
+Sconsigliamo infatti di esporre l'IdANode su Internet senza l'installazione dei certificati SSL. 
 
 Ecco la lista dei possibili parametri:
 - **dapp_address [obbligatorio]:** l'indirizzo che sta scrivendo l'informazione.
@@ -64,7 +64,7 @@ Ecco la lista dei possibili parametri:
 - **protocol:** il protocollo che si vuole utilizzare per classificare l'informazione.
 - **collection:** la collezione che si vuole utilizzare per classificare l'informazione.
 - **refID:** l'id di riferimento che si vuole utilizzare per classificare l'informazione.
-- **uuid:** l'identificativo unico assegnato dall'IdA Node per aggiornare un determinato dato.
+- **uuid:** l'identificativo unico assegnato dall'IdANode per aggiornare un determinato dato.
 
  La risposta ad una chiamata del genere sarà molto simile a quella della scrittura attraverso Scrypta Core:
  ```

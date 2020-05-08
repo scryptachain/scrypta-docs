@@ -55,7 +55,7 @@ Ecco la lista dei possibili campi:
 - **protocol:** il protocollo che si vuole utilizzare per classificare l'informazione.
 - **collection:** la collezione che si vuole utilizzare per classificare l'informazione.
 - **refID:** l'id di riferimento che si vuole utilizzare per classificare l'informazione.
-- **uuid:** l'identificativo unico assegnato dall'IdA Node per aggiornare un determinato dato.
+- **uuid:** l'identificativo unico assegnato dall'IdANode per aggiornare un determinato dato.
 
 Il funzionamento è analogo a quanto già descritto, consigliamo quindi di andare a vedere la pagina relativa nella sezione *IdaNode > Progressive Data Management*
 

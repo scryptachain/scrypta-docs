@@ -1,9 +1,9 @@
 # Introduzione
 
 
-[IdA Node](https://github.com/scryptachain/scrypta-idanodejs) (Interconnected dApp Node) è sicuramente la tecnologia più importante sviluppata da Scrypta. E' il cuore di tutte le operazioni di scrittura e lettura dei dati, nonché la principale fonte di dati per le dApp.
+[IdANode](https://github.com/scryptachain/scrypta-idanodejs) (Interconnected dApp Node) è sicuramente la tecnologia più importante sviluppata da Scrypta. E' il cuore di tutte le operazioni di scrittura e lettura dei dati, nonché la principale fonte di dati per le dApp.
 
-IdA Node è un'applicazione NodeJS scritta in TypeScript con una moltitudine di funzionalità:
+IdANode è un'applicazione NodeJS scritta in TypeScript con una moltitudine di funzionalità:
 
 1.  **Blockchain explorer:** tiene traccia di tutte le transazioni e di tutti i blocchi, può essere usato al pari di un block explorer visuale.
     
@@ -13,7 +13,7 @@ IdA Node è un'applicazione NodeJS scritta in TypeScript con una moltitudine di 
     
 4.  **IPFS:** serve da interfaccia per il file system distribuito (InterPlanetary File System), utile per caricare e scaricare i dati.
     
-5.  **Replica:** IdA Node è la principale replica di tutte le informazioni e di tutti i file caricati sulla Blockchain di Scrypta.
+5.  **Replica:** IdANode è la principale replica di tutte le informazioni e di tutti i file caricati sulla Blockchain di Scrypta.
     
 6.  **Wallet**: può anche funzionare da "client", ovvero può compiere le stesse operazioni dei client scrypta-core, semplicemente richiamando delle API e passando le informazioni necessarie.
     

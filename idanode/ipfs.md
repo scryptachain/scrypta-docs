@@ -9,11 +9,11 @@ E' importante notare che è possibile inviare un file e salvarne una copia su IP
 
 Analizzeremo di seguito gli endpoint e faremo degli esempi pratici (che si possono riscontrare anche analizzando la libreria Scrypta Core).
 
-Tra i vari metodi presenti nell'IdA Node troviamo anche quelli di lettura e analisi del file ai fini di ottenerne il mime-type ed effettuare il giusto rendering lato dApp. 
+Tra i vari metodi presenti nell'IdANode troviamo anche quelli di lettura e analisi del file ai fini di ottenerne il mime-type ed effettuare il giusto rendering lato dApp. 
 
 ## [GET] /ipfs/info
 
-Ritorna la versione e lo stato di IPFS nell'IdA Node:
+Ritorna la versione e lo stato di IPFS nell'IdANode:
 ```
 {
 
@@ -42,7 +42,7 @@ Ecco i parametri che è possibile inviare:
 - **files:** per inviare più di un file attraverso il *form-data*
 - **buffer**: per inviare un singolo file sotto forma di *Buffer*
 
-Quando viene caricato un file, viene contestualmente effettuata l'operazione di _pin_, ovvero di salvataggio dello stesso file nella cartella di IPFS. Questa stessa operazione verrà effettuata da tutti gli IdA Node che sincronizzano la blockchain.
+Quando viene caricato un file, viene contestualmente effettuata l'operazione di _pin_, ovvero di salvataggio dello stesso file nella cartella di IPFS. Questa stessa operazione verrà effettuata da tutti gli IdANode che sincronizzano la blockchain.
 
 Affinchè questo accada è necessario salvare su blockchain un dato del tipo:
 
@@ -183,7 +183,7 @@ Ritorna il *Buffer* che rappresenta l'hash specificato. Facendo sempre l'esempio
 
 ## [GET] /ipfs/pins
 
-Ritorna la lista di tutti i file con _pin_ presenti sull'IdA Node. La lista comprende gli hash dei soli file _pinnati_ in modo ricorsivo.
+Ritorna la lista di tutti i file con _pin_ presenti sull'IdANode. La lista comprende gli hash dei soli file _pinnati_ in modo ricorsivo.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwODEyNjU0OTYsOTA3MjQ3OTksLTc3MT
 k5Mjk0MiwxMzE5MTYxMzk0LC0xMjM2OTA2MzQ5LDUxMDk4NzY2

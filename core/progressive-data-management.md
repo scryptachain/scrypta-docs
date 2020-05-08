@@ -66,7 +66,7 @@ Di seguito un esempio concreto:
 }
 ```
 
-Questa stessa informazione può essere recuperata e filtrata dall'IdA Node. L'esempio può essere consultato al seguente link: [https://proof.scryptachain.org/#/uuid/2b33e.a4e8.401e.b32b.a2b75b012554](https://proof.scryptachain.org/#/uuid/2b33e.a4e8.401e.b32b.a2b75b012554)​
+Questa stessa informazione può essere recuperata e filtrata dall'IdANode. L'esempio può essere consultato al seguente link: [https://proof.scryptachain.org/#/uuid/2b33e.a4e8.401e.b32b.a2b75b012554](https://proof.scryptachain.org/#/uuid/2b33e.a4e8.401e.b32b.a2b75b012554)​
 
 Ecco di seguito l'esempio che ha prodotto il risultato appena descritto:
 ```
