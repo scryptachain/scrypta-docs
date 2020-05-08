@@ -7,7 +7,7 @@ Il documento che leggerete è stato redatto e pubblicato contestualmente alla ge
 
 ::: tip NOTA
 
-Dalla pubblicazione del Whitepaper è passato più di un anno e l'ecosistema **permissionless** di Scrypta è cresciuto tecnologicamente in maniera esponenziale, per approfondire leggi anche:
+Dalla pubblicazione del White Paper è passato più di un anno e l'ecosistema **permissionless** di Scrypta è cresciuto tecnologicamente in maniera esponenziale, per approfondire leggi anche:
 
 [Informazioni Generali](../general-info/README.md)
 

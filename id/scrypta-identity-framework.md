@@ -6,9 +6,12 @@ Il sistema di identità di Scrypta si articola in due componenti fondamentali, l
 
 La prima componente può essere gestita in vari modi, ma sostanzialmente riguarda i file .sid che abbiamo menzionato nella documentazione di _Scrypta Core_. Questi payload di identità possono essere gestiti tramite:
 
-- **ScryptaID Browser Extension** (Chrome, Firefox, etc): [https://github.com/scryptachain/scrypta-id](https://github.com/scryptachain/scrypta-id)
-- **Manent Mobile App** (iOS, Android): [https://github.com/scryptachain/scrypta-manent-app](https://github.com/scryptachain/scrypta-manent-app)
-- **Manent Web App** (Chrome, Firefox, Mobile browser): [https://github.com/scryptachain/scrypta-manent-web](https://github.com/scryptachain/scrypta-manent-web)
+- [**ScryptaID Browser Extension**](https://id.scryptachain.org/) (Chrome, Firefox, etc) 
+ > [https://github.com/scryptachain/scrypta-id](https://github.com/scryptachain/scrypta-id)
+- [**Manent Mobile App**](https://manent.app/) (iOS, Android) 
+ > [https://github.com/scryptachain/scrypta-manent-app](https://github.com/scryptachain/scrypta-manent-app)
+- [**Manent Web App**](https://web.manent.app/#/) (Chrome, Firefox, Mobile browser)
+> [https://github.com/scryptachain/scrypta-manent-web](https://github.com/scryptachain/scrypta-manent-web)
 
 La seconda componente può essere utilizzata tramite un Gateway di identità, come quello che mette a disposizione Scrypta  attraverso l'URL: 
 
