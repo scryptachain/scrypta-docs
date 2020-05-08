@@ -48,13 +48,55 @@ E’ possibile quindi sin da subito testare l’esempio già funzionante del pro
 
 [Scrypta News Website](https://news.scryptachain.org/)
 
-### UPVOTE, DOWNVOTE e TIPUSER
+## UPVOTE, DOWNVOTE e TIPUSER
 
 Dopo il login, i lettori possono votare attraverso le funzioni di UPVOTE, DOWNVOTE  e inviare donazioni in LYRA con TIP USER.
 
 ![upvote](../.vuepress/public/assets/other/upvote.png)
 
-### Video Tutorial
+## Guida sul caricamento degli articoli in blockchain
+
+Una volta effettuato il login, che ricordiamo può essere fatto attraverso Extension Browser o file .sid, è possibile inserire il proprio articolo cliccando sul simbolo “ + ” in basso a destra.
+
+![piu](../.vuepress/public/assets/news/piu.png)
+ 
+Comparirà una sezione in cui inserire i dettagli iniziali dell’articolo: 
+
+- titolo, 
+- sottotitolo, 
+- immagine di copertina, 
+- tags.
+
+![details](../.vuepress/public/assets/news/article-details.png)
+
+
+A questo punto si procede a compilare il corpo del testo con una usuale interfaccia grafica da editor testuale.
+
+![body](../.vuepress/public/assets/news/article-body.png)
+
+
+Una volta terminato basterà cliccare su “Write on the blockchain” e Inserire la propria password.
+
+infine si avrà conferma dell’esito dell’operazione.
+
+![confirm](../.vuepress/public/assets/news/article-written.png)
+
+
+Ora l’articolo è scritto indelebilmente sulla blockchain! E  comparirà presto nella sezione articoli di Scrypta News.
+
+Come si può vedere dall'esempio, viene impressa una marcatura temporale (timestamp) e l’indirizzo collegato all’autore (firma digitale):
+
+
+![proof](../.vuepress/public/assets/news/article-proof.png)
+
+
+## Editing
+Grazie alla tecnologia [Progressive Data Management](../idanode/progressive-data-management.md) di Scrypta, è permesso all’autore, ed esclusivamente ad esso, di editare l'articolo. Quella editata sarà la versione visualizzata come “versione corrente”; le precedenti versioni continuano ad esistere solo all’interno  della blockchain Scrypta.
+
+Se volete editare un articolo, recatevi nella sezione dei vostri articoli cliccando sull’icona relativa (accanto a logout). Quindi cliccate il simbolo “matita” relativo all’articolo da editare. Effettuate le modifiche e cliccate su *Write on the blockchain*.
+
+
+## Video Tutorial
 
 [La Blockchain contro le Fake News - Scryptachain](https://www.youtube.com/watch?v=5sNQ34nu1LU) di Tiziano Tridico
 
