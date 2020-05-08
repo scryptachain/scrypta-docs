@@ -6,6 +6,15 @@ I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguir
 Nella versione client è necessario chiamare tutti questi comandi preceduti da `./lyra-cli`
 :::
 
+## Test-CLI
+
+Puoi testare i comandi del wallet attraverso la consolle dello strumento test-CLI, raggiungibile qui:
+
+[**test-CLI**](https://cli.scryptachain.org/)
+
+
+![upvote](../.vuepress/public/assets/other/test-cli.png)
+
 ## Istruzioni Blockchain
 `getbestblockhash` Fornisce semplicemente l'ultimo/miglior hash di blocco nella rete.
 
