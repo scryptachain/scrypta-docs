@@ -14,7 +14,7 @@ L'estensione è scaricabile sia sui browser Chromium (Chrome, Brave, Vivaldi, et
 - **Firefox Add-ons**: [https://addons.mozilla.org/en-US/firefox/addon/scryptaid/](https://addons.mozilla.org/en-US/firefox/addon/scryptaid/)
 
 ### Operazioni principali
-Una volta completata l'installazione dell'estensione nel vostro browser, in alto a destra comparirà il simbolo contraddistinto dall'icona <img src=".././.vuepress/public/assets/scryptaid/icon256.png" width="26">, disposto accanto alle altre estensioni gia' installate ![scrypta_id](../.vuepress/public/assets/scryptaid/ext.png)
+Una volta completata l'installazione dell'estensione nel vostro browser, in alto a destra comparirà il simbolo contraddistinto dall'icona <img src=".././.vuepress/public/assets/scryptaid/icon256.png" width="26">, disposto accanto alle altre estensioni gia' installate.<br>![scrypta_id](../.vuepress/public/assets/scryptaid/ext.png)
 
 
 Al primo avvio dell'estensione, ci verrà chiesto se vogliamo creare una nuova identità o importarne una già esistente.
@@ -27,7 +27,7 @@ Quando si avvia l'estensione per la prima volta, per creare un'identità è suff
 
 ![Create new Identity](../.vuepress/public/assets/scryptaid/create_id.png)
 
-Scegliere l'etichetta che contraddistingue l'identità che state creando, e scegliete una **password sicura**.
+Scegliere l'etichetta che contraddistingue l'identità che state creando, e scegliete una **password sicura**.<br>
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32">
 **ATTENZIONE:**<br>Poiche' il .sid file collegato alla vostra identità servirà per utilizzare tutte le dApps Scrypta, si raccomanda di annotare o cmq ricordare la password dell'identità.
 
@@ -35,8 +35,7 @@ Perdendo la password non sarà piu' possibile recuperarla, perdendo ad esempio l
 :::
 <br>
 
-Una volta creata l'dentità, si aprirà la pagina principale dell'estensione dove potrete vedere **nome** e **indirizzo** associati all'identità in uso, oltre alle principali funzioni da utilizzare.
-![scrypta_id](../.vuepress/public/assets/scryptaid/id_screen.png)
+Una volta creata l'dentità, si aprirà la pagina principale dell'estensione dove potrete vedere **nome** e **indirizzo** associati all'identità in uso, oltre alle principali funzioni da utilizzare.<br>![scrypta_id](../.vuepress/public/assets/scryptaid/id_screen.png)
 
 ### dApp Explorer
 Il dApp explorer fornisce dei collegamenti rapidi alle dApps ufficiali di Scrypta.
