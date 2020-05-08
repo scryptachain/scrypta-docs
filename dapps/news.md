@@ -48,7 +48,7 @@ E’ possibile quindi sin da subito testare l’esempio già funzionante del pro
 
 [Scrypta News Website](https://news.scryptachain.org/)
 
-## UPVOTE, DOWNVOTE e TIPUSER
+### UPVOTE, DOWNVOTE e TIPUSER
 
 Dopo il login, i lettori possono votare attraverso le funzioni di UPVOTE, DOWNVOTE  e inviare donazioni in LYRA con TIP USER.
 
