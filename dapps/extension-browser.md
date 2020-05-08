@@ -42,9 +42,7 @@ Una volta creata l'dentità, si aprirà la pagina principale dell'estensione dov
 Il dApp explorer fornisce dei collegamenti rapidi alle dApps ufficiali di Scrypta.
 
 ![dApp Explorer](../.vuepress/public/assets/scryptaid/dapps_explorer.png)<br>
-Cliccando sulla dApp di vostro interesse, verrete redirezionati alla pagina della dApp in questione.<br>
-Una volta arrivati nella pagina della dApp, aprite l'estensione e cliccate su **"USE THIS IDENTITY"**.
-<br>Quindi la pagina si ricaricherà e avrete eseguito l'accesso!
+Cliccando sulla dApp di vostro interesse, verrete redirezionati alla pagina della dApp in questione.<br>Una volta arrivati nella pagina della dApp, aprite l'estensione e cliccate su **"USE THIS IDENTITY"**.<br>Quindi la pagina si ricaricherà e avrete eseguito l'accesso!
 
 ### Manage IDs
 
