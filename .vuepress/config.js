@@ -1,4 +1,18 @@
+let ogprefix = 'og: http://ogp.me/ns#'
+let title = 'Scrypta Wiki'
+let description = 'La guida completa all\'ecosistema Scrypta.'
+
 module.exports = {
+  title: title,
+  description: description,
+  head: [
+    ['link', { rel: "icon", type: "image/png", href: "/assets/favicon.png"}],
+    ['meta', { prefix: ogprefix, property: 'og:title', content: title }],
+    ['meta', { prefix: ogprefix, property: 'twitter:title', content: title }],
+    ['meta', { prefix: ogprefix, property: 'og:type', content: 'article' }],
+    ['meta', { prefix: ogprefix, property: 'og:description', content: description }],
+    ['meta', { prefix: ogprefix, property: 'og:image', content: 'https://it.scrypta.wiki/assets/other/scrypta-banner.png' }],
+  ],
   themeConfig: {
     logo: '/assets/scrypta.png',
     nav: [

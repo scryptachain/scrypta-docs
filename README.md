@@ -1,4 +1,4 @@
-# Wiki-Guide Scrypta
+# La Guida all'ecosistema Scrypta
 
 ![banner](./.vuepress/public/assets/other/scrypta-banner.png)
 
