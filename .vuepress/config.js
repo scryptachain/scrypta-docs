@@ -142,8 +142,6 @@ module.exports = {
           '/idanode/dapps-engine',
           '/idanode/trustlink',
           '/idanode/sidechain',
-          '/idanode/middleware-api',
-
         ]
       },        
       {
@@ -166,9 +164,10 @@ module.exports = {
           '/utilities/card-generator',
           '/utilities/vanity-address',
           '/utilities/p2p-network',
+          '/utilities/bootstrap-generator',
           '/utilities/ipfs',
           '/utilities/faucet',
-          '/utilities/bootstrap-generator',
+          '/utilities/dapp-composer',
         ]
       }
     ]
