@@ -1,6 +1,6 @@
 # Emissione di un nuovo token
 
-Uno dei primi problemi affrontati nel protocollo Sidechain di Scrypta riguarda l'unicità del token e di conseguenza l'emissione sicura del token stesso. L'unicità del token non può chiaramente essere demandata all'utente -creatore, poichè potrebbe in modo malevolo cercare di "copiare" un altro token per controllarne i balance.
+Uno dei primi problemi affrontati nel protocollo Sidechain di Scrypta riguarda l'unicità del token e di conseguenza l'emissione sicura del token stesso. L'unicità del token non può chiaramente essere demandata all'utente-creatore, poichè potrebbe in modo malevolo cercare di "copiare" un altro token per controllarne i balance.
 
 La risoluzione a questo primo problema è avvenuta introducendo il Trustlink nel processo di creazione. Il Trustlink viene fatto tra l'utente che vuole emettere il token ed l'IdaNode che viene invocato. Per garantire l'unicità, l'orizzontalità e la non replicabilità delle Sidechain abbiamo deciso di generare questo indirizzo *on-the-fly* e bruciare la chiave privata subito dopo la scrittura della prima transazione di genesi.
 

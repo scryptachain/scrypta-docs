@@ -9,7 +9,7 @@
 ![manent_web](../.vuepress/public/assets/manent_web/banner_web.png)
 
 
-Accessibile via browser da [https://web.manent.app]**https://web.manent.app**, permette di effettuare tutte le principali operazioni al pari della versione mobile:
+Accessibile via browser da [**web.manent.app**](https://web.manent.app/), permette di effettuare tutte le principali operazioni al pari della versione mobile:
 - Invio ricezione e trasferimento fondi (sia LYRA che Planum tokens)
 - Archiviazione file e documenti (con e senza encryption)
 - Consultare variazioni di portafoglio con grafici del prezzo
@@ -44,7 +44,7 @@ Una volta completato l'accesso a **Manent Web**, ci viene presentata la dashboar
 ![manent_web](../.vuepress/public/assets/manent_web/main.png)
 
 La finestra principale è riservata al grafico dell'andamento del prezzo di **LYRA**, nella parte superiore abbiamo il menu per accedere a tutte le principali funzioni e il balance dello specifico indirizzo collegato al **.SID file** con cui abbiamo effettuato l'accesso.
-Sul lato destro troviamo i collegamenti per effettuare un backup del portafoglio e per l'invio/ricezione di fondi.
+<br>Sul lato destro troviamo i collegamenti per effettuare un backup del portafoglio e per l'invio/ricezione di fondi.
 
 ![manent_web](../.vuepress/public/assets/manent_web/up_web.png)
 
@@ -56,13 +56,10 @@ La parte del menu principale dà accesso a tutte le principali funzioni del wall
 ![manent_web](../.vuepress/public/assets/manent_web/menu.png)
 
 - **Dashboard:** Pagina principale in cui ci si trova all'accesso al portafoglio
-
 - **Data explorer:**  Explorer per la ricerca di informazioni su indirizzi e transazioni.
-
 - **Sign:** Tool per la firma e la verifica di un messaggio su blockchain Scrypta.
-
 - **Vault:** Tool per effettuare l'upload di documenti e files sulla blockchain Scrypta.
-![manent_web](../.vuepress/public/assets/manent_web/vault.png)
+<br><br>![manent_web](../.vuepress/public/assets/manent_web/vault.png)
 
 **Token:** Sezione in cui è possibile consultare il balance dei tokens creati o ricevuti, ed effettuare l'invio dei tokens ad altri indirizzi.
 
@@ -74,12 +71,13 @@ Attraverso questo collegamento situato sul lato destro in alto della dashboard, 
 ![manent_web](../.vuepress/public/assets/manent_web/backup.png)
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. Successivamente, rimuovi il file .pdf dal tuo dispositivo.
+Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. <br>Successivamente, rimuovere il file .pdf dal vostro dispositivo.
 :::
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
 **CUSTODISCI CON CURA IL TUO PAPER WALLET**
 
-Il **PAPER WALLET espone la tua chiave privata** sotto forma di codice QR. 
-Questa è la tua firma elettronica e rappresenta la tua identità digitale e vuoi che nessun'altro la utilizzi illecitamente.
+Il **PAPER WALLET espone la VOSTRA chiave privata** sotto forma di codice QR. 
+<br>La chiave privata rappresenta la vostra identità digitale, le informazioni in essa contenute vanno custodite con cura.
+<br>Impedite **SEMPRE** l'accesso a tali dati a sconosciuti, i quali potrebbero accedere ai fondi in essa contenuti o utilizzare la vostra identità digitale per qualisasi fine.
 :::

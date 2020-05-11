@@ -9,9 +9,8 @@
 Rendi i tuoi file immutabili con Scrypta Manent e porta sempre con te le tue **LYRA**!
 
 Manent è la prima app ufficiale di [Scrypta](https://scryptachain.org), sviluppata per interagire con la blockchain in maniera semplice, veloce e sicura!
-Gestisci le tue **LYRA** coin con Manent, grazie alle sue funzioni di mobile wallet; proteggi le tue idee o le tue invenzioni grazie alla blockchain per certificarne la loro autenticità e renderle immutabili, permanenti e tenerle al sicuro!
 
-Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
+Manent è disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
 
 ***
 ### Join Manent App
@@ -26,7 +25,8 @@ Manent disponibile in entrambe le versioni [web](https://web.manent.app) e mobil
 
 ### Ecco cosa puoi fare:
 #### CONSERVA, INVIA E RICEVI LYRA
-Gestisci le tue LYRA coin con Manent grazie alle sue **funzioni di mobile wallet** in maniera facile e veloce. Puoi inviare le tue LYRA coin semplicemente scannerizzando un QR Code. Quando invii LYRA tramite l’app, tutto è immediato e verificabile all’interno della blockchain grazie al suo **registro distribuito**.
+Gestisci le tue LYRA coin con Manent grazie alle sue **funzioni di mobile wallet** in maniera facile e veloce. Puoi inviare le tue LYRA coin semplicemente scannerizzando un QR Code.
+<br>Quando invii LYRA tramite l’app, tutto è immediato e verificabile all’interno della blockchain grazie al suo **registro distribuito**.
 
 #### CERTIFICA I TUOI FILE O DOCUMENTI IMPORTANTI
 Con Manent, grazie alla **marcatura temporale**, puoi caricare ogni tipo di file o documento apportandogli valenza legale e probatoria; rispettando le norme nazionali ed internazionali, unendo la semplicità di un’app alle potenzialità tecnologiche della **blockchain**.
@@ -67,8 +67,7 @@ Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-
 ## Guide & Tutorials
 
  ### Creare un account
- Il processo per creare un account è semplice:
-Dovrai solo inserire due volte una **password** da te scelta.
+ Il processo per creare un account è semplice: dovrai solo inserire due volte una **password** da te scelta.
 
 Adesso metti in sicurezza il tuo account effettuando il backup seguendo le istruzioni riportate di seguito).
 Questo passaggio è fondamentale e consente di proteggere la tua firma digitale e il relativo portafoglio.
@@ -133,11 +132,11 @@ Assicurati di conservarlo in un luogo sicuro!
 :::
 ***
 
-### Seleziona un account
+#### Seleziona un account
 - Tocca l'icona **Menu** (angolo in alto a destra) > **Accounts**
 - Seleziona adesso l'account che preferisci
 - Tocca su **USE THIS ADDRESS**
-Verrai adesso reinderizzato alla **Dashboard**.
+<br><br>Verrai adesso reinderizzato alla **Dashboard**.
 ***
 
 ### Ricevi LYRA
@@ -153,7 +152,7 @@ E' anche possibile acquisire uno screenshot, direttamente dal tuo dispositivo, d
 o tocca l'icona **"+"** symbol (angolo alto destra).
 - Usa lo slide per scegliere tra dati crittografati **Encrypted)** o pubblici **(Public data)**.
 
-##### Upload:
+#### Upload:
 - Inserisci un titolo **(Title)**
 - Scegli una password di cifratura **(Encryption password)** - solo se si desidera crittografare i dati
 - Seleziona il **File** dal tuo dispositivo
@@ -173,7 +172,7 @@ Solo tu sei responsabile dei file e dati caricati.
 
 ***
 
-### Consulta i documenti importati
+#### Consulta i documenti importati
 - Tocca l'icona **VAULT** (part bassa dello schermo)
 - Ora puoi vedere una scheda di riepilogo per ogni documento caricato
 - Scegli il documento da consultare toccando la scheda relativa
@@ -194,11 +193,10 @@ Scrypta Card è il tuo wallet tascabile con LYRA Adress associato da utilizzare 
 
 ![planum](../.vuepress/public/assets/other/scrypta-card.png)
 
-La tua identità digitale e i rispettivi balances possono essere collegati alla Scrypta Card. Uno strumento potente e affidabile che può essere utilizzato per creare backup sicuri del tuo wallet, per la gestione quotidiana dei tuoi fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
+La tua identità digitale e i rispettivi balances possono essere collegati alla Scrypta Card. Uno strumento potente e affidabile che può essere utilizzato per creare backup sicuri del tuo wallet, per la gestione quotidiana dei tuoi fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute, o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
 
-E' possibile ottenere la Scrypta Card attraverso lo Shop di Scrypta Consortium:
+E' possibile ottenere la Scrypta Card attraverso lo [Shop di Scrypta Consortium](https://scrypta.shop/)
 
-[https://scrypta.shop/​](https://scrypta.shop/​)
 
 ### Come acquistare Scrypta Card
 Ecco un video tutorial che illustra come acquistare la Scrypta Card utilizzando **LYRA** come metodo di pagamento:

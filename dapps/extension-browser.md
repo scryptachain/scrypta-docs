@@ -5,7 +5,7 @@ L'estensione di Scrypta per browser è un utile strumento per creare, usare e ge
 ![scrypta_id](../.vuepress/public/assets/scryptaid/banner.png)
 
 L'estensione del browser crea un ambiente protetto per il salvataggio e la gestione delle identità Scrypta (anche detti **.sid file**).
-Queste identità vengono iniettate direttamente nelle dApp Scrypta (quelle ufficiali per lo meno) e, tramite una semplice interfaccia grafica, si possono creare e modificare.
+Queste identità vengono iniettate direttamente nelle dApp Scrypta (quelle ufficiali per lo meno) e, tramite una semplice interfaccia grafica, si possono creare nuove identità e modificare quele già esistenti.
 
 ## Link agli store
 
