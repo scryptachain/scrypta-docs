@@ -7,7 +7,7 @@ La Wiki-Guide di Scrypta fornisce una panoramica completa dell'ecosistema Scrypt
 
 Per una panoramica sintetica dell'ecosistema Scrypta vi consigliamo di consultare la sezione:
 
-[Informazioni Genarli](general-info/cosa-è.md)
+[Informazioni Generali](general-info/cosa-è.md)
 
 In alternativa, inizia subito con Scrypta installando il **LYRA Wallet** (Full Node) o **Manent APP** (Light Wallet):
 

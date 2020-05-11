@@ -48,9 +48,86 @@ Inoltre, all’interno della web-app è presente
 una specifica funzione **“Richiedi Rimborso”** per inoltrare la richiesta di rimborso al Comune, che
 avverrà sotto forma di bonifico bancario.
 
+## Caratteristiche e Contronto
+
+Di seguito una tabella comparativa tra SocialPay e altri sistemi di erogazione e gestione dei buoni spesa:
+
+![confronto](../.vuepress/public/assets/socialpay/confronto.png)
+
+
+
+1. **Anticontraffazione**
+   
+Le transazioni sono registrate sulla blockchain pertanto non è possibile una loro alterazione atta ad aumentare o ridurre il credito relativo ai buoni spesa, contro la volontà del Comune o del cittadino. Non si possono stampare carte buono false: le uniche carte abilitate sono quelle censite all'interno del software del comune.
+
+2. **Sicurezza**
+   
+Non essendo l’infrastruttura tecnologica affidata ad un fornitore centralizzato, se il Comune o l’Esercente dovessero subire un attacco informatico o avere problematiche legate all‘a sua ’operatività, questo non andrà ad intaccare il funzionamento di SocialPay, essendo questo un sistema decentralizzato. Le carte possono essere sostituite e bloccate facilmente in quanto il comune - o il cittadino stesso — può prelevare i fondi in qualsiasi momento e tracciarne gli spostamenti in caso di transazioni non autorizzate.
+
+3. **Tracciabilità**
+   
+SocialPay utilizza una infrastruttura blockchain che consente un’efficace tracciabilità in corso di utilizzo del sistema. Al contrario i sistemi basati su buoni cartacei sono tracciabili solo ex post, una volta che l’esercente ha riconsegnato al comune i buoni. Altre soluzioni basate su card ricaricabile, sono solitamente affidati a sistemi software proprietari che rendono il tracciamento vincolato allo specifico applicativo e non perfettamente trasparente.
+
+4. **Commissioni di transazione nel sistema**
+   
+Le transazioni all'interno del sistema, ovvero invio di credito per i buoni spesa dal comune verso i cittadini e da questi verso gli esercenti, non hanno alcun costo. Le commissioni di sistema vengono pagate in LYRA (0.001 LYRA, pari a pochi millesimi di euro per transazione), queste vengono fornite dal comune e non dipendono dal valore della transazione.
+
+5. **Rendicontazione**
+   
+Viene gestita in modo semplice e snello, in modo che il comune non abbia un “overflow” di lavoro. Il software permette di esportare i tracciati relativi alle transazioni e alle richieste di rimborso. Le richieste di rimborso inoltre vengono gestite attraverso la blockchain, garantendo un alto livello di trasparenza della PA.
+
+6. **Sostenibilità economica**
+   
+Il costo complessivo che il comune deve sostenere per adottare e mantenere un sistema di gestione dei buoni spesa, si misura non solo nella fornitura in sé ma anche nei costi di supporto ed eventualmente di modifica o manutenzione evolutiva. Le card possono essere ricaricate senza alcun limite, consentendo al sistema di essere utilizzato anche in futuro per altri casi d’uso. Inoltre, essendo SocialPay un progetto open-source, esso può essere adottato e sviluppato in autonomia da qualsiasi ente, previa competenza tecnica. Non ultimo, non vi è nessun costo di commissione per nessun tipo di transazione.
+
+7. **Monitoraggio**
+   
+La rilevazione periodica e sistematica di tutte le transazioni in tempo reale, tramite l’explorer di Planum, rende il sistema totalmente trasparente, pur garantendo la privacy degli utenti. Uno strumento utile per analizzare l’andamento delle erogazioni, delle spese e rimborsi effettuati.
+
+8. **Velocità attivazione**
+   
+La tecnologia QR-Code delle card, scelta da Scrypta, permette la realizzazione in tempi brevi e presso qualsiasi tipo di tipografia, della SocialPay Card. 
+E’ possibile, in alternativa, realizzare il sistema attraverso Card NFC (Nearfield Communication).
+
+9. **Velocità di ricarica**
+    
+Attraverso il Gestionale è possibile ricaricare le card in totale sicurezza e in maniera immediata e veloce, con un click.
+
+10.  **Semplicità di utilizzo per il cittadino**
+    
+Gli esercenti che aderiscono al sistema vengono dotati di un’apposita applicazione web alla quale si può accedere dal proprio smartphone o tablet (POS virtuale). Una volta effettuato l’accesso, l’applicazione permette di leggere il retro della Card assegnata al cittadino e prelevare le somme inerenti l’acquisto.
+
+Il cittadino autorizza l’acquisto inserendo il PIN nel POS virtuale dell’esercente. Ogni esercente tramite la sua applicazione web può controllare costantemente il proprio conto digitale, e le transazioni. 
+
+All’interno dell’applicazione è inoltre presente una funzione che permette all’esercente di formulare con un click la richiesta di riscatto dei gettoni digitali incassati, inoltrando in modo semplice una richiesta di rimborso al Comune, che procederà al saldo con bonifico bancario.
+
+11.  **Semplicità di gestione per il Comune**
+    
+Il comune distribuisce direttamente ai cittadini aventi diritto una card con QR-code numerata . Assieme alla card fornisce un PIN che permette l’utilizzo esclusivo dei fondi. 
+Infine il comune, tramite un semplice gestionale, può versare i contributi, anche a più riprese, ricaricando la medesima card cittadino. Il comune inoltre riceve automaticamente le richieste di rimborso da parte dell’esercente e può controllare costantemente dal Gestionale il corretto funzionamento di tutto il processo.
+
+12. **Open Source**
+    
+È possibile replicare l’intero sistema per emettere e gestire i buoni spesa per qualsiasi ente, in sicurezza. Scrypta Foundation mette infatti a disposizione la propria tecnologia a chiunque voglia contribuire al progetto. È possibile creare, in accordo con la volontà comunale, una copia del progetto e richiedere l’inserimento del codice tramite “pull request” sul Github dedicato:
+
+[**https://github.com/scryptachain/socialpay**](https://github.com/scryptachain/socialpay)
+
+Oppure è possibile disporre del supporto di Scrypta Consortium, il contratto di rete delle aziende che operano con tecnologia Scrypta:
+
+[**https://scryptaconsortium.org/**](https://scryptaconsortium.org/
+)
+
+13.  **Innovazione**
+    
+Si tratta di un processo di “tokenizzazione” dei buoni spesa, ossia della creazione di un valore digitale corrispondente in token (gettoni) emessi all’interno della blockchain Scrypta, attraverso la tecnologia Planum. L’implementazione capillare di un simile servizio determina un notevole risparmio per la Pubblica Amministrazione dovuto alla semplificazione delle attività di controllo, distribuzione e pagamenti certificati da sistemi algoritmici innovativi espressamente progettati per la validazione delle trasmissioni dei dati. 
+
+14.  **Possibilità di espansione per altri utilizzi**
+    
+Il sistema SocialPay di Scrypta può essere replicato per altri utilizzi e finalità, come quello dei buoni pasto, delle gift card, ticket digitali e altri numerosi casi d’uso. Cioè In tutti quei casi in cui c’è un Amministratore che eroga il servizio, un Target di riferimento che utilizzerà le card, e dei “Punti Vendita”, anche online, dove poter utilizzare i token emessi e distribuiti.
+
 ## Guida per l'esercente
 ### POS Digitale e CARD BUONO SPESA
-#### Vademecum pr l'esercente
+
 
 Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, per i cittadini aventi diritto, la **Card *“Buono Spesa Digitale”*** da utilizzare esclusivamente per l’acquisto di beni di prima necessità e presidi farmaceutici.
 
