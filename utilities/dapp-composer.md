@@ -12,7 +12,7 @@ Questo software può essere, inoltre, caricato all'interno di un IdaNode (via IP
 
 # Utilizzo
 
-Dopo aver scaricato il codice da qui https://github.com/scryptachain/scrypta-dapp-composer è possibile modificare i file contenenti il codice principale oppure estendere il progetto con i propri endpoint. Quelli di default sono i seguenti.
+Dopo aver scaricato il codice da qui [https://github.com/scryptachain/scrypta-dapp-composer](https://github.com/scryptachain/scrypta-dapp-composer) è possibile modificare i file contenenti il codice principale oppure estendere il progetto con i propri endpoint. Quelli di default sono i seguenti.
 
 ## [GET] /
 

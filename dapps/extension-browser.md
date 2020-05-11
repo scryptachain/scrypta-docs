@@ -37,13 +37,13 @@ Perdendo la password non sarà piu' possibile recuperarla, perdendo ad esempio l
 
 Una volta creata l'dentità, si aprirà la pagina principale dell'estensione dove potrete vedere **nome** e **indirizzo** associati all'identità in uso, oltre alle principali funzioni da utilizzare.<br>![scrypta_id](../.vuepress/public/assets/scryptaid/id_screen.png)
 
-### dApp Explorer
+## dApp Explorer
 Il dApp explorer fornisce dei collegamenti rapidi alle dApps ufficiali di Scrypta.
 
 ![dApp Explorer](../.vuepress/public/assets/scryptaid/dapps_explorer.png)<br>
 Cliccando sulla dApp di vostro interesse, verrete redirezionati alla pagina della dApp in questione.<br>Una volta arrivati nella pagina della dApp, aprite l'estensione e cliccate su **"USE THIS IDENTITY"**.<br>Quindi la pagina si ricaricherà e avrete eseguito l'accesso!
 
-### Manage IDs
+## Manage IDs
 
 Da questa schermata è possibile gestire una o più identità, cambiare identità principale, importare un'identità esistente o crearne di nuove. 
 
