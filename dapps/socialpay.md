@@ -29,18 +29,18 @@ Il sistema è quindi composto dai seguenti elementi:
     - La Card verrà consegnata dal Comune.
     - La Card verrà presentata dal cittadino agli esercenti aderenti al circuito per utilizzare i buoni.
 
-### Come Funziona
+## Come Funziona
 
-Il comune distribuirà direttamente ai cittadini aventi diritto una **Card** numerata ed assegnata a un
-soggetto identificato dall’ente.
+Il comune distribuisce direttamente ai cittadini aventi diritto una **Card** numerata ed assegnata a un soggetto identificato dall’ente.
 Assieme alla card fornirà un **codice PIN** di 5 cifre che permette l’utilizzo esclusivo dei fondi.
 
-Gli esercenti che aderiscono al sistema digitale del buono spesa, verranno dotato di un’apposita
-**applicazione web** che consente di utilizzare il proprio **smartphone/tablet** come un POS virtuale.
+Gli esercenti che aderiscono al sistema digitale del buono spesa, verranno dotati di un’apposita
+**applicazione web** che consente di utilizzare il proprio **smartphone/tablet** come POS virtuale.
 Con la fotocamera del proprio dispositivo è possibile inquadrare il QR-Code sul retro della Card assegnata al
 cittadino e addebitare la somme corrispondente all'importo dell’acquisto effettuato nella sua attività.
 
 Il cittadino dovrà comunque autorizzare l’acquisto inserendo il PIN nel POS virtuale dell’esercente.
+
 Ogni esercente tramite la sua applicazione potrà controllare costantemente il proprio conto digitale
 dove verificherà in tempo reale l’accredito delle somme.
 
