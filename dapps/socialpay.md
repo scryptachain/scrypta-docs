@@ -336,7 +336,7 @@ Il [repository "SocialPay" di Github](https://github.com/scryptachain/socialpay)
 
 Una cartella generica chiamata **`documentazione`** contiene tutte le presentazioni, i sorgenti grafici delle card e i prestampati legali per la convenzione con il comune.
 
-## Operazioni preliminari
+### Operazioni preliminari
 
 Si consiglia di scaricare le cartelle di base aggiornate dal [branch di sviluppo su Github:](https://github.com/scryptachain/socialpay/tree/development)
 
@@ -370,13 +370,13 @@ burnable: true
 - Dopo che avrai generato la sidechain dovrai appuntarti l'indirizzo univoco, che ti servirà per collegare le applicazioni alla tua sidechain. Questo indirizzo puoi trovarlo sempre su [https://planum.dev/#/explorer](https://planum.dev/#/explorer) alla riga corrispondente, sotto la colonna **`address`**.
 
 
-## Compilare la parte di amministrazione
+### Compilare la parte di amministrazione
 
 Il software di amministrazione è un progetto electron e dovrai modificare il file sotto **`admin/config.json`** inserendo i parametri richiesti e dovrai inserire i loghi del comune di riferimento nella cartella **`admin/public`**.
 
 Dopo aver modificato tutto il necessario è possibile provare in anteprima il software attraverso il comando **`npm run electron:serve`** oppure creare la build vera e propria con il comando **`npm run electron:build`**.
 
-## Compilare il web PoS
+### Compilare il web PoS
 
 Il web PoS è un progetto VueJS e dovrai modificare il file sotto **`admin/config.json`** inserendo i parametri richiesti e dovrai inserire i loghi del comune di riferimento nella cartella **`admin/public`**.
 
@@ -384,7 +384,7 @@ Dopo aver modificato tutto il necessario è possibile provare in anteprima il so
 
 La cartella di distribuzione **`dist`** dovrà essere pubblicata all'interno di un server Apache. E' fondamentale che venga installato un certificato SSL, consigliamo il servizio gratuito [https://letsencrypt.org/](https://letsencrypt.org/) che potrà fornire un certificato SSL gratuito.
 
-## Creare le card wallet
+### Creare le card wallet
 
 Le card wallet vengono create attraverso lo script NodeJS presente nella cartella **`card`**. E' necessario modificare i file grafici nella cartella **`assets/`** al fine di personalizzare le card per il vostro comune. Il progetto genererà sotto la cartella **`prints/`** il numero di card richieste ed il solo QR Code ad mandare eventualmente alla tipografia.
 
@@ -405,11 +405,11 @@ Si consiglia di forkare questo progetto e aggiungere il proprio comune così da 
 
 Alla fine del processo di aggiunta e creazione del progetto per il tuo comune potrai richiedere l'aggiunta nel repository ufficiale tramite pull request.
 
-### Supporto
+## Supporto
 
 Se hai bisogno di aiuto per integrare il progetto o trovi bug da risolvere, puoi aprire una issue su [github socialpay](https://github.com/scryptachain/socialpay), scrivere a [info@scrypta.foundation](mailto:info@scrypta.foundation), o contattarci tramite [i nostri social](../general-info/link.md#social-media) ti risponderemo al più presto.
 
-### Video Tutorial
+## Video Tutorial
 
 [**Buoni Spesa? Basta Sprechi! Usiamo la BLOCKCHAIN!**](https://www.youtube.com/watch?v=oRNoxwsRG5M) di Tiziano Tridico
 
