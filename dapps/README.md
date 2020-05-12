@@ -17,7 +17,6 @@ Questo documento descriverà tutte le dApp realizzate da Scrypta, fornendo sia d
  - **Identity:** [https://me.scrypta.id/](https://me.scrypta.id/)
 - **Proof:** [https://proof.scryptachain.org/#/](https://proof.scryptachain.org/#/)
 
-
 ## dApp Starters
 
 - **dApp Minimal:** [https://github.com/scryptachain/scrypta-dapp-minimal](https://github.com/scryptachain/scrypta-dapp-minimal)

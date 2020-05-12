@@ -105,8 +105,8 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1, 
         children: [
-          '/planum/emissione',
-          '/planum/transazioni',
+          '/planum/come-emettere',
+          '/planum/come-funziona',
           '/planum/software-di-gestione',
           '/planum/point-of-sale',
         ]

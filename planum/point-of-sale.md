@@ -1,4 +1,4 @@
-# Planum Web Point of Sale
+# Planum Point of Sale
 
 La suite si completa grazie ad un Point of Sale che si può usare in abbinamento alle Scrypta Card in versione QR code.
 
