@@ -1,7 +1,50 @@
-# dAPP Starter
+# Scrypta dApp Starter
 
-Scritto in VueJS, crea per te una semplice Progressive Web App collegata con Scrypta Blockchain.
+Scritto in VueJS, ti permette di creare una Progressive Web App collegata con Scrypta Blockchain.
 
-- **dApp Minimal:** [https://github.com/scryptachain/scrypta-dapp-minimal](https://github.com/scryptachain/scrypta-dapp-minimal)
-  
-- **dApp Starter:** [https://github.com/scryptachain/scrypta-dapp-starter](https://github.com/scryptachain/scrypta-dapp-starter)
+Puoi scaricare il codice da qui:
+**dApp Starter:** [https://github.com/scryptachain/scrypta-dapp-starter](https://github.com/scryptachain/scrypta-dapp-starter) e come potrai vedere all'interno è un progetto generato attraverso `@vue/cli`.
+
+## Far partire il progetto in development mode
+
+Per sviluppare il progetto è necessario intanto clonare la repository attraverso il comando:
+
+```
+git clone https://github.com/scryptachain/scrypta-dapp-starter
+```
+
+dopo di che è necessario entrare nella cartella e installare le dipendenze:
+
+```
+cd scrypta-dapp-starter
+npm install
+```
+
+Infine far partire il server di sviluppo:
+```
+npm run serve
+```
+
+## Pagina di login
+
+All'interno dello starter troverai una pagina di login, che permetterà a te e al tuo utente di collegarsi attraverso un file .sid o generarne uno nuovo così da poter interagire con la blockchain.
+
+## Pagina di benvenuto
+
+Una volta fatto il login è possibile interagire con la blockchain di Scrypta attraverso la libreria [Scrypta Core](/core) e quindi leggere, scrivere o interagire con gli IdaNode.
+
+## Layout Grafico
+
+Per il layout grafico è stato scelto https://buefy.org/ che usa il framework `Bulma`. Tutte le dApp Scrypta cercheranno di uniformarsi a tale stile grafico e di UX e sarebbe buona prassi creare dApp quanto più integrate con l'ecosistema.
+
+## Deploy della dApp
+
+Una volta ultimata la dApp questa può essere compilata attraverso il comando: 
+
+```
+npm run build
+```
+
+e caricata su un server online, su un'estensione del browser, su Electron come desktop app etc. La cosa importante da capire è che le dApp effettueranno operazioni ben determinate negli account degli utenti che le attivano e useranno la loro potenza computazionale per effettuare calcoli o compiere altre operazioni.
+
+Qualora si avessero esigenze specifiche dal punto di vista backend, database o altro è chiaro che si può usare il medesimo codice in modo ibrido con un server centrale.
