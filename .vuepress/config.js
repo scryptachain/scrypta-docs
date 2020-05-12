@@ -161,13 +161,15 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1, 
         children: [
+          '/utilities/dapp-composer',
+          '/utilities/dapp-starter',
           '/utilities/card-generator',
           '/utilities/vanity-address',
           '/utilities/p2p-network',
           '/utilities/bootstrap-generator',
           '/utilities/ipfs',
           '/utilities/faucet',
-          '/utilities/dapp-composer',
+          
         ]
       }
     ]

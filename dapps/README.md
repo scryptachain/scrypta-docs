@@ -16,8 +16,3 @@ Questo documento descriverà tutte le dApp realizzate da Scrypta, fornendo sia d
 - **Electio:** [https://electio.app/#/](https://electio.app/#/)
  - **Identity:** [https://me.scrypta.id/](https://me.scrypta.id/)
 - **Proof:** [https://proof.scryptachain.org/#/](https://proof.scryptachain.org/#/)
-
-## dApp Starters
-
-- **dApp Minimal:** [https://github.com/scryptachain/scrypta-dapp-minimal](https://github.com/scryptachain/scrypta-dapp-minimal)
-- **dApp Starter:** [https://github.com/scryptachain/scrypta-dapp-starter](https://github.com/scryptachain/scrypta-dapp-starter)
