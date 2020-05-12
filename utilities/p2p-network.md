@@ -49,7 +49,7 @@ Connected to peer: http://idanodejs02.scryptachain.org:42224
 ```
 Da questo momento in poi è possibile inviare messaggi semplicemente invocando l'endpoint `/broadcast`!
 
-## [POST] /broadcast
+### [POST] /broadcast
 
 Questo endpoint prevede l'invio dell'unico campo **message**. Il messaggio verrà quindi firmato dalla chiave privata e trasformato in JSON con questa formattazione:
 ```

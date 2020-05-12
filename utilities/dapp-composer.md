@@ -1,24 +1,24 @@
-# Scrypta dApp Composer
+# dApp Composer
 
 Questo middleware è scritto in NodeJS usando il framework NestJS e può essere usato per creare un servizio o un software che risponde a determinate API.
 
-Può essere creato, ad esempio, per creare dei ponti di collegamento tra la blockchain ed un backend esistente oppure per creare un servizio ad hoc.
+Può essere implementato, ad esempio, per creare dei ponti di collegamento tra la blockchain ed un backend esistente, oppure per sviluppare un servizio ad hoc.
 
-Questa dApp comunica con gli IdaNode direttamente, attraverso l'utilizzo di `@scrypta/core` e non richiede particolari accorgimenti in fase di start.
+Questa dApp comunica direttamente con gli IdaNode , attraverso l'utilizzo di `@scrypta/core` e non richiede particolari accorgimenti in fase di start.
 
 In via assolutamente esemplificativa possiamo paragonare questo dApp Composer ad uno Smart Contract della rete Ethereum, ovvero una porzione di software che, dopo essersi collegato alla blockchain esegue del codice prestabilito.
 
 Questo software può essere, inoltre, caricato all'interno di un IdaNode (via IPFS) e fatto partire attraverso il dApp engine. Questo utilizzo tutta via è sperimentale e verrà consolidato successivamente.
 
-# Utilizzo
+## Utilizzo
 
 Dopo aver scaricato il codice da qui [https://github.com/scryptachain/scrypta-dapp-composer](https://github.com/scryptachain/scrypta-dapp-composer) è possibile modificare i file contenenti il codice principale oppure estendere il progetto con i propri endpoint. Quelli di default sono i seguenti.
 
-## [GET] /
+### [GET] /
 
 Questo ritornerà il risultato della chiamata `/wallet/getinfo` data al primo IdaNode disponibile.
 
-# [POST] /get
+### [POST] /get
 
 Questo endpoint effettuerà una chiamata `GET` all'endpoint desiderato passando il parametro `endpoint` come specificato in questo esempio:
 ```
@@ -27,7 +27,7 @@ Questo endpoint effettuerà una chiamata `GET` all'endpoint desiderato passando 
 }
 ``` 
 
-# [POST] /post
+### [POST] /post
 
 Questo effettuerà una chiamata `POST` all'endpoint desiderato passando il parametro `endpoint` e il parametro `params` come specificato in questo esempio:
 ```
