@@ -19,6 +19,7 @@ Il file install.sh andrà ad installare tutte le dipendenze per voi, riprendiamo
  - **SERVERMODE**: Stabilisce se il sistema deve installare una Tray Icon nella topbar per chiudere velocemente l'IdaNode. Di default è `false`.
  - **TESTNET**: Stabilisce se l'IdaNode è in modalità testnet oppure no, il valore può essere inserito come `true` o `false`.
  - **LYRADATAFOLDER**: Path che punta alla cartella contenente i file della blockchain di Scrypta. Solitamente è `~/.lyra`. E' fondamentale per avviare correttamente il processo di costruzione del file di bootstrap.
+ - **NODE_KEY**: E' la chiave privata che identifica l'IdaNode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
 
 ## Esempio di installazione
 Per installare l'IdaNode attraverso lo script `install.sh` è necessario usare questi comandi:
@@ -85,9 +86,17 @@ Database and tables are ok.
 Starting block synchronization.
 FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 ```
-
 Ora l'IdaNode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdaNode!
-Il processo di sincronizzazione dura qualche ora se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDgwNTczNSwxNjg5NjU1MTc2XX0=
--->
+Il processo di sincronizzazione dura parecchie ore se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
+
+## Scaricare il bootstrap
+
+Per scaricare il bootstrap ed installarlo è sufficiente dare i permessi al file `bootstrap.sh` e avviarlo:
+
+```
+cd scrypta-idanodejs
+chmod 777 bootstrap.sh
+./bootstrap.sh
+```
+
+Attenzione: è fondamentale che l'IdaNode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.

@@ -6,7 +6,7 @@ module.exports = {
   title: title,
   description: description,
   head: [
-    ['link', { rel: "icon", type: "image/png", href: "/assets/favicon.png"}],
+    ['link', { rel: "icon", type: "image/png", href: "/assets/favicon.png" }],
     ['meta', { prefix: ogprefix, property: 'og:title', content: title }],
     ['meta', { prefix: ogprefix, property: 'twitter:title', content: title }],
     ['meta', { prefix: ogprefix, property: 'og:type', content: 'article' }],
@@ -16,16 +16,16 @@ module.exports = {
   themeConfig: {
     logo: '/assets/scrypta.png',
     nav: [
-        { text: 'Website', link: 'https://scryptachain.org' },
-        { text: 'Github', link: 'https://github.com/scryptachain' },
-        { text: 'Discord', link: 'https://discord.io/scrypta' }
+      { text: 'Website', link: 'https://scryptachain.org' },
+      { text: 'Github', link: 'https://github.com/scryptachain' },
+      { text: 'Discord', link: 'https://discord.io/scrypta' }
     ],
     sidebar: [
       {
-        title: 'General Info',   
-        path: '/general-info/',      
+        title: 'General Info',
+        path: '/general-info/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/general-info/cosa-è',
           '/general-info/link',
@@ -34,10 +34,10 @@ module.exports = {
         ]
       },
       {
-        title: 'White Paper',   
-        path: '/whitepaper/',      
+        title: 'White Paper',
+        path: '/whitepaper/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/whitepaper/prefazione',
           '/whitepaper/la-blockchain-oggi',
@@ -52,22 +52,22 @@ module.exports = {
         ]
       },
       {
-        title: 'Scrypta Full Node',   
-        path: '/scrypta-full-node/',      
+        title: 'Scrypta Full Node',
+        path: '/scrypta-full-node/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/scrypta-full-node/installazione',
           '/scrypta-full-node/data-directory',
           '/scrypta-full-node/comandi',
-          '/scrypta-full-node/testnet', 
+          '/scrypta-full-node/testnet',
         ]
       },
       {
-        title: 'Masternode Setup',   
-        path: '/masternode-setup/',      
+        title: 'Masternode Setup',
+        path: '/masternode-setup/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/masternode-setup/installazione-manuale',
           '/masternode-setup/servizi-hosting',
@@ -75,10 +75,10 @@ module.exports = {
         ]
       },
       {
-        title: 'Staking Setup',   
-        path: '/staking-setup/',      
+        title: 'Staking Setup',
+        path: '/staking-setup/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/staking-setup/desktop-wallet',
           '/staking-setup/on-cloud',
@@ -86,36 +86,36 @@ module.exports = {
         ]
       },
       {
-        title: 'dAPPs',   
-        path: '/dapps/',      
+        title: 'dAPPs',
+        path: '/dapps/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/dapps/manent-app',
           '/dapps/manent-web',
           '/dapps/extension-browser',
           '/dapps/socialpay',
           '/dapps/electio',
-          '/dapps/news', 
+          '/dapps/news',
         ]
       },
       {
-        title: 'Planum',   
-        path: '/planum/',      
+        title: 'Planum',
+        path: '/planum/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/planum/come-emettere',
           '/planum/come-funziona',
           '/planum/software-di-gestione',
           '/planum/point-of-sale',
         ]
-      },                
+      },
       {
-        title: 'Scrypta Core',   
-        path: '/core/',      
+        title: 'Scrypta Core',
+        path: '/core/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/core/gestione-idanode',
           '/core/gestione-cache',
@@ -129,12 +129,13 @@ module.exports = {
         ]
       },
       {
-        title: 'IdANode',   
-        path: '/idanode/',      
+        title: 'IdANode',
+        path: '/idanode/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/idanode/installazione',
+          '/idanode/manutenzione',
           '/idanode/block-explorer',
           '/idanode/progressive-data-management',
           '/idanode/ipfs',
@@ -143,12 +144,12 @@ module.exports = {
           '/idanode/trustlink',
           '/idanode/sidechain',
         ]
-      },        
+      },
       {
-        title: 'ScryptaID',   
-        path: '/id/',      
+        title: 'ScryptaID',
+        path: '/id/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/id/scrypta-identity-framework',
           '/id/scrypta-card-wallet-nfc',
@@ -156,10 +157,10 @@ module.exports = {
         ]
       },
       {
-        title: 'Utilities',   
-        path: '/utilities/',      
+        title: 'Utilities',
+        path: '/utilities/',
         collapsable: true,
-        sidebarDepth: 1, 
+        sidebarDepth: 1,
         children: [
           '/utilities/dapp-composer',
           '/utilities/dapp-starter',
@@ -169,7 +170,7 @@ module.exports = {
           '/utilities/bootstrap-generator',
           '/utilities/ipfs',
           '/utilities/faucet',
-          
+
         ]
       }
     ]
