@@ -31,6 +31,7 @@ module.exports = {
           '/general-info/link',
           '/general-info/exchange',
           '/general-info/faq',
+          '/general-info/contribuisci',
         ]
       },
       {
