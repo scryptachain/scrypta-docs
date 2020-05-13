@@ -1,10 +1,10 @@
 # Soluzioni di Masternode Hosting
 
-## Attivazione Scrypta Masternode tramite TheHub
+### Attivazione Scrypta Masternode tramite TheHub
 
 Attraverso i servizi di hosting offerti da [**The Hub Hosting LTD**](https://thehub.host/) è possibile attivare Scrypta Masternode e COMA Node (Clientless On Cloud Masternode).
 
-### Masternode
+## Masternode
 Grazie all'applicazione web [The Hub](https://thehub.host/), che dialoga con il tuo desktop wallet, il collateral del masternode e le ricompense generate non lasciano mail il tuo computer e sono sempre a tua disposizione
 
 Per avviare un masternode su VPS attraverso il servizio offerto da Kalkulus chiamato: ***Easy Masternode Deployment*** , avrai bisogno di completare alcune operazioni preliminari sul tuo wallet desktop.
@@ -19,7 +19,7 @@ Puoi anche consultare la video guida:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lgmMEgmKUs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### COMA node
+## COMA node
 
 The Hub offre anche un servizio di masternode hosting molto pratico che non necessita di desktop wallet nè di competenze tecniche: *Clientless On Cloud Masternode Service*, grazie al quale l'utente può immediatamente partecipare ai processi di super validazione operato dai masternode e ricevere le spettanti ricompense. 
 
