@@ -3,12 +3,12 @@
 Traduci la Wiki-Guide di Scrypta nella tua lingua e verrai ricompensato con un Masternode (15.000 LYRA).
 
 ## Prenotazione
-Contattaci alla mail **info@scrypta.foundation** per prenotare la traduzione indicando la lingua scelta e il tuo indirizzo di ricezione LYRA. Riceverai entro breve la conferma per cominciare i lavori.
+Contattaci alla mail **info@scrypta.foundation** per prenotare la traduzione indicando la lingua scelta e il tuo indirizzo di ricezione LYRA. Riceverai la conferma per cominciare i lavori.
 
 ## Traduzione
 Clona e traduci l'intera repository, raggiungibile [qui](https://github.com/scryptachain/scrypta-docs).
 
-::: tips NOTA
+::: tip NOTA
 
 E' consigliato lavorare in locale utilizzando editor software come [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
 
