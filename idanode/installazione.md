@@ -98,5 +98,6 @@ cd scrypta-idanodejs
 chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
-
+::: warning ATTENZIONE
 Attenzione: è fondamentale che l'IdaNode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.
+:::
