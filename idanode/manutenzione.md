@@ -12,7 +12,7 @@ Le versioni aggiornate sono disponibili in due diversi posti, ogni versione port
 
 https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw
 
-### Lista checsum Github
+### Lista checksum Github
 
 https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum
 
