@@ -24,11 +24,11 @@ Il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. <br>Le r
 
 ## Lingue disponibili per la traduzione:
 
-- Russo
-- Spagnolo
-- Tedesco
-- Francese
-- Portogese
-- Cinese
-- Giapponese
-- Polacco
+- Español
+- Deutsch
+- Français
+- Русский
+- 日本語
+- 中文
+- Português
+- Polski
