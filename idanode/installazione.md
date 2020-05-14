@@ -1,5 +1,5 @@
 # Installazione
-Installare un IdaNode è abbastanza semplice anche se bisogna stare attenti ad installare tutte le tecnologie richieste. Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
+Installare un IdANode è abbastanza semplice, per prima cosa è necessario installare tutte le tecnologie richieste. Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
 
 Consigliamo il deploy su una macchina che abbia Ubuntu 16.04 con almeno 2GB di RAM.
 
@@ -99,5 +99,5 @@ chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
 ::: warning ATTENZIONE
-Attenzione: è fondamentale che l'IdaNode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.
+E' fondamentale che l'IdANode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.
 :::

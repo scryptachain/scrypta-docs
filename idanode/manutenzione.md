@@ -1,12 +1,14 @@
 # Manutenzione
 
-La manutenzione dell'IdaNode è fondamentale, questo perchè il codice, aggiornato su base giornaliera, subisce modifiche e miglioramenti continui.
+La manutenzione dell'IdANode è fondamentale, questo perchè il codice, aggiornato su base giornaliera, subisce modifiche e miglioramenti continui.
 
-E' fondamentale che regolarmente si accede all'IdaNode e si controlla se la versione è quella aggiornata.
+E' fondamentale che si acceda regolarmente  all'IdANode e si verifichi che la versione sia l'ultima disponibile.
 
-Le versioni aggiornate sono disponibili in due diversi posti, ogni versione porta con se un checksum di controllo sul codice, che verrà confrontato con il tuo IdaNode all'avvio e dai vari servizi di controllo.
+Ogni versione porta con se un *checksum* di controllo sul codice, che verrà confrontato con il tuo IdaNode all'avvio.
 
-**E' fondamentale che il checksum risulti sempre valido, ogni modifica non ufficiale al codice corromperà l'IdaNode e questo non permetterà il collegamento attraverso @scrypta/core.**
+::: warning ATTENZIONE
+E' fondamentale che il *checksum* risulti sempre valido, ogni modifica non ufficiale al codice corromperà l'IdANode e questo non permetterà il collegamento attraverso @scrypta/core.
+:::
 
 ### Lista checksum in Blockchain
 
@@ -16,9 +18,9 @@ https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw
 
 https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum
 
-## Aggiornare l'IdaNode
+## Aggiornare l'IdANode
 
-Per aggiornare l'IdaNode è sufficiente eseguire i seguenti comandi da terminale: 
+Per aggiornare l'IdANode è sufficiente eseguire i seguenti comandi da terminale: 
 
 ```
 cd scrypta-idanodejs
