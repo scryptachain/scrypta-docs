@@ -31,3 +31,4 @@ Il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. <br>Le r
 - Portogese
 - Cinese
 - Giapponese
+- Polacco
