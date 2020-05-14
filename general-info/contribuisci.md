@@ -10,15 +10,15 @@ Clona e traduci l'intera repository, raggiungibile [qui](https://github.com/scry
 
 ::: tip NOTA
 
-E' consigliato lavorare in locale utilizzando editor software come [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
+- E' consigliato lavorare in locale utilizzando editor software come [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
 
-LA Wiki è scritta in [Vue Press](https://vuepress.vuejs.org/guide/) ed utilizza principalmente la tecnica del markdown. 
+- La Wiki è scritta in [Vue Press](https://vuepress.vuejs.org/guide/) ed utilizza principalmente la tecnica del markdown. 
 
 :::
 
 ## Conclusione
 
-Terminata la traduzione ffettua una *Pull Request* sulla [repository](https://github.com/scryptachain/scrypta-docs).
+Terminata la traduzione effettua una *Pull Request* sulla [repository](https://github.com/scryptachain/scrypta-docs).
 
 Il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. <br>Le rewards verranno inviate all'indirizzo da te comunicatoci. 
 
