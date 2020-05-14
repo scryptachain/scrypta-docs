@@ -17,7 +17,10 @@ LA Wiki è scritta in [Vue Press](https://vuepress.vuejs.org/guide/) ed utilizza
 :::
 
 ## Conclusione
-A conclusione il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. Le rewards verranno inviate al''indirizzo da te comunicatoci 
+
+Terminata la traduzione ffettua una *Pull Request* sulla [repository](https://github.com/scryptachain/scrypta-docs).
+
+Il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. <br>Le rewards verranno inviate all'indirizzo da te comunicatoci. 
 
 ## Lingue disponibili per la traduzione:
 
