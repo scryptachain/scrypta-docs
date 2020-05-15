@@ -21,7 +21,7 @@ Per maggiori informazioni consultate la relativa sezione [Directory dei dati](da
 5. Salvare le modifiche nel file lyra.conf;
 6. Avviare lyra-qt (wallet con interfaccia grafica) o lyrad (versione senza interfaccia grafica).
 
-::: tips Nota
+::: tip Nota
  se successivamente desideri avviare il wallet in modalità mainnet, basterà sostituire nel file di configurazione testnet=1 con testenet=0, salvare le modifiche e riavviare il wallet.
  ::::
 
