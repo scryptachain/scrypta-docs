@@ -4,7 +4,7 @@
 
 Il processo di creazione dei token si compone dei seguenti step, gestiti in modo automatico dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node):
 
->Definizione dei campi di Genesi.
+### Definizione dei campi di Genesi.
 - Creazione di un nuovo indirizzo da [IdANode](https://medium.com/developers/ida-node).
 - Creazione del [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
 - Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
