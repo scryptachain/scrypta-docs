@@ -34,3 +34,5 @@ Per creare un bootstrap file è necessario *a IdaNode attivo* avviare il seguent
 ```
 npm run mongodump
 ```
+
+Questo creerà il file `idanode_boostrap.gz` che verrà richiamato dallo script `bootstrap.sh`.
