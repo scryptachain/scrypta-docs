@@ -12,20 +12,27 @@ E' fondamentale che il *checksum* risulti sempre valido, ogni modifica non uffic
 
 ### Lista checksum in Blockchain
 
-https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw
+[https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw](https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw)
 
 ### Lista checksum Github
 
-https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum
+[https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum](https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum)
 
 ## Aggiornare l'IdANode
 
-Per aggiornare l'IdANode è sufficiente eseguire i seguenti comandi da terminale: 
+Per aggiornare l'IdANode è sufficiente eseguire il seguente comando da terminale:
 
 ```
 cd scrypta-idanodejs
-pm2 stop npm
-git pull
-npm run build
-pm2 start npm
+npm run update
 ```
+
+## Creare un bootstrap file
+
+Per creare un bootstrap file è necessario *a IdaNode attivo* avviare il seguente comando:
+
+```
+npm run mongodump
+```
+
+Questo creerà il file `idanode_boostrap.gz` che verrà richiamato dallo script `bootstrap.sh`.
