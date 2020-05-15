@@ -59,6 +59,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           '/scrypta-full-node/installazione',
+          '/scrypta-full-node/setup',
           '/scrypta-full-node/data-directory',
           '/scrypta-full-node/comandi',
           '/scrypta-full-node/testnet',
