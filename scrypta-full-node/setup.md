@@ -145,28 +145,35 @@ Per maggiore sicurezza scegliete una password forte, con dieci o piu' caratteri,
 Assicuratevi di ricordare la password e di conservarla SEMPRE in un luogo sicuro.
 Una volta scelta la password, in modo che sia impossibile da indovinare e molto difficile da corrompere, procedete con l'encryption premendo **OK**.
 
-::: alert <img src=".././.vuepress/public/assets/icons/alert.svg" width="32"><br>
-se dimenticate o smarrite la password dopo l'encryption, perderete tutti i vostri fondi.
+::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
+**ATTENZIONE:** Se dimenticate o smarrite la password dopo l'encryption, perderete l'acesso a tutti i vostri fondi.
 :::
 
-Note: se dimenticate o smarrite la password dopo l'encryption, perderete tutti i vostri fondi.
+Al termine dell'operazione di encryption, il software si chiuderà.
+<br>Al successivo riavvio, il wallet presenterà stavolta il simbolo di un lucchetto chiuso nell'angolo in basso a destra.
+<br>![qt_wallet](../.vuepress/public/assets/qt_wallet/lock.png)
+<br>Ciò indica che per effettuare operazioni come lo staking, l'invio dei fondi, il dump delle chiavi private o altre funzioni principali, dovete sempe procedere prima con l'unlock del wallet.
 
-Al termine dell'operazione di encryption, il software si riavvierà, presentando stavolta il simbolo di un lucchetto chiuso nell'angolo in basso a destra.
-Ciò indica che per effettuare operazioni come lo staking o l'invio dei fondi, il dump delle chiavi private o altre funzioni principali, dovete sempe procedere prima con l'unlock del wallet.
+## Lock/Unlock wallet
+Per sbloccare il wallet, bisogna inserire la passphrase che abbiamo usato per effettuare l'encryption.
+Dal menu **SETTINGS** scegliamo **UNLOCK WALLET**, si aprirà quindi la finestra come da immagine:
+<br>![qt_wallet](../.vuepress/public/assets/qt_wallet/unlock.png)
 
+Inserire la passphrase e premere **OK**.
+<br>Flaggando l'opzione *"For anonymization and staking only"*, il wallet verrà sbloccato solo per lo staking e il processo di obfuscation.
+A questo punto il vostro wallet e' sbloccato per tutte le operazioni,e tale stato è indicato dal lucchett verde nell'angolo in basso.
+<br>![qt_wallet](../.vuepress/public/assets/qt_wallet/unlocked.png)
 
-### Lock/Unlock wallet
+## Wallet Backup
+Dopo aver completato il processo di encryption, procediamo con l'effettuare una copia di backup del nostro **wallet.dat** appena cryptato, il file che contiene tutte le informazioni del nostro portafoglio digitale e tutti gli indirizzi con le rispettive chiavi private.
+<br>Per procedere col backup, dal menu **FILE"** andate su **"BACKUP WALLET"**, scegliete un nome e il percorso su cui salvare il backup del file wallet.dat, in un luogo sicuro.
+
+::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"><br>
+**ATTENZIONE:** Questa copia di backup vi permetterà di recuperare i vostri fondi semplicemente importando il file wallet.dat su un altro client Scrypta, per cui custoditelo con estrema attenzione e cautela.
+:::
 
 
 ### Debug Console
-
-### Wallet Backup
-After encryption its backup. Whenever you create a new receiving address make sure to backup your wallet. Creating a wallet backup is very simple and on most wallets it can usually be found under file or settings.
-
-creating wallet backup
-
-Create a name for backup, choose the location where you wish to save this backup and click on save. It will save as wallet.dat file. In case if your hard drive gets corrupt you can import this wallet.dat file to another computer and restore your funds.
-
 
 ### Dump private key
 
@@ -176,11 +183,4 @@ Create a name for backup, choose the location where you wish to save this backup
 
 ### Instant Send
 
-
-
-
-
-## Bootstrap
-
-
-
+### Bootstrap
