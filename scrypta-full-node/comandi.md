@@ -1,6 +1,6 @@
 # Lista dei Comandi
 
-I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla ***Debug Console*** (*Tools menu*).
+I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
 
 ::: tip
 Nella versione client è necessario chiamare tutti questi comandi preceduti da `./lyra-cli`
