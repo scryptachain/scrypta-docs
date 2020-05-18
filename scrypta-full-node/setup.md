@@ -38,7 +38,11 @@ Prima di esplorare queste funzionalità, di seguito forniremo una breve descrizi
 La prima cosa da fare è scaricare il Wallet Ufficiale Scrypta dal [repository di Github](https://github.com/scryptachain/scrypta/releases) adatta al vostro sistema operativo.
 
 Una volta scaricato il software, avviate **Lyra-QT**. 
-![qt_wallet](../.vuepress/public/assets/qt_wallet/splash.png)
+![qt_wallet](../.vuepress/public/assets/qt_wallet/splash.png).
+
+Per maggiori informazioni in merito all'installazione, puoi visitare questo link:
+
+[Installazione](installazione.md)
 
 
 
@@ -51,13 +55,17 @@ Confermate il percorso propostovi dal software o modificatelo a vostra scelta e 
 Di default, è possibile trovare la cartella di sistema ai seguenti percorsi (verificare che sia necessario disabilitare le cartelle nascoste):
 
 **Linux:**
-~/.bitcoin/
+~/.lyra/
 
 **MacOS:**
-~/Library/Application Support/Bitcoin/
+~/Library/Application Support/lyra/
 
 **Windows:**
-%APPDATA%\Bitcoin
+%APPDATA%\lyra
+
+Per un approfondimento sulla data directory, puoi consultare la seguente sezione:
+
+[Data Directory](data-directory.md)
 
 
 ### Sincronizzazione con la blockchain Scrypta
@@ -66,7 +74,7 @@ Dopo che il processo di avvio del wallet si è concluso, il client si collegher�
 
 Sulla parte bassa del software troverete una barra che indica la quantità di dati rimanente per completare il sync.
 ![qt_wallet](../.vuepress/public/assets/qt_wallet/sync.png)
-Quando quella barra sarà completata, il wallet sarà completamente syncat alla blockchain.
+Quando quella barra sarà completata, il wallet sarà completamente sincronizzato.
 
 Nella parte bassa a destra invece troverete questi simboli
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/status.png)
@@ -83,16 +91,16 @@ Poichè verranno scaricati parecchi dati, assicuratevi di avere sufficiente spaz
 <br>A seconda della velocità della connessione, per completare la sincronizzazione potrebbe volerci molto tempo.
 :::
 
-Una volta che la sincronizzazione è stata completata, indicata dal simbolo nell'angolo in basso a destra, il vostro client è connesso alla blockchain ed è pronto sia per scambiare transazioni con altri client desktop/app della rete Scrypta che per permetterci di effettuare tutte le operazioni sopra riportate.
+Una volta che la sincronizzazione è stata completata, indicata dal simbolo nell'angolo in basso a destra, il vostro client è connesso alla blockchain ed è pronto sia per scambiare transazioni con altri client desktop/app della rete Scrypta sia per permetterci di effettuare tutte le operazioni sopra riportate.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/status.png)
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"><br>
 Nel caso in cui il wallet non riesce a sincronizzare in automatico e a collegarsi alla lista dei nodi, è possibile forzare la sincronizzazione aggiungendo manualmente una lista di nodi al file **lyra.conf** che troverete nella cartella di sistema.
 :::
 
-Per ottenere una lista aggiornata di nodi, andare nel blockexplorer e cliccare su ["node list":](https://chainz.cryptoid.info/klks/#!network).
+Per ottenere una lista aggiornata di nodi, andare nel blockexplorer e cliccare su ["node list":](https://chainz.cryptoid.info/lyra/#!network).
 <br>Copiare il contenuto della tabella e incollarlo nel file **lyra.conf**. 
-Quindi salvate il file e riavviate il wallet. La sincronizzazione dovrebbe adesso partire senza ulteriori problemi.
+Quindi salvate il file e riavviate il wallet. La sincronizzazione dovrebbe adesso avviarsi senza ulteriori problemi.
 
 ## Panoramica dei menu
 
@@ -132,7 +140,7 @@ Attraverso i menu' presenti sulla barra di sistema del software, si hanno altre 
 <br>
 
 - **Menu TOOLS**
-<br>Attraverso il menu **TOOLS** si raggiungono funzioni di monitoraggio del network, l'importantissima [***console di debug***](../scrypta-full-node/setup.html#debug-console) (il terminale interno del vostro wallet Scrypta da cui è possibile inviare comandi per interrogare direttamente il network), e altre opzioni che vi permettono di raggiungere facilmente i file di sistema .conf del wallet.
+<br>Attraverso il menu **TOOLS** si raggiungono funzioni di monitoraggio del network, l'importantissima [***console di debug***](../scrypta-full-node/setup.html#debug-console) (il terminale interno del vostro wallet Scrypta da cui è possibile inviare comandi per interrogare direttamente il network), e altre opzioni che vi permettono di raggiungere facilmente i file di sistema *.conf* del wallet.
 
 
 ## Wallet Encryption
@@ -153,7 +161,7 @@ Per maggiore sicurezza scegliete una password forte, con dieci o piu' caratteri,
 Assicuratevi di ricordare la password e di conservarla SEMPRE in un luogo sicuro.
 :::
 
-Una volta scelta la password, in modo che sia impossibile da indovinare e molto difficile da corrompere, procedete con l'encryption premendo **OK**.
+Una volta scelta la password, in modo che sia difficile da corrompere, procedete con l'encryption premendo **OK**.
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
 **ATTENZIONE:** Se dimenticate o smarrite la password dopo l'encryption, perderete l'acesso a tutti i vostri fondi.
@@ -188,7 +196,12 @@ La debug console del QT wallet di Scrypta è un utilissimo strumento dal quale s
 Accessibile dal menu **"STRUMENTI"** > **"CONSOLE DI DEBUG"**, si presenta come una finestra di terminale.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/console.png)
 
-Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](../scrypta-full-node/comandi.md)
+Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](../scrypta-full-node/comandi.md).
+
+Per una spiegazione esaustiva di tutti i comandi consultate la sezione:
+
+[Lista dei Comandi](comandi.md)
+
 <br>Attraverso la *debug console* è possibile interrogare direttamente la blockchain sullo stato del network, di una transazione, dei masternodes, oppure si possono creare transazioni manuali, settare impostazioni operative o di sicurezza, generare nuovi indirizzi, ma soprattutto gestire le chiavi private e il wallet stesso.
 
 Vediamo di seguito le principali operazioni sulle chiavi private.
@@ -218,7 +231,7 @@ Si consiglia di effettuare sempre backup ridondanti sulle chiavi private, nonch�
 ### Dump delle chiavi private
 
 Per effettuare il dump di una chiave privata per uno specifico indirizzo è sufficiente aprire la debug console come spiegato in precedenza.
-<br>Il comando per esportare la chiave privata di un indirizzo è **dumpprivkey**.
+<br>Il comando per esportare la chiave privata di un indirizzo è `**dumpprivkey**`.
 <br>Attraverso il comando **`dumpprivkey "lyraaddress"`** ci viene  rivelata la chiave privata corrispondente all'indirizzo "lyraaddress".
 
 
@@ -239,20 +252,20 @@ Se siamo in possesso di una chiave privata e vogliamo procedere alla sua importa
 **`importprivkey "lyraprivkey"`** che scannerizza la blokchchain per quello specifico indirizzo, visualizza e rende disponibile il balance dell'indirizzo corrispondente al possessore della chiave privata.
 
 ### Dump dell'intero wallet
-Attraverso la funzione **"dump wallet"** si effettua l'export completo di tutte le chiavi private per tutti gli indirizzi (siano essi già stati usati o meno) generati dal vostro wallet e salvati in formato cryptato all'interno del file **wallet.dat**.
+Attraverso la funzione `**dump wallet**` si effettua l'export completo di tutte le chiavi private per tutti gli indirizzi (siano essi già stati usati o meno) generati dal vostro wallet e salvati in formato cryptato all'interno del file ***wallet.dat***.
 
-A tal proposito è bene fare una precisazione: l'operazione di **"dump wallet"** presenta delle differenze con l'operazione descritta in precedenza nella sezione [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), in quanto il backup salva la copia cryptata del file wallet.dat.
-<br>Ripristinando il file **"wallet.dat"** avremo la possibilità di importare e visualizzare il contenuto dell'intero wallet, ma non potremo in alcun modo accedere ai fondi in esso contenuti senza avere la password di encryption per decifrare il portafoglio.
-<br>Con il comando **"dump wallet"** andiamo ad esportare un file di testo **non cryptato** che contiene la lista completa di tutti gli indirizzi creati dal wallet con tutte le corrispondenti chiavi private, pertanto il possessore di quel file sarà in possesso di tutti i fondi in esso contenuti.
+A tal proposito è bene fare una precisazione: l'operazione di `**dump wallet**` presenta delle differenze con l'operazione descritta in precedenza nella sezione [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), in quanto il backup salva la copia cryptata del file wallet.dat.
+<br>Ripristinando il file ***wallet.dat*** avremo la possibilità di importare e visualizzare il contenuto dell'intero wallet, ma non potremo in alcun modo accedere ai fondi in esso contenuti senza avere la password di encryption per decifrare il portafoglio.
+<br>Con il comando `**dump wallet**` andiamo ad esportare un file di testo **non cryptato** che contiene la lista completa di tutti gli indirizzi creati dal wallet con tutte le corrispondenti chiavi private, pertanto il possessore di quel file sarà in possesso di tutti i fondi in esso contenuti.
 <br>Ecco perchè, prima di procedere, era importante spiegare la differenza che c'è tra i due tipi di backup, così da poter comprendere quando bisogna utilizzare una modalità piuttosto che un'altra.
 
 #### Per effettuare il "dump wallet":
-Per procedere all'export di tutte le chiavi private attraverso il comando **"dump wallet"**, è sufficiente aprire la debug console come spiegato in precedenza e dare il comando:
+Per procedere all'export di tutte le chiavi private attraverso il comando `**dump wallet**`, è sufficiente aprire la debug console come spiegato in precedenza e dare il comando:
 <br>**`dumpwallet "path/to/file/dump.txt"`**
  
  dove "path/to/file" è il percorso dove vogliamo che il sistema salvi il nostro file, e "dump.txt" è il nome di esempio del nostro file, contenente tutte le chiavi private.
 
- Aprendo il file "dump.txt" appena salvato, vedremo qualcosa di simile a quanto riportato in figura: una parte iniziale con un report su quando il file e' stato esportato e da quale wallet, e tutta la lista delle chiavi private (che iniziano per S) e dei rispettivi indirizzi.
+ Aprendo il file ***dump.txt*** appena salvato, vedremo qualcosa di simile a quanto riportato in figura: una parte iniziale con un report su quando il file e' stato esportato e da quale wallet, e tutta la lista delle chiavi private (che iniziano per S) e dei rispettivi indirizzi.
  <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/dump.png)
 
  ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
@@ -260,7 +273,7 @@ Per procedere all'export di tutte le chiavi private attraverso il comando **"dum
 :::
 
 I dati contenuti in quel file vengono generati quando si avvia il wallet per la sua prima volta, assieme al file wallet.dat.
-<br>Al primo avvio, il sistema genera casualmente 1000 indirizzi casuali e le corrispondenti chiavi private, e le salva per i futuri utilizzi.
+<br>Al primo avvio, il sistema genera 1000 indirizzi casuali e le corrispondenti chiavi private, e le salva per i futuri utilizzi.
 <br>Ogni volta che richiediamo un nuovo indirizzo con **"getnewaddress"**, il sistema attinge a quella lista di indirizzi pre-generati per fornirci un indirizzo da usare.
 
 
@@ -278,7 +291,7 @@ Il bootstrap è solitamente composto da:
 Per salvare una copia di bootstrap da riutilizzare in un secondo momento basta salvare quanto indicato sopra in un file zip e salvarlo per successivi utilizzi, meglio se online.
 Si raccomanda di effettuare il salvataggio del bootstrap quando il wallet è chiuso, così da preservare l'integrità dei files e delle cartelle.
 
-Una volta salvato, se dovese essere necessario utilizzarlo, basta copiare ll contenuto del bootstrap all'interno della cartella di sistema **.lyra** nel vostro sistema operativo o VPS.
+Una volta salvato, se dovese essere necessario utilizzarlo, basta copiare ll contenuto del bootstrap all'interno della cartella di sistema ***.lyra*** nel vostro sistema operativo o VPS.
 Al successivo riavvio, il wallet riprenderà la sincronizzazione dall'ultimo blocco salvato nel vostro bootstrap.
 
 ## Funzionalità aggiuntive
