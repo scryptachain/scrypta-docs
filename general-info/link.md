@@ -1,6 +1,6 @@
-# Link utili
+# Link Utili
 
-## Official websites
+## Official Websites
 
 [Scrypta Blockchain](http://scryptachain.org/)
 

@@ -1,4 +1,4 @@
-# Gestione indirizzi
+# Gestione Indirizzi
 ## createAddress(password, saveKey = true)
 
 Crea un indirizzo e salva il payload (di default) nel localStorage. Se al secondo parametro viene passato `false` il metodo non salva il payload nel localStorage.

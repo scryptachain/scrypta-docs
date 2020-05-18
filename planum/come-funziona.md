@@ -1,4 +1,4 @@
-# Come funziona
+# Come Funziona
 
 ## Uno sguardo più approfondito sulla tecnologia sidechain
 

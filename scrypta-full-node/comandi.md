@@ -1,4 +1,4 @@
-# Lista dei comandi
+# Lista dei Comandi
 
 I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla ***Debug Console*** (*Tools menu*).
 

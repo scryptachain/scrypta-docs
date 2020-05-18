@@ -1,4 +1,4 @@
-# Block explorer
+# Block Explorer
 
 Le funzionalità di block explorer servono principalmente alle dApp e ai client per creare le transazioni. Alcune di queste chiamate possono anche essere usate per analizzare lo staking di un indirizzo oppure di un masternode. Avere un block explorer sempre aggiornato è fondamentale per creare dApp funzionanti perchè senza non sarebbe possibile creare le transazioni. 
 

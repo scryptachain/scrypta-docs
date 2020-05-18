@@ -1,4 +1,4 @@
-# Software di gestione
+# Software di Gestione
 
 ## Planum Admin Tool
 Per amministrare una sidechain Planum è possibile utilizzare il seguente tool:

@@ -1,4 +1,4 @@
-# Come emettere il proprio Token 
+# Come Emettere il Proprio Token 
 ### Planum: dalla creazione alla gestione degli asset digitali
 
 Accedendo alla piattaforma attraverso [https://planum.dev](https://planum.dev) sarà possibile creare il proprio token oppure consultare l’explorer per i token già esistenti.

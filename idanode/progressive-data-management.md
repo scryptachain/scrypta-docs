@@ -1,4 +1,4 @@
-# Progressive data management
+# Progressive Data Management
 
 Questi endpoint rappresentano il cuore delle funzionalità degli IdANode. 
 La scrittura, ma soprattutto la lettura, delle informazioni scritte sulla blockchain rappresentano le due funzionalità chiave dello sviluppo di qualsiasi dApp.
