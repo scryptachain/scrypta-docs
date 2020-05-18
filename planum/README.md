@@ -5,7 +5,7 @@ Sidechain Layer open-source e permissionless che fornisce a chiunque un’interf
 
 ![planum](../.vuepress/public/assets/planum/planum.jpeg)
 
-“Planum”, accessibile tramite il link https://planum.dev, è un layer parallelo alla blockchain di Scrypta che consente di emettere la propria risorsa tokenizzata, archiviarla, gestirla e proteggerla utilizzando la stessa rete blockchain di IdaNode Scrypta.
+“Planum”, accessibile tramite il link https://planum.dev, è un layer parallelo alla blockchain di Scrypta che consente di emettere la propria risorsa tokenizzata, archiviarla, gestirla e proteggerla utilizzando la stessa rete blockchain di IdANode Scrypta.
 Qualsiasi “tokenized asset”, una volta generato con le proprie metriche, ha il suo ciclo di vita indipendente in un livello di sidechain protetto, che opera attraverso la blockchain di Scrypta, e in futuro potrà essere scambiato con LYRA e tutti gli altri token.
 
 ## Cos'è la "Tokenizzazione"

@@ -31,7 +31,7 @@ All'interno dello starter troverai una pagina di login che permetterà a te e al
 
 ## Pagina di benvenuto
 
-Una volta effettuato il login è possibile interagire con la blockchain di Scrypta attraverso la libreria [Scrypta Core](/core) e quindi leggere, scrivere o interagire con gli [IdaNode](/idanode/README.md).
+Una volta effettuato il login è possibile interagire con la blockchain di Scrypta attraverso la libreria [Scrypta Core](/core) e quindi leggere, scrivere o interagire con gli [IdANode](/idanode/README.md).
 
 ## Layout Grafico
 

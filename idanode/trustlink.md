@@ -12,7 +12,7 @@ Nella concezione di Scrypta, che ha scelto di chiamare questi indirizzi TrustLin
 
 Parliamo di *contratti* in termini decisamente differenti da quelli usati di solito. I *contratti* che noi intendiamo sono degli accordi scritti (o dei file) che vengono contestualmente firmati da tutti i partecipanti al Trustlink. In nessun caso parleremo di *smart contracts*, almeno non nell'accezione di *programma per elaboratore*. Il programma che esegue il contratto, nel nostro caso, è a tutti gli effetti la blockchain, tramite l'operazione di firma multipla.
 
-Tutte le operazioni relative ai Trustlink vengono effettuate all'interno degli IdaNode, elencheremo ora tutti gli endpoint:
+Tutte le operazioni relative ai Trustlink vengono effettuate all'interno degli IdANode, elencheremo ora tutti gli endpoint:
 
 ## [POST] /trustlink/init
 
@@ -21,7 +21,7 @@ Questo endpoint serve a generare il Trustlink partendo dalle chiavi pubbliche de
 I campi da inviare saranno quindi i seguenti:
 
  - **addresses**: un elenco separato da virgole contenente le chiavi pubbliche degli indirizzi.
- - **airdrop**: può essere *true* o *false* e serve ad inviare la prima transazione di inizializzazione dell'importo inserito all'interno del file *.env* dell'IdaNode. Di default è **0.05 LYRA**.
+ - **airdrop**: può essere *true* o *false* e serve ad inviare la prima transazione di inizializzazione dell'importo inserito all'interno del file *.env* dell'IdANode. Di default è **0.05 LYRA**.
 
 Il risultato finale sarà qualcosa simile a questo:
 ```
@@ -57,7 +57,7 @@ Ecco la lista dei possibili campi:
 - **refID:** l'id di riferimento che si vuole utilizzare per classificare l'informazione.
 - **uuid:** l'identificativo unico assegnato dall'IdANode per aggiornare un determinato dato.
 
-Il funzionamento è analogo a quanto già descritto, consigliamo quindi di andare a vedere la pagina relativa nella sezione *IdaNode > Progressive Data Management*
+Il funzionamento è analogo a quanto già descritto, consigliamo quindi di andare a vedere la pagina relativa nella sezione *IdANode > Progressive Data Management*
 
 ##  [POST] /trustlink/send
 
@@ -85,7 +85,7 @@ La risposta sarà qualcosa del genere in caso di invio positivo:
 ## [POST] /trustlink/invalidate
 
 Viene utilizzato per invalidare un dato, i parametri necessari affinché l'operazione vada a buon fine sono:
-- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdaNode nella fase di scrittura iniziale.
+- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdANode nella fase di scrittura iniziale.
 -  **private_keys [obbligatorio]:** chiave privata dell'indirizzo che ha scritto l'informazione.
 - **trustlink [obbligatorio]:** l'indirizzo che ha scritto l'informazione.
 - **redeemScript [obbligatorio]:** la stessa stringa ritornata nell'operazione di creazione del trustlink.

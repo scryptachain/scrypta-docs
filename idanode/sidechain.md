@@ -1,6 +1,6 @@
 # Sidechain
 
-Il protocollo Sidechain di Scrypta è descritto nella sezione apposita . Vediamo qui come interagire con le Sidechain attraverso gli enpoint dell'IdaNode.
+Il protocollo Sidechain di Scrypta è descritto nella sezione apposita . Vediamo qui come interagire con le Sidechain attraverso gli enpoint dell'IdANode.
 
 ## [POST] /sidechain/issue
 
@@ -43,7 +43,7 @@ Tramite questo enpoint è possibile inviare i token in proprio possesso ad un al
 - **pubkey**: la chiave pubblica dell'indirizzo che invia i token
 - **sidechain_address**: l'indirizzo della sidechain
 - **to**: l'indirizzo che riceverà i token
-- **amount**: l'ammontare da inviare, si ricorda di rispettare la divisione dei decimali in quanto l'IdaNode arrotonda la cifra per assicurarsi dell'esattezza edell'operazion;  uneventuale diffr comporta l'invio di un ammontare arrotondato, quindi diverso da quello richiesto.
+- **amount**: l'ammontare da inviare, si ricorda di rispettare la divisione dei decimali in quanto l'IdANode arrotonda la cifra per assicurarsi dell'esattezza edell'operazion;  uneventuale diffr comporta l'invio di un ammontare arrotondato, quindi diverso da quello richiesto.
 
 Come potete notare, la risposta è molto simile a quella di scrittura di qualsiasi altro dato:
 

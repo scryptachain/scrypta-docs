@@ -4,11 +4,11 @@ Questo middleware è scritto in NodeJS usando il framework NestJS e può essere 
 
 Può essere implementato, ad esempio, per creare dei ponti di collegamento tra la blockchain ed un backend esistente, oppure per sviluppare un servizio ad hoc.
 
-Questa dApp comunica direttamente con gli IdaNode , attraverso l'utilizzo di `@scrypta/core` e non richiede particolari accorgimenti in fase di start.
+Questa dApp comunica direttamente con gli IdANode , attraverso l'utilizzo di `@scrypta/core` e non richiede particolari accorgimenti in fase di start.
 
 In via assolutamente esemplificativa possiamo paragonare questo dApp Composer ad uno Smart Contract della rete Ethereum, ovvero una porzione di software che, dopo essersi collegato alla blockchain esegue del codice prestabilito.
 
-Questo software può essere, inoltre, caricato all'interno di un IdaNode (via IPFS) e fatto partire attraverso il dApp engine. Questo utilizzo tutta via è sperimentale e verrà consolidato successivamente.
+Questo software può essere, inoltre, caricato all'interno di un IdANode (via IPFS) e fatto partire attraverso il dApp engine. Questo utilizzo tutta via è sperimentale e verrà consolidato successivamente.
 
 ## Utilizzo
 
@@ -16,7 +16,7 @@ Dopo aver scaricato il codice da qui [https://github.com/scryptachain/scrypta-da
 
 ### [GET] /
 
-Questo ritornerà il risultato della chiamata `/wallet/getinfo` data al primo IdaNode disponibile.
+Questo ritornerà il risultato della chiamata `/wallet/getinfo` data al primo IdANode disponibile.
 
 ### [POST] /get
 

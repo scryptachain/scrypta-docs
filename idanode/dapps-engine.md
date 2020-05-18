@@ -1,8 +1,8 @@
 # dApps Engine
 
-dApps Engine è il sistema attraverso cui caricare le dApp (Applicazioni Decentralizzate) direttamente sulla blockchain. Se pur in uno stato assolutamente _alpha_, l'engine permette di caricare (lato IdaNode) ed eseguire (lato client) del codice e delle dApp.
+dApps Engine è il sistema attraverso cui caricare le dApp (Applicazioni Decentralizzate) direttamente sulla blockchain. Se pur in uno stato assolutamente _alpha_, l'engine permette di caricare (lato IdANode) ed eseguire (lato client) del codice e delle dApp.
 
-La filosofia di Scrypta è quella di avviare le dApp direttamente nel dispositivo dell'utente, così da non sovraccaricare la rete (se pur capiente) ed evitare i colli di bottiglia che ne deriverebbero dall'uso di potenza computazionale "cloud" in larga scala . Di fatto l'idea è che i nodi debbano interfacciarsi con la Blockchain e le dApp debbano essere eseguite dai dispositivi. L'interazione tra i due avviene appunto grazie agli IdaNode, che permettono le operazioni di lettura e scrittura e che, in realtà, possono sempre essere avviati localmente.
+La filosofia di Scrypta è quella di avviare le dApp direttamente nel dispositivo dell'utente, così da non sovraccaricare la rete (se pur capiente) ed evitare i colli di bottiglia che ne deriverebbero dall'uso di potenza computazionale "cloud" in larga scala . Di fatto l'idea è che i nodi debbano interfacciarsi con la Blockchain e le dApp debbano essere eseguite dai dispositivi. L'interazione tra i due avviene appunto grazie agli IdANode, che permettono le operazioni di lettura e scrittura e che, in realtà, possono sempre essere avviati localmente.
 
 Le dApp, in effetti, vengono caricate su IPFS, e la cartella contenente i file viene scritta sulla blockchain. Essendo la cartella rappresentata da un hash, questa cambierà ogni volta che vengono fatte delle modifiche. Queste modifiche possono essere a sua volta scritte  nello stesso indirizzo, così da avere una sorta di versioning consultabile sulla blockchain.  L'effettiva autenticità dell'aggiornamento risiede nel fatto che solamente lo sviluppatore avrà la chiave privata dell'indirizzo.
 
@@ -15,7 +15,7 @@ https://github.com/scryptachain/scrypta-dapps-engine
 ## [POST] /upload
 
 L'unico endpoint disponibile, al momento, è quello di `upload` delle dApp e consta di due passaggi:
-1) Caricamento della cartella con i file sull'IdaNode.
+1) Caricamento della cartella con i file sull'IdANode.
 2) Salvataggio della transazione contenente l'informazione della dApp.
 
 Queste operazioni potrebbero essere effettuate tramite gli endpoint dedicati `/ipfs/upload` e `/write`.

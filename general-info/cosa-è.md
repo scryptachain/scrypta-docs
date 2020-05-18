@@ -7,7 +7,7 @@ Scrypta è una **blockchain permissionless**, decentralizzata e pubblica. Il suo
 
 I blocchi vengono estratti dagli stakers ogni minuto, questo garantisce un "timeframe" rapido per l'esecuzione di transazioni e la scrittura di informazioni. Ogni blocco può contenere un massimo di 1MB di informazioni. La capacità di ogni singola transazione di contenere dati arbitrari (attraverso l'OP_RETURN) è di 8000 byte.
 
-Il team di Scrypta ha sviluppato un secondo layer di funzionamento, attraverso gli **IdaNode**, che permette (in via facilitata, ma non esclusiva) la gestione di informazioni arbitrarie attraverso quello che abbiamo definito: **Progressive Data Management** (PDM). Il PDM permette operazioni di lettura, scrittura e invalidazione, che a sua volta costituiscono l'essenza di ogni applicazione (decentralizzata o meno).
+Il team di Scrypta ha sviluppato un secondo layer di funzionamento, attraverso gli **IdANode**, che permette (in via facilitata, ma non esclusiva) la gestione di informazioni arbitrarie attraverso quello che abbiamo definito: **Progressive Data Management** (PDM). Il PDM permette operazioni di lettura, scrittura e invalidazione, che a sua volta costituiscono l'essenza di ogni applicazione (decentralizzata o meno).
 
 Questa documentazione comprende lo stato attuale delle librerie open-source attualmente sviluppate da Scrypta Foundation ed il loro sistema di funzionamento, per ulteriori chiarimenti potete contattarci inviando una mail a: info@scryptachain.org o unendovi al nostro canale [Discord](https://discord.me/scryptachain).
 
@@ -20,13 +20,13 @@ Questa documentazione comprende lo stato attuale delle librerie open-source attu
 
 L'ecosistema di Scrypta si basa su **cinque pilastri** fondamentali grazie ai quali si possono sviluppare applicazioni decentralizzate più o meno complesse, che interagiscono a vari livelli con la Blockchain:
 
--   **Scrypta Core:** è la libreria javascript principale. Permette la creazione e la gestione dei file .sid, la firma delle transazioni e dei dati, e l'interfacciamento di base con gli IdaNode.
+-   **Scrypta Core:** è la libreria javascript principale. Permette la creazione e la gestione dei file .sid, la firma delle transazioni e dei dati, e l'interfacciamento di base con gli IdANode.
     
--   **Scrypta IdaNode:** è la libreria NodeJS necessaria per sviluppare i nodi di interfacciamento con la blockchain, questi nodi svolgono svariate funzioni tra cui: block explorer, tracciamento degli UTXO e archiviazione dei file su sistema IPFS (Interplanetary File System).
+-   **Scrypta IdANode:** è la libreria NodeJS necessaria per sviluppare i nodi di interfacciamento con la blockchain, questi nodi svolgono svariate funzioni tra cui: block explorer, tracciamento degli UTXO e archiviazione dei file su sistema IPFS (Interplanetary File System).
     
 -   **Scrypta Identity Framework:** è la libreria NodeJS che gestisce l'interazione tra le identità digitali esterne e gli indirizzi della blockchain di Scrypta. Grazie al framework è possibile identificare e "marchiare" gli indirizzi Lyra avvalendosi di vari provider esterni.
     
--   **Scrypta Trustlink:** integrato all'interno degli IdaNode, il Trustlink è un meccanismo grazie al quale è possibile creare dei wallet detti "multisignature" che prevedono l'obbligo della compresenza di più firme per eseguire transazioni e quindi scritture di dati.
+-   **Scrypta Trustlink:** integrato all'interno degli IdANode, il Trustlink è un meccanismo grazie al quale è possibile creare dei wallet detti "multisignature" che prevedono l'obbligo della compresenza di più firme per eseguire transazioni e quindi scritture di dati.
 
 -   **Scrypta Planum:** è la soluzione per favorire processi di tokenizzazione: un sistema di sidechain aperto e permissionless che permette di creare, scambiare e tracciare i propri asset digitali (tokenized asset) unicamente attraverso la blockchain di Scrypta.
     

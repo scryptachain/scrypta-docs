@@ -3,7 +3,7 @@ Tramite questi metodi è possibile scrivere, aggiornare ed invalidare dati all'i
 
 ## write(password, metadata, collection = '', refID = '', protocol = '', key = '', uuid = '')
 
-Permette di scrivere una quantità indefinita di dati all'interno del proprio indirizzo. Questi dati verranno processati dagli IdaNode e potranno essere letti invocando delle API.
+Permette di scrivere una quantità indefinita di dati all'interno del proprio indirizzo. Questi dati verranno processati dagli IdANode e potranno essere letti invocando delle API.
 
 Ecco i parametri che è possibile impostare:
 
@@ -11,9 +11,9 @@ Ecco i parametri che è possibile impostare:
     
 -   **metadata:** i dati che si vogliono scrivere, sotto forma di stringa. Non c'è un limite di caratteri in quanto vengono concatenate più transazioni. E' chiaro che la maggiore lunghezza comporta un dispendio maggiore di LYRA. E' da sottolineare, chiaramente, che concatenare un gran numero di transazioni è sconsigliato in quanto anche il fallimento di una singola transazione renderebbe invalido l'intero dato.
     
--   **collection:** un parametro che permette di catalogare i dati all'interno di una collezione. Utile per strutturare i dati, questo parametro può essere usato come filtro durante la lettura dei dati dagli IdaNode.
+-   **collection:** un parametro che permette di catalogare i dati all'interno di una collezione. Utile per strutturare i dati, questo parametro può essere usato come filtro durante la lettura dei dati dagli IdANode.
     
--   **refID:** un parametro che permette di dare un'unica referenza al dato, una sorta di ID aggiuntivo che è possibile filtrare, sempre dagli IdaNode.
+-   **refID:** un parametro che permette di dare un'unica referenza al dato, una sorta di ID aggiuntivo che è possibile filtrare, sempre dagli IdANode.
     
 -   **protocol:** altra tipologia di filtro, viene usato per definire i protocolli e quindi la tipologia di dati inseriti. Scrypta ha ad esempio utilizzato i protocolli **E://** per i dati criptati, **I://** per l'identità, eccetera. Non c'è un vincolo di qualche tipo nell'utilizzo di protocolli.
     
@@ -23,7 +23,7 @@ Ecco i parametri che è possibile impostare:
 
 Il metodo ritornerà un oggetto contenente una serie di informazioni:
 
--   **uuid:** l'identificatore univoco (uuid/v4) generato dall'IdaNode per identificare lo specifico dato oppure quello passato nel metodo.
+-   **uuid:** l'identificatore univoco (uuid/v4) generato dall'IdANode per identificare lo specifico dato oppure quello passato nel metodo.
     
 -   **address:** l'indirizzo dove è stata scritta l'informazione.
     
@@ -89,11 +89,11 @@ var protocol =  ''
 
 Questo metodo richiama il precedente ed è un alias, in questo però il campo uuid è obbligatorio, utile per verificare che non venga effettivamente creato un dato doppione. 
 
-Occorre precisare che l'update di dati presenti in blockchain **non** è una sovrascrittura, tutte le transazioni sono **immutabili**. Di fatto l'operazione che viene fatta è quella di aggiornamento sequenziale del dato. In caso di dati aggiornati l'IdaNode restituirà sempre e comunque l'ultimo anche se lo storico può essere recuperato passando il parametro _history=**true**_ in fase di lettura. 
+Occorre precisare che l'update di dati presenti in blockchain **non** è una sovrascrittura, tutte le transazioni sono **immutabili**. Di fatto l'operazione che viene fatta è quella di aggiornamento sequenziale del dato. In caso di dati aggiornati l'IdANode restituirà sempre e comunque l'ultimo anche se lo storico può essere recuperato passando il parametro _history=**true**_ in fase di lettura. 
 
 ## invalidate(password, key  =  '', uuid)
 
-Questo metodo, come quello sopra, richiama sempre l'operazione di scrittura. In questo caso il dato scritto è sempre composto dall'**UUID** e dall'informazione **END**. Questa verrà interpretata dall'IdaNode come un dato da **non** mostrare in fase di lettura. Come già specificato però le informazioni **non** possono essere cancellate dalla blockchain e possono essere recuperate dagli stessi IdaNode passando il parametro _history=**true**_ in fase di lettura. 
+Questo metodo, come quello sopra, richiama sempre l'operazione di scrittura. In questo caso il dato scritto è sempre composto dall'**UUID** e dall'informazione **END**. Questa verrà interpretata dall'IdANode come un dato da **non** mostrare in fase di lettura. Come già specificato però le informazioni **non** possono essere cancellate dalla blockchain e possono essere recuperate dagli stessi IdANode passando il parametro _history=**true**_ in fase di lettura. 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTE1MTc4MjkwOF19
 -->

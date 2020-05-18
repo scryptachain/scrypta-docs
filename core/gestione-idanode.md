@@ -47,7 +47,7 @@ let node =  await scrypta.connectNode()
 
 ## post(endpoint, params, node = '')
 
-Effettua una chiamata `POST` al primo IdaNode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
+Effettua una chiamata `POST` al primo IdANode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
 
 Ad esempio si può utilizzare in questo modo per ottenere e leggere i dati inseriti in blockchain da uno specifico indirizzo:
 
@@ -57,7 +57,7 @@ let response = await scrypta.post('/read', { address: "LbR8m1kkLSiiTDaEU8sHeeeh1
 
 ## get(endpoint, node = '')
 
-Effettua una chiamata `GET` al primo IdaNode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
+Effettua una chiamata `GET` al primo IdANode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
 
 Ad esempio si può utilizzare in questo modo per ottenere e leggere i dati relativi al wallet.
 

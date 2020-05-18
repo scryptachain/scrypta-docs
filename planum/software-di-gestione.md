@@ -11,10 +11,10 @@ Attenzione, questo tool è veramente base e permette semplicemente di annotare i
 
 ## Controllo funzionalità
 
-Per controllare la corretta funzionalità della sidechain presso gli IdaNode è possibile utilizzare il seguente tool: 
+Per controllare la corretta funzionalità della sidechain presso gli IdANode è possibile utilizzare il seguente tool: 
 
 [https://github.com/scryptachain/scrypta-planum-check-service](https://github.com/scryptachain/scrypta-planum-admin)
 
 Per configurarlo bisogna semplicemente collegare la giusta sidechain attraverso il file `.env` e far partire il controllo attraverso il comando `npm start`. 
 
-Questo controllerà che la supply sia sempre la stessa in tutti gli IdaNode disponibili, in caso contrario chiederà all'IdaNode di effettuare una verifica sulla sidechain stessa.
+Questo controllerà che la supply sia sempre la stessa in tutti gli IdANode disponibili, in caso contrario chiederà all'IdANode di effettuare una verifica sulla sidechain stessa.

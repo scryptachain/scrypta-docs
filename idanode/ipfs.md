@@ -1,7 +1,7 @@
 # IPFS (Interplanetary File System).
  IPFS è uno dei file system distribuiti, decentralizzati, più importanti che sia mai stato creato dopo Torrent. E' fondamentale, prima di iniziare a sviluppare con IPFS, consultare la documentazione ufficiale reperibile al seguente link: [https://ipfs.io/](https://ipfs.io/).
 
-La versione IPFS che abbiamo incluso negli IdaNode è in Javascript. Il repository è il seguente: [https://github.com/ipfs/js-ipfs](https://github.com/ipfs/js-ipfs).
+La versione IPFS che abbiamo incluso negli IdANode è in Javascript. Il repository è il seguente: [https://github.com/ipfs/js-ipfs](https://github.com/ipfs/js-ipfs).
 
 Scrypta ha deciso di favorire l'utilizzo di IPFS creando degli endpoint che accettano in ingresso (POST) i file inviati via form-data oppure sotto forma di Buffer.
 

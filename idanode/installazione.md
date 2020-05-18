@@ -15,14 +15,14 @@ Il file install.sh andrà ad installare tutte le dipendenze per voi, riprendiamo
  - **DB_HOST**: Deve essere `localhost` se il database è installato all'interno della stessa macchina. Deve essere inserito l'eventuale indirizzo IP di una macchina esterna.
  - **COIN**: Di default è `LYRA`, da cambiare per eventuali integrazioni con altre blockchain
  - **SYNC**: Di default è `true` e serve ad attivare o disattivare la sincronizzazione automatica. Si può disabilitare per motivi di debug
- - **AIRDROP**: La quantità di Lyra che l'IdaNode invia ogni qualvolta viene inizializzato un indirizzo
- - **SERVERMODE**: Stabilisce se il sistema deve installare una Tray Icon nella topbar per chiudere velocemente l'IdaNode. Di default è `false`.
- - **TESTNET**: Stabilisce se l'IdaNode è in modalità testnet oppure no, il valore può essere inserito come `true` o `false`.
+ - **AIRDROP**: La quantità di Lyra che l'IdANode invia ogni qualvolta viene inizializzato un indirizzo
+ - **SERVERMODE**: Stabilisce se il sistema deve installare una Tray Icon nella topbar per chiudere velocemente l'IdANode. Di default è `false`.
+ - **TESTNET**: Stabilisce se l'IdANode è in modalità testnet oppure no, il valore può essere inserito come `true` o `false`.
  - **LYRADATAFOLDER**: Path che punta alla cartella contenente i file della blockchain di Scrypta. Solitamente è `~/.lyra`. E' fondamentale per avviare correttamente il processo di costruzione del file di bootstrap.
- - **NODE_KEY**: E' la chiave privata che identifica l'IdaNode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
+ - **NODE_KEY**: E' la chiave privata che identifica l'IdANode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
 
 ## Esempio di installazione
-Per installare l'IdaNode attraverso lo script `install.sh` è necessario usare questi comandi:
+Per installare l'IdANode attraverso lo script `install.sh` è necessario usare questi comandi:
 ```
 cd ~
 git clone https://github.com/scryptachain/scrypta-idanodejs
@@ -46,7 +46,7 @@ LYRAPATH=/home/YourLinuxUser/scrypta-idanodejs
 A questo punto siamo pronti a testare la nostra configurazione attraverso il comando `npm run dev`.
 Se tutto va bene vedremo un risultato simile a questo:
 ```
-Scrypta IdaNode listening at port 3001. Public IP is: 37.161.46.223
+Scrypta IdANode listening at port 3001. Public IP is: 37.161.46.223
 LYRA wallet successfully connected.
 Database connected successfully.
 Starting database check.
@@ -86,7 +86,7 @@ Database and tables are ok.
 Starting block synchronization.
 FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 ```
-Ora l'IdaNode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdaNode!
+Ora l'IdANode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdANode!
 Il processo di sincronizzazione dura parecchie ore se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
 
 ## Scaricare il bootstrap

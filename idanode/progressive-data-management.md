@@ -5,7 +5,7 @@ La scrittura, ma soprattutto la lettura, delle informazioni scritte sulla blockc
 
 Ricordiamo che la scrittura di dati arbitrari è permessa grazie all' **OP_RETURN**, che permette di inserire 8000 byte di dati su qualunque transazione. E' importante capire che gli output marcati con OP_RETURN sono delle transazioni **non** spendibili, infatti vengono spese le sole fee di **0.001 LYRA** per ogni transazione, ovvero per ogni 8000 byte.
 
-Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdaNode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
+Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdANode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
 
 ## Operazioni possibili
 
@@ -34,7 +34,7 @@ Come abbiamo potuto osservare sulla documentazione relativa a Scrypta Core, abbi
 - **protocol:** definisce un protocollo, solitamente interpretato dalla dApp.
 - **uuid:** identificativo unico _assegnato_ in fase di scrittura. Questo uuid è fondamentale per le operazioni di **aggiornamento** ed **invalidazione** in quanto deve essere passato agli endpoint.
 
-Un quarto tipo di filtro è l'_invio_, che però non viene considerato in egual modo alle operazioni di scrittura/aggiornamento/invalidazione dall'IdaNode.
+Un quarto tipo di filtro è l'_invio_, che però non viene considerato in egual modo alle operazioni di scrittura/aggiornamento/invalidazione dall'IdANode.
 Per operazioni di invio si intende la singola transazione con OP_RETURN da un indirizzo verso un **altro** indirizzo. Questa è limitata ad un massimo di 80 byte e il contenuto non viene formattato secondo lo standard di cui sopra. Come possiamo vedere nell'esempio di seguito non viene assegnato un UUID e non possono essere filtrati gli elementi per Collection, RefID, Protocol.
 Chiaramente però è presente un campo **sender** che definisce chi ha inviato il dato. Questa tipologia di dati è utile nell'elaborazione di dApp che prevedono l'interscambio di informazioni tra due o più indirizzi come mostrato nel nostro Proof of Concept della piattaforma di voto.
 
@@ -103,7 +103,7 @@ Ecco la lista dei possibili parametri:
 ## [POST] /invalidate
 
 Viene utilizzato per invalidare un dato, i parametri necessari affinché l'operazione vada a buon fine sono:
-- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdaNode nella fase di scrittura iniziale.
+- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdANode nella fase di scrittura iniziale.
 -  **private_key [obbligatorio]:** chiave privata dell'indirizzo che ha scritto l'informazione.
 - **dapp_address [obbligatorio]:** l'indirizzo che ha scritto l'informazione.
 

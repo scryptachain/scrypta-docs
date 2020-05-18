@@ -11,19 +11,19 @@ Il processo di creazione dei token si compone dei seguenti step, gestiti in modo
 - Scrittura su blockchain della transazione di Genesi.
 - Invio dell’intera token supply dal [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) al creatore della sidechain.
 
-Con [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdaNode richiamato per la creazione dell’asset tokenizzato.
+Con [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
 Per garantire l’unicità, l’orizzontalità e la non replicabilità della sidechain, l’indirizzo viene generato *on-the-fly* e la sua chiave privata viene distrutta immediatamente dopo aver scritto la prima transazione di genesi.
 
 Nel momento in cui il Trustlink trasferisce l’intera token supply all’owner, sara’ possibile inviare transazioni usando la prima transazione come USXO, il corrispondente dell’UTXO ma relativo alle sidechain).
 
-> Ci siamo quindi focalizzati a creare una replica del sistema di UTXO usando la blockchain di Scrypta come database e delegando la validazione delle transazioni direttamente agli [IdANodes](https://medium.com/developers/ida-node) e agli altri client come [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
+> Ci siamo quindi focalizzati a creare una replica del sistema di UTXO usando la blockchain di Scrypta come database e delegando la validazione delle transazioni direttamente agli [IdANode](https://medium.com/developers/ida-node) e agli altri client come [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
 Tutte le informazioni immesse e scritte nella blockchain sono validate dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node) e rese disponibili dal database degli stessi [IdANode](https://wiki.scryptachain.org/developers/ida-node), proprio come le altre informazioni.
 
 ## Emissione di un nuovo token
 
 Uno dei primi problemi affrontati nel protocollo Sidechain di Scrypta riguarda l'unicità del token e di conseguenza l'emissione sicura del token stesso. L'unicità del token non può chiaramente essere demandata all'utente-creatore, poichè potrebbe in modo malevolo cercare di "copiare" un altro token per controllarne i balance.
 
-La risoluzione a questo primo problema è avvenuta introducendo il Trustlink nel processo di creazione. Il Trustlink viene fatto tra l'utente che vuole emettere il token ed l'IdaNode che viene invocato. Per garantire l'unicità, l'orizzontalità e la non replicabilità delle Sidechain abbiamo deciso di generare questo indirizzo *on-the-fly* e bruciare la chiave privata subito dopo la scrittura della prima transazione di genesi.
+La risoluzione a questo primo problema è avvenuta introducendo il Trustlink nel processo di creazione. Il Trustlink viene fatto tra l'utente che vuole emettere il token ed l'IdANode che viene invocato. Per garantire l'unicità, l'orizzontalità e la non replicabilità delle Sidechain abbiamo deciso di generare questo indirizzo *on-the-fly* e bruciare la chiave privata subito dopo la scrittura della prima transazione di genesi.
 
 ### Genesis transaction
 
@@ -44,7 +44,7 @@ E' possibile testare l'emissione di una sidechain direttamente via interfaccia a
 Il processo di creazione prevede i seguenti passaggi: 
 
  1. Definizione campi di genesi
- 2. Creazione di un nuovo indirizzo da parte dell'IdaNode
+ 2. Creazione di un nuovo indirizzo da parte dell'IdANode
  3. Creazione del Trustlink
  4. Invio di un minimo di 1 LYRA da parte dell'owner al trustlink
  5. Scrittura sulla blockchain della transazione di genesi
@@ -126,7 +126,7 @@ Ecco la risposta tipica dell'IdANode a seguito della creazione di un nuovo token
 
 Qualora avessimo stabilito che il token è a supply indeterminata, è possibile per l'owner creare delle transazioni simili a quella di genesi per riemettere il token in un secondo momento. La scelta di creare un token a supply fissa o variabile è unicamente affidata all'utente e questa impostazione non potrà essere cambiata in un secondo momento.
 
-Il processo di riemissione del token è molto semplice, bisogna richiamare l'endpoint `/sidechain/reissue` come descritto all'interno della sezione riguardante gli IdaNode, inviando i seguenti campi:
+Il processo di riemissione del token è molto semplice, bisogna richiamare l'endpoint `/sidechain/reissue` come descritto all'interno della sezione riguardante gli IdANode, inviando i seguenti campi:
 
 - **dapp_address**: L'indirizzo dell'owner.
  - **sidechain_address**: L'indirizzo della sidechain.
@@ -261,7 +261,7 @@ Una tipica transazione dovrà contenere le seguenti proprietà:
 
 Questo payload verrà quindi firmato con la chiave privata dell'indirizzo mittente e ne verrà fatto l'hash. Queste informazioni verranno quindi scritte a corredo della transazione all'interno della blockchain madre.
 
-Se tutto è corretto, e la transazione passa le validazioni degli IdaNode, saranno annullati tutti gli unspent inseriti in input e verranno creati due diversi output, uno per il ricevente e uno per il mittente con il cambio.
+Se tutto è corretto, e la transazione passa le validazioni degli IdANode, saranno annullati tutti gli unspent inseriti in input e verranno creati due diversi output, uno per il ricevente e uno per il mittente con il cambio.
 
 Ecco un esempio di transazione correttamente inviata al network:
 

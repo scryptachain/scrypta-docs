@@ -1,6 +1,6 @@
 # P2P Network
 
-La rete degli IdaNode è collegata, grazie alla libreria `socket.io`, ad una seconda rete peer-to-peer che permette di inviare e ricevere messaggi firmati crittograficamente dagli indirizzi. Per poter utilizzare questa rete è necessario inizializzarla, di seguito tutti i metodi relativi.
+La rete degli IdANode è collegata, grazie alla libreria `socket.io`, ad una seconda rete peer-to-peer che permette di inviare e ricevere messaggi firmati crittograficamente dagli indirizzi. Per poter utilizzare questa rete è necessario inizializzarla, di seguito tutti i metodi relativi.
 
 ## connectP2P(key, password, callback)
 
@@ -24,4 +24,4 @@ setTimeout(function(){
 
 ## broadcast(key, password, protocol, message, socketID = '', nodeID = '')
 
-Questo metodo permette di inviare messaggi all'interno network (client e IdaNode) e va utilizzato come visto in precedenza. E' possibile personalizzare il protocollo, che di default è `message` oppure inviare a specifici nodi o socket.
+Questo metodo permette di inviare messaggi all'interno network (client e IdANode) e va utilizzato come visto in precedenza. E' possibile personalizzare il protocollo, che di default è `message` oppure inviare a specifici nodi o socket.

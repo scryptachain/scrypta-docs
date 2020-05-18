@@ -81,7 +81,7 @@ Questa chiamata è simile alla precedente, passato il numero di blocco nell'url 
 Analizza il blocco definito dal parametro `block` inserito nell'URL.
 
 ## [GET] /resync/:block
-Fa partire la sincronizzazione dell'IdaNode dal blocco definito dal parametro `block` inserito nell'URL. E' consigliabile effettuare l'operazione in momenti di inattività dell'IdaNode.
+Fa partire la sincronizzazione dell'IdANode dal blocco definito dal parametro `block` inserito nell'URL. E' consigliabile effettuare l'operazione in momenti di inattività dell'IdANode.
 
 ## [GET] /transactions/:address
 Ritorna tutte le transazioni effettuate da uno specifico indirizzo, passato attraverso l'url. La risposta sarà un array di oggetti contenenti tutte le transazioni dell'indirizzo, ecco un esempio:

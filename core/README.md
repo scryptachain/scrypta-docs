@@ -12,7 +12,7 @@ La gestione locale dei file .sid avviene di default attraverso il localStorage s
 
 ## Per iniziare
 
-La libreria Scrypta Core mette in collegamento il client con uno degli IdaNode disponibili di Scrypta. Questi nodi tuttavia possono essere personalizzati e sovrascritti in fase di inizializzazione così da utilizzare un set di IdaNode personalizzati, consigliato soprattutto in fase di produzione di una dApp.
+La libreria Scrypta Core mette in collegamento il client con uno degli IdANode disponibili di Scrypta. Questi nodi tuttavia possono essere personalizzati e sovrascritti in fase di inizializzazione così da utilizzare un set di IdANode personalizzati, consigliato soprattutto in fase di produzione di una dApp.
 
 In questa sezione analizzeremo a fondo il funzionamento di ogni singolo metodo presente all'interno della libreria. La libreria si deve inserire all'interno di webpack o di altri compilatori per utilizzarla all'interno di una pagina web, oppure può essere richiamata direttamente da NodeJS semplicmente installlandola con:
 
@@ -57,7 +57,7 @@ let scrypta = new ScryptaCore(true)
 scrypta.testnet = true
 ```
 
-Da questo momento sia gli indirizzi che gli IdaNode saranno di testnet.
+Da questo momento sia gli indirizzi che gli IdANode saranno di testnet.
 
 ## Test e debug della libreria
 

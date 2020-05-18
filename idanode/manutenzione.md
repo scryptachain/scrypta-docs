@@ -4,7 +4,7 @@ La manutenzione dell'IdANode è fondamentale, questo perchè il codice, aggiorna
 
 E' fondamentale che si acceda regolarmente  all'IdANode e si verifichi che la versione sia l'ultima disponibile.
 
-Ogni versione porta con se un *checksum* di controllo sul codice, che verrà confrontato con il tuo IdaNode all'avvio.
+Ogni versione porta con se un *checksum* di controllo sul codice, che verrà confrontato con il tuo IdANode all'avvio.
 
 ::: warning ATTENZIONE
 E' fondamentale che il *checksum* risulti sempre valido, ogni modifica non ufficiale al codice corromperà l'IdANode e questo non permetterà il collegamento attraverso @scrypta/core.
@@ -29,7 +29,7 @@ npm run update
 
 ## Creare un bootstrap file
 
-Per creare un bootstrap file è necessario *a IdaNode attivo* avviare il seguente comando:
+Per creare un bootstrap file è necessario *a IdANode attivo* avviare il seguente comando:
 
 ```
 npm run mongodump

@@ -7,7 +7,7 @@ Questo strumento è ancora in fase di sviluppo ed è carente di alcune funzional
 
 In via del tutto teorica, questo tool andrebbe accoppiato ad una dApp, poichè ogni volta che viene ricevuto un messaggio questo viene rimandato ad un hook, definito nel file `.env`.
 
-Questo tool in futuro è nativamente inserito negli IdaNodeJS, in modo che tutti gli IdaNode possano comunicare tra di loro e permettere le comunicazioni tra vari client. Per interagire con la rete degli IdaNode è necessario utilizzare ScryptaCore o le chiamate specifiche dell'IdaNode stesso.
+Questo tool in futuro è nativamente inserito negli IdANodeJS, in modo che tutti gli IdANode possano comunicare tra di loro e permettere le comunicazioni tra vari client. Per interagire con la rete degli IdANode è necessario utilizzare ScryptaCore o le chiamate specifiche dell'IdANode stesso.
 
 La tecnologia di base utilizzata è quella di [https://socket.io/](https://socket.io/).
 
@@ -74,7 +74,7 @@ Chiunque riceve il messaggio, prima di far partire la relativa chiamata post ver
 
 Questo tool può servire per qualsiasi applicazione abbia bisogno di scambiare informazioni verificate in tempo reale. Unito a tutte le altre tecnologie Scrypta, questo tool permette l'effettivo invio di informazioni da fonti certificate e, volendo, crittografando le informazioni con le chiavi RSA, è possibile inviare informazioni assolutamente private in tempo reale.
 
-E' importante sottolineare che **nessuna** informazione viene salvata nè dagli IdaNode, nè dall'engine. Questo significa che i messaggi non possono essere recuperati e solo i peer connessi possono visualizzarli. Questa scelta architetturale si basa sulla volontà di creare un sistema snello, che non si sovraccarichi nel tempo, demandando l'effettiva necessità di storage dei messaggi agli sviluppatori che vorranno usufruirne.
+E' importante sottolineare che **nessuna** informazione viene salvata nè dagli IdANode, nè dall'engine. Questo significa che i messaggi non possono essere recuperati e solo i peer connessi possono visualizzarli. Questa scelta architetturale si basa sulla volontà di creare un sistema snello, che non si sovraccarichi nel tempo, demandando l'effettiva necessità di storage dei messaggi agli sviluppatori che vorranno usufruirne.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTE3OTc3NTU4XX0=
 -->

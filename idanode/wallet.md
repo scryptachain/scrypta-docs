@@ -3,7 +3,7 @@
 Le operazioni legate al wallet sono assimilabili a quelle di Scrypta Core o del Qt-Wallet. In generale è possibile sempre richiamare le funzioni RPC del wallet, anche se non tutte le chiamate sono specificate come endpoint.
 
 ## Crypto.ts
-Il modulo responsabile di tutte le operazioni di interfacciamento si trova in `src/libs/Crypto.ts`. Questo permette di richiamare qualsiasi funzione RPC attraverso il metodo `request`. Sono presenti svariati altri metodi che vengono chiamati internamente e che è possibile analizzare direttamente. Vale la pena descrivere il metodo `request` in quanto è fondamentale nel caso in cui si voglia estendere la funzionalità dell'IdaNode.
+Il modulo responsabile di tutte le operazioni di interfacciamento si trova in `src/libs/Crypto.ts`. Questo permette di richiamare qualsiasi funzione RPC attraverso il metodo `request`. Sono presenti svariati altri metodi che vengono chiamati internamente e che è possibile analizzare direttamente. Vale la pena descrivere il metodo `request` in quanto è fondamentale nel caso in cui si voglia estendere la funzionalità dell'IdANode.
 
 ### request(method, params  = [])
 
@@ -23,9 +23,9 @@ let address = await wallet.request('getnewaddress')
 Questo endpoint serve ad inizializzare un indirizzo. In termini strettamente blockchain questa operazione non ha un risvolto particolare. Un indirizzo esiste in quanto generato (l'operazione avviene offline) e non necessita di fondi per compiere operazioni legate alla firma.
 
 Tuttavia può essere necessario "inizializzarlo", ovvero rendere nota la sua esistenza in un determinato momento nel tempo, inviando dei fondi. 
-La quantità di fondi inviata è decisa a monte, all'interno del file _.env_ . Negli IdaNode di Scrypta ammonta a **0.05 LYRA**.
+La quantità di fondi inviata è decisa a monte, all'interno del file _.env_ . Negli IdANode di Scrypta ammonta a **0.05 LYRA**.
 
-La chiamata ammette il solo campo **address** e risponderà con la _txid_ relativa ,se vengono effettivamente inviati dei fondi. L'operazione potrebbe fallire se nell'IdaNode non sono presenti abbastanza fondi per inviare la transazione.
+La chiamata ammette il solo campo **address** e risponderà con la _txid_ relativa ,se vengono effettivamente inviati dei fondi. L'operazione potrebbe fallire se nell'IdANode non sono presenti abbastanza fondi per inviare la transazione.
 
 Ecco un esempio di risposta: 
 ```
@@ -44,15 +44,15 @@ Ecco un esempio di risposta:
 }
 ```
 
-**N.B** questa chiamata non può essere richiamata più di una volta per IdaNode in quanto viene tenuto un registro interno.
+**N.B** questa chiamata non può essere richiamata più di una volta per IdANode in quanto viene tenuto un registro interno.
 
 ##  [GET] /getnewaddress/:internal
 
 Permette di generare un nuovo indirizzo e ne restituisce la chiave privata e la chiave pubblica.
 
-_E' sconsigliato usare questa funzione se l'IdaNode è pubblico su Internet. Sarebbe più corretto generare gli indirizzi offline o lato client attraverso la libreria Scrypta Core._
+_E' sconsigliato usare questa funzione se l'IdANode è pubblico su Internet. Sarebbe più corretto generare gli indirizzi offline o lato client attraverso la libreria Scrypta Core._
 
-Il parametro **internal**, che è opzionale, permette di generare degli indirizzi interni all'IdaNode; cioè indirizzi che vengono salvati all'interno del wallet.dat (Il file del wallet di Scrypta).
+Il parametro **internal**, che è opzionale, permette di generare degli indirizzi interni all'IdANode; cioè indirizzi che vengono salvati all'interno del wallet.dat (Il file del wallet di Scrypta).
 
 ```
 {
@@ -64,7 +64,7 @@ Il parametro **internal**, che è opzionale, permette di generare degli indirizz
 ```
 
 ## [POST] /send
-Permette di inviare dei fondi direttamente dall'IdaNode, specificando i seguenti parametri:
+Permette di inviare dei fondi direttamente dall'IdANode, specificando i seguenti parametri:
 - **from**: l'indirizzo che intende inviare i fondi
 - **to**: l'indirizzo a cui volete mandare i fondi
 - **amount**: l'ammontare che si intende inviare

@@ -88,7 +88,7 @@ La chiave pubblica e l'indirizzo pubblico sono due entità separate. L'indirizzo
 
 ## initAddress(address)
 
-Questo metodo inizializza l'indirizzo, ovvero fa sì che un IdaNode disponibile invii una minima quantità di LYRA all'indirizzo inizializzato. Nel caso degli IdaNode Scrypta la quantità è di **0.05 LYRA**. La risposta che si ottiene dall'IdaNode comprende la TXID della transazione.
+Questo metodo inizializza l'indirizzo, ovvero fa sì che un IdaNode disponibile invii una minima quantità di LYRA all'indirizzo inizializzato. Nel caso degli IdANode Scrypta la quantità è di **0.05 LYRA**. La risposta che si ottiene dall'IdANode comprende la TXID della transazione.
 ```
 const scrypta = new ScryptaCore
 
