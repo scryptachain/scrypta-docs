@@ -169,6 +169,7 @@ module.exports = {
           '/utilities/card-generator',
           '/utilities/vanity-address',
           '/utilities/p2p-network',
+          '/utilities/versioning',
           '/utilities/bootstrap-generator',
           '/utilities/ipfs',
           '/utilities/faucet',
