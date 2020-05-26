@@ -1,16 +1,16 @@
 # Exchanges
 
-Gli Exchanges  sono i luoghi virtuali più popolari per scambiare criptovaluta. Esiste una vasta gamma di exchange, ognuno con caratteristiche leggermente diverse. Alcuni offrono molteplici mercati, alcuni sono in concorrenza diretta, alcuni hanno commissioni più economiche e altri sono soggetti a requisiti normativi più o meno rigidi.
+Exchanges are the most popular virtual places to trade cryptocurrency. There is a wide range of exchanges, each with slightly different characteristics. Some offer multiple markets, some are in direct competition, some have cheaper commissions and others are subject to more or less rigid regulatory requirements.
 
-La maggior parte degli exchange è di tipo centralizzato, nel senso che è gestito da un'unica società, che può essere obbligata dalle leggi della giurisdizione in cui opera a raccogliere dati sui propri clienti. Altri sono decentralizzati, dove di conseguenza stai trattando peer-to-peer anziché con un'entità più o meno autorizzata.
+Most exchanges are centralized, meaning that they are managed by a single company, which can be forced by the laws of the jurisdiction in which it operates to collect data on its customers. Others are decentralized, where as a result you are dealing with peer-to-peer rather than with a more or less authorized entity.
 
-Gli exchange inoltre possono essere ulteriormente suddivisi in due categorie: exchange che accettano valuta nazionale (moneta legale) e exchange che trattano solo in criptovalute.
+The exchanges can also be further divided into two categories: exchanges that accept national currency (legal currency) and exchanges that only deal in cryptocurrencies.
 
 ::: danger
-Per motivi di sicurezza, gli exchange non devono essere utilizzati come portafogli elettronici. Gli exchange sono per il trading, non per la conservazione delle criptovalute.
+For security reasons, exchanges should not be used as electronic wallets. Exchanges are for trading, not for storing cryptocurrencies.
 :::
 
-Al momento è possibile scambiare LYRA su: 
+It is currently possible to exchange LYRA on:
 ## Mercatox
 [LYRA/BTC](https://mercatox.com/exchange/LYRA/BTC)
 
