@@ -18,7 +18,7 @@ Clone and translate the entire repository, reachable [here](https://github.com/s
 
 ## Conclusion
 
-Once the translation is complete, make a * Pull Request * on the relative one [repository](https://github.com/scryptachain/scrypta-docs).
+Once the translation is complete, make a **Pull Request** on the relative one [repository](https://github.com/scryptachain/scrypta-docs).
 
 The work will be analyzed and uploaded to the official Scrypta github. <br> The rewards will be sent to the address you have communicated to us.
 
