@@ -1,23 +1,23 @@
-# The Guide to the Scrypta ecosystem
+# La Guida all'ecosistema Scrypta
 
 ![banner](./.vuepress/public/assets/other/scrypta-banner.png)
 
 
-The Scrypta Wiki-Guide provides a comprehensive overview of the Scrypta ecosystem. Use the navigation panel on the left side of this page to select the documentation you wish to read.
+La Wiki-Guide di Scrypta fornisce una panoramica completa dell'ecosistema Scrypta. Utilizzate il pannello di navigazione sul lato sinistro di questa pagina per selezionare la documentazione che desiderate leggere.
 
-For a brief overview of the Scrypta ecosystem we recommend you consult the section:
+Per una panoramica sintetica dell'ecosistema Scrypta vi consigliamo di consultare la sezione:
 
-[General Info](general-info/cosa-è.md)
+[Informazioni Generali](general-info/cosa-è.md)
 
-Alternatively, start immediately with Scrypta by installing the **LYRA Wallet** (Full Node) or **Manent APP** (Light Wallet):
+In alternativa, inizia subito con Scrypta installando il **LYRA Wallet** (Full Node) o **Manent APP** (Light Wallet):
 
-[How to install the LYRA Wallet](scrypta-full-node/installazione.md)
+[Come installare il LYRA Wallet](scrypta-full-node/installazione.md)
 
 [Manent APP](dapps/manent-app.md)
 
 [Manent Web](dapps/manent-web.md)
 
-Finally, remember that with Scrypta it is possible to create and manage ***Tokenized Asset*** thanks to sidechain technology **Planum**, if you are interested in this aspect, consult this section:
+Ricordiamo infine che con Scrypta è possibile creare e gestire dei ***Tokenized Asset*** grazie alla tecnologia sidechain **Planum**, se sei interessato a questo aspetto, consulta questa sezione:
 
 [**Planum** - Sidechain Layer](planum/README.md)
 
