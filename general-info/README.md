@@ -1,11 +1,11 @@
-# Informazioni Generali
+# General Info
 
-In questa sezione troverai alcune **informazioni generali** sull'ecosistema Scypta, una lista di **link utili**, alcune informazioni sugli **exchange** in cui è possibile venedere e acquistare LYRA e infine alcune **FAQ generiche** sulla blockchain di Scrypta. 
+In this section you will find some ** general information ** about the Scypta ecosystem, a list of ** useful links **, some information on ** exchanges ** where you can come and buy LYRA and finally some ** general FAQs * * on the Scrypta blockchain.
 
-[**Cosa è Scrypta**](../general-info/cosa-è.md)
+[**What is Scrypta**](../general-info/cosa-è.md)
 
-[**Link Utili**](../general-info/link.md)
+[**Useful Links**](../general-info/link.md)
 
 [**Exchanges** - buy and sell LYRA]((../general-info/exchange.md))
 
-[**Domande Frequenti**]((../general-info/faq.md))
+[**FAQ**]((../general-info/faq.md))
