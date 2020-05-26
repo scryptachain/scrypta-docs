@@ -1,28 +1,28 @@
-# Contribuisci
+# Contribute
 
-Traduci la Wiki-Guide di Scrypta nella tua lingua e verrai ricompensato con 7500 LYRA.
+Translate the Scrypta Wiki-Guide into your language and you will be rewarded with 7500 LYRA.
 
-## Prenotazione
-Contattaci alla mail **info@scrypta.foundation** per prenotare la traduzione indicando la lingua scelta e il tuo indirizzo di ricezione LYRA. Riceverai la conferma per cominciare i lavori.
+## Reservation
+Contact us at **info@scrypta.foundation** to book the translation indicating the chosen language and your LYRA reception address. You will receive confirmation to begin the work.
 
-## Traduzione
-Clona e traduci l'intera repository, raggiungibile [qui](https://github.com/scryptachain/scrypta-docs).
+## Translation
+Clone and translate the entire repository, reachable [here](https://github.com/scryptachain/scrypta-docs).
 
-::: tip NOTA
+::: tip NOTE
 
-- E' consigliato lavorare in locale utilizzando editor software come [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
+- It is recommended to work locally using software editors such as [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
 
-- La Wiki è scritta in [Vue Press](https://vuepress.vuejs.org/guide/) utilizzando principalmente la tecnica del markdown. 
+- The Wiki is written in [Vue Press](https://vuepress.vuejs.org/guide/) mainly using the markdown technique. 
 
 :::
 
-## Conclusione
+## Conclusion
 
-Terminata la traduzione effettua una *Pull Request* sulla relativa [repository](https://github.com/scryptachain/scrypta-docs).
+Once the translation is complete, make a * Pull Request * on the relative one [repository](https://github.com/scryptachain/scrypta-docs).
 
-Il lavoro verrà analizzato e caricato sul github ufficiale di Scrypta. <br>Le rewards verranno inviate all'indirizzo da te comunicatoci. 
+The work will be analyzed and uploaded to the official Scrypta github. <br> The rewards will be sent to the address you have communicated to us.
 
-## Lingue disponibili per la traduzione:
+## Languages available for translation:
 
 - Español
 - Deutsch

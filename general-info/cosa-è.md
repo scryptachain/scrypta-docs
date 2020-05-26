@@ -1,44 +1,42 @@
-# Cosa è Scrypta
+# What is Scrypta
 
 
-## Introduzione
+## Introduction
 
-Scrypta è una **blockchain permissionless**, decentralizzata e pubblica. Il suo metodo di consenso è il Proof of Stake (PoS), con una rete aggiuntiva di validatori chiamati Masternode.
+Scrypta is a **blockchain permissionless**, decentralized and public. Its consensus method is Proof of Stake (PoS), with an additional network of validators called Masternode.
 
-I blocchi vengono estratti dagli stakers ogni minuto, questo garantisce un "timeframe" rapido per l'esecuzione di transazioni e la scrittura di informazioni. Ogni blocco può contenere un massimo di 1MB di informazioni. La capacità di ogni singola transazione di contenere dati arbitrari (attraverso l'OP_RETURN) è di 8000 byte.
+The blocks are extracted by the stakers every minute, this guarantees a rapid "timeframe" for the execution of transactions and the writing of information. Each block can contain a maximum of 1MB of information. The capacity of each individual transaction to contain arbitrary data (through the OP_RETURN) is 8000 bytes.
 
-Il team di Scrypta ha sviluppato un secondo layer di funzionamento, attraverso gli **IdANode**, che permette (in via facilitata, ma non esclusiva) la gestione di informazioni arbitrarie attraverso quello che abbiamo definito: **Progressive Data Management** (PDM). Il PDM permette operazioni di lettura, scrittura e invalidazione, che a sua volta costituiscono l'essenza di ogni applicazione (decentralizzata o meno).
+The Scrypta team has developed a second operating layer, through the **IdANode**, which allows (in a facilitated, but not exclusive way) the management of arbitrary information through what we have defined: **Progressive Data Management** (PDM). The PDM allows reading, writing and invalidation operations, which in turn constitute the essence of each application (decentralized or not).
 
-Questa documentazione comprende lo stato attuale delle librerie open-source attualmente sviluppate da Scrypta Foundation ed il loro sistema di funzionamento, per ulteriori chiarimenti potete contattarci inviando una mail a: info@scryptachain.org o unendovi al nostro canale [Discord](https://discord.me/scryptachain).
+This documentation includes the current status of the open-source libraries currently developed by the Scrypta Foundation and its operating system, for further clarification you can contact us by sending an email to: info@scryptachain.org or by joining our channel [Discord](https://discord.me/scryptachain).
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eG3sYhHQbFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Architettura
+## Architecture
 
-### Pilastri
+### Pilllars
 
-L'ecosistema di Scrypta si basa su **cinque pilastri** fondamentali grazie ai quali si possono sviluppare applicazioni decentralizzate più o meno complesse, che interagiscono a vari livelli con la Blockchain:
-
--   **Scrypta Core:** è la libreria javascript principale. Permette la creazione e la gestione dei file .sid, la firma delle transazioni e dei dati, e l'interfacciamento di base con gli IdANode.
+The Scrypta ecosystem is based on ** five fundamental pillars ** thanks to which more or less complex decentralized applications can be developed, which interact at various levels with the Blockchain:
+-   **Scrypta Core:** is the main javascript library. It allows the creation and management of .sid files, the signature of transactions and data, and the basic interfacing with IdANodes.
     
--   **Scrypta IdANode:** è la libreria NodeJS necessaria per sviluppare i nodi di interfacciamento con la blockchain, questi nodi svolgono svariate funzioni tra cui: block explorer, tracciamento degli UTXO e archiviazione dei file su sistema IPFS (Interplanetary File System).
+-   **Scrypta IdANode:** is the NodeJS library needed to develop the blockchain interface nodes, these nodes perform various functions including: block explorer, UTXO tracking and file storage on the IPFS (Interplanetary File System) system.
     
--   **Scrypta Identity Framework:** è la libreria NodeJS che gestisce l'interazione tra le identità digitali esterne e gli indirizzi della blockchain di Scrypta. Grazie al framework è possibile identificare e "marchiare" gli indirizzi Lyra avvalendosi di vari provider esterni.
+-   **Scrypta Identity Framework:** is the NodeJS library that manages the interaction between external digital identities and the addresses of the Scrypta blockchain. Thanks to the framework it is possible to identify and "mark" Lyra addresses using various external providers.
     
--   **Scrypta Trustlink:** integrato all'interno degli IdANode, il Trustlink è un meccanismo grazie al quale è possibile creare dei wallet detti "multisignature" che prevedono l'obbligo della compresenza di più firme per eseguire transazioni e quindi scritture di dati.
+-   **Scrypta Trustlink:** integrated within the IdANodes, the Trustlink is a mechanism thanks to which it is possible to create wallets called "multisignatures" which provide for the obligation of the presence of multiple signatures to perform transactions and therefore data writing.
 
--   **Scrypta Planum:** è la soluzione per favorire processi di tokenizzazione: un sistema di sidechain aperto e permissionless che permette di creare, scambiare e tracciare i propri asset digitali (tokenized asset) unicamente attraverso la blockchain di Scrypta.
+-   **Scrypta Planum:** it is the solution to help tokenization processes: an open and permissionless sidechain system that allows you to create, exchange and track your own digital assets (tokenized assets) only through the Scrypta blockchain.
     
 
-Attraverso l'utilizzo di questi strumenti è possibile sviluppare infinite applicazioni, decentralizzate e non, per molteplici casi d'uso.
+Through the use of these tools it is possible to develop infinite applications, decentralized and not, for multiple use cases.
 
-## Note tecniche
+## Technical notes
 
-Abbiamo deciso di ribaltare il concetto di "Smart Contract" e delle piattaforme che mettono a disposizione sistemi simili alle Ethereum Virtual Machine. Crediamo che la Blockchain debba essere contenitore di informazioni e non esecutore. Questo approccio chiaramente non permette la realizzazione di script e dApp che eseguono i loro codici all'interno dei nodi. Come vedremo, questo non è uno svantaggio in quanto sarà l'utente stesso ad eseguire la propria applicazione decentralizzata, che - a tutti gli effetti - opererà dall'interno del proprio dispositivo (Laptop, Mobile, Embedded).
+We have decided to overturn the concept of "Smart Contract" and the platforms that make systems similar to Ethereum Virtual Machines available. We believe that the Blockchain should be an information container and not a executor. This approach clearly does not allow the creation of scripts and dApps that execute their codes inside the nodes. As we will see, this is not a disadvantage as the user himself will run his decentralized application, which - in all respects - will operate from within his device (Laptop, Mobile, Embedded).
 
-Inoltre la possibilità di creare delle **applicazioni decentralizzate** di questo tipo permette lo sviluppo di codice che può interagire sia con la blockchain di Scrypta che con altre blockchain o altri sistemi (anche centralizzati). Questo garantisce **massima elasticità e interoperabilità** in fase di realizzazione di progetti concreti.
-
-::: tip NOTA
-Scrypta **non è** una piattaforma simile ad Ethereum, non permette di realizzare Smart Contract comunemente intesi, anche se è possibile realizzare una quantità vasta di applicazioni il cui funzionamento può essere accomunato a quello degli Smart Contract.
+Furthermore, the possibility of creating ** decentralized ** applications of this type allows the development of code that can interact both with the Scrypta blockchain and with other blockchains or other systems (also centralized). This guarantees ** maximum elasticity and interoperability ** during the realization of concrete projects.
+::: tip NOTE
+Scrypta ** is not ** a platform similar to Ethereum, it does not allow you to create commonly known Smart Contracts, even if it is possible to create a vast amount of applications whose operation can be shared with that of Smart Contracts.
 :::
