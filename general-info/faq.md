@@ -1,33 +1,33 @@
 # General Faq
 
-**D: QUAL E' IL TEMPO DI CREAZIONE DI UN BLOCCO, E QUANTI BLOCCHI VENGONO PRODOTTI OGNI GIORNO?**
+**Q: WHAT IS THE TIME TO CREATE A BLOCK, AND HOW MANY BLOCKS ARE PRODUCED EVERY DAY?**
 
-R: Il tempo di blocco target è di 60 secondi, di conseguenza vengono creati circa 1440 blocchi al giorno.
+A: The target blocking time is 60 seconds, therefore about 1440 blocks are created per day.
 
-**D: DOVE TROVO IL LYRA WALLET?**
+**Q: WHERE CAN I FIND THE LYRA WALLET?**
 
-R: Puoi scaricare la versione per il tuo sistema operativo da Official Scrypta Github .
+A: You can download the version for your operating system from Official Scrypta Github.
 
-**D: SCRYPTA E' UN FORK DI PIVX?**
+**Q: IS SCRYPTA A PIVX FORK?**
 
-R: Scrypta è stato forkato da una versione precedente e stabile di PIVX. Abbiamo quindi "patchato" la PIVX 2.3 e eseguito il backport del codice da Bitcoin e DASH 12.1. Ulteriori informazioni sono disponibili nel Lightpaper.
+A: Scrypta has been forked by an older and stable version of PIVX. We then "patched" PIVX 2.3 and backported the code from Bitcoin and DASH 12.1. Further information is available in the Lightpaper.
 
-**D: COSA HA LYRA CHE ALTRI CLONI DI PIVX/DASH NON HANNO?**
+**Q: WHAT DOES LYRA HAVE THAT OTHER PIVX / DASH CLONES DO NOT HAVE?**
 
-R: IdANode, Planum, IPFS storage ed altri strumenti appositamente pensati per la creazione di dApps orientate su processi di archiviazione e certificazione.
+A: IdANode, Planum, IPFS storage and other tools specifically designed for the creation of dApps oriented on archiving and certification processes.
 
-**D: COSA E' LO SWIFTTX?**
+**Q: WHAT IS SWIFTTX?**
 
-R: La tecnologia Masternode è in grado di convalidare e confermare istantaneamente le transazioni prima che vengano aggiunte alla blockchain. Ciò consente transazioni estremamente veloci che non richiedono ulteriori conferme
+A: Masternode technology is able to instantly validate and confirm transactions before they are added to the blockchain. This allows for extremely fast transactions that require no further confirmation
 
-**D: SCRYPTA VERRA' LISTATA SU EXCHANGE?**
+**Q: WILL SCRYPTA BE LISTED ON EXCHANGE?**
 
-R: Al momento puoi scambiare  LYRA su Mercatox , Graviex, e Midas. Il team di Scrypta è impegnato a lungo termine nella stabilità e integrità del progetto. Gli exchange più importanti saranno interessati al progetto solo se il suo sviluppo tecnologico avrà la priorità e sarà constante . Scrypta è focalizzata a raggiungere questi obiettivi.
+A: You can currently trade LYRA on Mercatox, Graviex, and Midas. The Scrypta team is committed to long-term stability and integrity of the project. The most important exchanges will be interested in the project only if its technological development has the priority and is constant. Scrypta is focused on achieving these goals.
 
-**D: OGNI QUANTO CAMBIANO LE RICOMPENSE PER BLOCCO?**
+**Q: EVERY TIME THE REWARDS PER BLOCK CHANGE?**
 
-R: Puoi trovare quest' informazione nella Appendice II a margine del LightPaper.
+A: You can find this information in Appendix II in the margin of the LightPaper.
 
-**D: DOVE VANNO A FINIRE LE FEE DI TRANSAZIONE?**
+**Q: WHERE DO THE TRANSACTION FEE FINISH?**
 
-R: Le "Transaction fee" vengono "bruciate" dall'algoritmo.
+A: The "Transaction fees" are "burned" by the algorithm.
