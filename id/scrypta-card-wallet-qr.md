@@ -1,5 +1,5 @@
 # Scrypta Card Wallet QR
 
-La card wallet non è solamente gestibile attraverso l'NFC. E' possibile creare una card wallet in formato cartaceo e usarla in lettura con il QR code.
+The card wallet is not only manageable through NFC. It is possible to create a card wallet in paper format and use it for reading with the QR code.
 
-Il vantaggio di questo tipo di soluzione è l'economicità e sicuramente la più immediata realizzazione di dApp, in quanto la funzionalità di lettura del QR code esiste anche nelle normali web app.
+The advantage of this type of solution is cost-effectiveness and certainly the most immediate creation of dApps, as the QR code reading functionality also exists in normal web apps.

@@ -1,10 +1,10 @@
 # Scrypta Identity Framework
 
-## Introduzione
+## Introduction
 
-Il sistema di identità di Scrypta si articola in due componenti fondamentali, la prima riguarda la gestione delle identità strettamente digitali, ovvero gli indirizzi Lyra; la seconda riguarda l'autenticazione degli indirizzi con autenticatori esterni.
+Scrypta's identity system is divided into two fundamental components, the first concerns the management of strictly digital identities, that is Lyra addresses; the second concerns the authentication of addresses with external authenticators.
 
-La prima componente può essere gestita in vari modi, ma sostanzialmente riguarda i file .sid che abbiamo menzionato nella documentazione di _Scrypta Core_. Questi payload di identità possono essere gestiti tramite:
+The first component can be handled in various ways, but basically it concerns the .sid files that we mentioned in the _Scrypta Core_ documentation. These identity payloads can be managed through:
 
 - [**ScryptaID Browser Extension**](https://id.scryptachain.org/) (Chrome, Firefox, etc) 
  > [https://github.com/scryptachain/scrypta-id](https://github.com/scryptachain/scrypta-id)
@@ -13,13 +13,13 @@ La prima componente può essere gestita in vari modi, ma sostanzialmente riguard
 - [**Manent Web App**](https://web.manent.app/#/) (Chrome, Firefox, Mobile browser)
 > [https://github.com/scryptachain/scrypta-manent-web](https://github.com/scryptachain/scrypta-manent-web)
 
-La seconda componente può essere utilizzata tramite un Gateway di identità, come quello che mette a disposizione Scrypta  attraverso l'URL: 
+The second component can be used through an identity gateway, such as the one that makes Scrypta available through the URL:
 
 - [**https://me.scrypta.id/**](https://me.scrypta.id/) 
  
-oppure attraverso altri Gateway messi a disposizione da altri soggetti esterni.
+or through other gateways made available by other external parties.
 
-I payload di identità, la cui struttura ha a che fare unicamente con gli indirizzi, presentano un'ulteriore proprietà chiamata *identity*:
+Identity payloads, whose structure deals only with addresses, have an additional property called *identity*:
 
 ```
 {
@@ -47,56 +47,55 @@ I payload di identità, la cui struttura ha a che fare unicamente con gli indiri
 }
 ```
 
-Come possiamo intuire, per ogni **Provider** (Twitter, Github, E-mail) dopo la corretta verifica da parte del **Gateway**, viene scritto un payload contenente:
-- **created_at**: Il timestamp dell'operazione.
-- **method**: una ripetizione del provider utilizzato.
-- **id**: l'id dell'utente presso il provider.
-- **username**: l'username dell'utente presso il provider.
-- **token**: il token rilasciato dal provider (che potrà essere usato per la verifica dell'account).
+As we can guess, for each **Provider** (Twitter, Github, E-mail) after the correct verification by the **Gateway**, a payload is written containing:
+- **created_at**: The timestamp of the operation.
+- **method**: a repetition of the provider used.
+- **id**: the user id at the provider.
+- **username**: the username of the user with the provider.
+- **token**: the token issued by the provider (which can be used for account verification).
 
-Questo payload viene firmato dal gateway (la cui chiave privata dovrà risiedere all'interno dello stesso) e la firma viene inserita all'interno della proprietà **fingerprint**.
+This payload is signed by the gateway (whose private key must reside within it) and the signature is inserted into the ** fingerprint ** property.
 
-Questo stesso payload viene firmato dall'indirizzo che richiede l'autenticazione. La firma viene scritta all'interno della blockchain in modo da poterla comparare per verifica con quella presentata dall'utente in fase di identificazione.
+This same payload is signed by the address that requires authentication. The signature is written within the blockchain so that it can be compared for verification with that presented by the user during the identification phase.
 
-**N.B.** il payload di identità viene nuovamente cryptato e la custodia viene comunque demandata all'utente, questo per garantire decentralizzazione e sicurezza. 
+**N.B.** the identity payload is encrypted again and the custody is still left to the user, this to ensure decentralization and security.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTc0OTEwMTEyLC0xNTM4OTc0ODI2LC0xNT
 gwMjY0OTE0LDE1NzEzOTAzOTAsOTU0Njc2ODUzXX0=
 -->
 
-## Note tecniche
+## Technical notes
 
-Il codice sorgente dello Scrypta Identity Framework, che gestisce i Gateway di identità, è ispezionabile a questo indirizzo: 
+The source code of the Scrypta Identity Framework, which manages the identity gateways, can be inspected at this address:
 
 [https://github.com/scryptachain/scrypta-identity-framework](https://github.com/scryptachain/scrypta-identity-framework)
 
-Questo è il componente che mette a disposizione le interfacce verso gli autenticatori esterni.
+This is the component that provides interfaces to external authenticators.
 
-::: tip TECNOLOGIE UTILIZZATE
+::: tip USED TECHNOLOGIES
 
-**Scrypta Identity Framework** é un'applicazione in [**NodeJS**](https://nodejs.org). 
-I provider sono gestiti tramite [**PassportJS**](http://www.passportjs.org/); eccezion fatta per la verifica di e-mail, integrata tramite [**Mailgun**](https://www.mailgun.com/) e la verifica di numero di telefono, tramite [**Twilio**](https://www.twilio.com/). 
+**Scrypta Identity Framework** is an app developed in [**NodeJS**](https://nodejs.org). 
+Providers are managed through [**PassportJS**](http://www.passportjs.org/); except for email verification, integrated via [**Mailgun**](https://www.mailgun.com/) and verification of telephone number, via [**Twilio**](https://www.twilio.com/). 
 
-la verifica delle e-mail e del telefono avviene internamente cosicche gateway e provider del servizio coincideranno.
-
-:::
-::: warning NOTA BENE
-
-la verifica delle e-mail e del telefono avviene internamente cosicche gateway e provider del servizio coincideranno.
+e-mail and telephone verification takes place internally so that gateways and service providers will coincide.
 
 :::
+::: warning PLEASE NOTE
 
-## Riscontro dell'identità
+e-mail and telephone verification takes place internally so that gateways and service providers will coincide.
 
-Ogniqualvolta l'utente vorrà identificarsi, dovrà mostrare in chiaro il proprio payload di identità (operazione effettuabile tramite mobile app) e la controparte (sempre via app, in automatico) verificherà che i payload presentati siano effettivamente validi. In sostanza verrà effettuta una verifica tramite chiave pubblica, payload e blockchain.
+:::
 
-Il risultato, riscontrabile dal sito https://me.scrypta.id, sarà qualcosa del genere, che rendiamo graficamente per questioni di privacy:
+## Identification confirmation
+
+Whenever the user wants to identify himself, he must clearly show his identity payload (operation via mobile app) and the counterparty (always via the app, automatically) will verify that the payloads presented are actually valid. In essence, a verification will be carried out via public key, payload and blockchain.
+
+The result, which can be found on the website https://me.scrypta.id, will be something like this, which we graphically render for privacy reasons:
 
 
 ![](../.vuepress/public/assets/idframework/proof.png)
 
-Effettivamente si potrà verificare che, ad esempio, il payload di _Github_ scritto al blocco **416667** è il seguente ed è collegato all'indirizzo `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`. Queste informazioni sono riscontrabili qui:
-https://proof.scryptachain.org/#/uuid/3e7ce.f696.4b11.bf0c.cec51cff386e
+It can actually be verified that, for example, the payload of _Github_ written to block **416667** is the following and is connected to the address `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`. This information can be found here: https://proof.scryptachain.org/#/uuid/3e7ce.f696.4b11.bf0c.cec51cff386e
 ```
 { 
 	"signature": "2f04635376ef2cbbc9c083b6093e5bfc864bc779a8aa670c431f5ad14c2e261003ef2aaeaab8990f9a3cec8a67296a05b1463b5f9ba98c78d83d1269163232b7",
@@ -105,40 +104,40 @@ https://proof.scryptachain.org/#/uuid/3e7ce.f696.4b11.bf0c.cec51cff386e
 }
 ```
 
-Spiegamo meglio cosa viene scritto all'interno della blockchain: 
-- **signature**: è la firma del payload da parte dell'indirizzo `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`.
-- **gateway**: è la chiave pubblica dell'indirizzo del Gateway.
-- **fingerprint**: come detto, è la firma dello stesso payload da parte dell'indirizzo del gateway.
+Let's better explain what is written within the blockchain:
+- **signature**: is the signature of the payload by the address `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`.
+- **gateway**: is the public key of the gateway address.
+- **fingerprint**: as mentioned, it is the signature of the same payload by the gateway address.
 
-## Schema di funzionamento
+## Operation scheme
 
-Ecco uno schema di funzionamento che riassume tutti i passaggi effettuati:
+Here is an operating diagram that summarizes all the steps carried out:
 
 ![](../.vuepress/public/assets/idframework/funzionamento.png)
 
-## Provider integrati
+## Integrated Providers 
 
-Al momento i provider integrati e funzionanti sono i seguenti:
+Currently the integrated and functioning providers are the following:
 - Github
 - Google
 - Linkedin
 - Twitter
 - E-Mail
-- Telefono
+- Phone
 
-## Obiettivo finale
+## Final goal
 
-L'obiettivo finale di questo framework è dare la possibilità ad enti, istituzioni o aziende di creare il proprio set di indirizzi la cui identità viene garantita grazie alla blockchain ed il metodo sopra menzionato. 
+The final goal of this framework is to give the possibility to entities, institutions or companies to create their own set of addresses whose identity is guaranteed thanks to the blockchain and the method mentioned above.
 
-Scrypta sta implementando questo sistema di identità all'interno dell'app mobile Manent dando la possibilità agli utenti di scambiarsi le informazioni di identità e salvarle all'interno del proprio "Address Book". Questo permetterà una duplice operazione, la prima è quella di poter avere effettivamente una lista di contatti fidati e la seconda è quella di creare TrustLink con questi contatti, così da poter siglare accordi o firmare documenti.
+Scrypta is implementing this identity system within the Manent mobile app, giving users the possibility to exchange identity information and save it within their "Address Book". This will allow for a double operation, the first is to be able to actually have a list of trusted contacts and the second is to create TrustLink with these contacts, so as to be able to sign agreements or sign documents.
 
-## Estendibilità e casi pratici
+## Extensibility and practical cases
 
-E' chiaro come nel caso ad esempio di un'azienda che vuole identificare i propri dipendenti (e le loro operazioni digitali, permettendogli -ad esempio- di firmare documenti o interagire con una dApp aziendale) che la gestione di questi payload attraverso i file .sid (decentralizzati) può essere macchinosa. 
+It is clear that, for example, in the case of a company that wants to identify its employees (and their digital operations, allowing them - for example - to sign documents or interact with a corporate dApp) that the management of these payloads through files. sid (decentralized) can be cumbersome.
 
-Grazie alla natura aperta del framework, nulla vieta di creare uno storage centralizzato per tutte queste identità e collegarle, ad esempio, all'e-mail aziendale.
+Thanks to the open nature of the framework, nothing prevents you from creating centralized storage for all these identities and linking them, for example, to corporate email.
 
-Grazie a questi indirizzi identificati si potranno compiere quindi le operazione più varie, dallo scambio di fondi alla firma di documenti, fino alla creazione di trustlink.
+Thanks to these addresses, the most varied operations can be carried out, from the exchange of funds to the signature of documents, up to the creation of trustlinks.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTAxOTIzNzY2MywxNjc4NjM1NTA5LDE3MT
 gxMDkxODMsMTMyMTM3MTI5OSwtMjExNDEwNjAzNF19

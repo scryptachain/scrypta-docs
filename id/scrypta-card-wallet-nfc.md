@@ -1,39 +1,39 @@
-# Scrypta Card Wallet NFC
+# NFC Scrypta Card Wallet 
 
-La card wallet completa il sistema di identità di Scrypta fornendo di fatto uno strumento semplice, sicuro e potente. La card può essere utilizzata sia per creare dei backup sicuri e duraturi dei propri wallet o può essere creata per la gestione quotidiana delle proprie Lyra, delle proprie informazioni o come sistema di pagamento nell'ambito delle Sidechain. 
+The card wallet completes the Scrypta identity system by providing a simple, secure and powerful tool. The card can be used both to create secure and long-lasting backups of your wallets or can be created for the daily management of your Lyra, your information or as a payment system within the Sidechains.
 
-La card non è altro che la rappresentazione fisica di quello che spesso è stato chiamato *"file .sid"*, ovvero la rappresentazione digitale di un'identità Scrypta. La dimensione di tali file, che ricordiamo essere crittografati, richiede card **NFC** con chip **NTAG216** che permette di scrivere fino ad 888 byte di informazioni.
+The card is nothing more than the physical representation of what has often been called *".sid file"*, or the digital representation of a Scrypta identity. The size of these files, which we remember to be encrypted, requires **NFC** card with **NTAG216** chip which allows you to write up to 888 bytes of information.
 
-Così come ogni altra tecnologia Scrypta, è facilmente replicabile. Il nodo cruciale, per la sicurezza degli utenti, è generare delle password forti in grado di proteggere le chiavi private contenute all'interno della card.
+Like any other Scrypta technology, it is easily replicable. The crucial node, for the safety of users, is to generate strong passwords that can protect the private keys contained within the card.
 
-Per generare le card abbiamo creato un apposito tool, disponibile qui:
+To generate the cards we have created a special tool, available here:
 
 [https://github.com/scryptachain/scrypta-card-generator](https://github.com/scryptachain/scrypta-card-generator)
 
-Questo strumento permette di creare un numero infinito di card e salvare un file *.csv* contenente le informazioni necessarie alla scrittura in serie delle stesse.
+This tool allows you to create an infinite number of cards and save a *.csv* file containing the information necessary for writing them in series.
 
-Maggiori informazioni sull'utilizzo del tool possono essere trovate all'interno della sezione:
+More information on using the tool can be found in the section:
 
 [**Card Generator**](../utilities/card-generator.md)
 
-## Utilizzo
+## Use
 
-Una volta realizzata una card wallet, questa può essere utilizzata come strumento per effettuare operazioni all'interno della blockchain in modo semplice, ovvero inserendo la propria password (o PIN) all'interno di un'applicazione fidata. 
+Once a card wallet has been created, it can be used as a tool to carry out operations within the blockchain in a simple way, or by entering your password (or PIN) within a trusted application.
 
-Tra tutte, [Manent App](../dapps/manent-app.md) e [Manent Web](../dapps/manent-web.md) sono quelle che permettono di testare questa tecnologia, con possibilità di scambiare Lyra *-on the fly-* attraverso la sezione *Ricevi*.
+Between all, [Manent App](../dapps/manent-app.md) e [Manent Web](../dapps/manent-web.md) are those that allow you to test this technology, with the possibility of exchanging Lyra *-on the fly-* through the *Receive* section.
 
-Dopo aver inserito l'ammontare da ricevere è possibile richiedere il pagamento della cifra attraverso la card; questa verrà letta e successivamente decodificata grazie all'inserimento della password da parte del debitore.
+After entering the amount to be received, it is possible to request the payment of the amount through the card; this will be read and subsequently decoded thanks to the insertion of the password by the debtor.
 
-Se la password è corretta e i fondi sono effettivamente a disposizione verrà effettuata una transazione contenente l'ammontare in Lyra richiesto. Le *fee* per la transazione saranno unicamente quelle relative alla blockchain, che ricordiamo essere di **0.001 LYRA**.
+If the password is correct and the funds are actually available, a transaction will be made containing the requested Lyra amount. The *fees* for the transaction will only be those relating to the blockchain, which we remember to be **0.001 LYRA**.
 
-Abbiamo creato quindi un perfetto sistema POS, dove le fee sono effettivamente 0 per il commerciante e la sicurezza negli scambi è elevatissima. 
+We have therefore created a perfect POS system, where the fees are actually 0 for the merchant and the security of the exchanges is very high.
 
-La password, la chiave privata o il wallet stesso non vengono mai memorizzati dal dispositivo, rendendo sicure tutte le operazioni di scambio.
+The password, the private key or the wallet itself are never stored by the device, making all exchange operations secure.
 
-## Token e Sidechain
+## Token and Sidechain
 
-Questa card non contiene, chiaramente, le sole informazioni relative a LYRA, ma contiene tutte le informazioni relative ai token realizzati attraverso il sistema di Sidechain di Scrypta - [**Planum**](../planum/README.md). Questo fa sì che ogni token può effettivamente essere scambiato in modo *fisico* (attraverso la card) utilizzando tecnologia blockchain in modo assolutamente trasparente per l'utente. 
+This card does not, of course, contain only the information relating to LYRA, but contains all the information relating to the tokens created through the Scrypta Sidechain system - [**Planum**] (../ planum / README.md). This means that each token can actually be exchanged in a *physical* way (through the card) using blockchain technology in an absolutely transparent way for the user.
 
-Se vi state chiedendo quali possono essere gli ambiti di applicazione di una tecnologia del genere pensate a: mense aziendali, buoni spesa, gift card, ticket per ristoranti, ticket per eventi e concerti, e così via.
+If you are wondering what the areas of application of such a technology can be, think about: company canteens, shopping vouchers, gift cards, restaurant tickets, tickets for events and concerts, and so on.
 
-La card wallet rappresenta lo strumento più semplice ed immediato per un utente finale che preferisce avere uno strumento tangibile.
+The card wallet represents the simplest and most immediate tool for an end user who prefers to have a tangible tool.
