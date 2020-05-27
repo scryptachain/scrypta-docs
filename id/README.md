@@ -1,4 +1,4 @@
-# Intro
+# Introduction
 
 The digital identity within the Scrypta Blockchain is managed through two different components:
 
