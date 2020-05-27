@@ -129,7 +129,7 @@ Currently the integrated and functioning providers are the following:
 
 The final goal of this framework is to give the possibility to entities, institutions or companies to create their own set of addresses whose identity is guaranteed thanks to the blockchain and the method mentioned above.
 
-Scrypta is implementing this identity system within the Manent mobile app, giving users the possibility to exchange identity information and save it within their "Address Book". This will allow for a double operation, the first is to be able to actually have a list of trusted contacts and the second is to create TrustLink with these contacts, so as to be able to sign agreements or sign documents.
+Scrypta is implementing this identity system within the Manent mobile app, giving users the chance to exchange identity information and save it within their "Address Book". This will allow for a double operation, the first is to be able to actually have a list of trusted contacts and the second is to create TrustLink with these contacts, so as to be able to sign agreements or sign documents.
 
 ## Extensibility and practical cases
 

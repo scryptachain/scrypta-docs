@@ -1,4 +1,4 @@
-# Scrypta Card Wallet QR
+# QR Scrypta Card Wallet
 
 The card wallet is not only manageable through NFC. It is possible to create a card wallet in paper format and use it for reading with the QR code.
 

@@ -16,7 +16,7 @@ More information on using the tool can be found in the section:
 
 [**Card Generator**](../utilities/card-generator.md)
 
-## Use
+## Usage
 
 Once a card wallet has been created, it can be used as a tool to carry out operations within the blockchain in a simple way, or by entering your password (or PIN) within a trusted application.
 
