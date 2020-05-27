@@ -1,34 +1,33 @@
-# Introduzione
+# Intro
 
-L’identità digitale all’interno della Blockchain di Scrypta viene gestita attraverso due diverse componenti:
+The digital identity within the Scrypta Blockchain is managed through two different components:
 
-1. La componente di “identità pseudonima” - una stringa alfanumerica del tipo - *LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt* - che permette di accoppiare la firma digitale ad una persona fisica o giuridica.
+1. The "pseudonymous identity" component - an alphanumeric string of the type - * LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt * - which allows the digital signature to be coupled to a natural or legal person.
 
-2. La componente della “firma digitale”, che possiamo pensare come password di cifratura, che permette di effettuare le operazioni tecniche di firma di transazioni e di dati.
+2. The "digital signature" component, a kind of encryption password, which allows you to carry out the technical operations of signing transactions and data.
    
-La corretta identificazione del soggetto porta alla creazione di un **payload di identità** che viene firmato digitalmente e scritto in blockchain per consolidare la sua rappresentazione (hash). 
+The correct identification of the subject leads to the creation of a **identity payload** that is digitally signed and written in blockchain to consolidate its representation (hash).
 
 ## Gateway
 
-Questa corretta identificazione viene effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
+This correct identification is carried out by means of a **Gateway**, or a trusted third party who assumes responsibility for the identification itself.
 
-Qui vediamo un **esempio** di identificazione:
+Here we see an **example** of identification:
 
 [https://proof.scryptachain.org/#/uuid/b5e6914d.0198.4390.a85e.c9722fb1e259](https://proof.scryptachain.org/#/uuid/b5e6914d.0198.4390.a85e.c9722fb1e259)
 
-Come è possibile intuire, all’interno della blockchain non viene salvato alcun dato di tipo personale , rivelandosi uno strumento dotato di ***privacy by design***. 
+As you can guess, no personal data is saved within the blockchain, revealing itself as a tool with ***privacy by design***.
+
+> It is the Gateway that acts as a "certification body", be it a company or an organization, or a government agency, and will take care of creating an **offline** digital archive (as we recommend), which will allow it to trace the correct identification of users, and as a tool of KYC (Know Your Customer).
 
 
-> E' il Gateway che funge da "ente cerfificatore", sia esso un'azienda o un'organizzazione, o un ente governativo, e si farà carico di creare un archivio digitale **offline** (come consigliamo), che gli permetterà di risalire alla corretta identificazione degli utenti, e come strumento di KYC (Know Your Customer).
+The identity payload is also delivered to the user who will keep it within their devices (Card, Mobile, PC) and will be necessary for the processes of exchange of personal information between users, companies, entities.
+
+::: tip NOTE
+By creating their own digital identity, the user can also easily use, even in a pseudonymous form, all the [Scrypta dapps](../dapps/README.md).
 
 
-Il payload di identità viene consegnato anche all’utente il quale lo conserverà all’interno dei propri dispositivi (Card, Mobile, PC) e sarà necessario per i processi di scambio di informazioni personali tra utenti, aziende, enti.
-
-::: tip NOTA
-Attraverso la creazione della propria identità digitale, l'utente potrà inoltre utilizzare facilmente, anche in forma solo pseudonima, tutte le [dApps di Scrypta](../dapps/README.md).
-
-
-Le identità (e il relativo address) possono essere create attraverso:
+Identities (and their address) can be created through:
 
 - [Manent App](../dapps/manent-app.md)
 
