@@ -43,8 +43,24 @@ RPCUSER=YsmtF6bvBrY82Q
 RPCPASSWORD=e43GkfCGMYaXsr
 LYRAPATH=/home/YourLinuxUser/scrypta-idanodejs
 ```
-A questo punto siamo pronti a testare la nostra configurazione attraverso il comando `npm run dev`.
-Se tutto va bene vedremo un risultato simile a questo:
+
+A questo punto siamo pronti a testare la nostra configurazione.
+
+Attiviamo il wallet principale attraverso il comando 
+```
+./lyrad &
+``` 
+dopo di che attendiamo che il wallet sia partito dando il comando:
+```
+./lyra-cli getinfo
+```
+Dopo che il wallet ha dato una risposta positiva e ha iniziato a sincronizzare i blocchi potremo far partire l'IdaNode attraverso il comando `npm start` oppure usare `pm2` per avviarlo definitivamente quindi:
+```
+npm start ## avvia il wallet provvisoriamente
+pm2 start npm -- start ### avvia il wallet definitivamente
+```
+
+Se tutto va bene vedremo un risultato simile a questo (con `npm start`):
 ```
 Scrypta IdANode listening at port 3001. Public IP is: 37.161.46.223
 LYRA wallet successfully connected.
@@ -89,7 +105,18 @@ FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 Ora l'IdANode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdANode!
 Il processo di sincronizzazione dura parecchie ore se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
 
-## Scaricare il bootstrap
+## Scaricare il bootstrap per il wallet Scrpta
+
+Il bootstrap del wallet renderà il processo di sincronizzazione del wallet molto più rapido. Attraverso questi comandi è possibile scaricarlo e sincronizzare il wallet con l'ultima versione bootstrap disponibile. Questi comandi vanno dato all'interno della cartella `.lyra`, la stessa dove avete precedentemente modificato il file `lyra.conf`.
+
+```
+cd .lyra
+wget https://scrypta.sfo2.digitaloceanspaces.com/bootstrap.tar.gz
+rm -rf blocks chainstate peers.dat
+tar -xvzf bootstrap.tar.gz
+```
+
+## Scaricare il bootstrap per l'IdANode
 
 Per scaricare il bootstrap ed installarlo è sufficiente dare i permessi al file `bootstrap.sh` e avviarlo:
 
@@ -99,5 +126,5 @@ chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
 ::: warning ATTENZIONE
-E' fondamentale che l'IdANode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.
+E' fondamentale che l'IdANode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà. Se fallisce si consiglia di riavviare il VPS attraverso il comando `reboot` e partire direttamente a macchina appena avviata
 :::
