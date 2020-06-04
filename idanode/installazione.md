@@ -23,6 +23,7 @@ Durante l'installazione sarà richiesto di editare alcuni campi del file .env, v
  - **TESTNET**: Stabilisce se l'IdANode è in modalità testnet oppure no, il valore può essere inserito come `true` o `false`.
  - **LYRADATAFOLDER**: Path che punta alla cartella contenente i file della blockchain di Scrypta. Solitamente è `~/.lyra`. E' fondamentale per avviare correttamente il processo di costruzione del file di bootstrap.
  - **NODE_KEY**: E' la chiave privata che identifica l'IdANode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
+ - **ADMIN_PUBKEY**: E' la chiave pubblica che identifica l'IdANode all'interno dell'IdaNode network. Da utilizzare nel caso si voglia collegare il proprio IdaNode al network ufficiale Scrypta.
 
 ## Esempio di installazione
 
@@ -66,7 +67,8 @@ ADMIN_PUBKEY=YourAdminPubKey
 ```
 
 I parametri `NODE_KEY` e `ADMIN_PUBKEY` corrispondono alla chiave privata dell'IdaNode e alla rispettiva chiave pubblica, con il quale verranno firmate le richieste di validazione.
-<br><br>Per ottenere una chiave privata (quindi anche la chiave pubblica), è possibile procedere in diversi metodi, tuttavia suggeriamo di usare il desktop Wallet Scrypta:
+
+Per ottenere una chiave privata (quindi anche la chiave pubblica), è possibile procedere in diversi metodi, tuttavia suggeriamo di usare il desktop Wallet Scrypta. E' consigliato *non* usare lo stesso wallet dell'IdaNode ma un wallet esterno:
 
 Aprire la debug console e digitare
 
@@ -98,8 +100,9 @@ validateaddress *nuovoindirizzo*
 ```
 Da qui ricaviamo il valore `ADMIN_PUBKEY` da inserire nel file .env
 
-Quando l'IdANode sarà registrato sul network, sarà possibile compiere tale operazione anche tramite l'interfaccia grafica IdANode > Pannello `tools`.
-<br>Per accedere all'interfaccia grafica è necessario collegarsi con il browser all'indirizzo IP della macchina:
+Se preferite generare le chiavi attraverso l'interfaccia grafica potete collegarvi al vostro IdaNode e generare un nuovo indirizzo dal pannello `tools`.
+
+Per accedere all'interfaccia grafica è necessario collegarsi con il browser all'indirizzo IP della macchina, specificando la porta di esecuzione dell'IdaNode che è la `3001`:
 
 ```
 http://Indirizzo_IP_VPS:3001
