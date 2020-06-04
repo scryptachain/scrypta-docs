@@ -1,9 +1,12 @@
 # Installazione
-Installare un IdANode è abbastanza semplice, per prima cosa è necessario installare tutte le tecnologie richieste. Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
+Sebbene la procedura di installazione di un IdANode sia abbastanza semplice, è necessario avere le competenze necessarie per lavorare atrraverso il terminale di Linux e per mantenere poi l'IdANode attivo.
+<br>L'installazione avviene tramite uno script che si occuperà di configurare la macchina con le librerie necessarie e tutte le tecnologie richieste.
+Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
 
-Consigliamo il deploy su una macchina che abbia Ubuntu 16.04 con almeno 2GB di RAM.
+Affinchè l'IdANode funzjoni al meglio, è assolutamente necessario che il deploy avvenga su una macchina che abbia Ubuntu 16.04, con almeno 2GB di RAM.
 
-Il file install.sh andrà ad installare tutte le dipendenze per voi, riprendiamo lo script direttamente in questa pagina. La cosa importante è editare il file .env a seguito dell'installazione, inserendo tutti i campi correttamente, nello specifico:
+Il file script ***install.sh*** andrà ad installare tutte le dipendenze per voi, riprendiamo lo script direttamente in questa pagina. 
+Durante l'installazione sarà richiesto di editare alcuni campi del file .env, verificare quindi che tutti i parametri siano inseriti correttamente, nello specifico:
 
  - **RPCUSER:** Lo stesso valore inserito all'interno del wallet, di default è "lyrarpc". E' fondamentale editare questo campo sia nel `lyra.conf` che nel `.env`
  -  **RPCPASSWORD:** Lo stesso valore inserito all'interno del wallet, di default è "lyrapassword". E' fondamentale editare questo campo sia nel `lyra.conf` che nel `.env`
@@ -22,7 +25,10 @@ Il file install.sh andrà ad installare tutte le dipendenze per voi, riprendiamo
  - **NODE_KEY**: E' la chiave privata che identifica l'IdANode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
 
 ## Esempio di installazione
-Per installare l'IdANode attraverso lo script `install.sh` è necessario usare questi comandi:
+
+### Esecuzione dello script di installazione
+Per installare l'IdANode attraverso lo script `install.sh` procedere con i seguenti comandi all'intenro della VPS su cui girerà l'IdANode:
+
 ```
 cd ~
 git clone https://github.com/scryptachain/scrypta-idanodejs
@@ -30,51 +36,93 @@ cd scrypta-idanodejs
 chmod 777 install.sh
 ./install.sh
 ```
-A questo punto editiamo prima il file lyra.conf attraverso il comando `nano ~/.lyra/lyra.conf` e modifichiamo `rpcuser` e `rpcpassword` con due valori casuali:
+A questo punto, lo script inizierà ad installare dipendenze, librerie e componenti necessari per la configurazione e il funzionamento dell'IdANode. Tale processo potrebbe durare svariati minuti.
+<br>Alla fine dell'installazione, lo script ci restituisce l'output seguente:
+```
+NOW EDIT .env FILE AND RUN FOLLOWING COMMAND:
+pm2 start npm -- start && pm2 save
+```
+Per il momento ignoriamo questo messaggio e procediamo con la configuraizone dei file necessari all'avvio dell'IdANode.
+
+## Prima configurazione
+
+Prima di avviare l'IdaNode, è necessario procedere con le configurazioni descritte prima.
+
+Editiamo il file lyra.conf attraverso il comando `nano ~/.lyra/lyra.conf` e modifichiamo `rpcuser` e `rpcpassword` con valori da noi scelti, quelli riportati sotto sono solo un esempio (si raccomanda sempre di usare password complesse):
 
 ```
 rpcuser=YsmtF6bvBrY82Q
 rpcpassword=e43GkfCGMYaXsr
 ```
+Una volta editato e salvato il file lyra.conf, modifichiamo il file `.env` attraverso il comando `nano ~/scrypta-idanodejs/.env`.
+<br>I parametri da modificare sono:
 
-Ora modifichiamo quindi il nostro file `.env` attraverso il comando `nano ~/scrypta-idanodejs/.env` e modifichiamo i parametri:
 ```
 RPCUSER=YsmtF6bvBrY82Q
 RPCPASSWORD=e43GkfCGMYaXsr
-LYRAPATH=/home/YourLinuxUser/scrypta-idanodejs
-NODE_KEY=LaTuaChiavePrimata
+LYRAPATH=/path-to-folder/scrypta-idanodejs
+NODE_KEY=LaTuaChiavePrivata
+ADMIN_PUBKEY=YourAdminPubKey
 ```
 
-In particolare il parametro `NODE_KEY` corrisponderà alla chiave privata dell'IdaNode, con il quale verranno firmate le richieste di validazione. Per creare la chiave privata si può usare il wallet principale:
+I parametri `NODE_KEY` e `ADMIN_PUBKEY` corrispondono alla chiave privata dell'IdaNode e alla rispettiva chiave pubblica, con il quale verranno firmate le richieste di validazione.
+<br><br>Per ottenere una chiave privata (quindi anche la chiave pubblica), è possibile procedere in diversi metodi, tuttavia suggeriamo di usare il desktop Wallet Scrypta:
+
+Aprire la debug console e digitare
 
 ```
-./lyra-cli getnewaddress ### risponderà con un indirizzo
-./lyra-cli dumpprivkey IndirizzoRispostaPrecendente
+getnewaddress 
+```
+La console ci restituirà un nuvo indirizzo. Attraverso il dump della relativa chiave privata e la validazione di tale indirizzo otterremo i dati che ci interessano:
+```
+dumpprivkey *nuovoindirizzo* 
+```
+ci restituisce la chiave privata da inserire nel campo `NODE_KEY` del file .env
+<br>A seguire, attraverso il comando
+```
+validateaddress *nuovoindirizzo* 
+```
+ otterremo un risultato simile a quello riportato sotto:
+
+```
+{
+    "isvalid" : true,
+    "address" : "LgdnzYZPUTzpGpGq4mtmDExitQhLgBxZo9",
+    "ismine" : true,
+    "iswatchonly" : false,
+    "isscript" : false,
+    "pubkey" : "02802b561245068b5c5397961f86923e0d6e82783d3a908abd56e31e992d05d50f",
+    "iscompressed" : true,
+    "account" : ""
+}
+```
+Da qui ricaviamo il valore `ADMIN_PUBKEY` da inserire nel file .env
+
+Quando l'IdANode sarà registrato sul network, sarà possibile compiere tale operazione anche tramite l'interfaccia grafica IdANode > Pannello `tools`.
+<br>Per accedere all'interfaccia grafica è necessario collegarsi con il browser all'indirizzo IP della macchina:
+
+```
+http://Indirizzo_IP_VPS:3001
 ```
 
-così come si può richiedere direttamente all'IdANode attraverso l'interfaccia grafica, nel pannello `tools`. Per accedere all'interfaccia grafica è necessario collegarsi con il browser all'indirizzo IP della macchina:
+Ottenuti entrambi i valori `NODE_KEY` e `ADMIN_PUBKEY` e sostituiti nei relativi campi del file .env, possiamo procedere con lo step successivo.
 
-```
-http://IndirizzoIPMAcchina:3001
-```
+## Avvio del daemon Lyra e dell'IdANode
 
-A questo punto siamo pronti a testare la nostra configurazione.
-
-Attiviamo il wallet principale attraverso il comando 
+Avviamo il daemon Lyra attraverso il comando 
 ```
 ./lyrad &
 ``` 
-dopo di che attendiamo che il wallet sia partito dando il comando:
+e verifichiamo l'effettivo avvio del daemon attraverso il comando:
 ```
 ./lyra-cli getinfo
 ```
-Dopo che il wallet ha dato una risposta positiva e ha iniziato a sincronizzare i blocchi potremo far partire l'IdaNode attraverso il comando `npm start` oppure usare `pm2` per avviarlo definitivamente quindi:
+Dopo che il wallet ha dato una risposta positiva e ha iniziato a sincronizzare i blocchi potremo far partire l'IdaNode attraverso il comando `npm start` (che avvia il wallet provvisoriamente)
 ```
 npm start ### avvia il wallet provvisoriamente
-pm2 start npm -- start ### avvia il wallet definitivamente
 ```
 
-Se tutto va bene vedremo un risultato simile a questo (con `npm start`):
+Se abbiamo configurato tutto corettamente, dopo aver dato il comando `npm start`, otterremo un risultato simile a questo:
 ```
 Scrypta IdANode listening at port 3001. Public IP is: 37.161.46.223
 LYRA wallet successfully connected.
@@ -116,10 +164,25 @@ Database and tables are ok.
 Starting block synchronization.
 FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 ```
-Ora l'IdANode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdANode!
-Il processo di sincronizzazione dura parecchie ore se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
+Questo output significa che l'installazione dell'IdANode è avvenuta correttamente e il vostro IdANode inizierà quindi a sincronizzare tutti i dati presenti in blockchain.
 
-## Scaricare il bootstrap per il wallet Scrpta
+Nel caso in cui vogliate avviare il wallet definitivamente, usare il comando:
+```
+pm2 start npm -- start
+```
+
+Per monitorare lo stato del wallet:
+```
+pm2 monit
+```
+
+## File di bootstrap 
+
+Se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), il processo di sincronizzazione può durare parecchie ore.
+<br>Al fine di velocizzare la sincronizzazione è possibile avvalersi dei file bootstrap.
+<br><br>**ATTENZIONE**: I file di bootstrap sono diversi per l'IdANode e il wallet Scrypta.
+
+### Scaricare il bootstrap per il wallet Scrpta
 
 Il bootstrap del wallet renderà il processo di sincronizzazione del wallet molto più rapido. Attraverso questi comandi è possibile scaricarlo e sincronizzare il wallet con l'ultima versione bootstrap disponibile. Questi comandi vanno dato all'interno della cartella `.lyra`, la stessa dove avete precedentemente modificato il file `lyra.conf`.
 
@@ -130,7 +193,7 @@ rm -rf blocks chainstate peers.dat
 tar -xvzf bootstrap.tar.gz
 ```
 
-## Scaricare il bootstrap per l'IdANode
+### Scaricare il bootstrap per l'IdANode
 
 Per scaricare il bootstrap ed installarlo è sufficiente dare i permessi al file `bootstrap.sh` e avviarlo:
 
