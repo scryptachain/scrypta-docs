@@ -42,6 +42,20 @@ Ora modifichiamo quindi il nostro file `.env` attraverso il comando `nano ~/scry
 RPCUSER=YsmtF6bvBrY82Q
 RPCPASSWORD=e43GkfCGMYaXsr
 LYRAPATH=/home/YourLinuxUser/scrypta-idanodejs
+NODE_KEY=LaTuaChiavePrimata
+```
+
+In particolare il parametro `NODE_KEY` corrisponderà alla chiave privata dell'IdaNode, con il quale verranno firmate le richieste di validazione. Per creare la chiave privata si può usare il wallet principale:
+
+```
+./lyra-cli getnewaddress ### risponderà con un indirizzo
+./lyra-cli dumpprivkey IndirizzoRispostaPrecendente
+```
+
+così come si può richiedere direttamente all'IdANode attraverso l'interfaccia grafica, nel pannello `tools`. Per accedere all'interfaccia grafica è necessario collegarsi con il browser all'indirizzo IP della macchina:
+
+```
+http://IndirizzoIPMAcchina:3001
 ```
 
 A questo punto siamo pronti a testare la nostra configurazione.
@@ -56,7 +70,7 @@ dopo di che attendiamo che il wallet sia partito dando il comando:
 ```
 Dopo che il wallet ha dato una risposta positiva e ha iniziato a sincronizzare i blocchi potremo far partire l'IdaNode attraverso il comando `npm start` oppure usare `pm2` per avviarlo definitivamente quindi:
 ```
-npm start ## avvia il wallet provvisoriamente
+npm start ### avvia il wallet provvisoriamente
 pm2 start npm -- start ### avvia il wallet definitivamente
 ```
 
