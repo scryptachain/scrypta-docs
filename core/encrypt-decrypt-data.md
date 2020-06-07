@@ -1,8 +1,8 @@
-# Encrypt-Decrypt Dati
+# Encrypt-Decrypt Data
 
 ## cryptData(data, password)
 
-Questo metodo utilizza l'algoritmo **AES-256** per crittografare una stringa di informazioni, e ritorna la rappresentazione esadecimale della stessa.
+This method uses the algorithm **AES-256** to encrypt a string of information, and return the hexadecimal representation of it.
 ```
 let string =  'Some super secret'
 
@@ -14,7 +14,7 @@ let encrypted =  await scrypta.cryptData(string, password)
 
 /*
 
- Risposta:
+ Answer:
 
  befba636e2212846bf1c15ff4ef9e5a17ac3e6f1ce3935f4639849d44b8c9565 
 
@@ -22,7 +22,7 @@ let encrypted =  await scrypta.cryptData(string, password)
 ```
 ## decryptData(data, password)
 
-Questo metodo decifra una stringa precedentemente crittografata e ne ritorna il contenuto originale. Ritornerà `false` in caso di password errata.
+This method decrypts a previously encrypted string and returns its original content. It will return `false` in case of wrong password.
 ```
 let hex =  'befba636e2212846bf1c15ff4ef9e5a17ac3e6f1ce3935f4639849d44b8c9565'
 
@@ -34,7 +34,7 @@ let decrypted =  await scrypta.decryptData(hex, password)
 
 /*
 
- Risposta:
+ Answer:
 
  Some super secret
 

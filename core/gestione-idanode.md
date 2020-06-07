@@ -1,14 +1,14 @@
-# Gestione IdANode
+# IdANode management
 
 ## returnNodes()
 
-Ritorna la lista completa dei nodi, la risposta è un array del tipo:
+The method returns the complete list of nodes, the answer is an array of the type:
 ```
 ['https://idanodejs01.scryptachain.org',  'https://idanodejs02.scryptachain.org',  'https://idanodejs03.scryptachain.org']
 ```
 ## checkNode(node)
 
-Controlla che il nodo risponda correttamente. In caso negativo invia una risposta `false:`
+It checks that the node is responding correctly. If not, it sends a `false:` response
 
 const scrypta = new ScryptaCore
 
@@ -16,11 +16,11 @@ let node =  await scrypta.checkNode('https://idanodejs01.scryptachain.org')
 ```
 /*
 
- Esempio di risposta positiva:
+ Example of a positive answer:
 
  {"version":1000000,"protocolversion":70920,"walletversion":61000,"balance":50.55998489,"obfuscation_balance":0,"blocks":424073,"timeoffset":0,"connections":21,"proxy":"","difficulty":32391.37336531,"testnet":false,"keypoololdest":1568297083,"keypoolsize":1001,"paytxfee":0,"relayfee":0.0001,"staking status":"Staking Active","errors":"","indexed":424073,"toindex":0}
 
- Esempio di risposta negativa: 
+ Example of a negative answer:
 
  false
 
@@ -29,7 +29,7 @@ let node =  await scrypta.checkNode('https://idanodejs01.scryptachain.org')
 
 ## connectNode()
 
-Combina i due metodi precedenti ritornando il primo nodo disponibile in modo casuale. Questo nodo può essere usato per richiamare funzioni specifiche all'interno dello stesso.
+It combines the two previous methods by returning the first available node randomly. This node can be used to call specific functions within it.
 
 ```
 const scrypta = new ScryptaCore
@@ -38,7 +38,7 @@ let node =  await scrypta.connectNode()
 
 /*
 
- Esempio di risposta:
+ Answer example:
 
  'https://idanodejs01.scryptachain.org'
 
@@ -47,9 +47,9 @@ let node =  await scrypta.connectNode()
 
 ## post(endpoint, params, node = '')
 
-Effettua una chiamata `POST` al primo IdANode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
+It makes a `POST` call to the first available IdANode, the list of endpoints can be found in the relevant section. This method automatically connects to the node even if it is possible to force the node and use a specific one by passing it to the `node` variable.
 
-Ad esempio si può utilizzare in questo modo per ottenere e leggere i dati inseriti in blockchain da uno specifico indirizzo:
+For example, it can be used in this way to obtain and read the data entered in the blockchain from a specific address:
 
 ```
 let response = await scrypta.post('/read', { address: "LbR8m1kkLSiiTDaEU8sHeeeh1jGbGho8uo" })
@@ -57,9 +57,9 @@ let response = await scrypta.post('/read', { address: "LbR8m1kkLSiiTDaEU8sHeeeh1
 
 ## get(endpoint, node = '')
 
-Effettua una chiamata `GET` al primo IdANode disponibile, l'elenco degli endpoint può essere trovato nella sezione relativa. Questo metodo effettua la connessione in automatico con il nodo anche se è possibile forzare il nodo ed usarne uno specifico passandolo alla variabile `node`.
+It makes a `GET` call to the first available IdANode, the list of endpoints can be found in the relevant section. This method automatically connects to the node even if it is possible to force the node and use a specific one by passing it to the `node` variable.
 
-Ad esempio si può utilizzare in questo modo per ottenere e leggere i dati relativi al wallet.
+For example, it can be used in this way to obtain and read wallet data.
 
 ```
 let response = await scrypta.get('/wallet/getinfo')

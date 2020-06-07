@@ -1,10 +1,10 @@
-# Firma/Verifica Messaggi
+# Sign / Verify Messages
 
 ## signMessage(key, message)
 
-Questo metodo serve a firmare un messaggio attraverso una chiave privata. E' possibile utilizzare questo metodo per dimostrare di possedere un determinatoindirizzo o per firmare un determinato dato.
+This method is used to sign a message through a private key. It is possible to use this method to prove that you own a certain address or to sign a certain data.
 
-Il metodo ritornerà quindi il messaggio firmato, l'hash dello stesso, la firma vera e propria, la chiave pubblica necessaria alla verifica del dato e l'indirizzo che ha generato la firma.
+The method will return the signed message, the hash of it, the actual signature, the public key necessary to verify the data and the address that generated the signature.
 ```
 const scrypta = new ScryptaCore
 
@@ -34,7 +34,7 @@ let signed =  await scrypta.signMessage(privkey, message)
 ```
 ## verifyMessage(pubkey, signature, message)
 
-Per verificare un messaggio è necessario possedere il messaggio stesso, la firma che vi è stata apposta e la chiave pubblica che ha generato quella firma. Se è tutto corretto, quindi non è stato alterato il messaggio e la firma è verificata tramite la chiave pubblica, verrà ritornato un oggetto contenente gli stessi elementi del metodo precedente. Se qualcosa non corrisponde, il metodo risponderà con `false`.
+To verify a message it is necessary to have the message itself, the signature that was placed on it and the public key that generated that signature. If everything is correct, if the message has not been altered and the signature is verified by means of the public key, an object containing the same elements as the previous method will be returned. If something does not match, the method will answer with `false`.
 
 ```
 const scrypta = new ScryptaCore

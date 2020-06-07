@@ -1,24 +1,24 @@
-# Gestione Cache
+# Cache management
 
 ## clearCache()
 
-Cancella la cache temporanea che viene generata durante la creazione delle transazioni. Non è obbligatorio invocare questo metodo e non fornisce alcuna risposta visibile.
+Clears the temporary cache that is generated when creating transactions. It is not mandatory to invoke this method and does not provide any visible response.
 
 ## returnTXIDCache()
 
-Ritorna la cache delle transazioni e può essere usata per generare transazioni consecutive non confermate sulla blockchain. Questo metodo viene invocato internamente.
+This method returns the transaction cache and can be used to generate consecutive unconfirmed transactions on the blockchain. This method is invoked internally.
 
 ## pushTXIDtoCache(txid)
 
-Inserisce una TXID all'interno della cache. Questo metodo viene invocato internamente.
+Insert a TXID into the cache. This method is invoked internally.
 
 ## returnUTXOCache()
 
-Ritorna la cache degli UTXO e può essere usata per generare transazioni consecutive non confermate sulla blockchain. Questo metodo viene invocato internamente.
+This method returns the UTXO cache and can be used to generate consecutive unconfirmed transactions on the blockchain. This method is invoked internally.
 
 ## pushUTXOtoCache(utxo)
 
-Inserisce una UTXO all'interno della cache. Questo metodo viene invocato internamente.
+This method places a UTXO inside the cache. This method is invoked internally.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTMzODg5MDk0M119
 -->

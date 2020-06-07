@@ -1,10 +1,10 @@
-# Gestione Transazioni
+# Transactions Management
 
 ## listUnspent(address)
 
-Permette di ottenere la lista degli "unspent" (UTXO) di un determinato indirizzo. La risposta contiene un array di UTXO che serviranno per costruire le transazioni.
+It allows to obtain the list of "unspent" (UTXO) of a specific address. The answer contains an array of UTXO that will be used to build transactions.
 
-Solitamente questo metodo è invocato internamente ma può essere usato per verificare ad esempio il balance dell'indirizzo.
+Usually this method is invoked internally but can be used to check the balance of the address, for example.
 ```
 const scrypta = new ScryptaCore
 
@@ -37,7 +37,7 @@ let unspent =  await scrypta.listUnspent(address)
 
 ## sendRawTransaction(rawtransaction)
 
-Permette di inviare una "raw transaction" al network di Scrypta. Questo metodo accetta in ingresso la rappresentazione esadecimale della transazione che si vuole effettuare, già firmata dalla chiave privata dell'indirizzo. Generalmente questo metodo viene invocato internamente. La risposta è una TXID (se la raw transaction è valida, `null` se è invalida).
+It allows you to send a "raw transaction" to the Scrypta network. This method accepts as input the hexadecimal representation of the transaction you want to carry out, already signed by the private key of the address. Generally this method is invoked internally. The answer is a TXID (if the raw transaction is valid, `null` if it is invalid).
 ```
 const scrypta = new ScryptaCore
 
@@ -48,7 +48,7 @@ let txid =  await scrypta.sendRawTransaction(rawtransaction)
 
 /*
 
- Risposta:
+ Answer:
 
  823fcfb6c5701153aa5ec0e8d68416a22433fe4237662fb8e0ca2ed41608dc7f
 
@@ -57,7 +57,7 @@ let txid =  await scrypta.sendRawTransaction(rawtransaction)
 
 ## decodeRawTransaction(rawtransaction)
 
-Permette di decodificare una raw transaction per ricostruirne il contenuto originale, ovvero gli input utilizzati e gli output della transazione.
+It allows you to decode a raw transaction to reconstruct its original content, i.e. the inputs used and the outputs of the transaction.
 ```
 const scrypta = new ScryptaCore
 
@@ -69,7 +69,7 @@ let txid =  await scrypta.decodeRawTransaction(rawtransaction)
 
 /*
 
- Risposta:
+ Answer:
 
  {
 
@@ -193,35 +193,35 @@ let txid =  await scrypta.decodeRawTransaction(rawtransaction)
 ```
 ## build(password, send = false, to, amount, metadata = '', fees = 0.001, key)
 
-Questo è il metodo principale per la costruzione delle transazioni. Invoca internamente tutti i metodi elencati precedentemente.
+This is the main method for building transactions. It internally invokes all the methods listed above.
 
-Solitamente è invocato internamente dai metodi `send` e `write` ma può essere usato per costruire una raw transaction. L'output varia in base al parametro `send`.
+It is usually invoked internally by the `send` and` write` methods but can be used to build a raw transaction. The output varies according to the `send` parameter.
 
-1.  **Send = false**: l'output è composto da un oggetto contenente gli input utilizzati e la raw transaction firmata da inviare successivamente con il metodo `sendRawTransaction`
+1.  **Send = false**:the output consists of an object containing the inputs used and the signed raw transaction to be sent later with the `sendRawTransaction` method
     
-2.  **Send = true**:  l'output è composto dalla sola TXID
+2.  **Send = true**:  the output is composed only of the TXID
     
 
-I parametri sono descritti di seguito:
+The parameters are described below:
 
--   **password:** la password per de-crittografare il payload di identità.
+-   **password:** the password to de-encrypt the identity payload.
     
--   **send:** permette di inviare la transazione contestualmente (di default è `false`).
+-   **send:** it allows to send the transaction contextually (default is `false`).
     
--   **to:** l'indirizzo di ricezione.
+-   **to:** the receiving address.
     
--   **amount:** l'ammontare di Lyra da inviare.
+-   **amount:** the amount of Lyra to be sent.
     
--   **metadata:** eventuale stringa di testo da scrivere in transazione (massimo 8000 byte).
+-   **metadata:** text string to be written in transaction (maximum 8000 bytes), it is not mandatory.
     
--   **fees:** la quantità di fee da usare per la transazione, di default sono **0.001 LYRA.**
+-   **fees:** the amount of fees to use for the transaction, by default they are **0.001 LYRA.**
     
--   **key:** il payload di identità da utilizzare.
+-   **key:** the identity payload to use.
     
 
 ## send(password, to, amount, metadata = '', key = '')
 
-Permette di inviare fondi verso un indirizzo Lyra. Il metodo invoca il precedente `build` per creare la transazione, e il metodo `sendRawTransaction` per inviarla. I parametri in ingresso sono i medesimi dei precedenti, l'unica differenza è che il parametro `key` diventa opzionale. Se non specificato, viene usato il payload presente all'interno del localStorage.
+Allows you to send funds to a Lyra address. The method invokes the previous `build` to create the transaction, and the` sendRawTransaction` method to send it. The input parameters are the same as the previous ones, the only difference is that the `key` parameter becomes optional. If not specified, the payload inside the localStorage is used.
 ```
 const scrypta = new ScryptaCore
 
@@ -237,7 +237,7 @@ let txid = scrypta.send(password, address, amount, metadata)​
 
 /*
 
- Risposta:
+ Answer:
 
  823fcfb6c5701153aa5ec0e8d68416a22433fe4237662fb8e0ca2ed41608dc7f
 

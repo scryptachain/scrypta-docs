@@ -1,9 +1,9 @@
-# Gestione Indirizzi
+# Address Management
 ## createAddress(password, saveKey = true)
 
-Crea un indirizzo e salva il payload (di default) nel localStorage. Se al secondo parametro viene passato `false` il metodo non salva il payload nel localStorage.
+It creates an address and save the payload (by default) in the localStorage. If `false` is passed to the second parameter, the method does not save the payload in the localStorage.
 
-Attenzione, non viene controllato il localStorage! In caso di presenza di un payload precedente questo verrà sovrascritto. Controllate attentamente le fasi di backup e scrittura dei payload nella vostra dApp.
+Attention: the localStorage is not checked! In case of presence of a previous payload this will be overwritten. Check carefully the backup and write phases of the payloads in your dApp.
 ```
 const scrypta = new ScryptaCore
 
@@ -30,24 +30,24 @@ let payload =  await scrypta.createAddress(password,  false)
 */
 ```
 
-### Composizione payload di identità
+### Identity payload composition
 
--   **pub:** l'indirizzo pubblico appena generato.
+-   **pub:** the public address generated.
     
--   **api_secret:** una chiave "forte" che è possibile usare come chiave di cifratura delle informazioni scritte in blockchain.
+-   **api_secret:** a "strong" key that can be used as an encryption key for information written in blockchain.
     
--   **key:** la chiave pubblica dell'indirizzo appena generato. Questa serve per la validazione delle informazioni scritte e per la creazione dei Trustlink.
+-   **key:** the public key of the generated address. This is for the validation of written information and for the creation of Trustlinks.
     
--   **prv:** la chiave privata dell'indirizzo, utilizzata per spendere i fondi.
+-   **prv:** the private key of the address, used to spend the funds.
     
--   **walletstore:** la versione crittografata del payload, che dovrà essere salvata dall'utente (in localStorage e separatamente)
+-   **walletstore:** the encrypted version of the payload, which must be saved by the user (in localStorage and separately)
     
 
 ## buildWallet(password, pub, wallet, saveKey)
 
-Questo metodo, che viene normalmente invocato internamente, serve a costruire la versione crittografata del wallet; cioè quello che il metodo `createAddress` chiama `walletstore`. Tuttavia può essere necessario richiamare questo metodo in altri contesti. Per fare un esempio: potrebbe essere richiamato se si vuole cambiare la password del proprio payload salvato.
+This method, which is normally invoked internally, is used to build the encrypted version of the wallet. It is what the `createAddress` method calls` walletstore`. It may also be necessary to invoke this method in other contexts. For example, it could be called if you want to change the password of your saved payload.
 
-In questo caso si dovrebbe procedere come segue:
+In this case you should proceed as follows:
 ```
 const scrypta = new ScryptaCore
 
@@ -82,13 +82,13 @@ if(payload !==  false){
 ```
 
 
-Come potrete notare, l'indirizzo pubblico sta fuori dal payload di identità, infatti può essere salvato senza compromettere la sicurezza: l'indirizzo pubblico è di sola consultazione.
+As you can see, the public address is out of the identity payload and can be saved without compromising security: the public address is for consultation only.
 
-La chiave pubblica e l'indirizzo pubblico sono due entità separate. L'indirizzo pubblico è ottenuto facendo una doppia funzione di hash dalla chiave pubblica. La chiave pubblica invece viene ottenuta direttamente dalla chiave privata ed è quella che permette la validazione delle informazioni scritte e firmate sulla blockchain.
+The public key and public address are two separate entities. The public address is obtained by doing a double hash function from the public key. The public key, on the other hand, is obtained directly from the private key and is the one that allows the validation of the information written and signed on the blockchain.
 
 ## initAddress(address)
 
-Questo metodo inizializza l'indirizzo, ovvero fa sì che un IdANode disponibile invii una minima quantità di LYRA all'indirizzo inizializzato. Nel caso degli IdANode Scrypta la quantità è di **0.05 LYRA**. La risposta che si ottiene dall'IdANode comprende la TXID della transazione.
+This method initializes the address, which means that an available IdANode sends a minimal amount of LYRA to the initialized address. In the case of IdANode Scrypta the quantity is ** 0.05 LYRA **. The response obtained from the IdANode includes the TXID of the transaction.
 ```
 const scrypta = new ScryptaCore
 
@@ -98,7 +98,7 @@ let init =  await scrypta.initAddress(address)
 
 /*
 
- Risposta:
+ Answer:
 
  {
 
@@ -113,11 +113,11 @@ let init =  await scrypta.initAddress(address)
 
 ## importPrivateKey(key, password) 
 
-Questo metodo permette di importare una qualsiasi chiave privata all'interno del wallet locale. Utile per importare altri indirizzi e utilizzarli successivamente.
+This method allows you to import any private key into the local wallet. It is useful for importing other addresses and using them later.
 
 ## getPublicKey(privateWif)
 
-Questo metodo permette di ricreare la chiave pubblica dell'indirizzo partendo dalla sua chiave privata.
+This method allows you to recreate the public key of the address starting from its private key.
 ```
 const scrypta = new ScryptaCore
 
@@ -128,7 +128,7 @@ let key = scrypta.getPublicKey(prv)
 
 /*
 
- Risposta: 
+ Answer: 
 
  03097163386854cde5801aec574948e15b9e24c79da65414d4e5588e7140846165
 
@@ -137,7 +137,7 @@ let key = scrypta.getPublicKey(prv)
 
 ## getAddressFromPubKey(pubKey)
 
-Questo metodo permette di ricreare un indirizzo partendo dalla sua chiave pubblica, utile per verificare che la chiave pubblica sia effettivamente corrispondente all'indirizzo.
+This method allows you to recreate an address starting from its public key, useful to verify that the public key is actually corresponding to the address.
 ```
 const scrypta = new ScryptaCore
 
@@ -148,7 +148,7 @@ let address =  await scrypta.getAddressFromPubKey(key)
 
 /*
 
- Risposta: 
+ Answer: 
 
  LLLjx7yV4nhUzSapBAHogb5BdgUR6VCB3o
 

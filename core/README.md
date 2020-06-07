@@ -1,26 +1,26 @@
-# Introduzione
+# Introduction
 
-[**Scrypta Core**](https://github.com/scryptachain/scrypta-core), come anticipato nei capitoli introduttivi, è la libreria Javascript che sta alla base delle interazioni lato client (quindi lato utente) e assolve, in maniera locale - ovvero senza interpellare server esterni - tutte le funzioni necessarie alla gestione degli indirizzi e delle transazioni.
+[**Scrypta Core**](https://github.com/scryptachain/scrypta-core), as anticipated in the introductory chapters, it is the Javascript library that is the basis of the interactions on the client side (therefore user side) and performs, locally - or without consulting external servers - all the functions necessary for managing addresses and transactions.
 
 ##  SID File
 
-La libreria Scrypta Core, non salva MAI in chiaro le chiavi private e le usa unicamente "on the fly", dopo che l'utente ha sbloccato il proprio payload di identità. Questo payload, che citeremo più volte, è una stringa criptata attraverso protocollo AES-256 e viene comunemente salvato in file con estensione **.sid (Scrypta ID)**.
+The Scrypta Core library NEVER saves private keys in the clear and uses them only "on the fly", after the user has unlocked his identity payload. This payload, which we will mention several times, is an encrypted string through the AES-256 protocol and is commonly saved in files with the extension **.sid (Scrypta ID)**.
 
-la password con cui la chiave viene criptata non viene MAI salvata in chiaro. Chiediamo agli sviluppatori di attenersi a queste semplici regole, che garantiscono una prima, ma essenziale, barriera di sicurezza verso l'utilizzo non autorizzato degli indirizzi.
+The password with which the key is encrypted is NEVER saved in the clear. We ask developers to follow these simple rules, which guarantee a first, but essential, security barrier to the unauthorized use of addresses.
 
-La gestione locale dei file .sid avviene di default attraverso il localStorage se usata nel browser o attraverso dei file, salvati nella directory `db` se usata con NodeJS. La libreria permette di default di utilizzare più di un indirizzo e, ognuno di questi, può essere richiamato in fase successiva o utilizzato nelle dApp attraverso il browser.
+The local management of the .sid files takes place by default through the localStorage if used in the browser or, if used with NodeJS, through the files saved in the `db` directory. The library allows by default to use more than one address and, each of these, can be recalled at a later stage or used in dApps through the browser.
 
-## Per iniziare
+## To start
 
-La libreria Scrypta Core mette in collegamento il client con uno degli IdANode disponibili di Scrypta. Questi nodi tuttavia possono essere personalizzati e sovrascritti in fase di inizializzazione così da utilizzare un set di IdANode personalizzati, consigliato soprattutto in fase di produzione di una dApp.
+The Scrypta Core library connects the client with one of the available Scrypta IdANodes. However, these nodes can be customized and overwritten during the initialisation phase so as to use a set of personalized IdANodes, recommended especially during the production phase of a dApp.
 
-In questa sezione analizzeremo a fondo il funzionamento di ogni singolo metodo presente all'interno della libreria. La libreria si deve inserire all'interno di webpack o di altri compilatori per utilizzarla all'interno di una pagina web, oppure può essere richiamata direttamente da NodeJS semplicmente installlandola con:
+In this section we will analyze in depth the functioning of each single method inside the library. The library must be inserted into webpacks or other compilers to use it within a web page, or it can be called directly from NodeJS simply by installing it with:
 
 ```
 npm install --save @scrypta/core
 ```
 
-Una volta installata si deve inserire all'interno dello script di javascript e inizializzarla. Si badi bene che è importante inizializzarla con il parametro `true` nel caso di utilizzo nel browser. Questa impostazione permette alla libreria di usare il localStorage invece del File System.
+Once installed it must be inserted into the javascript script and initialized. Note that it is important to initialize it with the `true` parameter when used in the browser. This setting allows the library to use localStorage instead of the File System.
 
 ```
 const ScryptaCore = require('@scrypta/core')
@@ -47,9 +47,9 @@ let address =  await scrypta.createAddress('AStrongPassword')
 */
 ```
 
-## Lavorare con la testnet
+## Working with the testnet
 
-Per lavorare con la testnet di Scrypta basta impostare il parametro `testnet = true` subito dopo averla inizializzata:
+To work with the Scrypta testnet you need to set the `testnet = true` parameter immediately after initializing it:
 
 ```
 const ScryptaCore = require('@scrypta/core')
@@ -57,11 +57,11 @@ let scrypta = new ScryptaCore(true)
 scrypta.testnet = true
 ```
 
-Da questo momento sia gli indirizzi che gli IdANode saranno di testnet.
+From now on both addresses and IdANodes will be testnet.
 
-## Test e debug della libreria
+## Library testing and debugging
 
-Per testare localmente la libreria bisogna aver installato NodeJS e GIT, di seguito l'elenco dei comandi necessari per avviare l'interfaccia web di test:
+To test the library locally you must have installed NodeJS and GIT, below the list of commands necessary to start the test web interface:
 ```
 git clone https://github.com/scryptachain/scrypta-core
 
