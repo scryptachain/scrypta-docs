@@ -1,18 +1,18 @@
 # News
 
-## Premessa
+## Premise
 
-Il mondo dell’informazione al giorno d’oggi crea e pubblica un’immensa mole di contenuti digitali sul web sotto forma di articoli, immagini o video. Il concetto di fiducia verso la fonte delle informazioni diventa quindi di importanza fondamentale.
+The world of information nowadays creates and publishes an immense mass of digital content on the web in the form of articles, images or videos. The concept of trust towards the source of information therefore becomes of fundamental importance.
 
-Inoltre, l’uso di social media come Facebook, Instagram e altre piattaforme digitali, ha fatto emergere il problema della diffusione di informazioni palesemente false. E con l’avvento dell’intelligenza artificiale, le animazioni digitali e il social engineering, il confine tra contenuti manipolati e autentici è molto labile. Sempre più sentiamo parlare infatti di “fake news” e “deepfake” che diventano virali.
+Furthermore, the use of social media such as Facebook, Instagram and other digital platforms has brought to light the problem of the diffusion of clearly false information. And with the advent of artificial intelligence, digital animations and social engineering, the border between manipulated and authentic content is very blurred. We are increasingly hearing about "fake news" and "deepfake" that go viral.
 
-Spesso le persone cadono nella trappola delle notizie false poiché non hanno degli strumenti efficaci per controllare con rapidità ed esattezza la fonte e quindi l’autenticità dell’informazione.
+Often people fall into the trap of false news because they do not have effective tools to quickly and accurately check the source and therefore the authenticity of the information.
 
-E’ qui che subentrerebbe la blockchain come soluzione alla tracciabilità dei contenuti e delle fonti. Con la natura pubblica e “aperta”, la blockchain consente alle informazioni di essere prodotte e distribuite su Internet in modo trasparente, immutabile e sicuro. 
+Blockchain can be the solution to the traceability of content and sources. With the public and "open" nature, the blockchain allows information to be produced and distributed on the Internet in a transparent, immutable and secure way.
 
-Questo grazie alle sue funzioni di registro distribuito e decentralizzato, che con le sue funzioni di **marcatura temporale** e **firma digitale**, diventa uno strumento eccezionale per creare linee di fiducia tra il creatore di informazione e il fruitore.
+This thanks to its distributed and decentralized register functions, which with its **time stamp** and **digital signature** functions, becomes an exceptional tool for creating lines of trust between the information creator and the user.
 
-## Introduzione
+## Introduction
 
 ### Scrypta News - Proof of Concept
 
@@ -20,17 +20,17 @@ Il modulo ideato da Scrypta, che in modo semplice può dialogare con piattaforme
 
 Grazie a questo i fruitori possono facilmente tracciare il contenuto e la sua fonte. Un processo quindi, che determina la certezza della provenienza dell’informazione e la protezione dei contenuti editoriali.
 
-## Come Funziona
-Scrypta News è concepita in combinazione [Manent](https://manent.app/) e [Scrypta ID](https://me.scrypta.id/), servizi entrambi disponibili sia da browser che da mobile.
+## How does it work
+Scrypta News is conceived in combination of [Manent](https://manent.app/) and of [Scrypta ID](https://me.scrypta.id/), services both available both from browser and mobile.
 
-- **Manent** è un’applicazione decentralizzata che permette di interagire in maniera semplice con la blockchain. Basta creare un account e fare il backup del *sid.file* (da conservare in un luogo sicuro). 
-  > Questo passaggio è fondamentale e consente di proteggere la propria firma elettronica.
+- **Manent** is a decentralized application that allows you to easily interact with the blockchain. Just create an account and backup the *sid.file* (to be kept in a safe place).
+   > This step is essential and allows you to protect your electronic signature.
 
-- **Scrypta ID** permette all’utente di identificarsi e verificare il proprio set di indirizzi (Github, Google, Linkedin, Twitter, E-Mail, Telefono). 
+- **Scrypta ID** allows the user to identify and verify their own set of addresses (Github, Google, Linkedin, Twitter, E-Mail, Telephone).
 
-Per maggiori informazioni, potete consultare la guida di ScryptaID a [questo link](../id/README.md).
+For more information, you can consult the ScryptaID guide at[this link](../id/README.md).
 
-A questo punto è possibile accedere al modulo [Scrypta News](https://news.scryptachain.org/), effettuare il login con la propria identità, inserendo il proprio sid.file o utilizzando [**Scrypta Browser Extension**](https://id.scryptachain.org/) e procedere alla pubblicazione dell’articolo su blockchain.
+At this point you can access the form [Scrypta News](https://news.scryptachain.org/), login with your identity, inserting your sid.file or using[**Scrypta Browser Extension**](https://id.scryptachain.org/) and proceed with the publication of the article on blockchain.
 
 ![news feed](../.vuepress/public/assets/other/newsfeed.png)
 
@@ -38,62 +38,62 @@ A questo punto è possibile accedere al modulo [Scrypta News](https://news.scryp
 ![news write](../.vuepress/public/assets/other/newswrite.png)
 
 
-::: tip NOTA
-E’ chiaro che, nel caso ad esempio di un giornale online che vuole identificare i propri collaboratori e le loro operazioni digitali, data la natura aperta del framework ScryptaID, è possibile creare uno storage per tutte le identità e collegarle, ad esempio, all’e-mail aziendale.
+::: tip NOTE
+It is clear that, for example in the case of an online newspaper that wants to identify its collaborators and their digital operations, given the open nature of the ScryptaID framework, it is possible to create a storage for all identities and connect them, for example, to the corporate email.
 :::
 
-L’utente quindi potrà verificare l’identità dell’autore dell’articolo, data, luogo e momento esatto in cui è stato prodotto e quindi accertarsi dell’autenticità della provenienza dell’informazione.
+The user will then be able to verify the identity of the author of the article, date, place and exact time in which it was produced and then ascertain the authenticity of the origin of the information.
 
-E’ possibile quindi sin da subito testare l’esempio già funzionante del proof of concept realizzato da Scrypta:
+It is therefore possible immediately to test the already working example of the proof of concept created by Scrypta:
 
 [Scrypta News Website](https://news.scryptachain.org/)
 
 ### UPVOTE, DOWNVOTE e TIPUSER
 
-Dopo il login, i lettori possono votare attraverso le funzioni di UPVOTE, DOWNVOTE  e inviare donazioni in LYRA con TIP USER.
+After logging in, readers can vote through the UPVOTE, DOWNVOTE functions and send donations in LYRA with TIP USER.
 
 ![upvote](../.vuepress/public/assets/other/upvote.png)
 
-## Guida sul caricamento degli articoli in blockchain
+## Guide on uploading articles in blockchain
 
-Una volta effettuato il login, che ricordiamo può essere fatto attraverso Extension Browser o file .sid, è possibile inserire il proprio articolo cliccando sul simbolo “ + ” in basso a destra.
+Once logged in, which can be done through the Extension Browser or .sid file, you can insert your article by clicking on the "+" symbol at the bottom right.
 
 ![piu](../.vuepress/public/assets/news/piu.png)
  
-Comparirà una sezione in cui inserire i dettagli iniziali dell’articolo: 
+A section will appear in which to enter the initial details of the article:
 
-- titolo, 
-- sottotitolo, 
-- immagine di copertina, 
+- title,
+- subtitle,
+- cover image,
 - tags.
 
 ![details](../.vuepress/public/assets/news/article-details.png)
 
 
-A questo punto si procede a compilare il corpo del testo con una usuale interfaccia grafica da editor testuale.
+At this point we proceed to compile the body of the text with a usual graphical interface from text editor.
 
 ![body](../.vuepress/public/assets/news/article-body.png)
 
 
-Una volta terminato basterà cliccare su “Write on the blockchain” e Inserire la propria password.
+Once finished just click on "Write on the blockchain" and enter your password.
 
-infine si avrà conferma dell’esito dell’operazione.
+Finally, the outcome of the operation will be confirmed.
 
 ![confirm](../.vuepress/public/assets/news/article-written.png)
 
 
-Ora l’articolo è scritto indelebilmente in blockchain! E  comparirà presto nella sezione articoli di Scrypta News.
+Now the article is indelibly written in blockchain! And it will soon appear in the articles section of Scrypta News.
 
-Come si può vedere dall'esempio, viene impressa una marcatura temporale (timestamp) e firma digitale (collegata all’indirizzo dell'autore):
+As can be seen from the example, a time stamp (timestamp) and digital signature (linked to the author's address) are imprinted:
 
 
 ![proof](../.vuepress/public/assets/news/article-proof.png)
 
 
 ## Editing
-Grazie alla tecnologia [Progressive Data Management](../idanode/progressive-data-management.md) di Scrypta, è permesso all’autore, ed esclusivamente ad esso, di editare l'articolo. Quella editata sarà la versione visualizzata come “versione corrente”; le precedenti versioni continuano ad esistere solo all’interno  della blockchain Scrypta.
+Thanks to the Scrypta's [Progressive Data Management](../idanode/progressive-data-management.md) technology, the author is allowed, and exclusively to him, to edit the article. The edited version will be the version displayed as "current version"; previous versions continue to exist only within the Scrypta blockchain.
 
-Se volete editare un articolo, recatevi nella sezione dei vostri articoli cliccando sull’icona relativa (accanto a logout). Quindi cliccate il simbolo “matita” relativo all’articolo da editare. Effettuate le modifiche e cliccate su *Write on the blockchain*.
+If you want to edit an article, go to the section of your articles by clicking on the relative icon (next to logout). Then click the "pencil" symbol relating to the article to be edited. Make your changes and click on *Write on the blockchain*.
 
 
 ## Video Tutorial

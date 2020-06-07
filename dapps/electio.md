@@ -1,3 +1,3 @@
 # Electio
 
-Guida in fase di elaborazione.
+The guide is being developed.

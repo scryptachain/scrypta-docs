@@ -1,16 +1,16 @@
 # Manent APP
 
-## Panoramica
+## Overview
 
-#### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
+#### Scrypta Manent App - Light Wallet with Blockchain Certification Technology
 ***
 ![manent_app](../.vuepress/public/assets/manent_app/manent_01.jpg)
 
-Rendi i tuoi file immutabili con Scrypta Manent e porta sempre con te le tue **LYRA**!
+Make your files immutable with Scrypta Manent and always carry your **LYRA** with you!
 
-Manent è la prima app ufficiale di [Scrypta](https://scryptachain.org), sviluppata per interagire con la blockchain in maniera semplice, veloce e sicura!
+Manent is the first official app of [Scrypta](https://scryptachain.org), developed to interact with the blockchain in a simple, fast and safe way!
 
-Manent è disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
+Manent is available in both versions [web](https://web.manent.app) and mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
 
 ***
 ### Join Manent App
@@ -23,205 +23,205 @@ Manent è disponibile in entrambe le versioni [web](https://web.manent.app) e mo
 - [Scrypta ID](https://chrome.google.com/webstore/detail/scryptaid/kphclbededgemedgbfgblpmdccjbbhdm) - Estensione Browser  (addons)
 
 
-### Ecco cosa puoi fare:
-#### CONSERVA, INVIA E RICEVI LYRA
-Gestisci le tue LYRA coin con Manent grazie alle sue **funzioni di mobile wallet** in maniera facile e veloce. Puoi inviare le tue LYRA coin semplicemente scannerizzando un QR Code.
-<br>Quando invii LYRA tramite l’app, tutto è immediato e verificabile all’interno della blockchain grazie al suo **registro distribuito**.
+### What you can do with Manent:
+#### KEEP, SEND AND RECEIVE LYRA
+Manage your LYRA coins with Manent thanks to its **mobile wallet functions** in an easy and fast way. You can send your LYRA coins simply by scanning a QR Code.
+<br> When you send LYRA through the app, everything is immediate and verifiable within the blockchain thanks to its **distributed register**.
 
-#### CERTIFICA I TUOI FILE O DOCUMENTI IMPORTANTI
-Con Manent, grazie alla **marcatura temporale**, puoi caricare ogni tipo di file o documento apportandogli valenza legale e probatoria; rispettando le norme nazionali ed internazionali, unendo la semplicità di un’app alle potenzialità tecnologiche della **blockchain**.
+#### CERTIFY YOUR IMPORTANT FILES OR DOCUMENTS
+With Manent, thanks to the **time stamp**, you can upload any type of file or document making it legal and evidentiary; respecting national and international standards, combining the simplicity of an app with the technological potential of the **blockchain**.
 
-#### PROTEGGI LE TUE INVENZIONI
-Abbiamo pensato di aiutare gli autori di opere fotografiche, di poesie o romanzi e testi digitali, opere d’arte e artigianato e ancora illustratori, grafici, designer e sviluppatori di software, a proteggere le proprie creazioni in maniera **immediata, sicura e con costi bassissimi**, contro qualsiasi forma di plagio, contraffazione o diffusioni illecite. 
+#### PROTECT YOUR INVENTIONS
+We thought to help authors of photographic works, poems or novels and digital texts, works of art and crafts, illustrators, graphic designers, designers and software developers, to protect their creations in an **immediate, safe and very low cost way**, against any form of plagiarism, counterfeiting or illegal spread.
 
-#### TIENI LE TUE LYRA E I TUOI FILE AL SICURO
-Manent ti offre diversi tools di sicurezza. Grazie alla tua password personale e al sistema **SID file**, il tuo account ha una duplice protezione: per garantirti la massima sicurezza, questo file di autenticazione verrà salvato localmente nel tuo smarphone e ti consentirà di accedere al tuo account in qualunque momento e da qualsiasi dispositivo.
+#### KEEP YOUR LYRA AND YOUR FILES SAFE
+Manent offers you several security tools. Your account has double protection thanks to your personal password and the **SID file** system. To guarantee maximum security, this authentication file will be saved locally on your smartphone and will allow you to access your account at any time and from any device.
 
-#### SEI UN FANATICO DELLA SICUREZZA?
-Manent ha pensato anche a voi! Se non ti basta il Sid file e la password potrai accedere o importare il tuo account personale tramite **Paper Wallet**, un **QR code** stampabile da importare tramite scannerizzazione, oppure ancora tramite la nostra **Scrypta Card**, una card con tecnologia **NFC**, proprio come una comune carta di credito.
+#### ARE YOU A SECURITY FAN?
+Manent has thought of you too! If the Sid file and password are not enough, you can access or import your personal account through **Paper Wallet**, a **QR code** printable to be imported by scanning, or even through our **Scrypta Card** , a card with **NFC** technology, just like a common credit card.
 
-#### STAI SENZA PENSIERI
-Con Manent puoi recuperare il tuo account in tantissimi modi, anche se perdi il tuo dispositivo o ne compri uno nuovo! Ti basta importare il tuo profilo caricando il file .sid, accedendo tramite Scrypta Card o ancora scannerizzando il tuo Paper Wallet.
+#### BE THOUGHTLESS
+With Manent you can recover your account in many ways, even if you lose your device or buy a new one! All you need to do is import your profile by uploading the .sid file, logging in via the Scrypta Card or scanning your Paper Wallet.
 
-I Dati e file caricati sulla blockchain di Scrypta vengono elaborati dall'infrastruttura e raggiungono un elevatissimo livello di **ridondanza e impermeabilità**, tale da renderli a tutti gli effetti immutabili e immuni da alterazioni e falsificazioni.
+The data and files uploaded on the Scrypta blockchain are processed by the infrastructure and reach a very high level of **redundancy and impermeability**, such as to make them in all respects immutable and immune to alterations and falsifications.
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**Hai il nostro pieno supporto!**
+**You have our full support!**
 
-Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
-Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
+Do you need help? Send an email to: [**info@scryptachain.org**](mailto:info@scryptachain.org)
+Or visit [Support](https://wiki-it.scryptachain.org/manent-app/manent-support) page
 :::
 ***
 
-#### VUOI SAPERNE DI PIU'?
-- Puoi utilizzare Manent su **più dispositivi**.
-- Una password protegge tutte le operazioni in app.
-- Il Sid file tutela l’uso della tua identità e previene accessi indesiderati.
-- Supporta tutte le funzionalità di base di un wallet per criptovalute.
-- Account multipli: Gestisci più account Wallet con una sola app.
-- Ogni singolo dato o documento caricato con Manent avrà un hash: una funzione   matematica che trasforma i dati originali in un’impronta digitale garantendone l’unicità.
-- La tecnologia Blockchain di Timestamp garantisce la data certa di upload, conferendo una marcatura temporale inconfutabile.
-- Qualsiasi file caricato risiede in un archivio decentralizzato basato su **IPFS (Inter Planetary File System)** e **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
+#### WOULD YOU LIKE TO KNOW MORE'?
+- You can use Manent on **multiple devices**.
+- A password protects all operations in the app.
+- The Sid file protects the use of your identity and prevents unwanted access.
+- Supports all the basic functionality of a cryptocurrency wallet.
+- Multiple accounts: Manage multiple Wallet accounts with one app.
+- Every single data or document uploaded with Manent will have a hash: a mathematical function that transforms the original data into a fingerprint ensuring its uniqueness.
+- Timestamp's Blockchain technology guarantees the certain upload date, giving an irrefutable time stamp.
+- Any uploaded file resides in a decentralized archive based on **IPFS (Inter Planetary File System)** and **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
 ***
 
-## Guide & Tutorials
+## Guides & Tutorials
 
- ### Creare un account
- Il processo per creare un account è semplice: dovrai solo inserire due volte una **password** da te scelta.
+ ### Account creation
+The process to create an account is simple: you only need to enter a **password** of your choice twice.
 
-Adesso metti in sicurezza il tuo account effettuando il backup seguendo le istruzioni riportate di seguito).
-Questo passaggio è fondamentale e consente di proteggere la tua firma digitale e il relativo portafoglio.
+Now secure your account by backing up by following the instructions below).
+This step is essential and allows you to protect your digital signature and its wallet.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-**Manent è un'applicazione decentralizzata**, è quindi concepita per operare senza alcun server centrale. In questo modo tu sei l'unico responsabile della password e della relativa e-signature (firma digitale).
+**Manent is a decentralized app**, it is therefore conceived to operate without any central server. In this way you are solely responsible for the password and its e-signature (digital signature).
 :::
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
-**TIENI LA PASSWORD AL SICURO**
+**KEEP YOUR PASSWORD SAFE**
 
-Se perdi la password, non sarà più possibile per nessuno recuperarla e il tuo account diventerà **per sempre** inaccessibile. 
+If you lose your password, it will no longer be possible for anyone to recover it and your account will become **forever** inaccessible.
 :::
 ***
 
-### Backup dell' account
-- Tocca l'icona **Menu** (angolo in alto a destra) > **Backup**
-- Seleziona il metodo desiderato: 
+### Account Backup
+- Click on the **Menu** icon (upper left corner) > **Backup**
+- Choose the appropriate method: 
 **DOWNLOAD .SID FILE** (.sid) - o  - **DOWNLOAD PAPER WALLET** (.pdf)
-** Questi file verranno archiviati sul dispositivo, nella cartella selezionata.
+** These files will be stored on the device, in the selected folder.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Dopo aver scaricato il file **.SID**, è consigliabile salvarlo in un luogo sicuro come una chiavetta USB, e rimuovere il file dal dispositivo.
+After downloading the **.sid** file, it is advisable to save it in a safe place such as a USB stick, and remove the file from the device.
 :::
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. Successivamente, rimuovi il file .pdf dal tuo dispositivo.
+After downloading the .pdf **PAPER WALLET** file, it is suggested to print it and put the print in a safe place. Next, remove the .pdf file from your device.
 :::
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
-**CUSTODISCI CON CURA IL TUO PAPER WALLET**
+**KEEP YOUR PAPER WALLET SAFE**
 
-Il **PAPER WALLET espone la tua chiave privata** sotto forma di codice QR. 
-Questa è la tua firma elettronica e rappresenta la tua identità digitale e vuoi che nessun'altro la utilizzi illecitamente.
+The **PAPER WALLET exposes your private key** in the form of a QR code.
+This is your electronic signature and represents your digital identity and you want nobody else to use it illegally.
 :::
 
 ***
 
-### Importazione dell'Account
-Con **MANENT** puoi gestire account multipli, potrai quindi effettuare l'importazione di più account.
-- Tocca l'icona **Menu** > **Accounts**
-- Tocca l'icona "**+**" (angolo in alto a destra dello schermo).
+### Account Import
+With **MANENT** you can manage multiple accounts, so you can import multiple accounts.
+- Touch the icon **Menu**> **Accounts**
+- Touch the "**+**" icon (upper right corner of the screen).
 
-Seleziona il metodo di importazione che preferisci tra quelli elencati di seguito:
+Select your preferred import method from those listed below:
 #### RESTORE SID FILE
-Naviga tra le cartelle del tuo dispositivo, seleziona il .SID File da importare  e conferma con **OK**.
-Adesso potrai gestire l'account importato.
+Browse the folders of your device, select the .SID file to import and confirm with ** OK **.
+Now you can manage the imported account.
 
 #### READ SCRYPTA CARD
-Avvicina una SCRYPTA CARD al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
+Bring a SCRYPTA CARD closer to your device so that it can read its information through the NFC sensor.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Per leggere la SCRYPTA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile.
+To read the SCRYPTA CARD (hardware NFC card) it is necessary to enable **Near Field Communication** on the mobile device.
 :::
 
 #### RESTORE PAPER WALLET
-Questa funzione abilita la fotocamera del tuo dispositivo in modo che tu possa inquadrare e scansionare il QR Code **"ENCRYPTED WALLET"** presente sul tuo PAPER WALLET.
+This function enables the camera of your device so that you can frame and scan the QR Code **"ENCRYPTED WALLET"** present on your PAPER WALLET.
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
-Il **PAPER WALLET ESPONE LA TUA CHIAVE PRIVATA** sotto forma di **QR CODE**.
-Assicurati di conservarlo in un luogo sicuro!
+The ** PAPER WALLET EXPOSES YOUR PRIVATE KEY ** in the form of **QR CODE**.
+Make sure to keep it in a safe place!
 :::
 ***
 
-#### Seleziona un account
-- Tocca l'icona **Menu** (angolo in alto a destra) > **Accounts**
-- Seleziona adesso l'account che preferisci
-- Tocca su **USE THIS ADDRESS**
-<br><br>Verrai adesso reinderizzato alla **Dashboard**.
+#### Select an account
+- Click on the **Menu** icon (top right corner)> **Accounts**
+- Select now the account you prefer
+- Tap on **USE THIS ADDRESS**
+<br> <br> You will now be redirected to the **Dashboard**.
 ***
 
-### Ricevi LYRA
-Puoi ricevere **LYRA** coin sul tuo **LYRA Address**.
-Puoi facilmente copiare il tuo indirizzo di ricezione o creare un QR Code che contiene anche l'importo del quantitativo di LYRA da ricevere.
+### Receive LYRA
+You can receive **LYRA** coins on your **LYRA Address**.
+You can easily copy your receiving address or create a QR Code which also contains the amount of the amount of LYRA to be received.
 
-E' anche possibile acquisire uno screenshot, direttamente dal tuo dispositivo, del codice QR contenente la richiesta di pagamento e condividerlo a chi si desidera.
+It is also possible to take a screenshot, directly from your device, of the QR code containing the payment request and share it to whoever you want.
 
 ***
 
-### Upload di file e documenti
-- Tocca l'icona **VAULT** (parte bassa dello schermo) > **UPLOAD NEW FILE**
-o tocca l'icona **"+"** symbol (angolo alto destra).
-- Usa lo slide per scegliere tra dati crittografati **Encrypted)** o pubblici **(Public data)**.
+### Upload of files and documents
+- Touch the **VAULT** icon (bottom of the screen)> **UPLOAD NEW FILE**
+or touch the **"+"** symbol icon (top right corner).
+- Use the slide to choose between encrypted ** Encrypted) **or public** (Public data) **.
 
 #### Upload:
-- Inserisci un titolo **(Title)**
-- Scegli una password di cifratura **(Encryption password)** - solo se si desidera crittografare i dati
-- Seleziona il **File** dal tuo dispositivo
-- Inserisci un testo **(Text)** 
-- Inserisci la **Wallet Password** (la password del tuo account)
-- Tocca su **UPLOAD**
+- Enter a title **(Title)**
+- Choose an **encryption password** - only if you want to encrypt data
+- Select the **File** from your device
+- Enter a text **(Text)**
+- Enter the **Wallet Password** (your account password)
+- Tap on **UPLOAD**
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Assicurati di ricordare la password di cifratura **(Encryption password)**.
-Se la perdi non sarai in grado di accedere nuovamente ai dati appena caricati.
+Make sure you remember the **Encryption password**.
+If you lose it, you will not be able to access the newly uploaded data again.
 :::
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Non caricare file illegali o che violano il copyright.
-Solo tu sei responsabile dei file e dati caricati.
+Do not upload illegal or copyright infringing files.
+Only you are responsible for the uploaded files and data.
 :::
 
 ***
 
-#### Consulta i documenti importati
-- Tocca l'icona **VAULT** (part bassa dello schermo)
-- Ora puoi vedere una scheda di riepilogo per ogni documento caricato
-- Scegli il documento da consultare toccando la scheda relativa
-- Verranno mostrati i dettagli del documento.
-- Tocca il pulsante **SHARE PROOF OF EXISTENCE** e verrai reindirizzato a [Scrypta Proof](https://proof.scryptachain.org/) per conoscere i dettagli approfonditi del tuo documento. 
+#### Check the imported documents
+- Touch the **VAULT** icon (lower part of the screen)
+- You can now see a summary card for each uploaded document
+- Choose the document to be consulted by touching the relevant tab
+- The details of the document will be shown.
+- Tap the **SHARE PROOF OF EXISTENCE** button and you will be redirected to[Scrypta Proof](https://proof.scryptachain.org/) to know the in-depth details of your document.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non sarà piu possibile accedere a questi dati dall tua schermata VAULT e che il file eventualmente associato, trattenuto dagli IdANodes, verrà cancellato. In questo caso  la firma digitale, la marcatura temporale con hashing e la relativa prova dell'autore rimangono comuque indelebili grazie alla tecnologia del registro distribuito di Scrypta.
+Clicking **INVALIDATE** it is possible to invalidate the data, this means that it will no longer be possible to access this data from your VAULT screen and that any associated file, retained by IdANodes, will be deleted. In this case the digital signature, the time stamp with hashing and the relative proof of the author remain indelible thanks to the technology of the distributed register of Scrypta.
 :::
 
 ### Settings
-- Puoi scegliere la tua valuta preferita **(Preferred Currency)** per semplificare il calcolo in funzioni come INVIA e RICEVI LYRA. 
-- Puoi scegliere il tema tra le modalità **Light** e **Dark**.
+- You can choose your preferred currency ** (Preferred Currency) ** to simplify the calculation in functions such as SEND and RECEIVE LYRA.
+- You can choose the theme between **Light** and **Dark** modes.
 ***
 
 ## Scrypta Card
-Scrypta Card è il tuo wallet tascabile con LYRA Adress associato da utilizzare con Manent App.
+Scrypta Card is your pocket wallet with associated LYRA Adress for use with the Manent App.
 
 ![planum](../.vuepress/public/assets/other/scrypta-card.png)
 
-La tua identità digitale e i rispettivi balances possono essere collegati alla Scrypta Card. Uno strumento potente e affidabile che può essere utilizzato per creare backup sicuri del tuo wallet, per la gestione quotidiana dei tuoi fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute, o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
+Your digital identity and the respective balances can be connected to the Scrypta Card. A powerful and reliable tool that can be used to create secure backups of your wallet, for the daily management of your Lyra funds, the management of digital identities and the information in them. contained, or as a payment system within sidechains or physical POS.
 
-E' possibile ottenere la Scrypta Card attraverso lo [Shop di Scrypta Consortium](https://scrypta.shop/)
+It is possible to obtain the Scrypta Card through the [Scrypta Consortium Shop](https://scrypta.shop/)
 
 
-### Come acquistare Scrypta Card
-Ecco un video tutorial che illustra come acquistare la Scrypta Card utilizzando **LYRA** come metodo di pagamento:
+### How to buy Scrypta Card
+Here is a video tutorial that illustrates how to buy the Scrypta Card using **LYRA** as a payment method:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CJXpjN50zB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-E' possibile utilizzare anche altri metodi di pagamento: Paypal, carta di debito o bonifico bancario.
+Other payment methods can also be used: Paypal, debit card or bank transfer.
 
-### Come utilizzare Scrypta Card
-Ecco un video tutorial che illustra come sincronizzare la card con Manent app e come utilizzarla:
+### How to use Scrypta Card
+Here is a video tutorial that illustrates how to synchronize the card with Manent app and how to use it:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y2shLdjy2Sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Support
 
-#### Come contattare il supporto Manent
-Manent app è sviluppata da Scrypta Task Force e approvato da [Scrypta Foundation](https://scrypta.foundation/).
+#### Contacting Manent Support
+Manent app is developed by the Scrypta Task Force and approved by[Scrypta Foundation](https://scrypta.foundation/).
 
-Se hai bisogno di aiuto puoi contattare l'assistenza Scrypta attraverso i suoi canali ufficiali:
+If you need help, you can contact Scrypta support through its official channels:
 - E-mail: [info@scryptachain.org](mailto:info@scryptachain.org)
 - Discord: [https://discord.me/scryptachain](https://discord.me/scryptachain)
 - Telegram: [https://t.me/scryptachain_official](https://t.me/scryptachain_official)
 
 ## Video Tutorial
 
-[Un Wallet per archiviare i tuoi dati su Blockchain! - Scrypta Manent](https://www.youtube.com/watch?v=78HDl3ZZI9I) di Tiziano Tridico
+[A Wallet to store your data on Blockchain! - Scrypta Manent](https://www.youtube.com/watch?v=78HDl3ZZI9I) by Tiziano Tridico (in italian)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/78HDl3ZZI9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

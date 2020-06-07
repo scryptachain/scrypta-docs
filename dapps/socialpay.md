@@ -1,201 +1,199 @@
 # SocialPay
 
-## Introduzione
+## Introduction
 
-### Finalità del progetto - Dematerilizzazione dei buoni spesa
-Scrypta Foundation, durante la fase di emergenza determinatasi per effetto della pandemia da Covid-19, ha contribuito rilasciando l’uso gratuito a tutti i Comuni di un sistema per la dematerializzazione e gestione dei **“buoni spesa”**, detto pure *“Tokenizzazione”* dei buoni di solidarietà.
+### Purpose of the project - Dematerilization of shopping vouchers
+During the emergency phase caused by the Covid-19 pandemic, the Scrypta Foundation released a system for the dematerialisation and management of **"shopping vouchers"**, also known as *"Tokenization"* of solidarity vouchers, for free use for all municipalities
 
-Il sistema, chiamato **"SocialPay"** si propone come soluzione per la rapida erogazione da parte dei comuni nei contronti dei cittadini aventi diritto ai buoni spesa, a seguito della situazione di emergenza generata dal COVID19.
-L'intero progetto è stato rilasciato in **open-source**, questo significa che è possibile generare tutto l'occorrente per emettere e gestire i buoni spesa per il Comune, in completa autonomia.
+The system, called **"SocialPay"**, is proposed as a solution for the rapid delivery by municipalities to citizens entitled to vouchers.
+The entire project has been released in **open-source**, meaning that it is possible to generate everything needed to issue and manage the shopping vouchers for the Municipality in complete autonomy.
 
-Visita il [sito web si SocialPay](https://socialpay.live/).
+Visit [SocialPay website](https://socialpay.live/).
 
-### Cosa prevede il sistema
+### What the system provides
 
-Il sistema prevede una **piattaforma gestionale** in dotazione a ciascun **Comune** che permette:
-- Di tenere traccia di ogni Card numerata e differenziata tramite QR-CODE.
-- Di collegare l’identità del cittadino avente diritto ala propria Card.
-- Di erogare la rappresentazione digitale del valore economico del buono attraverso la Card, e tale valore digitale potrà essere speso presso gli esercenti aderenti al circuito.
-- Di monitorare il servizio attraverso dati di utilizzo in real-time.
+The system provides a **management platform** supplied to each **Municipality** which allows:
+- To keep track of each Card numbered and differentiated by QR-CODE.
+- To connect the identity of the citizen entitled to their Card.
+- To provide the digital representation of the economic value of the voucher through the Card (this digital value can be spent at the operators participating in the circuit)
+- To monitor the service through real-time usage data.
 
-Il sistema è quindi composto dai seguenti elementi:
+The system is therefore composed of the following elements:
 
-- Una **Web-App** in dotazione all’Esercente che permette di:
-    - Acquisire il pagamento dei beni attraverso la Card
-    - Visualizzare lo storico delle transazioni e il saldo
-    - Richiedere il rimborso al Comune che avverrà sotto forma di bonifico bancario.
+- A **Web-App** supplied to the Merchant which allows:
+     - Acquire the payment of goods through the Card
+     - View the transaction history and balance
+     - Request a refund from the Municipality which will take the form of a bank transfer.
 
-- Le **Card con QR-CODE** in dotazione ai Cittadini aventi diritto:
-    - La Card verrà consegnata dal Comune.
-    - La Card verrà presentata dal cittadino agli esercenti aderenti al circuito per utilizzare i buoni.
+- The **Cards with QR-CODE** supplied to the Citizens entitled:
+     - The Card will be delivered by the Municipality.
+     - The Card will be presented by the citizen to the operators participating in the circuit to use the coupons.
 
-## Come Funziona
+## How it works
 
-Il comune distribuisce direttamente ai cittadini aventi diritto una **Card** numerata ed assegnata a un soggetto identificato dall’ente.
-Assieme alla card fornirà un **codice PIN** di 5 cifre che permette l’utilizzo esclusivo dei fondi.
+The municipality distributes a numbered ** Card ** assigned to a subject identified by the body directly to the entitled citizens.
+Together with the card, it will provide a 5-digit **PIN code** which allows the exclusive use of funds.
 
-Gli esercenti che aderiscono al sistema digitale del buono spesa, verranno dotati di un’apposita
-**applicazione web** che consente di utilizzare il proprio **smartphone/tablet** come POS virtuale.
-Con la fotocamera del proprio dispositivo è possibile inquadrare il QR-Code sul retro della Card assegnata al
-cittadino e addebitare la somme corrispondente all'importo dell’acquisto effettuato nella sua attività.
+Merchants who adhere to the digital shopping voucher system will be provided with a special
+**web application** that allows them to use their **smartphone / tablet** as a virtual POS.
+With the camera of the device it is possible to frame the QR-Code on the back of the Card assigned to
+citizen and charge the amount corresponding to the amount of the purchase made in their business.
 
-Il cittadino dovrà comunque autorizzare l’acquisto inserendo il PIN nel POS virtuale dell’esercente.
+Citizens must still authorize the purchase by entering the PIN in the merchant's virtual POS.
 
-Ogni esercente tramite la sua applicazione potrà controllare costantemente il proprio conto digitale
-dove verificherà in tempo reale l’accredito delle somme.
+Each operator through his application will be able to constantly check his digital account
+where he will verify the crediting of the sums in real time.
 
-Inoltre, all’interno della web-app è presente
-una specifica funzione **“Richiedi Rimborso”** per inoltrare la richiesta di rimborso al Comune, che
-avverrà sotto forma di bonifico bancario.
+In addition, within the web-app there is a specific function **"Request Refund"** to forward the refund request to the Municipality, which will take the form of a bank transfer.
 
-## Caratteristiche e Contronto
+## Features and comparison
 
-Di seguito una tabella comparativa tra SocialPay e altri sistemi di erogazione e gestione dei buoni spesa:
+Following is a comparative table between SocialPay and other systems for the delivery and management of shopping vouchers:
 
 ![confronto](../.vuepress/public/assets/socialpay/confronto.png)
 
 
 
-1. **Anticontraffazione**
+1. **Anti counterfeiting**
    
-Le transazioni sono registrate sulla blockchain pertanto non è possibile una loro alterazione atta ad aumentare o ridurre il credito relativo ai buoni spesa, contro la volontà del Comune o del cittadino. Non si possono stampare carte buono false: le uniche carte abilitate sono quelle censite all'interno del software del comune.
+Transactions are recorded on the blockchain, therefore it is not possible to alter them in order to increase or decrease the credit relating to the vouchers against the will of the municipality or citizen. You cannot print false coupon cards: the only cards enabled are those registered in the municipality's software.
 
-2. **Sicurezza**
+2. **Security**
    
-Non essendo l’infrastruttura tecnologica affidata ad un fornitore centralizzato, se il Comune o l’Esercente dovessero subire un attacco informatico o avere problematiche legate all‘a sua ’operatività, questo non andrà ad intaccare il funzionamento di SocialPay, essendo questo un sistema decentralizzato. Le carte possono essere sostituite e bloccate facilmente in quanto il comune - o il cittadino stesso — può prelevare i fondi in qualsiasi momento e tracciarne gli spostamenti in caso di transazioni non autorizzate.
+Since the technological infrastructure is not entrusted to a centralized supplier, as it is a decentralized system, if the Municipality or the Operator were to suffer an IT attack or have problems related to its operation, this will not affect SocialPay's functioning. The cards can be replaced and blocked easily as the municipality - or the citizen himself - can withdraw the funds at any time and track their movements in case of unauthorized transactions.
 
-3. **Tracciabilità**
+3. **Traceability**
    
-SocialPay utilizza una infrastruttura blockchain che consente un’efficace tracciabilità in corso di utilizzo del sistema. Al contrario i sistemi basati su buoni cartacei sono tracciabili solo ex post, una volta che l’esercente ha riconsegnato al comune i buoni. Altre soluzioni basate su card ricaricabile, sono solitamente affidati a sistemi software proprietari che rendono il tracciamento vincolato allo specifico applicativo e non perfettamente trasparente.
+SocialPay uses a blockchain infrastructure that allows effective traceability during the use of the system. On the contrary, systems based on paper vouchers are traceable only once the operator has returned the vouchers to the municipality. Other solutions based on rechargeable card are usually entrusted to proprietary software systems that make the tracking tied to the specific application and not perfectly transparent.
 
-4. **Commissioni di transazione nel sistema**
+4. **Transaction fees in the system**
    
-Le transazioni all'interno del sistema, ovvero invio di credito per i buoni spesa dal comune verso i cittadini e da questi verso gli esercenti, non hanno alcun costo. Le commissioni di sistema vengono pagate in LYRA (0.001 LYRA, pari a pochi millesimi di euro per transazione), queste vengono fornite dal comune e non dipendono dal valore della transazione.
+Transactions within the system, i.e. the sending of credit for the shopping vouchers by the municipality to citizens and from them to merchants, have no cost. System fees are paid in LYRA (0.001 LYRA, equal to a few thousandths of a euro per transaction: these are provided by the municipality and do not depend on the value of the transaction.
 
-5. **Rendicontazione**
+5. **Accountability**
    
-Viene gestita in modo semplice e snello, in modo che il comune non abbia un “overflow” di lavoro. Il software permette di esportare i tracciati relativi alle transazioni e alle richieste di rimborso. Le richieste di rimborso inoltre vengono gestite attraverso la blockchain, garantendo un alto livello di trasparenza della PA.
+It is managed in a simple and streamlined way, so that the municipality does not have a work "overflow". The software allows you to export the traces relating to transactions and refund requests. Refund requests are also managed through the blockchain, ensuring a high level of transparency of the PA.
 
-6. **Sostenibilità economica**
+6. **Economic sustainability**
    
-Il costo complessivo che il comune deve sostenere per adottare e mantenere un sistema di gestione dei buoni spesa, si misura non solo nella fornitura in sé ma anche nei costi di supporto ed eventualmente di modifica o manutenzione evolutiva. Le card possono essere ricaricate senza alcun limite, consentendo al sistema di essere utilizzato anche in futuro per altri casi d’uso. Inoltre, essendo SocialPay un progetto open-source, esso può essere adottato e sviluppato in autonomia da qualsiasi ente, previa competenza tecnica. Non ultimo, non vi è nessun costo di commissione per nessun tipo di transazione.
+The overall cost that the municipality must bear to adopt and maintain a voucher management system is measured not only in the supply itself but also in the support costs and possibly modification or evolutionary maintenance. The cards can be recharged without any limit, thus allowing the system to be used in the future for other use cases. Furthermore, since SocialPay is an open-source project, it can be adopted and developed independently by any body with technical expertise. Last but not least, there is no commission fee for any type of transaction.
 
-7. **Monitoraggio**
+7. **Monitoring**
    
-La rilevazione periodica e sistematica di tutte le transazioni in tempo reale, tramite l’explorer di Planum, rende il sistema totalmente trasparente, pur garantendo la privacy degli utenti. Uno strumento utile per analizzare l’andamento delle erogazioni, delle spese e rimborsi effettuati.
+The periodic and systematic detection of all transactions in real time, which can be carried out through the Planum explorer, makes the system totally transparent while guaranteeing user privacy. It is a useful tool for analyzing the progress of disbursements, expenses and reimbursements made.
 
-8. **Velocità attivazione**
+8. **Activation speed**
    
-La tecnologia QR-Code delle card, scelta da Scrypta, permette la realizzazione in tempi brevi e presso qualsiasi tipo di tipografia, della SocialPay Card. 
-E’ possibile, in alternativa, realizzare il sistema attraverso Card NFC (Nearfield Communication).
+The QR-Code technology of the cards, chosen by Scrypta, allows the SocialPay Card to be produced quickly in any type of printing shop.
+Alternatively, it is possible to create a system that uses NFC Card (Nearfield Communication).
 
-9. **Velocità di ricarica**
+9. **Charging speed**
     
-Attraverso il Gestionale è possibile ricaricare le card in totale sicurezza e in maniera immediata e veloce, con un click.
+Through the Management Dashboard it is possible to reload the cards with a click in total safety and quickly.
 
-10.  **Semplicità di utilizzo per il cittadino**
+10.  **Ease of use for the citizen**
     
-Gli esercenti che aderiscono al sistema vengono dotati di un’apposita applicazione web alla quale si può accedere dal proprio smartphone o tablet (POS virtuale). Una volta effettuato l’accesso, l’applicazione permette di leggere il retro della Card assegnata al cittadino e prelevare le somme inerenti l’acquisto.
+Merchants who join the system are provided with a special web application which can be accessed from their smartphone or tablet (virtual POS). Once logged in, the application allows you to read the back of the Card assigned to the citizen and withdraw the amounts related to the purchase.
 
-Il cittadino autorizza l’acquisto inserendo il PIN nel POS virtuale dell’esercente. Ogni esercente tramite la sua applicazione web può controllare costantemente il proprio conto digitale, e le transazioni. 
+The citizen authorizes the purchase by entering the PIN in the merchant's virtual POS. Each operator through his web application can constantly check his digital account, and transactions.
 
-All’interno dell’applicazione è inoltre presente una funzione che permette all’esercente di formulare con un click la richiesta di riscatto dei gettoni digitali incassati, inoltrando in modo semplice una richiesta di rimborso al Comune, che procederà al saldo con bonifico bancario.
+Within the application there is also a function that allows the operator to formulate with a click the request for redemption of the cashed digital tokens, by simply sending a refund request to the Municipality, which will proceed with the balance by bank transfer.
 
-11.  **Semplicità di gestione per il Comune**
+11.  **Simplicity of management for the Municipality**
     
-Il comune distribuisce direttamente ai cittadini aventi diritto una card con QR-code numerata . Assieme alla card fornisce un PIN che permette l’utilizzo esclusivo dei fondi. 
-Infine il comune, tramite un semplice gestionale, può versare i contributi, anche a più riprese, ricaricando la medesima card cittadino. Il comune inoltre riceve automaticamente le richieste di rimborso da parte dell’esercente e può controllare costantemente dal Gestionale il corretto funzionamento di tutto il processo.
+The municipality distributes a numbered QR-code card directly to eligible citizens. A PIN is provided with the card which allows the exclusive use of the funds.
+Finally, the municipality, through a simple management dashboard, can pay contributions, even on several occasions, by recharging the same citizen card. The municipality also automatically receives requests for reimbursement from the operator and can constantly check the correct functioning of the entire process by the Management.
 
 12. **Open Source**
     
-È possibile replicare l’intero sistema per emettere e gestire i buoni spesa per qualsiasi ente, in sicurezza. Scrypta Foundation mette infatti a disposizione la propria tecnologia a chiunque voglia contribuire al progetto. È possibile creare, in accordo con la volontà comunale, una copia del progetto e richiedere l’inserimento del codice tramite “pull request” sul Github dedicato:
+It is possible to replicate the entire system to issue and manage the vouchers for any institution, in safety. In fact, the Scrypta Foundation makes its technology available to anyone who wants to contribute to the project. It is possible to create, in accordance with the municipal will, a copy of the project and request the insertion of the code by "pull request" on the dedicated Github:
 
 [**https://github.com/scryptachain/socialpay**](https://github.com/scryptachain/socialpay)
 
-Oppure è possibile disporre del supporto di Scrypta Consortium, il contratto di rete delle aziende che operano con tecnologia Scrypta:
+Alternatively, you can request support from the Scrypta Consortium, the network contract of companies operating with Scrypta technology:
 
 [**https://scryptaconsortium.org/**](https://scryptaconsortium.org/
 )
 
-13.  **Innovazione**
+13.  **Innovation**
     
-Si tratta di un processo di “tokenizzazione” dei buoni spesa, ossia della creazione di un valore digitale corrispondente in token (gettoni) emessi all’interno della blockchain Scrypta, attraverso la tecnologia Planum. L’implementazione capillare di un simile servizio determina un notevole risparmio per la Pubblica Amministrazione dovuto alla semplificazione delle attività di controllo, distribuzione e pagamenti certificati da sistemi algoritmici innovativi espressamente progettati per la validazione delle trasmissioni dei dati. 
+Social Pay is a process of "tokenization" of the vouchers, which means the creation of a digital value in tokens issued within the Scrypta blockchain using Planum technology. The widespread implementation of such a service leads to significant savings for the Public Administration due to the simplification of control, distribution and payments activities certified by innovative algorithmic systems specifically designed for the validation of data transmissions.
 
-14.  **Possibilità di espansione per altri utilizzi**
+14.  **Possibility of development for other uses**
     
-Il sistema SocialPay di Scrypta può essere replicato per altri utilizzi e finalità, come quello dei buoni pasto, delle gift card, ticket digitali e altri numerosi casi d’uso. Cioè In tutti quei casi in cui c’è un Amministratore che eroga il servizio, un Target di riferimento che utilizzerà le card, e dei “Punti Vendita”, anche online, dove poter utilizzare i token emessi e distribuiti.
+SocialPay by Scrypta can be replicated for other uses and purposes, such as that of meal vouchers, gift cards, digital tickets and many other use cases in which there is an Administrator who provides the service, a reference Target that will use the cards, and "Points of Sale", also online, where you can use the issued and distributed tokens.
 
-## Guida per l'esercente
-### POS Digitale e CARD BUONO SPESA
+## Merchant guide
+### Digital POS and shopping voucher cards
 
 
-Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, per i cittadini aventi diritto, la **Card *“Buono Spesa Digitale”*** da utilizzare esclusivamente per l’acquisto di beni di prima necessità e presidi farmaceutici.
+The **Municipality of "*nomecomune*"**, which adopts the **SocialPay** system, prepares, for eligible citizens, the **Card *"Digital Shopping Voucher"*** to be used exclusively for the purchase of basic necessities and pharmaceutical products.
 
-Il Comune fornisce gratuitamente all'esercente una Card Esercente dotata di **QR-CODE** e protetta da apposito codice PIN (password numerica) che servirà per le principali operazioni di configurazoine e per l'utilizzo dell’apposita applicazione web in dotazione all'esercente stesso.
+The Municipality provides the Operator with a Merchant Card free of charge equipped with **QR-CODE** and protected by a specific PIN code (numeric password) which will be used for the main configuration operations and for the use of the specific web application supplied with the operator himself.
 
 ![socialpay](../.vuepress/public/assets/socialpay/card_esercente.png)
 
-### Procedura lato esercente
-#### Accesso al sistema
+### Merchant procedures
+#### Access to the system
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_01.png) | Accedi collegandoti con il tuo smartphone/tablet, da adibire a POS virtuale, al sito: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Tocca **“SCANNERIZZA CARD”** e inquadra il **QR Code** della carta che ti è stata consegnata (Card Esercente).<br><br>Ti verrà richiesto di inserire il **PIN** che ti è stato assegnato insieme alla **CARD**.<br><br>Adesso sei in grado di ricevere pagamenti attraverso i **BUONI SPESA DIGITALI** dei cittadini aventi diritto. 
+| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_01.png) | Log in by connecting to your site with your smartphone / tablet, to be used as a virtual POS: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Click on **SCAN CARD”** and capture the **QR Code** of the card that was delivered to you (Merchant Card).<br><br>You will be asked to enter the **PIN** that was assigned to you together with **CARD**.<br><br>You are now able to receive payments through **DIGITAL EXPENSES** of eligible citizens. 
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**NOTA:** Per i dispositivi **iOS** è necessario utilizzare il browser **“Safari”**, per i dispostivi **Android** è necessario utilizzare **“Google Chrome"**.
+**NOTE:** For devices **iOS**browser must be used **“Safari”**, for devices **Android** you need to use **“Google Chrome"**.
 :::
 
-#### Ricezione pagamento
+#### Receiving payment
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_02.png) | Accedi alla web-app dal tuo smartphone o tablet all’indirizzo: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>Nella **HOME** troverai il *“tastierino”* del **POS** virtuale come da immagine.<br><br>Inserisci l’importo dello scontrino dovuto e premi il tasto **“PAGA”**.
-***sEUR indicato in figura è una rapresentazione digitale dell’Euro.***
+| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_02.png) | Access the web-app from your smartphone or tablet at the address: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>In **HOME**you will find the * keypad"* of the virtual **POS** as from image.<br><br>Enter the amount of the receipt due and press the button **PAY**.
+***sEUR shown in the figure is a digital representation of the Euro.***
 
-Inquadra adesso con lo smartphone il QR-CODE sul retro della Card del cliente
+Now capture the QR-CODE on the back of the customer's card with your smartphone
 ![socialpay](../.vuepress/public/assets/socialpay/scan_qr.png)
 
-Il cliente autorizza l’acquisto inserendo il suo **PIN** nel POS virtuale.
-La transazione avviene in tempo reale.
+The customer authorizes the purchase by entering his **PIN** in the virtual POS.
+The transaction takes place in real time.
 
 ![socialpay](../.vuepress/public/assets/socialpay/insert_pin.png)
-Dopo aver effettuato la transazione, visualizzerai istantaneamente una notifica dell’avvenuto pagamento.
+After making the transaction, you will instantly see a notification of the payment.
 
-#### Controllo saldo, storico transazione e ricezione pagamenti
+#### Balance control, transaction history and payment receipt
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_tx.png) | Tramite l’applicazione, accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16"> e selezionando **“STORICO TRANSAZIONI”**, puoi controllare costantemente il tuo saldo e le transazioni effettuate. <br><br>All’interno di questa sezione è presente inoltre una specifica funzione **“RICHIEDI RIMBORSO”** per inoltrare la richiesta al Comune, che procederà al bonifico bancario delle cifre computate. 
+| ![socialpay](../.vuepress/public/assets/socialpay/mockup_tx.png) | Through the application, by accessing the menu via the symbol <img src=".././.vuepress/public/assets/icons/bars.svg" width="16"> and selecting **“TRANSACTION HISTORY”**, you can constantly check your balance and transactions. <br><br>There is also a specific function within this section **“REQUEST REFUND”** to forward the request to the Municipality, which will proceed with the bank transfer of the computed amount. 
 
-#### Verifica rimborsi
+#### Check refunds
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_rimborso.png) | Nella sezione **“GESTIONE RIMBORSI**, raggiungibile accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, potrai vedere i tuoi *rimborsi in attesa* (ovvero quelli richiesti e che il Comune deve ancora prendere in carico) e *rimborsi evasi* (importi già erogati dal Comune). 
+| ![socialpay](../.vuepress/public/assets/socialpay/mockup_rimborso.png) |In the section **“REFUND MANAGEMENT**, accessible by accessing the menu using the symbol <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, you will be able to see your * pending refunds * (i.e. those requested and that the Municipality has yet to take charge) and *refunds processed* (amounts already paid by the Municipality).
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**NOTA:** Con lo stato di ***rimborso evaso*** si intende che il Comune ha preso in carico il rimborso che avverrà secondo i tempi tecnici bancari.
+**NOTE:** With the status of ***refund processed** it is understood that the Municipality has taken over the reimbursement which will take place according to the banking schedule.
 :::
 
-#### Verifica Saldo Card Cittadino
+#### Check City Card Balance
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| L’applicazione permette di verificare il saldo della *Card-Cliente*, riscontrabile presso tutti gli esercenti abilitati.<br><br> Nella sezione **CONTROLLA CARD**, raggiungibile accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, premere il tasto **"CONTROLLA ORA"** e inquadrare il **QR CODE** della card del cliente.<br><br> Verrà così visualizzato il saldo disponibile. | ![socialpay](../.vuepress/public/assets/socialpay/mockup_controlla.png)
+| The application allows you to check the balance of the * Customer-Card *, which can be found at all authorized merchants.<br><br> In the section **CHECK CARD**, accessible by accessing the menu using the symbol <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, Press the button **"CHECK NOW"** and capture the **QR CODE** of the customer's card.<br><br> This will display the available balance. | ![socialpay](../.vuepress/public/assets/socialpay/mockup_controlla.png)
 
-### APPENDICE - Modalità di accesso al portale tramite Android/IOS
+### APPENDIX - How to access the portal via Android / IOS
 
 #### Android
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_android.png) | - Avviare Chrome per Android e aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Accedere al **menu** tramite il simbolo <img src=".././.vuepress/public/assets/icons/menu.svg" width="16"> e poi **"Aggiungi a schermata Home”**.<br><br> - Dare un nome al collegamento e Chrome per aggiungerlo alla schermata iniziale.<br><br> L'icona potrà essere spostata dove si vuole e il sito scelto apparirà, come qualsiasi altra app, toccando il collegamento.<br><br> Chrome per Android carica il sito web come fosse una "web app" in modo separato dal browser, così da poterlo aprire direttamente dall'app switcher.
+| ![socialpay](../.vuepress/public/assets/socialpay/mockup_android.png) | -Launch Chrome for Android and open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> -Access the **menu** via the symbol <img src=".././.vuepress/public/assets/icons/menu.svg" width="16"> and then **"Add to home screen”**.<br><br> - Assign the link a name and Chrome to add it to the home screen.<br><br>The icon can be moved wherever you want and the chosen site will appear, like any other app, by touching the link. <br> <br> Chrome for Android loads the website as if it were a "web app" separately from the browser, so you can open it directly from the switcher app.
 
 #### iPhone/iPad
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| - Avviare Safari su iOS di Apple aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Per problemi tecnici dovuti a Apple, non è possibile utilizzare SocialPay se viene aggiunto alla schermata Home di iPhone o iPad; di conseguenza consigliamo di digitare (o salvare nei preferiti) l’indirizzo url della web-app.<br><br> - Ricordiamo inoltre che Social Pay è utilizzabile solo dal browser **Safari**. |  ![socialpay](../.vuepress/public/assets/socialpay/mockup_ios.png) 
+| - ALaunch Safari on Apple iOS open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - For technical problems due to Apple, SocialPay cannot be used if it is added to the Home screen of the iPhone or iPad; consequently we recommend typing (or saving in favorites) the url address of the web-app. <br> <br> - We also remind you that Social Pay can only be used by the browser **Safari**. |  ![socialpay](../.vuepress/public/assets/socialpay/mockup_ios.png) 
 
 
-## Guida per il cittadino
-### Card buono spesa digitale
+## Guide for the citizen
+### Digital shopping voucher card
 
 
 Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, per i cittadini aventi diritto, la **Card *“Buono Spesa Digitale”*** da utilizzare esclusivamente per l’acquisto di beni di prima necessità e presidi farmaceutici.
