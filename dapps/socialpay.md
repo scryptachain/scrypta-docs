@@ -192,106 +192,104 @@ After making the transaction, you will instantly see a notification of the payme
 | - ALaunch Safari on Apple iOS open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - For technical problems due to Apple, SocialPay cannot be used if it is added to the Home screen of the iPhone or iPad; consequently we recommend typing (or saving in favorites) the url address of the web-app. <br> <br> - We also remind you that Social Pay can only be used by the browser **Safari**. |  ![socialpay](../.vuepress/public/assets/socialpay/mockup_ios.png) 
 
 
-## Guide for the citizen
+## Guide for the citizens
 ### Digital shopping voucher card
 
 
-Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, per i cittadini aventi diritto, la **Card *“Buono Spesa Digitale”*** da utilizzare esclusivamente per l’acquisto di beni di prima necessità e presidi farmaceutici.
+The **Municipality of "*municipalityname*"** which adopts the **SocialPay** system, prepares, for eligible citizens, the **Card *"Digital Shopping Voucher"*** to be used exclusively for the purchase of basic necessities and pharmaceutical products.
 
-Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (password numerica) che servirà per finalizzare gli acquisti presso i gli esercenti convenzionati.
+Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN code (numeric password) which will be used to finalize purchases at the participating merchants.
 
 ![socialpay](../.vuepress/public/assets/socialpay/card_cittadino.png)
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32">
-**IMPORTANTE** Si raccomanda di custodire la Card con la massima cura in quanto contiene fondi realmente spendibili, e di non rivelare a nessuno il pin collegato alla Card.
-:::
+**IMPORTANT** It is recommended to keep the Card with the utmost care as it contains truly expendable funds, and not to reveal the pin connected to the Card to anyone.:::
 
-### Come utilizzare la Card
+### How to use the Card
 
-- Recarsi presso il punto vendita convenzionato e procedere all'acquisto. 
-- Al momento del pagamento, mostrare la Card al negoziante che provvederà a scansionare il QR CODE addebitando l'importo speso.
-- Inserire il PIN della Card nel terminale del negoziante per concludere l'acquisto.
+- Go to the affiliated point of sale and proceed with the purchase.
+- When paying, show the Card to the shopkeeper who will scan the QR CODE by charging the amount spent.
+- Enter the PIN of the Card in the shopkeeper's terminal to complete the purchase.
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32">
-**NOTA:** Potrai verificare il tuo il saldo conto presso qualunque punto vendita convenzionato.
+**NOTE:** You can check your account balance at any affiliated store.
 :::
 
-## Gestionale
-### Istruzioni
+## Management software
+### Instructions
 
-#### Accesso al gestionale
+#### Access to the management system
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/gest_accesso.png) | Il login avviene caricando o trascinando il **.sid file** in dotazione e, subito dopo, inserendo la password associata che vi è stata fornita. |
+| ![socialpay](../.vuepress/public/assets/socialpay/gest_accesso.png) | The login is done by loading or dragging the supplied **. Sid file ** and, immediately after, entering the associated password that has been provided to you. |
 
 #### Dashboard del gestionale
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-|![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)|Effettuato l’accesso, verrete dirottati immediatamente sulla **Dashboard (Sezione HOME)** nella quale vengono visualizzati i dati generali di utilizzo. |
+|![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)|Once logged in, you will be immediately diverted to the **Dashboard (HOME Section)** which displays the general usage data. |
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**NOTA:** La dicitura **sEUR “bruciati”** indica che le somme in oggetto non sono più disponibili, in quanto già inviate *(bruciate)* sotto forma di richiesta di rimborso.
+**NOTE:** The wording **sEUR "burnt"** indicates that these amounts are no longer available, as they have already been sent * (burnt) * as a refund request.
 :::
 
-### Gestione utenti
-La finestra GESTIONE UTENTI si compone di due sezioni:
-- **“Carica file .csv di origine”**
-- **"Elenco utenti”**
+### User Management
+The USER MANAGEMENT window consists of two sections:
+- **"Upload source .csv file"**
+- **"User list"**
 
-#### Carica file .csv di origine
-Utilizzare questa sezione se si vogliono caricare più utenti contemporaneamente.<br>Dopo aver caricato il **file .csv**, tutti gli utenti all'interno del file verranno aggiunti al gestionale e saranno disponibili e visualizzabili nella sezione **"Elenco utenti"**.<br><br>Il file .csv viene generato in automatico durante la fase di creazione delle card e sarà composto dai seguenti campi:<br>
-**SERIALE | WALLET | TIPOLOGIA | NOME | IDENTIFICATIVO | COMPONENTI NUCLEO FAMILIARE**<br>
+#### Upload source .csv file
+Use this section to upload multiple users simultaneously. <br> After uploading the **.csv file**, all users within the file will be added to the management system and will be available and viewable in the **"User list" section**. <br> <br> The .csv file is automatically generated during the card creation phase and will consist of the following fields: <br>
+**SERIAL | WALLET | TYPOLOGY | NAME | IDENTIFIER | FAMILY CORE COMPONENTS** <br>
 
 ![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-**NOTA:** In caso di nominativi o dati duplicati, tali nominativi verranno ignorati dal sistema.
+**NOTE:** In case of duplicate names or data, these names will be ignored by the system.
 :::
 
-#### Elenco utenti
-La sezione **Elenco utenti** permette di visualizzare tutti gli elementi inseriti all'interno del sistema (**Esercenti** e **Cittadini**).<br>
-Oltre alla visualizzazione è possibile effettuare **ricerche** specifiche, avvalendosi dei filtri di ricerca disponibili.<br>Inoltre, dalla colonna **"AZIONI"** è possibile compiere operazioni aggiuntive sul singolo utente.<br><br>
-Le azioni disponibili sono nell'ordine:
-- **MODIFICA**
-- **VISUALIZZA**
-- **ELIMINA**
+#### User list
+The **User list** section allows you to view all the names entered in the system (**Merchants** and **Citizens**). <br>
+In addition to the visualization, it is possible to carry out ** specific ** searches, using the available search filters. <br> In addition, from the **"ACTIONS"** column it is possible to perform additional operations on the individual user. <br> <br>
+The available actions are:
+- **MODIFY**
+- **VIEW**
+- **DELETE**
 ![socialpay](../.vuepress/public/assets/socialpay/elenco_utenti.png)
 
-#### Azione **MODIFICA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/draw.svg" width="16">, è possibile modificare i dati dell’utente.![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
+#### **MODIFY** Action
+Through this action, indicated by the symbol <img src=".././.vuepress/public/assets/icons/draw.svg" width="16">, it is possible to modify user data.![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
 
-Una volta effettuate le modifiche desiderate, per confermare tali modifiche è necessario cliccare su **“Salva utente”**.
+Once the changes have been made, click on **"Save user"** to confirm them.
 
 #### Azione **VISUALIZZA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/interface.svg" width="16">, è possibile visualizzare i dettagli dell'utente selezionato, il suo bilancio e lo storico transazioni.<br>Inoltre questa sezione permette di predisporre l’invio di importi in **sEUR** all’utente selezionato.<br>L’operazione è **istantanea** e richiede l’inserimento della vostra password.
+Through this action, indicated by the symbol <img src=".././.vuepress/public/assets/icons/interface.svg" width="16">, it is possible to view the details of the selected user, his balance and the transaction history. <br> This section also allows you to arrange the sending of amounts in **sEUR** to the selected user. <br> The operation is **instant** and requires you to enter your password.
 ![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
 
-##### *Note sulle commissioni di transazione:
+##### * Notes on transaction fees:
 
-Per svolgere tutte le operazioni di transazioni o richieste rimborso,è necessario pagare delle commissioni di transazione dell’infrastruttura blockchain. Tali commissioni sono nell'ordine di millesimi di euro.<br><br>
-**In fase di ricarica delle card**<br>
-- Durante la fase di ricarica delle card, al fine di fornire a ciascun utente la possibilità di effettuare operazioni sul network sin da subito, è necessario inviare una modica quantità di LYRA per ciascun utente.<br>
+To carry out all transactions or refund requests, it is necessary to pay transaction fees for the blockchain infrastructure. These fees are in the order of thousandths of a euro. <br> <br>
+**When loading cards** <br>
+- During the card recharge phase, in order to provide each user with the possibility of carrying out operations on the network immediately, it is necessary to send a modest amount of LYRA for each user. <br>
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
-- Si consiglia di inviare **0.1 LYRA** per ciascun utente (sia **"Cittadino"** che **"Esercente"**), quantitativo sufficiente allo svolgimento di circa 100 operazioni.<br><br>
-- Si consiglia anche di inviare **0.1 LYRA** per le transazioni ogni qual volta è prevista una “ricarica” al **"Cittadino"**.<br><br>
-- Non è indispensabile re-inviare LYRA per l'**"Esercente"** poiché riceverà automaticamente **0.001 LYRA** ogni qual volta viene inviata la notifica di avvenuto rimborso; tale operazione verrà illustrata in seguito in modo più dettagliato.
+- It is recommended to send **0.1 LYRA** for each user (both **"Citizen"** and **"Merchant"**), sufficient quantity to carry out about 100 operations. <br> <br>
+- We also recommend that you send **0.1 LYRA** for transactions whenever a "top-up" to the **"Citizen"** is provided. <br> <br>
+- It is not essential to re-send LYRA for the **"Merchant"** as it will automatically receive **0.001 LYRA** every time the notification of the refund has been sent; this operation will be illustrated later in more detail.
 :::
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-**Se si prevede di effettuare un numero di operazioni superiore a 100, sarà necessario inviare un quantitativo di LYRA adeguato al volume di transazioni previste.**<br>
-:::
+**If you plan to carry out more than 100 transactions, it will be necessary to send a quantity of LYRA suitable for the volume of transactions envisaged.** <br>:::
 
-#### Azione **ELIMINA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/trash.svg" width="16">, l’utente selezionato viene eliminato dall’elenco.<br>Si raccomanda di procedere con cura verificando i dati prima dell'eliminazione.
+#### ** DELETE ** Action
+Through this action, indicated by the symbol <img src=".././.vuepress/public/assets/icons/trash.svg" width="16">, the selected user is deleted from the list. <br> It is recommended to proceed with care by checking the data before deleting.
 
-### Storico transazioni
-In questa sezione vengono visualizzate tuttee le transazioni effettuate all’interno del sistema.
+### Transaction history
+This section displays all the transactions carried out within the system.
 
 ![socialpay](../.vuepress/public/assets/socialpay/storico.png)
 
-All'interno di questa sezione, tramoite gli appositi filtri, è possibile effettuare ricerche per **indirizzo** o per **transazione**.<br>Attraverso il pulsante **“SCARICA BACKUP”**  è possibile effettuare il backup dello storico transazioni in oggetto tramite file in formato **.csv** (Excel).  
+Within this section, using the appropriate filters, it is possible to search by **address** or **transaction**. <br> By pressing the button **"DOWNLOAD BACKUP"** it is possible to backup the transaction history in object through file in **. csv ** format (Excel). 
 
 ### Gestisci rimborso
 Non appena viene cliccato il pulsante **“CONTABILIZZA RIMBORSO”**, viene richiesto l’inserimento della password di amministratore.![socialpay](../.vuepress/public/assets/socialpay/rimborso.png)<br>A questo punto l’Esercente riceverà una speciale transazione di notifica che conferma l’avvenuto bonifico da parte del Comune.<br>Risulta quindi evidente che questa operazione è da effettuare **SUBITO DOPO** aver predisposto lo specifico bonifico bancario di rimborso.<br><br>L’operazione sarà quindi visibile sulla colonna **“RIMBORSATO”** (nello specifico il campo verrà automaticamente riempito con **“SI”**).
