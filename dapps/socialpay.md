@@ -322,92 +322,93 @@ To perform the **deletion** operation of the archive, it is necessary to click o
 :::
 
 
-## SocialPay per gli sviluppatori
+## SocialPay for developers
 
-Il [repository "SocialPay" di Github](https://github.com/scryptachain/socialpay) a cui si fa riferimento, contiene tutto il materiale necessario ed è diviso per regioni e comuni. All'interno si trovano i file che generano tre diversi progetti:
+This [Github's "SocialPay" repository](https://github.com/scryptachain/socialpay) it contains all the required components and is divided by regions and municipalities. Inside are the files that generate three different projects:
 
-- **Admin:** questo progetto è una personalizzazione del software di gestione Scrypta Planum Admin, che serve a gestire le sidechain.
-- **Pos:** questo progetto serve a generare il front-end per i commercianti e che permette di spendere i buoni
-- **Card:** questo progetto serve a generare le card wallet stampabili in formato QR code per distribuirle ai cittadini
+- **Admin:** this project is a customization of the Scrypta Planum Admin management software, used to manage the sidechains.
+- **Pos:** this project serves to generate the front end for merchants and that allows you to spend the coupons
+- **Card:** this project is used to generate printable card wallets in QR code format to distribute them to citizens
 
-Una cartella generica chiamata **`documentazione`** contiene tutte le presentazioni, i sorgenti grafici delle card e i prestampati legali per la convenzione con il comune.
+The **`documentation`** folder contains the presentations, the graphic sources of the cards and the legal pre-printed documents for the agreement with the municipality.
 
-### Operazioni preliminari
+### Preliminary operations
 
-Si consiglia di scaricare le cartelle di base aggiornate dal [branch di sviluppo su Github:](https://github.com/scryptachain/socialpay/tree/development)
+We recommend that you download the updated base folders from [development branch on Github:](https://github.com/scryptachain/socialpay/tree/development)
 
-Dopo aver scaricato le cartelle si dovrà installare tutte le dipendenze attraverso il comando **`npm install`** all'interno di ogni sottocartella (**`admin`**, **`card`**, **`pos`**).
+After downloading the folders you will have to install all the dependencies using the command **`npm install`** within each subfolder (**`admin`**, **`card`**, **`pos`**).
 
-### Creazione della sidechain
+### Creation of the sidechain
 
-La creazione della rappresentazione digitale di valore avviene attraverso la tecnologia Sidechain di Planum, pertanto è necesario effettuare delle operazioni preliminari prima di poter iniziare a compilare i progetti:
+The creation of the "digital representation of value" takes place through Planum's Sidechain technology. It is necessary to carry out preliminary operations before being able to start compiling the projects:
 
-- Collegati a [https://web.manent.app](https://web.manent.app) e crea un nuovo account Scrypta.
-Inserisci una password forte perchè questo account sarà l'account proprietario della sidechain. 
+- Connect to [https://web.manent.app](https://web.manent.app)and create a new Scrypta account.
+Enter a strong password. this account will be the sidechain account owner.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-**Importante:** Effettua il backup del file .sid e del paper wallet per sicurezza, e ricorda che sei il **SOLO** responsabile di questi dati. Custodisci questi file tenendoli al sicuro **OFFLINE**.
+**Important:** Back up the .sid file and the paper wallet for safety, and remember that you are the **ONLY** responsible for this data. Keep these files safe **OFFLINE**.
 :::
 
-- Ti serviranno almeno 1.001 LYRA per far partire la sidechain e dovrai versare almeno 0.1 LYRA per ogni account cittadino o esercente, se non dovessi esserne in possesso ti invitiamo ad effettuare una richiesta ufficiale all'email [info@scrypta.foundation](mailto:info@scrypta.foundation).
+- You will need at least 1,001 LYRA to start the sidechain and you will have to pay at least 0.1 LYRA for each citizen or operator account. If you do not have it, please make an official request to the email [info@scrypta.foundation](mailto:info@scrypta.foundation).
 
-- Collegati su [Planum](https://planum.dev) e crea una nuova sidechain attraverso l'apposito tool di creazione. Rimandiamo ad una guida più dettagliata per eventuale supporto: https://medium.com/@scryptachain/scrypta-lancia-planum-un-sidechain-layer-per-lemissione-di-tokenized-asset-ee156d300f4d. 
+- Connect to [Planum](https://planum.dev) and create a new sidechain through the appropriate creation tool. We refer to a more detailed guide for any support:
+https://medium.com/@scryptachain/scrypta-lancia-planum-un-sidechain-layer-per-lemissione-di-tokenized-asset-ee156d300f4d. 
 
-**I parametri consigliati per la creazione sono i seguenti:**
+**These are the recommended parameters for creation:**
 ```
-nome: SocialPay - Comune di ...
+name: SocialPay - Municipality og ...
 ticker: sEUR
 decimals: 2
-supply: Quantità da assegnare
+supply: Qty to assign
 reissuable: true
 burnable: true
 ```
 
-- Dopo che avrai generato la sidechain dovrai appuntarti l'indirizzo univoco, che ti servirà per collegare le applicazioni alla tua sidechain. Questo indirizzo puoi trovarlo sempre su [https://planum.dev/#/explorer](https://planum.dev/#/explorer) alla riga corrispondente, sotto la colonna **`address`**.
+- After you have generated the sidechain you will have to write down the unique address, which you will need to connect the applications to your sidechain. You can find this address on [https://planum.dev/#/explorer](https://planum.dev/#/explorer)on the corresponding row, under the column **`address`**.
 
 
-### Compilare la parte di amministrazione
+### Compile administration part
 
-Il software di amministrazione è un progetto electron e dovrai modificare il file sotto **`admin/config.json`** inserendo i parametri richiesti e dovrai inserire i loghi del comune di riferimento nella cartella **`admin/public`**.
+The administration software is an electron project. You need to modify the file under **`admin / config.json`** by entering the required parameters and you will have to insert the logos of the municipality of reference in the **`admin / public`** folder.
 
-Dopo aver modificato tutto il necessario è possibile provare in anteprima il software attraverso il comando **`npm run electron:serve`** oppure creare la build vera e propria con il comando **`npm run electron:build`**.
+After making the changes, you can preview the software using the **`npm run electron: build`** command or create the actual build with the **`npm run electron: build`** command.
 
-### Compilare il web PoS
+### Compile the web PoS
 
-Il web PoS è un progetto VueJS e dovrai modificare il file sotto **`admin/config.json`** inserendo i parametri richiesti e dovrai inserire i loghi del comune di riferimento nella cartella **`admin/public`**.
+The web PoS is a VueJS project. You must edit the file under **`admin / config.json`** by entering the required parameters and insert the logos of the municipality of reference in the **`admin / public`** folder.
 
-Dopo aver modificato tutto il necessario è possibile provare in anteprima il software attraverso il comando **`npm run serve`** oppure creare la build vera e propria con il comando **`npm run build`**.
+After making the changes, you can preview the software with the **`npm run serve`** command or create the actual build with the **`npm run build`** command.
 
-La cartella di distribuzione **`dist`** dovrà essere pubblicata all'interno di un server Apache. E' fondamentale che venga installato un certificato SSL, consigliamo il servizio gratuito [https://letsencrypt.org/](https://letsencrypt.org/) che potrà fornire un certificato SSL gratuito.
+The **`dist`** distribution folder must be published on an Apache server. It is essential that an SSL certificate is installed, we recommend the free service [https://letsencrypt.org/](https://letsencrypt.org/).
 
-### Creare le card wallet
+### Create card wallets
 
-Le card wallet vengono create attraverso lo script NodeJS presente nella cartella **`card`**. E' necessario modificare i file grafici nella cartella **`assets/`** al fine di personalizzare le card per il vostro comune. Il progetto genererà sotto la cartella **`prints/`** il numero di card richieste ed il solo QR Code ad mandare eventualmente alla tipografia.
+Card wallets are created with the NodeJS script located in the **`card`** folder. You need to modify the graphic files in the **`assets /`** folder in order to customize the cards for your municipality. The project will generate the number of cards required and only the QR Code to be sent, if necessary, to the printer in the **`prints /`** folder.
 
-Un altro file **`out.csv`** verrà creato e conterrà tutti i PIN necessari a sbloccare le card. Questo file dovrà essere conservato gelosamente offline e servirà per importare le anagrafiche all'interno del software di amministrazione. Per caricare le anagrafiche si dovrà eliminare la seconda colonna.
+The **`out.csv`** file will also be created, containing all the PINs connected to the cards. This file must be kept jealously offline and will be used to import the personal data into the administration software. To load the personal data, the second column must be deleted.
 
-Per generare le card e il documento PIN accompagnatorio si deve modificare il file **`config.json`** inserendo i riferimenti necessari e dare il seguente comando **```node index.js -g=100```**. 
-Per modificare la quantità è necessario modificare il numero **`100`** con la quantità desiderata. E' molto importante fare un backup della cartella **`prints`** e del file **`out.csv`** in quanto questi file vengono cancellati ad ogni nuova generazione.
+To generate the cards and the accompanying PIN document, you must edit the **`config.json`** file by entering the necessary references and run the command **```node index.js -g = 100```**.
+To change the quantity, it is necessary to modify the number ** `100` ** with the desired quantity. It is very important to make a backup of the **`prints`** folder and the **`out.csv`** file as these files are deleted with each new generation.
 
-## Contribuire al progetto
+## Contribute to the project
 
-Se vuoi contribuire al progetto puoi creare, in accordo con la volontà comunale, una copia del progetto e richiedere l'inserimento del codice tramite Pull Request nel github dedicato:
+If you want to contribute to the project you can create, in accordance with the municipal will, a copy of the project and request the insertion of the code via Pull Request in the dedicated github:
 
 [SocialPay Github](https://github.com/scryptachain/socialpay).
 
-All'interno delle cartelle troverai un file **`config.json`** che ti permette di configurare i parametri di base. Questi comprendono principalmente le modifiche grafiche, di titoli e, chiaramente, permettono di collegare la sidechain tramite indrizzo univoco.
+Inside the folders you will find a **`config.json`** file that allows you to configure the basic parameters. These include graphic changes, titles and allow you to connect the sidechain through a unique address.
 
-Si consiglia di forkare questo progetto e aggiungere il proprio comune così da darne evidenza a tutti i contributori del progetto. Qualora non trovassi la cartella della tua regione, dovrai crearla tu stesso.
+We recommend that you fork this project and add your municipality to highlight all contributors to the project. If you cannot find the folder for your region, you will have to create it yourself.
 
-Alla fine del processo di aggiunta e creazione del progetto per il tuo comune potrai richiedere l'aggiunta nel repository ufficiale tramite pull request.
+At the end of the process of adding and creating the project for your municipality, you can request the addition in the official repository via pull request.
 
-## Supporto
+## Support
 
-Se hai bisogno di aiuto per integrare il progetto o trovi bug da risolvere, puoi aprire una issue su [github socialpay](https://github.com/scryptachain/socialpay), scrivere a [info@scrypta.foundation](mailto:info@scrypta.foundation), o contattarci tramite [i nostri social](../general-info/link.md#social-media) ti risponderemo al più presto.
+If you need help integrating the project or find bugs to solve, you can open an issue on [github socialpay](https://github.com/scryptachain/socialpay), write to [info@scrypta.foundation](mailto:info@scrypta.foundation), or contact us through [our social channels](../general-info/link.md#social-media). We will reply as soon as possible.
 
 ## Video Tutorial
 
-[**Buoni Spesa? Basta Sprechi! Usiamo la BLOCKCHAIN!**](https://www.youtube.com/watch?v=oRNoxwsRG5M) di Tiziano Tridico
+[**Shopping vouchers? Stop wasting! We use BLOCKCHAIN!**](https://www.youtube.com/watch?v=oRNoxwsRG5M) by Tiziano Tridico (in Italian)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oRNoxwsRG5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
