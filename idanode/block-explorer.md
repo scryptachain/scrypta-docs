@@ -1,12 +1,12 @@
 # Block Explorer
 
-Le funzionalità di block explorer servono principalmente alle dApp e ai client per creare le transazioni. Alcune di queste chiamate possono anche essere usate per analizzare lo staking di un indirizzo oppure di un masternode. Avere un block explorer sempre aggiornato è fondamentale per creare dApp funzionanti perchè senza non sarebbe possibile creare le transazioni. 
+Block explorer features are mainly used by dApps and clients to create transactions. Some of these calls can also be used to analyze the staking of an address or a masternode. Having a constantly updated block explorer is essential for creating working dApps. Without this it would not be possible to create transactions.
 
-E' importante ricordare che la principale libreria (ScryptaCore) non tiene traccia nel dispositivo di tutte queste transazioni, ma solamente di quelle **non** confermate e che vengono mantenute nella cache del dispostivo solamente tra l'emissione di un blocco e un altro.
+It is important to remember that the main library (ScryptaCore) does not keep track of all these transactions in the device, but only those **not** confirmed. These are kept in the device cache only between the emission of one block and another.
 
 
 ## [GET] /lastblock 
-Ritorna l'ultimo blocco disponibile in blockchain, analizzando tutti gli input e tutti gli output. Ecco una risposta di esempio:
+Return the last block available in blockchain, analyzing all inputs and all outputs. Here is an example:
 ```
 {"data":
 	{
@@ -75,16 +75,16 @@ Ritorna l'ultimo blocco disponibile in blockchain, analizzando tutti gli input e
 ```
 
 ## [GET] /block/:block 
-Questa chiamata è simile alla precedente, passato il numero di blocco nell'url è possibile ottenere l'analisi (come quella vista nella chiamata `lastblock`) di un blocco.
+This call, similar to the previous one. Once you pass the block number in the url you can get the analysis (like the one seen in the `lastblock` call) of a block.
 
 ## [GET] /analyze/:block
-Analizza il blocco definito dal parametro `block` inserito nell'URL.
+Analyze the block defined by the `block` parameter inserted in the URL.
 
 ## [GET] /resync/:block
-Fa partire la sincronizzazione dell'IdANode dal blocco definito dal parametro `block` inserito nell'URL. E' consigliabile effettuare l'operazione in momenti di inattività dell'IdANode.
+Triggers the synchronization of the IdANode from the block defined by the `block` parameter inserted in the URL. It is advisable to carry out the operation in moments of inactivity of the IdANode.
 
 ## [GET] /transactions/:address
-Ritorna tutte le transazioni effettuate da uno specifico indirizzo, passato attraverso l'url. La risposta sarà un array di oggetti contenenti tutte le transazioni dell'indirizzo, ecco un esempio:
+Shows all transactions made from a specific address, passed through the url. The output will be an array of objects containing all the transactions of the address, here is an example:
 ```
 {
     "data": [
@@ -147,7 +147,7 @@ Ritorna tutte le transazioni effettuate da uno specifico indirizzo, passato attr
 
 ## [GET] /balance/:address
 
-Ritorna il balance di uno specifico indirizzo, ecco un esempio:
+Show the balance of a specific address, here is an example:
 ```
 {
     "balance": 1756.0999792,
@@ -157,7 +157,7 @@ Ritorna il balance di uno specifico indirizzo, ecco un esempio:
 
 ## [GET] /stats/:address
 
-Ritorna le statistiche di staking di uno specifico indirizzo, ecco un esempio:
+Show the staking statistics of a specific address, here is an example:
 ```
 {
     "balance": 1756.0999792,
@@ -219,8 +219,8 @@ Ritorna le statistiche di staking di uno specifico indirizzo, ecco un esempio:
 
 ## [GET] /unspent/:address
 
-Ritorna tutte le transazioni (UTXO) non spese dell'indirizzo, queste sono fondamentali per creare nuove transazioni. Lo stesso metodo ritorna contemporaneamente anche il balance, che ricordiamo essere la somma di tutti gli UTXO (e quindi le transazioni effettivamente spendibili).
-Ecco un esempio:
+Shows all address unspent transactions (UTXO). These are essential for creating new transactions. The same method also shows the balance at the same time, which corresponds to the sum of all UTXOs (and therefore the transactions that can actually be spent).
+Here is an example:
 ```
 {
     "balance": 1756.0999792,

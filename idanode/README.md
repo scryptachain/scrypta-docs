@@ -1,46 +1,46 @@
-# Introduzione
+# Introduction
 
 
-[IdANode](https://github.com/scryptachain/scrypta-idanodejs) (Interconnected dApp Node) è sicuramente la tecnologia più importante sviluppata da Scrypta. E' il cuore di tutte le operazioni di scrittura e lettura dei dati, nonché la principale fonte di dati per le dApp.
+[IdANode](https://github.com/scryptachain/scrypta-idanodejs) (Interconnected dApp Node) it is certainly the most important technology developed by Scrypta. It is the heart of all data writing and reading operations, as well as the main data source for dApps.
 
-IdANode è un'applicazione NodeJS scritta in TypeScript con una moltitudine di funzionalità:
+IdANode is a NodeJS application written in TypeScript with a multitude of features:
 
-1.  **Blockchain explorer:** tiene traccia di tutte le transazioni e di tutti i blocchi, può essere usato al pari di un block explorer visuale.
+1.  **Blockchain explorer:** it keeps track of all transactions and all blocks, it can be used like a visual block explorer.
     
-2.  **Relay:** viene usato dai client (scrypta-core) per inviare le transazioni al network.
+2.  **Relay:** it is used by clients (scrypta-core) to send transactions to the network.
     
-3.  **Data explorer:** serve da interfaccia per la lettura delle informazioni scritte sulla blockchain; questa è una delle funzionalità più importanti per lo sviluppo di dApp.
+3.  **Data explorer:**it serves as an interface for reading the information written on the blockchain; this is one of the most important features for dApp development.
     
-4.  **IPFS:** serve da interfaccia per il file system distribuito (InterPlanetary File System), utile per caricare e scaricare i dati.
+4.  **IPFS:** it serves as an interface for the distributed file system (InterPlanetary File System), useful for uploading and downloading data.
     
-5.  **Replica:** IdANode è la principale replica di tutte le informazioni e di tutti i file caricati sulla Blockchain di Scrypta.
+5.  **Replica:** IdANode is the main replica of all the information and files uploaded to the Scrypta Blockchain.
     
-6.  **Wallet**: può anche funzionare da "client", ovvero può compiere le stesse operazioni dei client scrypta-core, semplicemente richiamando delle API e passando le informazioni necessarie.
+6.  **Wallet**: it can also work as a "client", it can perform the same operations as the scrypta-core clients, simply by calling APIs and passing the necessary information.
     
-7.  **Trustlink**: le operazioni relative ai Trustlink sono gestite internamente all'IdANode, tra cui la creazione e la scrittura di informazioni da parte di un Trustlink.
+7.  **Trustlink**: Trustlink operations are managed internally by IdANode, including the creation and writing of information by a Trustlink.
+
+
+Other features in development:
+
+1.  **dApp engine:**the addition of the library that allows you to serve the dApps loaded directly on the blockchain. At the moment it is only possible to load them. The dApp engine is an independent module.
     
+2.  **P2P network**: the addition of the library that allows you to exchange information in real time between the IdANodes and between the clients, so as to have an internal messaging system in Scrypta. It is currently an independent module.
 
-Altre funzionalità in via di sviluppo:
-
-1.  **dApp engine:** l'inclusione della libreria che permette di servire le dApp caricate direttamente sulla blockchain. Al momento è possibile solamente caricarle. Il dApp engine è un modulo indipendente.
-    
-2.  **P2P network**: l'inclusione della libreria che permette di scambiare informazioni in tempo reale tra gli IdANode e tra i client, così da avere un sistema di messaggistica interno a Scrypta. Al momento anche questo è un modulo indipendente.
-
-## Panoramica di funzionamento
+## Operation overview
 
 
-Il primo script che viene chiamato è il file `Index.ts` , questo file verifica che il wallet ed il database siano raggiungibili, in caso contrario si preoccupa di avviarli ed attendere finchè non lo siano. Questo sistema garantisce un certo grado di automazione nel caso in cui qualche processo dovesse interrompersi inaspettatamente.
+The first script that runs is the `Index.ts` file. This file verifies that the wallet and the database are reachable. Otherwise he worries about starting them and waiting until they are. This system guarantees a certain degree of automation in case some process should stop unexpectedly.
 
-Dopo aver verificato che tutto sia raggiungibile, lo script inizia a controllare che le collezioni e gli indici siano esistenti, in caso contrario inizializza il database.
+After checking that everything is reachable, the script checks that the collections and indexes exist. Otherwise it initializes the database.
 
-Dopo di che, se nel `.env` il parametro `SYNC` è `true` inizia a sincronizzare tutta la blockchain e tutti i dati inseriti all'interno.
+After that, if the `SYNC` parameter is `true` in the `.env`, the script synchronizes the blockchain and the data written on it.
 
-Contemporaneamente l'applicazione Express serve le API, che saranno immediatamente disponibili, non importa se il sync è completo. Chiaramente in questo caso il set di dati disponibili non corrisponderà all'ultimo blocco.
+At the same time the Express application serves the APIs, which will be immediately available even if the sync is complete. In this case the available data set will not correspond to the last block.
 
-L'applicazione Express è definita nel file `App.ts` e da lì si possono evincere tutte le varie chiamate. Queste verranno analizzate nei capitoli successivi.
+The Express application is defined in the `App.ts` file and all the various calls can be picked up from there. These will be analyzed in the following chapters.
 
 ## Postman
-Tutti gli endpoint possono essere testati attraverso Postman. La collezione è disponibile cliccando il seguente pulsante:
+All endpoints can be tested through Postman. The collection is available by clicking the following button:
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/3143294/S11Ltxfq?version=latest)
 <!--stackedit_data:

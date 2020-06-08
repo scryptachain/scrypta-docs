@@ -1,33 +1,33 @@
 # dApps Engine
 
-dApps Engine è il sistema attraverso cui caricare le dApp (Applicazioni Decentralizzate) direttamente sulla blockchain. Se pur in uno stato assolutamente _alpha_, l'engine permette di caricare (lato IdANode) ed eseguire (lato client) del codice e delle dApp.
+dApps Engine is the system through which dApps (Decentralized Applications) can be loaded directly onto the blockchain. If even in a _alpha_ release, the engine allows you to load (IdANode side) and execute (client side) the code and the dApps.
 
-La filosofia di Scrypta è quella di avviare le dApp direttamente nel dispositivo dell'utente, così da non sovraccaricare la rete (se pur capiente) ed evitare i colli di bottiglia che ne deriverebbero dall'uso di potenza computazionale "cloud" in larga scala . Di fatto l'idea è che i nodi debbano interfacciarsi con la Blockchain e le dApp debbano essere eseguite dai dispositivi. L'interazione tra i due avviene appunto grazie agli IdANode, che permettono le operazioni di lettura e scrittura e che, in realtà, possono sempre essere avviati localmente.
+The philosophy of Scrypta is to start the dApps directly in the user's device so as not to overload the network (even if large) and avoid the bottlenecks that would result from the use of large-scale "cloud" computational power. In fact, the idea is that the nodes must interface with the Blockchain and the dApps must be run by the devices. The interaction between the two occurs precisely thanks to the IdANodes, which allow reading and writing operations and which can always be started locally.
 
-Le dApp, in effetti, vengono caricate su IPFS, e la cartella contenente i file viene scritta sulla blockchain. Essendo la cartella rappresentata da un hash, questa cambierà ogni volta che vengono fatte delle modifiche. Queste modifiche possono essere a sua volta scritte  nello stesso indirizzo, così da avere una sorta di versioning consultabile sulla blockchain.  L'effettiva autenticità dell'aggiornamento risiede nel fatto che solamente lo sviluppatore avrà la chiave privata dell'indirizzo.
+The dApps, in fact, are loaded on IPFS while the folder containing the files is written on the blockchain. Since the folder is represented by a hash, it will change every time changes are made. These changes can in turn be written in the same address, so as to have a sort of versioning that can be consulted on the blockchain. The actual authenticity of the update depends on the fact that only the developer will have the private key of the address.
 
-Queste operazioni, che al momento vengono fatte manualmente, potranno essere svolte attraverso un'interfaccia grafica nel Developer Portal, che è in fase di costruzione.
+These operations, which are currently being done manually, can be carried out through a graphical interface in the Developer Portal which is under construction.
 
-Possiamo definire il dApps Engine un punto di arrivo per l'intero ecosistema. Esso verrà potenziato e reso un prodotto stabile nel corso dei prossimi mesi. Quì è' possibile seguire lo sviluppo dal repository dedicato:
+We can define the dApps Engine as a point of arrival for the entire ecosystem. It will be enhanced and made a stable product over the next few months. Here you can follow the development from the dedicated repository:
 https://github.com/scryptachain/scrypta-dapps-engine
 
 
 ## [POST] /upload
 
-L'unico endpoint disponibile, al momento, è quello di `upload` delle dApp e consta di due passaggi:
-1) Caricamento della cartella con i file sull'IdANode.
-2) Salvataggio della transazione contenente l'informazione della dApp.
+The only endpoint available at the moment is the `upload` of dApps and consists of two steps:
+1) Upload of the folder with the files on the IdANode.
+2) Saving the transaction containing the information of the dApp.
 
-Queste operazioni potrebbero essere effettuate tramite gli endpoint dedicati `/ipfs/upload` e `/write`.
+These operations could be done through dedicated endpoints`/ipfs/upload` e `/write`.
 
-I campi da inviare sono i seguenti:
-- **files [obbligatorio]:** i file della dApp, inviati via form-data 
-- **dapp_address [obbligatorio]:** l'indirizzo della dApp
-- **private_key [obbligatorio]:** la chiave privata dell'indirizzo
+The data to be sent are as follows:
+- **files [mandatory]:** the dApp files, sent via form-data
+- **dapp_address [mandatory]:** the address of the dApp
+- **private_key [mandatory]:** the private key of the address
 
-In futuro prevediamo la possibilità di inserire ulteriori campi per identificare la dApp del tipo `version`, `dApp name`, `logo` etc. Questo servirà per creare una sorta di dApp explorer decentralizzato dove chiunque potrà effettivamente pubblicare dApp.
+we review the possibility of inserting further data fields in the future to identify the dApp of the type `version`,` dApp name`, `logo` etc. This will serve to create a sort of decentralized dApp explorer where anyone can actually publish dApps.
 
-La risposta dell'endpoint, se tutto è stato correttamente validato, sarà come quella dell'operazione di scrittura:
+The endpoint response, if everything has been correctly validated, will be like that of the write operation:
 ```
 {
 
@@ -60,7 +60,7 @@ La risposta dell'endpoint, se tutto è stato correttamente validato, sarà come 
 }
 ```
 
-Se andiamo ad analizzare il dato inserito, ovvero `QmeHZ86FBr2nZ6fdQk32qkXQXCs6wELE6Ldo584k3TWLMA` attraverso l'enpoint `/ipfs/ls/QmeHZ86FBr2nZ6fdQk32qkXQXCs6wELE6Ldo584k3TWLMA` vedremo che effettivamente contiene la nostra cartella appena caricata:
+Analyzing the data entered, that is `QmeHZ86FBr2nZ6fdQk32qkXQXCs6wELE6Ldo584k3TWLMA` through the endpoint `/ipfs/ls/QmeHZ86FBr2nZ6fdQk32qkXQXCs6wELE6Ldo584k3TWLMA` we will see that it actually contains our newly loaded folder:
 ```
 [
 
@@ -131,22 +131,21 @@ Se andiamo ad analizzare il dato inserito, ovvero `QmeHZ86FBr2nZ6fdQk32qkXQXCs6w
 ]
 ```
 
-Possiamo effettivamente riscontrare che la dApp funziona e viene caricata direttamente da IPFS grazie al nostro servizio:  https://scryptad.app/LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2
+We can actually find that the dApp works and is loaded directly by IPFS thanks to our service: https://scryptad.app/LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2
 
-Come vedete, effettivamente viene richiamato l'indirizzo che ha scritto l'informazione `LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2` e, in background, succedono le seguenti operazioni:
+As you can see, the address that wrote the information is actually recalled`LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2`and, in the background, the following operations occur:
 
-1) Viene letto l'indirizzo `LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2` e viene richiesto l'ultimo dato.
-2) Viene letta la cartella, come visto in precedenza, e viene servito il file **index.html**. Se il file non esiste restituirà un errore.
+1) The address `LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2` is read and the last data is requested.
+2) The folder is read, as seen above, and the **index.html** file is served. If the file does not exist it will return an error.
+3) All other assets are shown, always reading them from IPFS.
 
-3) Vengono effettivamente serviti tutti gli altri asset, leggendoli sempre da IPFS.
+From this moment on, your device (if run from a browser) will have a cached copy and the computational power of the device will actually be used. In no case are these files downloaded to the dApp engine, which will therefore remain lean and serve all assets on-the-fly.
 
-Da questo momento il vostro dispositivo (se andate da browser) avrà una copia in cache, ed effettivamente sarà la potenza computazionale del dispositivo ad essere usata. In nessun caso questi file vengono scaricati sul dApp engine, che rimarrà quindi snello e servirà tutti gli asset on-the-fly. 
-
-Questo è un tipico log dell'engine:
+This is a typical engine log:
 ![](../.vuepress/public/assets/dappengine/npmstart.png)
-Come potete notare vengono effettuati tutti i passaggi appena descritti.
+As you can see, all the steps just described are carried out.
 
-**Complimenti, avete finalmente creato un'applicazione decentralizzata!**
+**Congratulations, you have finally created a decentralized application!**
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDc3MjgwMTIzLDUyNzE3ODM2NiwtNzgxMz
 c4MjYzLDkwNzM2ODg1OSw1NTU1NDY2MjddfQ==
