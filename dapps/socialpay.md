@@ -291,34 +291,34 @@ This section displays all the transactions carried out within the system.
 
 Within this section, using the appropriate filters, it is possible to search by **address** or **transaction**. <br> By pressing the button **"DOWNLOAD BACKUP"** it is possible to backup the transaction history in object through file in **. csv ** format (Excel). 
 
-### Gestisci rimborso
-Non appena viene cliccato il pulsante **“CONTABILIZZA RIMBORSO”**, viene richiesto l’inserimento della password di amministratore.![socialpay](../.vuepress/public/assets/socialpay/rimborso.png)<br>A questo punto l’Esercente riceverà una speciale transazione di notifica che conferma l’avvenuto bonifico da parte del Comune.<br>Risulta quindi evidente che questa operazione è da effettuare **SUBITO DOPO** aver predisposto lo specifico bonifico bancario di rimborso.<br><br>L’operazione sarà quindi visibile sulla colonna **“RIMBORSATO”** (nello specifico il campo verrà automaticamente riempito con **“SI”**).
-Inoltre, questa speciale transazione, accrediterà nel conto dell’esercente la somma di **0.001 LYRA**, che gli permetterà di richiedere i rimborsi futuri.
+### Manage refund
+By clicking on the **"REFUND ACCOUNT" button**, you are asked to enter the administrator password.![socialpay](../.vuepress/public/assets/socialpay/rimborso.png)<br>At this point the Merchant will receive a special notification transaction which confirms the bank transfer by the Municipality. <br> This operation is to be carried out **IMMEDIATELY AFTER** having prepared the specific bank transfer for refund. <br> < br> The operation will then be visible on the **"REFUNDED"** column (specifically the field will be automatically filled with **"YES"**).
+In addition, this special transaction will credit the merchant's account with the sum of **0.001LYRA **, which will allow him to request future repayments.
 
-Questa funzione è infine corredata dalla possibilità di aggiungere delle note di testo aggiuntive che vengono inviate all’esercente.
+Finally, this function is accompanied by the possibility of adding additional text notes that are sent to the merchant.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-**Attenzione**: Le note a corredo delle transazioni sono dei dati che vengono scritti **in chiaro** nel registro distribuito della blockchain Scrypta.<br>Si **RACCOMANDA** pertanto di non inserire informazioni sensibili, che possano violare il rispetto della privacy.<br>
+**Warning**: The notes accompanying the transactions are written **in clear** in the distributed register of the Scrypta blockchain. <br> It is ** RECCOMENDED ** not to enter sensitive information, which could violate respect for privacy. <br>
 :::
 
-### Impostazioni
-Attraverso questa sezione è possibile effettuare operazioni come il salvataggio e la cancellazione di tutto l’elenco utenti.
-Per compiere l’operazione di **salvataggio**, è necessario cliccare sul pulsante **“SCARICA BACKUP”**.
-Il file generato, in formato .csv, permetterà di conservare una copia dell'intero archivio utenti, e sarà necessario per importare nuovamente l'archivio.
+### Settings
+Through this section it is possible to perform operations such as saving and deleting the entire user list.
+To perform the **save** operation, you must click on the **"DOWNLOAD BACKUP"** button.
+The generated file, in .csv format, will allow you to keep a copy of the entire user archive, and it will be necessary to import the archive again.
 ![socialpay](../.vuepress/public/assets/socialpay/impostazioni.png)
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
-**Attenzione**: Si **RACCOMANDA** fortemente di effettuare i backup dell'elenco utenti con regolarità, al fine di evitare o quantomeno limitare la perdita di dati.<br>
+** Warning **: It is **RECOMMENDED** to make backups of the user list regularly, in order to avoid or at least limit data loss. <br>
 :::
 
-Per compiere l’operazione di **cancellazione** dell'archivio, è necessario cliccare sul pulsante **"CANCELLA ARCHIVIO”**. A questo punto, l’intero elenco utenti verrà azzerato.
+To perform the **deletion** operation of the archive, it is necessary to click on the ** "DELETE ARCHIVE" button **. At this point, the entire user list will be reset.
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"> 
-**Attenzione**: Utilizzando questa funzione, l'attuale archivio **VERRA' INTERAMENTE E DEFINITIVAMENTE CANCELLATO"**.
-<br>**L'operazione di cancellazione non e' annullabile**.
-<br>Pertanto, se non avete effettuato il backup in precedenza e cancellate i dati, l'intero archivio andra' **DISTRUTTO**.
+**Warning**: Using this function the current archive **WILL BE COMPLETELY AND DEFINITELY DELETED "**.
+<br> **The cancellation cannot be canceled**.
+<br> Therefore, if you have not previously backed up and deleted the data, the entire archive will go **DESTROYED**.
 
-**PROCEDERE CON CAUTELA.**
+**PROCEED WITH CAUTION.**
 :::
 
 
