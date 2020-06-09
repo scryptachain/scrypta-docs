@@ -84,4 +84,4 @@ Nel caso in cui si scelga la tipologia di quesito segreto (Secret) è necessario
 ## Guida al voto
 Per votare, è necessario effettuare il login e compariranno in home le votazioni a cui siamo abilitati a partecipare. Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
 
-Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà  la scelta conteggiata con una "X". 
+Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà la scelta conteggiata apponendole accanto una "X". 
