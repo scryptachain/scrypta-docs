@@ -1,19 +1,19 @@
 # IPFS (Interplanetary File System).
- IPFS è uno dei file system distribuiti, decentralizzati, più importanti che sia mai stato creato dopo Torrent. E' fondamentale, prima di iniziare a sviluppare con IPFS, consultare la documentazione ufficiale reperibile al seguente link: [https://ipfs.io/](https://ipfs.io/).
+IPFS is one of the most important distributed, decentralized file systems ever created after Torrent. Before starting to develop with IPFS, it is essential to consult the official documentation available at the following link: [https://ipfs.io/](https://ipfs.io/).
 
-La versione IPFS che abbiamo incluso negli IdANode è in Javascript. Il repository è il seguente: [https://github.com/ipfs/js-ipfs](https://github.com/ipfs/js-ipfs).
+The IPFS version that we have included in the IdANodes is in Javascript. The repository is as follows:[https://github.com/ipfs/js-ipfs](https://github.com/ipfs/js-ipfs).
 
-Scrypta ha deciso di favorire l'utilizzo di IPFS creando degli endpoint che accettano in ingresso (POST) i file inviati via form-data oppure sotto forma di Buffer.
+Scrypta has decided to encourage the use of IPFS by creating endpoints that accept incoming (POST) files sent via form-data or in the form of a buffer.
 
-E' importante notare che è possibile inviare un file e salvarne una copia su IPFS anche attraverso l'endpoint `/write`.
+It is important to note that it is possible to send a file and save a copy on IPFS also through the `/write` endpoint.
 
-Analizzeremo di seguito gli endpoint e faremo degli esempi pratici (che si possono riscontrare anche analizzando la libreria Scrypta Core).
+We will analyze the endpoints through practical examples (which can also be found in the Scrypta Core library).
 
-Tra i vari metodi presenti nell'IdANode troviamo anche quelli di lettura e analisi del file ai fini di ottenerne il mime-type ed effettuare il giusto rendering lato dApp. 
+Among the various methods present in the IdANode we also find those of reading and analyzing the file in order to obtain the mime-type and perform the right rendering on the dApp side.
 
 ## [GET] /ipfs/info
 
-Ritorna la versione e lo stato di IPFS nell'IdANode:
+Show IPFS version and status in IdANode:
 ```
 {
 
@@ -34,32 +34,32 @@ Ritorna la versione e lo stato di IPFS nell'IdANode:
 
 ## [POST] /ipfs/add
 
-Permette di aggiungere un file o una cartella all'interno di IPFS. E' possibile inviare i file sotto forma di *form data* o di *buffer* ed è possibile aggiungere più di un file contemporaneamente. 
-Per inserire più di un file è necessario specificare il nome della cartella da aggiungere. 
+Allows you to add a file or folder within IPFS. It is possible to send files in the form of *form data* or *buffer* and it is possible to add more than one file at the same time.
+To insert more than one file it is necessary to specify the name of the folder to be added.
 
 Ecco i parametri che è possibile inviare:
-- **file:** per inviare un singolo file attraverso il *form-data*
-- **files:** per inviare più di un file attraverso il *form-data*
-- **buffer**: per inviare un singolo file sotto forma di *Buffer*
+- **file:** to send a single file through the*form-data*
+- **files:** to send more than one file through *form-data*
+- **buffer**: to send a single file in the form of *Buffer*
 
-Quando viene caricato un file, viene contestualmente effettuata l'operazione di _pin_, ovvero di salvataggio dello stesso file nella cartella di IPFS. Questa stessa operazione verrà effettuata da tutti gli IdANode che sincronizzano la blockchain.
+When a file is loaded, the _pin_ operation is performed simultaneously (the file is saved in the IPFS folder). This operation will be carried out by all the IdANodes that synchronize the blockchain.
 
-Affinchè questo accada è necessario salvare su blockchain un dato del tipo:
+For this to happen, it is necessary to save data such as:
 
 ```
 ipfs:HASH_IPFS
 ```
 
-Un esempio dettagliato può essere analizzato sia  con Postman che nel Testing Tool di Scrypta Core: [https://github.com/scryptachain/scrypta-core/blob/master/index.html](https://github.com/scryptachain/scrypta-core/blob/master/index.html)
+A detailed example can be analyzed both with Postman and in the Scrypta Core Testing Tool:[https://github.com/scryptachain/scrypta-core/blob/master/index.html](https://github.com/scryptachain/scrypta-core/blob/master/index.html)
 
 ## [POST] /ipfs/verify/:hash
 
-Verifica se il file inviato corrisponde all'hash specificato. Il parametro da inviare via POST è il campo **file**. Verrà successivamente effettuato l'hash e comparato con quello passato nell'URL. La risposta potrà essere `true` o `false`.
+Check if the sent file matches the specified hash. The parameter to be sent via POST is the data field **file**. The hash will then be performed and compared with the one passed in the URL. The answer may be`true` or `false`.
 
 ## [GET] /ipfs/type/:hash
 
-Recupera il file richiesto attraverso l'hash e ritorna la tipologia di file.
-Ad esempio la risposta per il file con hash _QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h_ è la seguente:
+Retrieve the requested file through the hash and return the type of file.
+For example the answer for the hashed file _QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h_ is:
 ```
 {
 
@@ -80,9 +80,9 @@ Ad esempio la risposta per il file con hash _QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7F
 
 ## [GET] /ipfs/ls/:hash
 
-Ottiene la struttura della cartella con l'hash specificato. La risposta sarà un array di hash, che sarà possibile richiamare attraverso l'apposita chiamata.
+Gets the folder structure with the specified hash. The answer will be an array of hashes, which can be retrieved through the appropriate call.
 
-Ad esempio il risultato per la cartella di hash _Qmb8PCFSp9uSUJr3eLafiTyAqcHaq2TBk4kj4wAEDG2zQo_ è il seguente:
+For example the result for the hash folder _Qmb8PCFSp9uSUJr3eLafiTyAqcHaq2TBk4kj4wAEDG2zQo_ is
 ```
 [
 
@@ -155,11 +155,11 @@ Ad esempio il risultato per la cartella di hash _Qmb8PCFSp9uSUJr3eLafiTyAqcHaq2T
 
 ## [GET] /ipfs/:hash
 
-Ritorna il file con l'hash specificato. La risposta sarà immediatamente visualizzabile dal browser o da altri eventuali dispositivi. Il logo Scrypta, ad esempio, può essere recuperato dal seguente link: [https://idanodejs01.scryptachain.org/ipfs/QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h](https://idanodejs01.scryptachain.org/ipfs/QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h)
+Show the file with the specified hash. The answer will be immediately visible from the browser or from any other devices. The Scrypta logo, for example, can be retrieved from the following link: [https://idanodejs01.scryptachain.org/ipfs/QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h](https://idanodejs01.scryptachain.org/ipfs/QmQVKoAs9nxjRfawb6ALhZNEzpR5RFBgN7FeJdAZYWdN8h)
 
 ## [GET] /ipfs/buffer/:hash
 
-Ritorna il *Buffer* che rappresenta l'hash specificato. Facendo sempre l'esempio del logo Scrypta, la risposta è la seguente:
+Show the *Buffer* that represents the specified hash. Always taking the example of the Scrypta logo, the answer is as follows:
 ```
 {"data":
 	[
@@ -183,7 +183,7 @@ Ritorna il *Buffer* che rappresenta l'hash specificato. Facendo sempre l'esempio
 
 ## [GET] /ipfs/pins
 
-Ritorna la lista di tutti i file con _pin_ presenti sull'IdANode. La lista comprende gli hash dei soli file _pinnati_ in modo ricorsivo.
+Show the list of all _pin_ files present on the IdANode. The list includes the hashes of the _pinned_ files only recursively.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwODEyNjU0OTYsOTA3MjQ3OTksLTc3MT
 k5Mjk0MiwxMzE5MTYxMzk0LC0xMjM2OTA2MzQ5LDUxMDk4NzY2

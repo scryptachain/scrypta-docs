@@ -1,28 +1,28 @@
-# Installazione
-Installare un IdANode è abbastanza semplice, per prima cosa è necessario installare tutte le tecnologie richieste. Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
+# IdaNode installation
+Installing an IdANode is quite simple. First you need to install all the required technologies. The dependencies mainly concern NodeJS, MongoDB and the official Scrypta wallet.
 
-Consigliamo il deploy su una macchina che abbia Ubuntu 16.04 con almeno 2GB di RAM.
+We recommend deploying on a machine that has Ubuntu 16.04 with at least 2GB of RAM.
 
-Il file install.sh andrà ad installare tutte le dipendenze per voi, riprendiamo lo script direttamente in questa pagina. La cosa importante è editare il file .env a seguito dell'installazione, inserendo tutti i campi correttamente, nello specifico:
+The install.sh file will install all the dependencies for you and you can check the script later on this page. The most important thing is to edit the .env file following the installation, inserting all the data fields correctly, specifically:
 
- - **RPCUSER:** Lo stesso valore inserito all'interno del wallet, di default è "lyrarpc". E' fondamentale editare questo campo sia nel `lyra.conf` che nel `.env`
- -  **RPCPASSWORD:** Lo stesso valore inserito all'interno del wallet, di default è "lyrapassword". E' fondamentale editare questo campo sia nel `lyra.conf` che nel `.env`
- - **RPCPORT:** Deve essere `42223` ed è già preimpostato
- - **RPCADDRESS:** Deve essere `localhost` se il wallet è installato all'interno della stessa macchina. Deve essere inserito l'eventuale indirizzo IP di una macchina esterna.
- - **LYRAPATH:** Path che punta la cartella contenente il file `lyrad`
- - **DEBUG**: Serve a lavorare con il debug mode attivo, cosa che consigliamo
- - **DB_PORT**: La porta di collegamento per MongoDB, di default è `28015`
- - **DB_HOST**: Deve essere `localhost` se il database è installato all'interno della stessa macchina. Deve essere inserito l'eventuale indirizzo IP di una macchina esterna.
- - **COIN**: Di default è `LYRA`, da cambiare per eventuali integrazioni con altre blockchain
- - **SYNC**: Di default è `true` e serve ad attivare o disattivare la sincronizzazione automatica. Si può disabilitare per motivi di debug
- - **AIRDROP**: La quantità di Lyra che l'IdANode invia ogni qualvolta viene inizializzato un indirizzo
- - **SERVERMODE**: Stabilisce se il sistema deve installare una Tray Icon nella topbar per chiudere velocemente l'IdANode. Di default è `false`.
- - **TESTNET**: Stabilisce se l'IdANode è in modalità testnet oppure no, il valore può essere inserito come `true` o `false`.
- - **LYRADATAFOLDER**: Path che punta alla cartella contenente i file della blockchain di Scrypta. Solitamente è `~/.lyra`. E' fondamentale per avviare correttamente il processo di costruzione del file di bootstrap.
- - **NODE_KEY**: E' la chiave privata che identifica l'IdANode, serve per firmare le richieste effettuate dall'esterno e comunicare con il P2P network.
+ - **RPCUSER:** The same value inserted inside the wallet, by default it is "lyrarpc". It is essential to edit this field both in the `lyra.conf` and in the `.env`
+ - **RPCPASSWORD:** The same value inserted inside the wallet, by default it is "lyrapassword". It is essential to edit this field both in the `lyra.conf` and in the `.env`
+ - **RPCPORT:** It must be `42223` and it is already preset
+ - **RPCADDRESS:** If the wallet is installed inside the same machine it must be `localhost`. Any IP address of an external machine must be entered.
+ - **LYRAPATH:** Path pointing to the folder containing the `lyrad` file
+ - **DEBUG**: It is used to work with active debug mode, which we recommend
+ - **DB_PORT**: The connection port for MongoDB, by default it is `28015`
+ - **DB_HOST**: If the database is installed on the same machine, it must be `localhost`. Any IP address of an external machine must be entered.
+ - **COIN**: By default it is `LYRA`: to be changed for any integration with other blockchains
+ - **SYNC**: By default it is `true` and is used to activate or deactivate automatic synchronization. It can be disabled for debugging purposes
+ - **AIRDROP**: The amount of Lyra that the IdANode sends each time an address is initialized
+ - **SERVERMODE**: Determines whether the system should install a Tray Icon in the topbar to quickly close the IdANode. By default it is `false`.
+ - **TESTNET**: It defines whether the IdANode is in testnet mode or not, the value can be entered as `true` or` false`.
+ - **LYRADATAFOLDER**: Path pointing to the folder containing the Scrypta blockchain files. Usually it is `~ / .lyra`. It is essential to successfully start the bootstrap file construction process.
+ - **NODE_KEY**: It is the private key that identifies the IdANode. It is used to sign requests made from the outside and communicate with the P2P network.
 
-## Esempio di installazione
-Per installare l'IdANode attraverso lo script `install.sh` è necessario usare questi comandi:
+## Installation example
+To install IdANode through the `install.sh` script it is necessary to use these commands:
 ```
 cd ~
 git clone https://github.com/scryptachain/scrypta-idanodejs
@@ -30,21 +30,21 @@ cd scrypta-idanodejs
 chmod 777 install.sh
 ./install.sh
 ```
-A questo punto editiamo prima il file lyra.conf attraverso il comando `nano ~/.lyra/lyra.conf` e modifichiamo `rpcuser` e `rpcpassword` con due valori casuali:
+At this point we first edit the lyra.conf file through the `nano ~/.lyra/lyra.conf` command and modify` rpcuser` and `rpcpassword` with two random values:
 
 ```
 rpcuser=YsmtF6bvBrY82Q
 rpcpassword=e43GkfCGMYaXsr
 ```
 
-Ora modifichiamo quindi il nostro file `.env` attraverso il comando `nano ~/scrypta-idanodejs/.env` e modifichiamo i parametri:
+Now let's modify our `.env` file through the `nano ~/scrypta-idanodejs/.env` command and modify the parameters:
 ```
 RPCUSER=YsmtF6bvBrY82Q
 RPCPASSWORD=e43GkfCGMYaXsr
 LYRAPATH=/home/YourLinuxUser/scrypta-idanodejs
 ```
-A questo punto siamo pronti a testare la nostra configurazione attraverso il comando `npm run dev`.
-Se tutto va bene vedremo un risultato simile a questo:
+At this point we are ready to test our configuration through the `npm run dev` command.
+If all goes well we will see a result similar to this:
 ```
 Scrypta IdANode listening at port 3001. Public IP is: 37.161.46.223
 LYRA wallet successfully connected.
@@ -86,18 +86,18 @@ Database and tables are ok.
 Starting block synchronization.
 FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 ```
-Ora l'IdANode inizierà a sincronizzare tutti i dati presenti in blockchain, complimenti avete installato l'IdANode!
-Il processo di sincronizzazione dura parecchie ore se non avete scaricato il bootstrap (ovvero se avete fatto un'installazione manuale), sennò ci metterà qualche minuto, dipende dal numero di blocchi che deve scaricare.
+Now the IdANode will start to synchronize all the data present in the blockchain. Congratulations you have installed the IdANode!
+If you have not downloaded the bootstrap (ie if you have done a manual installation) the synchronization process takes several hours. Otherwise it will take a few minutes, depending on the number of blocks it has to unload.
 
-## Scaricare il bootstrap
+## Scaricare il bootstrapDownload the bootstrap
 
-Per scaricare il bootstrap ed installarlo è sufficiente dare i permessi al file `bootstrap.sh` e avviarlo:
+To download the bootstrap and install it, simply give the `bootstrap.sh` file permissions and start it:
 
 ```
 cd scrypta-idanodejs
 chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
-::: warning ATTENZIONE
-E' fondamentale che l'IdANode sia spento e che il processo `mongod` sia correttamente chiuso, altrimenti il processo fallirà.
+::: warning WARNING
+It is essential that the IdANode is turned off and that the `mongod` process is properly closed, otherwise the process will fail.
 :::

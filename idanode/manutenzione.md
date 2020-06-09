@@ -1,38 +1,38 @@
-# Manutenzione
+# Maintenance
 
-La manutenzione dell'IdANode è fondamentale, questo perchè il codice, aggiornato su base giornaliera, subisce modifiche e miglioramenti continui.
+Maintenance of the IdANode is essential. This is because the code, updated on a daily basis, undergoes continuous changes and improvements.
 
-E' fondamentale che si acceda regolarmente  all'IdANode e si verifichi che la versione sia l'ultima disponibile.
+It is extremely important to regularly access IdANode and to verify that the version is the latest available.
 
-Ogni versione porta con se un *checksum* di controllo sul codice, che verrà confrontato con il tuo IdANode all'avvio.
+Each version carries with it a *checksum* to check the code, which will be compared with your IdANode at startup.
 
-::: warning ATTENZIONE
-E' fondamentale che il *checksum* risulti sempre valido, ogni modifica non ufficiale al codice corromperà l'IdANode e questo non permetterà il collegamento attraverso @scrypta/core.
+::: warning WARNING
+It is essential that the * checksum * is always valid. Any unofficial modification to the code will corrupt the IdANode and this will not allow the connection through@scrypta/core.
 :::
 
-### Lista checksum in Blockchain
+### Blockchain checksum list
 
 [https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw](https://proof.scryptachain.org/#/address/LQ15LT7CKygxUvXB8NsnZXd3kE5xrTMfFw)
 
-### Lista checksum Github
+### Github checksum list
 
 [https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum](https://github.com/scryptachain/scrypta-idanodejs/blob/master/checksum)
 
-## Aggiornare l'IdANode
+## Update the IdANode
 
-Per aggiornare l'IdANode è sufficiente eseguire il seguente comando da terminale:
+To update the IdANode run the following terminal command:
 
 ```
 cd scrypta-idanodejs
 npm run update
 ```
 
-## Creare un bootstrap file
+## Create a bootstrap file
 
-Per creare un bootstrap file è necessario *a IdANode attivo* avviare il seguente comando:
+To create a bootstrap file you need to *have IdANode active* and run the following command:
 
 ```
 npm run mongodump
 ```
 
-Questo creerà il file `idanode_boostrap.gz` che verrà richiamato dallo script `bootstrap.sh`.
+This will create the `idanode_boostrap.gz` file which will be invoked by the script `bootstrap.sh`.
