@@ -1,20 +1,20 @@
 # Progressive Data Management
 
-Questi endpoint rappresentano il cuore delle funzionalità degli IdANode. 
-La scrittura, ma soprattutto la lettura, delle informazioni scritte sulla blockchain rappresentano le due funzionalità chiave dello sviluppo di qualsiasi dApp.
+These endpoints represent the core of the IdANode functionality.
+The writing, but above all the reading, of the information written on the blockchain represent the two key features of the development of any dApp.
 
-Ricordiamo che la scrittura di dati arbitrari è permessa grazie all' **OP_RETURN**, che permette di inserire 8000 byte di dati su qualunque transazione. E' importante capire che gli output marcati con OP_RETURN sono delle transazioni **non** spendibili, infatti vengono spese le sole fee di **0.001 LYRA** per ogni transazione, ovvero per ogni 8000 byte.
+The writing of arbitrary data is allowed thanks to the **OP_RETURN**, which allows to insert 8000 bytes of data on any transaction. It is important to note that the outputs marked with OP_RETURN are **non** expendable transactions. In fact, in this case only the fees of **0.001 LYRA** are spent for each transaction, or for every 8000 bytes.
 
-Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdANode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
+If the size of the data to be written exceeds 8000 bytes, the IdANode (and Scrypta Core) divides the data into blocks of 7994 bytes and uses the first 3 bytes and the last 3 bytes to create a link between sequential data. The first 3 bytes are tied to the previous transaction and the last 3 to the next one. In this way the IdANodes are able to reconstruct the written information on multiple transactions.
 
-## Operazioni possibili
+## Types of possible operations to perform
 
-Le operazioni possibili attraverso il Progressive Data Management sono di tre tipi:
-1) **Scrittura:** per operazioni di scrittura si intendono tutte quelle transazioni con OP_RETURN da e verso lo stesso indirizzo, questo significa che ogni indirizzo della blockchain può scrivere delle informazioni su se stesso. Questo comporta che un indirizzo può espressamente scrivere delle informazioni la cui proprietà è dimostrabile senza ombra di dubbio.
-2) **Aggiornamento:** le operazioni di aggiornamento prevedono la scrittura di dati sequenziali facendo riferimento sempre al medesimo UUID. Ciò non comporta che le informazioni possano essere alterate, quanto invece -per convenzione-  che vengano restituite quelle più aggiornate. E' sempre possibile recuperare lo storico degli aggiornamenti passando il parametro _history=**true**_ in fase di lettura, come vedremo di seguito. 
-3) **Invalidazione**: le operazioni di invalidazione servono a comunicare all'IdANode che un determinato dato **non** deve essere mostrato in fase di lettura. Come già specificato, questa invalidazione (che consiste nell'aggiornamento del dato con metadata "END") non cancella effettivamente il dato che  può essere sempre recuperato in fase di lettura passando il parametro _history=**true**_. 
+The possible operations through Progressive Data Management are of three kinds:
+1) **Writing:** by write operations we mean all those transactions with OP_RETURN from and to the same address. Each blockchain address can write information in itself. This means that an address can expressly write information whose ownership is demonstrably demonstrable.
+2) **Update:** the update operations involve writing sequential data always referring to the same UUID. This does not mean that the information can be altered, but that, by convention, the most updated ones are returned. It is always possible to retrieve the update history by passing the parameter _history=**true**_ during the reading phase, as we will see below.
+3) **Invalidation**: the invalidation operations are used to communicate to the IdANode that a certain data ** must not be shown during the reading phase. This invalidation (which consists of updating the data with "END" metadata) does not actually delete the data. This fact can always be recovered during the reading phase by passing the parameter _history=**true**_.
 
-Un tipico dato strutturato secondo il nostro protocollo è il seguente:
+The following is a data structured according to our protocol:
 ```
 {
 	"_id":"5da9dd2724d7e32a34b32660",
@@ -28,15 +28,16 @@ Un tipico dato strutturato secondo il nostro protocollo è il seguente:
 	"time":1548755949
 }
 ```
-Come abbiamo potuto osservare sulla documentazione relativa a Scrypta Core, abbiamo 3 diversi filtri:
-- **collection:** definisce una collezione.
-- **refID:** definisce un unico identificativo di riferimento.
-- **protocol:** definisce un protocollo, solitamente interpretato dalla dApp.
-- **uuid:** identificativo unico _assegnato_ in fase di scrittura. Questo uuid è fondamentale per le operazioni di **aggiornamento** ed **invalidazione** in quanto deve essere passato agli endpoint.
+As we have seen in the Scrypta Core documentation, we have 3 different filters:
+- **collection:** defines a collection.
+- **refID:** defines a single reference identifier.
+- **protocol:** defines a protocol, usually interpreted by the dApp.
+- **uuid:** unique identifier _assigned_ during writing. This uuid is essential for **update** and **invalidation** operations as it must be passed to the endpoints.
 
-Un quarto tipo di filtro è l'_invio_, che però non viene considerato in egual modo alle operazioni di scrittura/aggiornamento/invalidazione dall'IdANode.
-Per operazioni di invio si intende la singola transazione con OP_RETURN da un indirizzo verso un **altro** indirizzo. Questa è limitata ad un massimo di 80 byte e il contenuto non viene formattato secondo lo standard di cui sopra. Come possiamo vedere nell'esempio di seguito non viene assegnato un UUID e non possono essere filtrati gli elementi per Collection, RefID, Protocol.
-Chiaramente però è presente un campo **sender** che definisce chi ha inviato il dato. Questa tipologia di dati è utile nell'elaborazione di dApp che prevedono l'interscambio di informazioni tra due o più indirizzi come mostrato nel nostro Proof of Concept della piattaforma di voto.
+A fourth type of filter is the _send_, which however is not considered in the same way as the write / update / invalidation operations from the IdANode.
+By sending operations we mean the single transaction with OP_RETURN from one address to **another** address. This is limited to a maximum of 80 bytes and the content is not formatted according to the above standard. As we can see in the example below, a UUID is not assigned and the elements for Collection, RefID, Protocol cannot be filtered.
+
+There is a ** sender ** field that defines who sent the data. This type of data is useful in the processing of dApps that provide for the exchange of information between two or more addresses as shown in our voting platform Proof of Concept.
 
 ```
 {
@@ -51,22 +52,22 @@ Chiaramente però è presente un campo **sender** che definisce chi ha inviato i
 
 ## [POST] /write
 
-Scrive le informazioni all'interno della blockchain. Quando invocata attraverso l'IdaNode è necessario inviare anche la chiave privata dell'indirizzo che sta scrivendo le informazioni. 
+Writes information within the blockchain. Invoking it through the IdaNode it is necessary to send the private key of the address that is writing the information.
 
-E' chiaro che le misure di sicurezza devono essere prese con la necessaria cautela affinché le chiavi private rimangano effettivamente al sicuro. 
-Sconsigliamo infatti di esporre l'IdANode su Internet senza l'installazione dei certificati SSL. 
+It is necessary to carry out the operation in safety so that the private keys remain effectively safe.
+It is not recommended to expose the IdANode on the Internet without installing SSL certificates. 
 
-Ecco la lista dei possibili parametri:
-- **dapp_address [obbligatorio]:** l'indirizzo che sta scrivendo l'informazione.
-- **data [obbligatorio]**: l'informazione che si vuole scrivere all'interno della blockchain.
-- **private_key [obbligatorio]**: la chiave privata dell'indirizzo che sta scrivendo l'informazione.
-- **file:** un file che può contestualmente essere scritto su IPFS.
-- **protocol:** il protocollo che si vuole utilizzare per classificare l'informazione.
-- **collection:** la collezione che si vuole utilizzare per classificare l'informazione.
-- **refID:** l'id di riferimento che si vuole utilizzare per classificare l'informazione.
-- **uuid:** l'identificativo unico assegnato dall'IdANode per aggiornare un determinato dato.
+Here is the list of available parameters:
+- **dapp_address [mandatory]:** the address that is writing the information.
+- **data [mandatory]**: the information to be written on the blockchain.
+- **private_key [mandatory]**: the private key of the address that is writing the information.
+- **file:** a file that can contextually be written on IPFS.
+- **protocol:** the protocol to be used to rank information.
+- **collection:** the collection you want to use to rank information.
+- **refID:** the reference id that you want to use to rank the information.
+- **uuid:** the unique identifier assigned by the IdANode to update a given data.
 
- La risposta ad una chiamata del genere sarà molto simile a quella della scrittura attraverso Scrypta Core:
+The answer to the call will be similar to that of writing through Scrypta Core:
  ```
  {
 
@@ -102,12 +103,12 @@ Ecco la lista dei possibili parametri:
 
 ## [POST] /invalidate
 
-Viene utilizzato per invalidare un dato, i parametri necessari affinché l'operazione vada a buon fine sono:
-- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdANode nella fase di scrittura iniziale.
--  **private_key [obbligatorio]:** chiave privata dell'indirizzo che ha scritto l'informazione.
-- **dapp_address [obbligatorio]:** l'indirizzo che ha scritto l'informazione.
+It is used to invalidate a data. The parameters necessary for the operation to be successful are:
+- **uuid [mandatory]:** the unique identifier returned by the IdANode in the initial writing phase.
+-  **private_key [mandatory]:** private key of the address that wrote the information.
+- **dapp_address [mandatory]:** l'indirizzo che ha scritto l'informazione.the address that wrote the information.
 
-La risposta, in caso di successo, sarà di questo tipo:
+The answer, if successful, will look like this:
 ```
 {
 
