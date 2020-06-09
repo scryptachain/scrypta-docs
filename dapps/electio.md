@@ -52,9 +52,9 @@ Il quesito della votazione è visualizzabile in chiaro, il voto dell’elettore 
 ## Guida alla creazione di una votazione
 
 Come descritto in precedenza, all'interno di Electio è possibile sviluppare diverse tipologie di voto, ciascuna con caratteristiche diverse.
-<br>Tuttavia gli step per configurare la votazione nella modalità desiderata sono pressoche' simili, e verranno illustrate di seguito.
+<br>Tuttavia gli step per configurare la votazione nella modalità desiderata sono pressochè simili e verranno illustrate di seguito.
 
-Innanzitutto biogna accedere alla finestra di creazione del sondaggio tramite [Electio](https://vote.electio.app/#/), ed effettuare il login tramite .sid file o Scrypta Extension Browser.
+Innanzitutto bisogna accedere alla finestra di creazione della votazione tramite [Electio](https://vote.electio.app/#/), ed effettuare il login tramite .sid file o [Scrypta Extension Browser](https://id.scryptachain.org/).
 ![Electio](../.vuepress/public/assets/electio/login.png)
 <br>Dopo aver inserito la password e completata la procedura di login, il sistema ci richiederà di creare una chiave RSA.
 ![Electio](../.vuepress/public/assets/electio/rsa.png)
@@ -67,12 +67,19 @@ Procediamo con la creazione del nostro primo sondaggio cliccando su **"Create a 
 ![Electio](../.vuepress/public/assets/electio/full.png)
 
 
-Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipologie di sondaggio con diverse impostazioni di visibilità (Public, Authorized o Secret), e tale scelta si effettua dal menù a tendina "Poll Visibility"
-![Electio](../.vuepress/public/assets/electio/type_poll.png).
+Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipologie di votazione con diverse impostazioni di visibilità (Public, Authorized o Secret), e tale scelta si effettua dal menù a tendina "Poll Visibility"
+![Electio](../.vuepress/public/assets/electio/type_poll.png)
 Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in automatico la tipologia di poll da realizzare sulla base della scelta da noi effettuata, presentandoci i campi richiesti per quella specifica tipologia di votazione.
 
-<br><br>Con la modalità **"Public"** non ci saranno scelte da effettuae per la tipologia i voto, in quanto il sodaggio saraà completamente pubblico.
+<br>Con la modalità **"Public"** non ci saranno ulteriori scelte da effettuare per la tipologia i voto, in quanto il sodaggio sarà completamente pubblico.
 <br>Scegliendo le modalità **"Authorized"** oppure **"Secret"**, comparirà un menu a tendina aggiuntivo che ci chiede di scegliere l'impostazione per la visibilità del voto (che potrà essere **"Public"** oppure **"Secret"**)
 ![Electio](../.vuepress/public/assets/electio/dropdown.png).
 
-Una volta scelte le impostazioni per tipologia di sondsaggio e tipologia di voto all'interno del sondaggio, è possibile procedere con la configurazione vera e propria del sondaggio. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del sondaggio.
+Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto all'interno della votazione, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
+
+Nel caso in cui si scelga la tipologia di voto con autorizzazione "(Authorized) dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
+
+## Guida al voto
+Per votare, è necessario effettuare il login e compariranno in home le votazioni a cui siamo abilitati a partecipare. Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
+
+Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà  la scelta conteggiata con una "X". 
