@@ -79,6 +79,8 @@ Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto al
 
 Nel caso in cui si scelga la tipologia di voto con autorizzazione "(Authorized) dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
 
+Nel caso in cui si scelga la tipologia di quesito segreto (Secret) è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
+
 ## Guida al voto
 Per votare, è necessario effettuare il login e compariranno in home le votazioni a cui siamo abilitati a partecipare. Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
 
