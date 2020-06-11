@@ -1,51 +1,51 @@
 # Sidechain
 
-Il protocollo Sidechain di Scrypta è descritto nella sezione apposita . Vediamo qui come interagire con le Sidechain attraverso gli enpoint dell'IdANode.
+The Scrypta Sidechain protocol is described in the appropriate section. In this section we will show how to interact with Sidechains through the IdANode enpoints.
 
 ## [POST] /sidechain/issue
 
-Questo endpoint serve a creare una Sidechain, i processi interni sono descritti nel capitolo "Emissione" della sezione dedicata. Consigliamo la creazione di un nuovo indirizzo personale direttamente da manent web, così da poter gestire i token via interfaccia grafica. E' richiesta inoltre **1 LYRA** nel balance dell'indirizzo, altrimenti la creazione non andrà a buon fine.
+This endpoint is used to create a Sidechain, the internal processes of which are described in the "Issuance" chapter of the dedicated section. We recommend creating a new personal address directly from Manent Web, so that we can manage the tokens via the graphical interface. It is required to have at least **1 LYRA** in the balance of the address, otherwise the creation will not be successful.
 
-Ecco i campi da inviare per creare una nuova Sidechain:
-- **dapp_address**: l'indirizzo che diventerà l'owner della sidechain
-- **private_key**: Chiave privata dell'indirizzo dell'owner
-- **pubkey**: chiave pubblica dell'indirizzo dell'owner
-- **version**: la versione del protocollo, al momento è `1`
-- **name**: nome descrittivo della sidechain
-- **symbol**: ticker alfanumerico della sidechain
-- **supply**: l'ammontare di token da creare
-- **decimals**: il numero di cifre con cui è possibile dividere il token
-- **burnable**:  può essere `true` o `false` e determina se il token può essere inviato o meno all'indirizzo del trustlink per effettuare un burn di token.
-- **reissuable**: può essere `true` o `false` e determina se il token è a supply fissa oppure è possibile riemetterlo in un secondo momento.
+Here are the data fields to use to create a new Sidechain:
+- **dapp_address**: the owner address of the sidechain
+- **private_key**: Private key of the owner's address
+- **pubkey**: public key of the owner's address
+- **version**: the protocol version is currently `1`
+- **name**: descriptive name of the sidechain
+- **symbol**: sidechain alphanumeric ticker
+- **supply**: the amount of tokens to be created
+- **decimals**: the number of decimals of the token
+- **burnable**:  it can be `true` or` false`. Determines whether or not the token can be sent to the trustlink address to perform a token burn.
+- **reissuable**: it can be `true` or` false`. Determines whether the token is fixed supply or can be reissued later.
 
-Se tutto è andato per il verso giusto, la nuova sidechain verrà visualizzata qui: https://sidechain.scryptachain.org e sarà anche visibile il balance disponibile.
+If the operation is successful, the new sidechain will be displayed here: https://sidechain.scryptachain.org and the available balance will also be visible.
 
 
 ## [POST] /sidechain/reissue
 
-Questo endpoint serve a riemettere token all'interno di una sidechain già esistente. Questo processo può essere effettuato solo dall'owner della sidechain e solamente se è stata marcata come `reissuable`.
+This endpoint is used to reissue tokens within an existing sidechain. This process can only be done by the sidechain owner and only if it has been marked as `reissuable`.
 
-Ecco i campi da inviare per riemettere token:
-- **dapp_address**: L'indirizzo dell'owner
-- **sidechain_address**: L'indirizzo della sidechain
-- **private_key**: La private key dell'owner
-- **pubkey**: La pubkey dell'owner
-- **supply**: La quantità di token che volete riemettere
+These are the information to be sent for token reissue:
+- **dapp_address**: The owner's address
+- **sidechain_address**: The sidechain address
+- **private_key**: The owner's private key
+- **pubkey**:The owner's pubkey
+- **supply**: The amount of tokens to be reissued
 
-La risposta conterrà le informazioni necessarie a verificare che tutto sia andato bene e successivamente vedrete nella lista dei vostri unspent questa nuova transazione di reissue. 
+The response received will contain the information necessary to verify that everything went well. Subsequently this new reissue transaction will be displayed in the unspent list.
 
 ## [POST] /sidechain/send
 
-Tramite questo enpoint è possibile inviare i token in proprio possesso ad un altro indirizzo. Per farlo è necessario inviare i seguenti campi:
+Through this enpoint you can send the tokens in your possession to another address. To do this, the following fields must be sent:
 
-- **from**: l'indirizzo da cui volete mandare i token
-- **private_key**: la chiave privata dell'indirizzo che invia i token
-- **pubkey**: la chiave pubblica dell'indirizzo che invia i token
-- **sidechain_address**: l'indirizzo della sidechain
-- **to**: l'indirizzo che riceverà i token
-- **amount**: l'ammontare da inviare, si ricorda di rispettare la divisione dei decimali in quanto l'IdANode arrotonda la cifra per assicurarsi dell'esattezza edell'operazion;  uneventuale diffr comporta l'invio di un ammontare arrotondato, quindi diverso da quello richiesto.
+- **from**: the address from which you want to send the tokens
+- **private_key**: the private key of the address that sends the tokens
+- **pubkey**: the public key of the address that sends the tokens
+- **sidechain_address**: the address of the sidechain
+- **to**: the address that will receive the tokens
+- **amount**: the amount to be sent. Remember to respect the division of decimals as the IdANode rounds the figure to make sure of the accuracy of the operation. Any difference will result in the sending of a rounded amount, therefore different from the one requested.
 
-Come potete notare, la risposta è molto simile a quella di scrittura di qualsiasi altro dato:
+The answer is very similar to that of writing any other data:
 
 ```
 {
@@ -99,12 +99,12 @@ Come potete notare, la risposta è molto simile a quella di scrittura di qualsia
 
 ## [POST] /sidechain/balance
 
-Questa operazione Permette di visualizzare il proprio balance presso una specifica sidechain. Bisogna inviare i seguenti campi:
+This operation allows you to view your balance at a specific sidechain. The following fields must be sent:
 
-- **dapp_address**: l'indirizzo Lyra che si vuole ispezionare
+- **dapp_address**: the Lyra address you want to inspect
 - **sidechain_address**: l'indirizzo della sidechain.
 
-La risposta sarà  di questo tipo :
+The answer will be similar to the following:
 ```
 {
 
@@ -119,9 +119,9 @@ La risposta sarà  di questo tipo :
 
 ## [POST] /sidechain/shares
 
-Permette di visualizzare tutti i wallet attivi all'interno della sidechain e verificare bilanci e peso all'interno della sidechain stessa. Riporta inoltre la supply totale comprensiva di eventuali riemissioni e bruciature di token.
+It allows you to view all the active wallets inside the sidechain and check the balance and weight inside the sidechain itself. The total supply including any reissues and token burns is also reported.
 
-La risposta sarà simile a questa:
+The answer will look like this:
 ```
 {
     "shares": {
@@ -142,12 +142,13 @@ La risposta sarà simile a questa:
 
 ## [POST] /sidechain/transactions
 
-Permette di visualizzare le transazioni effettuate da un indirizzo presso una specifica sidechain. Necessita l'invio dei seguenti campi:
+It allows you to view transactions made from an address at a specific sidechain. The following fields must be sent:
+The answer will look like this:
 
-- **dapp_address**: l'indirizzo LYRA che si vuole ispezionare
-- **sidechain_address**: l'indirizzo della sidechain.
+- **dapp_address**: the LYRA address you want to inspect
+- **sidechain_address**: the address of the sidechain.
 
-La risposta sarà  simile a questa:
+The answer will look like this:
 
 ```
 {
@@ -249,12 +250,12 @@ La risposta sarà  simile a questa:
 
 ## [POST] /sidechain/listunspent
 
-Permette di visualizzare le transazioni spendibili (**USXO**) da un indirizzo presso una specifica sidechain. E' necessario l'invio dei seguenti campi:
+It allows you to view spendable transactions (**USXO**) from an address at a specific sidechain. The following fields must be sent:
 
-- **dapp_address**: l'indirizzo Lyra che si vuole ispezionare
-- **sidechain_address**: l'indirizzo della sidechain.
+- **dapp_address**: the Lyra address you want to inspect
+- **sidechain_address**: the address of the sidechain.
 
-Esempio di risposta:
+Answer example:
 ```
 	{
 
@@ -285,11 +286,11 @@ Esempio di risposta:
 
 ## [POST] /sidechain/scan/address
 
-Permette di visualizzare tutte le sidechain con balance per un determinato indirizzo.
+It allows you to view all the sidechains with balance for a specific address.
 
-- **dapp_address**: l'indirizzo Lyra che si vuole ispezionare
+- **dapp_address**: the Lyra address you want to inspect
 
-La risposta sarà di questo tipo:
+The answer will look something like this:
 ```
 {
 
@@ -315,10 +316,9 @@ La risposta sarà di questo tipo:
 
 ## [GET] /sidechain/list
 
-Permette di visualizzare tutte le sidechain create e valide all'interno della rete Scrypta.
+It allows you to view all the sidechains created and valid within the Scrypta network.
 
-
-Esempio di risposta:
+Answer example:
 ```
 {
 
@@ -402,23 +402,23 @@ Esempio di risposta:
 
 ## [POST] /sidechain/get
 
-Ritorna l'oggetto della sidechain.
+Return the sidechain object.
 
-- **sidechain_address**: l'indirizzo della sidechain che si vuole ispezionare
+- **sidechain_address**: the address of the sidechain you want to inspect
 
 ## [POST] /sidechain/verify
 
-Verifica l'intera sidechain partendo dall'inizio della catena e verificando che ogni transazione sia valida, serve per rimuovere eventuali double spend o altri errori. 
+Check the entire sidechain from the beginning of the chain and verify that each transaction is valid. It is used to remove any double spend or other errors.
 
-- **sidechain_address**: l'indirizzo della sidechain che si vuole ispezionare
+- **sidechain_address**: the address of the sidechain you want to inspect
 
 ## [POST] /sidechain/scan
 
-Permette di visualizzare tutte le transazioni di una specifica sidechain.
+It allows you to view all the transactions of a specific sidechain.
 
-- **sidechain_address**: l'indirizzo della sidechain che si vuole ispezionare
+- **sidechain_address**: the address of the sidechain you want to inspect
 
-Esempio di risposta:
+Answer example:
 ```
 {
 	
@@ -564,13 +564,13 @@ Esempio di risposta:
 
 ## [POST] /sidechain/transaction
 
-Permette di visualizzare una specifica **SXID**.
+Allows you to view a specific **SXID**.
  
-Bisogna inviare i seguenti campi:
-- **sxid**: l'id della transazione che si vuole ispezionare.
-- **sidechain_address**: l'indirizzo della sidechain a cui appartiene la transazione.
+The following fields must be sent:
+- **sxid**: the id of the transaction you want to inspect.
+- **sidechain_address**: the sidechain address to which the transaction belongs.
 
-La risposta sarà di questo tipo:
+The answer will look like this:
 ```
 {
 	
