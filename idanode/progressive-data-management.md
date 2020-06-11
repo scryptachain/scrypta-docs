@@ -124,17 +124,17 @@ The answer, if successful, will look like this:
 ```
 
 ## [POST] /read
-La lettura delle informazioni viene eseguita unicamente da questa chiamata. E' possibile filtrare e limitare i risultati, nonché leggere tutte le informazioni scritte sulla blockchain in una sorta di feed, proprio come nel nostro servizio https://proof.scryptachain.org.
+This call reads the information. It is possible to filter and limit the results, as well as read all the information written on the blockchain in a sort of feed, in a similar way to our service https://proof.scryptachain.org.
 
-I parametri che è possibile inviare sono i seguenti:
-- **history:** permette di impostare il ritorno di dati aggiornati o invalidati, di default è `false`.
--  **address:** filtra i dati scritti da un determinato indirizzo.
-- **uuid:** filtra i dati scegliendo un determinato _uuid_, se usato in abbinamento al campo _history_ è possibile visualizzare la storia di un determinato dato.
-- **collection**: filtra i dati per una determinata collezione.
-- **refID**: filtra i dati scegliendo un determinato refID. E' possibile utilizzarlo in alternativa all'uuid, servendosi però di una propria tipologia di identificatore (numerico, alfanumerico, etc).
-- **protocol:** filtra i dati per un determinato protocollo.
+The following parameters can be used:
+- **history:** allows you to set the return of updated or invalidated data, by default it is `false`.
+-  **address:** filters data written from a specific address.
+- **uuid:** filter the data by choosing a specific _uuid_. If used in combination with the _history_ field, it is possible to view the history of a given data.
+- **collection**: filters data for a specific collection.
+- **refID**: filters data by choosing a specific refID. It is possible to use it as an alternative to uuid, however using its own type of identifier (numeric, alphanumeric, etc).
+- **protocol:** filters data for a specific protocol.
 
-La risposta della proprietà `data` sarà quindi un array di oggetti contenente quanto richiesto. Questa chiamata ad esempio è stata ottenuta passando semplicemente **_limit=2_** e **_history=false_**.
+The response of the `data` property will be an array of objects containing what is requested. For example, the following call, for example, was obtained by passing the parameters **_limit=2_** and **_history=false_**.
 ```
 	{
 
@@ -200,8 +200,8 @@ La risposta della proprietà `data` sarà quindi un array di oggetti contenente 
 ```
 
 ## [POST] /received
-Permette di leggere tutte le informazioni ricevute da un determinato indirizzo. L'unico parametro che è possibile inviare è **address** e la risposta ottenuta è simile a quella dell'endpoint /read.
-Qui un esempio:
+It allows you to read all the information received from a specific address. The only parameter that can be sent is **address**. The response obtained is similar to that of the endpoint /read.
+Here an example:
 ```
 {
 
