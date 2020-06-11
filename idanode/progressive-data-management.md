@@ -53,7 +53,6 @@ There is a ** sender ** field that defines who sent the data. This type of data 
 ## [POST] /write
 
 Writes information within the blockchain. Invoking it through the IdaNode it is necessary to send the private key of the address that is writing the information.
-
 It is necessary to carry out the operation in safety so that the private keys remain effectively safe.
 It is not recommended to expose the IdANode on the Internet without installing SSL certificates. 
 

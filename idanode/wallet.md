@@ -80,6 +80,7 @@ Returns the wallet response to the `getinfo` call. Contains synchronization info
 
 ## [GET] /wallet/masternodelist
 Returns the response of the wallet to the `masternode list`,` masternode count` and `masternode current` calls thus allowing to analyze the current network.
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwODE0Njg4MiwtMTkzMjU2NTYzNCw0MD
 A2NDU0OCwtOTUxNTc3NDk1LDIwNTE1NDA2MzksLTU2ODQ4MTAw
