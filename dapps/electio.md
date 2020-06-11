@@ -85,3 +85,13 @@ Nel caso in cui si scelga la tipologia di quesito segreto (Secret) è necessario
 Per votare, è necessario effettuare il login e compariranno in home le votazioni a cui siamo abilitati a partecipare. Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
 
 Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà la scelta conteggiata apponendole accanto una "X". 
+
+::: warning NOTA BENE
+Il banditore della votazione non è abilitato a votare. In alcuni casi specifici il "creatore" della votazione è quindi da considerarsi come "ente"; in questo caso l'eventuale presidente di un ipotetico consiglio di amministrazione sarà dotato di identità digitale (attraverso indirizzo della rete Scrypta) al pari degli altri membri, ma gestirà anche l'indirizzo relativo all'ente (es. consiglio di amministratore) che bandisce la votazione.
+:::
+
+## Guida alla lettura dei risultati
+
+Terminata la votazione, che si conclude in base ai tempi impostati al momento della creazione, i risultati saranno visibili da chiunque ha partecipato alla votazione nella sezione chiamata *My History*, raggiungibile dal menu superiore. 
+
+Il conteggio dei voti avviene in automatico analizzando il block explorer della rete Scrypta. Ogni voto è quindi scritto indelebilmente sulla blockchain con marcatura temporale e firma digitale, pur mantenendo (nel caso in cui necessario) l'anonimato dei partecipanti alla votazione, e potrà essere contro verificato qualora necessario. 
