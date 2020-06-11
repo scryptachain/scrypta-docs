@@ -1,19 +1,19 @@
-# Soluzioni di Masternode Hosting
+# Masternode Hosting solutions
 
-### Attivazione Scrypta Masternode tramite TheHub
+### Scrypta Masternode activation via TheHub
 
-Attraverso i servizi di hosting offerti da [**The Hub Hosting LTD**](https://thehub.host/) è possibile attivare Scrypta Masternode e COMA Node (Clientless On Cloud Masternode).
+Through the hosting services offered by [**The Hub Hosting LTD**](https://thehub.host/), Scrypta Masternode and COMA Node (Clientless On Cloud Masternode) can be activated.
 
 ## Masternode
-Grazie all'applicazione web [The Hub](https://thehub.host/), che dialoga con il tuo desktop wallet, il collateral del masternode e le ricompense generate non lasciano mail il tuo computer e sono sempre a tua disposizione
+Thanks to the web application[The Hub](https://thehub.host/), which communicates with your desktop wallet, the collateral of the masternode and the rewards generated do not leave your computer mail and are always at your disposal
 
-Per avviare un masternode su VPS attraverso il servizio offerto da Kalkulus chiamato: ***Easy Masternode Deployment*** , avrai bisogno di completare alcune operazioni preliminari sul tuo wallet desktop.
+To start a masternode on VPS through the service offered by Kalkulus called: ***Easy Masternode Deployment***, you will need to complete some preliminary operations on your desktop wallet.
 
-Puoi riferirti alla procedura citata in questa sezione:
+You can refer to the procedure mentioned in this section:
 
 [Desktop Wallet Setup](../masternode-setup/installazione-manuale.md)
 
-Puoi anche consultare la video guida:
+You can also consult the video guide:
 
 [*Easy Masternode Deployment* - Tutorial Video](https://www.youtube.com/watch?v=lgmMEgmKUs4&feature=youtu.be)
 
@@ -21,16 +21,16 @@ Puoi anche consultare la video guida:
 
 ## COMA node
 
-The Hub offre anche un servizio di masternode hosting molto pratico che non necessita di desktop wallet nè di competenze tecniche: *Clientless On Cloud Masternode Service*, grazie al quale l'utente può immediatamente partecipare ai processi di super validazione operato dai masternode e ricevere le spettanti ricompense. 
+The Hub also offers a very practical masternode hosting service that does not require a desktop wallet or technical skills called * Clientless On Cloud Masternode Service *. Thanks to this, the user can immediately participate in the super validation processes operated by the masternodes and receive the due rewards.
 
-Allo stesso tempo l'utente può massimizzare il suo "passive income" mettendo automaticamente in stake le ricompense, o aggiungendo dei pacchetti di coin attraverso transazioni ai propri indirizzi di ricezione.
+At the same time the user can maximize his "passive income" by automatically staking the rewards, or by adding coin packets through transactions to his receiving addresses.
 
-Inoltre, questa soluzione "cloud" consente ai partecipanti di gestire la valuta digitale LYRA da qualsiasi dispositivo. Infine, i processi di autenticazione a due fattori (2FA) rendono i processi di deposito e prelievo estremamente sicuri.
+This "cloud" solution also allows participants to manage the LYRA digital currency from any device. Finally, two-factor authentication (2FA) processes make the deposit and withdrawal processes extremely secure.
 
-Eccon una guida esaustiva sul suo funzionamento:
+Here is an exhaustive guide on how it works:
 
-[*Clientless On Cloud Masternode* - Guida](https://medium.com/@kalkulus_team/thehub-introduce-clientless-masternodes-overview-and-guide-to-comanodes-c25a6f6c3a9e)
+[*Clientless On Cloud Masternode* - Guide](https://medium.com/@kalkulus_team/thehub-introduce-clientless-masternodes-overview-and-guide-to-comanodes-c25a6f6c3a9e)
 
-::: tip SERVIZI AGGIUNTIVI
-The Hub fornisce anche una serie di servizi  aggiuntivi come i di monitoraggio e statistiche, grafici, cronologia e dettagli degli utili; in un'interfaccia utente piacevole e di facile utilizzo.
+::: tip ADDITIONAL SERVICES
+The Hub also provides a number of additional services in a pleasant and easy-to-use user interface such as: monitoring, statistics, graphs, history and earnings details.
 :::

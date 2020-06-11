@@ -1,12 +1,12 @@
 # Masternode Setup
 
-Per attivare uno o piu masternode di Scrypta avrai bisogno del [desktop wallet ufficiale](../scrypta-full-node/installazione.md)  e del collateral richiesto di **15.000 LYRA** per ogni masternode.
+To activate one or more Scrypta masternodes you will need the [official desktop wallet](../scrypta-full-node/installazione.md) and the collateral required of **15,000 LYRA** for each masternode.
 
-::: warning NOTA
-Se si desidera procedere per un'installazione manuale, bisogna tenere presente che il processo richiede competenze tecniche, un server VPS con indirizzo IP dedicato e tempo per l'installazione.
+::: warning NOTE
+If you want to proceed for a manual installation, you must keep in mind that the process requires technical skills, a VPS server with a dedicated IP address and time for installation.
 :::
 
-In alternativa è possibile utilizzare servizi di masternode hosting come [The Hub](../masternode-setup/servizi-hosting.md).
+Alternatively, you can use masternode hosting services such as [The Hub](../masternode-setup/servizi-hosting.md).
 
-Consulta anche la sezione
+See also the section
 [Masternode FAQ](../masternode-setup/masternode-faq.md).

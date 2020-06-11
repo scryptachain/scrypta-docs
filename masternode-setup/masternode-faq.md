@@ -1,40 +1,40 @@
 # Masternode FAQ
 
-**D: QUANTE LYRA COIN SONO NECESSARIE PER UN MASTERNODE, E COME FACCIO A SVILUPPARLO?**
+**Q: HOW MANY LYRA COINS ARE NEEDED FOR A MASTERNODE, AND HOW DO I DEVELOP IT?**
 
-R: Avrai bisogno di un totale di 15000 LYRA. Sequi questa guida per la configurazione.
+A: You will need a total of 15000 LYRA. Follow this setup guide.
 
-**D: COS'E' UN MASTERNODE CONDIVISO E COME POSSO ACCEDERVI?**
+**Q: WHAT IS A SHARED MASTERNODE AND HOW CAN I ACCESS IT?**
 
-R: Attraverso servizi specifici, gli utenti possono raggruppare i propri fondi per raggiungere i 15000 LYRA richiesti per gestire un masternode. 
+A: Through specific services, users can group their funds to reach the 15,000 LYRA required to manage a masternode.
 
-I masternode condivisi sono basati sulla fiducia verso l'operatore del servizio. Il team Scrypta consiglia cautela a chiunque stia considerando di partecipare a un gruppo di masternode condiviso. 
-Le piattaforme che consentono di partecipare a "share" di Masternode Scrypta sono:
+Shared masternodes are based on trust in the service operator. The Scrypta team recommends using extreme caution when participating in a shared masternode group.
+The platforms that allow you to participate in "share" of Masternode Scrypta are:
 
 [EvoNodes](https://evonodes.com/)
 
 [Midas Platform](https://midas.investments/shares)
 
-**D: QUANTO E' POSSIBILE GUADAGNARE DA UN MASTERNODE SCRYPTA?**
+**Q: HOW MUCH IS IT POSSIBLE TO EARN FROM A MASTERODE SCRYPTA?**
 
-R: I profitti di un Masternode variano in base al valore della moneta, alla percentuale di ricompense ottenute dai nodi e da quanti nodi sono online. Vi sono specifiche piattaforme che forniscono questi dati in tempo reale:
+A: The profits of a Masternode vary according to the value of the coin, the percentage of rewards obtained by the nodes and how many nodes are online. There are specific platforms that provide this data in real time:
 
 [Masternodes Online](https://masternodes.online/currencies/LYRA/)
 
 [Masternode Buzz](https://coins.masternode.buzz/LYRA)
 
-**D: HO APPENA AVVIATO UN MASTERNODE, QUANTO TEMPO DOVRO' ATTENDERE PER LA PRIMA RICOMPENSA?**
+**Q: I HAVE JUST STARTED A MASTERNODE, HOW LONG WILL I WAIT FOR THE FIRST REWARD?**
 
-R: Qaundo avvii il masternode per la prima volta, c'è da attendere prima di ricevere la prima ricompensa. Questo tempo di attesa serve a impedire ai possessori di masternode di ridurre costantemente i loro masternode e ripristinarli per trarre vantaggio dalle  "staking rewards"  bilanciate dell'algortmo  see-saw .
+A: When you start the masternode for the first time, you will have to wait to receive the first reward. This waiting time is to prevent masternode owners from constantly reducing their masternodes and restoring them to take advantage of the balanced "staking rewards" of the see-saw algae.
 
-Quindi la prima ricompensa Masternode può richiedere fino a 24 volte di più rispetto al tempo medio di ricompensa.
+The first Masternode reward can take up to 24 times more than the average reward time.
 
-Il tempo medio di ricompensa può essere trovato, su siti statistici di masternode come [Masternodes Online](https://masternodes.online/currencies/LYRA/).
+The average reward time can be checked on masternode statistical sites such as [Masternodes Online](https://masternodes.online/currencies/LYRA/).
 
-**D: SE MI VENISSE SOTTRATTA LA MASTERNODE GENKEY QUALCUNO POTREBBE RUBARE LE MIE LYRA?**
+** Q: IF MY MASTERODE GENKEY WAS STOLEN FROM ME, COULD SOMEONE STOLEN MY LYRA? **
 
-R: No, non possono rubare direttamente le tue monete. Tuttavia possono usarla per disattivare il tuo masternode, interrompendo efficacemente il flusso di rete.
+A: No, they can't steal your coins directly. However, they can use it to disable your masternode, effectively stopping the network flow.
 
-**D: QUALI SONO I VANTAGGI DI UN MASTERNODE PER IL  NETWORK?**
+** Q: WHAT ARE THE ADVANTAGES OF A MASTERNODE FOR NETWORK? **
 
-R: il Masternodes agisce come nodo affidabile sulla rete, consentendo una più facile propagazione dei dati e una trasmissione più veloce delle informazioni sulle transazioni, nonché abilita funzionalità come *SwiftTX* che consente l'esecuzione delle transazioni con una sola conferma, mentre una transazione normale ne richiede sei.
+A: Masternodes acts as a reliable node on the network, allowing easier data propagation and faster transmission of transaction information. It also enables features like * SwiftTX * which allows transactions to be executed with a single confirmation, while a normal transaction requires six.
