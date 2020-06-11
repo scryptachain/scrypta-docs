@@ -1,29 +1,29 @@
 # Trustlink
 
-Trustlink è un tipo di indirizzo della blockchain, detto `multisignature` e che viene generato da due o più indirizzi standard. Gli indirizzi multisignature iniziano sempre con il numero `6` mentre gli indirizzi standard con la lettera `L`. 
+Trustlink is a type of blockchain address, called `multisignature`, which is generated from two or more standard addresses. Multisignature addresses always start with the number `6` and standard addresses with the letter` L`.
 
-A parte questa distinzione alfanumerica, gli indirizzi multisignature differiscono principalmente sul metodo di firma delle transazioni. Le transazioni devono essere firmate da _n_ di _m_ indirizzi, dove:
-- **n:** il numero minimo di firme necessarie.
-- **m:** la totalità degli indirizzi presenti.
+Aside from this alphanumeric distinction, multisignature addresses differ mainly in the method of signing transactions. Transactions must be signed by _n_ of _m_ addresses, where:
+- **n:** the minimum number of required signatures required.
+- **m:** the total number of addresses present.
 
-Vedremo successivamente come si generano le transazioni e gli indirizzi multisignature.
+We will see later how multisignature transactions and addresses are generated.
 
-Nella concezione di Scrypta, che ha scelto di chiamare questi indirizzi TrustLink, due o più indirizzi che decidono di firmare (e quindi scrivere) delle informazioni sulla blockchain, sono in qualche modo degli indirizzi che si fidano gli uni degli altri. Nel nostro caso le firme necessarie corrispondono sempre alla totalità degli indirizzi presenti nel TrustLink. Presto vedremo come utilizzare questi particolari indirizzi per sottoscrivere contratti.
+NThe Scrypta idea, which chose to call these TrustLink addresses, provides that two or more addresses that decide to sign (and therefore write) information on the blockchain are, in some way, addresses that trust each other. In our case, the necessary signatures always correspond to all the addresses present in the TrustLink. We will soon see how to use these particular addresses to sign contracts.
 
-Parliamo di *contratti* in termini decisamente differenti da quelli usati di solito. I *contratti* che noi intendiamo sono degli accordi scritti (o dei file) che vengono contestualmente firmati da tutti i partecipanti al Trustlink. In nessun caso parleremo di *smart contracts*, almeno non nell'accezione di *programma per elaboratore*. Il programma che esegue il contratto, nel nostro caso, è a tutti gli effetti la blockchain, tramite l'operazione di firma multipla.
+We are talking about *contracts* in very different terms from those usually used. The *contracts* that we mean are written agreements (or files) that are contextually signed by all participants in the Trustlink. In no case will we talk about *smart contracts*, at least not in the sense of *computer program*. The program that executes the contract, in our case, is in all respects the blockchain, through the multiple signature operation.
 
-Tutte le operazioni relative ai Trustlink vengono effettuate all'interno degli IdANode, elencheremo ora tutti gli endpoint:
+All operations relating to Trustlinks are carried out within the IdANodes. We will now list all the endpoints:
 
 ## [POST] /trustlink/init
 
-Questo endpoint serve a generare il Trustlink partendo dalle chiavi pubbliche degli indirizzi che lo vogliono generare. E' importante sapere che l'ordine delle chiavi pubbliche incide sul risultato del Trustlink. Per agevolare la creazione di trustlink sempre uguali tra gli stessi partecipanti abbiamo deciso di implementare una funzione di ordinamento di default.
+This endpoint is used to generate the Trustlink starting from the public keys of the addresses that want to generate it. It is important to note that the order of public keys affects the result of the Trustlink: to facilitate the creation of always the same trustlinks between the same participants, we have decided to implement a default sorting function.
 
-I campi da inviare saranno quindi i seguenti:
+The fields to be sent will be the following:
 
- - **addresses**: un elenco separato da virgole contenente le chiavi pubbliche degli indirizzi.
- - **airdrop**: può essere *true* o *false* e serve ad inviare la prima transazione di inizializzazione dell'importo inserito all'interno del file *.env* dell'IdANode. Di default è **0.05 LYRA**.
+ - **addresses**: the comma separated list containing the public address keys.
+ - **airdrop**: it can be *true* or *false* and it is used to send the first initialization transaction of the amount inserted in the * .env * file of the IdANode. By default it is **0.05 LYRA**.
 
-Il risultato finale sarà qualcosa simile a questo:
+The end result will look like this:
 ```
 {
 
@@ -40,38 +40,38 @@ Il risultato finale sarà qualcosa simile a questo:
 }
 ```
 
-E' importante annotarsi il campo *redeemScript* in quanto serve a firmare le transazioni nelle operazioni di scrittura e invio.
+It is important to write down the *redeemScript* field as it is used to sign transactions in write and send operations.
 
 ## [POST] /trustlink/write
 
-In modo analogo all'endpoint **write** per gli indirizzi normali questo endpoint permette di scrivere i dati all'interno della blockchain.
+Similarly to the ** write ** endpoint for normal addresses, this endpoint allows you to write data within the blockchain.
 
-Ecco la lista dei possibili campi:
-- **trustlink [obbligatorio]:** il trustlink che sta scrivendo l'informazione.
-- **data [obbligatorio]**: l'informazione che si vuole scrivere all'interno della blockchain.
-- **private_keys [obbligatorio]**: le chiavi private degli indirizzi del trustlink.
-- **redeemScript [obbligatorio]**: la stessa stringa ritornata nell'operazione di creazione del trustlink.
-- **file:** un file che può contestualmente essere scritto su IPFS.
-- **protocol:** il protocollo che si vuole utilizzare per classificare l'informazione.
-- **collection:** la collezione che si vuole utilizzare per classificare l'informazione.
-- **refID:** l'id di riferimento che si vuole utilizzare per classificare l'informazione.
-- **uuid:** l'identificativo unico assegnato dall'IdANode per aggiornare un determinato dato.
+Here is the list of possible data fields:
+- **trustlink [mandatory]:** the trustlink that is writing the information.
+- **data [mandatory]**: the information you want to write within the blockchain.
+- **private_keys [mandatory]**: the private keys of the trustlink addresses.
+- **redeemScript [mandatory]**: the same string returned in the trustlink creation operation.
+- **file:** a file that can contextually be written on IPFS.
+- **protocol:** the protocol to be used to classify the information.
+- **collection:** the collection you want to use to classify information.
+- **refID:** the reference id that you want to use to classify the information.
+- **uuid:** the unique identifier assigned by the IdANode to update a given data.
 
-Il funzionamento è analogo a quanto già descritto, consigliamo quindi di andare a vedere la pagina relativa nella sezione *IdANode > Progressive Data Management*
+The operation is similar to that already described, therefore we recommend going to see the relevant page in the section*IdANode > Progressive Data Management*
 
 ##  [POST] /trustlink/send
 
-In modo analogo all'endpoint **send** per gli indirizzi normali questo endpoint permette di inviare fondi dal trustlink ad un altro indirizzo Lyra.
+Similar to the **send** endpoint for normal addresses, this endpoint allows funds to be sent from the trustlink to another Lyra address.
 
-Ecco la lista dei possibili campi:
-- **trustlink [obbligatorio]:** il trustlink che sta scrivendo l'informazione.
-- **to [obbligatorio]**: l'indirizzo Lyra che riceverà i fondi.
-- **amount [obbligatorio]**: la quantità di Lyra da inviare.
-- **private_keys [obbligatorio]**: le chiavi private degli indirizzi del trustlink.
-- **redeemScript [obbligatorio]**: la stessa stringa ritornata nell'operazione di creazione del trustlink.
-- **message:** un eventuale messaggio da inserire all'interno della transazione. Può essere di massimo 80 byte.
+Here is the list of possible fields:
+- **trustlink [mandatory]:** the trustlink that is writing the information.
+- **to [mandatory]**: the Lyra address that will receive the funds.
+- **amount [mandatory]**: the amount of Lyra to send.
+- **private_keys [mandatory]**: the private keys of the trustlink addresses.
+- **redeemScript [mandatory]**: the same string returned in the trustlink creation operation.
+- **message:** any message to be included in the transaction. It can be a maximum of 80 bytes.
 
-La risposta sarà qualcosa del genere in caso di invio positivo:
+If sent successfully, the answer will look like the following
 ```
 {
 
@@ -84,14 +84,14 @@ La risposta sarà qualcosa del genere in caso di invio positivo:
 
 ## [POST] /trustlink/invalidate
 
-Viene utilizzato per invalidare un dato, i parametri necessari affinché l'operazione vada a buon fine sono:
-- **uuid [obbligatorio]:** l'identificativo unico ritornato dall'IdANode nella fase di scrittura iniziale.
--  **private_keys [obbligatorio]:** chiave privata dell'indirizzo che ha scritto l'informazione.
-- **trustlink [obbligatorio]:** l'indirizzo che ha scritto l'informazione.
-- **redeemScript [obbligatorio]:** la stessa stringa ritornata nell'operazione di creazione del trustlink.
+It is used to invalidate a data. The parameters necessary for the operation to be successful are:
+- **uuid [mandatory]:** the unique identifier returned by the IdANode in the initial writing phase.
+-  **private_keys [mandatory]:** private key of the address that wrote the information.
+- **trustlink [mandatory]:** the address that wrote the information.
+- **redeemScript [mandatory]:** the same string returned in the trustlink creation operation.
 
 
-La risposta, in caso di successo, sarà di questo tipo:
+If sent successfully, the answer will look like the following
 ```
 {
 
