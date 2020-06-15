@@ -129,7 +129,11 @@ Il file immagine per Raspberry PI 4 si basa su **Raspbian Debian Buster** con tu
 > Questa sezione spiega come installare un'immagine del sistema operativo Raspberry Pi su una scheda SD. Avrai bisogno di un altro computer con un lettore di schede SD.
 
 
-Il file di immagine ufficiale Scrypta è disponibile per il download dal Github di Scrypta. Sarà necessario utilizzare uno strumento di scrittura delle immagini per installare l'immagine scaricata sulla scheda SD.
+Il file di immagine ufficiale Scrypta è disponibile per il download al seguente link:
+
+[https://scrypta.sfo2.digitaloceanspaces.com/scryptaOS_rasp_1.1.0.img](https://scrypta.sfo2.digitaloceanspaces.com/scryptaOS_rasp_1.1.0.img)
+
+Sarà necessario utilizzare uno strumento di scrittura delle immagini per installare l'immagine scaricata sulla scheda SD.
 
 ::: tip BalenaEtcher
 BalenaEtcher è uno strumento grafico per la scrittura di schede SD che funziona su Mac OS, Linux e Windows ed è l'opzione più semplice per la masterizzazione di file immagine. BalenaEtcher supporta anche la scrittura di immagini direttamente dal file zip, senza che sia necessario decomprimere.
