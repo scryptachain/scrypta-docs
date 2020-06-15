@@ -85,7 +85,7 @@ Al riavvio, digita i seguenti comandi da Terminale:
 ```
 sudo apt-get install -y pkg-config
 sudo apt-get install -y software-properties-common python-software-properties
-wget https://raw.githubusercontent.com/scryptachain/scrypta-os/master/script/add-apt-repository.sh
+wget https://raw.githubusercontent.com/scryptachain/scrypta-os/master/add-apt-repository.sh
 sudo mv add-apt-repository.sh /usr/bin/add-apt-repository
 sudo chmod +x /usr/bin/add-apt-repository
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
