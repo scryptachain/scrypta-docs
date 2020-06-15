@@ -8,9 +8,16 @@ L’identità digitale all’interno della Blockchain di Scrypta viene gestita a
    
 La corretta identificazione del soggetto porta alla creazione di un **payload di identità** che viene firmato digitalmente e scritto in blockchain per consolidare la sua rappresentazione (hash). 
 
+## Certificazione e verifica 
+Scrypta ID è il primo strumento che collega il documento di identità  elettronico (CIE) alla blockchain. Attraverso la creazione di uno specifico messaggio che viene firmato in blockchain e controfirmato attraverso la Carta di Identità Elettronica, l’utente può associare il suo indirizzo blockchain alle credenziali rilasciate dal Ministero degli Interni e compiere così delle operazioni certificate.
+
+La propria identità può inoltre essere associata alla proprietà di diversi servizi, quali: il numero di cellulare, la propria email o PEC, o ancora i propri social come Twitter o Linkedin.
+
+Per utilizzare lo strumento di verifica identità, recati sul sito di identificazione: [https://scrypta.id](https://scrypta.id).
+
 ## Gateway
 
-Questa corretta identificazione viene effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
+La corretta identificazione può avenire attraverso lo strumento di verifica messo a disposizione da Scrypta, oppure può essere effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
 
 Qui vediamo un **esempio** di identificazione:
 
