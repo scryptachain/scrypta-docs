@@ -164,6 +164,7 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          '/utilities/shamir-backup',
           '/utilities/dapp-composer',
           '/utilities/dapp-starter',
           '/utilities/card-generator',
