@@ -1,6 +1,10 @@
 # Scrypta Shamir Backup 
 
-Questo tool serve per creare dei backup di sicurezza per i wallet Scrypta o semplicemente per dei dati di vostro interesse. Per chi non conoscesse questo sistema di bakcup facciamo un piccolo riepilogo. Il sistema di condivisione dei segreti inventato da Shamir serve per dividere il rischio di perdita di dati in quanto il dato viene diviso in un numero di parti (shares) e viene impostata una soglia (threshold) ovvero il numero minimo di parti che servono per ricostituire il segreto.
+Questo tool serve per creare dei backup di sicurezza per i wallet Scrypta o semplicemente per dei dati di vostro interesse. 
+
+Per chi non conoscesse questo sistema di backup facciamo un piccolo riepilogo. 
+
+Il sistema di condivisione dei segreti inventato da Shamir serve per dividere il rischio di perdita di dati in quanto il dato viene diviso in un numero di parti (shares) e viene impostata una soglia (threshold) ovvero il numero minimo di parti che servono per ricostituire il segreto.
 
 Questo tool vi permetterà di creare queste parti e ricostituirle, usando semplicemente il terminale. Per un'archiviazione offline vengono anche creati dei file .pdf che contengono un QR code contenente la parte.
 
