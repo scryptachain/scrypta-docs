@@ -119,12 +119,14 @@ Ecco uno schema di funzionamento che riassume tutti i passaggi effettuati:
 ## Provider integrati
 
 Al momento i provider integrati e funzionanti sono i seguenti:
+- CIE (Carta d'Identità Elettronica)
 - Github
 - Google
 - Linkedin
 - Twitter
-- E-Mail
+- E-Mail (anche PEC)
 - Telefono
+- Ethereum (Indirizzo ETH)
 
 ## Obiettivo finale
 
