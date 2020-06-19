@@ -19,19 +19,23 @@ Una volta entrati all'interno del sistema con il vostro `.sid` file potrete inte
 
 Per maggiori informazioni sul *.sid* file e il sistema di login nelle dApp Scrypta, visita la sezione [Scrypta Browser Extension](../dapps/extension-browser.md).
 
-## Esempio identificatore digitale
+## Identificazione digitale
 
 Google, Twitter, Github, Linkedin hanno un processo di autenticazione molto simile. Una volta cliccato sull'icona del servizio che si intende associare, basterà seguire le istruzioni a schermo ed autenticarsi sia sul social, sia su scrypta, inserendo la propria password.
 
-## Esempio identificazione con CIE
+## Identificazione con CIE
 
-WIP
+Per l'identificazione con CIE è necessario innanzitutto inserire il proprio numero di Carta d'Identità e cominciare il processo. Il sistema creerà un file (p7m) che ti inviterà a scaricare. Adesso dovrai firmare questo file attraverso un app di firma digitale come [Firmo con CIE](https://www.firmoconcie.it/). Adesso potrai  effettuare l'upload del file firmato all'interno di Scrypta ID e completare l'autenticazione.
 
-## Esempio identificatore con OTP (E-Mail / SMS)
+## Identificazione con OTP (E-Mail / SMS)
 L'associazione di e-mail esms avviene attraverso un'autenticazione a due fattori, bisognerà quindi accedere alla propria mail ed autoriazzare l'associazione, o inserire il codice ricevuto via sms, nel caso dell'associazione del proprio numero telefonico.
 
-## Esempio identificatore con Ethereum
+## Identificazione con Ethereum
 
+Per identificare un indirizzo ETH è necessario installare [MetaMask](https://metamask.io/).
+Non appena richiederete l'autenticazione  si aprirà automaticamente MetaMask chiedendovi la conferma di associazione tra Scrypta ID e il vostro account Ethereum.
+
+![Metamask](../.vuepress/public/assets/scryptaid/metamask.png)
 
 
 ::: warning ATTENZIONE:
