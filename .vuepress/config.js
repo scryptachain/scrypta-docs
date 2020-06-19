@@ -93,6 +93,7 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
+          '/dapps/scrypta-id',
           '/dapps/manent-app',
           '/dapps/manent-web',
           '/dapps/extension-browser',
@@ -109,6 +110,7 @@ module.exports = {
         children: [
           '/planum/come-emettere',
           '/planum/come-funziona',
+          '/planum/scrypta-card-wallet',
           '/planum/software-di-gestione',
           '/planum/point-of-sale',
         ]
@@ -153,9 +155,9 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/id/scrypta-identity-framework',
-          '/id/scrypta-card-wallet-nfc',
-          '/id/scrypta-card-wallet-qr',
+          '/id/descrizione-generale',
+          '/id/funzionamento-tecnico',
+          '/id/scrypta-card-id'
         ]
       },
       {

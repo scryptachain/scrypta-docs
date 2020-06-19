@@ -1,4 +1,6 @@
-# Scrypta Card Wallet NFC
+# Scrypta Card Wallet
+
+## Implementazione con tecnologia NFC
 
 La card wallet completa il sistema di identità di Scrypta fornendo di fatto uno strumento semplice, sicuro e potente. La card può essere utilizzata sia per creare dei backup sicuri e duraturi dei propri wallet o può essere creata per la gestione quotidiana delle proprie Lyra, delle proprie informazioni o come sistema di pagamento nell'ambito delle Sidechain. 
 
@@ -16,11 +18,19 @@ Maggiori informazioni sull'utilizzo del tool possono essere trovate all'interno 
 
 [**Card Generator**](../utilities/card-generator.md)
 
-## Utilizzo
+## Implementazione con tecnologia QR
+
+La card wallet non è solamente gestibile attraverso l'NFC. E' possibile creare una card wallet in formato cartaceo e usarla in lettura con il QR code.
+
+Il vantaggio di questo tipo di soluzione è l'economicità e sicuramente la più immediata realizzazione di dApp, in quanto la funzionalità di lettura del QR code esiste anche nelle normali web app.
+
+Un altro aspetto da non sottovalutare è la compatibilità con i dispositivi, la tecnologia NFC non è sempre disponibile negli smartphone. Con la QR card potrai garantire massima compatibilità.
+
+## Utilizzo card NFC
 
 Una volta realizzata una card wallet, questa può essere utilizzata come strumento per effettuare operazioni all'interno della blockchain in modo semplice, ovvero inserendo la propria password (o PIN) all'interno di un'applicazione fidata. 
 
-Tra tutte, [Manent App](../dapps/manent-app.md) e [Manent Web](../dapps/manent-web.md) sono quelle che permettono di testare questa tecnologia, con possibilità di scambiare Lyra *-on the fly-* attraverso la sezione *Ricevi*.
+Tra tutte, [Manent App](../dapps/manent-app.md) è l'applicazione che permette di testare questa tecnologia, con possibilità di scambiare Lyra *-on the fly-* attraverso la sezione *Ricevi*.
 
 Dopo aver inserito l'ammontare da ricevere è possibile richiedere il pagamento della cifra attraverso la card; questa verrà letta e successivamente decodificata grazie all'inserimento della password da parte del debitore.
 
@@ -29,6 +39,12 @@ Se la password è corretta e i fondi sono effettivamente a disposizione verrà e
 Abbiamo creato quindi un perfetto sistema POS, dove le fee sono effettivamente 0 per il commerciante e la sicurezza negli scambi è elevatissima. 
 
 La password, la chiave privata o il wallet stesso non vengono mai memorizzati dal dispositivo, rendendo sicure tutte le operazioni di scambio.
+
+## Utilizzo Card QR
+
+La card QR può essere testata attraverso il PoS Virtuale di Planum, andando direttamente all'indirizzo: https://pay.planum.dev/#/
+
+Qui dovrete prima inizializzare la vostra card QR, dopo potrete richiedere pagamenti leggendo direttamente le card dei vostri clienti (o altre card di prova).
 
 ## Token e Sidechain
 

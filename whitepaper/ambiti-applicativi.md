@@ -1,4 +1,4 @@
-# Ambiti Apllicativi
+# Ambiti Applicativi
 
 Come oramai assodato, la blockchain ha avuto un impatto importante nel settore finanziario, con benefici evidenti in termini di velocità di processo dei dati, trasparenza, sicurezza, tuttavia questi benefici si possono applicare a moltissimi altri settori economici, produttivi e sociali, vale a dire in qualunque settore sul quale insistono molteplici intermediari. Ecco alcune aree potenziali di applicazione di Scrypta: 
 
