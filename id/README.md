@@ -17,7 +17,7 @@ Per utilizzare lo strumento di verifica identità, recati sul sito di identifica
 
 ## Gateway
 
-La corretta identificazione può avenire attraverso lo strumento di verifica messo a disposizione da Scrypta, oppure può essere effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
+La corretta identificazione può avenire attraverso lo [strumento di verifica](https://scrypta.id) messo a disposizione da Scrypta, oppure può essere effettuata per mezzo di un **Gateway**, ovvero una terza parte fidata che si assume la responsabilità dell’identificazione stessa.
 
 Qui vediamo un **esempio** di identificazione:
 
