@@ -93,7 +93,6 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/dapps/scrypta-id',
           '/dapps/manent-app',
           '/dapps/manent-web',
           '/dapps/extension-browser',
@@ -156,6 +155,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           '/id/descrizione-generale',
+          '/id/identificazione',
           '/id/funzionamento-tecnico',
           '/id/scrypta-card-id'
         ]
