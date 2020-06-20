@@ -1,11 +1,11 @@
 # Planum Point of Sale
 
-La suite si completa grazie ad un Point of Sale che si può usare in abbinamento alle Scrypta Card in versione QR code.
+The suite is completed thanks to a "Point of Sale component" which can be used in combination with the Scrypta Cards in the QR code version.
 
-Il PoS è operativo e disponibile a questo indirizzo:
+PoS is operational and available at this address:
 
  [https://pay.planum.dev/#/](https://pay.planum.dev/#/).
 
-Chiaramente anche questo prodotto è open-source ed è possibile personalizzarlo per adattarlo ad ulteriori esigenze, la repository si trova a questo indirizzo:
+This product is also open-source and can be customized to adapt it to further needs. The repository is located at this address:
 
 [https://github.com/scryptachain/scrypta-planum-web-pos](https://github.com/scryptachain/scrypta-planum-web-pos)

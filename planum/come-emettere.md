@@ -1,90 +1,90 @@
-# Come Emettere il Proprio Token 
-### Planum: dalla creazione alla gestione degli asset digitali
+# How to Issue Your Token
+### Planum: from creation to management of digital assets
 
-Accedendo alla piattaforma attraverso [https://planum.dev](https://planum.dev) sarà possibile creare il proprio token oppure consultare l’explorer per i token già esistenti.
+By accessing the platform through [https://planum.dev](https://planum.dev) you will be able to create your own token or consult the explorer for existing tokens.
 
-Il processo è molto veloce, non richiede specifiche o approfondite competenze tecniche se non una consapevolezza di ciò che si sta facendo.
-Il processo può essere riassunto in 4 step:
+The process is very fast and does not require specific or in-depth technical skills, if not an awareness of what is being done.
+The process can be summarized in 4 steps:
 
-- Login a ["Planum"](https://planum.dev) attraverso l’identità digitale di Scrypta.
-- Definizione dei parametri della sidechain del token.
-- Creazione dell’asset.
-- Gestione dell’asset.
+- Login to ["Planum"](https://planum.dev) using the digital identity of Scrypta.
+- Definition of the token sidechain parameters.
+- Creation of the asset.
+- Asset management.
 
-## Login a Planum 
+## Login to Planum 
 
-Per iniziare a creare la propria sidechain, e’ necessario accedere a https://planum.dev effettuando il login attraverso uno dei diversi tools sviluppati e messi a disposizione da Scrypta per la creazione e la gestione dell’identità digitale.
-Per un’esperienza ottimale di usabilità e sicurezza si richiede di scaricare ed usare ["ManentApp"](https://manent.app) disponibile in entrambe le versioni [web](https://web.manent.app) e mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
+To start creating your own sidechain, you need to log in to https://planum.dev by logging in through one of the various tools developed and made available by Scrypta for the creation and management of digital identity.
+For an optimal usability and safety experience it is preferable to download and use ["ManentApp"](https://manent.app) available in both versions: [web](https://web.manent.app) and mobile ([IOS](https://apps.apple.com/us/app/scrypta-manent/id1484816083)/[Android](https://play.google.com/store/apps/details?id=foundation.scrypta.manent)).
 
 ![planum](../.vuepress/public/assets/planum/manent_link.png)
-Ciò consentirà di creare facilmente la vostra prima identità digitale, oppure di importarne una già esistente.
-*Per completezza, vi invitiamo a consultare la [sezione wiki](https://wiki.scryptachain.org/developers/scryptaid) relativa.*
+This will allow you to easily create your first digital identity, or to import an existing one.
+*For completeness, we invite you to consult the related [wiki section](https://wiki.scryptachain.org/developers/scryptaid).*
 
-Una volta che la vostra identità digitale è stata creata, è possibile effettuare il login a “Planum” con il vostro .sid file o usando [l’estensione per browser Scrypta ID](https://id.scryptachain.org/) (un tool che permette di creare e gestire le identità digitali per usare con facilità le dApps di Scrypta).
+Once your digital identity has been created, you can log in to "Planum" with your .sid file or by using [the Scrypta ID browser extension](https://id.scryptachain.org/) (a tool that allows you to create and manage digital identities to easily use Scrypta dApps).
 
-## Definizione dei parametri della sidechain
+## Definition of the sidechain parameters
 
-Dopo il login, si aprirà l’interfaccia principale, dove verrà richiesto di introdurre tutti i parametri di configurazione della vostra sidechain.
-Questi parametri descrivono gli attributi del vostro asset tokenizzato, che funzionerà sul suo corrispondente layer della sidechain.
+After logging in, the main interface will open where you will be asked to enter all the configuration parameters of your sidechain.
+These parameters describe the attributes of your tokenized asset which will operate on its corresponding sidechain layer.
 
-Riempiendo i campi richiesti verranno definiti i parametri della nostra sidechain:
+By filling in the required fields, the parameters of our sidechain will be defined:
 ![planum](../.vuepress/public/assets/planum/token_creation.png)
 
 
-- **Asset public name:** Nome del token
-- **Symbol:** Ticker del token
-- **Total issued supply:** supply totale desiderata.
-- **Decimal division:** numero di decimali in cui e’ divisibile il nuovo digital asset.
+- **Asset public name:** Token Name
+- **Symbol:** Token ticker
+- **Total issued supply:** desired total supply.
+- **Decimal division:** number of decimals in which the new digital asset is divisible.
 
-Tra le opzioni a disposizione, l’utente può scegliere se creare un token “reissuable” (cioè per il quale sarà possibile incrementare la supply anche dopo l’emissione del token), o “burnable” (è possibile ridurre la supply “bruciando” una parte o tutta la supply di tokens).
-Premendo il tasto **"confirm configuration"** si aprirà una finestra di riepilogo con tutti i parametri scelti per la creazione della nostra sidechain.
+Among the available options, users can choose whether to create a "reissuable" token (ie for which it will be possible to increase the supply even after the token is issued), or "burnable" (it is possible to reduce the supply by "burning") part or all of the tokens supply).
+Pressing the **"confirm configuration"** button will open a summary window with all the parameters chosen for the creation of our sidechain.
 
 ![planum](../.vuepress/public/assets/planum/create_confirm.png)
 
-Una volta confermata la vostra scelta attraverso il tasto **"CREATE"**, si procederà immediatamente all'emissione del vostro token, sulla blockchain Scrypta, coi parametri da voi scelti, con la token supply totale che viene automaticamente trasferita all'indirizzo corrispondente all'identità digitale del creatore del token.
+Once your choice has been confirmed using the **"CREATE"** button, you will immediately proceed to issue your token on the Scrypta blockchain with the parameters you have chosen. The total token supply that is automatically transferred to the address corresponding to the digital identity of the token creator.
 
-Cliccando su **"Manage"** vi ritoreverete nella pagina in cui sono presenti i token emessi sotto la vostra identità digitale Scrypta. 
+By clicking on **"Manage"** you will return to the page where the tokens issued under your Scrypta digital identity are present.
 
 ![planum](../.vuepress/public/assets/planum/token_page.png)
 
-Cliccando sul nome del token di vostro interesse, si aprirà la finestra di gestione del token in oggetto con le opzioni disponibili.
+Clicking on the name of the token of your interest will open the token management window in question with the available options.
 
 ![planum](../.vuepress/public/assets/planum/token_management.png)
 
-Allo stesso tempo, il nostro asset tokenizzato viene reso disponibile nel balance del portafoglio digitale creato tramite Manent APP sotto la stessa identità digitale del creatore del token.
-Il token apparirà nella lista, con tutti gli altri token emessi o posseduti dallo stesso creatore, oltre al balance di Lyra (in quanto main chain).
+At the same time, the new tokenized asset will be made available in the balance of the digital wallet created through Manent APP under the same digital identity as the token creator.
+The token will appear in the list, with all the other tokens issued or owned by the same creator, in addition to Lyra's balance (as the main chain).
 ![planum](../.vuepress/public/assets/planum/manent_app.png)
 
-Allo stesso modo, il balance del nuovo token sara' presente all'interno di Manent web app
+The balance of the new token will be present in the Manent web app
 ![planum](../.vuepress/public/assets/planum/manent_webapp.png)
 
-## Gestione degli asset
-Una volta che il token e’ stato emesso e diventa visibile all’indirizzo principale, il token può’ essere trasferito a chiunque, conservato dentro le dApp di Scrypta o scambiato elettronicamente con altri token o con Lyra in quanto valuta principale del network.
-In accordo con la nostra roadmap, stiamo già lavorando ad una piattaforma dove sara’ possibile scambiare digitalmente tutti i token emessi attraverso **“Planum”**.
+## Asset management
+Once the token has been issued and becomes visible at the main address, it can be transferred to anyone, stored in the Scrypta dApps, exchanged electronically with other tokens or with Lyra (as the network's main currency).
+In accordance with our roadmap, we are already working on a platform where it will be possible to digitally exchange all the tokens issued through **"Planum"**.
 
-Poiché i token non hanno un proprio specifico indirizzo per ciascuna sidechain, per trasferire un ammontare di token è necessario semplicemente conoscere l’indirizzo Lyra del ricevente.
-Dalla propria finestra di invio del wallet, basta scegliere il token che si vuole inviare, l’indirizzo Lyra del ricevente e l’ammontare, proprio come si fa quando si inviano cryptovalute tradizionali.
+Since the tokens do not have their own specific address for each sidechain, to transfer an amount of tokens it is necessary to simply know the recipient's Lyra address.
+From your wallet sending window, just choose the token you want to send, the Lyra address of the recipient and the amount, just like you do when sending traditional cryptocurrencies.
 ![planum](../.vuepress/public/assets/planum/send_token.png)
 
-## Costi e velocità delle transazioni
-Vale la pena fare notare che i costi di emissione e di scambio dei token sono rappresentati solo dalle fee di sistema che sono equivalenti, come negli altri casi, a 0.001 LYRA per una singola transazione di 8000 Bytes (l’ammontare di dati che e’ possibile trasmettere tramite blockchain e’ stato di recente incrementato dagli sviluppatori dal valore originale di 80 Bytes).
+## Costs and speed of transactions
+The costs of issuing and exchanging tokens are represented exclusively by the system fees, equivalent as in other cases to 0.001 LYRA for a single transaction of 8000 Bytes (the amount of data that can be transmitted via blockchain has been recently increased by the developers from the original value of 80 Bytes).
 
-Ciò significa che ciascun trasferimento di token costerà 0,001 LYRA e le fee delle transazioni non sono correlate all'ammontare di token che si vuole generare o trasferire ad altri utenti.
+This means that each token transfer will cost 0.001 LYRA and that the transaction fees are therefore not related to the amount of tokens that you want to generate or transfer to other users.
 
-Il trasferimento degli asset avviene in modo quasi istantaneo grazie alla lettura della mempool eseguita dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node) che permettono la validazione delle transazioni anche senza la prima conferma della rete.
-La validazione e’ fatta a livello di [IdANode](https://wiki.scryptachain.org/developers/ida-node), per cui permette di essere sicuri che la transazione trasmessa sia valida e che venga inserita nel primo blocco disponibile.
+The transfer of assets takes place almost instantly thanks to the mempool reading performed by the [IdANode](https://wiki.scryptachain.org/developers/ida-node) which allow the validation of transactions even without the first confirmation of the network.
+Validation is done at the level of [IdANode](https://wiki.scryptachain.org/developers/ida-node),thus being certain that the transmitted transaction is valid and that it is inserted in the first available block.
 
 ***
 
 
 ## Manent Card Integration
-Tutte le identità digitali e i rispettivi balances possono essere collegati ad una Scrypta Card Wallet, uno strumento potente e affifabile che puo’ essere utilizzato per creare backup sicuri del vostro wallet, per la gestione quotidiana dei vostri fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
+All digital identities and their balances can be linked to a Scrypta Card Wallet. This is a powerful and reliable tool that can be used to create secure backups of your wallet, manage your Lyra funds on a daily basis, manage digital identities and the information they contain, or it can also be used as a payment system within sidechain or physical POS.
 
 
 ![planum](../.vuepress/public/assets/planum/card.png)
 
 ## Video Tutorial
 
-[PLANUM - Creare TOKEN tramite una Sidechain su Scrypta](https://www.youtube.com/watch?v=qWlfWYl6kfM) di Tiziano Tridico
+[PLANUM - Create TOKEN via a Sidechain on Scrypta]](https://www.youtube.com/watch?v=qWlfWYl6kfM) by Tiziano Tridico
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qWlfWYl6kfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

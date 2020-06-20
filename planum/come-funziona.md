@@ -1,60 +1,62 @@
-# Come Funziona
+# How does it work
 
-## Uno sguardo più approfondito sulla tecnologia sidechain
+## A closer look at sidechain technology
 
-Il processo di creazione dei token si compone dei seguenti step, gestiti in modo automatico dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node):
+The token creation process consists of the following steps, managed automatically by the [IdANode](https://wiki.scryptachain.org/developers/ida-node):
 
-### Definizione dei campi di Genesi.
-- Creazione di un nuovo indirizzo da [IdANode](https://medium.com/developers/ida-node).
-- Creazione del [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
-- Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
-- Scrittura su blockchain della transazione di Genesi.
-- Invio dell’intera token supply dal [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) al creatore della sidechain.
+### Definition of the Genesis fields.
+- Creating a new address from the [IdANode](https://medium.com/developers/ida-node).
+- Creation of the [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
+- Sending a minimum of 1 LYRA by the owner to [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
+- Writing on the blockchain of the Genesis transaction.
+- Sending the entire token supply from the [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) to the creator of the sidechain.
 
-Con [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
-Per garantire l’unicità, l’orizzontalità e la non replicabilità della sidechain, l’indirizzo viene generato *on-the-fly* e la sua chiave privata viene distrutta immediatamente dopo aver scritto la prima transazione di genesi.
+The [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) is a multisignature address, generated from two or more standard addresses, created between the user who wishes to issue the token and the IdANode called up for the creation of the tokenized asset.
+To guarantee the uniqueness, horizontality and non-replicability of the sidechain, the address is generated *on-the-fly* and its private key is destroyed immediately after writing the first genesis transaction.
 
-Nel momento in cui il Trustlink trasferisce l’intera token supply all’owner, sara’ possibile inviare transazioni usando la prima transazione come USXO, il corrispondente dell’UTXO ma relativo alle sidechain).
+When the Trustlink transfers the entire token supply to the owner, it will be possible to send transactions using the first transaction as USXO, the correspondent of UTXO but related to the sidechains).
 
-> Ci siamo quindi focalizzati a creare una replica del sistema di UTXO usando la blockchain di Scrypta come database e delegando la validazione delle transazioni direttamente agli [IdANode](https://medium.com/developers/ida-node) e agli altri client come [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
-Tutte le informazioni immesse e scritte nella blockchain sono validate dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node) e rese disponibili dal database degli stessi [IdANode](https://wiki.scryptachain.org/developers/ida-node), proprio come le altre informazioni.
+When the Trustlink transfers the entire token supply to the owner, it will be possible to send transactions using the first transaction as USXO, the correspondent of UTXO but related to the sidechains).
 
-## Emissione di un nuovo token
+> We therefore focused on creating a replica of the UTXO system using the Scrypta blockchain as a database and delegating the validation of the transactions directly to the [IdANode](https://medium.com/developers/ida-node) and to other clients such as [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
+All information entered and written in the blockchain is validated by the [IdANode](https://wiki.scryptachain.org/developers/ida-node) and made available from the database of the [IdANode](https://wiki.scryptachain.org/developers/ida-node) themselves, just like other information.
 
-Uno dei primi problemi affrontati nel protocollo Sidechain di Scrypta riguarda l'unicità del token e di conseguenza l'emissione sicura del token stesso. L'unicità del token non può chiaramente essere demandata all'utente-creatore, poichè potrebbe in modo malevolo cercare di "copiare" un altro token per controllarne i balance.
+## Issuing a new token
 
-La risoluzione a questo primo problema è avvenuta introducendo il Trustlink nel processo di creazione. Il Trustlink viene fatto tra l'utente che vuole emettere il token ed l'IdANode che viene invocato. Per garantire l'unicità, l'orizzontalità e la non replicabilità delle Sidechain abbiamo deciso di generare questo indirizzo *on-the-fly* e bruciare la chiave privata subito dopo la scrittura della prima transazione di genesi.
+One of the first problems addressed in the Scrypta Sidechain protocol concerns the uniqueness of the token and, consequently, the secure issue of the token itself. The uniqueness of the token cannot be delegated to the user-creator, as he could maliciously try to "copy" another token to check its balance.
+
+The solution to this problem occurred by introducing the Trustlink in the creation process. The Trustlink is created between the user who wants to issue the token and the IdANode that is invoked. To ensure the uniqueness, horizontality and non-replicability of the Sidechains we decided to generate this address * on-the-fly * and burn the private key immediately after writing the first genesis transaction.
 
 ### Genesis transaction
 
-I campi necessari, definiti dall'utente, per la genesi del token sono i seguenti:
+The necessary fields, defined by the user, for the genesis of the token are the following:
 
- - **name**: Il nome del token, questo è un campo puramente descrittivo e non viene garantita l'unicità. Per la sicurezza tua e dei tuoi utenti genera un nome caratterizzante il progetto.
- - **symbol**: ticker alfanumerico del token
- - **decimals**: La divisione potenziale del token, può essere anche `0` e il token non sarà divisibile
- - **reissuable**: Se il token è a supply fissa oppure può essere riemesso
- - **burnable**: Se il token si può bruciare o meno
- - **version**: La versione del protocollo, al momento è la `1`
+ - **name**: The name of the token, this is a purely descriptive field and uniqueness is not guaranteed. For your and your users' safety, generate a name characterizing the project.
+ - **symbol**: alphanumeric token ticker.
+ - **decimals**: The potential division of the token. It can also be `0`, in which case the token will not be divisible.
+ - **reissuable**: If the token has a fixed supply or it can be reissued.
+ - **burnable**: Whether the token can burn out or not.
+ - **version**: The version of the protocol. At the moment the version is `1`.
 
-E' possibile testare l'emissione di una sidechain direttamente via interfaccia a questo link:
+It is possible to test the issue of a sidechain directly via the interface at this link:
  [https://sidechain.scryptachain.org/#/create](https://sidechain.scryptachain.org/#/create)
 
-### Processo di creazione
+### Creation process
 
-Il processo di creazione prevede i seguenti passaggi: 
+The creation process involves the following steps:
 
- 1. Definizione campi di genesi
- 2. Creazione di un nuovo indirizzo da parte dell'IdANode
- 3. Creazione del Trustlink
- 4. Invio di un minimo di 1 LYRA da parte dell'owner al trustlink
- 5. Scrittura sulla blockchain della transazione di genesi
- 6. Invio dell'intera supply da parte del Trustlink all'owner della Sidechain
+ 1. Definition of genesis fields
+ 2. Creation of a new address by the IdANode
+ 3. Trustlink creation
+ 4. Sending a minimum of 1 LYRA by the owner to the trustlink
+ 5. Genesis transaction writing on the blockchain
+ 6. Sending the entire supply by the Trustlink to the Sidechain owner
 
-Dal momento in cui il Trustlink *cede* tutta la supply all'owner, è possibile iniziare ad effettuare transazioni usando come **USXO** (Utxo relativa alla sidechain) questa prima transazione.
+From the moment the Trustlink *transfers* the entire supply to the owner, it is possible to start making transactions using as **USXO** (Utxo related to the sidechain) this first transaction.
 
-### Esempio di emissione
+### Example of issue
 
-Ecco la risposta tipica dell'IdANode a seguito della creazione di un nuovo token:
+Here is the typical IdANode response following the creation of a new token:
 
 ```
 {
@@ -122,19 +124,19 @@ Ecco la risposta tipica dell'IdANode a seguito della creazione di un nuovo token
 }
 ```
 
-### Processo di riemissione
+### Reissue process
 
-Qualora avessimo stabilito che il token è a supply indeterminata, è possibile per l'owner creare delle transazioni simili a quella di genesi per riemettere il token in un secondo momento. La scelta di creare un token a supply fissa o variabile è unicamente affidata all'utente e questa impostazione non potrà essere cambiata in un secondo momento.
+If we have established that the token is indefinite, the owner will be able to create transactions similar to the genesis transaction to reissue the token later. The choice to create a fixed or variable supply token is solely up to the user. This setting cannot be changed later.
 
-Il processo di riemissione del token è molto semplice, bisogna richiamare l'endpoint `/sidechain/reissue` come descritto all'interno della sezione riguardante gli IdANode, inviando i seguenti campi:
+The process of reissuing the token is very simple: you need to call the `/sidechain/reissue` endpoint, as described in the section on IdANodes, by sending the following fields:
 
-- **dapp_address**: L'indirizzo dell'owner.
- - **sidechain_address**: L'indirizzo della sidechain.
- - **private_key**: La private key dell'owner.
- - **pubkey**: La pubkey dell'owner.
- - **supply**: La quantità di token che volete riemettere.
+- **dapp_address**: The owner's address.
+ - **sidechain_address**: The sidechain address.
+ - **private_key**: The owner's private key.
+ - **pubkey**: The owner's pubkey.
+ - **supply**: The amount of tokens you want to reissue.
 
-A seguito di questa chiamata, la risposta sarà molto simile a quella di genesi: 
+The response of this call will be very similar to that generated by the genesis:
 
 ```
 {
@@ -249,21 +251,21 @@ A seguito di questa chiamata, la risposta sarà molto simile a quella di genesi:
 
 }
 ```
-## Transazioni
+## Transactions
 
-Come detto in precedenza, le transazioni delle Sidechain sono a tutti gli effetti equiparabili alle transazioni della blockchain madre, l'unica differenza è che il set di **USXO** sarà relativo alla sidechain e quindi i fondi sono unicamente all'interno di una specifica sidechain.
+As mentioned above, Sidechain transactions are in all respects comparable to the transactions of the mother blockchain. The only difference is that the set of **USXO** will be relative to the sidechain and therefore the funds will only be within a specific sidechain.
 
-Le transazioni seguono inoltre i soliti processi di firma ed hash, per cui avremo a tutti gli effetti delle *TXID* che identificano  transazion. Nel caso delle sidechain, per differenziarle deciso di chiamarle **SXID**. Quindi, d'ora in poi, ci riferiremo a SXID come id delle transazione in sidechain.
+Transactions also follow the usual signature and hash processes. As a result we will for all intents and purposes have * TXID * identifying transactions, called **SXID**. From now on, we will refer to SXID as the sidechain transaction id.
 
-Una tipica transazione dovrà contenere le seguenti proprietà:
-- **Inputs:** un array di unspent sidechain transactions (USXO) il cui totale sia maggiore o uguale all'ammontare che si desidera inviare.
-- **Outputs:** un oggetto contenente gli indirizzi di ricezione e di cambio. Ricordiamo che su Scrypta i cambi coincidono con l'indirizzo principale.
+A typical transaction should contain the following properties:
+- **Inputs:** an array of unspent sidechain transactions (USXO) whose total is greater than or equal to the amount you want to send.
+- **Outputs:** an object containing the reception and exchange addresses. Recall that on Scrypta the changes coincide with the main address.
 
-Questo payload verrà quindi firmato con la chiave privata dell'indirizzo mittente e ne verrà fatto l'hash. Queste informazioni verranno quindi scritte a corredo della transazione all'interno della blockchain madre.
+This payload will be signed with the private key of the sender's address and hashed. This information will be written to accompany the transaction within the mother blockchain.
 
-Se tutto è corretto, e la transazione passa le validazioni degli IdANode, saranno annullati tutti gli unspent inseriti in input e verranno creati due diversi output, uno per il ricevente e uno per il mittente con il cambio.
+If everything is correct and the transaction passes the IdANode validations, all unspent inserted in the input will be canceled and two different outputs will be created, one for the receiver and one for the sender with the change.
 
-Ecco un esempio di transazione correttamente inviata al network:
+Here is an example of a transaction correctly sent to the network:
 
 ```
 {"uuid":"4c277865.a9bd.401f.856d.22f93c8905fe","address":"LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT","fees":0.011000000000000003,"collection":"","refID":"","protocol":"chain://","dimension":755,"chunks":11,"stored":"*!*4c277865.a9bd.401f.856d.22f93c8905fe!*!!*!!*!chain://*=>{\"transaction\":{\"sidechain\":\"6RQ54yHx2dARWkN8Biiw3gDjb4sB5hSHSH\",\"inputs\":[{\"sxid\":\"e861776c7bb7425da282930572add577deeb5581e0c6b5dd29640ff2a9305f99\",\"vout\":1,\"address\":\"LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT\",\"amount\":78,\"sidechain\":\"6RQ54yHx2dARWkN8Biiw3gDjb4sB5hSHSH\",\"block\":481918}],\"outputs\":{\"LNmYWqaU5qrZcHxCA2vVTMmvKcaXBdjKUZ\":50,\"LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT\":28},\"time\":1574678683857},\"signature\":\"5bd8a9a7a0a095ebd9ab2c5c975a17a7da4d7e037e7bfe43ac4c22192414c70a77e160c353d262258744389c66bfdef50321409ed486c5eba4a74aaf7cb41be4\",\"pubkey\":\"030249ca95b9d10701d9dfb08cb43b79ee229c3c621a9d17b84320b61690e87d09\",\"sxid\":\"0ac9210cd4dbd08550a1ca7501ed7336c6ee1e0700791518ff7c3bdbaa0db22f\"}*!*","txs":["392c18024bda9ebd4b4b262f3e7eee45fbb30013d269bfc8c5763fd6428bc1e3","5caf0aea531033fa98d6de7583cb44e4ee1f5142e658d516bd0a5411ad1ead8d","a5d86c01fe0defe34384192f86bb0facd31553e6207f0d68a792f0091ac8959d","9cc44baa27a143a172e06b92d14ab78be258c5542a64082c61d519b1609decc8","e68278d57812d8bd9a2feaa8fb6500f3d8f3d571752522364d1589d180f86823","7138611a8a05c87b1eedcaaaf38f302e592fbbee83f19cdaed86298046967f39","01e94a0f7ca0592abe11a13afae637255179897eb87a363e3a21a2ddfffad593","4723b75d2407600b2bf44bc8ea1add04fb3fbb3c143fe73b49a9fe02689590d6","14bb910eaaddeeaa984516a28cf1a84bf955b14df903a1c89874f347ea83c01a","5dc99e59492dd6ad1a036000ba527219292b91116bce40315b6bec65dd620324","e084067f8d60a8bd725b97960afdfae856c4c007b9158e2934cfed0405aae1af"]}

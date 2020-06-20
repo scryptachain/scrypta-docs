@@ -1,20 +1,20 @@
-# Software di Gestione
+# Management software
 
 ## Planum Admin Tool
-Per amministrare una sidechain Planum è possibile utilizzare il seguente tool:
+To administer a Planum sidechain you can use the following tool:
 
 [https://github.com/scryptachain/scrypta-planum-admin](https://github.com/scryptachain/scrypta-planum-admin)
 
-Questo tool permette di creare un'applicazione desktop per gestire in totale sicurezza una sidechain in termini di KYC, gestione fondi e analisi delle statistiche.
+This tool allows you to create a desktop application to safely manage a sidechain in terms of KYC, fund management and statistics analysis.
 
-Attenzione, questo tool è veramente base e permette semplicemente di annotare identificativi, inviare fondi e prelevarli. Qualsiasi altra funzionalità potrà essere sviluppata in un secondo momento.
+Warning: this tool is extremely basic, simply allowing you to write down identifiers, send funds and withdraw them. Any other functionality can be developed later.
 
-## Controllo funzionalità
+## Check functionality
 
-Per controllare la corretta funzionalità della sidechain presso gli IdANode è possibile utilizzare il seguente tool: 
+To check the correct functionality of the sidechain at IdANodes, you can use the following tool:
 
 [https://github.com/scryptachain/scrypta-planum-check-service](https://github.com/scryptachain/scrypta-planum-admin)
 
-Per configurarlo bisogna semplicemente collegare la giusta sidechain attraverso il file `.env` e far partire il controllo attraverso il comando `npm start`. 
+To configure it, connect the desired sidechain through the `.env` file and start the control via the `npm start` command.
 
-Questo controllerà che la supply sia sempre la stessa in tutti gli IdANode disponibili, in caso contrario chiederà all'IdANode di effettuare una verifica sulla sidechain stessa.
+This tool will check that the supply is identical in all available IdANodes. If not, it will ask IdANode to carry out a check on the sidechain itself.
