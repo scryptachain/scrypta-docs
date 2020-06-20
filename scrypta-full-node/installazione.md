@@ -1,19 +1,19 @@
-# Installazione
+# Installation
 
-L'installazione del **LYRA WALLET** prevede passaggi diversi e variazioni dei percorsi dei file in base al sistema operativo. 
+The installation of the **LYRA WALLET** involves different steps depending on the operating system used.
 
-Il LYRA WALLET è attualmente disponibile per Linux, MacOS, Windows e Raspberry Pi 4 al seguente Link:
+The LYRA WALLET is currently available for Linux, MacOS, Windows and Raspberry Pi 4 at the following link:
 
 [LYRA WALLET](https://github.com/scryptachain/scrypta/releases)
 
-Di seguito le istruzioni per ogni sistema operativo:
+Here are the instructions for each operating system:
 
 ## Linux
 
-Ecco i passaggi per il processo di installazione di Lyra Wallet su **Linux**, nello specifico su **Ubuntu 16.0.4**: 
+Here are the steps for the Lyra Wallet installation process on **Linux** / **Ubuntu 16.0.4**: 
 
-1. Apri il Termiale (CTRL-ALT-T)
-2. Inserisci questo codice riga per riga (premendo invio ad ogni riga) in modo da compilare il LYRA Wallet nella versione GUI (con interfaccia grafica).
+1. Open the Thermal (CTRL-ALT-T)
+2. Enter the following instructions line by line (by pressing enter on each line) in order to compile the LYRA Wallet in the GUI version (with graphic interface).
 ```
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo apt-get install -y software-properties-common python-software-properties
@@ -33,55 +33,55 @@ cd src/qt
 chmod 777 -R *
 ./lyra-qt
 ```
-::: warning Attenzione
-Nota che con Ubuntu 18.04 LTS, dopo il comando```./configure```, potresti imbatterti in questo errore:
+::: warning Warning
+Note that using Ubuntu 18.04 LTS, after the command ```./Configure```, you may run into this error:
 configure: error: `Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
 
-Risolverai il problema installando la **ssl library v1.0** con il seguente comando:
+The problem can be solved by installing the **ssl library v1.0** with the following command:
 ```
 apt-get install libssl1.0-dev
 ```
-Ricomincia adesso dal comando `./autogen.sh`.
+Now run the command `./autogen.sh`.
 :::
 
 ## Windows
 
-Il modo più semplice per configurare il portafoglio LYRA su **Windows** è utilizzare l' eseguibile precompilato disponibile su Github:  
+The easiest way to install and configure the LYRA portfolio on **Windows** is to use the precompiled executable available on Github:
 
 [Windows Wallet](https://github.com/scryptachain/scrypta/releases)
 
-Ecco di seguito il processo passo per passo:
+Steps:
 
-1. Scarica il file zip
-2. Estrai il contenuto dei file Zip nella posizione desiderata
-3. Esegui il file eseguibile lyra-qt.exe
+1. Download the zip file
+2. Extract the contents of the Zip files to the desired location
+3. Run the lyra-qt.exe executable file
 
-::: warning Attenzione
-È possibile che venga visualizzato un avviso antivirus (falso positivo) per il quale dovrete ignorare o creare un'eccezione.
+::: warning Warning
+A virus warning (false positive) may appear for which you will need to ignore or create an exception.
 :::
 
 ## macOS
-L'installazione di Lyra Wallet su Mac è un processo relativamente semplice.
-1. Vai sul [portale Github di Scrypta](https://github.com/scryptachain/scrypta/releases).
-2. Fai clic sull'ultima versione del file macOS.dmg.
-3. Una volta scaricato il file DMG, fai doppio clic su di esso.
-4. Verrà generato un file chiamato Lyra-Qt,
-sposta questo file nella cartella delle applicazioni.
-5. Esegui Lyra-Qt per avviare il wallet.
+Step to install the Lyra Wallet on Mac.
+1. Go to the [Scrypta Github portal] (https://github.com/scryptachain/scrypta/releases).
+2. Click on the latest version of the macOS.dmg file.
+3. Once the DMG file is downloaded, double click on it.
+4. A file called Lyra-Qt will be generated,
+move this file to the applications folder.
+5. Run Lyra-Qt to start the wallet.
 
 ## Raspberry Pi 4
 
-Di seguito troverai la guida completa con tutti i comandi per compilare e installare manualmente tutte le librerie e le dipendenze per il tuo wallet Scrypta su **Raspberry PI 4**. 
+Below you will find the complete guide with all the commands to manually compile and install all the libraries and dependencies for your Scrypta wallet on **Raspberry PI 4**. 
 
-In alternativa puoi seguire la guida per l'installazione del "file immagine" del sistema operativo fornito da Scrypta che puoi trovare di seguito. 
+Alternatively you can follow the guide for installing the "image file" of the operating system provided by Scrypta which you can find below.
 
-Per un'installazione manuale passo-passo, procedi all'avvio del terminale e digita i seguenti comandi:
+For a manual step-by-step installation, proceed to start the terminal and type the following commands:
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-Dopo il comando, la Raspberry richiederà il Riavvio. Procedi riavviando la tua Rasp.
+After the command, the Raspberry will request a Restart. Proceed by restarting your Rasp.
 
-Al riavvio, digita i seguenti comandi da Terminale:
+On reboot, type the following commands from Terminal:
 ```
 sudo apt-get install -y pkg-config
 sudo apt-get install -y software-properties-common python-software-properties
@@ -118,31 +118,30 @@ sudo chmod 755 src/leveldb/build_detect_platform
 sudo ./configure --with-gui=qt5 --with-libressl --disable-sse2 CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib"
 sudo make -j4
 ```
-Complimenti! Adesso puoi avviare e utilizzare il **Lyra Wallet-Qt** sulla tua Raspberry 4
+Now you can start and use the **Lyra Wallet-Qt** on your Raspberry 4
 
-### Guida per l'installazione di Raspberry PI 4 con File Immagine
+### Installation guide for Raspberry PI 4 with Image File
 
-Il file immagine per Raspberry PI 4 si basa su **Raspbian Debian Buster** con tutte le librerie già installate e un Lyra wallet funzionante. 
+The image file for Raspberry PI 4 is based on **Raspbian Debian Buster** with all the libraries already installed and a working Lyra wallet.
 
-È possibile masterizzare il file immagine  sulla scheda SD seguendo la nostra guida all'installazione.
+You can burn the image file to the SD card by following our installation guide.
 
-> Questa sezione spiega come installare un'immagine del sistema operativo Raspberry Pi su una scheda SD. Avrai bisogno di un altro computer con un lettore di schede SD.
+> This section explains how to install an image of the Raspberry Pi operating system on an SD card. You will need another computer with an SD card reader.
 
-
-Il file di immagine ufficiale Scrypta è disponibile per il download dal Github di Scrypta. Sarà necessario utilizzare uno strumento di scrittura delle immagini per installare l'immagine scaricata sulla scheda SD.
+The official Scrypta image file is available for download from the Scrypta Github. You will need to use an image writing tool to install the downloaded image on the SD card.
 
 ::: tip BalenaEtcher
-BalenaEtcher è uno strumento grafico per la scrittura di schede SD che funziona su Mac OS, Linux e Windows ed è l'opzione più semplice per la masterizzazione di file immagine. BalenaEtcher supporta anche la scrittura di immagini direttamente dal file zip, senza che sia necessario decomprimere.
+BalenaEtcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows and is the easiest option for burning image files. BalenaEtcher also supports writing images directly from the zip file, without having to unzip.
 :::
 
-Per scrivere la tua immagine con balenaEtcher: 
-- Scarica l'ultima versione di [balenaEtcher](https://www.balena.io/etcher/) e installala.
-- Collega un lettore di schede SD con la scheda SD all'interno. 
-- Apri balenaEtcher e seleziona dal tuo disco rigido il file .img Scrypta che desideri scrivere sulla scheda SD. 
-- Seleziona la scheda SD su cui desideri scrivere l'immagine. 
-- Rivedi le tue selezioni e fai clic su "Flash!" per iniziare a scrivere i dati sulla scheda SD. 
-- Attendere il completamento del processo, quindi inserire la scheda SD in Raspberry PI 4.
+To write your image with Balena Etcher:
+- Download the latest version of [balenaEtcher] (https://www.balena.io/etcher/) and install it.
+- Connect an SD card reader with the SD card inside.
+- Open balenaEtcher and select from your hard disk the .img Scrypta file you want to write on the SD card.
+- Select the SD card on which you want to write the image.
+- Review your selections and click "Flash!" to start writing data to the SD card.
+- Wait for the process to complete, then insert the SD card into the Raspberry PI 4.
 
-::: warning Nota bene
-Per motivi di sicurezza, il portafoglio installato sul tuo sistema viene fornito senza il file wallet.dat per garantire che nessuno oltre te abbia le chiavi private del tuo portafoglio. Il file wallet.dat verrà generato automaticamente quando avvii il portafoglio per la prima volta.
+::: warning Note
+For security reasons, the wallet installed on your system is provided without the wallet.dat file to ensure that no one besides you has the private keys of your wallet. The wallet.dat file will be automatically generated when you start the portfolio for the first time.
 :::

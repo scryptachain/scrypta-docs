@@ -1,39 +1,39 @@
-# Lista dei Comandi
+# Command List
 
-I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
+The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
 
 ::: tip
-Nella versione client è necessario chiamare tutti questi comandi preceduti da `./lyra-cli`
+In the client version it is necessary to indicate `./lyra-cli` before the commands.
 :::
 
 ## Test-CLI
 
-Puoi testare i comandi del wallet attraverso la consolle dello strumento test-CLI, raggiungibile qui:
+You can test the wallet commands through the console of the test-CLI tool, reachable here:
 
 [**test-CLI**](https://cli.scryptachain.org/)
 
 
 ![upvote](../.vuepress/public/assets/other/test-cli.png)
 
-## Istruzioni Blockchain
-`getbestblockhash` Fornisce semplicemente l'ultimo/miglior hash di blocco nella rete.
+## Blockchain instructions
+`getbestblockhash` Provides the latest/best hash block on the network.
 
-`getblock <hash>` Passare un hash di blocco specifico a questo comando produrrà una risposta con tutti i dettagli del blocco richiesto.
+`getblock <hash>` Specifying a specific block hash with this command will produce a response with all the details of the requested block.
 
-`getblockchaininfo` Restituisce tutte le informazioni sulla blockchain corrente.
+`getblockchaininfo` Returns all information about the current blockchain.
 
-`getblockcount` Restituisce il numero corrente di blocchi sincronizzati.
+`getblockcount` Returns the current number of synchronized blocks.
 
-`getblockhash <index>` Restituisce l'hash del blocco in corrispondenza di un indice specificato. 
+`getblockhash <index>` Returns the hash of the block at a specified index.
 
-> Ad esempio `getblockhash 10000` ritornerebbe `3f18205d5884fdcbf95f2adc7a933b28fd6ec4a474b7dffb41c7a2733d0c4c2d`
+> For example `getblockhash 10000` will return `3f18205d5884fdcbf95f2adc7a933b28fd6ec4a474b7dffb41c7a2733d0c4c2d`
 
-`getblockheader <hash>` Fornisce l'intestazione dell' hash specificato.
+`getblockheader <hash>` Provides the header of the specified hash.
 
-> Esempio: 
+> Example: 
  `getblockheader 3f18205d5884fdcbf95f2adc7a933b28fd6ec4a474b7dffb41c7a2733d0c4c2d`
 
-> Risposta:
+> Reply:
 `
 {
     "version" : 3,
@@ -45,238 +45,238 @@ Puoi testare i comandi del wallet attraverso la consolle dello strumento test-CL
 }
 `
 
-`getchaintips` Restituisce i suggerimenti sui rami del network da tutti i rami noti dal nodo.
+`getchaintips` Returns tips on network branches from all branches known by the node.
 
-`getdifficulty` Restituisce l'attuale difficoltà a trovare un hash al di sotto di un determinato obiettivo.
+`getdifficulty` Returns the current difficulty in finding a hash below a certain target.
 
-`getrawmempool` Restituisce l'array mempool corrente.
+`getrawmempool` Returns the current mempool array.
 
-`gettxout <txid>` Restituisce dettagli su un output della transazione non spesa.
+`gettxout <txid>` Returns details about an output of the unspent transaction.
 
-`gettxoutsetinfo` Restituisce le statistiche sul database degli output di transazione non spesi gestiti dal nodo.
+`gettxoutsetinfo` Returns database statistics of unspent transaction outputs managed by the node.
 
-`verifychain` Restituisce il valore vero o falso in base alla validità della blockchain ospitata dal nodo.
+`verifychain` Returns the true or false value based on the validity of the blockchain hosted by the node.
 
-## Istruzioni di Controllo
+## Control Instructions
 
-`getinfo` Restituisce informazioni generali sulla blockchain.
+`getinfo` Returns general information about the blockchain.
 
-`help` Elenco di tutti i comandi.
+`help` List of all commands.
 
-`stop` Stop del software.
+`stop` Stop the software.
 
-## Istruzioni Masternode
+## Masternode instructions
 
 `masternode "command"...` 
 
-Set di comandi per eseguire operaziozioni relative ai masternode. 
+Set of commands to perform operations related to the masternodes.
 
 ### Comandi Disponibili
 
-`count`            - Restituisce il numero di tutti i masternode rilevati dalla rete (opzionale: 'ps', 'enabled', 'all', 'qualify').
+`count`            - Returns the number of all masternodes detected by the network (optional terms: 'ps', 'enabled', 'all', 'qualify').
 
-`current`          - Stampa le informazioni sull'attuale masternode vincitore  da pagare al blocco successivo (calcolato localmente).
+`current`          - Returns information about the current winning masternode to be paid to the next block (calculated locally).
 
-`genkey`           - Genera una nuova masternodeprivkey.
+`genkey`           - Generate a new masternodeprivkey.
 
-`outputs`          - Stampa gli output compatibili per masternode.
+`outputs`          - Print compatible outputs for masternode.
 
-`start-alias`      - Avvia un singolo masternode remoto tramite l'alias assegnato configurato in *masternode.conf*.
+`start-alias`      - Start a single remote masternode via the assigned alias configured in *masternode.conf*.
 
-`start-<mode>`     - Avvia un singolo masternode remoto tramite l'alias assegnato configurato in masternode.conf (mode: 'all', 'missing', 'disabled').
+`start-<mode>`     - Start a single remote masternode via the assigned alias configured in masternode.conf (mode: 'all', 'missing', 'disabled').
 
-`status`           - Stampa le informazioni sullo stato del masternode.
+`status`           - Returns the status information of the masternode.
 
-`list`             - Stampa una lista di tutti i masterno conosciuti (consulta masternodelist per maggiori informazioni).
+`list`             - Returns a list of all known masternodes (see masternodelist for more information).
 
-`list-conf`        - Stampa il masternode.conf in formato JSON.
+`list-conf`        - Returns the masternode.conf in JSON format.
 
-`masternodelist ( "mode" "filter" )`     Ottieni un elenco di masternode in diverse modalità.
+`masternodelist ( "mode" "filter" )`     Get a list of masternodes in different ways.
 
 ## Istruzioni del Network
-`addnode <node_ip> <add|remove|onetry>` Connettersi manualmente a un peer utilizzando l'indirizzo IP della controparte.
+`addnode <node_ip> <add|remove|onetry>` Manually connect to a peer using the counterparty's IP address.
 
-`getconnectioncount` Restituisce il numero di connessioni peer-to-peer del nodo.
+`getconnectioncount` Returns the number of peer-to-peer connections of the node.
 
-`getnettotals` Restituisce il totale dei byte ricevuti e inviati, nonché il tempo di attività in millisecondi.
+`getnettotals` Returns the total of bytes received and sent, as well as the uptime in milliseconds.
 
-`getnetworkinfo` Restituisce informazioni statistiche sulla rete.
+`getnetworkinfo` Returns statistical information about the network.
 
-`getpeerinfo` Restituisce una matrice di informazioni statistiche relative ai peer connessi.
+`getpeerinfo` Returns an array of statistical information related to connected peers.
 
-`ping` Richiede che un ping venga inviato a tutti gli altri nodi, per misurare il tempo di ping. 
+`ping` Requires that a ping be sent to all other nodes to measure the ping time.
 
-::: tip Nota
-I risultati forniti da getpeerinfo, pingtime sono in secondi decimali.
+::: tip Note
+The results provided by getpeerinfo, pingtime are in tenths of a second.
 :::
 
-## Istruzioni per transazioni Raw
-`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )` Crea una transazione spendendo gli input dati e creando nuovi output. Le uscite possono essere indirizzi o dati. Restituisce la transazione grezza con codifica esadecimale. Si noti che gli input della transazione non sono firmati e non sono memorizzati nel portafoglio o trasmessi alla rete.
+## Instructions for Raw Transactions
+`createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )` Create a transaction by spending data inputs and creating new outputs. The outputs can be addresses or data. Returns the raw transaction with hexadecimal encoding. Transaction inputs are unsigned and not stored in the wallet or transmitted to the network.
 
-`decoderawtransaction "hexstring"` Restituisce un oggetto JSON che rappresenta la transazione serializzata con codifica esadecimale. decodescript "hex" decodifica uno script con codifica esadecimale.
+`decoderawtransaction "hexstring"` Returns a JSON object representing the serialized transaction with hexadecimal encoding. decodescript "hex" decodes a hexadecimal encoded script.
 
-`fundrawtransaction "hexstring"` Aggiungi input a una transazione fino a quando non ha abbastanza valore per soddisfare il suo valore out. Ciò non modificherà gli ingressi esistenti e aggiungerà un output di modifica agli output stessi.
+`fundrawtransaction "hexstring"` Add input to a transaction until it has enough value to satisfy its value out. This will not modify existing inputs and will add a modification output to the outputs themselves.
 
-`getrawtransaction "txid" ( verbose )` Restituisce i dati di transazione grezzi. Se verbose = 0, restituisce una stringa serializzata, con codifica esadecimale per 'txid'. Se verbose è diverso da zero, restituisce un oggetto con informazioni sulla 'txid'. 
+`getrawtransaction "txid" ( verbose )` Returns the raw transaction data. If verbose = 0, returns a serialized string, with hexadecimal encoding for 'txid'. If verbose is nonzero, returns an object with information on 'txid'.
 
-`sendrawtransaction "hexstring"` Invia la transazione non elaborata (serializzata, con codifica esadecimale) al nodo locale e alla rete. Vedi anchecreaterawtransaction e signrawtransaction. 
+`sendrawtransaction "hexstring"` Sends the raw transaction (serialized, hexadecimal) to the local node and to the network. See also greatertransaction and signrawtransaction.
 
-`signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )` Firma gli input per la transazione grezza (serializzata, codificata in esadecimale). Il secondo argomento, facoltativo (può essere null), è un array di output delle transazioni precedenti da cui dipende questa transazione ma che potrebbe non essere ancora trasferita alla catena di blocchi. Il terzo argomento, facoltativo (può essere null), è un array di chiavi private codificate in base58 che, se fornite, saranno le uniche chiavi utilizzate per firmare la transazione.
+`signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )` Sign the inputs for the raw transaction (serialized, encoded in hexadecimal). The second argument, optional (can be null), is an output array of the previous transactions on which this transaction depends but which may not yet be transferred to the block chain. The third argument, optional (can be null), is an array of base58-encoded private keys which, if provided, will be the only keys used to sign the transaction.
 
-## Istruzioni Wallet
+## Wallet instructions
 
 `addmultisigaddress nrequired ["key",...] ( "account" )`
 
-Aggiunge un indirizzo multisignature per firmare il wallet. Ogni chiave è un indirizzo LYRA o chiave pubblica con codifica esadecimale. Se si specifica "account" (DEPRECATED), assegna l'indirizzo a quell'account. 
+Add a multisignature address to sign the wallet. Each key is a LYRA address or public key with hexadecimal coding. If you specify "account" (DEPRECATED), assign the address to that account.
 
 `autocombinerewards <true/false> threshold`
 
-il Wallet monitorerà automaticamente eventuali "pacchetti" monete (utxo) con un valore inferiore all'importo della soglia (threshold)  le combinerà (solo se risiedono sullo stesso indirizzo LYRA).
+the Wallet will automatically monitor any "packets" of coins (utxo) with a value lower than the threshold amount and will combine them (only if they reside on the same LYRA address).
 
 `backupwallet "destination"`
 
-Copia in modo sicuro wallet.dat nella destinazione, che può essere una directory o un percorso con nome file.
+Safely copy wallet.dat to the destination, which can be a directory or path with a file name.
 
 `bip38decrypt "lyraaddress"`
 
-Decodifica e quindi importa la chiave privata protetta da password.
+Decode and import the password protected private key.
 
 `dumpprivkey "lyraaddress"`
 
-Rivela la chiave privata corrispondente al "lyraaddress".
+Reveal the private key corresponding to the "lyraaddress".
 
 `dumpwallet "filename"`
 
-Scarica tutte le chiavi del wallet in un formato leggibile dall'uomo.
+Download all the keys of the wallet in a human-readable format.
 
 `encryptwallet <passphrase>`
 
-Crittografa il portafoglio con la passphrase scelta .
+Encrypt the wallet with the chosen passphrase.
 
 `getaccount "lyraaddress"`
 
-Restituisce l'account associato all'indirizzo indicato.
+Returns the account associated with the indicated address.
 
 `getaccountaddress "account"`
 
-Restituisce l'indirizzo LYRA corrente per ricevere pagamenti su questo account. Se non esiste, verrà creato insieme a un nuovo indirizzo associato che verrà mostrato.
+Returns the current LYRA address to receive payments on this account. If this does not exist, a new associated address will be created and shown.
 
 `getaddressesbyaccount "account"`
 
-Restituisce l'elenco di indirizzi per l'account specificato.
+Returns the list of addresses for the specified account.
 
 `getbalance ( "account" minconf includeWatchonly )`
 
-Se [account] non è specificato, restituisce il saldo disponibile totale del server. Se si specifica [account], restituisce il saldo nel conto.
+If the [account] not specified, returns the total available balance of the server. If you [account] is indicated, it returns the balance to the account.
 
 `getaddressesbyaccount "account"`
 
-Restituisce un nuovo indirizzo LYRA per ricevere pagamenti. Se si specifica [account], i pagamenti ricevuti con l'indirizzo verranno accreditati su [account].
+Return a new LYRA address to receive payments. If the [account] is indicated, payments received with the address will be credited to the [account].
 
 `getaddressesbyaccount "account"`
 
-Restituisce l'elenco di indirizzi per l'account specificato.
+Returns the list of addresses for the specified account.
 
 `getbalance ( "account" minconf includeWatchonly )`
 
-Se [account] non è specificato, restituisce il saldo disponibile totale del server. Se si specifica [account], restituisce il saldo nel conto.
+If the [account] is not indicated it will return the total available balance of the server. If the [account] is indicated, it will show the balance of the account.
 
 `getnewaddress ( "account" )`
 
-Restituisce un nuovo indirizzo LYRA per ricevere pagamenti. Se si specifica [account], i pagamenti ricevuti con l'indirizzo verranno accreditati su [account].
+Return a new LYRA address to receive payments. Specifying the [account], payments received with the address will be credited to the [account].
 
 `getrawchangeaddress`
 
-Restituisce un nuovo indirizzo LYRA per un cambio di ricezione . Questo è per l'uso con transazioni Raw, NON normali.
+Returns a new LYRA address for a change of reception. This is for use with Raw transactions, NOT with normal ones.
 
 `getreceivedbyaccount "account" ( minconf )`
 
-Restituisce l'importo totale ricevuto dagli indirizzi con [account] nelle transazioni con almeno [minconf] conferme. Se [account] non specificato, mostrerà tutte le transazioni su tutti gli account.
+Returns the total amount received from the [account] addresses in transactions with at least [minconf] confirmations. If the [account] is not specified, all transactions from all accounts will be shown.
 
 `getreceivedbyaddress "lyraaddress" ( minconf )`
 
-Restituisce l'importo ricevuto dalle transazioni in ingresso con almeno [minconf] conferme. Tieni presente che gli indirizzi vengono sempre e solo utilizzati per ricevere transazioni. Funziona solo per gli indirizzi nel portafoglio locale, gli indirizzi esterni mostreranno sempre 0.
+Returns the amount received from incoming transactions with at least [minconf] confirmations. Addresses are always and only used to receive transactions. It only works for addresses in the local wallet, external addresses will always show 0.
 
 `getstakesplitthreshold`
 
-Restituisce la soglia a cui è impostata la divisione dei pacchetti (utxo) in staking
+Returns the threshold at which packet division (utxo) is set in staking
 
 `getstakingstatus`
 
-restituisce un messaggio contenente informazioni dettagliate sullo staking.
+returns a message containing detailed staking information.
 
 `gettransaction "txid" ( includeWatchonly )`
 
-Mostra informazioni dettagliate sulla specifica transazione nel wallet.
+Show detailed information about the specific transaction in the wallet.
 
 `getunconfirmedbalance`
 
-Restituisce il saldo totale non confermato del server.
+Returns the total unconfirmed balance of the server.
 
 `getwalletinfo`
 
-Restituisce un messaggio contenente varie informazioni sullo stato del wallet.
+Returns a message containing various information about the state of the wallet.
 
 `importaddress "address" ( "label" rescan )`
 
-Aggiunge un indirizzo o uno script (in esadecimale) che possono essere importati nel tuo wallet ma solo in modalità "watch", quindi monitoritati ma che non possono essere spesi.
+Add an address or script (in hexadecimal) that can be imported into your wallet in "watch" mode only, therefore monitored but not expendable.
 
 `importprivkey "lyraprivkey" ( "label" rescan )`
 
-Aggiunge una chiave privata (come restituita da dumpprivkey) al tuo Wallet.
-Questa operazione importa l'indirizzo con tutto il suo contenuto di Lyra Coin.
+Add a private key (as returned by dumpprivkey) to your Wallet.
+This operation imports the address with all its Lyra Coin content.
 
 `importwallet "filename"`
 
-Importa le chiavi (e i relativi indirizzi) da un file di dump del wallet (vedi dumpwallet).
+Import the keys (and their addresses) from a wallet dump file (see dumpwallet).
 
 `keypoolrefill ( newsize )`
 
-Riempie il keypool.
+Fill the keypool.
 
 `listaccounts ( minconf includeWatchonly )`
 
-Mostra i nomi account, chiavi, saldi account.
+Show account names, keys, account balances.
 
 `listaddressgroupings`
 
-Restituisce tutti gli indirizzi del wallet e le informazioni utilizzate per il coincontrol.
+Returns all wallet addresses and information used for coincontrol.
 
 `listlockunspent`
 
-Restituisce un elenco di output temporaneamente settati come non spendibili.
+Returns a list of outputs temporarily set as non-expendable.
 
 `listreceivedbyaccount ( minconf include empty includeWatchonly )`
 
-Elenca il bilancio dell'account.
+Lists the account balance.
 
 `listreceivedbyaddress ( minconf include empty includeWatchonly )`
 
-Elenca il bilancio dell'indirizzo di ricezione
+Lists the balance of the receiving address
 
 `listsinceblock ( "blockhash" target-confirmations includ Watchonly )`
 
-Ottieni tutte le transazioni in blocchi, dal blocco [blockhash].
+Get all transactions in blocks, from block [blockhash].
 
 `listtransactions ( "account" count from includeWatchonly )`
 
-Restituisce le transazioni più recenti per [account]. Se [account] non specificato restituirà le transazioni recenti da tutti gli account.
+Returns the most recent transactions for [account]. If [account] not specified it will return recent transactions from all accounts.
 
 `listunspent ( minconf maxconf  ["address",...] )`
 
-Restituisce un array di output di transazioni non spese con conferme tra minconf e maxconf (incluso). Facoltativamente, si può filtrare per includere solo txout inviate a indirizzi specificati.
+Returns an output array of unspent transactions with confirmations between minconf and maxconf (included). Optionally, you can filter to include only txouts sent to specified addresses.
 
 `lockunspent unlock [{"txid":"txid","vout":n},...]`
 
-Elenco aggiornato degli outputs temporaneamente non spendibili.
+Updated list of outputs temporarily not expendable.
 
 `move "fromaccount" "toaccount" amount ( minconf "comment" )`
 
-Passa da un account nel tuo Wallet a un altro.
+Switch from one account in your Wallet to another.
 
 `multisend <command>`
 
-**MultiSend** consente a un utente di inviare automaticamente una percentuale delle proprie ricompense (staking o masternode) a degli indirizzi desiderati. La transazione MultiSend viene inviata quando le coin hanno almeno 60 conferme (circa 60 min.). 
+**MultiSend** allows users to automatically send a percentage of their rewards (staking or masternode) to desired addresses. The MultiSend transaction is sent when the coins have at least 60 confirmations (about 60 min.).
 
 > ### Comandi
 > `print` - displays the current MultiSend vector.
@@ -295,7 +295,7 @@ Passa da un account nel tuo Wallet a un altro.
 > 
 > `enableall` - enables all addresses to be eligible to send MultiSend transactions.
 > 
-> Se hai fatto configurazioni precedenti, puoi verificare se ne hai già esistenti e conoscere il loro stato di attività con `multisend print`. Se non l'hai mai usato, il tuo messaggio sarà simile al seguente:
+> If you have done previous configurations, you can check if you already have them and know their activity status with `multisend print`. If you've never used it, your message will look like this:
 > `~ $ ./Lyra-cli multisend print
 [
   {
@@ -309,44 +309,44 @@ Passa da un account nel tuo Wallet a un altro.
 
 `sendfrom "fromaccount" "tolyraaddress" amount ( minconf "comment" "comment-to" )`
 
-È un valore reale ed è arrotondato al secondo decimale. Invierà l'importo indicato all'indirizzo indicato, assicurando che l'account abbia un saldo valido utilizzando le conferme [minconf]. Restituisce l'ID transazione se ha esito positivo (non nell'oggetto JSON).
+It is a real value, rounded to the second decimal place. He will send the indicated amount to the indicated address, using the [minconf] confirmations to verify that the account has a valid balance. Returns the transaction ID if successful (not in the JSON object).
 
 `sendmany "fromaccount" {"address":amount,...} ( minconf "comment" )`
 
-Invia più volte. Gli importi sono numeri in virgola mobile a precisione doppia
+Send multiple times. Amounts are double precision floating point numbers.
 
 `sendtoaddress "lyraaddress" amount ( "comment" "comment-to" )`
 
-Invia un importo a un determinato indirizzo. è un valore reale ed è arrotondato a 8 cifre decimali. Restituisce l'ID transazione in caso di successo.
+Send an amount to a specific address. It is a real value and is rounded to 8 decimal places. Returns the transaction ID on success.
 
 `sendtoaddressix "lyraaddress" amount ( "comment" "comment-to" )`
 
-Invia un importo a un determinato indirizzo utilizzando SwiftX. è un valore reale ed è arrotondato a 8 cifre decimali. Restituisce l'ID transazione in caso di successo.
+Send an amount to a specific address using SwiftX. It corresponds to a real value and is rounded to 8 decimal places. Returns the transaction ID on success.
 
 `setaccount "lyraaddress" "account"`
 
-Imposta l'account associato all'indirizzo indicato. L'assegnazione dell'indirizzo già assegnato allo stesso account creerà un nuovo indirizzo associato a tale account.
+Set up the account associated with the indicated address. Assigning the address already assigned to the same account will create a new address associated with that account.
 
 `setstakesplitthreshold <1 - 999,999>`
 
-Divisione automativa degli utxo. Questo farà in modo che la dimensione dell'output dei tuoi pacchetti (utxo) in stake,  non sia mai inferiore al valore dato.
+Automatic division of utxo: the size of the output of the packets (utxo) in stakes will be greater than the indicated value.
 
 `settxfee amount`
 
-Imposta la commissione di transazione per KB.
+Set the transaction fee per KB.
 
 `signmessage "lyraaddress" "message"`
 
-Firma un messaggio con la chiave privata di un indirizzo.
+Sign a message with an address's private key.
 
 `walletlock`
 
-Rimuove la chiave di crittografia del wallet dalla memoria, bloccando il wallet.
+Removes the wallet encryption key from memory, locking the wallet.
 
 `walletpassphrase "passphrase" timeout ( anonymizeonly )`
 
-Memorizza la chiave di decodifica del portafoglio in memoria per "timeout" secondi.
+Stores the decoding key of the wallet in memory for "timeout" seconds.
 
 `walletpassphrasechange "oldpassphrase" "newpassphrase"`
 
-Cambia la passphrase del wallet da "oldpassphrase" a "newpassphrase".
+Change your wallet passphrase from "oldpassphrase" to "newpassphrase".

@@ -1,6 +1,6 @@
 # Scrypta Full Node
 
-il full-node è un **wallet** che conferma e trasmette le transazioni nella rete **Scrypta**. Questo significa che non è necessario affidarsi a terze parti per convalidare i pagamenti. 
+the full-node is a ** wallet ** that confirms and transmits transactions in the ** Scrypta ** network. This means that there is no need to rely on third parties to validate payments.
 
-I full-node hanno il maggior livello di sicurezza e sono essenziali per proteggere la rete. Però, richiedono spazio sul disco fisso (oltre 2GB), banda di connessione internet e tempo per la sincronizzazione iniziale.
+Full-nodes have the highest level of security and are essential for protecting the network. They require hard disk space (over 2GB), dedicated internet connection bandwidth and time for initial synchronization.
 

@@ -1,23 +1,23 @@
-# Introduzione al QT Wallet
+# Introduction to the QT Wallet
 
-In questa sezione spieghiamo in modo piu' approfondito il QT Wallet di Scrypta illustrandone alcune funzioni in modo più approfondito.
-Anche se esistono diversi tipi di walet per cryptovalute, è comunque essenziale capirne le basi di funzionamento perche' comunque le operazioni che si possono compiere sono pressappoco uguali per tutte le cryptovalute.
+In this section we explain in more detail the Scrypta QT Wallet illustrating some of its functions in more detail.
+Even if there are different types of wallets for cryptocurrencies, it is still important to understand the basics of operation since the operations that can be performed are roughly the same for all cryptocurrencies.
 
-In questa sezione di guida analizzeremo il setup del wallet dopo il primo avvio, il backup e l'encrypting del wallet, l'export delle chiavi private singole o dell'intero wallet, più altre operazioni aggiuntive.
+In this guide section we will analyze the setup of the wallet after the first start, the backup and the encryption of the wallet, the export of the single private keys or of the entire wallet, plus other additional operations.
 
-### Cos'è un QT wallet?
-QT è un framework UI e un'applicazione cross platform per sviluppatori compilata usando il linguaggio di programmazione C++.
-La maggior parte dei wallet QT è sviluppata usando questo ambiente di programmazione, e tali clients sono disponibili per i principali sistemi operativi.
-I wallet QT sono dei veri e propri client e offrono tutto il set di funzionalità complete per gestire le cryptovalute.
-Tuttavia sono applicazioni che richiedono discrete quantità di spazio sul disco poicheè, per funzionare, devono scaricare l'intera copia della blockchain in questione sul vostro computer su cui state eseguendo il client.
+### What is a QT wallet?
+QT is a UI framework and a cross platform application for developers compiled using the C ++ programming language.
+Most QT wallets are developed using this programming environment. These clients are available for the main operating systems.
+QT wallets are clients that offer the full set of features to manage cryptocurrencies.
+They are applications that require discrete amounts of disk space because, in order to work, they must download the entire copy of the blockchain on your computer on which you are running it.
 
 ## Scrypta Core Official Wallet
-A prescindere da quale sia la tipologia di wallet utilizzato, la prima nozione da comprendere e' che le cryptovalute che possediamo non sono custodite fisicamente all'interno del wallet. I fondi sono memnorizzati in un registro pubblico distribuito chiamato blockchain.
-Ciò che fornisce l'accesso ai fondi contenuti in un dato indirizzo, sono le chiavi private dell'indirizzo stesso. Perdendo le chiavi private si perde l'accesso ai fondi, per cui non avere le chiavi private significa non avere accesso ai fondi che il wallet contiene.
+Regardless of what type of wallet is used, the first notion to understand is that the cryptocurrencies we own are not physically kept inside the wallet. Funds are stored in a distributed public register called a blockchain.
+What provides access to the funds contained in a given address are the private keys of the address itself. Losing private keys will lose access to funds and, consequently, not having private keys means not having access to the funds that the wallet contains.
 
-Attraverso il Core Wallet, abbiamo il possesso delle chiavi private e dei fondi contenuti in ciascun indirizzo corrispondente. Ovviamente ciascuna cryptovaluta ha il proprio core wallet per cui wallet di blockchain diverse non possono dialogare tra loro in quanto fanno parte di diversi network peer-to-peer.
+The Core Wallet keeps the private keys of the funds contained in each corresponding address. Each cryptocurrency has its own core wallet, so different blockchain wallets cannot communicate with each other as they are part of different peer-to-peer networks.
 
-Ci sono delle funzioni specifiche a seconda del wallet e della cryptovaluta che stiamo usando, tuttavia tutte le coin condividono la maggior parte delle funzioni e dei rispettivi comandi.
+There are specific functions depending on the wallet and the cryptocurrency we are using. However, all the coins share most of the functions and their respective commands.
 
 - Wallet Encryption
 - Wallet Backup
@@ -31,28 +31,27 @@ Ci sono delle funzioni specifiche a seconda del wallet e della cryptovaluta che 
 - Dark Send
 - Block Explorer
 
-Prima di esplorare queste funzionalità, di seguito forniremo una breve descrizione sul primo setup del wallet.
+Before exploring these features, we will provide a brief description of the first wallet setup below.
 
-## Prima installazione Wallet Scrypta
+## First installation Wallet Scrypta
 
-La prima cosa da fare è scaricare il Wallet Ufficiale Scrypta dal [repository di Github](https://github.com/scryptachain/scrypta/releases) adatta al vostro sistema operativo.
+First you need to download the Scrypta Official Wallet from the [Github repository](https://github.com/scryptachain/scrypta/releases).
 
-Una volta scaricato il software, avviate **Lyra-QT**. 
+Once the software is downloaded, start **Lyra-QT**. 
 ![qt_wallet](../.vuepress/public/assets/qt_wallet/splash.png).
 
-Per maggiori informazioni in merito all'installazione, puoi visitare questo link:
+For more information about the installation, you can visit this link:
 
-[Installazione](installazione.md)
+[Installation](installazione.md)
 
 
-
-Al primo avvio vi verrà chiesto di scegliere la posizione dei file di sistema, dove verra' salvato il vostro file **wallet.dat** e la copia della blockchain.
-Confermate il percorso propostovi dal software o modificatelo a vostra scelta e procedete.
-<br>Assicuratevi solo di avere abbastanza spazio disponibile nell'hard-disk.
+At the first start you will be asked to choose the location of the system files where to save your ** wallet.dat ** file and the copy of the blockchain.
+Confirm the path proposed by the software or modify it at your choice and proceed.
+<br> Just make sure you have enough space available on the hard disk.
 
 ![qt_wallet](../.vuepress/public/assets/qt_wallet/firstopen.png)
 
-Di default, è possibile trovare la cartella di sistema ai seguenti percorsi (verificare che sia necessario disabilitare le cartelle nascoste):
+By default, the system folder can be found at the following locations (verify that hidden folders must be disabled):
 
 **Linux:**
 ~/.lyra/
@@ -63,12 +62,12 @@ Di default, è possibile trovare la cartella di sistema ai seguenti percorsi (ve
 **Windows:**
 %APPDATA%\lyra
 
-Per un approfondimento sulla data directory, puoi consultare la seguente sezione:
+For further information on the data directory, you can consult the following section:
 
 [Data Directory](data-directory.md)
 
 
-### Sincronizzazione con la blockchain Scrypta
+### Synchronization with the Scrypta blockchain
 
 Dopo che il processo di avvio del wallet si è concluso, il client si collegherà al network peer-to peer di Scrypta per avviare la sincronizzazione della blockchain scaricandone una copia aggiornata che verrà salvata nella cartella di sistema che avete definito in precedenza.
 

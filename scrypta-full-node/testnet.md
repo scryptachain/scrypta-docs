@@ -1,37 +1,37 @@
 # Testnet
 
-Per utilizzare la versione testnet della blockchain Scrypta avrete bisogno di scaricare ed installare il wallet ufficiale. Potete trovare una guida all'installazione nella seguente sezione:
+To use the testnet version of the Scrypta blockchain you will need to download and install the official wallet. You can find an installation guide in the following section:
 
-[Installazione](installazione.md) 
+[Installation](installazione.md) 
 
-Successivamente dovrete avviarlo in modalità Testnet.
+Next you will have to start it in Testnet mode.
 
-Per fare ciò è necessario inserire la riga di testo `testnet=1` nel file di configurazione `lyra.conf` e riavviare il wallet.
+To do this you need to insert the text line `testnet=1` in the configuration file `lyra.conf` and restart the wallet.
 
-Il file di configurazione si trova nella Directory dei Dati che viene creata automaticamente al primo avvio del wallet. 
+The configuration file is located in the Data Directory which is automatically created the first time the wallet is started.
 
-Per maggiori informazioni consultate la relativa sezione [Directory dei dati](data-directory.md).
+For more information, consult the relevant section [Data directory](data-directory.md).
 
-## Passaggi per l’avvio di Scrypta Testnet
+## Steps for starting Scrypta Testnet
 
-1. Scaricare il wallet ed avviarlo. In questo modo avrete permesso la creazione della directory dei dati;
-2. Chiudere il wallet e recarsi nella directory dei dati chiamata lyra;
-3. Aprire il file lyra.conf con un editor di testo; 
-4. Aggiungere la stringa  testenet=1;
-5. Salvare le modifiche nel file lyra.conf;
-6. Avviare lyra-qt (wallet con interfaccia grafica) o lyrad (versione senza interfaccia grafica).
+1. Download the wallet and start it. This will create the data directory;
+2. Close the wallet and go to the data directory called lyra;
+3. Open the lyra.conf file with a text editor;
+4. Add the string testenet = 1;
+5. Save the changes in the lyra.conf file;
+6. Start lyra-qt (wallet with graphical interface) or lyrad (version without graphical interface).
 
-::: tip Nota
- se successivamente desideri avviare il wallet in modalità mainnet, basterà sostituire nel file di configurazione testnet=1 con testenet=0, salvare le modifiche e riavviare il wallet.
- ::::
+::: tip Note
+if you later want to start the wallet in mainnet mode, simply replace testnet = 1 with testenet = 0 in the configuration file, save the changes and restart the wallet. 
+::::
 
 ## Faucet tLYRA (testnet LYRA)
-Per ricevere delle LYRA di test (*tLyra*), puoi utilizzare il sistema Faucet realizzato attraverso la tecnologia IdANode:
+To receive test LYRA (* tLyra *), you can use the Faucet system created through IdANode technology:
 
 [Faucet Link](https://testnet.scryptachain.org/#)
 
-Genera un indirizzo di ricezione Lyra testnet nel tuo wallet e inseriscilo nel campo *INIT* della sezione *Tool*. 
+This generates a Lyra testnet reception address in your wallet to be entered in the * INIT * field of the * Tool * section.
 
-In questo modo riceverai **50 tLyra**.
+In this way you will receive **50tLyra **.
 
-Attraverso l’IdANode Testnet puoi anche generare un nuovo indirizzo, inviare a quest’ultimo delle *tlyra* attraverso la funzione *INIT* ed importare nel desktop wallet la chiave privata attraverso la *console di debug*, utilizzando il comando `importprivkey YOURPRIVATEKEY`. 
+Through the IdANode Testnet you can also generate a new address, send * tlyra * to the latter through the *INIT* function and import the private key into the desktop wallet through the *debug console*, using the command `importprivkey YOURPRIVATEKEY` .

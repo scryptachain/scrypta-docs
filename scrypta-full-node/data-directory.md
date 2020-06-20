@@ -1,56 +1,56 @@
-# Directory dei Dati
+# Data Directory
 
-La Directory dati è la cartella di sistema Scrypta Blockchain che contiene tutte le informazioni relative alla rete blockchain e p2p. 
+The Data Directory is the Scrypta Blockchain system folder which contains all the information related to the blockchain and p2p network.
 
-Questa cartella contiene anche un file importante chiamato "**wallet.dat**" che memorizza le chiavi private per i tuoi indirizzi.
+This folder also contains an important file called "**wallet.dat**" which stores private keys for your addresses.
 
 ::: danger
-Perdere il file "wallet.dat" significa perdere l'accesso a tutte le tue monete LYRA. Eseguite regolarmente dei backup!
+Losing the "wallet.dat" file means losing access to all your LYRA coins. Make regular backups!
 :::
 
-## Posizione della directory
+## Directory location
 ​
-La Data Directory chiamata "lyra" si trova, per impostazione predefinita, nei seguenti percorsi specifici per ciascun sistema operativo:
+The Data Directory called "lyra" is located, by default, in the following specific paths for each operating system:
 
 ### Windows
-Vai su Start > Run > E scrivi: `%APPDATA%\lyra`
+Go to Start > Run > And write: `%APPDATA%\lyra`
 
 ### macOS
  `~/Library/Application Support/lyra`
 
  (/Users/“username”/Library/Application Support/lyra)
 
-Si noti che la cartella "Library" potrebbe essere nascosta.
+Note that the "Library" folder may be hidden.
 
 ### Linux
 `~/.lyra`
 
-## Descrizione dei file
+## Files description
 
-***backups***: cartella per i backup automatici del wallet
+***backups***: folder for automatic wallet backups
 
-***blocks***: cartella che contiene il database dei blocchi scaricati dalla rete p2p.
+***blocks***: folder containing the database of blocks downloaded from the p2p network.
 
-***chainstate***: cartella che contiene il database dell'indice dei blocchi necessario per navigare nei blocchi stessi
+***chainstate***: folder containing the block index database needed to navigate the blocks.
 
-***debug.log***: stampe di debug dal client. Di solito è necessario per conoscere l'origine di alcuni problemi.
+***debug.log***: debug prints from the client. It is usually necessary to know the origin of some problems.
 
-***lyra.conf***: file che contiene la configurazione di avvio.
+***lyra.conf***: file containing the boot configuration.
 
-***fee_estimates.dat***: cache delle ultime commissioni pagate sulla blockchain, necessarie per la stima delle commissioni stesse.
+***fee_estimates.dat***: cache of the last fees paid on the blockchain, necessary for the estimate of the fees themselves.
 
-***masternode.conf***: contiene la configurazione per i masternode controllati da questo wallet. Questo file deve essere compilato se l'utente vuole avviare un masternode.
+***masternode.conf***: contains the configuration of the masternodes controlled by the wallet. This file must be compiled if the user wants to start a masternode.
 
-***mncache.dat***: database che memorizza informazioni sui masternode noti a questo nodo. Utilizzato per impedire lo spamming della rete con richieste masternode ad ogni esecuzione.
+***mncache.dat***: database that stores information about the masternodes known to this node. Used to prevent network spamming with masternode requests at every run.
 
-***mnpayments.dat***: database che memorizza informazioni sui pagamenti masternode. Utilizzato per verificare e confermare che il pagamento del masternode è valido.
+***mnpayments.dat***: database that stores information on masternode payments. Used to verify and confirm that the masternode payment is valid.
 
-***netfulfilled.dat***: cache locale delle richieste di rete completate.
+***netfulfilled.dat***: local cache of completed network requests.
 
-***peers.dat***: database che memorizza informazioni sui nodi in p2p del network. Utilizzato dal client per connettersi rapidamente a nodi noti.
+***peers.dat***: database that stores information on the p2p nodes of the network. Used by the client to quickly connect to known nodes.
 
-***sporks***: cartella che contiene il database degli sporks sincronizzati dalla rete p2p.
+***sporks***: folder containing the database of sporks synchronized by the p2p network.
 
-***testnet2***: cartella opzionale che contiene la stessa struttura di cartelle della cartella mainnet ma con dati per la testnet.
+***testnet2***: optional folder which contains the same folder structure as the mainnet folder but with data for the testnet.
 
-***wallet.dat***: il file più importante. Memorizza le chiavi private per i tuoi indirizzi. Perdere questo automaticamente significa perdere l'accesso a tutte le tue coin LYRA.
+***wallet.dat***: the most important file. Store private keys for your addresses. Losing this file means losing access to all your LYRA coins.
