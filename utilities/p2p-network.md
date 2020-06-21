@@ -1,26 +1,25 @@
 # P2P Network
 
-Questo strumento serve a creare una rete peer-to-peer tra una serie di server e client.
-Di fatto è un'applicazione NodeJS/Express che permette la creazione di comunicazioni in real-time firmate da indirizzi Lyra.
+This tool is a NodeJS / Express application that allows the creation of real-time communications signed by Lyra addresses in the form of a peer-to-peer network between servers and clients,
 
-Questo strumento è ancora in fase di sviluppo ed è carente di alcune funzionalità tra cui il _discovery_ di nuovi peer (server), un sistema efficiente di _relay_ dei messaggi e la stabilizzazione del sistema di _crittografia_ dei messaggi stessi tramite chiavi RSA.
+This tool is still under development and is lacking in some features including the _discovery_ of new peers (servers), an efficient system of _relay_ of the messages and the stabilization of the system of _crypting_ of the messages themselves through RSA keys.
 
-In via del tutto teorica, questo tool andrebbe accoppiato ad una dApp, poichè ogni volta che viene ricevuto un messaggio questo viene rimandato ad un hook, definito nel file `.env`.
+In theory, this tool should be coupled to a dApp, since every time a message is received it is sent back to a hook, defined in the `.env` file.
 
-Questo tool in futuro è nativamente inserito negli IdANodeJS, in modo che tutti gli IdANode possano comunicare tra di loro e permettere le comunicazioni tra vari client. Per interagire con la rete degli IdANode è necessario utilizzare ScryptaCore o le chiamate specifiche dell'IdANode stesso.
+In the future this tool will be natively included in IdANodeJS, so that all IdANodes can communicate with each other and allow communication between various clients. To interact with the IdANode network it is necessary to use ScryptaCore or the specific calls of the IdANode itself.
 
-La tecnologia di base utilizzata è quella di [https://socket.io/](https://socket.io/).
+The basic technology used is [https://socket.io/](https://socket.io/).
 
-## Installazione
+## Installation
 
-Clonate la repository e installate tutte le dipendenze:
+Clone the repository and install all dependencies:
 
 ```
 git clone https://github.com/scryptachain/scrypta-p2p-network
 cd scrypta-p2p-network
 npm install
 ```
-Adesso è necessario creare un file .env del tipo:
+Now you need to create an .env file like:
 ```
 PORT=42224
 NODE_KEY=YOUR_LYRA_PRIVKEY
@@ -30,28 +29,28 @@ EXPRESS_PORT=4000
 BOOTSTRAP_NODES=idanodejs01.scryptachain.org,idanodejs02.scryptachain.org
 ```
 
-## Utilizzo
+## Use
 
-Per avviare la connessione al network basta eseguire il comando:
+To start the connection to the network you must run the command:
 
 ```
 npm start
 ```
-La risposta dalla console sarà qualcosa del tipo:
+The console response will look something like:
 
 ![npm start](../.vuepress/public/assets/p2pnetwork/npmrun.png)
 
-Come possiamo vedere, l'engine carica l'identità scritta sul file `.env` e si connette ai nodi bootstrap. Se qualcosa dovesse andare storto con i nodi o con la propria connessione, non si vedranno le righe di connessione:
+As we can see, the engine loads the identity written on the `.env` file and connects to the bootstrap nodes. If something goes wrong with the nodes or with your connection, you won't see the connection lines:
 
 ```
 Connected to peer: http://idanodejs01.scryptachain.org:42224
 Connected to peer: http://idanodejs02.scryptachain.org:42224
 ```
-Da questo momento in poi è possibile inviare messaggi semplicemente invocando l'endpoint `/broadcast`!
+From this moment on, it is possible to send messages simply by invoking the endpoint `/broadcast`!
 
 ### [POST] /broadcast
 
-Questo endpoint prevede l'invio dell'unico campo **message**. Il messaggio verrà quindi firmato dalla chiave privata e trasformato in JSON con questa formattazione:
+This endpoint involves sending the only **message** field. The message will be signed by the private key and transformed into JSON in the following format:
 ```
 { 
   signature: '2b37797321241e28b889c3cd1b7eec6bd01d0b47a2a0fff21dc7d873954e0baa7e3b77f860c57ad53ab2009c030b885444cab6f0b94e37988bb3771768f8642e',
@@ -60,21 +59,20 @@ Questo endpoint prevede l'invio dell'unico campo **message**. Il messaggio verr�
   message: 'Hello P2P!' 
  }
   ```
-Come nel caso dei messaggi firmati da _Scrypta Core_ , anche questi presentano la signature, l'indirizzo che l'ha inviato, la pubKey per verificare il messaggio e il messaggio stesso.
+As in the case of messages signed by _Scrypta Core_, these also present the signature, the address that sent it, the pubKey to verify the message and the message itself.
 
-A questo punto tutti i nodi che ricevono il messaggio lo replicano agli altri nodi connessi. Questo sistema garantisce il relay delle informazioni. Esso farà arrivare i messaggi sia ai nodi online con porte aperte, che ai client, i quali solitamente hanno le porte di connessione in ingresso chiuse.
+At this point, all the nodes that receive the message replicate it to the other connected nodes. This system ensures the relay of information. It will send messages to both online nodes with open ports, and to clients, which usually have inbound connection ports closed.
 
-Questa tipologia di attività può essere analizzata facendo partire il tool su un server remoto, la cui porta (42224) è aperta:
+This type of activity can be analyzed by starting the tool on a remote server, whose port (42224) is open:
 
 ![](../.vuepress/public/assets/p2pnetwork/broadcast.png)
 
 Chiunque riceve il messaggio, prima di far partire la relativa chiamata post verso l'_hook_, controlla che il messaggio sia stato effettivamente inviato da quell'indirizzo e, in caso positivo, trasmette il messaggio.
+## Possible use cases
 
-## Possibili casi d'uso
+This tool can be used by applications that need to exchange information verified in real time. Combined with all other Scrypta technologies, this tool allows the effective sending of information from certified sources. If you want, you can send absolutely private information in real time by encrypting the information with RSA keys,
 
-Questo tool può servire per qualsiasi applicazione abbia bisogno di scambiare informazioni verificate in tempo reale. Unito a tutte le altre tecnologie Scrypta, questo tool permette l'effettivo invio di informazioni da fonti certificate e, volendo, crittografando le informazioni con le chiavi RSA, è possibile inviare informazioni assolutamente private in tempo reale.
-
-E' importante sottolineare che **nessuna** informazione viene salvata nè dagli IdANode, nè dall'engine. Questo significa che i messaggi non possono essere recuperati e solo i peer connessi possono visualizzarli. Questa scelta architetturale si basa sulla volontà di creare un sistema snello, che non si sovraccarichi nel tempo, demandando l'effettiva necessità di storage dei messaggi agli sviluppatori che vorranno usufruirne.
+It is important to underline that **no** information is saved neither by the IdANodes, nor by the engine. This means that messages cannot be recovered and only connected peers can view them. This architectural choice is based on the desire to create a lean system, which does not overload in time, leaving the actual need for message storage to the developers who want to use it.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTE3OTc3NTU4XX0=
 -->

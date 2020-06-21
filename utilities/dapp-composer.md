@@ -1,26 +1,26 @@
 # dApp Composer
 
-Questo middleware è scritto in NodeJS usando il framework NestJS e può essere usato per creare un servizio o un software che risponde a determinate API.
+This middleware, written in NodeJS using the NestJS framework, can be used to create a service or software that responds to certain APIs.
 
-Può essere implementato, ad esempio, per creare dei ponti di collegamento tra la blockchain ed un backend esistente, oppure per sviluppare un servizio ad hoc.
+It can be implemented, for example, to create bridges of connection between the blockchain and an existing backend, or to develop ad hoc services.
 
-Questa dApp comunica direttamente con gli IdANode , attraverso l'utilizzo di `@scrypta/core` e non richiede particolari accorgimenti in fase di start.
+This dApp communicates directly with the IdANodes through the use of `@scrypta/core` and does not require any particular precautions during the start-up phase.
 
-In via assolutamente esemplificativa possiamo paragonare questo dApp Composer ad uno Smart Contract della rete Ethereum, ovvero una porzione di software che, dopo essersi collegato alla blockchain esegue del codice prestabilito.
+By way of example, we can compare this dApp Composer to a Smart Contract of the Ethereum network, or a portion of software that, after connecting to the blockchain, executes pre-established code.
 
-Questo software può essere, inoltre, caricato all'interno di un IdANode (via IPFS) e fatto partire attraverso il dApp engine. Questo utilizzo tutta via è sperimentale e verrà consolidato successivamente.
+In addition, this software can be loaded into an IdANode (via IPFS) and started via the dApp engine. However, this use is experimental and will be consolidated later.
 
-## Utilizzo
+## use
 
-Dopo aver scaricato il codice da qui [https://github.com/scryptachain/scrypta-dapp-composer](https://github.com/scryptachain/scrypta-dapp-composer) è possibile modificare i file contenenti il codice principale oppure estendere il progetto con i propri endpoint. Quelli di default sono i seguenti.
+After downloading the code from [https://github.com/scryptachain/scrypta-dapp-composer](https://github.com/scryptachain/scrypta-dapp-composer) you can edit the files containing the main code or extend the project with your own endpoints. The default ones are as follows.
 
 ### [GET] /
 
-Questo ritornerà il risultato della chiamata `/wallet/getinfo` data al primo IdANode disponibile.
+This will return the result of the `/wallet/getinfo` call given to the first available IdANode.
 
 ### [POST] /get
 
-Questo endpoint effettuerà una chiamata `GET` all'endpoint desiderato passando il parametro `endpoint` come specificato in questo esempio:
+This endpoint will make a `GET` call to the desired endpoint by passing the` endpoint` parameter as specified in this example:
 ```
 {
 	"endpoint": "/wallet/getnewaddress"
@@ -29,7 +29,7 @@ Questo endpoint effettuerà una chiamata `GET` all'endpoint desiderato passando 
 
 ### [POST] /post
 
-Questo effettuerà una chiamata `POST` all'endpoint desiderato passando il parametro `endpoint` e il parametro `params` come specificato in questo esempio:
+This method will make a `POST` call to the desired endpoint by passing the` endpoint` parameter and the `params` parameter as specified in this example:
 ```
 {
 	"endpoint": "/sidechain/shares",
@@ -39,10 +39,10 @@ Questo effettuerà una chiamata `POST` all'endpoint desiderato passando il param
 }
 ``` 
 
-## Porta di esecuzione
+## Execution port
 
-La porta di default è la `3000` ma può essere cambiata all'interno del codice.
+The default port is `3000` but can be changed within the code.
 
-## Compilazione e deploy della dApp
+## Compiling and deploying the dApp
 
-Per compilare e creare un pacchetto eseguibile è possibile lanciare il comando `npm run build`. Questo creerà una versione eseguibile della dApp per Linux, macOS o Windows.
+To compile and create an executable package you can run the `npm run build` command. This will create an executable version of the dApp for Linux, macOS or Windows.

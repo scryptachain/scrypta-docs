@@ -1,50 +1,50 @@
 # dApp Starter
 
-Scritto in VueJS, ti permette di creare una Progressive Web App collegata con Scrypta Blockchain.
+Written in VueJS, it allows you to create a Progressive Web App connected with Scrypta Blockchain.
 
-Puoi scaricare il codice da qui:
-[**dApp Starter:**](https://github.com/scryptachain/scrypta-dapp-starter). All'interno potra notare un progetto generato attraverso `@vue/cli`.
+You can download the code here:
+[**dApp Starter:**](https://github.com/scryptachain/scrypta-dapp-starter). Inside you will notice a project generated through `@vue/cli`.
 
-## Avviare il progetto in development mode
+## Start the project in development mode
 
-Per sviluppare il progetto è necessario innanzitutto clonare la repository attraverso il comando:
+To develop the project you must first clone the repository through the command:
 
 ```
 git clone https://github.com/scryptachain/scrypta-dapp-starter
 ```
 
-dopo di che è necessario entrare nella cartella e installare le dipendenze:
+Then you will need to go into the folder and install the dependencies:
 
 ```
 cd scrypta-dapp-starter
 npm install
 ```
 
-Infine avviare il server di sviluppo:
+Finally start the development server:
 ```
 npm run serve
 ```
 
-## Pagina di login
+## Login page
 
-All'interno dello starter troverai una pagina di login che permetterà a te e al tuo utente di collegarsi attraverso un file .sid, o generarne uno nuovo così da poter interagire con la blockchain.
+Inside the starter you will find a login page that will allow you and your user to connect through a .sid file, or to generate a new one, so you can interact with the blockchain.
 
-## Pagina di benvenuto
+## Welcome page
 
-Una volta effettuato il login è possibile interagire con la blockchain di Scrypta attraverso la libreria [Scrypta Core](/core) e quindi leggere, scrivere o interagire con gli [IdANode](/idanode/README.md).
+Once logged in you can interact with the Scrypta blockchain through the library [Scrypta Core](/core) and then read, write or interact with them [IdANode](/idanode/README.md).
 
-## Layout Grafico
+## Graphic Layout
 
-Per il layout grafico è stato scelto [https://buefy.org/](https://buefy.org/) che usa il framework `Bulma`. Tutte le dApp Scrypta cercheranno di uniformarsi a tale stile grafico e di UX e sarebbe buona prassi creare dApp quanto più possibile integrate con l'ecosistema.
+The graphic layout chosen is [https://buefy.org/](https://buefy.org/) which uses the `Bulma` framework. All Scrypta dApps will conform to this graphic and UX style. It would therefore be good practice to create dApps as integrated as possible with the ecosystem.
 
-## Deploy della dApp
+## Deploy the dApp
 
-Una volta ultimata la dApp questa può essere compilata attraverso il comando: 
+Once the dApp is completed, this can be compiled through the command:
 
 ```
 npm run build
 ```
 
-e caricata su un server online, su un'estensione del browser, su Electron come desktop app etc. L'aspetto importante è che le dApp effettueranno operazioni ben determinate negli account degli utenti che le attivano e useranno la loro potenza computazionale per effettuare calcoli o compiere altre operazioni.
+and uploaded to an online server, a browser extension, Electron as a desktop app etc. The important aspect is that the dApps will carry out well-defined operations in the accounts of the users who activate them and will use their computational power to perform calculations or perform other operations.
 
-Qualora si avessero esigenze specifiche dal punto di vista backend e database, è chiaro che si può usare il medesimo codice in modo ibrido, servendosi anche di un server centrale.
+If you have specific needs from the backend and database point of view, you can use the same code in a hybrid way, also using a central server.
