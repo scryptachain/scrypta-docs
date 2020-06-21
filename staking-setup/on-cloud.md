@@ -1,7 +1,7 @@
 # Staking On Cloud
 
-## Staking con TheHub VBox
+## Staking with TheHub VBox
 
-Per lo staking in cloud suggeriamo il servizio Staking Vbox offerto da [The Hub](https://thehub.host/). 
+For staking in the cloud we suggest the Staking Vbox service offered by [The Hub](https://thehub.host/). 
 
-Questo strumento consente di ottenere tutti i vantaggi di un Full Node Scrypta con staking attivo 24 ore su 24, e presenta  funzioni come il "salvataggio" di chiavi private, il backup del file "*wallet.dat*", la "crittografia wallet" personalizzata e l'autenticazione a due fattori ( 2FA).
+This tool allows you to obtain all the advantages of a Full Node Scrypta with 24-hour staking, and has functions such as "saving" private keys, backing up the "*wallet.dat*" file, "wallet encryption" custom and two-factor authentication (2FA).

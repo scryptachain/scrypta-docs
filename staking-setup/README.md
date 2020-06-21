@@ -1,37 +1,37 @@
-# Definizione
+# Definition
 
-La procedura di **Staking** comincia dall'inserimento di cryptovaluta LYRA all'interno del wallet, che deve essere collegato alla rete. 
+The **Staking** procedure starts from the addition of LYRA cryptocurrency to the wallet, which must be connected to the network and online.
 
-Una volta che le monete avranno raggiunto la maturazione,  potrai cominciare a partecipare al processo di validazione dei blocchi: avvia il wallet e sbloccalo in modalità "*esclusivamente per staking*". 
+Once the coins have reached maturity, you can begin to participate in the validation process of the blocks: start the wallet and unlock it in "*exclusively for staking*" mode.
 
-Adesso il tuo nodo è pronto a competere con gli altri nodi per aggiudicarsi la validazione dei blocchi successivi. Come ricompensa per mantenere sicura la rete, ogni minuto un wallet online viene scelto per la validazione e riceve una ricompensa di stake in Lyra coin.
+Now your node is ready to compete with the other nodes to win the validation of subsequent blocks. As a reward for keeping the network safe, an online wallet is chosen for validation every minute and receives a stake reward in Lyra coin.
 
-Dopo aver ricevuto la ricompensa, la coin age (conferme acquisite) tornerà a zero , e dovrà arrivare a maturazione nuovamente. 
+After receiving the reward, the coin age (confirmations acquired) will return to zero and will have to mature again.
 
-Non è necessario un importo minimo per lo staking LYRA, ma avere più monete in gioco ti darà un peso maggiore, e quindi una maggiore possibilità di ricevere ricompense e con maggior frequenza.
+A minimum amount for LYRA staking is not necessary, but having more coins in play will give you more weight and therefore a greater chance of receiving rewards and more frequently.
 
-::: tip NOTA
-Il Minimum stake age  (maturazione) su Scrypta Blockchain è settato a 60 conferme (circa 60 minuti). In altri termini, le Lyra sono "mintable" dopo 60 conferme.
+::: tip NOTE
+The minimum stake age on Scrypta Blockchain is set at 60 confirmations (about 60 minutes). In other words, Lyra are "mintable" after 60 confirmations.
 :::
 
-## Come funziona
-In generale, invece che i rig di mining utilizzati per le classiche blockchain Proof Of Work (come Bitcoin), il sistema **Proof of Stake**  risolve gli stessi problemi di hashing ma gli hash sono rappresentati dalla ***coin age*** (età delle monete) e dagli **UTXO** esistenti (output di transazione non spesi).
+## How does it work
+Unlike the Proof Of Work blockchains (like Bitcoin), the **Proof of Stake** system solves the hashing problems by representing the hashes with the ***coin ag*** and the **UTXO** existing (unspent transaction output).
 
-::: tip NOTA
-Un output di transazione non speso (UTXO) è un hash di transazione, situato in un wallet che contiene fondi non spesi. Ogni volta che i fondi di un UTXO escono dal wallet per qualsiasi motivo, nel caso di una transazione ad esempio,  viene creato un nuovo UTXO contenente i fondi rimanenti.
+::: tip NOTE
+An unspent transaction output (UTXO) is a transaction hash, located on a wallet that contains unspent funds. Every time funds from a UTXO leave the wallet for any reason, for example in the case of a transaction, a new UTXO is created containing the remaining funds.
 :::
 
-Consulta anche la sezione domande frequenti:
+See also the frequently asked questions section:
 [Staking Faq](../staking-setup/staking-faq.md)
 
 ### Coin Age
-La "Coin Age" (età della moneta) è una proprietà di ogni UTXO, ed è concepibile come il tempo che trascorre dal momento della creazione di un UTXO. E' espressa in numero di "conferme".
+The "Coin Age" is a property of each UTXO and can be represented by the time that has elapsed since the creation of a UTXO. It is expressed in number of "confirmations".
 
-### Maturazione
-Ogni volta che validi con successo un blocco, riceverai una ricompensa per mantenere sicuro il network. Quando vieni ricompensato, la Coin Age della tua UTXO vincente, contenente  X Lyra,  verrà resettata. 
+### Maturation
+You will receive a reward for keeping your network secure each time you successfully validate a block. When you are rewarded, the Coin Age of your winning UTXO, containing X Lyra, will be reset.
 
-Questa operazione genera una nuova UTXO nella quale riceverai X + Ricompensa allo stesso indirizzo.
+This operation generates a new UTXO in which you will receive X + Reward at the same address.
 
-::: tip Nota
-Per consolidare la stabilità della rete, le ricompense di staking non sono spendibili prima di **20 conferme** (20 blocchi) e non possono entrare in staking prima di **60 conferme** (60 blocchi). Queste monete non ancora spendibili sono considerate "*immature*".
+::: tip Note
+In order to consolidate network stability, staking rewards cannot be spent before **20 confirmations** (20 blocks) and cannot enter staking before **60 confirmations** (60 blocks). These not yet expendable coins are considered "*immature*".
 :::

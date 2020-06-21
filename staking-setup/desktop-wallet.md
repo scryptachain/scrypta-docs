@@ -1,106 +1,106 @@
-# Staking con Desktop Wallet
+# Staking with the Desktop Wallet
 
-## Abilitare lo Staking
-Sono due i passaggi da eseguire per abilitare lo staking sul deskotp wallet:
+## AEnable Staking
+Here are the two steps to take to enable staking on the desktop wallet:
 
-1. Assicurarsi che nel file di configurazione *lyra.conf* non sia presente la stringa di blocco: `staking=0`: 
+1. Make sure that the block string is not present in the configuration file *lyra.conf*: `staking = 0`:
    
-Clicca su *Tools > Open Wallet Configuration File*.
+Click on *Tools> Open Wallet Configuration File*.
 
-• Se il tuo *lyra.conf* è vuoto o contiene la stringa `staking=1`, puoi procedere al punto 2.
-• Se il tuo *lyra.conf* contiene la stringa `staking=0`, dovrai modificarla in `staking=1`. 
+• If your *lyra.conf* is empty or contains the string `staking = 1`, you can proceed to step 2.
+• If your *lyra.conf* contains the string `staking = 0`, you will need to change it to` staking = 1`.
 
-> Riavvia  il wallet per rendere effettive le modifiche. 
+> Restart the wallet for the changes to take effect.
 
-2. Vai su *Settings > Unlock Wallet*, ti apparirà la schermata seguente:
+2. Go to *Settings > Unlock Wallet*, the following screen will appear:
 
 ![unlock](../.vuepress/public/assets/staking/unlock.png)
 
-Basta spuntare la casella di anonimizzazione e staking: *For anonymization and staking only*, inserire la passphrase e cliccare su *OK*. 
+Check the anonymization and staking box: *For anonymization and staking only*, enter the passphrase and click on *OK*.
 
-Nel tuo wallet, entro qualche secondo dovresti vedere un'icona verde che simboleggia lo '*staking attivo*'.
+Within a few seconds, a green icon should appear in the wallet symbolizing 'active *staking*'.
 
-![staking_attivo](../.vuepress/public/assets/staking/staking_attivo.png)
+![staking activated](../.vuepress/public/assets/staking/staking_attivo.png)
 
-In base a quando hai inviato LYRA coin al tuo portafoglio, potresti dover aspettare 1 ora, che è l'età minima di staking:  *staking minimum age*. Finché vedi l'icona verde e tieni il tuo wallet attivo e online, hai diritto a ricevere ricompense.
+Depending on when you sent LYRA coin to your wallet, you may have to wait 1 hour, equal to the minimum staking age: * staking minimum age *. When the icon is green and the wallet is active and online, you are entitled to receive rewards.
 
-::: warning NOTA BENE
-Se non compare la finestra di sblocco wallet, ciò significa che il wallet non è ancora crittografato. E' altamente raccomandato farlo, per la tua sicurezza. Consulta la sezione apposita: [Cifratura del wallet](../masternode-setup/installazione-manuale.md).
+::: warning PLEASE NOTE
+If the wallet unlock window does not appear, it means that the wallet is not yet encrypted. It is highly recommended to do this, for your safety. See the appropriate section: [Wallet encryption](../masternode-setup/installazione-manuale.md).
 :::
 
 ## Coin Control
 
-Utilizzando la funzione *Coin Control*  è possibile consolidare transazioni più piccole in un'unica somma di lyra più grande. 
+Using the *Coin Control* feature, smaller transactions can be consolidated into a single larger lyra sum.
 
-Potrai anche scegliere quali indirizzi saranno quelli che invieranno le Lyra ad ogni transazione in uscita che effettuerai.
+You will also be able to choose which addresses will be the ones that will send the Lyra to each outgoing transaction you make.
 
-Consolidare le monete nel tuo wallet, creando dei nuovi UTXO più grandi, vuol dire avere un peso maggiore nella probabilità di firmare blocchi, in questo modo renderai più efficace il tuo staking ricevendo più ricompense.
+Consolidating the coins in your wallet, creating new larger UTXOs, means having a greater weight in the probability of signing blocks: in this way you will make your staking more effective by receiving more rewards.
 
-Per prima cosa, abilita la funzione *Coin Control* su *Options > Wallet*.
+First, enable the *Coin Control* feature on *Options > Wallet*.
 
-Quindi recati sulla sezione *Send* (Invio), e troverai un nuovo pulsante:  *Inputs/ Coin Control* .
+Then go to the *Send* section where you will find a new button: *Inputs/Coin Control*.
 
-Seleziona un indirizzo e copialo (tasto destro), clicca su *Ok*.
+Select an address and copy it (using the right button), click on *Ok*.
 
-Adesso inserisci (incolla) lo stesso indirizzo nella finestra di *invio* nel campo “*Pay To*”.
+Now enter (paste) the same address in the *send* window in the "*Pay To*" field.
 
-Copia e incolla l'ammontare che compare in alto:  *amount “After Fee”* (tasto destro per copiare), adesso possiamo inviare le LYRA in una unica transazioner (UTXO) allo stesso indirizzo.
+Copy and paste the amount shown above: *amount "After Fee"* (right key to copy), where to send the LYRA in a single transaction (UTXO).
 
-::: tip NOTA
-Se gestisti col desktop wallet un Masternode  Scrypta, potresti raggruppare le masternode rewards in set più grandi. Tuttavia è importante essere sicuri che il collateral relativo al masternode rimanga intaccato e che nella sezione *Coin Control*  sia settato su “*locked*” . 
+::: tip NOTE
+By managing a Scrypta Masternode via desktop wallet, you can group masternode rewards into larger sets. However, it is important to be sure that the collateral for the masternode remains intact and that in the *Coin Control* section it is set to "*locked*".
 
-Se il collateral del masternode viene speso accidentalmente, la txhash e l'output associati verranno distrutti, lasciando offline il masternode.
+If the masternode collateral is accidentally spent, the associated txhash and output will be destroyed leaving the masternode offline.
 
-È possibile bloccare e sbloccare manualmente le transazioni facendo clic con il pulsante destro del mouse e selezionando *Lock unspent* o *Unlock unspent*.
+You can lock and unlock transactions manually by right-clicking and selecting *Lock unspent* or *Unlock unspent*.
 
-Se stai cercando di sbloccare il collateral del Masternode per utilizzarlo e inviarlo, questo è un buon metodo per farlo.
+This is a good way to unlock the Masternode collateral in order to use and send it
 :::
 
 ## Split Threshold
-Con questa funzione la prima volta che il tuo indirizzo viene ricompensato per lo staking, si dividerà automaticamente in 2 input (UTXO) e continuerà a dividersi ad ogni ricompensa di blocco che trova fino a raggiungere il limite della soglia di split (**il valore predefinito è 2000 monete per input**). 
+With this function, the first time your address will be rewarded for staking, the amount will automatically be divided into 2 inputs (UTXO) and will continue to divide with each block reward it finds until it reaches the split threshold limit ( **the default is 2000 coins per input**).
 
-Dopo aver raggiunto questo limite, smetterà di dividersi in input più piccoli.
+After reaching this limit, it will stop dividing into smaller inputs.
 
-> Esempio: appena una UTXO raggiungerà 4000 Lyra e riceverà una ricompensa,esso verrà automaticamente diviso in 2 UTXO da 2000 LYRA circa.
+> Example: as soon as a UTXO reaches 4000 Lyra and receives a reward, it will automatically be divided into 2 UTXO of about 2000 LYRA.
 
-Puoi controllare il valore di soglia impostato sul tuo wallet dalla console di debug: *Tools > Debug Console* e inserendo il comando:
-```
+You can check the threshold value set on your wallet from the debug console: * Tools> Debug Console * and by entering the command:
+`` `
 getstakesplitthreshold
 ```
-Per modificare la soglia:
-inserisci il comando:
+To change the threshold:
+enter the command:
 ```
 setstakesplitthreshold <1 – 999999>
 ```
 
 ## Multisend Option
 
-Con la funzione *Multisend* puoi inviare automaticamente le tue ricompense Masternode e Staking a qualsiasi altro indirizzo LYRA nella percentuale che preferisci, fino al 100%.
+With the *Multisend* function you can automatically send your Masternode and Staking rewards to any other LYRA address in the percentage you prefer, up to 100%.
 
-Per attivare il MultiSend, vai su *Settings → MultiSend*. Apparirà una finestra di dialogo con le caselle di input da compilare.
+To activate MultiSend, go to *Settings → MultiSend*. A dialog box will appear with the input boxes to fill in.
 
-Come puoi vedere, prima devi scegliere di attivare la funzione per Masternode Rewards o Staking Rewards. Possono anche essere selezionate contemporaneamente. 
+First you have to choose to activate the function for Masternode Rewards or Staking Rewards. They can also be selected simultaneously.
 
-La casella *Percentuale* si riferisce alla percentuale della ricompensa selezionata che verrà inviata alla casella *Indirizzo* nella riga successiva. Dopo aver inserito le informazioni desiderate, fai clic su *Add - aggiungi*.
+The *Percentage* box refers to the percentage of the selected reward that will be sent to the * Address * box on the next line. After entering the desired information, click on *Add*.
 
-Puoi dividere le percentuali su più indirizzi diversi, assicurati in questo caso che la percentuale totale non superi il 100%.
+You can divide the percentages on several different addresses, in this case make sure that the total percentage does not exceed 100%.
 
-Una volta completato, fai clic su *Activate - attiva*. Ora controlla lo stato facendo clic su *View Multisend*. Se tutto è corretto, dovresti vedere che MultiSend è attivo-  *Active*.
+Once completed, click *Activate*. Now check the status by clicking on *View Multisend*. If everything is correct, you should see that MultiSend is *Active*.
 
-Se si desidera disabilitarlo, fare clic su *Deactivate*.
+If you want to disable it, click on *Deactivate*.
  
-::: warning ATTENZIONE
-Per rendere effettive queste modifiche, potrebbe essere necessario riavviare il wallet.
+::: warning WARNING
+For these changes to take effect, you may need to restart the wallet.
 :::
 
 ## Video Tutorial
 
-[Scrypta Wallet e Lyra Staking Tutorial](https://www.youtube.com/watch?v=bOlJ2xm_IcQ) di Tiziano Tridico
+[Scrypta Wallet and Lyra Staking Tutorial](https://www.youtube.com/watch?v=bOlJ2xm_IcQ) by Tiziano Tridico
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bOlJ2xm_IcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Ottimizzare lo Staking - Lyra Inputs Tutorial](https://www.youtube.com/watch?v=0e5mewkVqys&t=5s) di Tiziano Tridico
+[Optimize Staking - Lyra Inputs Tutorial](https://www.youtube.com/watch?v=0e5mewkVqys&t=5s) by Tiziano Tridico
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0e5mewkVqys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
