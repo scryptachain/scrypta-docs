@@ -1,12 +1,12 @@
 # Vanity Address
 
-Questo strumento serve a creare quelli che vengono chiamati "Vanity Address" ovvero degli indirizzi che iniziano come sempre con la lettera _L_ ma vengono seguiti da una parola definita dall'utente.
+This tool creates "Vanity Addresses", which are addresses that begin with the letter _L_ and are followed by a user-defined word.
 
-Essendo la generazione di indirizzi un'operazione assolutamente casuale, per generare un *vanity address* bisogna fare dei tentativi. La quantità di prove necessaria non è prevedibile, ma è semplicemente questione di tempo. E' chiaro che combinazioni più lunghe sono più difficili da generare.
+Since address generation is an entirely random operation, attempts must be made to generate a * vanity address *. The amount of evidence needed is not predictable: longer combinations are more difficult to generate.
 
-## Installazione
+## Installation
 
-Clonate la repository e installate tutte le dipendenze:
+Clone the repository and install all dependencies:
 
 ```
 git clone https://github.com/scryptachain/scrypta-vanity-address
@@ -14,25 +14,25 @@ cd scrypta-vanity-address
 npm install
 ```
 
-## Utilizzo
+## Use
 
-Dopo aver installato le dipendenze, usate lo strumento attraverso i seguenti comandi:
+After installing the dependencies, use the tool through the following commands:
 
 ```
 node index.js -v ParolaDaCercare -c NumeroDiCoreDaUsare
 ```
 
 
-La ricerca è, chiaramente, "case insensitive" per rendere il processo più semplice.
+Research is "case insensitive" to make the process easier.
 
-## Esempio
+## Example
 
-Un esempio concreto potrebbe essere il seguente:
+This is a possible example:
 ```
 node index.js -v yra -c 4
 ```
 
-Il risultato sarà qualcosa del tipo:
+The result will be something like:
 ```
 RUNNING PROCESS ON CORE #1
 RUNNING PROCESS ON CORE #2
@@ -67,7 +67,7 @@ RUNNING PROCESS ON CORE #4
   privkey: 'SqFi6DcEPAzhTcNEgCQetAPx8jcmXukvbSNcoAtTpZcAkPQE3KzM' }
 ```
 
-Ogni qualvolta  viene trovato un risultato che rispecchia le nostre preferenze, viene stampato l'indirizzo con la rispettiva chiave privata  e il processo ricomincia da zero. Come possiamo evincere dall'esempio, sono stati trovati 8 indirizzi diversi che iniziano con `Lyra`.
+Whenever a result is found that reflects our preferences, the address is printed with the respective private key and the process starts from scratch. In the example given, 8 different addresses were found that begin with `Lyra`.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEyNDYyNzAyMF19
 -->

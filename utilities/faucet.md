@@ -1,6 +1,6 @@
 # Faucet
 
-Questo tool, attualmente in via di sviluppo, permetterà di ottenere Lyra in modo semplice a fini di test. E' prevista la versione sia per testnet che per mainnet.
+This tool, currently under development, will allow Lyra to be obtained easily for testing purposes. The version is available for both testnet and mainnet.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY5Mzk2MzgyXX0=
 -->

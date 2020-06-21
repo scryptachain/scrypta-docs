@@ -1,11 +1,11 @@
 # IPFS
 
-Questo tool è l'implementazione di IPFS in NodeJS / Express  (https://ipfs.io/).
-Tramite una serie di chiamate POST e GET è possibile interagire direttamente via browser con IPFS. Queste chiamate sono in tutto e per tutto quelle presenti all'interno di IdANode, facciamo quindi riferimento a queste per un'analisi più dettagliata.
+This tool is the implementation of IPFS in NodeJS / Express (https://ipfs.io/).
+Through a series of POST and GET calls it is possible to interact directly via browser with IPFS. These calls are the same as those present within IdANode: therefore we refer to these for a more detailed analysis.
 
-## Installazione
+## Installation
 
-Clonate la repository e installate tutte le dipendenze:
+Clone the repository and install all dependencies:
 
 ```
 git clone https://github.com/scryptachain/scrypta-ipfs
@@ -13,17 +13,17 @@ cd scrypta-ipfs
 npm install
 ```
 
-Adesso è possibile avviare lo strumento con il comando:
+Now you can start the tool with the command:
 ```
 npm start
 ```
-Se tutto è stato installato correttamente, vedrete sulla vostra console qualcosa del genere:
+If everything has been installed correctly, you will see something like this on your console:
 
 ![npm start](../.vuepress/public/assets/ipfs/npmstart.png)
 
-Da questo momento è possibile utilizzare tutti gli endpoint già descritti su IdANode semplicemente puntando il vostro localhost alla porta 3000.
+From this moment it is possible to use all the endpoints already described on IdANode simply by pointing your localhost to port 3000.
 
-Ad esempio, usando curl potrete effettivamente vedere la versione di IPFS installata:
+For example, using curl you can actually see the version of IPFS installed:
 ```
 curl http://localhost:3000/info
 > 0.39.0

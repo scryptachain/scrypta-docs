@@ -1,10 +1,10 @@
 # Card Generator
 
-Questo strumento serve a generare un file `.csv` al cui interno sono presenti -n- wallet in formato cryptato (.sid).
+This tool is used to generate a `.csv` file inside which there are -n- wallets in encrypted format (.sid).
 
-## Installazione
+## Installation
 
-Clonate la repository e installate tutte le dipendenze attraverso i seguenti comandi:
+Clone the repository and install all dependencies through the following commands:
 
 ```
 git clone https://github.com/scryptachain/scrypta-card-generator
@@ -12,20 +12,20 @@ cd scrypta-card-generator
 npm install
 ```
 
-## Utilizzo
+## Use
 
-Dopo aver installato le dipendenze usate lo strumento in questo modo:
+After installing the dependencies, use the tool like this:
 
 ```
 node index.js -g=2
 ```
-Dove il parametro **g** è il numero di wallet da creare.
+Where the parameter ** g ** is the number of wallets to be created.
 
-Il risultato dell'operazione sarà qualcosa del tipo:
+The result of the operation will look like this:
 ```
 The CSV file was written successfully with 2 sid.
 ```
-Il file con il risultato verrà salvato nella stessa cartella con il nome di `out.csv`. Apritelo con il vostro editor preferito e vedrete un risultato simile al seguente:
+The result file will be saved in the same folder with the name of `out.csv`. Open it with your favorite editor and you will see a result similar to the following:
 ```
 Key,Password,SID
 0,6fec35c621d1757d,LhtgMq5i33TX6etVWbG5SsUA96Xtr2ave5:bc99fe62e3c52edab89608b3d8a7d9af5bfd7a46dac4749a84df604a147e4ed0d29189be46bb57e329e544a35ac645a3c99b03335b61f83b9571e1e890d7d865da625967d49964c0692c5c72bbf5a4159f7d230c30db6c188e242ff9bf2d5b9d395d0467c0b1051048d1f2ecd1a2a68a1d28f36200d6c5c9f22fbed5d774101a6c86b96fd0aabc3fcd83e8b3f2a14e1452daba5bb0602b3cd9a2c15fb9c6cf873b86e91dec3402f4214375e15be4b2cf489f95da5e9b0d52b0e50dc8ef6db9dd
