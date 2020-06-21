@@ -69,255 +69,254 @@ For further information on the data directory, you can consult the following sec
 
 ### Synchronization with the Scrypta blockchain
 
-Dopo che il processo di avvio del wallet si è concluso, il client si collegherà al network peer-to peer di Scrypta per avviare la sincronizzazione della blockchain scaricandone una copia aggiornata che verrà salvata nella cartella di sistema che avete definito in precedenza.
+After the startup process of the wallet is completed, the client will connect to the Scrypta peer-to peer network to start the synchronization of the blockchain by downloading an updated copy that will be saved in the previously defined system folder.
 
-Sulla parte bassa del software troverete una barra che indica la quantità di dati rimanente per completare il sync.
+At the bottom of the software you will find a bar indicating the amount of data left to complete the sync.
 ![qt_wallet](../.vuepress/public/assets/qt_wallet/sync.png)
-Quando quella barra sarà completata, il wallet sarà completamente sincronizzato.
+The wallet will be fully synchronized upon completion of the bar.
 
-Nella parte bassa a destra invece troverete questi simboli
+In the lower right part you will find these symbols
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/status.png)
-<br>che indicano rispettivamente che:
-- il wallet non e' encrypted
-- il wallet e' connesso agli altri peers della rete
-- il wallet sta syncando con la blockchain.
+<br>which respectively indicate that:
+- the wallet is not encrypted
+- the wallet is connected to the other peers of the network
+- the wallet is syncing with the blockchain.
 
-Al fine di velocizzare il sync della blockchain, possiamo utilizzare il **bootstrap**, che introduciamo adesso definendolo una copia aggiornata della blockchain ad un tempo piu' recente.
-<br>Definzioni e dettagli piu' approfonditi sui file di bootstrap sono forniti nell'[apposita sezione](../scrypta-full-node/setup.html#bootstrap).
+In order to speed up the sync of the blockchain, we can use the ** bootstrap ** (a recently updated copy of the blockchain)
+<br> Definitions and more in-depth details on the bootstrap files are provided in the [appropriate section](../scrypta-full-node/setup.html#bootstrap).
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"><br>
-Poichè verranno scaricati parecchi dati, assicuratevi di avere sufficiente spazio disponibile sul vostro hard-disk per salvare l'intera copia della blockchain.
-<br>A seconda della velocità della connessione, per completare la sincronizzazione potrebbe volerci molto tempo.
+Since a lot of data will be downloaded, make sure you have enough space available on your hard disk to save the entire copy of the blockchain.
+<br> The timing of completion of synchronization depends on the connection speed.
 :::
 
-Una volta che la sincronizzazione è stata completata, indicata dal simbolo nell'angolo in basso a destra, il vostro client è connesso alla blockchain ed è pronto sia per scambiare transazioni con altri client desktop/app della rete Scrypta sia per permetterci di effettuare tutte le operazioni sopra riportate.
+Once the synchronization has been completed, as indicated by the symbol in the lower right corner, your client is connected to the blockchain and is ready to exchange transactions with other desktop/app clients of the Scrypta network and to carry out all the above operations indicated.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/status.png)
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"><br>
-Nel caso in cui il wallet non riesce a sincronizzare in automatico e a collegarsi alla lista dei nodi, è possibile forzare la sincronizzazione aggiungendo manualmente una lista di nodi al file **lyra.conf** che troverete nella cartella di sistema.
+In the event that the wallet cannot connect to the list of nodes and synchronize, it will be possible to force it by manually adding a list of nodes in the **lyra.conf** file located in the system folder.
 :::
 
-Per ottenere una lista aggiornata di nodi, andare nel blockexplorer e cliccare su ["node list":](https://chainz.cryptoid.info/lyra/#!network).
-<br>Copiare il contenuto della tabella e incollarlo nel file **lyra.conf**. 
-Quindi salvate il file e riavviate il wallet. La sincronizzazione dovrebbe adesso avviarsi senza ulteriori problemi.
+To get an updated list of nodes, go to the blockexplorer and click on ["node list":](https://chainz.cryptoid.info/lyra/#!network).
+<br>Copy the contents of the table and paste it into the **lyra.conf** file.
+Save the file and restart the wallet. Synchronization should now start without further problems.
 
-## Panoramica dei menu
+## Menu overview
 
-### Menu principale
-Questa è la barra del menù per le principali operazioni del wallet, come descritto di seguito:
+### Main menu
+This is the menu bar for the main wallet operations, as described below:
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/menu.png)
-- **Overview:** la dashboard principale con il balance, le transazioni recenti e la funzione di **obfuscation**, che verrà approfondita [nelle sezioni successive](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+- **Overview:** the main dashboard with balance, recent transactions and the **obfuscation** function, which will be explored in the [following sections](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/overview.png)
 <br>
 
-- **Send:** principali funzioni per l'invio di Lyra
+- **Send:** main functions for sending Lyra.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/send.png)
 <br>
 
-- **Receive:** funzioni avanzate per la ricezione di Lyra e creazione di pagamenti.
+- **Receive:** advanced functions for receiving Lyra and organising payments.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/receive.png)
 <br>
 
-- **Transactions:** il registro completo di tutte le transazioni in entrata e uscita del vostro wallet, comprese eventuali rewards da masternodes e staking.
+- **Transactions:** the complete log of all incoming and outgoing transactions of your wallet, including any rewards from masternodes and staking.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/transactions.png)
 <br>
 
-- **Masternodes:** pannello di controllo dei vostri masternodes e dell'intero network
+- **Masternodes:** control panel of your masternodes and the entire network.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/masternodes.png)
 <br>
 
-### Barra dei menu
-Attraverso i menu' presenti sulla barra di sistema del software, si hanno altre funzioni, più tecniche e dettagliate, configurazioni e settings vari.
+### Menu bar
+Through the menus on the software system bar, you will access other more technical and detailed functions, various configurations and settings.
 
 - **Menu FILE**
-<br>Attraverso il menu **FILE** è possibile accedere a funzioni come creazione di nuovi indirizzi, rubrica degli indirizzi attuali, firma e verifica dei messaggi, ma soprattutto il backup del wallet.
+<br> Through the ** FILE ** menu you can access functions such as creating new addresses, address book of current addresses, signing and verifying messages and, above all, backing up the wallet.
 <br>
 
 - **Menu SETTINGS**
-<br>Attraverso il menu **SETTINGS** si raggiungono le funzioni di encryption del wallet (che spiegheremo di seguito), di blocco e sblocco di un portfaoglio encrypted, il cambio della password di encryption e le funzioni multisend, oltre alle opzioni di sistema del wallet.
-<br>**Si raccomanda di modificare solo ciò di cui si conoscono gli effetti. Ogni errore potrebbe comptomettere irrimediabilmente i vostri fondi.**
+<br>Through the ** SETTINGS ** menu you can access the wallet encryption functions (which we will explain below), lock and unlock an encrypted wallet, change the encryption password, multisend functions and wallet system options.
+<br> **Caution is advised in making changes. Any mistake could irreparably compromise your funds.**
 <br>
 
 - **Menu TOOLS**
-<br>Attraverso il menu **TOOLS** si raggiungono funzioni di monitoraggio del network, l'importantissima [***console di debug***](../scrypta-full-node/setup.html#debug-console) (il terminale interno del vostro wallet Scrypta da cui è possibile inviare comandi per interrogare direttamente il network), e altre opzioni che vi permettono di raggiungere facilmente i file di sistema *.conf* del wallet.
+<br>Through the ** TOOLS ** menu you can access the network monitoring functions, the very important [***debug console***](../scrypta-full-node/setup.html#debug-console) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
 
 
 ## Wallet Encryption
 
-L'encryption del wallet e' una delle funzioni principali e più importanti in quanto protegge i nostri fondi (o i dati contenuti in blockchain) da usi e accessi non autorizzati.
-<br>in linea di principio, tali suggerimenti e procedure sono validi per la gran parte di altre cryptocurrency.
+The encryption of the wallet is one of the main functions as it protects the funds (or the data contained in the blockchain) from unauthorized use and access.
+<br> In principle, these suggestions and procedures are valid for most other cryptocurrency.
 
 
-La funzione **"Encrypt Wallet"**, raggiungibile dal menu **SETTINGS**, aggiunge un livello aggiuntivo di sicurezza al nostro wallet, proteggendo i fondi da invii fraudolenti o errati, oppure da altre operazioni che potrebbero modificare la proprietà dei fondi contenuti nel wallet (attraverso il [dump delle chiavi private](../scrypta-full-node/setup.html#dump-e-importazione-private-keys)) o altre operazioni di sicurezza.
+The **"Encrypt Wallet"** function, reachable from the **SETTINGS** menu, adds an additional level of security to the wallet, protecting the funds from fraudulent or incorrect submissions, or from other operations that could modify the ownership of the funds contained in the wallet (through the [dump of private keys](../scrypta-full-node/setup.html#dump-e-importazione-private-keys)) or other security operations.
 
-L'encryption del wallet e' un'operazione molto semplice da effettuare, tuttavia bisogna fare molta attenzione.
-<br>Per procedere all'encryption, dal menu **SETTINGS** > **ENCRYPT WALLET** si aprirà una finestra come mostrato qui di seguito:
+The encryption of the wallet is a very simple operation to carry out, however you have to be very careful.
+<br> To proceed with the encryption, from the **SETTINGS** > **ENCRYPT WALLET** menu a window will open as shown below:
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/encrypt.png)
 <br>
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"><br>
-Per maggiore sicurezza scegliete una password forte, con dieci o piu' caratteri, meglio se casuali.
-Assicuratevi di ricordare la password e di conservarla SEMPRE in un luogo sicuro.
+For greater security choose a strong password, with ten or more characters, preferably random.
+Make sure you remember your password and ALWAYS keep it in a safe place.
 :::
 
-Una volta scelta la password, in modo che sia difficile da corrompere, procedete con l'encryption premendo **OK**.
+Once the password has been chosen, proceed with the encryption by pressing **OK**.
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
-**ATTENZIONE:** Se dimenticate o smarrite la password dopo l'encryption, perderete l'acesso a tutti i vostri fondi.
+**ATTENZIONE:** If you forget or lose your password after the encryption, you will lose access to all your funds.
 :::
 
-Al termine dell'operazione di encryption, il software si chiuderà.
-<br>Al successivo riavvio, il wallet presenterà stavolta il simbolo di un lucchetto chiuso nell'angolo in basso a destra.
+The wallet app will close at the end of the encryption operation.
+<br> On the next reboot, the wallet will display a closed padlock symbol in the lower right corner.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/lock.png)
-<br>Ciò indica che per effettuare operazioni come lo staking, l'invio dei fondi, il dump delle chiavi private o altre funzioni principali, dovete sempe procedere prima con l'unlock del wallet.
+<br>This indicates that to perform operations such as staking, sending funds, dumping private keys or other main functions, you must simply proceed with the unlocking of the wallet first.
 
 ## Lock/Unlock wallet
-Per sbloccare il wallet, bisogna inserire la passphrase che abbiamo usato per effettuare l'encryption.
-Dal menu **SETTINGS** scegliamo **UNLOCK WALLET**, si aprirà quindi la finestra come da immagine:
+To unlock the wallet you need to enter the passphrase used to perform the encryption.
+From the **SETTINGS** menu, selecting **UNLOCK WALLET** the window will open as shown in the image:
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/unlock.png)
 
-Inserire la passphrase e premere **OK**.
-<br>Flaggando l'opzione *"For anonymization and staking only"*, il wallet verrà sbloccato solo per lo staking e il processo di [**obfuscation**](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
-A questo punto il vostro wallet e' sbloccato per tutte le operazioni,e tale stato è indicato dal lucchetto verde nell'angolo in basso.
+Enter the passphrase and press **OK**.
+<br>By ticking the option *"For anonymization and staking only"* the wallet will be unlocked only for the staking and the process of [**obfuscation**](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+At this point the wallet is unlocked for all operations. This status is indicated by the green padlock in the lower corner.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/unlocked.png)
 
 ## Wallet Backup
-Dopo aver completato il processo di encryption, procediamo con l'effettuare una copia di backup del nostro **wallet.dat** appena cryptato, il file che contiene tutte le informazioni del nostro portafoglio digitale e tutti gli indirizzi con le rispettive chiavi private.
-<br>Per procedere col backup, dal menu **"FILE"** andate su **"BACKUP WALLET"**, scegliete un nome e il percorso su cui salvare il backup del file wallet.dat, in un luogo sicuro.
+Once the encryption process is complete, we proceed with making a backup copy of our **wallet.dat**, the file that contains all the information of our digital wallet and all the addresses with the respective private keys.
+<br> To proceed with the backup, from the menu **"FILE"** select **"BACKUP WALLET"** and choose a name and the path on which to save the backup of the wallet.dat file in a safe place.
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"><br>
-**ATTENZIONE:** Questa copia di backup vi permetterà di recuperare i vostri fondi semplicemente importando il file wallet.dat su un altro client Scrypta, per cui custoditelo con estrema attenzione e cautela.
+**ATTENTION:** This backup copy will allow you to recover your funds simply by importing the wallet.dat file on another Scrypta client, so keep it with extreme care and caution.
 :::
 
 ## Debug Console
 
-La debug console del QT wallet di Scrypta è un utilissimo strumento dal quale si possono manualmente inviare i comandi per compiere tutte le operazioni disponibili all'interno del portafoglio.
-Accessibile dal menu **"STRUMENTI"** > **"CONSOLE DI DEBUG"**, si presenta come una finestra di terminale.
+The debug console of the Scrypta QT wallet is a very useful tool from which you can manually send commands to perform all the operations available within the portfolio.
+Accessible from the menu **"TOOLS"** > **"DEBUG CONSOLE"**, it looks like a terminal window.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/console.png)
 
-Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](../scrypta-full-node/comandi.md).
+Entering the ** help ** command will open the complete list of commands, a detailed explanation of which is available in the [specific section.](../scrypta-full-node/comandi.md).
 
-Per una spiegazione esaustiva di tutti i comandi consultate la sezione:
+For an exhaustive explanation of all the commands, consult the section:
 
-[Lista dei Comandi](comandi.md)
+[Command List](comandi.md)
 
-<br>Attraverso la *debug console* è possibile interrogare direttamente la blockchain sullo stato del network, di una transazione, dei masternodes, oppure si possono creare transazioni manuali, settare impostazioni operative o di sicurezza, generare nuovi indirizzi, ma soprattutto gestire le chiavi private e il wallet stesso.
+<br>Through the * debug console * it is possible to directly query the blockchain on the status of the network, a transaction, masternodes, or you can create manual transactions, set operational or security settings, generate new addresses and, above all, manage private keys and the wallet itself.
 
-Vediamo di seguito le principali operazioni sulle chiavi private.
+We see below the main operations on private keys.
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
-**ATTENZIONE:** Si raccomanda sempre la massima prudenza quando si effettuano operazioni di qualsiasi tipo con le proprie chiavi private.
+**ATTENTION:** Maximum caution is always recommended when carrying out operations with your private keys.
 :::
 
-## Dump e importazione chiavi private
-Queste sono fra le più importanti operazioni che è possibile effettuare nel proprio wallet.
-<br>Per essere realmente in possesso dei fondi presenti in un indirizzo Lyra o in un wallet, dobbiamo avere la proprietà delle corrispondenti chiavi private.
-<br>Ogni volta che create un nuovo indirizzo pubblico in un wallet, viene generata anche la corrispondente chave privata.
-Tuttavia tale chiave privata non viene mai esposta dal client per ragioni di sicurezza, e bisogna esportarle (fare il "dump") attraverso la debug console.
+## Dump and import private keys
+These are among the most important operations that you can perform in your wallet.
+<br> To own the funds present in a Lyra address or in a wallet, it is necessary to have ownership of the corresponding private keys.
+<br> Each time a new public address is created in a wallet, the corresponding private key is generated.
+However, this private key is never exposed by the client for security reasons and must be exported (dumped) through the debug console.
 
-Importando tali chiavi private in un nuovo wallet su altro dispositivo, avrà infatti la conseguenza di rendere accessibili i fondi in esso contenuti, che pertanto saranno di proprietà esclusiva di colui (o coloro) che detengono le chiavi private di quell'indirizzo specifico.
-<br>Per effettuare questa operazione e le altre riportate in questa sezione della guida, è necessario che il wallet sia [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
+By importing these private keys into a new wallet on another device, the funds contained in it will be made accessible, which therefore will be the exclusive property of the one (or those) who hold the private keys of that specific address.
+<br> To do this and the others listed in this section of the guide, the wallet must be [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
-**ATTENZIONE:** Si raccomanda sempre la massima prudenza quando si espongono le proprie chiavi private.
-<br>Renderle accessibili a terzi, da loro accesso ai vostri fondi.
+** ATTENTION: ** Maximum caution is always recommended when exposing your private keys.
+<br> Making them accessible to third parties means giving them access to your funds.
 :::
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"><br>
-Si consiglia di effettuare sempre backup ridondanti sulle chiavi private, nonchè di conservarle in un luogo a cui vi è sempre possibile accedere.
-<br>Lo smarrimento delle chiavi private comporta l'inaccessibilità da parte di chiunque, voi compresi, ai vostri fondi.
+We recommend that you always make redundant backups on private keys, as well as keep them in a place that you can always access.
+<br> The loss of private keys implies the inaccessibility of anyone, including you, to your funds.
 :::
 
-### Dump delle chiavi private
+### Dump private keys
 
-Per effettuare il dump di una chiave privata per uno specifico indirizzo è sufficiente aprire la debug console come spiegato in precedenza.
-<br>Il comando per esportare la chiave privata di un indirizzo è `**dumpprivkey**`.
-<br>Attraverso il comando **`dumpprivkey "lyraaddress"`** ci viene  rivelata la chiave privata corrispondente all'indirizzo "lyraaddress".
+To dump a private key to a specific address, you must first open the debug console.
+<br> The command to export the private key of an address is `**dumpprivkey**`.
+<br> Through the command **`dumpprivkey "lyraaddress"`** we are revealed the private key corresponding to the address "lyraaddress".
 
 
 ::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"><br>
-Ogni indirizzo ha la propria chiave privata, se conservate i vostri fondi in indirizzi diversi, è fondamentale che facciate il dump per ciascuno degli indirizzi sui cui sono presenti dei fondi.
+Each address has its own private key: if you store your funds in different addresses it is essential that you do the dump for each of the addresses on which there are funds.
 :::
 
 ::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"><br>
-L'indirizzo per cui volete esportare la chiave privata deve essere di vostra proprietà,per verificarlo basta digitare
-**`validateaddress "lyraaddress"`**, e il sistema vi restituirà delle info su quell'indirizzo.
+The address for which you want to export the private key must be yours. Typing **`validateaddress "lyraaddress"`** the system will return you info on that address.
 :::
 
-Una volta che ci viene restituita la chiave privata, è possibile importarla in qualsiasi wallet Scrypta per avere accesso ai fondi in essa contenuti.
-Non è ovviamente possibile esportare chiavi privte per indirizzi di cui non siamo in possesso.
+Once the private key is revealed to us, it can be imported into any Scrypta wallet to have access to the funds linked to it.
+It is not possible to export private keys to addresses that we do not have.
 
-### Import di una chiave privata
-Se siamo in possesso di una chiave privata e vogliamo procedere alla sua importazione, è sufficiente aprire la debug console come spiegato in precedenza e dare il comando
-**`importprivkey "lyraprivkey"`** che scannerizza la blokchchain per quello specifico indirizzo, visualizza e rende disponibile il balance dell'indirizzo corrispondente al possessore della chiave privata.
+### Import of a private key
+If we have a private key and want to import it, simply open the debug console and give the command
+**`importprivkey "lyraprivkey "`** which scans the blokchchain for that specific address, displays and makes available the balance of the address corresponding to the owner of the private key.
 
-### Dump dell'intero wallet
-Attraverso la funzione `**dump wallet**` si effettua l'export completo di tutte le chiavi private per tutti gli indirizzi (siano essi già stati usati o meno) generati dal vostro wallet e salvati in formato cryptato all'interno del file ***wallet.dat***.
+### Dump the entire wallet
+Through the `**dump wallet**` function, complete export of all private keys for all the addresses generated by your wallet (whether they have already been used or not) saved in encrypted format within the file ** * wallet.dat ***.
 
-A tal proposito è bene fare una precisazione: l'operazione di `**dump wallet**` presenta delle differenze con l'operazione descritta in precedenza nella sezione [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), in quanto il backup salva la copia cryptata del file wallet.dat.
-<br>Ripristinando il file ***wallet.dat*** avremo la possibilità di importare e visualizzare il contenuto dell'intero wallet, ma non potremo in alcun modo accedere ai fondi in esso contenuti senza avere la password di encryption per decifrare il portafoglio.
-<br>Con il comando `**dump wallet**` andiamo ad esportare un file di testo **non cryptato** che contiene la lista completa di tutti gli indirizzi creati dal wallet con tutte le corrispondenti chiavi private, pertanto il possessore di quel file sarà in possesso di tutti i fondi in esso contenuti.
-<br>Ecco perchè, prima di procedere, era importante spiegare la differenza che c'è tra i due tipi di backup, così da poter comprendere quando bisogna utilizzare una modalità piuttosto che un'altra.
+In this regard it is good to make a clarification: the `**dump wallet**` operation has some differences with the operation described previously in the section [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), as the backup saves the encrypted copy of the wallet.dat file.
+<br> By restoring the file ***wallet.dat*** we will have the possibility to import and view the contents of the entire wallet but we will not be able in any way to access the funds contained in it without knowing the encryption password to decipher the wallet .
+<br> With the command `**dump wallet**` you will export a text file **not encrypted** containing the complete list of all the addresses created by the wallet with all the corresponding private keys. Consequently, the owner of that file will be in possession of all the funds contained in it.
+<br> This is why, before proceeding, it was important to explain the difference between the two types of backup, so that we can understand when one mode should be used rather than another.
 
-#### Per effettuare il "dump wallet":
-Per procedere all'export di tutte le chiavi private attraverso il comando `**dump wallet**`, è sufficiente aprire la debug console come spiegato in precedenza e dare il comando:
+#### To perform the "dump wallet":
+To proceed with the export of all private keys through the `**dump wallet**` command, simply open the debug console and give the command:
 <br>**`dumpwallet "path/to/file/dump.txt"`**
  
- dove "path/to/file" è il percorso dove vogliamo che il sistema salvi il nostro file, e "dump.txt" è il nome di esempio del nostro file, contenente tutte le chiavi private.
+ dwhere "path / to / file" is the path where we want the system to save our file and "dump.txt" is the example name of our file, containing all the private keys.
 
- Aprendo il file ***dump.txt*** appena salvato, vedremo qualcosa di simile a quanto riportato in figura: una parte iniziale con un report su quando il file e' stato esportato e da quale wallet, e tutta la lista delle chiavi private (che iniziano per S) e dei rispettivi indirizzi.
+  By opening the newly saved ***dump.txt*** file, we will see something similar to what is shown in the figure: an initial part with a report on when the file was exported and from which wallet, and the whole list of keys private (starting with S) and their respective addresses.
  <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/dump.png)
 
  ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
-**ATTENZIONE:** Raccomandiamo ancora una volta di custodire questo file con la massima sicurezza ed accedervi solo in caso di estrema necessità, in quanto le informazioni in esso contenute forniscono l'accesso **COMPLETO** ai vostri fondi.
+**ATTENTION:** We recommend once again to keep this file with maximum security and to access it only in case of extreme necessity, as the information it contains provides **FULL** access to your funds.
 :::
 
-I dati contenuti in quel file vengono generati quando si avvia il wallet per la sua prima volta, assieme al file wallet.dat.
-<br>Al primo avvio, il sistema genera 1000 indirizzi casuali e le corrispondenti chiavi private, e le salva per i futuri utilizzi.
-<br>Ogni volta che richiediamo un nuovo indirizzo con **"getnewaddress"**, il sistema attinge a quella lista di indirizzi pre-generati per fornirci un indirizzo da usare.
+The data in that file is generated when you start the wallet for the first time, along with the wallet.dat file.
+<br> When first started, the system generates 1000 random addresses and corresponding private keys and saves them for future use.
+<br> Whenever we request a new address with **"getnewaddress"**, the system draws on that list of pre-generated addresses to provide us with an address to use.
 
 
 ### Bootstrap
-Il bootstrap non e' altro che un file (o insieme di files) contenente una "fotografia" aggiornata dello stato della blockchain in un dato momento, una copia esatta del public ledger da usare per differenti scopi come punto di ripristino.
-<br><br>Il bootstrap può esserci utile a causa di una chiusura errata del wallet, che al successivo avvio risulta in una copia corrotta della blockchain.
-<br>Sostituire i file corrotti con un bootstrap, permette un avvio piu' celere del wallet, in quanto il software non deve riscaricare l'intera copia della blockchain.
-<br>A maggior ragione, quando lanciamo un wallet per la prima volta, oppure installiamo una vps che necessita di un sync completo, usare il boostrap assicura un notevole risparmio di tempo.
+The bootstrap is a file (or set of files) containing an updated "photograph" of the state of the blockchain at any given moment, an exact copy of the public ledger to be used as a restore point.
+<br> <br> The bootstrap can be useful to us due to an incorrect closure of the wallet, which at the next startup results in a corrupt copy of the blockchain.
+<br> Replacing corrupt files with a bootstrap allows a faster boot of the wallet, as the software does not have to re-download the entire copy of the blockchain.
+<br> When we launch a wallet for the first time, or install a vps that needs complete sync, using boostrap ensures a significant time saving.
 
-Il bootstrap è solitamente composto da:
-- Cartella **"Blocks"**
-- Cartella **"Chainstate"**
+The bootstrap is usually composed of:
+- Folder **"Blocks"**
+- Folder **"Chainstate"**
 - File **"peers.dat"**
 
-Per salvare una copia di bootstrap da riutilizzare in un secondo momento basta salvare quanto indicato sopra in un file zip e salvarlo per successivi utilizzi, meglio se online.
-Si raccomanda di effettuare il salvataggio del bootstrap quando il wallet è chiuso, così da preservare l'integrità dei files e delle cartelle.
+To save a copy of bootstrap to be reused later, it is necessary to save the above in a zip file, better if online.
+It is recommended to save the bootstrap when the wallet is closed, so as to preserve the integrity of the files and folders.
 
-Una volta salvato, se dovese essere necessario utilizzarlo, basta copiare ll contenuto del bootstrap all'interno della cartella di sistema ***.lyra*** nel vostro sistema operativo o VPS.
-Al successivo riavvio, il wallet riprenderà la sincronizzazione dall'ultimo blocco salvato nel vostro bootstrap.
+Once saved, if it should be necessary to use it, just copy the contents of the bootstrap into the system folder ***.lyra*** in your operating system or VPS.
+On the next reboot, the wallet will resume synchronization from the last block saved in your bootstrap.
 
-## Funzionalità aggiuntive
-Oltre alle funzionalità che coinvolgono il wallet e i fondi in eso contenuti, ci sono altri strumenti che è possibile usare all'interno del wallet, e operazioni aggiuntive che verranno illustrate di seguito.
+## Additional features
+There are other tools that can be used within the wallet, as well as additional operations that will be explained below.
 
 ### Blockexplorer
-Attraverso il menu **"TOOLS"**, cliccando su **"BLOCKCHAIN EXPLORER"** si accede ad un blockexplorer interno attraverso cui e' possibile effettuare alcune operazioni di controllo sui dati, sugli indirizzi e sulle tramsazioni. 
-Tuttavia il blockexplorer interno del wallet manca di alcune importanti funzinalità, pertanto si consiglia di usarlo solo nel caso in cui non sia possibile collegarsi al blockexplorer ufficiale.
+Through the **"TOOLS"** menu, clicking on **"BLOCKCHAIN EXPLORER"** you access a blockexplorer inside the wallet through which it is possible to carry out some operations of control on data, addresses and transactions.
+The internal blockexplorer of the wallet lacks some important features and therefore it is recommended to use it only in the event that it is not possible to connect to the official blockexplorer.
 
 ### Obfuscation protocol
-Questa funzione, accessibile dalla sezione **"OVERVIEW"** del wallet, è anche chiamata **"Obfuscation"**, e si basa su un protocollo di anonimizzazione di una parte dei fondi contenuti all'interno del wallet.
+This function, accessible from the ** "OVERVIEW" ** section of the wallet, is also called ** "Obfuscation" **. It is based on an anonymization protocol of a part of the funds contained within the wallet.
  <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/obfuscation.png)
 
- Attraverso il pulsante **"Start Obfuscation"**, si avvia un processo di anonimizzazione delle coin che, una volta completato, rende difficoltoso individuare l'origine dei fondi per cui si è completato il processo, aumentando di fatto la privacy delle transazioni.
- <br>Dalle immagini successive possiamo vedere il processo quando è in stato **"enabled"**, e le conseguenze sui fondi coinvolti nel processo di obfuscation.
+ Clicking the **"Start Obfuscation"** button starts an anonymization process for the coins which, once completed, makes it difficult to identify the origin of the funds for which the process was completed, thus increasing the privacy of the transactions.
+  <br> From the following images we can see the process when it is in **enabled state** and the consequences on the funds involved in the obfuscation process.
 
   <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/obfuscation_start.png)
 
-Non appena il processo di obfuscation viene abilitato, il wallet invia la quantità desiderata al network dei masternodes, che elabora la richiesta e restituisce indietro immediatamente lo stesso corrispettivo, ma "mixato" e frazionato in denominazioni di importo minore. 
+As soon as the obfuscation process is enabled, the wallet sends the desired quantity of coins to the network of masternodes, where the request is processed and the identical but "mixed" consideration is returned and divided into denominations of a smaller amount.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/obfuscation_going.png)
-Come si può vedere dall'immagine, è come se i fondi nel nostro wallet sono stati ricevuti da X indirizzi diversi, come se fossero stati "scambiati" con altri proprietari.
-<br>Utilizzare regolarmente l'obfuscation su tutti i propri fondi rende di fatto impossibile tracciare le operazioni effettuate, aumentando sensibilmente il livello di privacy per le proprie transazioni.
-<br>La controindicazione è che l'obfuscation penalizza il processo di staking, in quanto il proprio stake amount viene frazionato in importi talmente piccoli da rendere infruttuoso il processo di staking stesso, pertanto si raccomanda di utilizzare l'obfuscation protocol solo se davvero necessario.
+As you can see from the image, it is as if the funds in our wallet have been received by X different addresses and "exchanged" with other owners.
+<br> Regularly using obfuscation on all your funds makes it impossible to trace the operations carried out, significantly increasing the level of privacy for your transactions.
+<br> The contraindication is that obfuscation penalizes the staking process, in that its stake amount is divided into amounts so small as to make the staking process fruitless. Therefore it is recommended to use the obfuscation protocol only if really necessary.
 
 ### Instant Send
-Quando parliamo di **Instant Send** (o **SwiftTX**) non facciamo riferimento ad una funzione da abilitare o disabilitare, ma alla capacità del network Scrypta di inviare e ricevere transazioni anche in assenza di conferme per quel blocco da parte del network.
-<br>Tale funzionalità è attiva di default e funziona per importi non superiori a 1000 lyra per transazione.
-<br><br>Ciò significa che, una volta completato l'invio, l'importo sarà gia' visibile nel wallet del ricevente, sotto la voce "unconfirmed", sebbene il blocco in cui è inclusa la transazione non sia ancora stato minato.
-<br>Ciò permette di ridurre notevolmente i tempi di attesa quando si lavora con transazioni di un determinato importo.
-<br>Tuttavia, in caso di utilizzi legati a metodi di pagamento, si consiglia di attendere sempre che la transazione sia effettivamente confermata dalla blockchain e inclusa in uno dei blocchi successivi all'invio.
+When we talk about **Instant Send** (or **SwiftTX**) we refer to the ability of the Scrypta network to send and receive transactions even in the absence of confirmations from the network.
+<br> This feature is active by default and works for amounts not exceeding 1000 lyra per transaction.
+<br> <br> This means that once the submission is complete, the amount will already be visible in the recipient's wallet under the heading "unconfirmed", although the block in which the transaction is included has not yet been mined.
+<br> This significantly reduces waiting times when working with transactions up to a certain amount.
+<br> However, in the case of uses related to payment methods, it is recommended to always wait for the transaction to be effectively confirmed by the blockchain and included in one of the blocks after sending.
