@@ -1,22 +1,24 @@
-# La Blockchain di Scrypta
+# Scrypta Blockchain
 
 ## LYRA 
-Lo scambio e l’inserimento dei dati nell’infrastruttura di Scrypta avviene grazie alle transazioni operate in LYRA. LYRA è un “digital asset” e non un “token” poichè dispone di una blockchain proprietaria detta Scrypta. 
+The exchange and insertion of data in the Scrypta infrastructure takes place thanks to the transactions made in LYRA. LYRA is a "digital asset" and not a "token" as it has a proprietary blockchain called Scrypta.
 
-Il costo operativo per l’inserimento dei dati nella blockchain di Scrypta è di millesimi di LYRA ad operazione. Questo permette la costruzione di infrastrutture complesse su una base solida ma al contempo accessibile e dai costi contenuti.
+The operating cost for inserting data in the Scrypta blockchain is equal to thousandths of LYRA per operation. This allows the construction of complex infrastructures on a solid but at the same time accessible and low-cost basis.
 
 ## PoS (Proof-of-Stake) 
-L'algoritmo di consenso Proof-of-Stake utilizzato da Scrypta agisce per convalidare le transazioni e ottenere il consenso distribuito. Con il Proof of Stake, il creatore di un nuovo blocco viene scelto in modo deterministico a seconda della sua ‘ricchezza’, definita come ‘stake’. 
+The Proof-of-Stake algorithm used by Scrypta acts to validate transactions and obtain distributed consensus. With the Proof of Stake, the creator of a new block is chosen in a deterministic way according to its 'wealth', defined as 'stake'. 
 
-L'algoritmo di consenso di Scrypta seleziona un validatore ogni 60 secondi e assegna a quel validatore il diritto di creare un singolo blocco. La catena di blocchi si basa quindi su nodi incentivati a mantenere una partecipazione economica nella rete. In altre parole, significa che i “portafogli digitali” aperti alla rete, coniano nuove monete e assicurano un reddito passivo. 
+The Scrypta consensus algorithm selects a validator every 60 seconds and assigns it the right to create a single block. The blockchain is therefore based on incentive nodes to maintain an "economic participation" in the network. In other words, it means that the "digital wallet" open to the network, generate new coins and ensure a passive income. 
 
-Gli sviluppatori e la comunità di Scrypta sfruttano il Proof of Stake per una forma di consenso distribuita più "verde" e quindi meno costosa. Grazie al sistema PoS, i validatori non devono usare la loro potenza di calcolo perché gli unici fattori che influenzano le loro possibilità di essere ricompensati sono il numero delle loro monete “bloccate” e la sana competizione fra stakeholder.
+The developers and the Scrypta community use the Proof of Stake for a more "green" and therefore less expensive form of accord. Thanks to the PoS system, validators have not use their computing power because the only factors that influence their chances of being rewarded are the number of their "locked   coins and the healthy competition between  stakeholders.
 
 ## Masternode 
-Un masternode è un server, online 24 ore su 24, 7 giorni su 7, che opera come super validatore e per questo viene ricompensato in LYRA. 
+A masternode is a server, online 24 hours a day, 7 days a week, which works as super validator and it is rewarded in LYRA. 
 
-I masternodes eseguono funzioni di nodo standard come l'hosting di una copia della blockchain e la convalida delle transazioni sulla rete, e inoltre agiscono come azionisti, votando proposte per migliorare l'ecosistema di Scrypta. 
+The masternodes perform standard node functions such as hosting a copy of the blockchain and validating transactions on the network, and they also act as shareholders, voting for proposals to improve the Scrypta ecosystem. 
 
-I Masternode permettono anche altre inportanti funzioni come “SwiftX” per l’invio istantaneo e “Obfuscation” per aumentare la privacy degli utenti. Operare come validatore masternode richiede la proprietà di 15000 LYRA. 
+Masternodes also allow other important features like "SwiftX" for Instant Transaction and "Obfuscation" to increase users privacy. 
 
-I Masternodes devono inoltre avere un indirizzo IP statico e soddisfare i requisiti minimi per CPU, RAM, spazio su disco e larghezza di banda della rete.
+Operating as a masternode validator requires ownership of 15,000 LYRA. 
+
+Masternodes must also have a static IP address and meet the minimum requirements for CPU, RAM, disk space, and network bandwidth.

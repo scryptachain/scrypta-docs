@@ -1,1 +1,1 @@
-# Introduzione al Light Paper
+# Introduction to the Light Paper

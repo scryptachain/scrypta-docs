@@ -1,13 +1,13 @@
-# La Blockchain Oggi
+# The Blockchain Today
 
-● Il 2017/2018 è stato un biennio cruciale per lo sviluppo dell’intero ecosistema blockchain. Le aziende e le startup si sono però troppo concentrate sugli aspetti lucrativi e finanziari mettendo in secondo piano il linguaggio e le potenzialità della blockchain stessa.
+● 2017/2018 was a crucial two-year period for the development of the entire blockchain ecosystem. Companies and startups have often focused almost exclusively on the lucrative and financial aspects, putting the language and potential of the blockchain in the background.
 
-● L’avvento di Ethereum come sistema di creazione e mantenimento di codice (definito anche Smart Contract) non ha ancora raggiunto l’adozione capillare che ci si aspettava. Il suo enorme potenziale risiede proprio negli Smart Contract e nella loro implementazione in casi d’uso reale. Attualmente invece, questi strumenti vengono utilizzati principalmente per la mera emissione di token a scopi finanziari.
+● The advent of Ethereum as a code creation and maintenance system (also called Smart Contract) has not yet reached the widespread adoption that was expected. Ethereum's enormous potential lies precisely in Smart Contracts and their implementation in real use cases. Currently these tools are mainly used for the mere issuing of tokens for financial purposes.
 
-● Tra le circa 2000 digital coin presenti sul mercato, molte non hanno reali casi d’uso ed hanno visto deprezzare il proprio valore fino al 90%, creando così un malumore diffuso tra gli investitori, soprattutto i medio-piccoli.
+● Among the approximately 2000 digital coins on the market, many have no real use cases and have seen their value depreciate by up to 90%, thus creating a widespread discontent among investors, especially among medium-small ones.
 
-● L’attenzione per le dApp (Applicazioni Decentralizzate che sfruttano la tecnologia blockchain) e per la sicurezza intrinseca che offrono - non possedendo fisicamente i dati degli utenti - è salita enormemente: non solo gli addetti ai lavori, ma anche molte persone comuni sono ormai consapevoli del fatto che i classici servizi “data-centrici” rappresentano un passato destinato a sparire in favore di un’architettura che permette un alto livello di privacy e di controllo dell’utente sui propri dati.
+● The attention for dApps (Decentralized Applications that exploit blockchain technology) and for the intrinsic security that they offer, not physically possessing user data, has risen enormously: not only insiders, but also many ordinary people are now aware of the fact that the classic "data-centric" services represent a past destined to disappear in favor of an architecture that allows a high level of privacy and user control over their data.
 
-● Il linguaggio della blockchain, così come quello di altre tecnologie, è complesso. Il ruolo vincente delle aziende e degli sviluppatori è Scrypta Light Paper - gennaio 2019 3 dunque quello di rendere la tecnologia accessibile, creando servizi semplici che risolvono problemi reali.
+● The language of the blockchain, like that of other technologies, is complex. The winning role of companies and developers is to make technology accessible, creating simple services that can solve real problems.
  
-● La focalizzazione sulla risoluzione dei problemi reali è la chiave per il successo dell’intero ecosistema, fin quando non si potrà utilizzare questa tecnologia comodamente nella vita di tutti i giorni, allora essa continuerà ad essere un fenomeno di nicchia. Il nostro compito è quello di trasmettere e costruire le infrastrutture tecniche a supporto di una diffusione capillare della tecnologia blockchain.
+● Focusing on solving real problems is the key to the success of the entire ecosystem: as long as you cannot comfortably use this technology in everyday life, then it will continue to be a niche phenomenon. Our task is to transmit and build the technical infrastructure to support a widespread diffusion of blockchain technology.

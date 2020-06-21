@@ -1,16 +1,15 @@
-# Manifesto
+# Manifest
 
-Il **Genesis block** di Scrypta Blockchain è stato creato il **21 dicembre 2018** da un gruppo di innovatori guidato dai valori dell'**open source**, della **decentralizzazione**, **distribuzione**  e **crittografia**, come strumenti di innovazione culturale e di emancipazione sociale.
+The Scrypta Blockchain **Genesis block** was created on the **21 dicembre 2018** by a group of innovators led by the values of **open source**, **decentralization**, **distribution** and **cryptography**, as tools for cultural innovation and social emancipation.
 
-Il documento che leggerete è stato redatto e pubblicato contestualmente alla generazione del primo blocco.
+The document you will read was drafted and published together with the generation of the first block.
 
+::: tip NOTE
 
-::: tip NOTA
+More than a year has passed since the publication of the White Paper and the Scrypta ** permissionless ** ecosystem has grown exponentially technologically. To learn more, read also:
 
-Dalla pubblicazione del White Paper è passato più di un anno e l'ecosistema **permissionless** di Scrypta è cresciuto tecnologicamente in maniera esponenziale, per approfondire leggi anche:
+[General informations](../general-info/README.md)
 
-[Informazioni Generali](../general-info/README.md)
-
-[Link Utili](../general-info/link.md)
+[Useful links](../general-info/link.md)
 
 :::

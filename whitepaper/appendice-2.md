@@ -1,8 +1,8 @@
-# Appendice II
+# Appendiz II
 
-## PIANO DI DISTRIBUZIONE DELLE RICOMPENSE
+## REWARD DISTRIBUTION PLAN
 
-| Altezza del blocco | Ricompensa del blocco | Erogazione (LYRA) | Giorni aggregati
+| Block height | Block Reward | Provision (LYRA) | Aggregate days
 | ----------- | ----------- | ----------- | ----------- |
 0 > 10 | 0 | 0 | 0.006 days
 11 > 31 | 450.000 | 9.000.000 | 0.01 days

@@ -1,7 +1,7 @@
-# Le Tre Macroaree di Scrypta
+# Three Aspects of Scrypta
 
-**Infrastructure & Protocol Provider** – Scrypta fornisce un’infrastruttura Blockchain sulla quale costruire piattaforme sicure.
+**Infrastructure & Protocol Provider** – Scrypta provides a Blockchain infrastructure on which to build secure platforms. 
 
-**Application e Solution Provider** – il team di Scrypta è specializzato nella realizzazione di applicazioni che prevedono l’utilizzo di tecnologia blockchain per casi d’uso specifici.
+**Application e Solution Provider** – Scrypta's team is specialized in applications blockchain-oriented for specific use cases. 
 
-**Middleware Provider** – Scrypta fornisce il software necessario allo sviluppo di applicazioni Blockchain Oriented.
+**Middleware Provider** – Scrypta provides the necessary software for the development of blockchain-oriented applications.

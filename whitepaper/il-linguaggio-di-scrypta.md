@@ -1,18 +1,17 @@
-# Il Linguaggio di Scrypta
+# Scrypta Language
 
-Ogni applicazione, sia essa centralizzata o decentralizzata, necessita di due entità fondamentali: dati (file) e archiviazione (database). Attraverso Scrypta è possibile inserire dati nella blockchain e creare sistemi complessi e decentralizzati di archiviazione. 
+Each application, whether centralized or decentralized, requires two fundamental entities: data (file) and storage (database). Through Scrypta it is possible to insert data into the blockchain and to create complex and decentralized storage systems. 
 
-Scrypta ha sviluppato delle tecniche innovative di interfacciamento con la blockchain che permettono agli sviluppatori di ideare specifiche applicazioni decentralizzate utilizzando i linguaggi standard di programmazione per il web. Questa sfera viene principalmente rappresentata dalle speciali **API RESTful**, realizzate per l’inserimento e la lettura di informazioni nella Blockchain di Scrypta. 
+Scrypta has create innovative blockchain interface techniques that allow developers to contrive specific decentralized applications using standard web programming languages. This area is mainly represented by the special **RESTful APIs**, developed for the information writing and reading into the Scrypta Blockchain. 
 
-In particolare la struttura poggia su quelli che abbiamo definito **Interconnected dApp Node (IdANode)** che recepiscono i più comuni linguaggi di sviluppo come PHP, NodeJS e MongoDB e servono sostanzialmente a decifrare tutte le operazioni sottintese e complesse che vengono svolte dall’utilizzatore finale di un’applicazione. 
-Gli ideatori di Scrypta inoltre, attraverso 
+In particular, the structure is based on what we have defined **Interconnected dApp Node (IdA Node)** that uses the most common development languages such as PHP, NodeJS and MongoDB and basically aid to decipher all the underlying and complex operations that are carried out by the end user of an application. 
 
-l’unione degli IdANode e dei Masternode, hanno disegnato una infrastruttura di base su cui poggiare la tecnologia **IPFS (Inter Planetary File System)**: un’innovativa tecnica per creare archivi decentralizzati e distribuiti in grado di contenere permanentemente grosse quantità di dati, file e hypermedia.
+The founder of Scrypta also, through the union of the IdA Nodes and the Masternodes, designed a basic infrastructure on which to base the **IPFS (Inter Planetary File System)** technology: an innovative technique to create decentralized and distributed file storage system that can contain permanently large amounts of data, files and hypermedia. 
 
-Riassumendo, Le tecnologie e i linguaggi sfruttati da Scrypta sono:
+In summary, the technologies and the languages used by Scrypta are:
 
-• La Blockchain di tipo MN/PoS (Masternode/Proof of Stake), diffusa e ben testata contro attacchi di varia natura. 
+• **MN / PoS (Masternode / Proof of Stake) Blockchain**, well tested against attacks of various kinds. 
 
-• I Nodi di interfacciamento ‘IdANodes’, che recepiscono i più comuni linguaggi di sviluppo come PHP, NodeJS e MongoDB e servono sostanzialmente a decifrare tutte le operazioni sottintese e complesse che vengono svolte dall’utilizzatore finale di una applicazione decentralizzata.
+• The **interface node 'IdA Nodes'**, which incorporate the most common development languages such as PHP, NodeJS and MongoDB and basically are useful to decipher all the complex operations that are carried out by the final user of a decentralized application. 
  
-• Comune linguaggio Web, che ha come fine la realizzazione dell’interfaccia per l’utente e che viene principalmente rappresentato da Javascript e dalle speciali API RESTful, realizzate per l’inserimento e la lettura di informazioni nella Blockchain di Scrypta.
+• **Common Web language,** which its used to create the user interface and is mainly represented by Javascript and the special **RESTful APIs**, created for writing and reading data in the Scrypta Blockchain.
