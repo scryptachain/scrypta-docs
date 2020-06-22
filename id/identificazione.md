@@ -26,7 +26,9 @@ Nell'immagine di esempio, linkeremo l'identità *LQ9keELY4D9K3Km4YDpWFmkWvnZMR3w
 ![Twitter](../.vuepress/public/assets/scryptaid/twitter.png)
 <br><br>Una volta cliccato sull'icona del servizio che si intende associare, basterà premere il tasto per inziare la verifica dell'identità e seguire le istruzioni a schermo per completare l'autenticazione del servizio.
 ![Twitter](../.vuepress/public/assets/scryptaid/twitter_auth.png)
-<br><br>Una volta completata l'autenticazione del servizio, riceverete la conferma delBasta inserire la OTP nel field come richiesto dal sistema, per completare correttamente il collegamrno fra la vostra ScryptaId e la vostra casella email.l'avvenuto collegamento dell'identità digitale con l'identificatore scelto, con Username e ID univoco.
+
+
+<br><br>Una volta completata l'autenticazione del servizio, riceverete la conferma dell'avvenuto collegamento dell'identità digitale con l'identificatore scelto, con il vostro Username e ID univoco.
 ![Twitter](../.vuepress/public/assets/scryptaid/twitter_done.png)
 
 Dopo aver premuto il tasto *"Write Signature"*, riceverete a schermo la notifica che il processo è stato completato con successo.
@@ -36,7 +38,7 @@ Si consiglia di effettuare sempre un backup aggiornato del proprio *.sid* file
 
 ## Identificazione con CIE
 
-Per l'identificazione con CIE è necessario innanzitutto inserire il proprio numero di Carta d'Identità e cominciare il processo. Il sistema creerà un file (p7m) che ti inviterà a scaricare. Adesso dovrai firmare questo file attraverso un app di firma digitale come [Firmo con CIE](https://www.firmoconcie.it/). Adesso potrai  effettuare l'upload del file firmato all'interno di Scrypta ID e completare l'autenticazione.
+Per l'identificazione con CIE è necessario innanzitutto inserire il proprio numero di Carta d'Identità e cominciare il processo. Il sistema creerà un file (p7m) che ti inviterà a scaricare. Adesso dovrai firmare questo file attraverso un app di firma digitale come [Firmo con CIE](https://www.firmoconcie.it/). Adesso potrai  effettuare l'upload del file firmato all'interno di ScryptaID e completare l'autenticazione.
 
 ## Identificazione con OTP (E-Mail / SMS)
 
@@ -45,7 +47,8 @@ L'associazione di e-mail ed sms avviene attraverso un'autenticazione a due fatto
 ![Email](../.vuepress/public/assets/scryptaid/email.png)
 
 Una volta inserita la propria mail nel form, il sistema invia, all'indirizzo e-mail al quale si intende collegare l'identità, una One Time Password da usare per completare il collegamento dell'identità.
-Basta inserire la OTP nel field come richiesto dal sistema, per completare correttamente il collegamrno fra la vostra Scrypta Id e la vostra casella email.
+Basta inserire la OTP nel field come richiesto dal sistema, per completare correttamente il collegamento fra la vostra ScryptaID e la vostra casella email.
+
 ![Email](../.vuepress/public/assets/scryptaid/email_done.png)
 
 Dopo aver premuto il tasto *"Write Signature"*, riceverete a schermo la notifica che il processo è stato completato con successo.
@@ -63,9 +66,9 @@ Una volta installato Metamask procedete con le informazioni a schermo per colleg
 ![Ethereum](../.vuepress/public/assets/scryptaid/ethereum.png)
 
 
-Non appena richiederete l'autenticazione  si aprirà automaticamente MetaMask chiedendovi la conferma di associazione tra Scrypta ID e il vostro account Ethereum.
+Non appena richiederete l'autenticazione  si aprirà automaticamente MetaMask chiedendovi la conferma di associazione tra ScryptaID e il vostro account Ethereum.
 
-Sarà sufficiente premere *"Connetti"* per completare il collegament del vostro Scrypta Id con il vostro indirizzo Ethereum.
+Sarà sufficiente premere *"Connetti"* per completare il collegament del vostro ScryptaID con il vostro indirizzo Ethereum.
 
 ![Metamask](../.vuepress/public/assets/scryptaid/metamask.png)
 
