@@ -1,1 +1,0 @@
-# Introduzione al Light Paper
