@@ -28,7 +28,7 @@ Google, Twitter, Github, Linkedin hanno un processo di autenticazione molto simi
 Per l'identificazione con CIE è necessario innanzitutto inserire il proprio numero di Carta d'Identità e cominciare il processo. Il sistema creerà un file (p7m) che ti inviterà a scaricare. Adesso dovrai firmare questo file attraverso un app di firma digitale come [Firmo con CIE](https://www.firmoconcie.it/). Adesso potrai  effettuare l'upload del file firmato all'interno di Scrypta ID e completare l'autenticazione.
 
 ## Identificazione con OTP (E-Mail / SMS)
-L'associazione di e-mail esms avviene attraverso un'autenticazione a due fattori, bisognerà quindi accedere alla propria mail ed autoriazzare l'associazione, o inserire il codice ricevuto via sms, nel caso dell'associazione del proprio numero telefonico.
+L'associazione di e-mail ed sms avviene attraverso un'autenticazione a due fattori, bisognerà quindi accedere alla propria mail ed autoriazzare l'associazione, o inserire il codice ricevuto via sms, nel caso dell'associazione del proprio numero telefonico.
 
 ## Identificazione con Ethereum
 
