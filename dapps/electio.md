@@ -71,15 +71,15 @@ Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipol
 ![Electio](../.vuepress/public/assets/electio/type_poll.png)
 Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in automatico la tipologia di poll da realizzare sulla base della scelta da noi effettuata, presentandoci i campi richiesti per quella specifica tipologia di votazione.
 
-<br>Con la modalità **"Public"** non ci saranno ulteriori scelte da effettuare per la tipologia i voto, in quanto il sodaggio sarà completamente pubblico.
+<br>Con la modalità **"Public"** non ci saranno ulteriori scelte da effettuare per la tipologia di voto, in quanto il sondaggio sarà completamente pubblico.
 <br>Scegliendo le modalità **"Authorized"** oppure **"Secret"**, comparirà un menu a tendina aggiuntivo che ci chiede di scegliere l'impostazione per la visibilità del voto (che potrà essere **"Public"** oppure **"Secret"**)
 ![Electio](../.vuepress/public/assets/electio/dropdown.png).
 
 Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto all'interno della votazione, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
 
-Nel caso in cui si scelga la tipologia di voto con autorizzazione "(Authorized) dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
+Nel caso in cui si scelga la tipologia di voto con autorizzazione **(Authorized)** dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
 
-Nel caso in cui si scelga la tipologia di quesito segreto (Secret) è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
+Nel caso in cui si scelga la tipologia di quesito segreto **(Secret)** è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
 
 ## Guida al voto
 Per votare, è necessario effettuare il login e compariranno in home le votazioni a cui siamo abilitati a partecipare. Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
