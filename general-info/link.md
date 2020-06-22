@@ -8,9 +8,9 @@
 
 [Scrypta Consortium](https://scryptaconsortium.org/)
 
-[Wiki EN](http://wiki.scryptachain.org/)
+[Wiki EN](https://en.scrypta.wiki)
 
-[Wiki IT](https://wiki-it.scryptachain.org/)
+[Wiki IT](https://it.scrypta.wiki)
 
 [Github](http://github.com/scryptachain)
 
