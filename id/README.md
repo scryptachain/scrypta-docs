@@ -8,9 +8,17 @@ The digital identity within the Scrypta Blockchain is managed through two differ
    
 The correct identification of the subject leads to the creation of a **identity payload** that is digitally signed and written in blockchain to consolidate its representation (hash).
 
+## Certification and verification
+
+Scrypta ID is the first tool that connects the electronic identity document (CIE) to the blockchain. By creating a specific message that is signed in blockchain and countersigned through the Electronic Identity Card, the user can associate his blockchain address with the credentials issued by the Ministry of the Interior and thus perform certified operations.
+
+Your identity can also be associated with the ownership of various services, such as: your mobile number, your email or PEC, your social networks such as Twitter or Linkedin, or even addresses of other blockchains such as Ethereum.
+
+To use the identity verification tool, go to the identification site: [https://scrypta.id](https://scrypta.id/en).
+
 ## Gateway
 
-This correct identification is carried out by means of a **Gateway**, or a trusted third party who assumes responsibility for the identification itself.
+Correct identification can take place through the [verification tool](https://scrypta.id/en) made available by Scrypta, or it can be carried out by means of a **Gateway**: a trusted third party who assumes the responsibility for identification itself.
 
 Here we see an **example** of identification:
 
