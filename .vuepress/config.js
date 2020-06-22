@@ -154,9 +154,10 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/id/scrypta-identity-framework',
-          '/id/scrypta-card-wallet-nfc',
-          '/id/scrypta-card-wallet-qr',
+          '/id/general-description',
+          '/id/identification',
+          '/id/technical-functioning',
+          '/id/scrypta-card-id',
         ]
       },
       {

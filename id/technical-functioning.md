@@ -1,4 +1,4 @@
-# Scrypta Identity Framework
+# Technical functioning
 
 
 ## Introduction
