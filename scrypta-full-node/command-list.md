@@ -57,7 +57,7 @@ You can test the wallet commands through the console of the test-CLI tool, reach
 
 `verifychain` Returns the true or false value based on the validity of the blockchain hosted by the node.
 
-## Control Instructions
+## Control instructions
 
 `getinfo` Returns general information about the blockchain.
 
@@ -71,7 +71,7 @@ You can test the wallet commands through the console of the test-CLI tool, reach
 
 Set of commands to perform operations related to the masternodes.
 
-### Comandi Disponibili
+### masternode commands
 
 `count`            - Returns the number of all masternodes detected by the network (optional terms: 'ps', 'enabled', 'all', 'qualify').
 
@@ -93,7 +93,7 @@ Set of commands to perform operations related to the masternodes.
 
 `masternodelist ( "mode" "filter" )`     Get a list of masternodes in different ways.
 
-## Istruzioni del Network
+## Network instructions
 `addnode <node_ip> <add|remove|onetry>` Manually connect to a peer using the counterparty's IP address.
 
 `getconnectioncount` Returns the number of peer-to-peer connections of the node.
@@ -278,7 +278,7 @@ Switch from one account in your Wallet to another.
 
 **MultiSend** allows users to automatically send a percentage of their rewards (staking or masternode) to desired addresses. The MultiSend transaction is sent when the coins have at least 60 confirmations (about 60 min.).
 
-> ### Comandi
+> ### Commands
 > `print` - displays the current MultiSend vector.
 > 
 > `clear` - deletes the current MultiSend vector.

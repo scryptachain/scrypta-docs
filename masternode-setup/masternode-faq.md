@@ -31,10 +31,10 @@ The first Masternode reward can take up to 24 times more than the average reward
 
 The average reward time can be checked on masternode statistical sites such as [Masternodes Online](https://masternodes.online/currencies/LYRA/).
 
-** Q: IF MY MASTERODE GENKEY WAS STOLEN FROM ME, COULD SOMEONE STOLEN MY LYRA? **
+**Q: IF MY MASTERODE GENKEY WAS STOLEN FROM ME, COULD SOMEONE STOLEN MY LYRA?**
 
 A: No, they can't steal your coins directly. However, they can use it to disable your masternode, effectively stopping the network flow.
 
-** Q: WHAT ARE THE ADVANTAGES OF A MASTERNODE FOR NETWORK? **
+**Q: WHAT ARE THE ADVANTAGES OF A MASTERNODE FOR NETWORK?**
 
 A: Masternodes acts as a reliable node on the network, allowing easier data propagation and faster transmission of transaction information. It also enables features like * SwiftTX * which allows transactions to be executed with a single confirmation, while a normal transaction requires six.

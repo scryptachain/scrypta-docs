@@ -42,7 +42,7 @@ Once the software is downloaded, start **Lyra-QT**.
 
 For more information about the installation, you can visit this link:
 
-[Installation](installazione.md)
+[Installation](installation.md)
 
 
 At the first start you will be asked to choose the location of the system files where to save your ** wallet.dat ** file and the copy of the blockchain.
@@ -106,7 +106,7 @@ Save the file and restart the wallet. Synchronization should now start without f
 ### Main menu
 This is the menu bar for the main wallet operations, as described below:
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/menu.png)
-- **Overview:** the main dashboard with balance, recent transactions and the **obfuscation** function, which will be explored in the [following sections](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+- **Overview:** the main dashboard with balance, recent transactions and the **obfuscation** function, which will be explored in the [following sections](../scrypta-full-node/setup.md##additional-features).
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/overview.png)
 <br>
 
@@ -148,7 +148,7 @@ The encryption of the wallet is one of the main functions as it protects the fun
 <br> In principle, these suggestions and procedures are valid for most other cryptocurrency.
 
 
-The **"Encrypt Wallet"** function, reachable from the **SETTINGS** menu, adds an additional level of security to the wallet, protecting the funds from fraudulent or incorrect submissions, or from other operations that could modify the ownership of the funds contained in the wallet (through the [dump of private keys](../scrypta-full-node/setup.html#dump-e-importazione-private-keys)) or other security operations.
+The **"Encrypt Wallet"** function, reachable from the **SETTINGS** menu, adds an additional level of security to the wallet, protecting the funds from fraudulent or incorrect submissions, or from other operations that could modify the ownership of the funds contained in the wallet, through the  [dump of private keys](../scrypta-full-node/setup.html#dump-and-import-private-keys) or other security operations.
 
 The encryption of the wallet is a very simple operation to carry out, however you have to be very careful.
 <br> To proceed with the encryption, from the **SETTINGS** > **ENCRYPT WALLET** menu a window will open as shown below:
@@ -163,7 +163,7 @@ Make sure you remember your password and ALWAYS keep it in a safe place.
 Once the password has been chosen, proceed with the encryption by pressing **OK**.
 
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>
-**ATTENZIONE:** If you forget or lose your password after the encryption, you will lose access to all your funds.
+**ATTENTION:** If you forget or lose your password after the encryption, you will lose access to all your funds.
 :::
 
 The wallet app will close at the end of the encryption operation.
@@ -195,13 +195,13 @@ The debug console of the Scrypta QT wallet is a very useful tool from which you 
 Accessible from the menu **"TOOLS"** > **"DEBUG CONSOLE"**, it looks like a terminal window.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/console.png)
 
-Entering the ** help ** command will open the complete list of commands, a detailed explanation of which is available in the [specific section.](../scrypta-full-node/comandi.md).
+Entering the ** help ** command will open the complete list of commands, a detailed explanation of which is available in the [specific section](command-list.md).
 
 For an exhaustive explanation of all the commands, consult the section:
 
-[Command List](comandi.md)
+[Command List](command-list.md)
 
-<br>Through the * debug console * it is possible to directly query the blockchain on the status of the network, a transaction, masternodes, or you can create manual transactions, set operational or security settings, generate new addresses and, above all, manage private keys and the wallet itself.
+<br>Through the *debug console* it is possible to directly query the blockchain on the status of the network, a transaction, masternodes, or you can create manual transactions, set operational or security settings, generate new addresses and, above all, manage private keys and the wallet itself.
 
 We see below the main operations on private keys.
 ::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"><br>

@@ -107,7 +107,7 @@ sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb-4.8.so /usr/lib/libdb-4.8.so
 sudo ln -s /usr/local/BerkeleyDB.4.8/lib/libdb_cxx-4.8.so /usr/lib/libdb_cxx-4.8.so
 cd
 ```
-Riavvia nuovamente la tua Raspi e digita i seguenti comandi dopo il riavvio:
+Restart your Raspi again and type the following commands after the restart:
 ```
 git clone https://github.com/scryptachain/scrypta
 cd lyra

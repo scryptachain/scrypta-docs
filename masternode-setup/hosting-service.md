@@ -11,7 +11,7 @@ To start a masternode on VPS through the service offered by Kalkulus called: ***
 
 You can refer to the procedure mentioned in this section:
 
-[Desktop Wallet Setup](../masternode-setup/installazione-manuale.md)
+[Desktop Wallet Setup](../masternode-setup/manual-installation.md)
 
 You can also consult the video guide:
 

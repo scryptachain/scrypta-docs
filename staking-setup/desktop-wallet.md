@@ -1,6 +1,6 @@
 # Staking with the Desktop Wallet
 
-## AEnable Staking
+## Enable Staking
 Here are the two steps to take to enable staking on the desktop wallet:
 
 1. Make sure that the block string is not present in the configuration file *lyra.conf*: `staking = 0`:
@@ -63,8 +63,8 @@ After reaching this limit, it will stop dividing into smaller inputs.
 
 > Example: as soon as a UTXO reaches 4000 Lyra and receives a reward, it will automatically be divided into 2 UTXO of about 2000 LYRA.
 
-You can check the threshold value set on your wallet from the debug console: * Tools> Debug Console * and by entering the command:
-`` `
+You can check the threshold value set on your wallet from the debug console: *Tools> Debug Console* and by entering the command:
+```
 getstakesplitthreshold
 ```
 To change the threshold:
@@ -81,7 +81,7 @@ To activate MultiSend, go to *Settings → MultiSend*. A dialog box will appear 
 
 First you have to choose to activate the function for Masternode Rewards or Staking Rewards. They can also be selected simultaneously.
 
-The *Percentage* box refers to the percentage of the selected reward that will be sent to the * Address * box on the next line. After entering the desired information, click on *Add*.
+The *Percentage* box refers to the percentage of the selected reward that will be sent to the *Address* box on the next line. After entering the desired information, click on *Add*.
 
 You can divide the percentages on several different addresses, in this case make sure that the total percentage does not exceed 100%.
 

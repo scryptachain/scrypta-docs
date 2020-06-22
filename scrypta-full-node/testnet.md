@@ -2,7 +2,7 @@
 
 To use the testnet version of the Scrypta blockchain you will need to download and install the official wallet. You can find an installation guide in the following section:
 
-[Installation](installazione.md) 
+[Installation](installation.md) 
 
 Next you will have to start it in Testnet mode.
 
