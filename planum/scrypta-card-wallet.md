@@ -42,7 +42,7 @@ La password, la chiave privata o il wallet stesso non vengono mai memorizzati da
 
 ## Utilizzo Card QR
 
-La card QR può essere testata attraverso il PoS Virtuale di Planum, andando direttamente all'indirizzo: https://pay.planum.dev/#/
+La card QR può essere testata attraverso il PoS Virtuale di Planum, all'indirizzo: https://pay.planum.dev/#/
 
 Qui dovrete prima inizializzare la vostra card QR, dopo potrete richiedere pagamenti leggendo direttamente le card dei vostri clienti (o altre card di prova).
 
