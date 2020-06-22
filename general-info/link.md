@@ -24,6 +24,8 @@
 
 [Planum](https://planum.dev/)
 
+[ScryptaID](https://scrypta.id)
+
 [Electio](http://electio.app/)
 
 [SocialPay](http://socialpay.live/)
