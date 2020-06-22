@@ -1,4 +1,4 @@
-# Prefazione
+# Introduction
 
 **Scrypta** is a blockchain with advanced decentralized functionality and is suitable as an infrastructure for the realization of complete architectures at the service of unlimited projects and new use cases.
 
