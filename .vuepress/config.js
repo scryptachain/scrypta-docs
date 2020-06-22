@@ -110,7 +110,7 @@ module.exports = {
           '/planum/emission-and-management',
           '/planum/how-it-work',
           '/planum/scrypta-card-wallet',
-          '/planum/management-software,
+          '/planum/management-software',
           '/planum/point-of-sale',
         ]
       },
