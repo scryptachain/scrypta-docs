@@ -68,14 +68,13 @@ Una volta installato Metamask procedete con le informazioni a schermo per colleg
 
 Non appena richiederete l'autenticazione  si aprirà automaticamente MetaMask chiedendovi la conferma di associazione tra ScryptaID e il vostro account Ethereum.
 
-Sarà sufficiente premere *"Connetti"* per completare il collegament del vostro ScryptaID con il vostro indirizzo Ethereum.
+Sarà sufficiente premere *"Connetti"* per completare il collegamento del vostro ScryptaID con il vostro indirizzo Ethereum.
 
 ![Metamask](../.vuepress/public/assets/scryptaid/metamask.png)
 
 
-
 ::: warning ATTENZIONE:
-Dopo essersi autenticati associando i provider desiderati è importante effettuare un backup del file *.sid *associato al proprio indirizzo, e quindi alla propria identità digitale.
+Dopo essersi autenticati associando i provider desiderati è importante effettuare un backup del file *.sid* associato al proprio indirizzo, e quindi alla propria identità digitale.
 In sostanza il .sid file conterrà nuove informazioni relative al vostro *payload* di identità. 
 
 Se utilizzate [Scrypta Browser Extension](https://id.scryptachain.org/), sarà necessario dis-asocciare il precedente *.sid* file (tramite la funzione "*Forget Identity*") e importare il nuovo, anche se fa capo allo stesso indirizzo blockchain.
