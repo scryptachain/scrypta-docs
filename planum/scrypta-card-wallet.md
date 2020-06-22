@@ -48,7 +48,7 @@ Here you must first initialize your QR card, then you can request payments by re
 
 ## Token and Sidechains
 
-This card does not, of course, contain only the information relating to LYRA, but contains all the information relating to the tokens created through the Scrypta Sidechain system - [**Planum**] (../ planum / README.md). This means that each token can actually be exchanged in a *physical* way (through the card) using blockchain technology in an absolutely transparent way for the user.
+This card does not, of course, contain only the information relating to LYRA, but contains all the information relating to the tokens created through the Scrypta Sidechain system - [**Planum**](../planum/README.md). This means that each token can actually be exchanged in a *physical* way (through the card) using blockchain technology in an absolutely transparent way for the user.
 
 If you are wondering what the areas of application of such a technology can be, think about: company canteens, shopping vouchers, gift cards, restaurant tickets, tickets for events and concerts, and so on.
 

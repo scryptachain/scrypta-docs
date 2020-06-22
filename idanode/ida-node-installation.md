@@ -89,7 +89,7 @@ FOUND 428314 BLOCKS IN THE BLOCKCHAIN
 Now the IdANode will start to synchronize all the data present in the blockchain. Congratulations you have installed the IdANode!
 If you have not downloaded the bootstrap (ie if you have done a manual installation) the synchronization process takes several hours. Otherwise it will take a few minutes, depending on the number of blocks it has to unload.
 
-## Scaricare il bootstrapDownload the bootstrap
+## Bootstrap download
 
 To download the bootstrap and install it, simply give the `bootstrap.sh` file permissions and start it:
 

@@ -2,7 +2,7 @@
 
 The digital identity within the Scrypta Blockchain is managed through two different components:
 
-1. The "pseudonymous identity" component - an alphanumeric string of the type - * LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt * - which allows the digital signature to be coupled to a natural or legal person.
+1. The "pseudonymous identity" component - an alphanumeric string of the type - *LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt* -  which allows the digital signature to be coupled to a natural or legal person.
 
 2. The "digital signature" component, a kind of encryption password, which allows you to carry out the technical operations of signing transactions and data.
    
