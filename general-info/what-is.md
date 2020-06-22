@@ -16,7 +16,7 @@ This documentation includes the current status of the open-source libraries curr
 
 ## Architecture
 
-### Pilllars
+### Pillars
 
 The Scrypta ecosystem is based on ** five fundamental pillars ** thanks to which more or less complex decentralized applications can be developed, which interact at various levels with the Blockchain:
 -   **Scrypta Core:** is the main javascript library. It allows the creation and management of .sid files, the signature of transactions and data, and the basic interfacing with IdANodes.

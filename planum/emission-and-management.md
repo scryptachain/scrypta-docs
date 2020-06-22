@@ -1,4 +1,4 @@
-# How to Issue Your Token
+# Token Emission and Management
 ### Planum: from creation to management of digital assets
 
 By accessing the platform through [https://planum.dev](https://planum.dev) you will be able to create your own token or consult the explorer for existing tokens.

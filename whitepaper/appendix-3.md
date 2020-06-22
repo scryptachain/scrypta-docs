@@ -1,4 +1,4 @@
-# Appendiz III
+# Appendix III
 
 ## ROADMAP
 

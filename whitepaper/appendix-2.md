@@ -1,4 +1,4 @@
-# Appendiz II
+# Appendix II
 
 ## REWARD DISTRIBUTION PLAN
 

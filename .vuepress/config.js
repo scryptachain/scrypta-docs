@@ -27,11 +27,11 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/general-info/cosa-è',
+          '/general-info/what-is',
           '/general-info/link',
           '/general-info/exchange',
           '/general-info/faq',
-          '/general-info/contribuisci',
+          '/general-info/contribute',
         ]
       },
       {
@@ -40,16 +40,16 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/whitepaper/prefazione',
-          '/whitepaper/la-blockchain-oggi',
-          '/whitepaper/la-blockchain-di-scrypta',
-          '/whitepaper/il-linguaggio-di-scrypta',
-          '/whitepaper/le-tre-macroaree-di-scrypta',
-          '/whitepaper/aspetto-pratico',
-          '/whitepaper/ambiti-applicativi',
-          '/whitepaper/appendice-1',
-          '/whitepaper/appendice-2',
-          '/whitepaper/appendice-3',
+          '/whitepaper/introduction',
+          '/whitepaper/the-blockchain-today',
+          '/whitepaper/scrypta-blockchain',
+          '/whitepaper/scrypta-language',
+          '/whitepaper/three-aspects-of-scrypta',
+          '/whitepaper/pratical-aspects',
+          '/whitepaper/use-cases',
+          '/whitepaper/appendix-1',
+          '/whitepaper/appendix-2',
+          '/whitepaper/appendix-3',
         ]
       },
       {
@@ -58,10 +58,10 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/scrypta-full-node/installazione',
+          '/scrypta-full-node/installation',
           '/scrypta-full-node/setup',
           '/scrypta-full-node/data-directory',
-          '/scrypta-full-node/comandi',
+          '/scrypta-full-node/command-list',
           '/scrypta-full-node/testnet',
         ]
       },
@@ -71,8 +71,8 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/masternode-setup/installazione-manuale',
-          '/masternode-setup/servizi-hosting',
+          '/masternode-setup/manual-installation',
+          '/masternode-setup/hosting-service',
           '/masternode-setup/masternode-faq',
         ]
       },
@@ -107,9 +107,9 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/planum/come-emettere',
-          '/planum/come-funziona',
-          '/planum/software-di-gestione',
+          '/planum/emission-and-management',
+          '/planum/how-it-work',
+          '/planum/management-software,
           '/planum/point-of-sale',
         ]
       },
@@ -119,13 +119,13 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/core/gestione-idanode',
-          '/core/gestione-cache',
+          '/core/idanode-management',
+          '/core/cache-management',
           '/core/encrypt-decrypt-data',
           '/core/encrypt-decrypt-file',
-          '/core/gestione-indirizzi',
-          '/core/gestione-transazioni',
-          '/core/firma-verifica-messaggi',
+          '/core/addresses-management',
+          '/core/transactions-management',
+          '/core/sign-verify-messages',
           '/core/progressive-data-management',
           '/core/p2p-network',
         ]
@@ -136,8 +136,8 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/idanode/installazione',
-          '/idanode/manutenzione',
+          '/idanode/ida-node-installation',
+          '/idanode/maintenance',
           '/idanode/block-explorer',
           '/idanode/progressive-data-management',
           '/idanode/ipfs',
