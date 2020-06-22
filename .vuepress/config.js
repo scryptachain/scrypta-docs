@@ -166,10 +166,10 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/utilities/shamir-backup',
           '/utilities/dapp-composer',
           '/utilities/dapp-starter',
           '/utilities/card-generator',
+          '/utilities/shamir-backup',
           '/utilities/vanity-address',
           '/utilities/p2p-network',
           '/utilities/versioning',
