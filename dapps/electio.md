@@ -82,7 +82,7 @@ Nel caso in cui si scelga la tipologia di voto con autorizzazione **(Authorized)
 Nel caso in cui si scelga la tipologia di quesito segreto **(Secret)** è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
 
 ## Guida al voto
-Se si accede per la prima volta alla piattaforma, oer votare è necessario effettuare il login e reinserire la password per la creazione della chiave RSA. Subito dopo compariranno in home le votazioni a cui siamo abilitati a partecipare.
+Se si accede per la prima volta alla piattaforma, per votare è necessario effettuare il login, clicare sul pulsante "Create Poll Key" e reinserire la password per procedere alla creazione della chiave RSA. Subito dopo compariranno in home le votazioni a cui siamo abilitati a partecipare.
 Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
 
 Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà la scelta conteggiata apponendole accanto una "X". 
