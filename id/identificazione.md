@@ -23,6 +23,7 @@ Per maggiori informazioni sul *.sid* file e il sistema di login nelle dApp Scryp
 
 Google, Twitter, Github, Linkedin hanno un processo di autenticazione molto simile.
 Nell'immagine di esempio, linkeremo l'identità *LQ9keELY4D9K3Km4YDpWFmkWvnZMR3w2xm* ad un account Twitter di prova
+
 ![Twitter](../.vuepress/public/assets/scryptaid/twitter.png)
 <br><br>Una volta cliccato sull'icona del servizio che si intende associare, basterà premere il tasto per inziare la verifica dell'identità e seguire le istruzioni a schermo per completare l'autenticazione del servizio.
 ![Twitter](../.vuepress/public/assets/scryptaid/twitter_auth.png)
