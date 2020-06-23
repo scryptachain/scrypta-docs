@@ -62,28 +62,36 @@ Innanzitutto bisogna accedere alla finestra di creazione della votazione tramite
 <br><br>Al momento il sistema non ha ancora nulla da mostrare, quindi al primo accesso troveremo qualcosa di simile a quanto riportato in figura.
 ![Electio](../.vuepress/public/assets/electio/main_empty.png)
 
-Procediamo con la creazione del nostro primo sondaggio cliccando su **"Create a Poll Now!"**, così da spostarci nella  finestra di configurazione del sondaggio.
+Procediamo con la creazione del nostro primo sondaggio cliccando su **"Create a Poll Now!"**, così da poter proseguire nella  finestra di configurazione della votazione
+.
 <br>Ci troveremo in una pagina simile a questa, dove dovranno essere inseriti tutti i parametri del nostro sondaggio.
 ![Electio](../.vuepress/public/assets/electio/full.png)
 
 
-Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipologie di votazione con diverse impostazioni di visibilità (Public, Authorized o Secret), e tale scelta si effettua dal menù a tendina "Poll Visibility"
+Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipologie di votazione con diverse impostazioni di visibilità (Public, Authorized o Secret), e tale scelta si effettua dal menù a tendina "*Poll Visibility*".
 ![Electio](../.vuepress/public/assets/electio/type_poll.png)
-Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in automatico la tipologia di poll da realizzare sulla base della scelta da noi effettuata, presentandoci i campi richiesti per quella specifica tipologia di votazione.
 
-<br>Con la modalità **"Public"** non ci saranno ulteriori scelte da effettuare per la tipologia di voto, in quanto il sondaggio sarà completamente pubblico.
-<br>Scegliendo le modalità **"Authorized"** oppure **"Secret"**, comparirà un menu a tendina aggiuntivo che ci chiede di scegliere l'impostazione per la visibilità del voto (che potrà essere **"Public"** oppure **"Secret"**)
+Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in automatico la tipologia di *poll* da realizzare sulla base delle scelte da noi effettuate, presentandoci i campi richiesti per quella specifica tipologia di votazione.
+
+<br>Con la modalità **"Public"** non ci saranno ulteriori campi da compilare, in quanto il sondaggio sarà completamente pubblico.
+
+<br>Scegliendo le modalità **"Authorized"**, oppure **"Secret"**, comparirà un menu a tendina aggiuntivo che ci chiederà di scegliere l'impostazione per la visibilità del voto (che potrà essere **"Public"** oppure **"Secret"**).
 ![Electio](../.vuepress/public/assets/electio/dropdown.png).
 
-Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto all'interno della votazione, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
+Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
 
+::: warning NOTA BENE
 Nel caso in cui si scelga la tipologia di voto con autorizzazione **(Authorized)** dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
+:::
 
+::: warning ATTENZIONE
 Nel caso in cui si scelga la tipologia di quesito segreto **(Secret)** è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
+:::
 
 ## Guida al voto
 Se si accede per la prima volta alla piattaforma, per votare è necessario effettuare il login, clicare sul pulsante "Create Poll Key" e reinserire la password per procedere alla creazione della chiave RSA. Subito dopo compariranno in home le votazioni a cui siamo abilitati a partecipare.
-Basterà accedere alla votazione desiderata ed effettura la nostra scelta. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione ma solo l'ultimo voto verrà conteggiato.
+
+Basterà adesso accedere alla votazione desiderata ed effettuare la nostra scelta cliccando sul relativo box. Ricordiamo che è possibile votare più volte entro la scadenza impostata dal banditore della votazione, ma solo l'ultimo voto verrà conteggiato.
 
 Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà la scelta conteggiata apponendole accanto una "X". 
 
@@ -93,9 +101,10 @@ Il banditore della votazione non è abilitato a votare. In alcuni casi specifici
 
 ## Guida alla lettura dei risultati
 
-Terminata la votazione, che si conclude in base ai tempi impostati al momento della creazione, i risultati saranno visibili da chiunque ha partecipato alla votazione nella sezione chiamata *My History*, raggiungibile dal menu superiore. 
-Nella riga del sondaggio di nostro interesse, cliccando sul pulsante "Show Result" ci verranno mostrati i risultati dello specifico sondaggio.
+Il conteggio dei voti avviene in automatico analizzando il block explorer della rete Scrypta. Ogni voto è quindi scritto indelebilmente sulla blockchain con marcatura temporale e firma digitale, pur mantenendo (nel caso in cui necessario) l'anonimato dei partecipanti alla votazione, e potrà essere contro-verificato qualora necessario grazie al registro distribuito tipico della blockchain permissionless di Scrypta. 
+
+Terminata la votazione, che si conclude in base ai tempi impostati al momento della creazione, i risultati saranno visibili da chiunque ha partecipato alla votazione nella sezione chiamata *My History*, raggiungibile dal menu superiore.
+
+Nella sezione del sondaggio di nostro interesse, cliccando sul pulsante "Show Result" ci verranno mostrati i risultati della specifica votazione.
 
 Il votante potrà verificare che il suo voto è stato regsitrato correttamente in quanto la scelta effettuata sarà contraddistinta dal simbolo "X".
-
-Il conteggio dei voti avviene in automatico analizzando il block explorer della rete Scrypta. Ogni voto è quindi scritto indelebilmente sulla blockchain con marcatura temporale e firma digitale, pur mantenendo (nel caso in cui necessario) l'anonimato dei partecipanti alla votazione, e potrà essere contro verificato qualora necessario. 
