@@ -94,5 +94,8 @@ Il banditore della votazione non è abilitato a votare. In alcuni casi specifici
 ## Guida alla lettura dei risultati
 
 Terminata la votazione, che si conclude in base ai tempi impostati al momento della creazione, i risultati saranno visibili da chiunque ha partecipato alla votazione nella sezione chiamata *My History*, raggiungibile dal menu superiore. 
+Nella riga del sondaggio di nostro interesse, cliccando sul pulsante "Show Result" ci verranno mostrati i risultati dello specifico sondaggio.
+
+Il votante potrà verificare che il suo voto è stato regsitrato correttamente in quanto la scelta effettuata sarà contraddistinta dal simbolo "X".
 
 Il conteggio dei voti avviene in automatico analizzando il block explorer della rete Scrypta. Ogni voto è quindi scritto indelebilmente sulla blockchain con marcatura temporale e firma digitale, pur mantenendo (nel caso in cui necessario) l'anonimato dei partecipanti alla votazione, e potrà essere contro verificato qualora necessario. 
