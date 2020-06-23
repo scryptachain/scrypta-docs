@@ -50,7 +50,7 @@ The voting question can only be viewed through a dedicated password. The voter  
 <br>
 The voting question can be viewed in the clear, the voter's vote is in the clear and everyone can vote without authorization. This mode is also useful for survey purposes.
 
-## Guida alla creazione di una votazione
+## Guide to creating a poll
 
 As previously described, different types of e-voting can be developed within Electio, each with different characteristics.
 <br>However, the steps to configure the voting in the desired mode are almost similar and will be illustrated below.
