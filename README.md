@@ -1,3 +1,5 @@
+![](https://miro.medium.com/max/3168/1*1gGxAKWqKQ5WzcQpu_vi2A.jpeg)  
+
 # La Guida all'ecosistema Scrypta
 
 ![banner](./.vuepress/public/assets/other/scrypta-banner.png)
