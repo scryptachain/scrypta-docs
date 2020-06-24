@@ -74,6 +74,11 @@ Sarà sufficiente premere *"Connetti"* per completare il collegamento del vostro
 ![Metamask](../.vuepress/public/assets/scryptaid/metamask.png)
 
 
+## Revoca
+E' possibile "revocare" singolarmente ogni servizio collegato. Questa iperazione potrebbe esse necessaria nel caso in cui  nn si disponesse un determinato servizio associato alla nostra identità, o per altre ragioni di sicurezza. 
+
+Per fare ciò bisogna recarsi sulla finestra *"My Identity"*, premere l'icona di revoca ![Revoca](../.vuepress/public/assets/scryptaid/revoca.png) e inseirire la propria password. La specifica identificazione verrà segnata come "invalidata" in blockchain  e la piattaforma non mostrerà più il relativo servizio come associato alla nostra identità. 
+
 ::: warning ATTENZIONE:
 Dopo essersi autenticati associando i provider desiderati è importante effettuare un backup del file *.sid* associato al proprio indirizzo, e quindi alla propria identità digitale.
 In sostanza il .sid file conterrà nuove informazioni relative al vostro *payload* di identità. 
