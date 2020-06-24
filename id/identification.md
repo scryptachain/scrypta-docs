@@ -70,6 +70,12 @@ Simply press *"Connect"* to complete the connection of your ScryptaID with your 
 
 ![Metamask](../.vuepress/public/assets/scryptaid/metamask.png)
 
+## Revocation
+It is possible to "revoke" each connected service individually. This operation may be necessary in the event that a specific service associated with our identity is not yet available, or for other security reasons.
+
+To do this, go to the *"My Identity"* window, press the revocation icon relating to the service we want to dis-associate ![Revoca](../.vuepress/public/assets/scryptaid/revoca.png) and enter your password. The specific identification will be marked in the blockchain as "invalidated" and the platform will no longer show the related service as associated with our identity.
+
+
 ::: warning ATTENTION:
 After authenticating by associating the desired providers, it is important to make a backup of the * .sid * file associated with your address, and therefore with your digital identity.
 Basically the .sid file will contain new information related to your identity payload.
