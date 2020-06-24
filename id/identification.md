@@ -77,8 +77,8 @@ To do this, go to the *"My Identity"* window, press the revocation icon relating
 
 
 ::: warning ATTENTION:
-After authenticating by associating the desired providers, it is important to make a backup of the * .sid * file associated with your address, and therefore with your digital identity.
-Basically the .sid file will contain new information related to your identity payload.
+After authenticating by associating the desired providers, it is important to make a backup of the *.sid* file associated with your address, and therefore with your digital identity.
+Basically the *.sid* file will contain new information related to your identity payload.
 
-If you use [Scrypta Browser Extension](https://id.scryptachain.org/), you will need to un-remove the previous * .sid * file (via the "* Forget Identity *" function) and import the new one, even if it belongs to the same blockchain address.
+If you use [Scrypta Browser Extension](https://id.scryptachain.org/), you will need to un-remove the previous *.sid* file (via the "*Forget Identity*" function) and import the new one, even if it belongs to the same blockchain address.
 :::
