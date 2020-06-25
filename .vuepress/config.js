@@ -169,6 +169,7 @@ module.exports = {
           '/utilities/dapp-composer',
           '/utilities/dapp-starter',
           '/utilities/card-generator',
+          '/utilities/shamir-backup',
           '/utilities/vanity-address',
           '/utilities/p2p-network',
           '/utilities/versioning',
