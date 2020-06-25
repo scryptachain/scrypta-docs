@@ -1,4 +1,4 @@
-# SHAMIR BACKUP
+# Shamir Backup
 **sit back and relax with your secret**
 
 ### Splitting the Secret
@@ -65,7 +65,7 @@ This command will create the interface where you choose the number of total *sha
 
 You can even choose a password to encrypt the data (and you will need it again to restore the wallet).
 
-## Restore a backup
+### Restore a backup
 
 If you want to recover a backup you must enter the following command, including the folder containing the *shares* as the `--path` parameter:
 
