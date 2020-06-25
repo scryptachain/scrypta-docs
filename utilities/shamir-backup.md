@@ -1,4 +1,4 @@
-# SHAMIR BACKUP
+# Shamir Backup
 **stai comodo e rilassato con il tuo segreto**
 
 ### Dividi il Segreto
