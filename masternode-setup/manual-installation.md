@@ -189,7 +189,7 @@ sudo apt-get -y install build-essential autoconf automake libboost-all-dev lible
 sudo apt-get install -y curl g++ git-core pkg-config libtool fak
 ```
 ### STEP #3
-Now compule database Berkely DB v4.8:
+Now compile database Berkely DB v4.8:
 ```
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 ```
