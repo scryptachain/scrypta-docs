@@ -130,7 +130,7 @@ Remember to restart your wallet every time you edit the masternode.conf file.
 :::
 
 ## VPS Setup
-UUsing a ** VPS ** service (Virtual Private Server) is the ideal choice to manage a masternode as it guarantees a persistent connection and a performing machine. There are many providers that offer this service. We recommend using [Vultr](https://www.vultr.com/).
+Using a **VPS** service (Virtual Private Server) is the ideal choice to manage a masternode as it guarantees a persistent connection and a performing machine. There are many providers that offer this service. We recommend using [Vultr](https://www.vultr.com/).
 
 **Create an SSH key**
 
