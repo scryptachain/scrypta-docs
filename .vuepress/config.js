@@ -156,6 +156,7 @@ module.exports = {
         children: [
           '/id/general-description',
           '/id/identification',
+          '/id/scryptaid-login-module',
           '/id/technical-functioning',
           '/id/scrypta-card-id',
         ]
