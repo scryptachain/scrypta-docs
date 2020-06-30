@@ -52,3 +52,18 @@ You can customize the login process by including these attributes:
 - _callback_: call the given callback when the login is successful, is **required** if you include one or more required identities, the return object will include it
 - _required_: the list of required identifiers separated by a comma (ex. phone,mail,ethereum,twitter)
 - _gateway_: if you want to admit one or more identity gateways, in this case you need to insert one or more pubkeys (ex. `0240f294ef20c7bbb82bae24d8d22c7ab94d195adf153162482b6bf540393d7dd5`)
+
+## Test the project
+
+If you want to test it you can simply download the package with `git clone`, install all dependencies with `npm install` and run the development enviorment with `npm run dev`.
+
+## Check the integrity with the blockchain
+
+If you need to check the integrity of the file please use `scrypta-bvc` tool as documented here: https://github.com/scryptachain/scrypta-blockchain-versioning-cli.
+
+All the updates will be uploaded at https://proof.scryptachain.org/#/address/LiRXTmP4fe8Q3C3c9VtzzPHaxhMWnVRpTh
+
+## Demo page
+
+Check out this link to run a simple demo, available even at `webpack/dist/index.html`: 
+https://scryptachain.github.io/scrypta-login/
