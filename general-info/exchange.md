@@ -11,6 +11,10 @@ For security reasons, exchanges should not be used as electronic wallets. Exchan
 :::
 
 It is currently possible to exchange LYRA on:
+
+## WhiteBit
+[LYRA/EUR](https://whitebit.com/trade/LYRA_EUR)
+
 ## Mercatox
 [LYRA/BTC](https://mercatox.com/exchange/LYRA/BTC)
 
