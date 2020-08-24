@@ -54,6 +54,8 @@
 
 ## Exchanges
 
+[WhiteBit](https://whitebit.com/trade/LYRA_EUR)
+
 [Graviex](https://graviex.net/markets/lyrabtc)
 
 [Mercatox](http://mercatox.com/exchange/LYRA/BTC)
