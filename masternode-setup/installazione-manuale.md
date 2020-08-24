@@ -201,7 +201,7 @@ Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del L
 ```
 wget https://github.com/scryptachain/scrypta/releases/download/v1.1.0/lyra-1.1.0-linux-VPS.tar.gz
 tar -xvzf lyra-1.1.0-linux-VPS.tar.gz && mkdir scrypta && mv lyra-1.1.0-linux-VPS scrypta/src && rm -rf lyra-1.1.0-linux-VPS
-cd src
+cd scrypta/src
 chmod 777 -R *
 ./lyrad &
 ```
