@@ -196,10 +196,22 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 ### STEP #4
 **Lyra Daemon install**
 
-Now use the following commands to proceed with the compilation and startup of the Lyra Daemon:
+Now use the following commands to proceed with the download and startup of the Lyra Daemon:
 
 ```
-git clone https://github.com/scryptachain/scrypta
+wget https://github.com/scryptachain/scrypta/releases/download/v1.1.0/lyra-1.1.0-linux-VPS.tar.gz
+tar -xvzf lyra-1.1.0-linux-VPS.tar.gz && mkdir scrypta && mv lyra-1.1.0-linux-VPS scrypta/src && rm -rf lyra-1.1.0-linux-VPS
+cd src
+chmod 777 -R *
+./lyrad &
+```
+
+
+::: tip NOTE
+Alternatively, you can compile the last wallet version with the following commands. In this case you have to be sure to have the same wallet version on desktop and VPS.
+
+```
+wget https://github.com/scryptachain/scrypta
 cd scrypta
 ./autogen.sh
 ./configure
