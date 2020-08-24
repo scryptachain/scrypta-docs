@@ -10,7 +10,11 @@ Gli exchange inoltre possono essere ulteriormente suddivisi in due categorie: ex
 Per motivi di sicurezza, gli exchange non devono essere utilizzati come portafogli elettronici. Gli exchange sono per il trading, non per la conservazione delle criptovalute.
 :::
 
-Al momento è possibile scambiare LYRA su: 
+Al momento è possibile scambiare LYRA su:
+
+## WhiteBit
+[LYRA/EUR](https://whitebit.com/trade/LYRA_EUR)
+
 ## Mercatox
 [LYRA/BTC](https://mercatox.com/exchange/LYRA/BTC)
 
