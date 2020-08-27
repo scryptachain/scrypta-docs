@@ -67,7 +67,8 @@ This type of activity can be analyzed by starting the tool on a remote server, w
 
 ![](../.vuepress/public/assets/p2pnetwork/broadcast.png)
 
-Chiunque riceve il messaggio, prima di far partire la relativa chiamata post verso l'_hook_, controlla che il messaggio sia stato effettivamente inviato da quell'indirizzo e, in caso positivo, trasmette il messaggio.
+Anyone who receives the message, before starting the relative *post* call to the *hook*, checks that the message has actually been sent from that address and, if so, transmits the message.
+
 ## Possible use cases
 
 This tool can be used by applications that need to exchange information verified in real time. Combined with all other Scrypta technologies, this tool allows the effective sending of information from certified sources. If you want, you can send absolutely private information in real time by encrypting the information with RSA keys,
