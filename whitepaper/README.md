@@ -1,6 +1,6 @@
 # Manifest
 
-The Scrypta Blockchain **Genesis block** was created on the **21 dicembre 2018** by a group of innovators led by the values of **open source**, **decentralization**, **distribution** and **cryptography**, as tools for cultural innovation and social emancipation.
+The Scrypta Blockchain **Genesis block** was created on the **21th December 2018** by a group of innovators led by the values of **open source**, **decentralization**, **distribution** and **cryptography**, as tools for cultural innovation and social emancipation.
 
 The document you will read was drafted and published together with the generation of the first block.
 
