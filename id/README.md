@@ -26,7 +26,7 @@ Qui vediamo un **esempio** di identificazione:
 Come è possibile intuire, all’interno della blockchain non viene salvato alcun dato di tipo personale , rivelandosi uno strumento dotato di ***privacy by design***. 
 
 
-> E' il Gateway che funge da "ente cerfificatore", sia esso un'azienda o un'organizzazione, o un ente governativo, e si farà carico di creare un archivio digitale **offline** (come consigliamo), che gli permetterà di risalire alla corretta identificazione degli utenti, e come strumento di KYC (Know Your Customer).
+> E' il Gateway che funge da "ente certificatore", sia esso un'azienda o un'organizzazione, o un ente governativo, e si farà carico di creare un archivio digitale **offline** (come consigliamo), che gli permetterà di risalire alla corretta identificazione degli utenti, e come strumento di KYC (Know Your Customer).
 
 
 Il payload di identità viene consegnato anche all’utente il quale lo conserverà all’interno dei propri dispositivi (Card, Mobile, PC) e sarà necessario per i processi di scambio di informazioni personali tra utenti, aziende, enti.
