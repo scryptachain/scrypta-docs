@@ -64,6 +64,8 @@
 
 ## Stats
 
+[CoinMarketCap](https://coinmarketcap.com/currencies/scrypta/)
+
 [CoinGecko](https://www.coingecko.com/en/coins/scrypta)
 
 [Masternodes Online](https://masternodes.online/currencies/LYRA/)
