@@ -6,6 +6,6 @@ In questa sezione troverai alcune **informazioni generali** sull'ecosistema Scyp
 
 [**Link Utili**](../general-info/link.md)
 
-[**Exchanges** - buy and sell LYRA]((../general-info/exchange.md))
+[**Exchanges** - buy and sell LYRA](../general-info/exchange.md)
 
-[**Domande Frequenti**]((../general-info/faq.md))
+[**Domande Frequenti**](../general-info/faq.md)
