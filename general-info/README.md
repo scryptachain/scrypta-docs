@@ -6,6 +6,6 @@ In this section you will find some **general information** about the Scypta ecos
 
 [**Useful Links**](../general-info/link.md)
 
-[**Exchanges** - buy and sell LYRA]((../general-info/exchange.md))
+[**Exchanges** - buy and sell LYRA](../general-info/exchange.md)
 
-[**FAQ**]((../general-info/faq.md))
+[**FAQ**](../general-info/faq.md)
