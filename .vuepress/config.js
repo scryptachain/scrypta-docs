@@ -53,52 +53,16 @@ module.exports = {
         ]
       },
       {
-        title: 'Scrypta Full Node',
-        path: '/scrypta-full-node/',
+        title: 'I Wallet',
+        path: '/wallet/',
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/scrypta-full-node/installazione',
-          '/scrypta-full-node/setup',
-          '/scrypta-full-node/data-directory',
-          '/scrypta-full-node/comandi',
-          '/scrypta-full-node/testnet',
-        ]
-      },
-      {
-        title: 'Masternode Setup',
-        path: '/masternode-setup/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/masternode-setup/installazione-manuale',
-          '/masternode-setup/servizi-hosting',
-          '/masternode-setup/masternode-faq',
-        ]
-      },
-      {
-        title: 'Staking Setup',
-        path: '/staking-setup/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/staking-setup/desktop-wallet',
-          '/staking-setup/on-cloud',
-          '/staking-setup/staking-faq',
-        ]
-      },
-      {
-        title: 'dAPPs',
-        path: '/dapps/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/dapps/manent-app',
-          '/dapps/manent-web',
-          '/dapps/extension-browser',
-          '/dapps/socialpay',
-          '/dapps/electio',
-          '/dapps/news',
+          '/wallet/hardware',
+          '/wallet/manent-app',
+          '/wallet/manent-web',
+          '/wallet/extension',
+          '/wallet/fullnode',
         ]
       },
       {
@@ -112,6 +76,31 @@ module.exports = {
           '/planum/scrypta-card-wallet',
           '/planum/software-di-gestione',
           '/planum/point-of-sale',
+        ]
+      },
+      {
+        title: 'ScryptaID',
+        path: '/id/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/id/descrizione-generale',
+          '/id/identificazione',
+          '/id/scryptaid-login-module',
+          '/id/funzionamento-tecnico',
+          '/id/scrypta-card-id'
+        ]
+      },
+      
+      {
+        title: 'Other dAPPs',
+        path: '/dapps/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/dapps/socialpay',
+          '/dapps/electio',
+          '/dapps/news',
         ]
       },
       {
@@ -149,19 +138,6 @@ module.exports = {
         ]
       },
       {
-        title: 'ScryptaID',
-        path: '/id/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/id/descrizione-generale',
-          '/id/identificazione',
-          '/id/scryptaid-login-module',
-          '/id/funzionamento-tecnico',
-          '/id/scrypta-card-id'
-        ]
-      },
-      {
         title: 'Utilities',
         path: '/utilities/',
         collapsable: true,
@@ -179,7 +155,29 @@ module.exports = {
           '/utilities/faucet',
 
         ]
-      }
+      },
+      {
+        title: 'Masternode Setup',
+        path: '/masternode-setup/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/masternode-setup/installazione-manuale',
+          '/masternode-setup/servizi-hosting',
+          '/masternode-setup/masternode-faq',
+        ]
+      },
+      {
+        title: 'Staking Setup',
+        path: '/staking-setup/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/staking-setup/desktop-wallet',
+          '/staking-setup/on-cloud',
+          '/staking-setup/staking-faq',
+        ]
+      },
     ]
   }
 }
