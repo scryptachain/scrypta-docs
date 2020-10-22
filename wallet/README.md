@@ -1,6 +1,8 @@
-# I Wallet
+# Scrypta Wallet
 
-Scrypta blockchain presenta diverse tipologie di wallet: hardware, mobile e desktop. In questa sezione troverai informazioni, guide e dettagli di tutti i wallet Scrypta.
+Scrypta blockchain presenta diverse tipologie di wallet: hardware, mobile e desktop. 
+
+In questa sezione troverai guide e dettagli di tutti i wallet Scrypta.
 
 ## Hardware Wallet
 
@@ -15,4 +17,6 @@ Scrypta blockchain presenta diverse tipologie di wallet: hardware, mobile e desk
 ## Desktop Wallet
 
 - [Scrypta Full Node](fullnode.md)
+- [Masternode Setup](../masternode-setup/README.md)
+- [Staking Setup](../staking-setup/README.md)
 
