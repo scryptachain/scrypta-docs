@@ -484,7 +484,7 @@ Quando parliamo di **Instant Send** (o **SwiftTX**) non facciamo riferimento ad 
 <br>Ciò permette di ridurre notevolmente i tempi di attesa quando si lavora con transazioni di un determinato importo.
 <br>Tuttavia, in caso di utilizzi legati a metodi di pagamento, si consiglia di attendere sempre che la transazione sia effettivamente confermata dalla blockchain e inclusa in uno dei blocchi successivi all'invio.
 
-# Directory dei Dati
+## Directory dei Dati
 
 La Directory dati è la cartella di sistema Scrypta Blockchain che contiene tutte le informazioni relative alla rete blockchain e p2p. 
 
