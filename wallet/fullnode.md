@@ -494,7 +494,7 @@ Questa cartella contiene anche un file importante chiamato "**wallet.dat**" che 
 Perdere il file "wallet.dat" significa perdere l'accesso a tutte le tue monete LYRA. Eseguite regolarmente dei backup!
 :::
 
-## Posizione della directory
+### Posizione della directory
 ​
 La Data Directory chiamata "lyra" si trova, per impostazione predefinita, nei seguenti percorsi specifici per ciascun sistema operativo:
 
@@ -511,7 +511,7 @@ Si noti che la cartella "Library" potrebbe essere nascosta.
 ### Linux
 `~/.lyra`
 
-## Descrizione dei file
+### Descrizione dei file
 
 ***backups***: cartella per i backup automatici del wallet
 
