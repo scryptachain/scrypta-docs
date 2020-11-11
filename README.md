@@ -11,11 +11,11 @@ For a brief overview of the Scrypta ecosystem we recommend you consult the secti
 
 Alternatively, start immediately with Scrypta by installing the **LYRA Wallet** (Full Node) or **Manent APP** (Light Wallet):
 
-[How to install the LYRA Wallet](https://en.scrypta.wiki/scrypta-full-node/installation.html)
+[How to install the LYRA Wallet](wallet/fullnode.md)
 
-[Manent APP](https://en.scrypta.wiki/dapps/manent-app.html)
+[Manent APP](wallet/manent-app.md)
 
-[Manent Web](https://en.scrypta.wiki/dapps/manent-web.html)
+[Manent Web](wallet/manent-web.md)
 
 Finally, remember that with Scrypta it is possible to create and manage ***Tokenized Asset*** thanks to sidechain technology **Planum**, if you are interested in this aspect, consult this section:
 
