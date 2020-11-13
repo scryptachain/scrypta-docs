@@ -20,7 +20,7 @@ Crea una frase mnemonica di 24 parole (seedphrase), che rappresenta il sistema p
 ```
 
 ## buildxSid (password, language, saveKey, mnemonic, label)
-Crea il wallet, in formato xsid file, associandolo alla frase mnemonica
+Questo metodo, che viene normalmente invocato internamente, serve a costruire la versione crittografata del wallet, in formato xsid file, partendo dalla frase mnemonica.
 
 ```
  buildxSid(password, language = '', saveKey = true, mnemonic = '', label = '') {
