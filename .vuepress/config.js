@@ -113,6 +113,7 @@ module.exports = {
           '/core/gestione-cache',
           '/core/encrypt-decrypt-data',
           '/core/encrypt-decrypt-file',
+          '/core/gestione-advanced',
           '/core/gestione-indirizzi',
           '/core/gestione-transazioni',
           '/core/firma-verifica-messaggi',
