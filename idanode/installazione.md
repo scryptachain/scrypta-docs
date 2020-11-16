@@ -3,7 +3,7 @@ Sebbene la procedura di installazione di un IdANode sia abbastanza semplice, è 
 <br>L'installazione avviene tramite uno script che si occuperà di configurare la macchina con le librerie necessarie e tutte le tecnologie richieste.
 Principalmente le dipendenze riguardano NodeJS, MongoDB e il wallet ufficiale Scrypta.
 
-Affinchè l'IdANode funzioni al meglio, è assolutamente necessario che il deploy avvenga su una VPS che abbia Ubuntu 16.04, con almeno 2GB di RAM e minimo 50GB di Hard Disk.
+Affinchè l'IdANode funzioni al meglio, è assolutamente necessario che il deploy avvenga su una VPS che abbia Ubuntu 16.04, con almeno 2 CPU, 4GB di RAM e 50GB di Hard Disk.
 
 Il file script ***install.sh*** andrà ad installare tutte le dipendenze per voi, riprendiamo lo script direttamente in questa pagina. 
 Durante l'installazione sarà richiesto di editare alcuni campi del file .env, verificare quindi che tutti i parametri siano inseriti correttamente, nello specifico:
