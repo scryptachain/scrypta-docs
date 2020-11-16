@@ -1,7 +1,7 @@
 # IdANode installation
 Installing an IdANode is quite simple. First you need to install all the required technologies. The dependencies mainly concern NodeJS, MongoDB and the official Scrypta wallet.
 
-We recommend deploying on a machine that has Ubuntu 16.04 with at least 2GB of RAM.
+We recommend deploying on a machine that has Ubuntu 16.04 with at least 2CPU, 4GB RAM and 50GB Hard Disk.
 
 The install.sh file will install all the dependencies for you and you can check the script later on this page. The most important thing is to edit the .env file following the installation, inserting all the data fields correctly, specifically:
 
