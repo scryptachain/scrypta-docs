@@ -119,7 +119,7 @@ module.exports = {
           '/core/firma-verifica-messaggi',
           '/core/progressive-data-management',
           '/core/p2p-network',
-          '/core/p2p-interazione-smart-contracts',
+          '/core/interazione-smart-contracts',
         ]
       },
       {
