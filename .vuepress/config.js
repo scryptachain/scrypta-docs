@@ -133,7 +133,6 @@ module.exports = {
           '/idanode/progressive-data-management',
           '/idanode/ipfs',
           '/idanode/wallet',
-          '/idanode/dapps-engine',
           '/idanode/trustlink',
           '/idanode/sidechain',
         ]
