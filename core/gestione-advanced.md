@@ -70,8 +70,11 @@ La risposta sarà del tipo e come potremo vedere avremo nuovamente gli `xpub` e 
 
 
 ## deriveKeyFromXPrv (xprv, index)
-Deriva un indirizzo partendo dall xprv, l'utilizzo è simile a quello precedentemente esposto, così come la risposta.
+Deriva un indirizzo partendo dall'xprv, l'utilizzo è simile a quello precedentemente esposto, così come la risposta.
 
+
+## deriveKeyFromMnemonic (mnemonic, index)
+Deriva un indirizzo partendo dalla mnemonic phrase, l'utilizzo è simile a quello precedentemente esposto, così come la risposta.
 
 ## deriveKeyfromXPub (xpub, index)
 Deriva un indirizzo partendo dall'xpub, l'utilizzo è simile a quello precedentemente esposto, la differenza sta nel risultato, in quanto non conterrà le *chiavi private* ma unicamente le chiavi pubbliche. 
