@@ -644,10 +644,60 @@ La risposta sarà di questo tipo:
 
 }
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0OTE0MDQyLDE3MDEyMTA2MDksLTExMD
-gzMTQyNjMsLTE3MDc4NDQyNDgsLTcxNjg4NDcwMywtMTY4MDI0
-OTM3MCw2MTM1OTU2MDEsLTE0Nzg5MTk3OTgsLTE3NDA5NDIxNT
-UsNTM4MTYzNDc2LC0xOTk1NDk1Njg1LDEzODM0Mjg2MDksLTMz
-NzQwODM3MV19
--->
+
+
+## [GET] /sidechain/check/:sidechain/:extended
+
+Permette di fare un check di coerenza sulla sidechain e possono essere passati soltanto due parametri, via URL:
+
+- Sidechain: questo è obbligatorio e rappresenta l'indirizzo della sidechain stesso
+- Extended: questo serve per effettuare il controllo di coerenza anche con gli altri nodi collegati (ovvero inseriti all'interno del file `.env` nella proprietà `LINKED_NODES`) e controllare il consenso
+
+Questo endpoint è molto importante in produzione in quanto permette di effettuare non solo un controllo di coerenza formale sulla sidechain (se ad esempio i token emessi corrispondono alla somma degli unspent) ma permette di controllare anche lo stato del nodo rispetto al proprio "network" di IdaNode.
+
+Ad esempio la chiamata `/sidechain/check/6ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm/true` ritornerà un risultato del tipo:
+```
+{
+    "user_count": 6,
+    "cap": 10000,
+    "issued": 10000,
+    "nodes": [
+        "https://idanodejs02.scryptachain.org",
+        "https://idanodejs03.scryptachain.org",
+        "https://idanodejs04.scryptachain.org",
+        "https://idanodejs05.scryptachain.org",
+        "https://idanodejs06.scryptachain.org",
+        "https://idanode01.beesy24.net",
+        "https://idanode02.beesy24.net"
+    ],
+    "verified": true,
+    "sidechain": {
+        "name": "ScryptaBTC",
+        "supply": 10000,
+        "symbol": "sBTC",
+        "decimals": 8,
+        "reissuable": true,
+        "owner": "LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT",
+        "pubkey": "030249ca95b9d10701d9dfb08cb43b79ee229c3c621a9d17b84320b61690e87d09",
+        "burnable": true,
+        "version": 1,
+        "time": 1582118140204,
+        "address": "6ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm"
+    },
+    "status": "95d424632eb9ac98f1698fb260378a5e69981cb02837361f81d5ebb9a385a250",
+    "users": [
+        "LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt",
+        "LUvRq5GygoJ4WMjiW8Zjis19jWK2mHdL2b",
+        "LKbNrug6n72v52nwBFCdgK6atqh5RFBRDk",
+        "LPriRhN69EKQnVPf3xYN9EWxYk3SywYbus",
+        "LaoH8mrMgKoE7Egte8WuhMPpBeBJJHnT7M",
+        "LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT"
+    ],
+    "consensus": "7/7",
+    "reliability": 100
+}
+```
+
+Come è facile notare le ultime due proprietà dell'oggetto sono `consensus` e `reliability` ovvero ci danno il numero di nodi collegati che riportano lo stesso stato e l'affidabilità del nodo stesso.
+
+La libreria `@scrypta/core` ritiene inaffidabili i nodi che hanno un valore inferiore a 50 collegandosi di conseguenza ad un altro nodo automaticamente.

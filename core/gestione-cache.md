@@ -19,6 +19,3 @@ Ritorna la cache degli UTXO e può essere usata per generare transazioni consecu
 ## pushUTXOtoCache(utxo)
 
 Inserisce una UTXO all'interno della cache. Questo metodo viene invocato internamente.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODg5MDk0M119
--->
