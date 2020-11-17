@@ -1,6 +1,6 @@
 # Interazione con gli Smart Contracts
 
-Questi metodo servono per inviare chiamate agli Smart Contracts in forma semplificata. Viene automaticamente gestita la ricerca del nodo da interrogare e l'effettiva chiamata allo stesso.
+Questi metodi servono per inviare chiamate agli Smart Contracts in forma semplificata. Viene automaticamente gestita la ricerca del nodo da interrogare e l'effettiva chiamata allo stesso.
 
 ## createContractRequest(key, password, request)
 

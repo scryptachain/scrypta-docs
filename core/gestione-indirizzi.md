@@ -154,6 +154,3 @@ let address =  await scrypta.getAddressFromPubKey(key)
 
 */
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTIxODI2ODFdfQ==
--->

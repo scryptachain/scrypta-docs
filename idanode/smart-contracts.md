@@ -1,14 +1,14 @@
 # Smart Contracts
 
-Gli Smart Contracts all'interno della Blockchain di Scrypta sono considerati a tutti gli effetti come *un'estensione* dell'IdaNode e che permette di creare funzionalità aggiuntive.
+Gli Smart Contracts all'interno della Blockchain di Scrypta sono considerati a tutti gli effetti come *un'estensione* dell'IdaNode che permette di creare funzionalità aggiuntive.
 
-All'interno dell'IdaNode viene richiamato il modulo npm `@scrypta/vm` che permette di creare un ambiente trustless virtuale e che permette allo smart contract di eseguire codice all'interno della macchina che lo ospita.
+All'interno dell'IdaNode viene richiamato il modulo npm `@scrypta/vm` che permette di creare un ambiente trustless virtuale, e che consente allo smart contract di eseguire codice all'interno della macchina che lo ospita.
 
 Qui il link alla repository della Scrypta Virtual Machine: https://github.com/scryptachain/scrypta-vm
 
 ## Disclaimer: cosa sono gli Smart Contracts e cosa non sono.
 
-Sebbene gli `Smart Contracts` prendano tutti, nell'immaginario comune, le caratteristiche di quelli di Ethereum è bene **sottolineare** che gli Scrypta non ha preso spunto direttamente dagli Smart Contracts di Ethereum e quindi l'approccio agli stessi non può avvenire con i preconcetti del mondo Ethereum.
+Sebbene gli `Smart Contracts` prendano tutti, nell'immaginario comune, le caratteristiche di quelli di Ethereum è bene **sottolineare** che Scrypta non ha preso spunto direttamente dagli Smart Contracts di Ethereum e quindi l'approccio agli stessi non può avvenire con i preconcetti del mondo Ethereum.
 
 In breve cercheremo di descrivere cosa sono e cosa non sono gli Smart Contracts su Scrypta:
 
@@ -17,21 +17,21 @@ In breve cercheremo di descrivere cosa sono e cosa non sono gli Smart Contracts 
 - Non sono automaticamente ospitati in tutti i nodi della rete (IdaNodes)
 - Non possono gestire fondi in LYRA o detenere chiavi private
 - Non scrivono informazioni per conto dell'utente, è l'utente che scrive informazioni all'interno della blockchain, lo smart contract può *validare* delle informazioni e mantenerne lo stato
-- Non sono un'entità unica (gli smart contracts coesistono in tutti gli idanode che li replicano e non possono che concordare sullo stato in un determinato blocco)
+- Non sono un'entità unica (gli smart contracts coesistono in tutti gli IdaNode che li replicano e non possono che concordare sullo stato in un determinato blocco)
 
 ### Cosa Sono
 - Sono realmente automatici, ovvero si auto-eseguono ogni blocco o alla ricezione di un'informazione in mempool
 - Sono immutabili ma aggiornabili, ovvero il codice è immutabile (perchè pubblicamente esposto all'interno di una transazione), ma può essere aggiornato pubblicando una nuova versione. L'aggiornamento è affidato ad ogni proprietario di IdaNode.
-- Sono semplici, si scrivono con Javascript ed espongono i propri metodi per mezzo dell'IdaNode
-- Sebbene non possano scrivere per conto dell'utente possono *generare* transazioni formalmente valide e demandare la firma ed il broadcast all'utente
+- Sono semplici, si scrivono con Javascript ed espongono i propri metodi per mezzo dell'IdaNode.
+- Sebbene non possano scrivere per conto dell'utente, possono *generare* transazioni formalmente valide e demandare la firma ed il broadcast all'utente.
 
 Chiariti questi concetti di base possiamo descrivere gli endpoint collegati all'IdaNode.
 
 ## [GET] /contracts
 
-Questo endpoint restituisce tutti i contratti pubblicati all'interno della rete di Scrypta ed i relativi codici Javascript pubblicamente consultabili così come vengono eseguiti, aggiornati all'ultima versione disponibile.
+Questo endpoint restituisce tutti i contratti pubblicati all'interno della rete di Scrypta ed i relativi codici Javascript pubblicamente consultabili, così come vengono eseguiti, aggiornati all'ultima versione disponibile.
 
-E' importante capire che il codice mostrato è già `compilato` ovvero viene aggiunto del codice 
+E' importante capire che il codice mostrato è già `compilato`, ovvero viene aggiunto del codice 
 
 ## [GET] /contracts/:address
 
@@ -136,7 +136,7 @@ Questo endpoint restituisce una specifica versione di uno specifico contratto.
 
 Questo endpoint fa partire una chiamata all'interno del contratto e si aspetta una richiesta (in formato esadecimale) firmata con la chiave privata del richiedente.
 
-Utilizzarlo direttamente risulta un po' macchinoso, infatti abbiamo integrato la relativa chiamata all'interno di `@scrypta/core`.
+Utilizzarlo direttamente risulta macchinoso, è consigliato integrare la relativa chiamata all'interno di `@scrypta/core`.
 
 La chiamata da inviare sarà del tipo: 
 ```
@@ -203,13 +203,13 @@ La risposta sarà del tipo:
 ]
 ```
 
-In questo caso abbiamo chiesto allo smart contracts di restituirci tutti i nodi in cui lo smart contract è attivo e quindi dove possiamo interrogarlo.
+In questo caso abbiamo chiesto allo smart contracts di restituirci tutti i nodi in cui è attivo e quindi dove possiamo interrogarlo.
 
 ## [POST] /contracts/pin
 
 Questa è una funzione di amministrazione e serve per *agganciare* uno smart contract ad un IdaNode. La chiamata deve essere sempre firmata ed il messaggio deve contenere unicamente l'indirizzo del contratto da agganciare.
 
-La firma chiaramente deve essere fatta dalla stessa chiave privata inserita all'interno del nodo, all'interno file `.env` nel parametro `NODE_KEY`.
+La firma chiaramente deve essere fatta dalla stessa chiave privata inserita all'interno del nodo, all'interno del file `.env` nel parametro `NODE_KEY`.
 
 La chiamata sarà del tipo:
 ```
@@ -226,4 +226,4 @@ Chiaramente questo endpoint produrrà una scrittura in blockchain, si rende nece
 
 ## [POST] /contracts/unpin
 
-Stessa metodologia di utilizzo, solo che serve per annullare la chiamata precedente.
+Stessa metodologia di utilizzo; serve per annullare la chiamata precedente.
