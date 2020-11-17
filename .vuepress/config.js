@@ -113,6 +113,7 @@ module.exports = {
           '/core/encrypt-decrypt-data',
           '/core/encrypt-decrypt-file',
           '/core/addresses-management',
+          '/core/advanced-management',
           '/core/transactions-management',
           '/core/sign-verify-messages',
           '/core/progressive-data-management',
@@ -131,7 +132,6 @@ module.exports = {
           '/idanode/progressive-data-management',
           '/idanode/ipfs',
           '/idanode/wallet',
-          '/idanode/dapps-engine',
           '/idanode/trustlink',
           '/idanode/sidechain',
         ]
