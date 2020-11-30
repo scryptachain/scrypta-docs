@@ -195,12 +195,8 @@ sudo apt-get install -y pkg-config
 sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
 sudo apt-get install -y curl g++ git-core pkg-config libtool fak
 ```
+
 ### STEP #3
-Compila adesso il database Berkely DB v4.8:
-```
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-```
-### STEP #4
 **Installazione Lyra Daemon**
 
 Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del Lyra Daemon:
@@ -213,7 +209,7 @@ chmod 777 -R *
 ./lyrad &
 ```
 
-### STEP #5
+### STEP #4
 Quando avvierari il wallet per la prima volta, verra creata la [data directory](../scrypta-full-node/data-directory.md) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
 ```
 Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpassword in the configuration file: /root/.lyra/lyra.conf
@@ -221,7 +217,7 @@ Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpasswor
 
 Procedi adesso con il prossimo passaggio per impostare il file di configurazione.
 
-### STEP #6
+### STEP #5
 Di seguito le istruzioni per navigare fino alla data directory lyra e impostare correttamente il file di configurazione con i dati necessari al funzionamento del masternode:
 ```
 cd ~/.lyra
@@ -247,7 +243,7 @@ Salva con **Ctrl + X**, conferma con **Y** e premi **Invio**.
 
 ![nanovps](../.vuepress/public/assets/masternode/12.png)
 
-### STEP #7
+### STEP #6
 Torna alla cartella *src* di lyra, lancia il daemon e avvia il tuo masternode. Inserisci le seguenti istruzioni:
 ```
 cd
