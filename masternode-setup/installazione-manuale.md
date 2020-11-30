@@ -213,31 +213,6 @@ chmod 777 -R *
 ./lyrad &
 ```
 
-::: tip NOTE
-In alternativa, puoi compilare l'ultima versione del wallet con i seguenti comandi. In questo caso devi assicurarti di avere la stessa versione del wallet sia su desktop e VPS.
-
-```
-git clone https://github.com/scryptachain/scrypta
-cd scrypta
-./autogen.sh
-./configure
-sudo make
-cd src
-chmod 777 -R *
-./lyrad &
-```
-::: warning NOTA
-Con Ubuntu 18.04 LTS, dopo il comando`./configure`, potresti imbatterti in questo errore:
-
-`configure: error: Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
-
-Risolverai il problema installando la *ssl library v1.0* con il seguente comando:
-
-`apt-get install libssl1.0-dev`
-
-Ricomincia adesso dal comando `./autogen.sh`.
-:::
-
 ### STEP #5
 Quando avvierari il wallet per la prima volta, verra creata la [data directory](../scrypta-full-node/data-directory.md) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
 ```
@@ -249,8 +224,7 @@ Procedi adesso con il prossimo passaggio per impostare il file di configurazione
 ### STEP #6
 Di seguito le istruzioni per navigare fino alla data directory lyra e impostare correttamente il file di configurazione con i dati necessari al funzionamento del masternode:
 ```
-cd
-cd .lyra
+cd ~/.lyra
 sudo nano lyra.conf
 ```
 Adesso **inserisci** le seguenti informazioni e **salva**:
@@ -289,6 +263,9 @@ Soffermati sulla voce  "*blocks*" :  e metti a confronto i blocchi raggiunti dal
 
 ::: warning ATTENZIONE
 È necessaria una sincronizzazione completa per avviare correttamente il tuo masternode, potrebbe essere necessario del tempo per scaricare tutti i dati della blockchain.
+Assicurarsi che il wallet online e il wallet locale abbiano la stessa versione e protocollo. Ad esempio: 
+"version" : 2000100
+"protocolversion" : 70922
 :::
 
 Quando la sincronizzazione è completa, puoi procedere con l'avvio del masternode e il controllo dello stato, operazioni che verranno illustrate nel prossimo paragrafo.
@@ -329,18 +306,12 @@ Dopo aver riavviato il wallet, apri la console di debug e scrivi il seguente com
 ```
 startmasternode alias 0 MN1
 ```
+dove MN1 è l'etichetta (label) che hai scelto per il tuo masternode
 
 ![startmn](../.vuepress/public/assets/masternode/14.png)
 
 Adesso il tuo masternode dovrebbe essere attivo (*enabled*)!
 
-GUI:
-
-Dopo aver riavviato il wallet , vai sulla sezione masternode cliccando su *Your Masternodes*. Sleziona il tuo Masternode e clicca su *Start Alias*.
-
-Adesso il tuo masternode dovrebbe essere attivo (*enabled*)!
-
-Se vuoi avviaare contemporaneamente masternodes multipli, puoi usare il comando *Start All* della sezione *masternode*.
 
 ### Controllo dello stato
 
