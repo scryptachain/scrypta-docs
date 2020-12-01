@@ -40,9 +40,11 @@ Nel tuo desktop wallet, clicca su *Help > Debug Console* e digita le seguenti is
 Questo comando genera la **masternode genkey**.
 Copiala su un qualsiasi file di testo (Notepad o txt file). 
 
-Adesso inserisci, oppure dalla tab "Ricevi" del wallet:
+Adesso inserisci:
 
 `getnewaddress MN1`
+
+ oppure dalla tab "Ricevi" del wallet:
 
 ![getnewaddress](../.vuepress/public/assets/masternode/4.png)
 
