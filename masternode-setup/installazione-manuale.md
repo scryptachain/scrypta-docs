@@ -42,7 +42,11 @@ Copiala su un qualsiasi file di testo (Notepad o txt file).
 
 Adesso inserisci:
 
-`getnewaddress`
+`getnewaddress MN1`
+
+ oppure dalla tab "Ricevi" del wallet:
+
+![getnewaddress](../.vuepress/public/assets/masternode/4.png)
 
 Questa istruzione genera l'**indirizzo di deposito del masternode** a cui inviare le 15000 LYRA. Appunta anche questo sul file di testo. Se hai masternode multipli, puoi anche geneare più indirizzi e più genkey per ognuno di essi.
 
@@ -58,6 +62,7 @@ E così via.
 
 Ora invia **ESATTAMENTE 15000 LYRA**,  in una singola transazione, all'indirizzo di deposito generato. Deve essere in un'unica transazione! Non sottrarre alcuna fee dall'importo.
 
+![sendcollateral](../.vuepress/public/assets/masternode/6.png)
 
 ::: warning ATTENZIONE
 Non è consigliabile inviare direttamente il collateral all'indirizzo masternode da un exchange  in quanto potrebbero essere detrarre determinate commissioni di prelievo con conseguente trasferimento di ammontare inferiore a15000 LYRA.
@@ -99,6 +104,8 @@ Riceverai una risposta simile:
 
 La prima parte è l'ID (**TXID**) della transazione e il secondo numero (in genere 0 o 1) è l'indice **TXOUT**. 
 
+![mnoutputs](../.vuepress/public/assets/masternode/8.png)
+
 Ora hai tutte le informazioni necessarie per procedere con lo sviluppo del Masternode:
 
 *Masternode Name* (a tua scelta)
@@ -120,6 +127,8 @@ MN2 48.33.100.21:42222 6THBgtDSDkmQmXX5i2rG7BUQFt8YeEfsNE6CDyjefFX2ZjgLEcJ c98Ji
 ```
 
 Dopo aver inserito i dettagli necessari, **salva** il file *masternode.conf* e **riavvia** il tuo wallet in modo da rendere effettive le nuove impostazioni.
+
+![mnconf](../.vuepress/public/assets/masternode/11.png)
 
 ::: tip Nota per masternode multipli 
 Se si sta creando più di un masternode, il comando *masternode outputs* restituirà diversi hash e indici di transazione. Basta adesso determinare quale è la nuova transazione confrontandola con il tuo *masternode.conf* e verificando che non sia presente in esso. Quindi aggiungi i dettagli corrispondenti per il nuovo masternode.
@@ -188,50 +197,21 @@ sudo apt-get install -y pkg-config
 sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
 sudo apt-get install -y curl g++ git-core pkg-config libtool fak
 ```
+
 ### STEP #3
-Compila adesso il database Berkely DB v4.8:
-```
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-```
-### STEP #4
 **Installazione Lyra Daemon**
 
 Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del Lyra Daemon:
 
 ```
-wget https://github.com/scryptachain/scrypta/releases/download/v1.1.0/lyra-1.1.0-linux-VPS.tar.gz
-tar -xvzf lyra-1.1.0-linux-VPS.tar.gz && mkdir scrypta && mv lyra-1.1.0-linux-VPS scrypta/src && rm -rf lyra-1.1.0-linux-VPS
+wget https://github.com/scryptachain/scrypta/releases/download/v2.0.1/lyra-2.0.1-linux-VPS.tar.gz
+tar -xvzf lyra-2.0.1-linux-VPS.tar.gz && mkdir scrypta && mv lyra-2.0.1-linux-VPS scrypta/src && rm -rf lyra-2.0.1-linux-VPS
 cd scrypta/src
 chmod 777 -R *
 ./lyrad &
 ```
 
-::: tip NOTE
-In alternativa, puoi compilare l'ultima versione del wallet con i seguenti comandi. In questo caso devi assicurarti di avere la stessa versione del wallet sia su desktop e VPS.
-
-```
-git clone https://github.com/scryptachain/scrypta
-cd scrypta
-./autogen.sh
-./configure
-sudo make
-cd src
-chmod 777 -R *
-./lyrad &
-```
-::: warning NOTA
-Con Ubuntu 18.04 LTS, dopo il comando`./configure`, potresti imbatterti in questo errore:
-
-`configure: error: Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
-
-Risolverai il problema installando la *ssl library v1.0* con il seguente comando:
-
-`apt-get install libssl1.0-dev`
-
-Ricomincia adesso dal comando `./autogen.sh`.
-:::
-
-### STEP #5
+### STEP #4
 Quando avvierari il wallet per la prima volta, verra creata la [data directory](../scrypta-full-node/data-directory.md) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
 ```
 Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpassword in the configuration file: /root/.lyra/lyra.conf
@@ -239,11 +219,10 @@ Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpasswor
 
 Procedi adesso con il prossimo passaggio per impostare il file di configurazione.
 
-### STEP #6
+### STEP #5
 Di seguito le istruzioni per navigare fino alla data directory lyra e impostare correttamente il file di configurazione con i dati necessari al funzionamento del masternode:
 ```
-cd
-cd .lyra
+cd ~/.lyra
 sudo nano lyra.conf
 ```
 Adesso **inserisci** le seguenti informazioni e **salva**:
@@ -264,7 +243,9 @@ masternodeprivkey=YOUR_MASTERNODE_KEY
 ```
 Salva con **Ctrl + X**, conferma con **Y** e premi **Invio**.
 
-### STEP #7
+![nanovps](../.vuepress/public/assets/masternode/12.png)
+
+### STEP #6
 Torna alla cartella *src* di lyra, lancia il daemon e avvia il tuo masternode. Inserisci le seguenti istruzioni:
 ```
 cd
@@ -280,6 +261,9 @@ Soffermati sulla voce  "*blocks*" :  e metti a confronto i blocchi raggiunti dal
 
 ::: warning ATTENZIONE
 È necessaria una sincronizzazione completa per avviare correttamente il tuo masternode, potrebbe essere necessario del tempo per scaricare tutti i dati della blockchain.
+Assicurarsi che il wallet online e il wallet locale abbiano la stessa versione e protocollo. Ad esempio: 
+"version" : 2000100
+"protocolversion" : 70922
 :::
 
 Quando la sincronizzazione è completa, puoi procedere con l'avvio del masternode e il controllo dello stato, operazioni che verranno illustrate nel prossimo paragrafo.
@@ -315,12 +299,17 @@ lyra_mn01 199.247.28.77:42222 6rPBVJLZ7837WFRutKuZTZmbFq6USZG3rHCTTPosJuXg4DpiyQ
 Inserita la stringa, **salva** il file, **chiudi il wallet  e riavvialo** per rendere effettive le modifiche apportate.
 
 ### Masternode Start
+Dopo aver riavviato il wallet, apri la console di debug e scrivi il seguente comando:
 
-Dopo aver riavviato il wallet , vai sulla sezione masternode cliccando su *Your Masternodes*. Sleziona il tuo Masternode e clicca su *Start Alias*.
+```
+startmasternode alias 0 MN1
+```
+dove MN1 è l'etichetta (label) che hai scelto per il tuo masternode
+
+![startmn](../.vuepress/public/assets/masternode/14.png)
 
 Adesso il tuo masternode dovrebbe essere attivo (*enabled*)!
 
-Se vuoi avviaare contemporaneamente masternodes multipli, puoi usare il comando *Start All* della sezione *masternode*.
 
 ### Controllo dello stato
 
