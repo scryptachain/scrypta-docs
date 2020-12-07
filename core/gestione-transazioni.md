@@ -191,7 +191,7 @@ let txid =  await scrypta.decodeRawTransaction(rawtransaction)
 
 */
 ```
-## build(password, send = false, to, amount, metadata = '', fees = 0.001, key)
+## build(key, password, send = false, to, amount, metadata = '', fees = 0.001)
 
 Questo è il metodo principale per la costruzione delle transazioni. Invoca internamente tutti i metodi elencati precedentemente.
 
@@ -203,8 +203,10 @@ Solitamente è invocato internamente dai metodi `send` e `write` ma può essere 
     
 
 I parametri sono descritti di seguito:
+    
+-   **key:** il payload di identità da utilizzare.
 
--   **password:** la password per de-crittografare il payload di identità.
+-   **password:** la password per decriptare il payload di identità.
     
 -   **send:** permette di inviare la transazione contestualmente (di default è `false`).
     
@@ -215,8 +217,6 @@ I parametri sono descritti di seguito:
 -   **metadata:** eventuale stringa di testo da scrivere in transazione (massimo 8000 byte).
     
 -   **fees:** la quantità di fee da usare per la transazione, di default sono **0.001 LYRA.**
-    
--   **key:** il payload di identità da utilizzare.
     
 
 ## send(password, to, amount, metadata = '', key = '')

@@ -116,6 +116,7 @@ module.exports = {
           '/core/gestione-advanced',
           '/core/gestione-indirizzi',
           '/core/gestione-transazioni',
+          '/core/planum',
           '/core/firma-verifica-messaggi',
           '/core/progressive-data-management',
           '/core/p2p-network',

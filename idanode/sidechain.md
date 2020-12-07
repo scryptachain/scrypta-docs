@@ -17,6 +17,8 @@ Ecco i campi da inviare per creare una nuova Sidechain:
 - **decimals**: il numero di cifre con cui è possibile dividere il token
 - **burnable**:  può essere `true` o `false` e determina se il token può essere inviato o meno all'indirizzo del trustlink per effettuare un burn di token.
 - **reissuable**: può essere `true` o `false` e determina se il token è a supply fissa oppure è possibile riemetterlo in un secondo momento.
+- **permissioned**: può essere `true` o `false` e determina se la sidechain è permissioned oppure no, se impostato su `true` si dovranno autorizzare tutti gli utenti.
+- **extendable** (WIP): può essere `true` o `false` e determina se il token è esteso da uno smart contract oppure no (ancora in work in progress, non usare).
 
 Se tutto è andato per il verso giusto, la nuova sidechain verrà visualizzata qui: https://sidechain.scryptachain.org e sarà anche visibile il balance disponibile.
 
@@ -701,3 +703,26 @@ Ad esempio la chiamata `/sidechain/check/6ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm/true
 Come è facile notare le ultime due proprietà dell'oggetto sono `consensus` e `reliability` ovvero ci danno il numero di nodi collegati che riportano lo stesso stato e l'affidabilità del nodo stesso.
 
 La libreria `@scrypta/core` ritiene inaffidabili i nodi che hanno un valore inferiore a 50 collegandosi di conseguenza ad un altro nodo automaticamente.
+
+## [POST] /sidechain/allow
+
+Permette di abilitare, nelle sidechain di tipo `permissioned` un utente ad operare. L'utente può avere due tipi di livelli: 
+- `user`: ovvero che può operare in ricezione ed invio delle transazioni
+- `validator`: ovvero che può operare all'interno della sidechain e può anche **gestire** gli utenti, esattamente come l'owner. A differenza dell'owner non potrà aggiungere altri *validatori*.
+
+Bisogna inviare i seguenti campi:
+- **dapp_address**: l'indirizzo che si vuole abilitare.
+- **sidechain_address**: l'indirizzo della sidechain a cui appartiene l'utente.
+- **private_key**: la chiave privata con cui si desidera operare.
+- **level**: il livello che si vuole abilitare, può essere solo `user` o `validator`.
+
+## [POST] /sidechain/deny
+
+Permette di disabilitare, nelle sidechain di tipo `permissioned` un utente ad operare. 
+E' necessario disabilitare l'utente per lo stesso livello a cui è stato abilitato precedentemente per operare correttamente in quanto l'utente potrebbe essere stato abilitato ad entrambi i livelli.
+
+Bisogna inviare i seguenti campi:
+- **dapp_address**: l'indirizzo che si vuole abilitare.
+- **sidechain_address**: l'indirizzo della sidechain a cui appartiene l'utente.
+- **private_key**: la chiave privata con cui si desidera operare.
+- **level**: il livello che si vuole disabilitare, può essere solo `user` o `validator`.
