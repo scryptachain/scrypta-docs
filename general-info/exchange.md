@@ -14,6 +14,7 @@ Al momento è possibile scambiare LYRA su:
 
 ## WhiteBit
 [LYRA/BTC](https://whitebit.com/trade/LYRA_BTC)
+
 [LYRA/EUR](https://whitebit.com/trade/LYRA_EUR)
 
 ## Mercatox
