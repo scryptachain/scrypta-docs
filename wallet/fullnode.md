@@ -18,39 +18,15 @@ Di seguito le istruzioni per ogni sistema operativo:
 
 ### Linux
 
-Ecco i passaggi per il processo di installazione di Lyra Wallet su **Linux**, nello specifico su **Ubuntu 16.0.4**: 
+Il modo più semplice per configurare il portafoglio LYRA su **Linux** è utilizzare l' eseguibile precompilato disponibile su Github. Se invece si vuole procedere alla compilazione del wallet è consigliato usare le immagini Docker già configurate:
+https://github.com/scryptachain/scrypta/tree/master/docker/linux
 
-1. Apri il Termiale (CTRL-ALT-T)
-2. Inserisci questo codice riga per riga (premendo invio ad ogni riga) in modo da compilare il LYRA Wallet nella versione GUI (con interfaccia grafica).
+Basterà lanciare uno degli script per compilare una specifica versione o quella multipla. Noi consigliamo quella multipla in quanto contiene già tutte le librerie necessarie. Per lanciare lo script di compilazione basta andare nella cartella ed eseguire:
 ```
-sudo add-apt-repository -y ppa:bitcoin/bitcoin
-sudo apt-get install -y software-properties-common python-software-properties
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
-sudo apt-get install -y curl g++ git-core pkg-config libtool faketime bsdmainutils mingw-w64 g++-mingw-w64 nsis zip ca-certificates python
-sudo apt-get install libzmq3-dev
-sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-sudo apt-get install libqrencode-dev
-git clone https://github.com/scryptachain/scrypta
-cd scrypta
-./autogen.sh
-./configure
-sudo make
-cd src/qt
-chmod 777 -R *
-./lyra-qt
+bash build-multi.sh
 ```
-::: warning Attenzione
-Nota che con Ubuntu 18.04 LTS, dopo il comando```./configure```, potresti imbatterti in questo errore:
-configure: error: `Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
 
-Risolverai il problema installando la **ssl library v1.0** con il seguente comando:
-```
-apt-get install libssl1.0-dev
-```
-Ricomincia adesso dal comando `./autogen.sh`.
-:::
+Dopo la compilazione vi troverete le immagini dentro `multi/build`
 
 ### Windows
 
