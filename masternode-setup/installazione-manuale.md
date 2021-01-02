@@ -4,7 +4,7 @@
 
 ### Requisiti
 
-Assicurati di avere l'ultima versione del [LYRA Wallet](../scrypta-full-node/installazione.md).
+Assicurati di avere l'ultima versione del [LYRA Wallet](../wallet/fullnode.md).
 
 Per sviluppare un Masternode avrai bisogno collateral necessario di **15000 LYRA** (preferibilmente qualcosa in più, al fine di coprire le spese di commissione del network che verranno addebitate quando effettuerai la transazione verso l'indirizzo masternode.
 
