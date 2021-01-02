@@ -204,15 +204,15 @@ sudo apt-get install -y curl g++ git-core pkg-config libtool fak
 Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del Lyra Daemon:
 
 ```
-wget https://github.com/scryptachain/scrypta/releases/download/v2.0.1/lyra-2.0.1-linux-VPS.tar.gz
-tar -xvzf lyra-2.0.1-linux-VPS.tar.gz && mkdir scrypta && mv lyra-2.0.1-linux-VPS scrypta/src && rm -rf lyra-2.0.1-linux-VPS
+wget https://github.com/scryptachain/scrypta/releases/download/2.0.1/lyra-2.0.1-linux-server.zip
+unzip lyra-2.0.1-linux-server.zip && mkdir scrypta && mv lyra-2.0.1-linux-VPS scrypta/src && rm -rf lyra-2.0.1-linux-VPS
 cd scrypta/src
 chmod 777 -R *
 ./lyrad &
 ```
 
 ### STEP #4
-Quando avvierari il wallet per la prima volta, verra creata la [data directory](../scrypta-full-node/data-directory.md) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
+Quando avvierari il wallet per la prima volta, verra creata la [data directory](../wallet/fullnode.md#directory-dei-dati) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
 ```
 Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpassword in the configuration file: /root/.lyra/lyra.conf
 ```
