@@ -13,11 +13,6 @@ Puoi riferirti alla procedura citata in questa sezione:
 
 [Desktop Wallet Setup](../masternode-setup/installazione-manuale.md)
 
-Puoi anche consultare la video guida:
-
-[*Easy Masternode Deployment* - Tutorial Video](https://www.youtube.com/watch?v=lgmMEgmKUs4&feature=youtu.be)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lgmMEgmKUs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## COMA node
 
@@ -26,11 +21,3 @@ The Hub offre anche un servizio di masternode hosting molto pratico che non nece
 Allo stesso tempo l'utente può massimizzare il suo "passive income" mettendo automaticamente in stake le ricompense, o aggiungendo dei pacchetti di coin attraverso transazioni ai propri indirizzi di ricezione.
 
 Inoltre, questa soluzione "cloud" consente ai partecipanti di gestire la valuta digitale LYRA da qualsiasi dispositivo. Infine, i processi di autenticazione a due fattori (2FA) rendono i processi di deposito e prelievo estremamente sicuri.
-
-Eccon una guida esaustiva sul suo funzionamento:
-
-[*Clientless On Cloud Masternode* - Guida](https://medium.com/@kalkulus_team/thehub-introduce-clientless-masternodes-overview-and-guide-to-comanodes-c25a6f6c3a9e)
-
-::: tip SERVIZI AGGIUNTIVI
-The Hub fornisce anche una serie di servizi  aggiuntivi come i di monitoraggio e statistiche, grafici, cronologia e dettagli degli utili; in un'interfaccia utente piacevole e di facile utilizzo.
-:::

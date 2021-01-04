@@ -22,7 +22,7 @@ R: La tecnologia Masternode è in grado di convalidare e confermare istantaneame
 
 **D: SCRYPTA VERRA' LISTATA SU EXCHANGE?**
 
-R: Al momento puoi scambiare  LYRA su Mercatox , Graviex, e Midas. Il team di Scrypta è impegnato a lungo termine nella stabilità e integrità del progetto. Gli exchange più importanti saranno interessati al progetto solo se il suo sviluppo tecnologico avrà la priorità e sarà constante . Scrypta è focalizzata a raggiungere questi obiettivi.
+R: Al momento puoi scambiare  LYRA su Mercatox , Graviex, Midas e Whitebit. Il team di Scrypta è impegnato a lungo termine nella stabilità e integrità del progetto. Gli exchange più importanti saranno interessati al progetto solo se il suo sviluppo tecnologico avrà la priorità e sarà constante . Scrypta è focalizzata a raggiungere questi obiettivi.
 
 **D: OGNI QUANTO CAMBIANO LE RICOMPENSE PER BLOCCO?**
 
