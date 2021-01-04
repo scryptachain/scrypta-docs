@@ -1,6 +1,6 @@
-# Sidechain
+# Planum: Sidechain Layer
 
-Il protocollo Sidechain di Scrypta è descritto nella sezione apposita . Vediamo qui come interagire con le Sidechain attraverso gli enpoint dell'IdANode.
+Il protocollo Sidechain di Scrypta è descritto nella sezione apposita. Vediamo qui come interagire con le Sidechain attraverso gli enpoint dell'IdANode.
 
 ## [POST] /sidechain/issue
 

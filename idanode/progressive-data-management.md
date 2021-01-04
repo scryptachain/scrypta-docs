@@ -3,9 +3,9 @@
 Questi endpoint rappresentano il cuore delle funzionalità degli IdANode. 
 La scrittura, ma soprattutto la lettura, delle informazioni scritte sulla blockchain rappresentano le due funzionalità chiave dello sviluppo di qualsiasi dApp.
 
-Ricordiamo che la scrittura di dati arbitrari è permessa grazie all' **OP_RETURN**, che permette di inserire 8000 byte di dati su qualunque transazione. E' importante capire che gli output marcati con OP_RETURN sono delle transazioni **non** spendibili, infatti vengono spese le sole fee di **0.001 LYRA** per ogni transazione, ovvero per ogni 8000 byte.
+Ricordiamo che la scrittura di dati arbitrari è permessa grazie all' **OP_RETURN**, che permette di inserire 8000 byte di dati su qualunque transazione. E' importante capire che gli output marcati con OP_RETURN sono delle transazioni **non** spendibili, infatti vengono spese le sole fee di **0.001 LYRA** per ogni transazione, ovvero per ogni 50 kilobyte.
 
-Se le dimensioni del dato che si vuole scrivere superano gli 8000 byte, l'IdANode (e Scrypta Core) suddivide i dati in pezzi da 7994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
+Se le dimensioni del dato che si vuole scrivere superano gli 50000 byte, l'IdANode (e Scrypta Core) suddivide i dati in pezzi da 49994 byte e usa i primi 3 byte e gli ultimi 3 byte per creare un legame tra dati sequenziali. In particolare i primi 3 byte vengono legati alla transazione precedente e gli ultimi 3 a quella successiva. In questo modo gli IdANode riescono a ricostruire le informazioni scritte su più transazioni. 
 
 ## Operazioni possibili
 
@@ -23,10 +23,12 @@ Un tipico dato strutturato secondo il nostro protocollo è il seguente:
 	"collection":"",
 	"refID":"",
 	"protocol":"",
-	"data":"Hello world.","block":55650,
+	"data":"Hello world.",
+	"block":55650,
 	"blockhash":"0219d55c6ef7c33e73eab0116faee40a92541ee931ad07cabd97b5ee5c0278d8",
 	"time":1548755949
 }
+
 ```
 Come abbiamo potuto osservare sulla documentazione relativa a Scrypta Core, abbiamo 3 diversi filtri:
 - **collection:** definisce una collezione.
@@ -71,29 +73,17 @@ Ecco la lista dei possibili parametri:
  {
 
 	"uuid":  "c95a77da.9683.499a.aeb5.8d47c202d126",
-
 	"address":  "LdRQokR1i3XDtj1V3jnCRqMPrVc7sYkeE2",
-
 	"fees":  0.002,
-
 	"collection":  "",
-
 	"refID":  "",
-
 	"protocol":  "dapp://",
-
 	"dimension":  107,
-
 	"chunks":  2,
-
 	"stored":  "*!*c95a77da.9683.499a.aeb5.8d47c202d126!*!!*!!*!dapp://*=>Qmb8PCFSp9uSUJr3eLafiTyAqcHaq2TBk4kj4wAEDG2zQo*!*",
-
 	"txs":  [
-
 			"1cc6ce97780634cd0a181aea539a09694592beca1cb0406d0b85a7268872ed5f",
-
 			"33d682f861665928a634a10d4e75f7c99038d4b7536498c9d17598d8552ac007"
-
 	]
 
 }
