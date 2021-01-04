@@ -1,4 +1,4 @@
-# dApp Starter
+# React dApp Starter
 
 Scritto in React, ti permette di creare una Progressive Web App collegata con Scrypta Blockchain.
 

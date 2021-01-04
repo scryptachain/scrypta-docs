@@ -1,4 +1,4 @@
-# dApp Starter
+# VueJS dApp Starter
 
 Scritto in VueJS, ti permette di creare una Progressive Web App collegata con Scrypta Blockchain.
 
