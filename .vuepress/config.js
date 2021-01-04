@@ -147,7 +147,8 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           '/utilities/dapp-composer',
-          '/utilities/dapp-starter',
+          '/utilities/dapp-starter-vuejs',
+          '/utilities/dapp-starter-react',
           '/utilities/card-generator',
           '/utilities/shamir-backup',
           '/utilities/vanity-address',
