@@ -194,7 +194,8 @@ Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del L
 ```
 wget https://github.com/scryptachain/scrypta/releases/download/2.0.1/lyra-2.0.1-linux-complete.zip
 unzip lyra-2.0.1-linux-complete.zip
-chmod 777 -R lyra-2.0.1-linux-complete
+chmod 777 lyrad
+chmod 777 lyra-cli
 mv ./lyrad /usr/bin/lyrad
 mv ./lyra-cli /usr/bin/lyra-cli
 rm lyra-qt
