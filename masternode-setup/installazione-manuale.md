@@ -187,31 +187,24 @@ echo -e "/swapfile none swap sw 0 0 \n" >> /etc/fstab
 ```
 
 ### STEP #2
-Adesso è il momento di installare le dipendenze inserendo le seguenti istruzioni:
-
-```
-sudo add-apt-repository -y ppa:bitcoin/bitcoin
-sudo apt-get install -y software-properties-common python-software-properties
-sudo apt-get update
-sudo apt-get install -y pkg-config
-sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
-sudo apt-get install -y curl g++ git-core pkg-config libtool fak
-```
-
-### STEP #3
 **Installazione Lyra Daemon**
 
 Utilizza adesso i comandi seguenti per procedere con il download e l'avvio del Lyra Daemon:
 
 ```
-wget https://github.com/scryptachain/scrypta/releases/download/2.0.1/lyra-2.0.1-linux-server.zip
-unzip lyra-2.0.1-linux-server.zip && mkdir scrypta && mv lyra-2.0.1-linux-VPS scrypta/src && rm -rf lyra-2.0.1-linux-VPS
-cd scrypta/src
-chmod 777 -R *
-./lyrad &
+wget https://github.com/scryptachain/scrypta/releases/download/2.0.1/lyra-2.0.1-linux-complete.zip
+unzip lyra-2.0.1-linux-complete.zip
+chmod 777 -R lyra-2.0.1-linux-complete
+mv ./lyrad /usr/bin/lyrad
+mv ./lyra-cli /usr/bin/lyra-cli
+rm lyra-qt
+rm lyra-2.0.1-linux-complete.zip
+lyrad &
 ```
 
-### STEP #4
+Da questo momento potrai avviare `lyrad` da qualsiasi cartella come ogni altro programma e potrai interagirvi usando il `lyra-cli` sempre da qualsiasi cartella.
+
+### STEP #3
 Quando avvierari il wallet per la prima volta, verra creata la [data directory](../wallet/fullnode.md#directory-dei-dati) lyra , essa contiene i blocchi della catena, il file di configurazione *lyra .conf* ed altri file necessari al funzionamento. Poiché il file *lyra.conf* non è stato ancora impostato, probabilmente riceverai il seguente messaggio:
 ```
 Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpassword in the configuration file: /root/.lyra/lyra.conf
@@ -219,7 +212,7 @@ Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpasswor
 
 Procedi adesso con il prossimo passaggio per impostare il file di configurazione.
 
-### STEP #5
+### STEP #4
 Di seguito le istruzioni per navigare fino alla data directory lyra e impostare correttamente il file di configurazione con i dati necessari al funzionamento del masternode:
 ```
 cd ~/.lyra
@@ -245,17 +238,15 @@ Salva con **Ctrl + X**, conferma con **Y** e premi **Invio**.
 
 ![nanovps](../.vuepress/public/assets/masternode/12.png)
 
-### STEP #6
-Torna alla cartella *src* di lyra, lancia il daemon e avvia il tuo masternode. Inserisci le seguenti istruzioni:
+### STEP #5
+Lancia il daemon e avvia il tuo masternode. Inserisci le seguenti istruzioni:
 ```
-cd
-cd scrypta/src
-./lyrad &
+lyrad &
 ```
 
 Ora è il momento di attendere una sincronizzazione completa dei dati blockchain. Puoi controllare lo stato con il seguente comando:
 ```
-./lyra-cli getinfo
+lyra-cli getinfo
 ```
 Soffermati sulla voce  "*blocks*" :  e metti a confronto i blocchi raggiunti dal tuo nodo con quelli del [block explorer](https://explorer.scryptachain.org/) ufficiale.
 
@@ -324,14 +315,9 @@ Se lo "status" è su *ENABLED*, il masternode è correttamente attivo e connesso
 
 ![masternode-list-conf](../.vuepress/public/assets/masternode/masternode-list-conf.png)
 
-**Sul wallet VPS**, effettua il Login sul tuo server VPS, naviga fino alla cartella dove risiede il daemon e il client lyra:
+**Sul wallet VPS**, effettua il Login sul tuo server VPS digita la seguente istruzione:
 ```
-cd
-cd scrypta/src
-```
-Digita la seguente istruzione:
-```
-./lyra-cli masternode status. 
+lyra-cli masternode status. 
 ```
 La risposta di corretto funzionamento del masternode sarà: “*Masternode successfully started*”.
 
