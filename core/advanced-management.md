@@ -73,6 +73,10 @@ The answer will be like that and as we can see we will again have the `xpub` and
 It derives an address starting from xprv, the use is similar to that previously exposed, as well as the answer.
 
 
+## deriveKeyFromMnemonic (menmonic, index)
+It derives an address starting from the mnemonic phrase, the use is similar to that previously explained, as well as the answer.
+
+
 ## deriveKeyfromXPub (xpub, index)
 It derives an address starting from the xpub, the use is similar to that previously explained, the difference lies in the result, as it will not contain the *private keys* but only the public keys.
 
