@@ -17,6 +17,8 @@ Here are the data fields to use to create a new Sidechain:
 - **decimals**: the number of decimals of the token
 - **burnable**:  it can be `true` or` false`. Determines whether or not the token can be sent to the trustlink address to perform a token burn.
 - **reissuable**: it can be `true` or` false`. Determines whether the token is fixed supply or can be reissued later.
+- **permissioned**: can be `true` or` false` and determines if the sidechain is permissioned or not, if set to `true` all users must be authorized.
+- **extendable** (WIP): can be `true` or` false` and determines if the token is extended by a smart contract or not (still in work in progress, do not use).
 
 If the operation is successful, the new sidechain will be displayed here: https://sidechain.scryptachain.org and the available balance will also be visible.
 
@@ -119,7 +121,7 @@ The answer will be similar to the following:
 
 ## [POST] /sidechain/shares
 
-It allows you to view all the active wallets inside the sidechain and check the balance and weight inside the sidechain itself. The total supply including any reissues and token burns is also reported.
+It allows you to view all the active wallets inside the sidechain and check the balance and weight inside the sidechain itself. The total supply including any reissues and burned token is also reported.
 
 The answer will look like this:
 ```
@@ -644,10 +646,82 @@ The answer will look like this:
 
 }
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0OTE0MDQyLDE3MDEyMTA2MDksLTExMD
-gzMTQyNjMsLTE3MDc4NDQyNDgsLTcxNjg4NDcwMywtMTY4MDI0
-OTM3MCw2MTM1OTU2MDEsLTE0Nzg5MTk3OTgsLTE3NDA5NDIxNT
-UsNTM4MTYzNDc2LC0xOTk1NDk1Njg1LDEzODM0Mjg2MDksLTMz
-NzQwODM3MV19
--->
+
+## [GET] / sidechain / check /: sidechain /: extended
+
+It allows you to do a consistency check on the sidechain. Only two parameters can be passed via URL:
+
+- Sidechain: this is mandatory and represents the address of the sidechain itself
+- Extended: this is used to perform the consistency check also with the other connected nodes (i.e. inserted in the `.env` file in the` LINKED_NODES` property) and to check the consent
+
+This endpoint is very important in production as it allows not only to perform a formal consistency check on the sidechain (if for example the tokens issued correspond to the sum of unspent) but also allows you to check the status of the node with respect to its own "network" IdaNode.
+
+For example calling `/sidechain/check/6ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm/true` will return a result like:
+``
+{
+    "user_count": 6,
+    "cap": 10000,
+    "issued": 10000,
+    "nodes": [
+        "https://idanodejs02.scryptachain.org",
+        "https://idanodejs03.scryptachain.org",
+        "https://idanodejs04.scryptachain.org",
+        "https://idanodejs05.scryptachain.org",
+        "https://idanodejs06.scryptachain.org",
+        "https://idanode01.beesy24.net",
+        "https://idanode02.beesy24.net"
+    ],
+    "verified": true,
+    "sidechain": {
+        "name": "ScryptaBTC",
+        "supply": 10000,
+        "symbol": "sBTC",
+        "decimals": 8,
+        "reissuable": true,
+        "owner": "LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT",
+        "pubkey": "030249ca95b9d10701d9dfb08cb43b79ee229c3c621a9d17b84320b61690e87d09",
+        "burnable": true,
+        "version": 1,
+        "time": 1582118140204,
+        "address": "6ShzCp8oXAqVSZdrkNMSj13ghobwZZRzGm"
+    },
+    "status": "95d424632eb9ac98f1698fb260378a5e69981cb02837361f81d5ebb9a385a250",
+    "users": [
+        "LV5RkA9AL6ncM19RT3usKRkxd5arUS7iVt",
+        "LUvRq5GygoJ4WMjiW8Zjis19jWK2mHdL2b",
+        "LKbNrug6n72v52nwBFCdgK6atqh5RFBRDk",
+        "LPriRhN69EKQnVPf3xYN9EWxYk3SywYbus",
+        "LaoH8mrMgKoE7Egte8WuhMPpBeBJJHnT7M",
+        "LchzGX6vqmanceCzNUMTk5cmnt1p6knGgT"
+    ],
+    "consensus": "7/7",
+    "reliability": 100
+}
+```
+
+As you can see, the last two properties of the object are `consensus` and` reliability` which give us the number of connected nodes that report the same status and the reliability of the node itself.
+
+The `@ scrypta / core` library deems nodes with a value less than 50 unreliable by automatically connecting to another node accordingly.
+
+## [POST] / sidechain / allow
+
+It allows to enable a user to operate in the `permissioned` sidechains. The user can have two types of levels:
+- `user`: that is, it can operate in receiving and sending transactions
+- `validator`: that is, it can operate within the sidechain and can also ** manage ** users, just like the owner. Unlike the owner he will not be able to add other * validators *.
+
+The following fields must be sent:
+- **dapp_address**: the address you want to enable.
+- **sidechain_address**: the address of the sidechain to which the user belongs.
+- **private_key**: the private key you want to operate with.
+- **level**: the level you want to enable, it can only be `user` or` validator`.
+
+## [POST] / sidechain / deny
+
+It allows you to disable, in the `permissioned` type sidechains, a user to operate.
+The user must be disabled for the same level at which he was previously enabled to operate correctly as the user may have been enabled at both levels.
+
+The following fields must be sent:
+- **dapp_address**: the address you want to enable.
+- **sidechain_address**: the address of the sidechain to which the user belongs.
+- **private_key**: the private key you want to operate with.
+- **level**: the level you want to disable, it can only be `user` or` validator`.

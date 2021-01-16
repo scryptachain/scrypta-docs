@@ -26,7 +26,7 @@ Here we see an **example** of identification:
 
 As you can guess, no personal data is saved within the blockchain, revealing itself as a tool with ***privacy by design***.
 
-> It is the Gateway that acts as a "certification body", be it a company or an organization, or a government agency, and will take care of creating an **offline** digital archive (as we recommend), which will allow it to trace the correct identification of users, and as a tool of KYC (Know Your Customer).
+> It is the Gateway that acts as a "certifying body", be it a company or an organization, or a government body, and will be responsible for creating an **offline** digital archive (as we recommend), which will allow it to trace the correct identification of users, and as a tool of KYC (Know Your Customer).
 
 
 The identity payload is also delivered to the user who will keep it within their devices (Card, Mobile, PC) and will be necessary for the processes of exchange of personal information between users, companies, entities.

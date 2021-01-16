@@ -2,7 +2,7 @@
 
 In this section you will find some **general information** about the Scypta ecosystem, a list of **useful links**, some information on **exchanges** where you can come and buy LYRA and finally some **general FAQs** on the Scrypta blockchain.
 
-[**What is Scrypta**](../general-info/cosa-è.md)
+[**What is Scrypta**](../general-info/what-is.md)
 
 [**Useful Links**](../general-info/link.md)
 

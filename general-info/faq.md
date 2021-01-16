@@ -1,6 +1,6 @@
 # General Faq
 
-**Q: WHAT IS THE TIME TO CREATE A BLOCK, AND HOW MANY BLOCKS ARE PRODUCED EVERY DAY?**
+**Q: WHAT IS THE TIMING TO CREATE A BLOCK, AND HOW MANY BLOCKS ARE PRODUCED EVERY DAY?**
 
 A: The target blocking time is 60 seconds, therefore about 1440 blocks are created per day.
 
@@ -22,12 +22,12 @@ A: Masternode technology is able to instantly validate and confirm transactions 
 
 **Q: WILL SCRYPTA BE LISTED ON EXCHANGE?**
 
-A: You can currently trade LYRA on Mercatox, Graviex, and Midas. The Scrypta team is committed to long-term stability and integrity of the project. The most important exchanges will be interested in the project only if its technological development has the priority and is constant. Scrypta is focused on achieving these goals.
+A: You can currently trade LYRA on Mercatox, Graviex, Midas and Whitebit. The Scrypta team is long-term committed to the stability and integrity of the project. The most important exchanges will be interested in the project only if its technological development has priority and is constant. Scrypta is focused on achieving these goals.
 
-**Q: EVERY TIME THE REWARDS PER BLOCK CHANGE?**
+**Q: WHEN DO THE REWARDS PER BLOCK CHANGE?**
 
 A: You can find this information in Appendix II in the margin of the LightPaper.
 
-**Q: WHERE DO THE TRANSACTION FEE FINISH?**
+**Q: WHERE DO THE TRANSACTION FEE GO?**
 
-A: The "Transaction fees" are "burned" by the algorithm.
+A: All "Transaction fees" are "burned" by the algorithm.

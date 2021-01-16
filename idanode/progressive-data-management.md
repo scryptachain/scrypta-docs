@@ -1,11 +1,11 @@
 # Progressive Data Management
 
 These endpoints represent the core of the IdANode functionality.
-The writing, but above all the reading, of the information written on the blockchain represent the two key features of the development of any dApp.
+The writing and the reading of the information written on the blockchain represent the two key features of the development of any dApp.
 
-The writing of arbitrary data is allowed thanks to the **OP_RETURN**, which allows to insert 8000 bytes of data on any transaction. It is important to note that the outputs marked with OP_RETURN are **non** expendable transactions. In fact, in this case only the fees of **0.001 LYRA** are spent for each transaction, or for every 8000 bytes.
+The writing of arbitrary data is allowed thanks to the **OP_RETURN**, which allows to insert 8000 bytes of data on any transaction. It is important to note that the outputs marked with OP_RETURN are **non** expendable transactions. In fact, in this case only the fees of **0.001 LYRA** are spent for each transaction, or for every 50 kilobyte.
 
-If the size of the data to be written exceeds 8000 bytes, the IdANode (and Scrypta Core) divides the data into blocks of 7994 bytes and uses the first 3 bytes and the last 3 bytes to create a link between sequential data. The first 3 bytes are tied to the previous transaction and the last 3 to the next one. In this way the IdANodes are able to reconstruct the written information on multiple transactions.
+If the size of the data to be written exceeds 50000 byte, the IdANode (and Scrypta Core) divides the data into blocks of 49994 bytes and uses the first 3 bytes and the last 3 bytes to create a link between sequential data. The first 3 bytes are tied to the previous transaction and the last 3 to the next one. In this way the IdANodes are able to reconstruct the written information on multiple transactions.
 
 ## Types of possible operations to perform
 
@@ -34,10 +34,10 @@ As we have seen in the Scrypta Core documentation, we have 3 different filters:
 - **protocol:** defines a protocol, usually interpreted by the dApp.
 - **uuid:** unique identifier _assigned_ during writing. This uuid is essential for **update** and **invalidation** operations as it must be passed to the endpoints.
 
-A fourth type of filter is the _send_, which however is not considered in the same way as the write / update / invalidation operations from the IdANode.
+A fourth type of filter is the _send_, which however is not considered in the same way as the write/update/invalidation operations from the IdANode.
 By sending operations we mean the single transaction with OP_RETURN from one address to **another** address. This is limited to a maximum of 80 bytes and the content is not formatted according to the above standard. As we can see in the example below, a UUID is not assigned and the elements for Collection, RefID, Protocol cannot be filtered.
 
-There is a ** sender ** field that defines who sent the data. This type of data is useful in the processing of dApps that provide for the exchange of information between two or more addresses as shown in our voting platform Proof of Concept.
+There is a **sender** field that defines who sent the data. This type of data is useful in the processing of dApps that provide for the exchange of information between two or more addresses as shown in our voting platform Proof of Concept.
 
 ```
 {
@@ -104,7 +104,7 @@ The answer to the call will be similar to that of writing through Scrypta Core:
 
 It is used to invalidate a data. The parameters necessary for the operation to be successful are:
 - **uuid [mandatory]:** the unique identifier returned by the IdANode in the initial writing phase.
--  **private_key [mandatory]:** private key of the address that wrote the information.
+- **private_key [mandatory]:** private key of the address that wrote the information.
 - **dapp_address [mandatory]:** l'indirizzo che ha scritto l'informazione.the address that wrote the information.
 
 The answer, if successful, will look like this:
@@ -127,7 +127,7 @@ This call reads the information. It is possible to filter and limit the results,
 
 The following parameters can be used:
 - **history:** allows you to set the return of updated or invalidated data, by default it is `false`.
--  **address:** filters data written from a specific address.
+- **address:** filters data written from a specific address.
 - **uuid:** filter the data by choosing a specific _uuid_. If used in combination with the _history_ field, it is possible to view the history of a given data.
 - **collection**: filters data for a specific collection.
 - **refID**: filters data by choosing a specific refID. It is possible to use it as an alternative to uuid, however using its own type of identifier (numeric, alphanumeric, etc).

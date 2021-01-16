@@ -204,6 +204,8 @@ It is usually invoked internally by the `send` and` write` methods but can be us
 
 The parameters are described below:
 
+-   **key:** the identity payload to use.
+
 -   **password:** the password to de-encrypt the identity payload.
     
 -   **send:** it allows to send the transaction contextually (default is `false`).
@@ -215,8 +217,6 @@ The parameters are described below:
 -   **metadata:** text string to be written in transaction (maximum 8000 bytes), it is not mandatory.
     
 -   **fees:** the amount of fees to use for the transaction, by default they are **0.001 LYRA.**
-    
--   **key:** the identity payload to use.
     
 
 ## send(password, to, amount, metadata = '', key = '')
