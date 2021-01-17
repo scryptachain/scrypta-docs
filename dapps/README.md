@@ -14,5 +14,5 @@ This document will describe all the dApps created by Scrypta, providing both tec
 - **News:** [https://news.scryptachain.org/#/](https://news.scryptachain.org/#/)
 - **SocialPay:** [https://socialpay.live](https://socialpay.live)
 - **Electio:** [https://electio.app/#/](https://electio.app/#/)
- - **Identity:** [https://me.scrypta.id/](https://me.scrypta.id/)
+- **Identity:** [https://me.scrypta.id/](https://me.scrypta.id/)
 - **Proof:** [https://proof.scryptachain.org/#/](https://proof.scryptachain.org/#/)

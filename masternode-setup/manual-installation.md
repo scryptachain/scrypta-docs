@@ -42,7 +42,11 @@ Copy it to any text file (Notepad or txt file).
 
 Now enter
 
-`getnewaddress`
+`getnewaddress MN1`
+
+or from the "Receive" tab of the wallet:
+
+![getnewaddress](../.vuepress/public/assets/masternode/4.png)
 
 This instruction generates the **masternode storage address** to which the 15000 LYRAs should be sent. Also write this on the text file. If you have multiple masternodes, you can also generate multiple addresses and multiple genkeys for each one.
 
@@ -58,6 +62,7 @@ And so on.
 
 Now send **EXACTLY 15000 LYRA**, in a single transaction, to the generated deposit address. It must be in one transaction! Do not subtract any fees from the amount.
 
+![sendcollateral](../.vuepress/public/assets/masternode/6.png)
 
 ::: warning WARNING
 It is not advisable to send the collateral directly to the masternode from an exchange, as certain withdrawal fees may be deducted resulting in a transfer of less than 15,000 LYRA.
@@ -178,76 +183,40 @@ echo -e "/swapfile none swap sw 0 0 \n" >> /etc/fstab
 ```
 
 ### STEP #2
-Now we have to install the dependencies by entering the following instructions:
+**Installation of Lyra Daemon**
+
+Now use the following commands to proceed with the download and start of the Lyra Daemon:
 
 ```
-sudo add-apt-repository -y ppa:bitcoin/bitcoin
-sudo apt-get install -y software-properties-common python-software-properties
-sudo apt-get update
-sudo apt-get install -y pkg-config
-sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
-sudo apt-get install -y curl g++ git-core pkg-config libtool fak
+wget https://github.com/scryptachain/scrypta/releases/download/2.0.1/lyra-2.0.1-linux-complete.zip
+unzip lyra-2.0.1-linux-complete.zip
+chmod 777 lyrad
+chmod 777 lyra-cli
+mv ./lyrad /usr/bin/lyrad
+mv ./lyra-cli /usr/bin/lyra-cli
+rm lyra-qt
+rm lyra-2.0.1-linux-complete.zip
+lyrad &
 ```
+
+From now on you can start `lyrad` from any folder like any other program and you can interact with it using the` lyra-cli` from any folder.
+
 ### STEP #3
-Now compile database Berkely DB v4.8:
-```
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-```
-### STEP #4
-**Lyra Daemon install**
-
+When you start the wallet for the first time, the [data directory] (../ wallet/fullnode.md#data-directory) lyra will be created, it contains the blocks of the chain, the configuration file *lyra.conf* and other files necessary for operation. Since the *lyra.conf* file has not been set up yet, you will probably get the following message:
 Now use the following commands to proceed with the download and startup of the Lyra Daemon:
 
 ```
-wget https://github.com/scryptachain/scrypta/releases/download/v1.1.0/lyra-1.1.0-linux-VPS.tar.gz
-tar -xvzf lyra-1.1.0-linux-VPS.tar.gz && mkdir scrypta && mv lyra-1.1.0-linux-VPS scrypta/src && rm -rf lyra-1.1.0-linux-VPS
-cd scrypta/src
-chmod 777 -R *
-./lyrad &
-```
-
-
-::: tip NOTE
-Alternatively, you can compile the last wallet version with the following commands. In this case you have to be sure to have the same wallet version on desktop and VPS.
-
-```
-wget https://github.com/scryptachain/scrypta
-cd scrypta
-./autogen.sh
-./configure
-sudo make
-cd src
-chmod 777 -R *
-./lyrad &
-```
-::: warning NOTE
-With Ubuntu 18.04 LTS, after the `./Configure` command, you may run into this error:
-
-`configure: error: Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
-
-You will solve the problem by installing the * ssl library v1.0 * with the following command:
-
-`apt-get install libssl1.0-dev`
-
-Continue by entering the command `./autogen.sh`.
-:::
-
-### STEP #5
-When you start the wallet for the first time, the [data directory](../scrypta-full-node/data-directory.md) will be created. It contains the blocks of the chain, the configuration file *lyra.conf* and other files necessary for operation. Since the *lyra.conf* file has not been set up yet, you will probably receive the following message:
-```
 Error: To use lyra, or the -server option to lyra-qt, you must set an rpcpassword in the configuration file: /root/.lyra/lyra.conf
 ```
+Now proceed to the next step to set up the configuration file.
 
-Proceed now to the next step to set up the configuration file.
-
-### STEP #6
-Here are the instructions to move to the lyra data directory and correctly set the configuration file with the data necessary for the operation of the masternode:
+### STEP #4
+Below are the instructions to navigate to the lyra data directory and correctly set the configuration file with the data necessary for the operation of the masternode:
 ```
-cd
-cd .lyra
+cd ~/.lyra
 sudo nano lyra.conf
 ```
-Now **enter** following texts and **save**:
+Now **enter** following informations and **save**;
 ```
 rpcuser=YOUR_USERNAME
 rpcpassword=YOUR_PASSWORD
@@ -263,87 +232,89 @@ bind=YOUR_VPS_IP
 masternodeaddr=YOUR_VPS_IP:42222
 masternodeprivkey=YOUR_MASTERNODE_KEY
 ```
-Save it with **Ctrl + X**, confirm with **Y** and click **Enter**.
+Save using **Ctrl + X**, confirm with **Y** and click **Enter**.
 
-### STEP #7
-Go back to lyra's *src* folder, run the daemon and start your masternode. Enter the following instructions:
-```
-cd
-cd scrypta/src
-./lyrad &
-```
+![nanovps](../.vuepress/public/assets/masternode/12.png)
 
-Now we have to wait for the complete synchronization of the blockchain data. You can check the status with the following command:
+### STEP #5
+Run the daemon and start your masternode. Enter the following instructions:
 ```
-./lyra-cli getinfo
+lyrad &
 ```
-Focus on the item "*blocks*": and compare the blocks reached by your node with those of the official [block explorer](https://explorer.scryptachain.org/).
+Ora è il momento di attendere una sincronizzazione completa dei dati blockchain. Puoi controllare lo stato con il seguente comando:
+```
+lyra-cli getinfo
+```
+Check the entry "*blocks*" and compare the blocks reached by your node with those of the [block explorer
 
 ::: warning WARNING
-Full synchronization is required to properly start your masternode, it may take some time to download all blockchain data.
+A full synchronization is required to successfully start your masternode, it may take some time to download all the blockchain data.
+Make sure that the online wallet and the local wallet have the same version and protocol. For example:
+"version" : 2000100
+"protocolversion" : 70922
 :::
-When synchronization is complete, you can proceed with starting the masternode and checking the status. These operations will be illustrated in the next paragraph.
 
+When the synchronization is complete, you can proceed with starting the masternode and checking the status, which will be explained in the next paragraph.
 
 ## Starting the Masternode and checking the status
 ### Masternode Configuration File
 
-Now is the time to go back to the Lyra Desktop Wallet, start it (if off) and click on:
+Now it's time to go back to the Lyra Desktop Wallet, start it (if off) and click on:
 
 *‘Tools’->  ‘Open Masternode Configuration File’.*
 
 ::: tip NOTE
-We covered this topic in the section called "Desktop Wallet Setup". If you have already configured the *masternode.conf* file, you can proceed further.
+We covered this topic in the section called Desktop Wallet Setup if you have already configured the *masternode.conf* file, you can proceed further.
 :::
 
-Now you will need to enter the following information in the 'Masternode Configuration' file
+Now you will have to enter the following information in the 'Masternode Configuration' file
 
-**MN Label**:  Choose a name for your masternode.
+**MN Label**: Choose a name for your masternode.
 
-**VPS IP:Port**: Address **IP** of your VPS and port **42222**.
+**VPS IP: Port**: **IP** address of your VPS and port **42222**.
 
-**Masternode genkey**: Masternode Genkey (the one we previously generated in the Desktop Wallet Setup).
+**Masternode genkey**: Masternode Genkey (the one we previously generated: Desktop Wallet Setup).
 
 **TX ID**: the identification number of your transaction to the masternode address (see Desktop Wallet Setup).
 
-**TX OUT:** Transaction OutputIndex> (see: Desktop Wallet Setup).
+**TX OUT:** OutputIndex of the transaction> (see: Desktop Wallet Setup)
 
 **Example**:
 ```
 lyra_mn01 199.247.28.77:42222 6rPBVJLZ7837WFRutKuZTZmbFq6USZG3rHCTTPosJuXg4DpiyQ3 525901f650f28c83b4b2df449ea4a738e0627bf151734e62fb30bd56de01cf21 0
 ```
-Insert the string, **save** the file, ** close the wallet and restart it ** to make the changes effective.
+Once the string has been entered, **save** the file, **close the wallet and restart it** to make the changes effective.
 
 ### Masternode Start
+After restarting the wallet, open the debug console and write the following command:
 
-After restarting the wallet, go to the masternode section by clicking on *Your Masternodes*. Select your Masternode and click on * Start Alias *.
+```
+startmasternode alias 0 MN1
+```
+whereas MN1 is the label you have chosen for your masternode
 
-Now your masternode should be active (*enabled*).
+![startmn](../.vuepress/public/assets/masternode/14.png)
 
-If you want to start multiple masternodes simultaneously, you can use the *Start All* command in the * masternode * section.
+Your masternode should now be active (*enabled*)!
 
 ### Status check
 
-**On the desktop wallet** open the debug console: `Tools>>Debug console` and type:
+**On the desktop wallet**, open the debug console: `Tools >> Debug console` and type:
 ``` 
 masternode list-conf 
 ```
 
-You will see the status of your masternodes, *txHash*, *masternode genkey* and the *address*.
+You will see the status of your masternodes, * txHash *, * masternode genkey * and the * address *.
 
-If the "status" is on *ENABLED*, the masternode is correctly active and connected. But scrupulously follow the additional steps on the VPS wallet.
+If the "status" is on *ENABLE *, the masternode is correctly active and connected. But strictly follow the additional steps on the VPS wallet.
 
 ![masternode-list-conf](../.vuepress/public/assets/masternode/masternode-list-conf.png)
 
-**On the VPS wallet** Login on your VPS server, navigate to the folder where the daemon and the lyra client reside:
+**On the VPSwallet **, Login on your VPS server type the following instruction:
 ```
-cd
-cd scrypta/src
+lyra-cli masternode status. 
 ```
-Type the following statement:
-```
-./lyra-cli masternode status. 
-```
-The correct response of the masternode will be: “*Masternode successfully started*”.
+The response that the masternode works correctly will be: “*Masternode successfully started*”.
 
 ![masternode-list-conf](../.vuepress/public/assets/masternode/masternode-successfully-started.png)
+

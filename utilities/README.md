@@ -5,9 +5,8 @@ This document describes all the utility tools created by Scrypta, providing both
 ## List of tools in production
 
 - **dApp Composer:** [https://github.com/scryptachain/scrypta-dapp-composer](https://github.com/scryptachain/scrypta-dapp-composer)
-  
-- **dApp Starter:** [https://github.com/scryptachain/scrypta-dapp-starter](https://github.com/scryptachain/scrypta-dapp-starter)
-  
+- **dApp Starter VueJS:** [https://github.com/scryptachain/scrypta-dapp-starter-vuejs](https://github.com/scryptachain/scrypta-dapp-starter-vuejs)
+- **dApp Starter React:** [https://github.com/scryptachain/scrypta-dapp-starter-react](https://github.com/scryptachain/scrypta-dapp-starter-react)
 - **Card Generator:** [https://github.com/scryptachain/scrypta-card-generator](https://github.com/scryptachain/scrypta-card-generator)
 - **Vanity Address:** [https://github.com/scryptachain/scrypta-vanity-address](https://github.com/scryptachain/scrypta-vanity-address)
 - **P2P Network:** [https://github.com/scryptachain/scrypta-p2p-network](https://github.com/scryptachain/scrypta-p2p-network)

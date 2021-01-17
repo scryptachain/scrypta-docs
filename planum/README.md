@@ -5,7 +5,7 @@ Planume is an open-source and permissionless Sidechain Layer that allows you to 
 
 ![planum](../.vuepress/public/assets/planum/planum.jpeg)
 
-"Planum", accessible via the link https://planum.dev,it is a layer parallel to the Scrypta blockchain that allows you to issue your own tokenized resource, store it, manage it and protect it using the same IdANode Scrypta blockchain network.
+"Planum", accessible via the link https://planum.dev is a layer parallel to the Scrypta blockchain that allows you to issue your own tokenized resource, store it, manage it and protect it using the same IdANode Scrypta blockchain network.
 Any "tokenized asset", once generated with its own metrics, has its independent life cycle in a protected sidechain level, which operates through the Scrypta blockchain, and which in the future can be exchanged with LYRA and all other tokens .
 
 ## What is "Tokenization"

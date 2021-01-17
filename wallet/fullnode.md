@@ -18,39 +18,14 @@ Here are the instructions for each operating system:
 
 ### Linux
 
-Here are the steps for the Lyra Wallet installation process on **Linux** / **Ubuntu 16.0.4**: 
+The easiest way to configure the LYRA wallet on ** Linux ** is to use the pre-compiled executable available on Github. If instead you want to proceed with the compilation of the wallet, it is recommended to use the Docker images already configured:
+https://github.com/scryptachain/scrypta/tree/master/docker/linux
 
-1. Open the Thermal (CTRL-ALT-T)
-2. Enter the following instructions line by line (by pressing enter on each line) in order to compile the LYRA Wallet in the GUI version (with graphic interface).
+Just run one of the scripts to compile a specific or multiple version. We recommend the multiple one as it already contains all the necessary libraries. To run the compilation script just go to the folder and run:
 ```
-sudo add-apt-repository -y ppa:bitcoin/bitcoin
-sudo apt-get install -y software-properties-common python-software-properties
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-sudo apt-get -y install build-essential autoconf automake libboost-all-dev libleveldb-dev libgmp-dev libgmp3-dev libssl-dev libcurl4-openssl-dev libcrypto++-dev libqrencode-dev libminiupnpc-dev autogen libtool git libevent-dev libprotobuf-dev
-sudo apt-get install -y curl g++ git-core pkg-config libtool faketime bsdmainutils mingw-w64 g++-mingw-w64 nsis zip ca-certificates python
-sudo apt-get install libzmq3-dev
-sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
-sudo apt-get install libqrencode-dev
-git clone https://github.com/scryptachain/scrypta
-cd scrypta
-./autogen.sh
-./configure
-sudo make
-cd src/qt
-chmod 777 -R *
-./lyra-qt
+bash build-multi.sh
 ```
-::: warning Warning
-Note that using Ubuntu 18.04 LTS, after the command ```./Configure```, you may run into this error:
-configure: error: `Detected LibreSSL: This is NOT supported, and may break consensus compatibility!`
-
-The problem can be solved by installing the **ssl library v1.0** with the following command:
-```
-apt-get install libssl1.0-dev
-```
-Now run the command `./autogen.sh`.
-:::
+After compiling you will find the images inside `multi/build`
 
 ### Windows
 
@@ -191,7 +166,7 @@ Before exploring these features, we will provide a brief description of the firs
 
 ### First installation Wallet Scrypta
 
-First you need to download the Scrypta Official Wallet from the [Github repository](https://github.com/scryptachain/scrypta/releases).
+First you need to download the suitable version for your operating system of Scrypta Official Wallet from the [Github repository](https://github.com/scryptachain/scrypta/releases).
 
 Once the software is downloaded, start **Lyra-QT**. 
 ![qt_wallet](../.vuepress/public/assets/qt_wallet/splash.png).
@@ -199,7 +174,6 @@ Once the software is downloaded, start **Lyra-QT**.
 For more information about the installation, you can visit this link:
 
 [Installation](installation.md)
-
 
 At the first start you will be asked to choose the location of the system files where to save your ** wallet.dat ** file and the copy of the blockchain.
 Confirm the path proposed by the software or modify it at your choice and proceed.
@@ -351,11 +325,11 @@ The debug console of the Scrypta QT wallet is a very useful tool from which you 
 Accessible from the menu **"TOOLS"** > **"DEBUG CONSOLE"**, it looks like a terminal window.
 <br>![qt_wallet](../.vuepress/public/assets/qt_wallet/console.png)
 
-Entering the ** help ** command will open the complete list of commands, a detailed explanation of which is available in the [specific section](command-list.md).
+Entering the ** help ** command will open the complete list of commands, a detailed explanation of which is available in the sezione specifica.
 
 For an exhaustive explanation of all the commands, consult the section:
 
-[Command List](command-list.md)
+Command List
 
 <br>Through the *debug console* it is possible to directly query the blockchain on the status of the network, a transaction, masternodes, or you can create manual transactions, set operational or security settings, generate new addresses and, above all, manage private keys and the wallet itself.
 
