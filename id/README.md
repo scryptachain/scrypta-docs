@@ -41,7 +41,7 @@ Identities (and their address) can be created through:
 
 - [ScryptaID Browser Extension](../dapps/extension-browser.md)
 
-- [Scrypta Card](../dapps/manent-app.md#scrypta-card)
+- [Scrypta Card](../wallet/manent-app.md#scrypta-card)
 
 :::
 
