@@ -37,7 +37,7 @@ By creating their own digital identity, the user can also easily use, even in a 
 
 Identities (and their address) can be created through:
 
-- [Manent App](../dapps/manent-app.md)
+- [Manent App](../wallet/manent-app.md)
 
 - [ScryptaID Browser Extension](../dapps/extension-browser.md)
 
