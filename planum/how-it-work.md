@@ -1,4 +1,4 @@
-# How does it work
+# How Planum works
 
 ## A closer look at sidechain technology
 

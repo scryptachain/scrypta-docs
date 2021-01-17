@@ -30,7 +30,6 @@ These parameters describe the attributes of your tokenized asset which will oper
 By filling in the required fields, the parameters of our sidechain will be defined:
 ![planum](../.vuepress/public/assets/planum/token_creation.png)
 
-
 - **Asset public name:** Token Name
 - **Symbol:** Token ticker
 - **Total issued supply:** desired total supply.
@@ -76,10 +75,8 @@ Validation is done at the level of [IdANode](https://wiki.scryptachain.org/devel
 
 ***
 
-
 ## Manent Card Integration
 All digital identities and their balances can be linked to a Scrypta Card Wallet. This is a powerful and reliable tool that can be used to create secure backups of your wallet, manage your Lyra funds on a daily basis, manage digital identities and the information they contain, or it can also be used as a payment system within sidechain or physical POS.
-
 
 ![planum](../.vuepress/public/assets/planum/card.png)
 
