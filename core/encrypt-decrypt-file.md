@@ -29,6 +29,7 @@ Example answer:
 
 }
 ```
+
 ## decryptFile(file, password)
 
 This method decrypts a buffer, previously encrypted, and transforms it into a buffer containing the decrypted file. The method will return `false` if the entered password is incorrect.

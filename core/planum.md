@@ -47,7 +47,7 @@ The parameters are described below:
     
 -   **safe:** allows you to determine whether to use only confirmed inputs
 
-- **inputs:** allows you to establish which inputs to use, very useful in the case of sending NFTs (which notoriously refer to a specific input)
+-   **inputs:** allows you to establish which inputs to use, very useful in the case of sending NFTs (which notoriously refer to a specific input)
     
 
 ## returnPlanumBalance(address)

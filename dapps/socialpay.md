@@ -53,7 +53,6 @@ Following is a comparative table between SocialPay and other systems for the del
 ![confronto](../.vuepress/public/assets/socialpay/confronto.png)
 
 
-
 1. **Anti counterfeiting**
    
 Transactions are recorded on the blockchain, therefore it is not possible to alter them in order to increase or decrease the credit relating to the vouchers against the will of the municipality or citizen. You cannot print false coupon cards: the only cards enabled are those registered in the municipality's software.

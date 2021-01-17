@@ -41,7 +41,6 @@ The answer will be like:
 }
 ```
 
-
 ## deriveKeyFromSeed (seed, index) 
 This method is used to derive an address starting from a certain seed. The seed must be passed in the form of a hexadecimal and the index must comply with the BIP32 directives.
 
@@ -68,14 +67,11 @@ The answer will be like that and as we can see we will again have the `xpub` and
 }
 ```
 
-
 ## deriveKeyFromXPrv (xprv, index)
 It derives an address starting from xprv, the use is similar to that previously exposed, as well as the answer.
 
-
 ## deriveKeyFromMnemonic (menmonic, index)
 It derives an address starting from the mnemonic phrase, the use is similar to that previously explained, as well as the answer.
-
 
 ## deriveKeyfromXPub (xpub, index)
 It derives an address starting from the xpub, the use is similar to that previously explained, the difference lies in the result, as it will not contain the *private keys* but only the public keys.

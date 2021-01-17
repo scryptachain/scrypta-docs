@@ -6,16 +6,13 @@
 
 Electio is a platform created for e-voting, even remotely. Decentralized and permissionless Scrypta Blockchain guarantees a high level of transparency, security and reliability in all stages of the vote.
 
-- **Safe procedure thanks to the blockchain e RSA**
-<br>
+- **Safe procedure thanks to the blockchain e RSA**<br>
 The combination of two cryptographic algorithms makes voting through electio extremely safe and reliable.
 
-- **Anti-handling mechanism** 
-<br>
+- **Anti-handling mechanism** <br>
 Only the last vote of the voter is valid and counted. Coercive or exchange voting is difficult to practice.
 
-- **Immediate voting results**
-<br>
+- **Immediate voting results*<br>
 The distributed ledger allows an immediate counting of the votes, without waiting times.
 
 - **Verification of the vote**
@@ -26,34 +23,28 @@ Each voter will be able to verify the correct acquisition of their vote.
 
 ### Vote with authorization
 
-- **Public question with authorization / Secret Vote**
-<br>
+- **Public question with authorization / Secret Vote**<br>
 The voting question can only be viewed through a dedicated password. The voter  is authorized to vote by the creator of the question. The vote is secret.
 
-- **Public question with authorization / Open vote**
-<br>
+- **Public question with authorization / Open vote**<br>
 The voting question can be viewed clearly;  The voter  is authorized to vote by the creator of the question. The vote is clear.
 
 ### Secret Question
 
-- **Secret question / Open Vote**
-<br>
+- **Secret question / Open Vote**<br>
 The voting question can only be viewed through a dedicated password; the voter  is pre-authorized to vote by the creator of the question. The vote is clear.
 
-- **Secret question / Secret vote**
-<br>
+- **Secret question / Secret vote**<br>
 The voting question can only be viewed through a dedicated password. The voter  is pre-authorized to vote by the creator of the question. The vote is secret.
 
 ### Public Question (survey)
 
-- **Public question / Open Vote**
-<br>
+- **Public question / Open Vote**<br>
 The voting question can be viewed in the clear, the voter's vote is in the clear and everyone can vote without authorization. This mode is also useful for survey purposes.
 
 ## Guide to creating a poll
 
-As previously described, different types of e-voting can be developed within Electio, each with different characteristics.
-<br>However, the steps to configure the voting in the desired mode are almost similar and will be illustrated below.
+As previously described, different types of e-voting can be developed within Electio, each with different characteristics.<br>However, the steps to configure the voting in the desired mode are almost similar and will be illustrated below.
 
 First you need to access the voting creation window via [Electio](https://vote.electio.app/#/), and log in via the *.sid* file o [Scrypta Extension Browser](https://id.scryptachain.org/).
 ![Electio](../.vuepress/public/assets/electio/login.png)

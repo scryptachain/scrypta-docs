@@ -1,6 +1,5 @@
 # Technical functioning
 
-
 ## Introduction
 
 Scrypta's identity system is divided into two fundamental components, the first concerns the management of strictly digital identities, that is Lyra addresses; the second concerns the authentication of addresses with external authenticators.

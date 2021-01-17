@@ -19,7 +19,7 @@ Here are the parameters that can be set:
     
 -   **key:** the identity payload to use; if omitted, the localStorage one is used.
     
-- **uuid:** a possible uuid to write sequentially on the same data.
+-   **uuid:** a possible uuid to write sequentially on the same data.
 
 The method will return an object containing a series of information:
 
