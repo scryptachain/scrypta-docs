@@ -8,16 +8,6 @@ La card non è altro che la rappresentazione fisica di quello che spesso è stat
 
 Così come ogni altra tecnologia Scrypta, è facilmente replicabile. Il nodo cruciale, per la sicurezza degli utenti, è generare delle password forti in grado di proteggere le chiavi private contenute all'interno della card.
 
-Per generare le card abbiamo creato un apposito tool, disponibile qui:
-
-[https://github.com/scryptachain/scrypta-card-generator](https://github.com/scryptachain/scrypta-card-generator)
-
-Questo strumento permette di creare un numero infinito di card e salvare un file *.csv* contenente le informazioni necessarie alla scrittura in serie delle stesse.
-
-Maggiori informazioni sull'utilizzo del tool possono essere trovate all'interno della sezione:
-
-[**Card Generator**](../utilities/card-generator.md)
-
 ## Implementazione con tecnologia QR
 
 La card wallet non è solamente gestibile attraverso l'NFC. E' possibile creare una card wallet in formato cartaceo e usarla in lettura con il QR code.
