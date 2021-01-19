@@ -66,6 +66,28 @@ module.exports = {
         ]
       },
       {
+        title: 'Masternode Setup',
+        path: '/masternode-setup/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/masternode-setup/installazione-manuale',
+          '/masternode-setup/servizi-hosting',
+          '/masternode-setup/masternode-faq',
+        ]
+      },
+      {
+        title: 'Staking Setup',
+        path: '/staking-setup/',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          '/staking-setup/desktop-wallet',
+          '/staking-setup/on-cloud',
+          '/staking-setup/staking-faq',
+        ]
+      },
+      {
         title: 'Planum',
         path: '/planum/',
         collapsable: true,
@@ -93,7 +115,7 @@ module.exports = {
       },
       
       {
-        title: 'Other dAPPs',
+        title: 'dApp Open Source',
         path: '/dapps/',
         collapsable: true,
         sidebarDepth: 1,
@@ -157,29 +179,6 @@ module.exports = {
           '/utilities/bootstrap-generator',
           '/utilities/ipfs',
           '/utilities/faucet',
-
-        ]
-      },
-      {
-        title: 'Masternode Setup',
-        path: '/masternode-setup/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/masternode-setup/installazione-manuale',
-          '/masternode-setup/servizi-hosting',
-          '/masternode-setup/masternode-faq',
-        ]
-      },
-      {
-        title: 'Staking Setup',
-        path: '/staking-setup/',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          '/staking-setup/desktop-wallet',
-          '/staking-setup/on-cloud',
-          '/staking-setup/staking-faq',
         ]
       },
     ]
