@@ -15,7 +15,7 @@ Ecco un esempio di come usarla:
 const ScryptaCore = require('@scrypta/core')
 const scrypta = new ScryptaCore
 let address = await scrypta.createAddress('MyPassword')
-let request = await scrypta.createContractRequest(address.walletstore, 'MyPassword', { contract: "LgSAtP3gPURByanZSM32kfEu9C1uyQ6Kfg", function: "search", params: {contract: "LcD7AGaY74xvVxDg3NkKjfP6QpG8Pmxpnu", version: "latest"} })
+let request = await scrypta.createContractRequest(address.walletstore, 'MyPassword', { contract: "LgSAtP3gPURByanZSM32kfEu9C1uyQ6Kfg", function: "check", params: {contract: "LcD7AGaY74xvVxDg3NkKjfP6QpG8Pmxpnu", version: "latest"} })
 ```
 
 La risposta sarà del tipo:
@@ -33,3 +33,23 @@ let response = await scrypta.sendContractRequest(request)
 ```
 
 La risposta sarà presente quindi nella variabile.
+
+## writeContractRequest(key, password, request)
+
+Questo metodo serve per generare una richiesta verso uno smart contracts e scriverlo direttamente in blockchain.
+Analogamente al precedente creerà una richiesta firmata anche se a differenza della precedente questa verrà scritta direttamente in blockchain.
+Solitamente queste richieste vengono usate per scrivere dei dati in blockchain, mentre le prime vengono usate per leggere dei dati da uno smart contract.
+
+Questi i parametri richiesti per scrivere i dati:
+- *key*: la chiave pubblica o il sid che effettuerà la chiamata
+- *password*: la password per sbloccare il sid
+- *request*: la richiesta vera e propria al contratto, sottoforma di oggetto, che contiene le proprietà `contract`, `function` e `params`.
+
+Ecco un esempio di come usarla:
+
+```
+const ScryptaCore = require('@scrypta/core')
+const scrypta = new ScryptaCore
+let address = await scrypta.createAddress('MyPassword')
+let request = await scrypta.writeContractRequest(address.walletstore, 'MyPassword', { contract: "LcD7AGaY74xvVxDg3NkKjfP6QpG8Pmxpnu", function: "register", params: {name : "scryptachain" } })
+```
