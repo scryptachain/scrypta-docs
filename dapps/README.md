@@ -1,6 +1,6 @@
 # Scrypta dApps
 
-![dapps](../.vuepress/public/assets/other/dapps.png)
+![dapps](../assets/other/dapps.png)
 
 Questo documento descriverà tutte le dApp realizzate da Scrypta, fornendo sia documentazione tecnica che la spiegazione sul funzionamento delle stesse. E' importante ricordare che alcune sono ancora in via di sviluppo e altre sono rimaste (e rimarranno) unicamente degli MVP. Utilizzatele come esempi e dimostrazioni delle tecnologie sviluppate da Scrypta (ID, IdANode, Identity e Trustlink) ed implementatele al fine di creare il vostro prodotto.
 

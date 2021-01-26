@@ -93,7 +93,7 @@ Ogniqualvolta l'utente vorrà identificarsi, dovrà mostrare in chiaro il propri
 Il risultato, riscontrabile dal sito https://me.scrypta.id, sarà qualcosa del genere, che rendiamo graficamente per questioni di privacy:
 
 
-![](../.vuepress/public/assets/idframework/proof.png)
+![](../assets/idframework/proof.png)
 
 Effettivamente si potrà verificare che, ad esempio, il payload di _Github_ scritto al blocco **416667** è il seguente ed è collegato all'indirizzo `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`. Queste informazioni sono riscontrabili qui:
 https://proof.scryptachain.org/#/uuid/3e7ce.f696.4b11.bf0c.cec51cff386e
@@ -114,7 +114,7 @@ Spiegamo meglio cosa viene scritto all'interno della blockchain:
 
 Ecco uno schema di funzionamento che riassume tutti i passaggi effettuati:
 
-![](../.vuepress/public/assets/idframework/funzionamento.png)
+![](../assets/idframework/funzionamento.png)
 
 ## Provider integrati
 

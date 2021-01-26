@@ -32,10 +32,10 @@ Per maggiori informazioni, potete consultare la guida di ScryptaID a [questo lin
 
 A questo punto è possibile accedere al modulo [Scrypta News](https://news.scryptachain.org/), effettuare il login con la propria identità, inserendo il proprio sid.file o utilizzando [**Scrypta Browser Extension**](https://id.scryptachain.org/) e procedere alla pubblicazione dell’articolo su blockchain.
 
-![news feed](../.vuepress/public/assets/other/newsfeed.png)
+![news feed](../assets/other/newsfeed.png)
 
 
-![news write](../.vuepress/public/assets/other/newswrite.png)
+![news write](../assets/other/newswrite.png)
 
 
 ::: tip NOTA
@@ -52,13 +52,13 @@ E’ possibile quindi sin da subito testare l’esempio già funzionante del pro
 
 Dopo il login, i lettori possono votare attraverso le funzioni di UPVOTE, DOWNVOTE  e inviare donazioni in LYRA con TIP USER.
 
-![upvote](../.vuepress/public/assets/other/upvote.png)
+![upvote](../assets/other/upvote.png)
 
 ## Guida sul caricamento degli articoli in blockchain
 
 Una volta effettuato il login, che ricordiamo può essere fatto attraverso Extension Browser o file .sid, è possibile inserire il proprio articolo cliccando sul simbolo “ + ” in basso a destra.
 
-![piu](../.vuepress/public/assets/news/piu.png)
+![piu](../assets/news/piu.png)
  
 Comparirà una sezione in cui inserire i dettagli iniziali dell’articolo: 
 
@@ -67,19 +67,19 @@ Comparirà una sezione in cui inserire i dettagli iniziali dell’articolo:
 - immagine di copertina, 
 - tags.
 
-![details](../.vuepress/public/assets/news/article-details.png)
+![details](../assets/news/article-details.png)
 
 
 A questo punto si procede a compilare il corpo del testo con una usuale interfaccia grafica da editor testuale.
 
-![body](../.vuepress/public/assets/news/article-body.png)
+![body](../assets/news/article-body.png)
 
 
 Una volta terminato basterà cliccare su “Write on the blockchain” e Inserire la propria password.
 
 infine si avrà conferma dell’esito dell’operazione.
 
-![confirm](../.vuepress/public/assets/news/article-written.png)
+![confirm](../assets/news/article-written.png)
 
 
 Ora l’articolo è scritto indelebilmente in blockchain! E  comparirà presto nella sezione articoli di Scrypta News.
@@ -87,7 +87,7 @@ Ora l’articolo è scritto indelebilmente in blockchain! E  comparirà presto n
 Come si può vedere dall'esempio, viene impressa una marcatura temporale (timestamp) e firma digitale (collegata all’indirizzo dell'autore):
 
 
-![proof](../.vuepress/public/assets/news/article-proof.png)
+![proof](../assets/news/article-proof.png)
 
 
 ## Editing

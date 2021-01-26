@@ -39,7 +39,7 @@ npm start
 ```
 La risposta dalla console sarà qualcosa del tipo:
 
-![npm start](../.vuepress/public/assets/p2pnetwork/npmrun.png)
+![npm start](../assets/p2pnetwork/npmrun.png)
 
 Come possiamo vedere, l'engine carica l'identità scritta sul file `.env` e si connette ai nodi bootstrap. Se qualcosa dovesse andare storto con i nodi o con la propria connessione, non si vedranno le righe di connessione:
 
@@ -66,7 +66,7 @@ A questo punto tutti i nodi che ricevono il messaggio lo replicano agli altri no
 
 Questa tipologia di attività può essere analizzata facendo partire il tool su un server remoto, la cui porta (42224) è aperta:
 
-![](../.vuepress/public/assets/p2pnetwork/broadcast.png)
+![](../assets/p2pnetwork/broadcast.png)
 
 Chiunque riceve il messaggio, prima di far partire la relativa chiamata post verso l'_hook_, controlla che il messaggio sia stato effettivamente inviato da quell'indirizzo e, in caso positivo, trasmette il messaggio.
 

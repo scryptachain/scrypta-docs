@@ -4,7 +4,7 @@
 
 #### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
 ***
-![manent_app](../.vuepress/public/assets/manent_app/manent_01.jpg)
+![manent_app](../assets/manent_app/manent_01.jpg)
 
 Rendi i tuoi file immutabili con Scrypta Manent e porta sempre con te le tue **LYRA**!
 
@@ -45,7 +45,7 @@ Con Manent puoi recuperare il tuo account in tantissimi modi, anche se perdi il 
 
 I Dati e file caricati sulla blockchain di Scrypta vengono elaborati dall'infrastruttura e raggiungono un elevatissimo livello di **ridondanza e impermeabilità**, tale da renderli a tutti gli effetti immutabili e immuni da alterazioni e falsificazioni.
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 **Hai il nostro pieno supporto!**
 
 Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
@@ -72,11 +72,11 @@ Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-
 Adesso metti in sicurezza il tuo account effettuando il backup seguendo le istruzioni riportate di seguito).
 Questo passaggio è fondamentale e consente di proteggere la tua firma digitale e il relativo portafoglio.
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 **Manent è un'applicazione decentralizzata**, è quindi concepita per operare senza alcun server centrale. In questo modo tu sei l'unico responsabile della password e della relativa e-signature (firma digitale).
 :::
 
-::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
+::: danger <img src=".././assets/icons/danger.svg" width="32">
 **TIENI LA PASSWORD AL SICURO**
 
 Se perdi la password, non sarà più possibile per nessuno recuperarla e il tuo account diventerà **per sempre** inaccessibile. 
@@ -89,15 +89,15 @@ Se perdi la password, non sarà più possibile per nessuno recuperarla e il tuo 
 **DOWNLOAD .SID FILE** (.sid) - o  - **DOWNLOAD PAPER WALLET** (.pdf)
 ** Questi file verranno archiviati sul dispositivo, nella cartella selezionata.
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Dopo aver scaricato il file **.SID**, è consigliabile salvarlo in un luogo sicuro come una chiavetta USB, e rimuovere il file dal dispositivo.
 :::
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. Successivamente, rimuovi il file .pdf dal tuo dispositivo.
 :::
 
-::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
+::: danger <img src=".././assets/icons/danger.svg" width="32">
 **CUSTODISCI CON CURA IL TUO PAPER WALLET**
 
 Il **PAPER WALLET espone la tua chiave privata** sotto forma di codice QR. 
@@ -119,14 +119,14 @@ Adesso potrai gestire l'account importato.
 #### READ SCRYPTA CARD
 Avvicina una SCRYPTA CARD al tuo dispositivo in modo che possa leggerne le informazioni attraverso il sensore NFC.
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Per leggere la SCRYPTA CARD (scheda NFC hardware) è necessario abilitare la **Near Field Communication** sul dispositivo mobile.
 :::
 
 #### RESTORE PAPER WALLET
 Questa funzione abilita la fotocamera del tuo dispositivo in modo che tu possa inquadrare e scansionare il QR Code **"ENCRYPTED WALLET"** presente sul tuo PAPER WALLET.
 
-::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32">
+::: danger <img src=".././assets/icons/danger.svg" width="32">
 Il **PAPER WALLET ESPONE LA TUA CHIAVE PRIVATA** sotto forma di **QR CODE**.
 Assicurati di conservarlo in un luogo sicuro!
 :::
@@ -160,12 +160,12 @@ o tocca l'icona **"+"** symbol (angolo alto destra).
 - Inserisci la **Wallet Password** (la password del tuo account)
 - Tocca su **UPLOAD**
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Assicurati di ricordare la password di cifratura **(Encryption password)**.
 Se la perdi non sarai in grado di accedere nuovamente ai dati appena caricati.
 :::
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Non caricare file illegali o che violano il copyright.
 Solo tu sei responsabile dei file e dati caricati.
 :::
@@ -179,7 +179,7 @@ Solo tu sei responsabile dei file e dati caricati.
 - Verranno mostrati i dettagli del documento.
 - Tocca il pulsante **SHARE PROOF OF EXISTENCE** e verrai reindirizzato a [Scrypta Proof](https://proof.scryptachain.org/) per conoscere i dettagli approfonditi del tuo documento. 
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 Toccando **INVALIDATE** è possibile invalidare i dati, ciò significa che non sarà piu possibile accedere a questi dati dall tua schermata VAULT e che il file eventualmente associato, trattenuto dagli IdANodes, verrà cancellato. In questo caso  la firma digitale, la marcatura temporale con hashing e la relativa prova dell'autore rimangono comuque indelebili grazie alla tecnologia del registro distribuito di Scrypta.
 :::
 

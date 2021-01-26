@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scrypta Wiki</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+
+<body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script>
+        new Docute({
+            target: '#docute',
+            title: 'Scrypta Official Wiki - La guida all\'ecosistema Scrypta',
+            highlight: ['typescript', 'javascript'],
+            logo: '<img src="/assets/scrypta.png" height="30" style="margin-top:10px">',
+            darkThemeToggler: true,
+            imageZoom: true,
+            nav: [
+                {
+                    title: "Website",
+                    link: "https://scryptachain.org"
+                },
+                {
+                    title: "GitHub",
+                    link: "https://github.com/scryptachain"
+                },
+                {
+                    title: "Community",
+                    link: "https://discord.io/scrypta"
+                }
+            ],
+            sidebar: [{
+                title: 'Info generali',
+                collapsable: true,
+                children: [
+                    {
+                        title: "Contribuisci",
+                        link: "/general-info/contribuisci"
+                    },
+                    {
+                        title: "FAQ",
+                        link: "/general-info/faq"
+                    }
+                ]
+            }]
+        })
+    </script>
+</body>
+
+</html>

@@ -52,7 +52,7 @@ avverrà sotto forma di bonifico bancario.
 
 Di seguito una tabella comparativa tra SocialPay e altri sistemi di erogazione e gestione dei buoni spesa:
 
-![confronto](../.vuepress/public/assets/socialpay/confronto.png)
+![confronto](../assets/socialpay/confronto.png)
 
 
 
@@ -133,16 +133,16 @@ Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, 
 
 Il Comune fornisce gratuitamente all'esercente una Card Esercente dotata di **QR-CODE** e protetta da apposito codice PIN (password numerica) che servirà per le principali operazioni di configurazoine e per l'utilizzo dell’apposita applicazione web in dotazione all'esercente stesso.
 
-![socialpay](../.vuepress/public/assets/socialpay/card_esercente.png)
+![socialpay](../assets/socialpay/card_esercente.png)
 
 ### Procedura lato esercente
 #### Accesso al sistema
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_01.png) | Accedi collegandoti con il tuo smartphone/tablet, da adibire a POS virtuale, al sito: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Tocca **“SCANNERIZZA CARD”** e inquadra il **QR Code** della carta che ti è stata consegnata (Card Esercente).<br><br>Ti verrà richiesto di inserire il **PIN** che ti è stato assegnato insieme alla **CARD**.<br><br>Adesso sei in grado di ricevere pagamenti attraverso i **BUONI SPESA DIGITALI** dei cittadini aventi diritto. 
+| ![socialpay](../assets/socialpay/mockup_phone_01.png) | Accedi collegandoti con il tuo smartphone/tablet, da adibire a POS virtuale, al sito: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Tocca **“SCANNERIZZA CARD”** e inquadra il **QR Code** della carta che ti è stata consegnata (Card Esercente).<br><br>Ti verrà richiesto di inserire il **PIN** che ti è stato assegnato insieme alla **CARD**.<br><br>Adesso sei in grado di ricevere pagamenti attraverso i **BUONI SPESA DIGITALI** dei cittadini aventi diritto. 
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 **NOTA:** Per i dispositivi **iOS** è necessario utilizzare il browser **“Safari”**, per i dispostivi **Android** è necessario utilizzare **“Google Chrome"**.
 :::
 
@@ -150,48 +150,48 @@ Il Comune fornisce gratuitamente all'esercente una Card Esercente dotata di **QR
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_phone_02.png) | Accedi alla web-app dal tuo smartphone o tablet all’indirizzo: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>Nella **HOME** troverai il *“tastierino”* del **POS** virtuale come da immagine.<br><br>Inserisci l’importo dello scontrino dovuto e premi il tasto **“PAGA”**.
+| ![socialpay](../assets/socialpay/mockup_phone_02.png) | Accedi alla web-app dal tuo smartphone o tablet all’indirizzo: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>Nella **HOME** troverai il *“tastierino”* del **POS** virtuale come da immagine.<br><br>Inserisci l’importo dello scontrino dovuto e premi il tasto **“PAGA”**.
 ***sEUR indicato in figura è una rapresentazione digitale dell’Euro.***
 
 Inquadra adesso con lo smartphone il QR-CODE sul retro della Card del cliente
-![socialpay](../.vuepress/public/assets/socialpay/scan_qr.png)
+![socialpay](../assets/socialpay/scan_qr.png)
 
 Il cliente autorizza l’acquisto inserendo il suo **PIN** nel POS virtuale.
 La transazione avviene in tempo reale.
 
-![socialpay](../.vuepress/public/assets/socialpay/insert_pin.png)
+![socialpay](../assets/socialpay/insert_pin.png)
 Dopo aver effettuato la transazione, visualizzerai istantaneamente una notifica dell’avvenuto pagamento.
 
 #### Controllo saldo, storico transazione e ricezione pagamenti
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_tx.png) | Tramite l’applicazione, accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16"> e selezionando **“STORICO TRANSAZIONI”**, puoi controllare costantemente il tuo saldo e le transazioni effettuate. <br><br>All’interno di questa sezione è presente inoltre una specifica funzione **“RICHIEDI RIMBORSO”** per inoltrare la richiesta al Comune, che procederà al bonifico bancario delle cifre computate. 
+| ![socialpay](../assets/socialpay/mockup_tx.png) | Tramite l’applicazione, accedendo al menu tramite il simbolo <img src=".././assets/icons/bars.svg" width="16"> e selezionando **“STORICO TRANSAZIONI”**, puoi controllare costantemente il tuo saldo e le transazioni effettuate. <br><br>All’interno di questa sezione è presente inoltre una specifica funzione **“RICHIEDI RIMBORSO”** per inoltrare la richiesta al Comune, che procederà al bonifico bancario delle cifre computate. 
 
 #### Verifica rimborsi
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_rimborso.png) | Nella sezione **“GESTIONE RIMBORSI**, raggiungibile accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, potrai vedere i tuoi *rimborsi in attesa* (ovvero quelli richiesti e che il Comune deve ancora prendere in carico) e *rimborsi evasi* (importi già erogati dal Comune). 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+| ![socialpay](../assets/socialpay/mockup_rimborso.png) | Nella sezione **“GESTIONE RIMBORSI**, raggiungibile accedendo al menu tramite il simbolo <img src=".././assets/icons/bars.svg" width="16">, potrai vedere i tuoi *rimborsi in attesa* (ovvero quelli richiesti e che il Comune deve ancora prendere in carico) e *rimborsi evasi* (importi già erogati dal Comune). 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 **NOTA:** Con lo stato di ***rimborso evaso*** si intende che il Comune ha preso in carico il rimborso che avverrà secondo i tempi tecnici bancari.
 :::
 
 #### Verifica Saldo Card Cittadino
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| L’applicazione permette di verificare il saldo della *Card-Cliente*, riscontrabile presso tutti gli esercenti abilitati.<br><br> Nella sezione **CONTROLLA CARD**, raggiungibile accedendo al menu tramite il simbolo <img src=".././.vuepress/public/assets/icons/bars.svg" width="16">, premere il tasto **"CONTROLLA ORA"** e inquadrare il **QR CODE** della card del cliente.<br><br> Verrà così visualizzato il saldo disponibile. | ![socialpay](../.vuepress/public/assets/socialpay/mockup_controlla.png)
+| L’applicazione permette di verificare il saldo della *Card-Cliente*, riscontrabile presso tutti gli esercenti abilitati.<br><br> Nella sezione **CONTROLLA CARD**, raggiungibile accedendo al menu tramite il simbolo <img src=".././assets/icons/bars.svg" width="16">, premere il tasto **"CONTROLLA ORA"** e inquadrare il **QR CODE** della card del cliente.<br><br> Verrà così visualizzato il saldo disponibile. | ![socialpay](../assets/socialpay/mockup_controlla.png)
 
 ### APPENDICE - Modalità di accesso al portale tramite Android/IOS
 
 #### Android
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/mockup_android.png) | - Avviare Chrome per Android e aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Accedere al **menu** tramite il simbolo <img src=".././.vuepress/public/assets/icons/menu.svg" width="16"> e poi **"Aggiungi a schermata Home”**.<br><br> - Dare un nome al collegamento e Chrome per aggiungerlo alla schermata iniziale.<br><br> L'icona potrà essere spostata dove si vuole e il sito scelto apparirà, come qualsiasi altra app, toccando il collegamento.<br><br> Chrome per Android carica il sito web come fosse una "web app" in modo separato dal browser, così da poterlo aprire direttamente dall'app switcher.
+| ![socialpay](../assets/socialpay/mockup_android.png) | - Avviare Chrome per Android e aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Accedere al **menu** tramite il simbolo <img src=".././assets/icons/menu.svg" width="16"> e poi **"Aggiungi a schermata Home”**.<br><br> - Dare un nome al collegamento e Chrome per aggiungerlo alla schermata iniziale.<br><br> L'icona potrà essere spostata dove si vuole e il sito scelto apparirà, come qualsiasi altra app, toccando il collegamento.<br><br> Chrome per Android carica il sito web come fosse una "web app" in modo separato dal browser, così da poterlo aprire direttamente dall'app switcher.
 
 #### iPhone/iPad
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| - Avviare Safari su iOS di Apple aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Per problemi tecnici dovuti a Apple, non è possibile utilizzare SocialPay se viene aggiunto alla schermata Home di iPhone o iPad; di conseguenza consigliamo di digitare (o salvare nei preferiti) l’indirizzo url della web-app.<br><br> - Ricordiamo inoltre che Social Pay è utilizzabile solo dal browser **Safari**. |  ![socialpay](../.vuepress/public/assets/socialpay/mockup_ios.png) 
+| - Avviare Safari su iOS di Apple aprire la pagina web: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - Per problemi tecnici dovuti a Apple, non è possibile utilizzare SocialPay se viene aggiunto alla schermata Home di iPhone o iPad; di conseguenza consigliamo di digitare (o salvare nei preferiti) l’indirizzo url della web-app.<br><br> - Ricordiamo inoltre che Social Pay è utilizzabile solo dal browser **Safari**. |  ![socialpay](../assets/socialpay/mockup_ios.png) 
 
 
 ## Guida per il cittadino
@@ -202,9 +202,9 @@ Il **Comune di "*nomecomune*"** che adotta il sistema **SocialPay** predispone, 
 
 Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (password numerica) che servirà per finalizzare gli acquisti presso i gli esercenti convenzionati.
 
-![socialpay](../.vuepress/public/assets/socialpay/card_cittadino.png)
+![socialpay](../assets/socialpay/card_cittadino.png)
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32">
+::: warning <img src=".././assets/icons/warning.svg" width="32">
 **IMPORTANTE** Si raccomanda di custodire la Card con la massima cura in quanto contiene fondi realmente spendibili, e di non rivelare a nessuno il pin collegato alla Card.
 :::
 
@@ -214,7 +214,7 @@ Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (
 - Al momento del pagamento, mostrare la Card al negoziante che provvederà a scansionare il QR CODE addebitando l'importo speso.
 - Inserire il PIN della Card nel terminale del negoziante per concludere l'acquisto.
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32">
+::: tip <img src=".././assets/icons/tip.svg" width="32">
 **NOTA:** Potrai verificare il tuo il saldo conto presso qualunque punto vendita convenzionato.
 :::
 
@@ -225,15 +225,15 @@ Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](../.vuepress/public/assets/socialpay/gest_accesso.png) | Il login avviene caricando o trascinando il **.sid file** in dotazione e, subito dopo, inserendo la password associata che vi è stata fornita. |
+| ![socialpay](../assets/socialpay/gest_accesso.png) | Il login avviene caricando o trascinando il **.sid file** in dotazione e, subito dopo, inserendo la password associata che vi è stata fornita. |
 
 #### Dashboard del gestionale
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-|![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)|Effettuato l’accesso, verrete dirottati immediatamente sulla **Dashboard (Sezione HOME)** nella quale vengono visualizzati i dati generali di utilizzo. |
+|![socialpay](../assets/socialpay/gest_dash.png)|Effettuato l’accesso, verrete dirottati immediatamente sulla **Dashboard (Sezione HOME)** nella quale vengono visualizzati i dati generali di utilizzo. |
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 **NOTA:** La dicitura **sEUR “bruciati”** indica che le somme in oggetto non sono più disponibili, in quanto già inviate *(bruciate)* sotto forma di richiesta di rimborso.
 :::
 
@@ -246,9 +246,9 @@ La finestra GESTIONE UTENTI si compone di due sezioni:
 Utilizzare questa sezione se si vogliono caricare più utenti contemporaneamente.<br>Dopo aver caricato il **file .csv**, tutti gli utenti all'interno del file verranno aggiunti al gestionale e saranno disponibili e visualizzabili nella sezione **"Elenco utenti"**.<br><br>Il file .csv viene generato in automatico durante la fase di creazione delle card e sarà composto dai seguenti campi:<br>
 **SERIALE | WALLET | TIPOLOGIA | NOME | IDENTIFICATIVO | COMPONENTI NUCLEO FAMILIARE**<br>
 
-![socialpay](../.vuepress/public/assets/socialpay/gest_dash.png)
+![socialpay](../assets/socialpay/gest_dash.png)
 
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 **NOTA:** In caso di nominativi o dati duplicati, tali nominativi verranno ignorati dal sistema.
 :::
 
@@ -259,49 +259,49 @@ Le azioni disponibili sono nell'ordine:
 - **MODIFICA**
 - **VISUALIZZA**
 - **ELIMINA**
-![socialpay](../.vuepress/public/assets/socialpay/elenco_utenti.png)
+![socialpay](../assets/socialpay/elenco_utenti.png)
 
 #### Azione **MODIFICA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/draw.svg" width="16">, è possibile modificare i dati dell’utente.![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
+Attraverso questa azione, indicata dal simbolo <img src=".././assets/icons/draw.svg" width="16">, è possibile modificare i dati dell’utente.![socialpay](../assets/socialpay/modifica.png)
 
 Una volta effettuate le modifiche desiderate, per confermare tali modifiche è necessario cliccare su **“Salva utente”**.
 
 #### Azione **VISUALIZZA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/interface.svg" width="16">, è possibile visualizzare i dettagli dell'utente selezionato, il suo bilancio e lo storico transazioni.<br>Inoltre questa sezione permette di predisporre l’invio di importi in **sEUR** all’utente selezionato.<br>L’operazione è **istantanea** e richiede l’inserimento della vostra password.
-![socialpay](../.vuepress/public/assets/socialpay/modifica.png)
+Attraverso questa azione, indicata dal simbolo <img src=".././assets/icons/interface.svg" width="16">, è possibile visualizzare i dettagli dell'utente selezionato, il suo bilancio e lo storico transazioni.<br>Inoltre questa sezione permette di predisporre l’invio di importi in **sEUR** all’utente selezionato.<br>L’operazione è **istantanea** e richiede l’inserimento della vostra password.
+![socialpay](../assets/socialpay/modifica.png)
 
 ##### *Note sulle commissioni di transazione:
 
 Per svolgere tutte le operazioni di transazioni o richieste rimborso,è necessario pagare delle commissioni di transazione dell’infrastruttura blockchain. Tali commissioni sono nell'ordine di millesimi di euro.<br><br>
 **In fase di ricarica delle card**<br>
 - Durante la fase di ricarica delle card, al fine di fornire a ciascun utente la possibilità di effettuare operazioni sul network sin da subito, è necessario inviare una modica quantità di LYRA per ciascun utente.<br>
-::: tip <img src=".././.vuepress/public/assets/icons/tip.svg" width="32"> 
+::: tip <img src=".././assets/icons/tip.svg" width="32"> 
 - Si consiglia di inviare **0.1 LYRA** per ciascun utente (sia **"Cittadino"** che **"Esercente"**), quantitativo sufficiente allo svolgimento di circa 100 operazioni.<br><br>
 - Si consiglia anche di inviare **0.1 LYRA** per le transazioni ogni qual volta è prevista una “ricarica” al **"Cittadino"**.<br><br>
 - Non è indispensabile re-inviare LYRA per l'**"Esercente"** poiché riceverà automaticamente **0.001 LYRA** ogni qual volta viene inviata la notifica di avvenuto rimborso; tale operazione verrà illustrata in seguito in modo più dettagliato.
 :::
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 **Se si prevede di effettuare un numero di operazioni superiore a 100, sarà necessario inviare un quantitativo di LYRA adeguato al volume di transazioni previste.**<br>
 :::
 
 #### Azione **ELIMINA**
-Attraverso questa azione, indicata dal simbolo <img src=".././.vuepress/public/assets/icons/trash.svg" width="16">, l’utente selezionato viene eliminato dall’elenco.<br>Si raccomanda di procedere con cura verificando i dati prima dell'eliminazione.
+Attraverso questa azione, indicata dal simbolo <img src=".././assets/icons/trash.svg" width="16">, l’utente selezionato viene eliminato dall’elenco.<br>Si raccomanda di procedere con cura verificando i dati prima dell'eliminazione.
 
 ### Storico transazioni
 In questa sezione vengono visualizzate tuttee le transazioni effettuate all’interno del sistema.
 
-![socialpay](../.vuepress/public/assets/socialpay/storico.png)
+![socialpay](../assets/socialpay/storico.png)
 
 All'interno di questa sezione, tramoite gli appositi filtri, è possibile effettuare ricerche per **indirizzo** o per **transazione**.<br>Attraverso il pulsante **“SCARICA BACKUP”**  è possibile effettuare il backup dello storico transazioni in oggetto tramite file in formato **.csv** (Excel).  
 
 ### Gestisci rimborso
-Non appena viene cliccato il pulsante **“CONTABILIZZA RIMBORSO”**, viene richiesto l’inserimento della password di amministratore.![socialpay](../.vuepress/public/assets/socialpay/rimborso.png)<br>A questo punto l’Esercente riceverà una speciale transazione di notifica che conferma l’avvenuto bonifico da parte del Comune.<br>Risulta quindi evidente che questa operazione è da effettuare **SUBITO DOPO** aver predisposto lo specifico bonifico bancario di rimborso.<br><br>L’operazione sarà quindi visibile sulla colonna **“RIMBORSATO”** (nello specifico il campo verrà automaticamente riempito con **“SI”**).
+Non appena viene cliccato il pulsante **“CONTABILIZZA RIMBORSO”**, viene richiesto l’inserimento della password di amministratore.![socialpay](../assets/socialpay/rimborso.png)<br>A questo punto l’Esercente riceverà una speciale transazione di notifica che conferma l’avvenuto bonifico da parte del Comune.<br>Risulta quindi evidente che questa operazione è da effettuare **SUBITO DOPO** aver predisposto lo specifico bonifico bancario di rimborso.<br><br>L’operazione sarà quindi visibile sulla colonna **“RIMBORSATO”** (nello specifico il campo verrà automaticamente riempito con **“SI”**).
 Inoltre, questa speciale transazione, accrediterà nel conto dell’esercente la somma di **0.001 LYRA**, che gli permetterà di richiedere i rimborsi futuri.
 
 Questa funzione è infine corredata dalla possibilità di aggiungere delle note di testo aggiuntive che vengono inviate all’esercente.
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 **Attenzione**: Le note a corredo delle transazioni sono dei dati che vengono scritti **in chiaro** nel registro distribuito della blockchain Scrypta.<br>Si **RACCOMANDA** pertanto di non inserire informazioni sensibili, che possano violare il rispetto della privacy.<br>
 :::
 
@@ -309,15 +309,15 @@ Questa funzione è infine corredata dalla possibilità di aggiungere delle note 
 Attraverso questa sezione è possibile effettuare operazioni come il salvataggio e la cancellazione di tutto l’elenco utenti.
 Per compiere l’operazione di **salvataggio**, è necessario cliccare sul pulsante **“SCARICA BACKUP”**.
 Il file generato, in formato .csv, permetterà di conservare una copia dell'intero archivio utenti, e sarà necessario per importare nuovamente l'archivio.
-![socialpay](../.vuepress/public/assets/socialpay/impostazioni.png)
+![socialpay](../assets/socialpay/impostazioni.png)
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 **Attenzione**: Si **RACCOMANDA** fortemente di effettuare i backup dell'elenco utenti con regolarità, al fine di evitare o quantomeno limitare la perdita di dati.<br>
 :::
 
 Per compiere l’operazione di **cancellazione** dell'archivio, è necessario cliccare sul pulsante **"CANCELLA ARCHIVIO”**. A questo punto, l’intero elenco utenti verrà azzerato.
 
-::: danger <img src=".././.vuepress/public/assets/icons/danger.svg" width="32"> 
+::: danger <img src=".././assets/icons/danger.svg" width="32"> 
 **Attenzione**: Utilizzando questa funzione, l'attuale archivio **VERRA' INTERAMENTE E DEFINITIVAMENTE CANCELLATO"**.
 <br>**L'operazione di cancellazione non e' annullabile**.
 <br>Pertanto, se non avete effettuato il backup in precedenza e cancellate i dati, l'intero archivio andra' **DISTRUTTO**.
@@ -349,7 +349,7 @@ La creazione della rappresentazione digitale di valore avviene attraverso la tec
 - Collegati a [https://web.manent.app](https://web.manent.app) e crea un nuovo account Scrypta.
 Inserisci una password forte perchè questo account sarà l'account proprietario della sidechain. 
 
-::: warning <img src=".././.vuepress/public/assets/icons/warning.svg" width="32"> 
+::: warning <img src=".././assets/icons/warning.svg" width="32"> 
 **Importante:** Effettua il backup del file .sid e del paper wallet per sicurezza, e ricorda che sei il **SOLO** responsabile di questi dati. Custodisci questi file tenendoli al sicuro **OFFLINE**.
 :::
 
