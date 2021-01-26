@@ -1,55 +1,754 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Scrypta Wiki</title>
-    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#3ed2a7">
+
+	<meta name="author" content="Scrypta Foundation">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://scrypta.wiki">
+	<meta property="og:title" content="Scrypta Wiki">
+	<meta property="og:description" content="La Wiki-Guide di Scrypta fornisce una panoramica completa dell'ecosistema Scrypta - Un'Infrastruttura digitale 
+		decentralizzata e open-source sviluppata per la creazione di  architetture complete blockchain-based.">
+	<meta property="og:image" content="wikiscrypta_og.png" />
+
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<title>Scrypta Wiki</title>
+
+	<link rel="stylesheet" href="https://use.typekit.net/qxb8htk.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/themes/original.css" />
+
+	<!-- Head Libs -->
+	<script async src="assets/vendors/modernizr.min.js"></script>
+
 </head>
 
-<body>
-    <div id="docute"></div>
-    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
-    <script>
-        new Docute({
-            target: '#docute',
-            title: 'Scrypta Official Wiki - La guida all\'ecosistema Scrypta',
-            highlight: ['typescript', 'javascript'],
-            logo: '<img src="/assets/scrypta.png" height="30" style="margin-top:10px">',
-            darkThemeToggler: true,
-            imageZoom: true,
-            nav: [
-                {
-                    title: "Website",
-                    link: "https://scryptachain.org"
-                },
-                {
-                    title: "GitHub",
-                    link: "https://github.com/scryptachain"
-                },
-                {
-                    title: "Community",
-                    link: "https://discord.io/scrypta"
-                }
-            ],
-            sidebar: [{
-                title: 'Info generali',
-                collapsable: true,
-                children: [
-                    {
-                        title: "Contribuisci",
-                        link: "/general-info/contribuisci"
-                    },
-                    {
-                        title: "FAQ",
-                        link: "/general-info/faq"
-                    }
-                ]
-            }]
-        })
-    </script>
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
+	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+
+	<div id="wrap">
+
+		<!--titlebar-->
+		<div class="titlebar titlebar-sm scheme-light text-center" data-parallax="true"
+			data-parallax-options='{ "parallaxBG": true }' style="background-image: url(/assets/img/main_bg.jpg);">
+
+			<div class="titlebar-overlay ld-overlay" style="	background: rgba(255, 254, 254, 0.132);"></div>
+
+			<header class="main-header main-header-overlay nav-light">
+
+				<div class="mainbar-wrap px-4">
+
+					<span class="megamenu-hover-bg"></span>
+
+					<div class="container mainbar-container">
+
+						<div class="mainbar">
+
+							<div class="row mainbar-row">
+
+								<div class="col-auto">
+
+								</div><!-- /.row mainbar-row -->
+
+							</div><!-- /.mainbar -->
+
+						</div><!-- /.container -->
+
+					</div><!-- /.mainbar-wrap -->
+			</header>
+
+			<div class="titlebar-inner pt-60 pb-210">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<img class="mob_logo" data-fittext="true" src="assets/img/globe_wiki3.png" />
+						<img class="banner_header" data-fittext="true" src="assets/img/wikiscrypta_white.png" />
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
+
+		</div>
+		<!-- /.titlebar -->
+
+		<main id="content" class="content bg-gray lang_section">
+
+			<!--lang-->
+			<section class="vc_row">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-12 px-4 pt-45 pb-30 bg-white box-shadow-1 pull-up lang_container">
+							<h1 class="central-textlogo" style="font-size: 1em;" title="Scrypta-Wiki">
+								<img class="central-featured-logo" src="assets/img/globe_wiki3.png" width="280"
+									height="224" alt="Scrypta-Wiki">
+							</h1>
+							<div class="central-featured" data-el-section="primary links">
+								<div class="central-featured-lang lang1" lang="en" dir="ltr">
+									<a href="/en/#" title="English — Scrypta Wiki" class="link-box">
+										<strong>English</strong>
+										<small><bdi dir="ltr">Select Language</span></small>
+									</a>
+
+								</div>
+								<!-- #2.-->
+								<div class="central-featured-lang lang2" lang="it" dir="ltr">
+									<a id="js-link-box-it" href="/it/" title="Italiano — Scrypta Wiki"
+										class="link-box">
+										<strong>Italiano</strong>
+										<small><bdi dir="ltr">Seleziona Lingua</span></small>
+									</a>
+								</div>
+								<!-- #3. -->
+								<div class="central-featured-lang lang3" lang="es" dir="ltr">
+									<a id="js-link-box-es"
+										href="/en/general-info/contribute"
+										title="Español — Scrypta Wiki" class="link-box">
+										<strong>Español</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #4. -->
+								<div class="central-featured-lang lang4" lang="de" dir="ltr">
+									<a id="js-link-box-de"
+										href="/en/general-info/contribute"
+										title="Deutsch — Scrypta Wiki" class="link-box">
+										<strong>Deutsch</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #5.-->
+								<div class="central-featured-lang lang5" lang="ru" dir="ltr">
+									<a id="js-link-box-ru" href="" title="Russkiy — Scrypta Wiki" class="link-box">
+										<strong>Русский</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #6. -->
+								<div class="central-featured-lang lang6" lang="fr" dir="ltr">
+									<a id="js-link-box-fr"
+										href="/en/general-info/contribute"
+										title="Français — Scrypta Wiki" class="link-box">
+										<strong>Français</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #7. -->
+								<div class="central-featured-lang lang7" lang="ja" dir="ltr">
+									<a id="js-link-box-ja"
+										href="/en/general-info/contribute"
+										title="Nihongo — Scrypta Wiki" class="link-box">
+										<strong>日本語</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #8. -->
+								<div class="central-featured-lang lang8" lang="zh" dir="ltr">
+									<a id="js-link-box-zh"
+										href="/en/general-info/contribute"
+										title="Zhōngwén — 維基百科 — 自由的百科全書" class="link-box"
+										data-converttitle-hans="Zhōngwén — Scrypta Wiki">
+										<strong>中文</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #9. -->
+								<div class="central-featured-lang lang9" lang="pt" dir="ltr">
+									<a id="js-link-box-pt"
+										href="/en/general-info/contribute"
+										title="Português — Scrypta Wiki" class="link-box">
+										<strong>Português</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+								<!-- #10. -->
+								<div class="central-featured-lang lang10" lang="pl" dir="ltr">
+									<a id="js-link-box-pl"
+										href="/en/general-info/contribute"
+										title="Polski — Scrypta Wiki" class="link-box">
+										<strong>Polski</strong>
+										<small><bdi dir="ltr">Contribute</span></small>
+									</a>
+								</div>
+							</div>
+
+						</div><!-- /.lqd-column col-md-12 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			<!--/.lang-->
+
+			<!--placeholder-->
+			<section class="vc_row pt-140 pb-60">
+			</section>
+			<!--/.placeholder-->
+
+		</main><!-- /#content.content -->
+
+
+		<!--footer desk-->
+		<footer class="footer_desk main-footer bg-charade pt-70" data-sticky-footer="true">
+			<section>
+				<div class="row">
+
+					<div class="lqd-column col-md-2 col-md-offset-1 col-sm-6">
+
+						<h3 class="widget-title text-white"><strong>OFFICIAL WEBSITES</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="http://scrypta.foundation/" target="_blank">Scrypta Foundation</a></li>
+							<li><a href="https://scryptaconsortium.org/" target="_blank">Scrypta Consortium</a></li>
+							<li><a href="https://explorer.scryptachain.org/" target="_blank">Block Explorer</a></li>
+							<li><a href="https://wiki-it.scryptachain.org/" target="_blank">Wiki-guide</a></li>
+						</ul>
+
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-sm-6">
+
+						<h3 class="widget-title text-white"> <strong>PRODUCTS</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="https://manent.app/" target="_blank">Scrypta Manent</a></li>
+							<li><a href="https://planum.dev/" target="_blank">Planum</a></li>
+							<li><a href="http://electio.app/" target="_blank">Electio</a></li>
+							<li><a href="http://news.scryptachain.org/" target="_blank">Scrypta News</a></li>
+							<li><a href="http://socialpay.live/" target="_blank">Social Pay</a></li>
+
+						</ul>
+
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-sm-6">
+
+						<h3 class="widget-title text-white"><strong>EXCHANGES</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="http://mercatox.com/exchange/LYRA/BTC" target="_blank">Mercatox</a></li>
+							<li><a href="https://graviex.net/markets/lyrabtc" target="_blank">Graviex</a></li>
+							<li><a href="https://midas.investments/exchange/LYRA/BTC" target="_blank">Midas</a></li>
+						</ul>
+
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-sm-6">
+
+						<h3 class="widget-title text-white"><strong>STATS</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="https://masternodes.online/currencies/LYRA/" target="_blank">Masternode
+									Online</a></li>
+							<li><a href="https://coins.masternode.buzz/LYRA" target="_blank">Masternode Buzz</a></li>
+							<li><a href="https://www.coingecko.com/en/coins/scrypta" target="_blank">Coingecko</a>
+							</li>
+						</ul>
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-sm-6">
+
+						<h3 class="widget-title text-white"><strong>MASTERNODE & STAKING PLATFORMS</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="https://thehub.host/" target="_blank">The Hub</a></li>
+							<li><a href="https://evonodes.com/pool/LYRA" target="_blank">Evonode</a></li>
+							<li><a href="https://node.trittium.cc/" target="_blank">Trittium</a></li>
+							<li><a href="https://midas.investments/shares" target="_blank">Midas Investments</a></li>
+							<li><a href="https://nodehub.io/dashboard/view_coin?coin=scrypta" target="_blank">Node
+									Hub</a></li>
+						</ul>
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+				</div><!-- /.row -->
+
+
+			</section>
+
+			<section class="bt-fade-white-015 pt-35 pb-35 mt-50">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-6">
+
+							<ul class="lqd-custom-menu reset-ul inline-nav">
+								<li>
+									<a href="https://github.com/scryptachain/" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/scryptafoundation" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/scryptachain" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/scrypta-foundation/" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/scryptachain_official" target="_blank">
+										<i class="fa fa-telegram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@scryptachain" target="_blank">
+										<i class="fa fa-medium"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://discord.gg/8mfDRVK" target="_blank">
+										<i class="fab fa-discord"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wiki-it.scryptachain.org/" target="_blank">
+										<i class="fa fa-wikipedia-w"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCOANBiYyULoZwmaxjvOnM4Q" target="_blank">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+
+						</div><!-- /.col-md-6 -->
+
+						<div class="lqd-column col-md-6 text-md-right">
+							<p class="my-0"><span style="font-size: 15px;">Scrypta Blockchain is an open source project
+									by Scrypta Foundation</span>
+							</p>
+						</div><!-- /.col-md-6 text-md-right -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+		</footer>
+		<!-- END Footer desk /.main-footer -->
+
+		<!--Footer mobile-->
+		<footer class="footer_mob main-footer bg-charade pt-70" data-sticky-footer="true">
+			<section>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-2 col-md-offset-1 col-sm-6 text-center">
+							<h3 class="widget-title text-white"><strong>OFFICIAL WEBSITES</strong></h3>
+							<ul class="lqd-custom-menu reset-ul text-white">
+								<li><a href="http://scrypta.foundation/" target="_blank">Scrypta Foundation</a></li>
+								<li><a href="https://scryptaconsortium.org/" target="_blank">Scrypta Consortium</a></li>
+								<li><a href="https://explorer.scryptachain.org/" target="_blank">Block Explorer</a></li>
+								<li><a href="https://wiki-it.scryptachain.org/" target="_blank">Wiki-guide</a></li>
+							</ul>
+						</div><!-- /.col-md-3 col-sm-6 -->
+
+						<div class="lqd-column col-md-2 col-sm-6 text-center">
+							<h3 class="widget-title text-white"> <strong>PRODUCTS</strong></h3>
+							<ul class="lqd-custom-menu reset-ul text-white">
+								<li><a href="https://manent.app/" target="_blank">Scrypta Manent</a></li>
+								<li><a href="https://planum.dev/" target="_blank">Planum</a></li>
+								<li><a href="http://electio.app/" target="_blank">Electio</a></li>
+								<li><a href="http://news.scryptachain.org/" target="_blank">Scrypta News</a></li>
+								<li><a href="http://socialpay.live/" target="_blank">Social Pay</a></li>
+							</ul>
+
+						</div><!-- /.col-md-3 col-sm-6 -->
+					</div><!-- /.row -->
+				</div>
+
+			</section>
+
+			<section class="bt-fade-white-015 pt-35 pb-35 mt-50">
+				<div class="container text-center">
+					<div class="row">
+
+						<div class="lqd-column col-md-6">
+
+							<ul class="lqd-custom-menu reset-ul inline-nav">
+								<li>
+									<a href="https://github.com/scryptachain/" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/scryptafoundation" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/scryptachain" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/scrypta-foundation/" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/scryptachain_official" target="_blank">
+										<i class="fa fa-telegram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@scryptachain" target="_blank">
+										<i class="fa fa-medium"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://discord.gg/8mfDRVK" target="_blank">
+										<i class="fab fa-discord"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wiki-it.scryptachain.org/" target="_blank">
+										<i class="fa fa-wikipedia-w"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCOANBiYyULoZwmaxjvOnM4Q" target="_blank">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+
+						</div><!-- /.col-md-6 -->
+
+						<div class="lqd-column col-md-6 text-md-right">
+							<p class="my-0"><span style="font-size: 15px;">Scrypta Blockchain is an open source project
+									by Scrypta Foundation</span>
+							</p>
+						</div><!-- /.col-md-6 text-md-right -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+		</footer><!-- END Footer mobile /.main-footer -->
+
+	</div><!-- /#wrap -->
+
+	<script src="/assets/vendors/jquery.min.js"></script>
+	<script src="/assets/js/theme-vendors.js"></script>
+	<script src="/assets/js/theme.min.js"></script>
+
 </body>
+<style>
+	.banner_header {
+		margin-top: 66px;
+		margin-bottom: 50px;
+		width: 40%;
+	}
+
+	.central-textlogo-wrapper {
+		display: inline-block;
+		vertical-align: bottom
+	}
+
+	.central-textlogo {
+		position: relative;
+		margin-top: 0px !important;
+		margin: 40px auto 5px;
+		margin: 4rem auto .5rem;
+		width: 270px;
+	}
+
+	.central-featured-logo {
+		position: absolute;
+		top: 118px;
+		left: 7px
+	}
+
+	.central-featured-lang .link-box {
+		display: block;
+		padding: 0;
+		text-decoration: none;
+		white-space: normal
+	}
+
+	.central-featured-lang .link-box:hover strong {
+		text-decoration: underline
+	}
+
+	.central-featured-lang .link-box {
+		display: block;
+		padding: 0;
+		text-decoration: none;
+		white-space: normal
+	}
+
+	.central-featured-lang .link-box:hover strong {
+		text-decoration: underline
+	}
+
+	.central-featured {
+		position: relative;
+		height: 325px;
+		height: 32.5rem;
+		width: 546px;
+		width: 54.6rem;
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		vertical-align: middle
+	}
+
+	.central-featured-lang {
+		position: absolute;
+		width: 156px;
+		width: 15.6rem
+	}
+
+	.central-featured-lang .link-box {
+		display: block;
+		padding: 0;
+		text-decoration: none;
+		white-space: normal
+	}
+
+	.central-featured-lang .link-box:hover strong {
+		text-decoration: underline
+	}
+
+	.central-featured-lang strong {
+		display: block;
+		font-size: 16px;
+		font-size: 1.6rem
+	}
+
+	.central-featured-lang small {
+		color: #54595d;
+		display: inline-block;
+		font-size: 12px;
+		font-size: 1.2rem;
+		line-height: 1.6
+	}
+
+	.central-featured-lang em {
+		font-style: italic
+	}
+
+	.central-featured-lang .emNonItalicLang {
+		font-style: normal
+	}
+
+	.lang1 {
+		top: 0;
+		right: 60%
+	}
+
+	.lang2 {
+		top: 0;
+		left: 60%
+	}
+
+	.lang3 {
+		top: 20%;
+		right: 70%
+	}
+
+	.lang4 {
+		top: 20%;
+		left: 70%
+	}
+
+	.lang5 {
+		top: 40%;
+		right: 72%
+	}
+
+	.lang6 {
+		top: 40%;
+		left: 72%
+	}
+
+	.lang7 {
+		top: 60%;
+		right: 70%
+	}
+
+	.lang8 {
+		top: 60%;
+		left: 70%
+	}
+
+	.lang9 {
+		top: 80%;
+		right: 60%
+	}
+
+	.lang10 {
+		top: 80%;
+		left: 60%
+	}
+
+	@media (max-width:480px) {
+		.central-featured {
+			width: auto;
+			height: auto;
+			margin-top: 70px;
+			margin-top: 7rem;
+			font-size: 12px;
+			font-size: 1.2rem;
+			text-align: left
+		}
+
+		.central-featured:after {
+			content: " ";
+			display: block;
+			visibility: hidden;
+			clear: both;
+			height: 0;
+			font-size: 0
+		}
+
+		.central-featured-lang {
+			display: block;
+			float: left;
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			box-sizing: border-box;
+			height: 64px;
+			height: 6.4rem;
+			width: 33%;
+			margin: 0;
+			padding: 0 16px;
+			padding: 0 1.6rem;
+			text-align: center
+		}
+
+		.central-featured-lang,
+		.central-featured-lang strong {
+			font-size: 14px;
+			font-size: 1.4rem
+		}
+
+		.central-featured-lang small {
+			font-size: 11px;
+			font-size: 1.1rem;
+			line-height: 1.5
+		}
+	}
+
+
+
+
+	@media screen and (max-width: 768px) {
+		.footer_desk {
+			display: none;
+		}
+
+		.banner_header {
+			width: 60%;
+			position: relative;
+			top: -5px;
+		}
+
+		.mob_logo {
+			width: 17%;
+			position: absolute;
+			top: 25px;
+			left: 42%;
+
+		}
+
+		.lang_container {
+			margin-top: 0px;
+			padding: 0 !important;
+		}
+
+		.central-featured {
+			width: auto;
+			height: auto;
+			margin-top: 70px;
+			margin-top: 7rem;
+			font-size: 12px;
+			font-size: 1.2rem;
+			text-align: left
+		}
+
+		.central-featured:after {
+			content: " ";
+			display: block;
+			visibility: hidden;
+			clear: both;
+			height: 0;
+			font-size: 0
+		}
+
+		.central-featured-lang {
+			display: block;
+			float: left;
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			box-sizing: border-box;
+			height: 64px;
+			height: 6.4rem;
+			width: 33%;
+			margin: 0;
+			padding: 0 16px;
+			padding: 0 1.6rem;
+			text-align: center
+		}
+
+		.central-featured-lang,
+		.central-featured-lang strong {
+			font-size: 14px;
+			font-size: 1.4rem
+		}
+
+		.central-featured-lang small {
+			font-size: 11px;
+			font-size: 1.1rem;
+			line-height: 1.5
+		}
+		.titlebar {
+			height: 200px !important;
+			padding: 0 !important;
+		}
+
+		.central-featured-lang {
+			width: 100%;
+		}
+
+		.lang1 {
+			margin-top: 8px;
+			;
+		}
+
+		.central-featured-logo,
+		.central-textlogo {
+			display: none;
+		}
+	}
+
+
+	@media screen and (min-width: 769px) {
+		.footer_mob {
+			display: none;
+		}
+
+		.mob_logo {
+			display: none !important;
+		}
+
+	}
+</style>
 
 </html>
