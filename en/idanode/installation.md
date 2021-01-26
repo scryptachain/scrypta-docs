@@ -200,6 +200,4 @@ cd scrypta-idanodejs
 chmod 777 bootstrap.sh
 ./bootstrap.sh
 ```
-::: warning WARNING
 It is essential that the IdANode is turned off and that the `mongod` process is properly closed, otherwise the process will fail. If that fails, it is advisable to restart the VPS through the `reboot` command and start directly on the machine just started
-:::

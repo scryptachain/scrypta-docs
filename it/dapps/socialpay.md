@@ -201,9 +201,7 @@ Ogni Card Cittadino è dotata di **QR-CODE** e protetta da apposito codice PIN (
 
 ![socialpay](./assets/socialpay/card_cittadino.png)
 
-::: warning <img src="../assets/icons/warning.svg" width="32">
 **IMPORTANTE** Si raccomanda di custodire la Card con la massima cura in quanto contiene fondi realmente spendibili, e di non rivelare a nessuno il pin collegato alla Card.
-:::
 
 ### Come utilizzare la Card
 
@@ -289,9 +287,7 @@ Inoltre, questa speciale transazione, accrediterà nel conto dell’esercente la
 
 Questa funzione è infine corredata dalla possibilità di aggiungere delle note di testo aggiuntive che vengono inviate all’esercente.
 
-::: warning <img src="../assets/icons/warning.svg" width="32"> 
 **Attenzione**: Le note a corredo delle transazioni sono dei dati che vengono scritti **in chiaro** nel registro distribuito della blockchain Scrypta.<br>Si **RACCOMANDA** pertanto di non inserire informazioni sensibili, che possano violare il rispetto della privacy.<br>
-:::
 
 ### Impostazioni
 Attraverso questa sezione è possibile effettuare operazioni come il salvataggio e la cancellazione di tutto l’elenco utenti.
@@ -299,19 +295,16 @@ Per compiere l’operazione di **salvataggio**, è necessario cliccare sul pulsa
 Il file generato, in formato .csv, permetterà di conservare una copia dell'intero archivio utenti, e sarà necessario per importare nuovamente l'archivio.
 ![socialpay](./assets/socialpay/impostazioni.png)
 
-::: warning <img src="../assets/icons/warning.svg" width="32"> 
 **Attenzione**: Si **RACCOMANDA** fortemente di effettuare i backup dell'elenco utenti con regolarità, al fine di evitare o quantomeno limitare la perdita di dati.<br>
-:::
 
 Per compiere l’operazione di **cancellazione** dell'archivio, è necessario cliccare sul pulsante **"CANCELLA ARCHIVIO”**. A questo punto, l’intero elenco utenti verrà azzerato.
 
-::: danger <img src="../assets/icons/danger.svg" width="32"> 
 **Attenzione**: Utilizzando questa funzione, l'attuale archivio **VERRA' INTERAMENTE E DEFINITIVAMENTE CANCELLATO"**.
 <br>**L'operazione di cancellazione non e' annullabile**.
 <br>Pertanto, se non avete effettuato il backup in precedenza e cancellate i dati, l'intero archivio andra' **DISTRUTTO**.
 
 **PROCEDERE CON CAUTELA.**
-:::
+
 
 
 ## SocialPay per gli sviluppatori
@@ -337,9 +330,7 @@ La creazione della rappresentazione digitale di valore avviene attraverso la tec
 - Collegati a [https://web.manent.app](https://web.manent.app) e crea un nuovo account Scrypta.
 Inserisci una password forte perchè questo account sarà l'account proprietario della sidechain. 
 
-::: warning <img src="../assets/icons/warning.svg" width="32"> 
 **Importante:** Effettua il backup del file .sid e del paper wallet per sicurezza, e ricorda che sei il **SOLO** responsabile di questi dati. Custodisci questi file tenendoli al sicuro **OFFLINE**.
-:::
 
 - Ti serviranno almeno 1.001 LYRA per far partire la sidechain e dovrai versare almeno 0.1 LYRA per ogni account cittadino o esercente, se non dovessi esserne in possesso ti invitiamo ad effettuare una richiesta ufficiale all'email [info@scrypta.foundation](mailto:info@scrypta.foundation).
 

@@ -72,19 +72,13 @@ The source code of the Scrypta Identity Framework, which manages the identity ga
 
 This is the component that provides interfaces to external authenticators.
 
-::: tip USED TECHNOLOGIES
 
 **Scrypta Identity Framework** is an app developed in [**NodeJS**](https://nodejs.org). 
 Providers are managed through [**PassportJS**](http://www.passportjs.org/); except for email verification, integrated via [**Mailgun**](https://www.mailgun.com/) and verification of telephone number, via [**Twilio**](https://www.twilio.com/). 
 
-e-mail and telephone verification takes place internally so that gateways and service providers will coincide.
 
-:::
-::: warning PLEASE NOTE
+> E-mail and telephone verification takes place internally so that gateways and service providers will coincide.
 
-e-mail and telephone verification takes place internally so that gateways and service providers will coincide.
-
-:::
 
 ## Identification confirmation
 

@@ -80,13 +80,9 @@ Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in a
 
 Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
 
-::: warning NOTA BENE
-Nel caso in cui si scelga la tipologia di voto con autorizzazione **(Authorized)** dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
-:::
+> Nel caso in cui si scelga la tipologia di voto con autorizzazione **(Authorized)** dovremo compilare la lista degli indirizzi che rappresentano le identità digitali degli utenti abilitati a votare.
 
-::: warning ATTENZIONE
-Nel caso in cui si scelga la tipologia di quesito segreto **(Secret)** è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
-:::
+> Nel caso in cui si scelga la tipologia di quesito segreto **(Secret)** è necessario impostare una password specifica da consegnare ai votanti che inseriranno per poter leggere in chiaro il quesito e quindi poter votare.
 
 ## Guida al voto
 Se si accede per la prima volta alla piattaforma, per votare è necessario effettuare il login, clicare sul pulsante "Create Poll Key" e reinserire la password per procedere alla creazione della chiave RSA. Subito dopo compariranno in home le votazioni a cui siamo abilitati a partecipare.
@@ -95,9 +91,7 @@ Basterà adesso accedere alla votazione desiderata ed effettuare la nostra scelt
 
 Dopo aver votato, potremo entrare nuovamente nella schermata della votazione e il sistema ci mostrerà la scelta conteggiata apponendole accanto una "X". 
 
-::: warning NOTA BENE
-Il banditore della votazione non è abilitato a votare. In alcuni casi specifici il "creatore" della votazione è quindi da considerarsi come "ente"; in questo caso l'eventuale presidente di un ipotetico consiglio di amministrazione sarà dotato di identità digitale (attraverso indirizzo della rete Scrypta) al pari degli altri membri, ma gestirà anche l'indirizzo relativo all'ente (es. consiglio di amministratore) che bandisce la votazione.
-:::
+> Il banditore della votazione non è abilitato a votare. In alcuni casi specifici il "creatore" della votazione è quindi da considerarsi come "ente"; in questo caso l'eventuale presidente di un ipotetico consiglio di amministrazione sarà dotato di identità digitale (attraverso indirizzo della rete Scrypta) al pari degli altri membri, ma gestirà anche l'indirizzo relativo all'ente (es. consiglio di amministratore) che bandisce la votazione.
 
 ## Guida alla lettura dei risultati
 

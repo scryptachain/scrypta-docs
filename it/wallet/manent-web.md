@@ -26,16 +26,9 @@ Nel caso in cui abbiate gia' creato un portafoglio o state già utilizzando **Ma
 - Usando direttamente l'estensione **ScryptaID** attraverso il vostro browser web.
 ![manent_web](./assets/manent_web/import.png)
 
-
-
-::: warning <img src="../assets/icons/warning.svg" width="32"> 
 **Importante:** fai un backup e ricorda che sei il **SOLO** responsabile per questo file .sid e la password associati. Tienilo al sicuro.
-:::
 
-::: danger <img src="../assets/icons/danger.svg" width="32">
 Smarrire il file e/o la password renderà impossibile per chiunque accedere al portafogli e ai fondi/dati in esso contenuti!
-:::
-***
 
 ## Interfaccia grafica
 ### Funzioni
@@ -70,14 +63,10 @@ Attraverso questo collegamento situato sul lato destro in alto della dashboard, 
 
 ![manent_web](./assets/manent_web/backup.png)
 
-::: warning <img src="../assets/icons/warning.svg" width="32"> 
 Dopo aver scaricato il file .pdf **PAPER WALLET**, si suggerisce di stamparlo e di riporre la stampa in un luogo sicuro. <br>Successivamente, rimuovere il file .pdf dal vostro dispositivo.
-:::
 
-::: danger <img src="../assets/icons/danger.svg" width="32">
 **CUSTODISCI CON CURA IL TUO PAPER WALLET**
 
 Il **PAPER WALLET espone la VOSTRA chiave privata** sotto forma di codice QR. 
 <br>La chiave privata rappresenta la vostra identità digitale, le informazioni in essa contenute vanno custodite con cura.
 <br>Impedite **SEMPRE** l'accesso a tali dati a sconosciuti, i quali potrebbero accedere ai fondi in essa contenuti o utilizzare la vostra identità digitale per qualisasi fine.
-:::

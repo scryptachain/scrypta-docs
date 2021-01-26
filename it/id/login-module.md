@@ -7,9 +7,8 @@
 - Interazione con Manent App, le credenziali di accesso passano dal dispositivo mobile alla dApp in pochi secondi.
 - Possibilità di richiedere uno o più identificatori obbligatori: hanno accesso al sito web solo identità blockchain contro verificate da, ad esempio, e-mail o telefono.
 - Possibilità di forzare il Gateway: costruisci il tuo Gateway proprietario di identità.
-::: tip NOTA
+
 Il codice di ScryptaID Login Module è verificato (e verificabile) in blockchain grazie al tool di blockchain versioning.
-:::
 
 Ricordiamo che ScryptaID Login Module è un software open-source, la repository è ispezionabile al [seguente link](https://github.com/scryptachain/scrypta-login).
 

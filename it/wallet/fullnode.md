@@ -40,9 +40,7 @@ Ecco di seguito il processo passo per passo:
 2. Estrai il contenuto dei file Zip nella posizione desiderata
 3. Esegui il file eseguibile lyra-qt.exe
 
-::: warning Attenzione
-È possibile che venga visualizzato un avviso antivirus (falso positivo) per il quale dovrete ignorare o creare un'eccezione.
-:::
+> È possibile che venga visualizzato un avviso antivirus (falso positivo) per il quale dovrete ignorare o creare un'eccezione.
 
 ### macOS
 L'installazione di Lyra Wallet su Mac è un processo relativamente semplice.
@@ -129,9 +127,7 @@ Per scrivere la tua immagine con balenaEtcher:
 - Rivedi le tue selezioni e fai clic su "Flash!" per iniziare a scrivere i dati sulla scheda SD. 
 - Attendere il completamento del processo, quindi inserire la scheda SD in Raspberry PI 4.
 
-::: warning Nota bene
 Per motivi di sicurezza, il portafoglio installato sul tuo sistema viene fornito senza il file wallet.dat per garantire che nessuno oltre te abbia le chiavi private del tuo portafoglio. Il file wallet.dat verrà generato automaticamente quando avvii il portafoglio per la prima volta.
-:::
 
 ## Introduzione al QT Wallet
 
@@ -221,10 +217,8 @@ Nella parte bassa a destra invece troverete questi simboli
 Al fine di velocizzare il sync della blockchain, possiamo utilizzare il **bootstrap**, che introduciamo adesso definendolo una copia aggiornata della blockchain ad un tempo piu' recente.
 <br>Definzioni e dettagli piu' approfonditi sui file di bootstrap sono forniti nell'[apposita sezione](../scrypta-full-node/setup.html#bootstrap).
 
-::: warning <img src="../assets/icons/warning.svg" width="32"><br>
 Poichè verranno scaricati parecchi dati, assicuratevi di avere sufficiente spazio disponibile sul vostro hard-disk per salvare l'intera copia della blockchain.
 <br>A seconda della velocità della connessione, per completare la sincronizzazione potrebbe volerci molto tempo.
-:::
 
 Una volta che la sincronizzazione è stata completata, indicata dal simbolo nell'angolo in basso a destra, il vostro client è connesso alla blockchain ed è pronto sia per scambiare transazioni con altri client desktop/app della rete Scrypta sia per permetterci di effettuare tutte le operazioni sopra riportate.
 <br>![qt_wallet](./assets/qt_wallet/status.png)
@@ -294,9 +288,7 @@ Assicuratevi di ricordare la password e di conservarla SEMPRE in un luogo sicuro
 
 Una volta scelta la password, in modo che sia difficile da corrompere, procedete con l'encryption premendo **OK**.
 
-::: danger <img src="../assets/icons/danger.svg" width="32"><br>
 **ATTENZIONE:** Se dimenticate o smarrite la password dopo l'encryption, perderete l'acesso a tutti i vostri fondi.
-:::
 
 Al termine dell'operazione di encryption, il software si chiuderà.
 <br>Al successivo riavvio, il wallet presenterà stavolta il simbolo di un lucchetto chiuso nell'angolo in basso a destra.
@@ -317,9 +309,7 @@ A questo punto il vostro wallet e' sbloccato per tutte le operazioni,e tale stat
 Dopo aver completato il processo di encryption, procediamo con l'effettuare una copia di backup del nostro **wallet.dat** appena cryptato, il file che contiene tutte le informazioni del nostro portafoglio digitale e tutti gli indirizzi con le rispettive chiavi private.
 <br>Per procedere col backup, dal menu **"FILE"** andate su **"BACKUP WALLET"**, scegliete un nome e il percorso su cui salvare il backup del file wallet.dat, in un luogo sicuro.
 
-::: warning <img src="../assets/icons/warning.svg" width="32"><br>
 **ATTENZIONE:** Questa copia di backup vi permetterà di recuperare i vostri fondi semplicemente importando il file wallet.dat su un altro client Scrypta, per cui custoditelo con estrema attenzione e cautela.
-:::
 
 ## Debug Console
 
@@ -336,9 +326,8 @@ Lista dei Comandi
 <br>Attraverso la *debug console* è possibile interrogare direttamente la blockchain sullo stato del network, di una transazione, dei masternodes, oppure si possono creare transazioni manuali, settare impostazioni operative o di sicurezza, generare nuovi indirizzi, ma soprattutto gestire le chiavi private e il wallet stesso.
 
 Vediamo di seguito le principali operazioni sulle chiavi private.
-::: danger <img src="../assets/icons/danger.svg" width="32"><br>
+
 **ATTENZIONE:** Si raccomanda sempre la massima prudenza quando si effettuano operazioni di qualsiasi tipo con le proprie chiavi private.
-:::
 
 ## Dump e importazione chiavi private
 Queste sono fra le più importanti operazioni che è possibile effettuare nel proprio wallet.
@@ -349,15 +338,12 @@ Tuttavia tale chiave privata non viene mai esposta dal client per ragioni di sic
 Importando tali chiavi private in un nuovo wallet su altro dispositivo, avrà infatti la conseguenza di rendere accessibili i fondi in esso contenuti, che pertanto saranno di proprietà esclusiva di colui (o coloro) che detengono le chiavi private di quell'indirizzo specifico.
 <br>Per effettuare questa operazione e le altre riportate in questa sezione della guida, è necessario che il wallet sia [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
 
-::: danger <img src="../assets/icons/danger.svg" width="32"><br>
 **ATTENZIONE:** Si raccomanda sempre la massima prudenza quando si espongono le proprie chiavi private.
 <br>Renderle accessibili a terzi, da loro accesso ai vostri fondi.
-:::
 
-::: warning <img src="../assets/icons/warning.svg" width="32"><br>
 Si consiglia di effettuare sempre backup ridondanti sulle chiavi private, nonchè di conservarle in un luogo a cui vi è sempre possibile accedere.
 <br>Lo smarrimento delle chiavi private comporta l'inaccessibilità da parte di chiunque, voi compresi, ai vostri fondi.
-:::
+
 
 ### Dump delle chiavi private
 
@@ -365,10 +351,7 @@ Per effettuare il dump di una chiave privata per uno specifico indirizzo è suff
 <br>Il comando per esportare la chiave privata di un indirizzo è `**dumpprivkey**`.
 <br>Attraverso il comando **`dumpprivkey "lyraaddress"`** ci viene  rivelata la chiave privata corrispondente all'indirizzo "lyraaddress".
 
-
-::: warning <img src="../assets/icons/warning.svg" width="32"><br>
 Ogni indirizzo ha la propria chiave privata, se conservate i vostri fondi in indirizzi diversi, è fondamentale che facciate il dump per ciascuno degli indirizzi sui cui sono presenti dei fondi.
-:::
 
 > L'indirizzo per cui volete esportare la chiave privata deve essere di vostra proprietà,per verificarlo basta digitare
 **`validateaddress "lyraaddress"`**, e il sistema vi restituirà delle info su quell'indirizzo.
@@ -397,14 +380,11 @@ Per procedere all'export di tutte le chiavi private attraverso il comando `**dum
  Aprendo il file ***dump.txt*** appena salvato, vedremo qualcosa di simile a quanto riportato in figura: una parte iniziale con un report su quando il file e' stato esportato e da quale wallet, e tutta la lista delle chiavi private (che iniziano per S) e dei rispettivi indirizzi.
  <br>![qt_wallet](./assets/qt_wallet/dump.png)
 
- ::: danger <img src="../assets/icons/danger.svg" width="32"><br>
 **ATTENZIONE:** Raccomandiamo ancora una volta di custodire questo file con la massima sicurezza ed accedervi solo in caso di estrema necessità, in quanto le informazioni in esso contenute forniscono l'accesso **COMPLETO** ai vostri fondi.
-:::
 
 I dati contenuti in quel file vengono generati quando si avvia il wallet per la sua prima volta, assieme al file wallet.dat.
 <br>Al primo avvio, il sistema genera 1000 indirizzi casuali e le corrispondenti chiavi private, e le salva per i futuri utilizzi.
 <br>Ogni volta che richiediamo un nuovo indirizzo con **"getnewaddress"**, il sistema attinge a quella lista di indirizzi pre-generati per fornirci un indirizzo da usare.
-
 
 ### Bootstrap
 Il bootstrap non e' altro che un file (o insieme di files) contenente una "fotografia" aggiornata dello stato della blockchain in un dato momento, una copia esatta del public ledger da usare per differenti scopi come punto di ripristino.
@@ -458,9 +438,7 @@ La Directory dati è la cartella di sistema Scrypta Blockchain che contiene tutt
 
 Questa cartella contiene anche un file importante chiamato "**wallet.dat**" che memorizza le chiavi private per i tuoi indirizzi.
 
-::: danger
-Perdere il file "wallet.dat" significa perdere l'accesso a tutte le tue monete LYRA. Eseguite regolarmente dei backup!
-:::
+> Perdere il file "wallet.dat" significa perdere l'accesso a tutte le tue monete LYRA. Eseguite regolarmente dei backup!
 
 ### Posizione della directory
 ​

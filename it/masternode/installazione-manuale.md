@@ -57,9 +57,8 @@ Ora invia **ESATTAMENTE 15000 LYRA**,  in una singola transazione, all'indirizzo
 
 ![sendcollateral](./assets/masternode/6.png)
 
-::: warning ATTENZIONE
 Non è consigliabile inviare direttamente il collateral all'indirizzo masternode da un exchange  in quanto potrebbero essere detrarre determinate commissioni di prelievo con conseguente trasferimento di ammontare inferiore a15000 LYRA.
-:::
+
 
 Dovrai attendere alcune conferme (circa mezz'ora) affinché questa transazione sia valida come deposito masternode (**sono necessarie 21 conferme**).
 
@@ -235,12 +234,11 @@ lyra-cli getinfo
 ```
 Soffermati sulla voce  "*blocks*" :  e metti a confronto i blocchi raggiunti dal tuo nodo con quelli del [block explorer](https://explorer.scryptachain.org/) ufficiale.
 
-::: warning ATTENZIONE
 È necessaria una sincronizzazione completa per avviare correttamente il tuo masternode, potrebbe essere necessario del tempo per scaricare tutti i dati della blockchain.
 Assicurarsi che il wallet online e il wallet locale abbiano la stessa versione e protocollo. Ad esempio: 
 "version" : 2000100
 "protocolversion" : 70922
-:::
+
 
 Quando la sincronizzazione è completa, puoi procedere con l'avvio del masternode e il controllo dello stato, operazioni che verranno illustrate nel prossimo paragrafo.
 

@@ -24,9 +24,8 @@ Nel tuo wallet, entro qualche secondo dovresti vedere un'icona verde che simbole
 
 In base a quando hai inviato LYRA coin al tuo portafoglio, potresti dover aspettare 1 ora, che è l'età minima di staking:  *staking minimum age*. Finché vedi l'icona verde e tieni il tuo wallet attivo e online, hai diritto a ricevere ricompense.
 
-::: warning NOTA BENE
 Se non compare la finestra di sblocco wallet, ciò significa che il wallet non è ancora crittografato. E' altamente raccomandato farlo, per la tua sicurezza. Consulta la sezione apposita: [Cifratura del wallet](../masternode-setup/installazione-manuale.md).
-:::
+
 
 ## Coin Control
 
@@ -46,7 +45,6 @@ Adesso inserisci (incolla) lo stesso indirizzo nella finestra di *invio* nel cam
 
 Copia e incolla l'ammontare che compare in alto:  *amount “After Fee”* (tasto destro per copiare), adesso possiamo inviare le LYRA in una unica transazioner (UTXO) allo stesso indirizzo.
 
-::: tip NOTA
 Se gestisti col desktop wallet un Masternode  Scrypta, potresti raggruppare le masternode rewards in set più grandi. Tuttavia è importante essere sicuri che il collateral relativo al masternode rimanga intaccato e che nella sezione *Coin Control*  sia settato su “*locked*” . 
 
 Se il collateral del masternode viene speso accidentalmente, la txhash e l'output associati verranno distrutti, lasciando offline il masternode.
@@ -54,7 +52,6 @@ Se il collateral del masternode viene speso accidentalmente, la txhash e l'outpu
 È possibile bloccare e sbloccare manualmente le transazioni facendo clic con il pulsante destro del mouse e selezionando *Lock unspent* o *Unlock unspent*.
 
 Se stai cercando di sbloccare il collateral del Masternode per utilizzarlo e inviarlo, questo è un buon metodo per farlo.
-:::
 
 ## Split Threshold
 Con questa funzione la prima volta che il tuo indirizzo viene ricompensato per lo staking, si dividerà automaticamente in 2 input (UTXO) e continuerà a dividersi ad ogni ricompensa di blocco che trova fino a raggiungere il limite della soglia di split (**il valore predefinito è 2000 monete per input**). 
@@ -89,9 +86,8 @@ Una volta completato, fai clic su *Activate - attiva*. Ora controlla lo stato fa
 
 Se si desidera disabilitarlo, fare clic su *Deactivate*.
  
-::: warning ATTENZIONE
-Per rendere effettive queste modifiche, potrebbe essere necessario riavviare il wallet.
-:::
+> Per rendere effettive queste modifiche, potrebbe essere necessario riavviare il wallet.
+
 
 ## Video Tutorial
 

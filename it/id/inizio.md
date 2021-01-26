@@ -42,5 +42,3 @@ Le identità (e il relativo address) possono essere create attraverso:
 
 - [Scrypta Card](../dapps/manent-app.md#scrypta-card)
 
-:::
-

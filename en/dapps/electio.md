@@ -71,13 +71,9 @@ By selecting one of the items in the drop-down menu, Electio will automatically 
 
 Once you have chosen the settings by type of question and type of vote, you can proceed with the creation of the poll.
 
-::: warning PLEASE NOTE
 If you choose the type of vote with authorization **(Authorized)** we will have to fill the list of addresses that represent the digital identities of the users authorized to vote.
-:::
 
-::: warning ATTENTION
 If you choose the type of secret question **(Secret)** it is necessary to set a specific password to be given to the voters, in order to be able to read the question clearly and therefore be able to vote.
-:::
 
 ## Voting guide
 
@@ -87,9 +83,7 @@ Just access the desired poll and make your choice by clicking on the relevant bo
 
 After voting, you will be able to enter the voting screen again and the system will show you the choice counted by placing an "X" next to it. 
 
-::: warning PLEASE NOTE
-The auctioneer of the vote is not authorized to vote. In some specific cases, the "creator" of the vote is therefore to be considered as an "entity"; in this case the eventual president of a hypothetical board of directors will be endowed with a digital identity (through the address of the Scrypta network) like the other members, but will also manage the address related to the body (e.g. board of directors) that banishes the vote.
-:::
+> The auctioneer of the vote is not authorized to vote. In some specific cases, the "creator" of the vote is therefore to be considered as an "entity"; in this case the eventual president of a hypothetical board of directors will be endowed with a digital identity (through the address of the Scrypta network) like the other members, but will also manage the address related to the body (e.g. board of directors) that banishes the vote.
 
 ## Guide to reading the results
 

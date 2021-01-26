@@ -28,14 +28,8 @@ In case you have already created a portfolio or are already using **Manent App**
 
 
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 **Important:** make a backup and remember that you are ** ONLY ** responsible for this associated .sid file and password. Keep it safe.
-:::
-
-::: danger <img src="..//assets/icons/danger.svg" width="32">
 Losing the file and / or password will make it impossible for anyone to access the wallet and the funds / data contained in it!
-:::
-***
 
 ## Graphic interface
 ### Functions
@@ -70,14 +64,10 @@ Through this link located on the upper right side of the dashboard, you can acce
 
 ![manent_web](./assets/manent_web/backup.png)
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 After downloading the .pdf **PAPER WALLET** file, it is suggested to print it and put the print in a safe place. <br> Next, remove the .pdf file from your device.
-:::
 
-::: danger <img src="..//assets/icons/danger.svg" width="32">
 **KEEP YOUR PAPER WALLET CAREFULLY**
 
 The **PAPER WALLET exposes YOUR private key** in the form of a QR code.
 <br>The private key represents your digital identity, the information it contains must be carefully kept.
 <br>**ALWAYS** prevent access to such data to strangers, who could access the funds it contains or use your digital identity for any purpose.
-:::

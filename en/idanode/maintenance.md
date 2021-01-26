@@ -6,9 +6,8 @@ It is extremely important to regularly access IdANode and to verify that the ver
 
 Each version carries with it a *checksum* to check the code, which will be compared with your IdANode at startup.
 
-::: warning WARNING
 It is essential that the * checksum * is always valid. Any unofficial modification to the code will corrupt the IdANode and this will not allow the connection through@scrypta/core.
-:::
+
 
 ### Blockchain checksum list
 

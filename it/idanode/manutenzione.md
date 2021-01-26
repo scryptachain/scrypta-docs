@@ -6,9 +6,8 @@ E' fondamentale che si acceda regolarmente  all'IdANode e si verifichi che la ve
 
 Ogni versione porta con se un *checksum* di controllo sul codice, che verrà confrontato con il tuo IdANode all'avvio.
 
-::: warning ATTENZIONE
 E' fondamentale che il *checksum* risulti sempre valido, ogni modifica non ufficiale al codice corromperà l'IdANode e questo non permetterà il collegamento attraverso @scrypta/core.
-:::
+
 
 ### Lista checksum in Blockchain
 

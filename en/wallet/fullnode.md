@@ -39,9 +39,8 @@ Steps:
 2. Extract the contents of the Zip files to the desired location
 3. Run the lyra-qt.exe executable file
 
-::: warning Warning
-A virus warning (false positive) may appear for which you will need to ignore or create an exception.
-:::
+> A virus warning (false positive) may appear for which you will need to ignore or create an exception.
+
 
 ### macOS
 Step to install the Lyra Wallet on Mac.
@@ -113,9 +112,7 @@ You can burn the image file to the SD card by following our installation guide.
 
 The official Scrypta image file is available for download from the Scrypta Github. You will need to use an image writing tool to install the downloaded image on the SD card.
 
-::: tip BalenaEtcher
 BalenaEtcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows and is the easiest option for burning image files. BalenaEtcher also supports writing images directly from the zip file, without having to unzip.
-:::
 
 To write your image with Balena Etcher:
 - Download the latest version of [balenaEtcher] (https://www.balena.io/etcher/) and install it.
@@ -125,9 +122,8 @@ To write your image with Balena Etcher:
 - Review your selections and click "Flash!" to start writing data to the SD card.
 - Wait for the process to complete, then insert the SD card into the Raspberry PI 4.
 
-::: warning Note
-For security reasons, the wallet installed on your system is provided without the wallet.dat file to ensure that no one besides you has the private keys of your wallet. The wallet.dat file will be automatically generated when you start the portfolio for the first time.
-:::
+> For security reasons, the wallet installed on your system is provided without the wallet.dat file to ensure that no one besides you has the private keys of your wallet. The wallet.dat file will be automatically generated when you start the portfolio for the first time.
+
 
 ## Introduction to the QT Wallet
 
@@ -215,17 +211,14 @@ In the lower right part you will find these symbols
 In order to speed up the sync of the blockchain, we can use the ** bootstrap ** (a recently updated copy of the blockchain)
 <br> Definitions and more in-depth details on the bootstrap files are provided in the [appropriate section](../scrypta-full-node/setup.html#bootstrap).
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"><br>
-Since a lot of data will be downloaded, make sure you have enough space available on your hard disk to save the entire copy of the blockchain.
+> Since a lot of data will be downloaded, make sure you have enough space available on your hard disk to save the entire copy of the blockchain.
 <br> The timing of completion of synchronization depends on the connection speed.
-:::
+
 
 Once the synchronization has been completed, as indicated by the symbol in the lower right corner, your client is connected to the blockchain and is ready to exchange transactions with other desktop/app clients of the Scrypta network and to carry out all the above operations indicated.
 <br>![qt_wallet](./assets/qt_wallet/status.png)
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"><br>
 In the event that the wallet cannot connect to the list of nodes and synchronize, it will be possible to force it by manually adding a list of nodes in the **lyra.conf** file located in the system folder.
-:::
 
 To get an updated list of nodes, go to the blockexplorer and click on ["node list":](https://chainz.cryptoid.info/lyra/#!network).
 <br>Copy the contents of the table and paste it into the **lyra.conf** file.
@@ -285,16 +278,13 @@ The encryption of the wallet is a very simple operation to carry out, however yo
 <br>![qt_wallet](./assets/qt_wallet/encrypt.png)
 <br>
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"><br>
-For greater security choose a strong password, with ten or more characters, preferably random.
-Make sure you remember your password and ALWAYS keep it in a safe place.
-:::
+> For greater security choose a strong password, with ten or more characters, preferably random.
+> Make sure you remember your password and ALWAYS keep it in a safe place.
 
 Once the password has been chosen, proceed with the encryption by pressing **OK**.
 
-::: danger <img src="..//assets/icons/danger.svg" width="32"><br>
-**ATTENTION:** If you forget or lose your password after the encryption, you will lose access to all your funds.
-:::
+> **ATTENTION:** If you forget or lose your password after the encryption, you will lose access to all your funds.
+
 
 The wallet app will close at the end of the encryption operation.
 <br> On the next reboot, the wallet will display a closed padlock symbol in the lower right corner.
@@ -315,9 +305,8 @@ At this point the wallet is unlocked for all operations. This status is indicate
 Once the encryption process is complete, we proceed with making a backup copy of our **wallet.dat**, the file that contains all the information of our digital wallet and all the addresses with the respective private keys.
 <br> To proceed with the backup, from the menu **"FILE"** select **"BACKUP WALLET"** and choose a name and the path on which to save the backup of the wallet.dat file in a safe place.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"><br>
-**ATTENTION:** This backup copy will allow you to recover your funds simply by importing the wallet.dat file on another Scrypta client, so keep it with extreme care and caution.
-:::
+> **ATTENTION:** This backup copy will allow you to recover your funds simply by importing the wallet.dat file on another Scrypta client, so keep it with extreme care and caution.
+
 
 ## Debug Console
 
@@ -334,9 +323,8 @@ Command List
 <br>Through the *debug console* it is possible to directly query the blockchain on the status of the network, a transaction, masternodes, or you can create manual transactions, set operational or security settings, generate new addresses and, above all, manage private keys and the wallet itself.
 
 We see below the main operations on private keys.
-::: danger <img src="..//assets/icons/danger.svg" width="32"><br>
-**ATTENTION:** Maximum caution is always recommended when carrying out operations with your private keys.
-:::
+
+> **ATTENTION:** Maximum caution is always recommended when carrying out operations with your private keys.
 
 ## Dump and import private keys
 These are among the most important operations that you can perform in your wallet.
@@ -347,15 +335,11 @@ However, this private key is never exposed by the client for security reasons an
 By importing these private keys into a new wallet on another device, the funds contained in it will be made accessible, which therefore will be the exclusive property of the one (or those) who hold the private keys of that specific address.
 <br> To do this and the others listed in this section of the guide, the wallet must be [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
 
-::: danger <img src="..//assets/icons/danger.svg" width="32"><br>
 ** ATTENTION: ** Maximum caution is always recommended when exposing your private keys.
 <br> Making them accessible to third parties means giving them access to your funds.
-:::
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"><br>
 We recommend that you always make redundant backups on private keys, as well as keep them in a place that you can always access.
 <br> The loss of private keys implies the inaccessibility of anyone, including you, to your funds.
-:::
 
 ### Dump private keys
 
@@ -363,14 +347,9 @@ To dump a private key to a specific address, you must first open the debug conso
 <br> The command to export the private key of an address is `**dumpprivkey**`.
 <br> Through the command **`dumpprivkey "lyraaddress"`** we are revealed the private key corresponding to the address "lyraaddress".
 
+> Each address has its own private key: if you store your funds in different addresses it is essential that you do the dump for each of the addresses on which there are funds.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"><br>
-Each address has its own private key: if you store your funds in different addresses it is essential that you do the dump for each of the addresses on which there are funds.
-:::
-
-::: tip <img src="..//assets/icons/tip.svg" width="32"><br>
-The address for which you want to export the private key must be yours. Typing **`validateaddress "lyraaddress"`** the system will return you info on that address.
-:::
+> The address for which you want to export the private key must be yours. Typing **`validateaddress "lyraaddress"`** the system will return you info on that address.
 
 Once the private key is revealed to us, it can be imported into any Scrypta wallet to have access to the funds linked to it.
 It is not possible to export private keys to addresses that we do not have.
@@ -396,9 +375,7 @@ To proceed with the export of all private keys through the `**dump wallet**` com
   By opening the newly saved ***dump.txt*** file, we will see something similar to what is shown in the figure: an initial part with a report on when the file was exported and from which wallet, and the whole list of keys private (starting with S) and their respective addresses.
  <br>![qt_wallet](./assets/qt_wallet/dump.png)
 
- ::: danger <img src="..//assets/icons/danger.svg" width="32"><br>
 **ATTENTION:** We recommend once again to keep this file with maximum security and to access it only in case of extreme necessity, as the information it contains provides **FULL** access to your funds.
-:::
 
 The data in that file is generated when you start the wallet for the first time, along with the wallet.dat file.
 <br> When first started, the system generates 1000 random addresses and corresponding private keys and saves them for future use.
@@ -457,9 +434,7 @@ The Data Directory is the Scrypta Blockchain system folder which contains all th
 
 This folder also contains an important file called "**wallet.dat**" which stores private keys for your addresses.
 
-::: danger
-Losing the "wallet.dat" file means losing access to all your LYRA coins. Make regular backups!
-:::
+> Losing the "wallet.dat" file means losing access to all your coins. Make regular backups!
 
 ### Directory location
 ​
@@ -512,9 +487,7 @@ Note that the "Library" folder may be hidden.
 
 The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
 
-::: tip
 In the client version it is necessary to indicate `./lyra-cli` before the commands.
-:::
 
 ### Test-CLI
 
@@ -616,9 +589,8 @@ Set of commands to perform operations related to the masternodes.
 
 `ping` Requires that a ping be sent to all other nodes to measure the ping time.
 
-::: tip Note
 The results provided by getpeerinfo, pingtime are in tenths of a second.
-:::
+
 
 ### Instructions for Raw Transactions
 `createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )` Create a transaction by spending data inputs and creating new outputs. The outputs can be addresses or data. Returns the raw transaction with hexadecimal encoding. Transaction inputs are unsigned and not stored in the wallet or transmitted to the network.
@@ -884,9 +856,7 @@ For more information, consult the relevant section [Data directory](data-directo
 5. Save the changes in the lyra.conf file;
 6. Start lyra-qt (wallet with graphical interface) or lyrad (version without graphical interface).
 
-::: tip Note
-if you later want to start the wallet in mainnet mode, simply replace testnet = 1 with testenet = 0 in the configuration file, save the changes and restart the wallet. 
-::::
+> If you later want to start the wallet in mainnet mode, simply replace testnet = 1 with testenet = 0 in the configuration file, save the changes and restart the wallet. 
 
 ### Faucet tLYRA (testnet LYRA)
 To receive test LYRA (* tLyra *), you can use the Faucet system created through IdANode technology:

@@ -24,9 +24,8 @@ Within a few seconds, a green icon should appear in the wallet symbolizing 'acti
 
 Depending on when you sent LYRA coin to your wallet, you may have to wait 1 hour, equal to the minimum staking age: * staking minimum age *. When the icon is green and the wallet is active and online, you are entitled to receive rewards.
 
-::: warning PLEASE NOTE
 If the wallet unlock window does not appear, it means that the wallet is not yet encrypted. It is highly recommended to do this, for your safety. See the appropriate section: [Wallet encryption](../masternode-setup/installazione-manuale.md).
-:::
+
 
 ## Coin Control
 
@@ -46,15 +45,11 @@ Now enter (paste) the same address in the *send* window in the "*Pay To*" field.
 
 Copy and paste the amount shown above: *amount "After Fee"* (right key to copy), where to send the LYRA in a single transaction (UTXO).
 
-::: tip NOTE
-By managing a Scrypta Masternode via desktop wallet, you can group masternode rewards into larger sets. However, it is important to be sure that the collateral for the masternode remains intact and that in the *Coin Control* section it is set to "*locked*".
+> By managing a Scrypta Masternode via desktop wallet, you can group masternode rewards into larger sets. However, it is important to be sure that the collateral for the masternode remains intact and that in the *Coin Control* section it is set to "*locked*".
+> If the masternode collateral is accidentally spent, the associated txhash and output will be destroyed leaving the masternode offline.
+> You can lock and unlock transactions manually by right-clicking and selecting *Lock unspent* or *Unlock unspent*.
+> This is a good way to unlock the Masternode collateral in order to use and send it
 
-If the masternode collateral is accidentally spent, the associated txhash and output will be destroyed leaving the masternode offline.
-
-You can lock and unlock transactions manually by right-clicking and selecting *Lock unspent* or *Unlock unspent*.
-
-This is a good way to unlock the Masternode collateral in order to use and send it
-:::
 
 ## Split Threshold
 With this function, the first time your address will be rewarded for staking, the amount will automatically be divided into 2 inputs (UTXO) and will continue to divide with each block reward it finds until it reaches the split threshold limit ( **the default is 2000 coins per input**).
@@ -89,9 +84,7 @@ Once completed, click *Activate*. Now check the status by clicking on *View Mult
 
 If you want to disable it, click on *Deactivate*.
  
-::: warning WARNING
 For these changes to take effect, you may need to restart the wallet.
-:::
 
 ## Video Tutorial
 

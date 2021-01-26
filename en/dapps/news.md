@@ -38,9 +38,7 @@ At this point you can access the form [Scrypta News](https://news.scryptachain.o
 ![news write](./assets/other/newswrite.png)
 
 
-::: tip NOTE
-It is clear that, for example in the case of an online newspaper that wants to identify its collaborators and their digital operations, given the open nature of the ScryptaID framework, it is possible to create a storage for all identities and connect them, for example, to the corporate email.
-:::
+> It is clear that, for example in the case of an online newspaper that wants to identify its collaborators and their digital operations, given the open nature of the ScryptaID framework, it is possible to create a storage for all identities and connect them, for example, to the corporate email.
 
 The user will then be able to verify the identity of the author of the article, date, place and exact time in which it was produced and then ascertain the authenticity of the origin of the information.
 

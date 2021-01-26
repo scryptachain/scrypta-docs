@@ -7,9 +7,8 @@
 - Possibility to request one or more mandatory identifiers: only blockchain identities against the website, verified by, for example, e-mail or telephone, have access to the website.
 - Ability to force the Gateway: build your own identity Gateway.
 
-::: tip Note
-The ScryptaID Login Module code is verified (and verifiable) in blockchain thanks to the blockchain versioning tool.
-:::
+> The ScryptaID Login Module code is verified (and verifiable) in blockchain thanks to the blockchain versioning tool.
+
 
 Recall that ScryptaID Login Module is an open-source software, the repository can be inspected at the [following link](https://github.com/scryptachain/scrypta-login).
 

@@ -45,13 +45,10 @@ With Manent you can recover your account in many ways, even if you lose your dev
 
 The data and files uploaded on the Scrypta blockchain are processed by the infrastructure and reach a very high level of **redundancy and impermeability**, such as to make them in all respects immutable and immune to alterations and falsifications.
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
 **You have our full support!**
 
 Do you need help? Send an email to: [**info@scryptachain.org**](mailto:info@scryptachain.org)
 Or visit [Support](https://wiki-it.scryptachain.org/manent-app/manent-support) page
-:::
-***
 
 #### WOULD YOU LIKE TO KNOW MORE'?
 - You can use Manent on **multiple devices**.
@@ -72,16 +69,10 @@ The process to create an account is simple: you only need to enter a **password*
 Now secure your account by backing up by following the instructions below).
 This step is essential and allows you to protect your digital signature and its wallet.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 **Manent is a decentralized app**, it is therefore conceived to operate without any central server. In this way you are solely responsible for the password and its e-signature (digital signature).
-:::
 
-::: danger <img src="..//assets/icons/danger.svg" width="32">
 **KEEP YOUR PASSWORD SAFE**
-
 If you lose your password, it will no longer be possible for anyone to recover it and your account will become **forever** inaccessible.
-:::
-***
 
 ### Account Backup
 - Click on the **Menu** icon (upper left corner) > **Backup**
@@ -89,22 +80,15 @@ If you lose your password, it will no longer be possible for anyone to recover i
 **DOWNLOAD .SID FILE** (.sid) - o  - **DOWNLOAD PAPER WALLET** (.pdf)
 ** These files will be stored on the device, in the selected folder.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 After downloading the **.sid** file, it is advisable to save it in a safe place such as a USB stick, and remove the file from the device.
-:::
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 After downloading the .pdf **PAPER WALLET** file, it is suggested to print it and put the print in a safe place. Next, remove the .pdf file from your device.
-:::
 
-::: danger <img src="..//assets/icons/danger.svg" width="32">
 **KEEP YOUR PAPER WALLET SAFE**
 
 The **PAPER WALLET exposes your private key** in the form of a QR code.
 This is your electronic signature and represents your digital identity and you want nobody else to use it illegally.
-:::
 
-***
 
 ### Account Import
 With **MANENT** you can manage multiple accounts, so you can import multiple accounts.
@@ -119,18 +103,13 @@ Now you can manage the imported account.
 #### READ SCRYPTA CARD
 Bring a SCRYPTA CARD closer to your device so that it can read its information through the NFC sensor.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 To read the SCRYPTA CARD (hardware NFC card) it is necessary to enable **Near Field Communication** on the mobile device.
-:::
 
 #### RESTORE PAPER WALLET
 This function enables the camera of your device so that you can frame and scan the QR Code **"ENCRYPTED WALLET"** present on your PAPER WALLET.
 
-::: danger <img src="..//assets/icons/danger.svg" width="32">
 The ** PAPER WALLET EXPOSES YOUR PRIVATE KEY ** in the form of **QR CODE**.
 Make sure to keep it in a safe place!
-:::
-***
 
 #### Select an account
 - Click on the **Menu** icon (top right corner)> **Accounts**
@@ -160,17 +139,11 @@ or touch the **"+"** symbol icon (top right corner).
 - Enter the **Wallet Password** (your account password)
 - Tap on **UPLOAD**
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 Make sure you remember the **Encryption password**.
 If you lose it, you will not be able to access the newly uploaded data again.
-:::
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 Do not upload illegal or copyright infringing files.
 Only you are responsible for the uploaded files and data.
-:::
-
-***
 
 #### Check the imported documents
 - Touch the **VAULT** icon (lower part of the screen)
@@ -179,9 +152,7 @@ Only you are responsible for the uploaded files and data.
 - The details of the document will be shown.
 - Tap the **SHARE PROOF OF EXISTENCE** button and you will be redirected to[Scrypta Proof](https://proof.scryptachain.org/) to know the in-depth details of your document.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 Clicking **INVALIDATE** it is possible to invalidate the data, this means that it will no longer be possible to access this data from your VAULT screen and that any associated file, retained by IdANodes, will be deleted. In this case the digital signature, the time stamp with hashing and the relative proof of the author remain indelible thanks to the technology of the distributed register of Scrypta.
-:::
 
 ### Settings
 - You can choose your preferred currency ** (Preferred Currency) ** to simplify the calculation in functions such as SEND and RECEIVE LYRA.

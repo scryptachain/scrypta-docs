@@ -6,9 +6,8 @@ La maggior parte degli exchange è di tipo centralizzato, nel senso che è gesti
 
 Gli exchange inoltre possono essere ulteriormente suddivisi in due categorie: exchange che accettano valuta nazionale (moneta legale) e exchange che trattano solo in criptovalute.
 
-::: danger
 Per motivi di sicurezza, gli exchange non devono essere utilizzati come portafogli elettronici. Gli exchange sono per il trading, non per la conservazione delle criptovalute.
-:::
+
 
 Al momento è possibile scambiare LYRA su:
 

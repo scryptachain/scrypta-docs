@@ -139,9 +139,8 @@ The Municipality provides the Operator with a Merchant Card free of charge equip
 | :---: | :---: |
 | ![socialpay](./assets/socialpay/mockup_phone_01.png) | Log in by connecting to your site with your smartphone / tablet, to be used as a virtual POS: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Click on **SCAN CARD”** and capture the **QR Code** of the card that was delivered to you (Merchant Card).<br><br>You will be asked to enter the **PIN** that was assigned to you together with **CARD**.<br><br>You are now able to receive payments through **DIGITAL EXPENSES** of eligible citizens. 
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
 **NOTE:** For devices **iOS**browser must be used **“Safari”**, for devices **Android** you need to use **“Google Chrome"**.
-:::
+
 
 #### Receiving payment
 
@@ -169,9 +168,8 @@ After making the transaction, you will instantly see a notification of the payme
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
 | ![socialpay](./assets/socialpay/mockup_rimborso.png) |In the section **“REFUND MANAGEMENT**, accessible by accessing the menu using the symbol <img src="..//assets/icons/bars.svg" width="16">, you will be able to see your * pending refunds * (i.e. those requested and that the Municipality has yet to take charge) and *refunds processed* (amounts already paid by the Municipality).
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
+
 **NOTE:** With the status of ***refund processed** it is understood that the Municipality has taken over the reimbursement which will take place according to the banking schedule.
-:::
 
 #### Check City Card Balance
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
@@ -201,8 +199,7 @@ Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN c
 
 ![socialpay](./assets/socialpay/card_cittadino.png)
 
-::: warning <img src="..//assets/icons/warning.svg" width="32">
-**IMPORTANT** It is recommended to keep the Card with the utmost care as it contains truly expendable funds, and not to reveal the pin connected to the Card to anyone.:::
+**IMPORTANT** It is recommended to keep the Card with the utmost care as it contains truly expendable funds, and not to reveal the pin connected to the Card to anyone.
 
 ### How to use the Card
 
@@ -210,9 +207,7 @@ Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN c
 - When paying, show the Card to the shopkeeper who will scan the QR CODE by charging the amount spent.
 - Enter the PIN of the Card in the shopkeeper's terminal to complete the purchase.
 
-::: tip <img src="..//assets/icons/tip.svg" width="32">
 **NOTE:** You can check your account balance at any affiliated store.
-:::
 
 ## Management software
 ### Instructions
@@ -229,9 +224,7 @@ Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN c
 | :---: | :---: |
 |![socialpay](./assets/socialpay/gest_dash.png)|Once logged in, you will be immediately diverted to the **Dashboard (HOME Section)** which displays the general usage data. |
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
 **NOTE:** The wording **sEUR "burnt"** indicates that these amounts are no longer available, as they have already been sent * (burnt) * as a refund request.
-:::
 
 ### User Management
 The USER MANAGEMENT window consists of two sections:
@@ -244,9 +237,7 @@ Use this section to upload multiple users simultaneously. <br> After uploading t
 
 ![socialpay](./assets/socialpay/gest_dash.png)
 
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
 **NOTE:** In case of duplicate names or data, these names will be ignored by the system.
-:::
 
 #### User list
 The **User list** section allows you to view all the names entered in the system (**Merchants** and **Citizens**). <br>
@@ -271,14 +262,13 @@ Through this action, indicated by the symbol <img src="..//assets/icons/interfac
 To carry out all transactions or refund requests, it is necessary to pay transaction fees for the blockchain infrastructure. These fees are in the order of thousandths of a euro. <br> <br>
 **When loading cards** <br>
 - During the card recharge phase, in order to provide each user with the possibility of carrying out operations on the network immediately, it is necessary to send a modest amount of LYRA for each user. <br>
-::: tip <img src="..//assets/icons/tip.svg" width="32"> 
-- It is recommended to send **0.1 LYRA** for each user (both **"Citizen"** and **"Merchant"**), sufficient quantity to carry out about 100 operations. <br> <br>
-- We also recommend that you send **0.1 LYRA** for transactions whenever a "top-up" to the **"Citizen"** is provided. <br> <br>
-- It is not essential to re-send LYRA for the **"Merchant"** as it will automatically receive **0.001 LYRA** every time the notification of the refund has been sent; this operation will be illustrated later in more detail.
-:::
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
-**If you plan to carry out more than 100 transactions, it will be necessary to send a quantity of LYRA suitable for the volume of transactions envisaged.** <br>:::
+> - It is recommended to send **0.1 LYRA** for each user (both **"Citizen"** and **"Merchant"**), sufficient quantity to carry out about 100 operations. <br> <br>
+> - We also recommend that you send **0.1 LYRA** for transactions whenever a "top-up" to the **"Citizen"** is provided. <br> <br>
+> - It is not essential to re-send LYRA for the **"Merchant"** as it will automatically receive **0.001 LYRA** every time the notification of the refund has been sent; this operation will be illustrated later in more detail.
+
+
+**If you plan to carry out more than 100 transactions, it will be necessary to send a quantity of LYRA suitable for the volume of transactions envisaged.** <br>
 
 #### ** DELETE ** Action
 Through this action, indicated by the symbol <img src="..//assets/icons/trash.svg" width="16">, the selected user is deleted from the list. <br> It is recommended to proceed with care by checking the data before deleting.
@@ -296,9 +286,8 @@ In addition, this special transaction will credit the merchant's account with th
 
 Finally, this function is accompanied by the possibility of adding additional text notes that are sent to the merchant.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 **Warning**: The notes accompanying the transactions are written **in clear** in the distributed register of the Scrypta blockchain. <br> It is ** RECCOMENDED ** not to enter sensitive information, which could violate respect for privacy. <br>
-:::
+
 
 ### Settings
 Through this section it is possible to perform operations such as saving and deleting the entire user list.
@@ -306,19 +295,16 @@ To perform the **save** operation, you must click on the **"DOWNLOAD BACKUP"** b
 The generated file, in .csv format, will allow you to keep a copy of the entire user archive, and it will be necessary to import the archive again.
 ![socialpay](./assets/socialpay/impostazioni.png)
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 ** Warning **: It is **RECOMMENDED** to make backups of the user list regularly, in order to avoid or at least limit data loss. <br>
-:::
 
 To perform the **deletion** operation of the archive, it is necessary to click on the ** "DELETE ARCHIVE" button **. At this point, the entire user list will be reset.
 
-::: danger <img src="..//assets/icons/danger.svg" width="32"> 
 **Warning**: Using this function the current archive **WILL BE COMPLETELY AND DEFINITELY DELETED "**.
 <br> **The cancellation cannot be canceled**.
 <br> Therefore, if you have not previously backed up and deleted the data, the entire archive will go **DESTROYED**.
 
 **PROCEED WITH CAUTION.**
-:::
+
 
 
 ## SocialPay for developers
@@ -344,9 +330,8 @@ The creation of the "digital representation of value" takes place through Planum
 - Connect to [https://web.manent.app](https://web.manent.app)and create a new Scrypta account.
 Enter a strong password. this account will be the sidechain account owner.
 
-::: warning <img src="..//assets/icons/warning.svg" width="32"> 
 **Important:** Back up the .sid file and the paper wallet for safety, and remember that you are the **ONLY** responsible for this data. Keep these files safe **OFFLINE**.
-:::
+
 
 - You will need at least 1,001 LYRA to start the sidechain and you will have to pay at least 0.1 LYRA for each citizen or operator account. If you do not have it, please make an official request to the email [info@scrypta.foundation](mailto:info@scrypta.foundation).
 

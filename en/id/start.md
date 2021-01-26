@@ -31,8 +31,7 @@ As you can guess, no personal data is saved within the blockchain, revealing its
 
 The identity payload is also delivered to the user who will keep it within their devices (Card, Mobile, PC) and will be necessary for the processes of exchange of personal information between users, companies, entities.
 
-::: tip NOTE
-By creating their own digital identity, the user can also easily use, even in a pseudonymous form, all the [Scrypta dapps](../dapps/README.md).
+> By creating their own digital identity, the user can also easily use, even in a pseudonymous form, all the [Scrypta dapps](../dapps/README.md).
 
 
 Identities (and their address) can be created through:
@@ -42,6 +41,3 @@ Identities (and their address) can be created through:
 - [ScryptaID Browser Extension](../dapps/extension-browser.md)
 
 - [Scrypta Card](../wallet/manent-app.md#scrypta-card)
-
-:::
-

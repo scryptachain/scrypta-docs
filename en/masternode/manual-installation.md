@@ -17,19 +17,12 @@ Go to *Settings > Encrypt Wallet*.
 ![encrypt](../.vuepress/public/assets/masternode/encrypt.png)
 
 
-::: tip NOTE
 
-The wallet.dat file represents your electronic wallet which is now encrypted; the password will represent an additional level of security.
-:::
+> The wallet.dat file represents your electronic wallet which is now encrypted; the password will represent an additional level of security.
 
-::: warning WARNING
-We recommend backing up the wallet to a separate physical or pen drive.
-:::
+> We recommend backing up the wallet to a separate physical or pen drive.
 
-::: warning
- Nobody can help you if you lose your password!
-Be careful, don't forget it!
-:::
+***Nobody can help you if you lose your password! Be careful, don't forget it!***
 
 ### **Step 2: Generate a genkey masternode and deposit 15000 LYRA on your masternode address**
 
@@ -64,9 +57,8 @@ Now send **EXACTLY 15000 LYRA**, in a single transaction, to the generated depos
 
 ![sendcollateral](../.vuepress/public/assets/masternode/6.png)
 
-::: warning WARNING
-It is not advisable to send the collateral directly to the masternode from an exchange, as certain withdrawal fees may be deducted resulting in a transfer of less than 15,000 LYRA.
-:::
+> It is not advisable to send the collateral directly to the masternode from an exchange, as certain withdrawal fees may be deducted resulting in a transfer of less than 15,000 LYRA.
+
 
 You will have to wait for some confirmations (about half an hour) for this transaction to be valid as a masternode deposit (**21 confirmations are required**).
 
@@ -88,9 +80,7 @@ Once this is done, you can make the next 15000 LYRA deposit for your next master
 
 Repeat this step for each new masternode you want to create.
 
-::: tip NOTE
-You can also check which deposits are eligible to represent a masternode: from the debug console Help> Debug Window, type the instruction: masternode outputs valid masternode transactions will be displayed.
-:::
+> You can also check which deposits are eligible to represent a masternode: from the debug console Help> Debug Window, type the instruction: masternode outputs valid masternode transactions will be displayed.
 
 ### **Step 3: TXIn / TXOut**
 
@@ -126,22 +116,16 @@ MN2 48.33.100.21:42222 6THBgtDSDkmQmXX5i2rG7BUQFt8YeEfsNE6CDyjefFX2ZjgLEcJ c98Ji
 
 After entering the necessary details, **save** the *masternode.conf* file and **restart** your wallet in order for the new settings to take effect.
 
-::: tip Note for multiple masternodes
-If you are creating more than one masternode the *masternode outputs* command will return different hashes and transaction indices. It is now necessary to determine what the new transaction is by comparing it with your *masternode.conf* and checking that it is not present in it. Then add the corresponding details for the new masternode.
-:::
+> If you are creating more than one masternode the *masternode outputs* command will return different hashes and transaction indices. It is now necessary to determine what the new transaction is by comparing it with your *masternode.conf* and checking that it is not present in it. Then add the corresponding details for the new masternode.
 
-::: warning WARNING
-Remember to restart your wallet every time you edit the masternode.conf file.
-:::
+***Remember to restart your wallet every time you edit the masternode.conf file.***
 
 ## VPS Setup
 Using a **VPS** service (Virtual Private Server) is the ideal choice to manage a masternode as it guarantees a persistent connection and a performing machine. There are many providers that offer this service. We recommend using [Vultr](https://www.vultr.com/).
 
 **Create an SSH key**
 
-::: tip NOTE
 **SSH** Keys (Secure Socket Shell) allow secure access to a remote host. It is the recommended way to access your VPS and it will be necessary to follow the tutorial. Please create an SSH key before proceeding.
-:::
 
 For the setting of an SSH key it is recommended to follow the [official guide of Vultr](https://www.vultr.com/docs/how-do-i-generate-ssh-keys)
 
@@ -247,12 +231,11 @@ lyra-cli getinfo
 ```
 Check the entry "*blocks*" and compare the blocks reached by your node with those of the [block explorer
 
-::: warning WARNING
-A full synchronization is required to successfully start your masternode, it may take some time to download all the blockchain data.
-Make sure that the online wallet and the local wallet have the same version and protocol. For example:
-"version" : 2000100
-"protocolversion" : 70922
-:::
+> A full synchronization is required to successfully start your masternode, it may take some time to download all the blockchain data.
+> Make sure that the online wallet and the local wallet have the same version and protocol. For example:
+> "version" : 2000100
+> "protocolversion" : 70922
+
 
 When the synchronization is complete, you can proceed with starting the masternode and checking the status, which will be explained in the next paragraph.
 
@@ -263,9 +246,8 @@ Now it's time to go back to the Lyra Desktop Wallet, start it (if off) and click
 
 *‘Tools’->  ‘Open Masternode Configuration File’.*
 
-::: tip NOTE
 We covered this topic in the section called Desktop Wallet Setup if you have already configured the *masternode.conf* file, you can proceed further.
-:::
+
 
 Now you will have to enter the following information in the 'Masternode Configuration' file
 

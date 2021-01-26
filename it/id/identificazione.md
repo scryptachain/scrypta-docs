@@ -79,9 +79,8 @@ E' possibile "revocare" singolarmente ogni servizio collegato. Questa iperazione
 
 Per fare ciò bisogna recarsi sulla finestra *"My Identity"*, premere l'icona di revoca ![Revoca](./assets/scryptaid/revoca.png) e inseirire la propria password. La specifica identificazione verrà segnata come "invalidata" in blockchain  e la piattaforma non mostrerà più il relativo servizio come associato alla nostra identità. 
 
-::: warning ATTENZIONE:
+ATTENZIONE:
 Dopo essersi autenticati associando i provider desiderati è importante effettuare un backup del file *.sid* associato al proprio indirizzo, e quindi alla propria identità digitale.
 In sostanza il .sid file conterrà nuove informazioni relative al vostro *payload* di identità. 
 
 Se utilizzate [Scrypta Browser Extension](https://id.scryptachain.org/), sarà necessario dis-asocciare il precedente *.sid* file (tramite la funzione "*Forget Identity*") e importare il nuovo, anche se fa capo allo stesso indirizzo blockchain.
-:::

@@ -8,13 +8,9 @@ Contact us at **info@scrypta.foundation** to book the translation indicating the
 ## Translation
 Clone and translate the entire repository, reachable [here](https://github.com/scryptachain/scrypta-docs).
 
-::: tip NOTE
 
-- It is recommended to work locally using software editors such as [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
+> - It is recommended to work locally using software editors such as [Visual Studio Code](https://azure.microsoft.com/it-it/products/visual-studio-code/). 
 
-- The Wiki is written in [Vue Press](https://vuepress.vuejs.org/guide/) mainly using the markdown technique. 
-
-:::
 
 ## Conclusion
 
