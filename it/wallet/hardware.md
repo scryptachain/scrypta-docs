@@ -13,12 +13,12 @@ E' possibile ottenere la Scrypta Card attraverso lo [Shop di Scrypta Consortium]
 ### Come acquistare Scrypta Card
 Ecco un video tutorial che illustra come acquistare la Scrypta Card utilizzando **LYRA** come metodo di pagamento:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CJXpjN50zB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/504820880" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 E' possibile utilizzare anche altri metodi di pagamento: Paypal, carta di debito o bonifico bancario.
 
 ### Come utilizzare Scrypta Card
 Ecco un video tutorial che illustra come sincronizzare la card con Manent app e come utilizzarla:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y2shLdjy2Sg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/504823053" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
