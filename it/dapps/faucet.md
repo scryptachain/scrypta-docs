@@ -2,7 +2,7 @@
 
 *Il bot interamente open source progettato da Scrypta Foundation.
 
-![Faucet](/assets/names/intro.png)
+![Faucet](/assets/faucet/intro.png)
 
 Scrypta Foundation ha progettato un apposito bot per le ricompense in LYRA per gli utenti di Twitter. Gli utenti possono ricevere LYRA seguendo la nostra pagina ufficiale “@scryptachain”, ritwittando i nostri post con gli #scrypta, #scryptachain.
 
@@ -18,16 +18,16 @@ Una volta terminati questi passaggi l’utente, commentando, quotando e condivid
 
 Per  ricevere le  ci ricompense ci sono delle semplici regole da rispettare: il tuo profilo deve essere stato creato da almeno 60 giorni, tra un’interazione e l’altra devi lasciar passare almeno 360 minuti, devi avere un minimo di 75 follower. Solo così potrai ricevere fino a un massimo di 4 LYRA al giorno!
 
-![Faucet](/assets/names/steps.png)
+![Faucet](/assets/faucet/steps.png)
 
 ## Le Funzioni del Bot
 
-![Faucet](/assets/names/bot.png)
+![Faucet](/assets/faucet/bot.png)
 
 Ricompensa i tuoi follower con le tue Lyra per ogni interazione con il tuo profilo o con i tuoi # preferiti. Basta che tu condivida sul tuo profilo:<br><br>
 
 **#scryptabot endorse @user 1 LYRA**<br>
-**#scryptabot endorse #bitcoin 1 LYRA**<br><br>
+**#scryptabot endorse #bitcoin 1 LYRA**<br>
 
 l’**#** del bot e le azioni che gli utenti devono compiere per ricevere LYRA. In questo modo potrai far crescere il tuo profilo e le tue visualizzazioni.<br>
 

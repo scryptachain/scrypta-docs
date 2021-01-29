@@ -2,7 +2,7 @@
 
 *The entirely open source bot designed by Scrypta Foundation.
 
-![Faucet](/assets/names/intro.png)
+![Faucet](/assets/faucet/intro.png)
 
 Scrypta Foundation has designed a special rewards bot in LYRA for Twitter users. Users can receive LYRA by following our official page "@scryptachain", retweeting our posts with the #scrypta and #scryptachain.
 
@@ -18,11 +18,11 @@ Once these steps are completed the user, by commenting, quoting and sharing @scr
 
 To receive the rewards there are some simple rules to follow: your profile must have been created at least 60 days ago, you must allow at least 360 minutes between interactions, you must have a minimum of 75 followers. Only in this way you can receive up to a maximum of 4 LYRA per day! <br>
 
-![Faucet](/assets/names/steps.png)
+![Faucet](/assets/faucet/steps.png)
 
 ## Bot Functions
 
-![Faucet](/assets/names/bot.png)
+![Faucet](/assets/faucet/bot.png)
 
 Reward your followers with your Lyra for every interaction with your profile or favorite hashtag. Just share on your profile:<br><br>
 
