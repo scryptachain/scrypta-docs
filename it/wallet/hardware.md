@@ -3,7 +3,7 @@
 
 Scrypta Blockchain Card è il tuo wallet tascabile con LYRA Adress associato da utilizzare con Manent App.
 
-![planum](./assets/other/scrypta-card.png)
+![planum](/assets/other/scrypta-card.png)
 
 La tua identità digitale e i rispettivi balances possono essere collegati alla Scrypta Card. Uno strumento potente e affidabile che può essere utilizzato per creare backup sicuri del tuo wallet, per la gestione quotidiana dei tuoi fondi Lyra, la gestione delle identità digitali e delle informazioni in esse contenute, o come sistema di pagamento all'interno delle sidechain o dei POS fisici.
 

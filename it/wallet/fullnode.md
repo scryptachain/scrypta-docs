@@ -169,7 +169,7 @@ Prima di esplorare queste funzionalità, di seguito forniremo una breve descrizi
 La prima cosa da fare è scaricare il Wallet Ufficiale Scrypta dal [repository di Github](https://github.com/scryptachain/scrypta/releases) adatta al vostro sistema operativo.
 
 Una volta scaricato il software, avviate **Lyra-QT**. 
-![qt_wallet](./assets/qt_wallet/splash.png).
+![qt_wallet](/assets/qt_wallet/splash.png).
 
 Per maggiori informazioni in merito all'installazione, puoi visitare questo link:
 
@@ -181,7 +181,7 @@ Al primo avvio vi verrà chiesto di scegliere la posizione dei file di sistema, 
 Confermate il percorso propostovi dal software o modificatelo a vostra scelta e procedete.
 <br>Assicuratevi solo di avere abbastanza spazio disponibile nell'hard-disk.
 
-![qt_wallet](./assets/qt_wallet/firstopen.png)
+![qt_wallet](/assets/qt_wallet/firstopen.png)
 
 Di default, è possibile trovare la cartella di sistema ai seguenti percorsi (verificare che sia necessario disabilitare le cartelle nascoste):
 
@@ -204,11 +204,11 @@ Per un approfondimento sulla data directory, puoi consultare la seguente sezione
 Dopo che il processo di avvio del wallet si è concluso, il client si collegherà al network peer-to peer di Scrypta per avviare la sincronizzazione della blockchain scaricandone una copia aggiornata che verrà salvata nella cartella di sistema che avete definito in precedenza.
 
 Sulla parte bassa del software troverete una barra che indica la quantità di dati rimanente per completare il sync.
-![qt_wallet](./assets/qt_wallet/sync.png)
+![qt_wallet](/assets/qt_wallet/sync.png)
 Quando quella barra sarà completata, il wallet sarà completamente sincronizzato.
 
 Nella parte bassa a destra invece troverete questi simboli
-<br>![qt_wallet](./assets/qt_wallet/status.png)
+<br>![qt_wallet](/assets/qt_wallet/status.png)
 <br>che indicano rispettivamente che:
 - il wallet non e' encrypted
 - il wallet e' connesso agli altri peers della rete
@@ -221,7 +221,7 @@ Poichè verranno scaricati parecchi dati, assicuratevi di avere sufficiente spaz
 <br>A seconda della velocità della connessione, per completare la sincronizzazione potrebbe volerci molto tempo.
 
 Una volta che la sincronizzazione è stata completata, indicata dal simbolo nell'angolo in basso a destra, il vostro client è connesso alla blockchain ed è pronto sia per scambiare transazioni con altri client desktop/app della rete Scrypta sia per permetterci di effettuare tutte le operazioni sopra riportate.
-<br>![qt_wallet](./assets/qt_wallet/status.png)
+<br>![qt_wallet](/assets/qt_wallet/status.png)
 
 > Nel caso in cui il wallet non riesce a sincronizzare in automatico e a collegarsi alla lista dei nodi, è possibile forzare la sincronizzazione aggiungendo manualmente una lista di nodi al file **lyra.conf** che troverete nella cartella di sistema.
 
@@ -233,25 +233,25 @@ Quindi salvate il file e riavviate il wallet. La sincronizzazione dovrebbe adess
 
 ### Menu principale
 Questa è la barra del menù per le principali operazioni del wallet, come descritto di seguito:
-<br>![qt_wallet](./assets/qt_wallet/menu.png)
+<br>![qt_wallet](/assets/qt_wallet/menu.png)
 - **Overview:** la dashboard principale con il balance, le transazioni recenti e la funzione di **obfuscation**, che verrà approfondita [nelle sezioni successive](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
-<br>![qt_wallet](./assets/qt_wallet/overview.png)
+<br>![qt_wallet](/assets/qt_wallet/overview.png)
 <br>
 
 - **Send:** principali funzioni per l'invio di Lyra
-<br>![qt_wallet](./assets/qt_wallet/send.png)
+<br>![qt_wallet](/assets/qt_wallet/send.png)
 <br>
 
 - **Receive:** funzioni avanzate per la ricezione di Lyra e creazione di pagamenti.
-<br>![qt_wallet](./assets/qt_wallet/receive.png)
+<br>![qt_wallet](/assets/qt_wallet/receive.png)
 <br>
 
 - **Transactions:** il registro completo di tutte le transazioni in entrata e uscita del vostro wallet, comprese eventuali rewards da masternodes e staking.
-<br>![qt_wallet](./assets/qt_wallet/transactions.png)
+<br>![qt_wallet](/assets/qt_wallet/transactions.png)
 <br>
 
 - **Masternodes:** pannello di controllo dei vostri masternodes e dell'intero network
-<br>![qt_wallet](./assets/qt_wallet/masternodes.png)
+<br>![qt_wallet](/assets/qt_wallet/masternodes.png)
 <br>
 
 ### Barra dei menu
@@ -280,7 +280,7 @@ La funzione **"Encrypt Wallet"**, raggiungibile dal menu **SETTINGS**, aggiunge 
 
 L'encryption del wallet e' un'operazione molto semplice da effettuare, tuttavia bisogna fare molta attenzione.
 <br>Per procedere all'encryption, dal menu **SETTINGS** > **ENCRYPT WALLET** si aprirà una finestra come mostrato qui di seguito:
-<br>![qt_wallet](./assets/qt_wallet/encrypt.png)
+<br>![qt_wallet](/assets/qt_wallet/encrypt.png)
 <br>
 
 > Per maggiore sicurezza scegliete una password forte, con dieci o piu' caratteri, meglio se casuali.
@@ -292,18 +292,18 @@ Una volta scelta la password, in modo che sia difficile da corrompere, procedete
 
 Al termine dell'operazione di encryption, il software si chiuderà.
 <br>Al successivo riavvio, il wallet presenterà stavolta il simbolo di un lucchetto chiuso nell'angolo in basso a destra.
-<br>![qt_wallet](./assets/qt_wallet/lock.png)
+<br>![qt_wallet](/assets/qt_wallet/lock.png)
 <br>Ciò indica che per effettuare operazioni come lo staking, l'invio dei fondi, il dump delle chiavi private o altre funzioni principali, dovete sempe procedere prima con l'unlock del wallet.
 
 ## Lock/Unlock wallet
 Per sbloccare il wallet, bisogna inserire la passphrase che abbiamo usato per effettuare l'encryption.
 Dal menu **SETTINGS** scegliamo **UNLOCK WALLET**, si aprirà quindi la finestra come da immagine:
-<br>![qt_wallet](./assets/qt_wallet/unlock.png)
+<br>![qt_wallet](/assets/qt_wallet/unlock.png)
 
 Inserire la passphrase e premere **OK**.
 <br>Flaggando l'opzione *"For anonymization and staking only"*, il wallet verrà sbloccato solo per lo staking e il processo di [**obfuscation**](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
 A questo punto il vostro wallet e' sbloccato per tutte le operazioni,e tale stato è indicato dal lucchetto verde nell'angolo in basso.
-<br>![qt_wallet](./assets/qt_wallet/unlocked.png)
+<br>![qt_wallet](/assets/qt_wallet/unlocked.png)
 
 ## Wallet Backup
 Dopo aver completato il processo di encryption, procediamo con l'effettuare una copia di backup del nostro **wallet.dat** appena cryptato, il file che contiene tutte le informazioni del nostro portafoglio digitale e tutti gli indirizzi con le rispettive chiavi private.
@@ -315,7 +315,7 @@ Dopo aver completato il processo di encryption, procediamo con l'effettuare una 
 
 La debug console del QT wallet di Scrypta è un utilissimo strumento dal quale si possono manualmente inviare i comandi per compiere tutte le operazioni disponibili all'interno del portafoglio.
 Accessibile dal menu **"STRUMENTI"** > **"CONSOLE DI DEBUG"**, si presenta come una finestra di terminale.
-<br>![qt_wallet](./assets/qt_wallet/console.png)
+<br>![qt_wallet](/assets/qt_wallet/console.png)
 
 Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](../scrypta-full-node/comandi.md).
 
@@ -378,7 +378,7 @@ Per procedere all'export di tutte le chiavi private attraverso il comando `**dum
  dove "path/to/file" è il percorso dove vogliamo che il sistema salvi il nostro file, e "dump.txt" è il nome di esempio del nostro file, contenente tutte le chiavi private.
 
  Aprendo il file ***dump.txt*** appena salvato, vedremo qualcosa di simile a quanto riportato in figura: una parte iniziale con un report su quando il file e' stato esportato e da quale wallet, e tutta la lista delle chiavi private (che iniziano per S) e dei rispettivi indirizzi.
- <br>![qt_wallet](./assets/qt_wallet/dump.png)
+ <br>![qt_wallet](/assets/qt_wallet/dump.png)
 
 **ATTENZIONE:** Raccomandiamo ancora una volta di custodire questo file con la massima sicurezza ed accedervi solo in caso di estrema necessità, in quanto le informazioni in esso contenute forniscono l'accesso **COMPLETO** ai vostri fondi.
 
@@ -412,15 +412,15 @@ Tuttavia il blockexplorer interno del wallet manca di alcune importanti funzinal
 
 ### Obfuscation protocol
 Questa funzione, accessibile dalla sezione **"OVERVIEW"** del wallet, è anche chiamata **"Obfuscation"**, e si basa su un protocollo di anonimizzazione di una parte dei fondi contenuti all'interno del wallet.
- <br>![qt_wallet](./assets/qt_wallet/obfuscation.png)
+ <br>![qt_wallet](/assets/qt_wallet/obfuscation.png)
 
  Attraverso il pulsante **"Start Obfuscation"**, si avvia un processo di anonimizzazione delle coin che, una volta completato, rende difficoltoso individuare l'origine dei fondi per cui si è completato il processo, aumentando di fatto la privacy delle transazioni.
  <br>Dalle immagini successive possiamo vedere il processo quando è in stato **"enabled"**, e le conseguenze sui fondi coinvolti nel processo di obfuscation.
 
-  <br>![qt_wallet](./assets/qt_wallet/obfuscation_start.png)
+  <br>![qt_wallet](/assets/qt_wallet/obfuscation_start.png)
 
 Non appena il processo di obfuscation viene abilitato, il wallet invia la quantità desiderata al network dei masternodes, che elabora la richiesta e restituisce indietro immediatamente lo stesso corrispettivo, ma "mixato" e frazionato in denominazioni di importo minore. 
-<br>![qt_wallet](./assets/qt_wallet/obfuscation_going.png)
+<br>![qt_wallet](/assets/qt_wallet/obfuscation_going.png)
 Come si può vedere dall'immagine, è come se i fondi nel nostro wallet sono stati ricevuti da X indirizzi diversi, come se fossero stati "scambiati" con altri proprietari.
 <br>Utilizzare regolarmente l'obfuscation su tutti i propri fondi rende di fatto impossibile tracciare le operazioni effettuate, aumentando sensibilmente il livello di privacy per le proprie transazioni.
 <br>La controindicazione è che l'obfuscation penalizza il processo di staking, in quanto il proprio stake amount viene frazionato in importi talmente piccoli da rendere infruttuoso il processo di staking stesso, pertanto si raccomanda di utilizzare l'obfuscation protocol solo se davvero necessario.
@@ -500,7 +500,7 @@ Puoi testare i comandi del wallet attraverso la consolle dello strumento test-CL
 [**test-CLI**](https://cli.scryptachain.org/)
 
 
-![upvote](./assets/other/test-cli.png)
+![upvote](/assets/other/test-cli.png)
 
 ### Istruzioni Blockchain
 `getbestblockhash` Fornisce semplicemente l'ultimo/miglior hash di blocco nella rete.

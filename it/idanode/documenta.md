@@ -1,3 +1,3 @@
-# Scrypta Faucet Bot
+# Documenta
 
 In fase di elaborazione..

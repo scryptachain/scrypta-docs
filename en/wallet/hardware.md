@@ -3,7 +3,7 @@
 
 Scrypta Card is your pocket wallet with associated LYRA Adress for use with the Manent App.
 
-![planum](./assets/other/scrypta-card.png)
+![planum](/assets/other/scrypta-card.png)
 
 Your digital identity and the respective balances can be connected to the Scrypta Card. A powerful and reliable tool that can be used to create secure backups of your wallet, for the daily management of your Lyra funds, the management of digital identities and the information in them. contained, or as a payment system within sidechains or physical POS.
 

@@ -14,18 +14,18 @@ Questa documentazione comprende lo stato attuale delle librerie open-source attu
 
 ## Architettura
 
-L'ecosistema di Scrypta si basa su **cinque pilastri** fondamentali grazie ai quali si possono sviluppare applicazioni decentralizzate più o meno complesse, che interagiscono a vari livelli con la Blockchain:
+L'ecosistema di Scrypta si basa su **sette pilastri** fondamentali grazie ai quali si possono sviluppare applicazioni decentralizzate più o meno complesse, che interagiscono a vari livelli con la Blockchain:
 
--   **Scrypta Core:** è la libreria javascript principale. Permette la creazione e la gestione dei file .sid, la firma delle transazioni e dei dati, e l'interfacciamento di base con gli IdANode.
+-   **Core:** è la libreria javascript principale. Permette la creazione e la gestione degli indirizzi blockchain, la firma delle transazioni e dei dati e l'interfacciamento di base con gli IdANode.
     
--   **Scrypta IdANode:** è la libreria NodeJS necessaria per sviluppare i nodi di interfacciamento con la blockchain, questi nodi svolgono svariate funzioni tra cui: block explorer, tracciamento degli UTXO, archiviazione dei file su sistema IPFS (Interplanetary File System) ed esecuzione degli Smart Contracts.
+-   **IdANode:** è il nodo di interfacciamento con la blockchain e svolge svariate funzioni tra cui: block explorer, tracciamento degli UTXO, archiviazione dei file su sistema IPFS (Interplanetary File System) o Documenta, esecuzione degli Smart Contracts e tanto altro.
 
--   **Scrypta Identity Framework:** è la libreria NodeJS che gestisce l'interazione tra le identità digitali esterne e gli indirizzi della blockchain di Scrypta. Grazie al framework è possibile identificare e "marchiare" gli indirizzi Lyra avvalendosi di vari provider esterni.
+-   **Identity Framework:** è la libreria NodeJS che gestisce l'interazione tra le identità digitali esterne e gli indirizzi della blockchain di Scrypta. Grazie al framework è possibile identificare e "marchiare" gli indirizzi Lyra avvalendosi di vari provider esterni.
     
--   **Scrypta Trustlink:** integrato all'interno degli IdANode, il Trustlink è un meccanismo grazie al quale è possibile creare dei wallet detti "multisignature" che prevedono l'obbligo della compresenza di più firme per eseguire transazioni e quindi scritture di dati.
+-   **Trustlink:** integrato all'interno degli IdANode, il Trustlink è un meccanismo grazie al quale è possibile creare dei wallet detti "multisignature" che prevedono l'obbligo della compresenza di più firme per eseguire transazioni e quindi scritture di dati.
 
--   **Scrypta Planum:** è la soluzione per favorire processi di tokenizzazione: un sistema di sidechain aperto e permissionless che permette di creare, scambiare e tracciare i propri asset digitali (tokenized asset) unicamente attraverso la blockchain di Scrypta.
+-   **Planum:** è la soluzione per favorire processi di tokenizzazione: un sistema di sidechain aperto e permissionless che permette di creare, scambiare e tracciare i propri asset digitali (tokenized asset) unicamente attraverso la blockchain di Scrypta.
 
--   **Scrypta Smart Contracts:** è il sistema di scripting che permette di realizzare dei particolari applicativi, direttamente incorporati all'interno degli IdaNode. Per approfondire il sistema è possibile leggere un approfondimento [qui](/smart-contracts/inizio).
+-   **Smart Contracts:** è il sistema di scripting che permette di realizzare dei particolari applicativi estendendo le funzionalità di base degli IdaNode condividendo il codice attraverso la blockchain.
 
-Attraverso l'utilizzo di questi strumenti è possibile sviluppare infinite applicazioni, decentralizzate e non, per molteplici casi d'uso.
+-   **Documenta:** è il sistema di archiviazione distribuita e notarizzata in blockchain sviluppato da Scrypta. Grazie agli IdaNode è possibile sincronizzare automaticamente degli [storage S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingBucket.html) o compatibili notarizzando automaticamente il contenuto.

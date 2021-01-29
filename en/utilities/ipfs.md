@@ -19,7 +19,7 @@ npm start
 ```
 If everything has been installed correctly, you will see something like this on your console:
 
-![npm start](./assets/ipfs/npmstart.png)
+![npm start](/assets/ipfs/npmstart.png)
 
 From this moment it is possible to use all the endpoints already described on IdANode simply by pointing your localhost to port 3000.
 

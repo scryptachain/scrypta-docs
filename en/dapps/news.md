@@ -32,10 +32,10 @@ For more information, you can consult the ScryptaID guide at[this link](../id/RE
 
 At this point you can access the form [Scrypta News](https://news.scryptachain.org/), login with your identity, inserting your sid.file or using[**Scrypta Browser Extension**](https://id.scryptachain.org/) and proceed with the publication of the article on blockchain.
 
-![news feed](./assets/other/newsfeed.png)
+![news feed](/assets/other/newsfeed.png)
 
 
-![news write](./assets/other/newswrite.png)
+![news write](/assets/other/newswrite.png)
 
 
 > It is clear that, for example in the case of an online newspaper that wants to identify its collaborators and their digital operations, given the open nature of the ScryptaID framework, it is possible to create a storage for all identities and connect them, for example, to the corporate email.
@@ -50,13 +50,13 @@ It is therefore possible immediately to test the already working example of the 
 
 After logging in, readers can vote through the UPVOTE, DOWNVOTE functions and send donations in LYRA with TIP USER.
 
-![upvote](./assets/other/upvote.png)
+![upvote](/assets/other/upvote.png)
 
 ## Guide on uploading articles in blockchain
 
 Once logged in, which can be done through the Extension Browser or .sid file, you can insert your article by clicking on the "+" symbol at the bottom right.
 
-![piu](./assets/news/piu.png)
+![piu](/assets/news/piu.png)
  
 A section will appear in which to enter the initial details of the article:
 
@@ -65,19 +65,19 @@ A section will appear in which to enter the initial details of the article:
 - cover image,
 - tags.
 
-![details](./assets/news/article-details.png)
+![details](/assets/news/article-details.png)
 
 
 At this point we proceed to compile the body of the text with a usual graphical interface from text editor.
 
-![body](./assets/news/article-body.png)
+![body](/assets/news/article-body.png)
 
 
 Once finished just click on "Write on the blockchain" and enter your password.
 
 Finally, the outcome of the operation will be confirmed.
 
-![confirm](./assets/news/article-written.png)
+![confirm](/assets/news/article-written.png)
 
 
 Now the article is indelibly written in blockchain! And it will soon appear in the articles section of Scrypta News.
@@ -85,7 +85,7 @@ Now the article is indelibly written in blockchain! And it will soon appear in t
 As can be seen from the example, a time stamp (timestamp) and digital signature (linked to the author's address) are imprinted:
 
 
-![proof](./assets/news/article-proof.png)
+![proof](/assets/news/article-proof.png)
 
 
 ## Editing

@@ -87,7 +87,7 @@ Whenever the user wants to identify himself, he must clearly show his identity p
 The result, which can be found on the website https://me.scrypta.id, will be something like this, which we graphically render for privacy reasons:
 
 
-![](./assets/idframework/proof.png)
+![](/assets/idframework/proof.png)
 
 It can actually be verified that, for example, the payload of _Github_ written to block **416667** is the following and is connected to the address `LZzzH9C7outN754hqfyTZ6Hhjk2nsoX9no`. This information can be found here: https://proof.scryptachain.org/#/uuid/3e7ce.f696.4b11.bf0c.cec51cff386e
 ```
@@ -107,7 +107,7 @@ Let's better explain what is written within the blockchain:
 
 Here is an operating diagram that summarizes all the steps carried out:
 
-![](./assets/idframework/funzionamento.png)
+![](/assets/idframework/funzionamento.png)
 
 ## Integrated Providers 
 

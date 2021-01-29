@@ -50,7 +50,7 @@ In addition, within the web-app there is a specific function **"Request Refund"*
 
 Following is a comparative table between SocialPay and other systems for the delivery and management of shopping vouchers:
 
-![confronto](./assets/socialpay/confronto.png)
+![confronto](/assets/socialpay/confronto.png)
 
 
 1. **Anti counterfeiting**
@@ -130,14 +130,14 @@ The **Municipality of "*nomecomune*"**, which adopts the **SocialPay** system, p
 
 The Municipality provides the Operator with a Merchant Card free of charge equipped with **QR-CODE** and protected by a specific PIN code (numeric password) which will be used for the main configuration operations and for the use of the specific web application supplied with the operator himself.
 
-![socialpay](./assets/socialpay/card_esercente.png)
+![socialpay](/assets/socialpay/card_esercente.png)
 
 ### Merchant procedures
 #### Access to the system
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/mockup_phone_01.png) | Log in by connecting to your site with your smartphone / tablet, to be used as a virtual POS: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Click on **SCAN CARD”** and capture the **QR Code** of the card that was delivered to you (Merchant Card).<br><br>You will be asked to enter the **PIN** that was assigned to you together with **CARD**.<br><br>You are now able to receive payments through **DIGITAL EXPENSES** of eligible citizens. 
+| ![socialpay](/assets/socialpay/mockup_phone_01.png) | Log in by connecting to your site with your smartphone / tablet, to be used as a virtual POS: <br>[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/).<br><br>Click on **SCAN CARD”** and capture the **QR Code** of the card that was delivered to you (Merchant Card).<br><br>You will be asked to enter the **PIN** that was assigned to you together with **CARD**.<br><br>You are now able to receive payments through **DIGITAL EXPENSES** of eligible citizens. 
 
 **NOTE:** For devices **iOS**browser must be used **“Safari”**, for devices **Android** you need to use **“Google Chrome"**.
 
@@ -146,47 +146,47 @@ The Municipality provides the Operator with a Merchant Card free of charge equip
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/mockup_phone_02.png) | Access the web-app from your smartphone or tablet at the address: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>In **HOME**you will find the * keypad"* of the virtual **POS** as from image.<br><br>Enter the amount of the receipt due and press the button **PAY**.
+| ![socialpay](/assets/socialpay/mockup_phone_02.png) | Access the web-app from your smartphone or tablet at the address: [https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)<br><br>In **HOME**you will find the * keypad"* of the virtual **POS** as from image.<br><br>Enter the amount of the receipt due and press the button **PAY**.
 ***sEUR shown in the figure is a digital representation of the Euro.***
 
 Now capture the QR-CODE on the back of the customer's card with your smartphone
-![socialpay](./assets/socialpay/scan_qr.png)
+![socialpay](/assets/socialpay/scan_qr.png)
 
 The customer authorizes the purchase by entering his **PIN** in the virtual POS.
 The transaction takes place in real time.
 
-![socialpay](./assets/socialpay/insert_pin.png)
+![socialpay](/assets/socialpay/insert_pin.png)
 After making the transaction, you will instantly see a notification of the payment.
 
 #### Balance control, transaction history and payment receipt
 
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/mockup_tx.png) | Through the application, by accessing the menu via the symbol <img src="..//assets/icons/bars.svg" width="16"> and selecting **“TRANSACTION HISTORY”**, you can constantly check your balance and transactions. <br><br>There is also a specific function within this section **“REQUEST REFUND”** to forward the request to the Municipality, which will proceed with the bank transfer of the computed amount. 
+| ![socialpay](/assets/socialpay/mockup_tx.png) | Through the application, by accessing the menu via the symbol <img src="..//assets/icons/bars.svg" width="16"> and selecting **“TRANSACTION HISTORY”**, you can constantly check your balance and transactions. <br><br>There is also a specific function within this section **“REQUEST REFUND”** to forward the request to the Municipality, which will proceed with the bank transfer of the computed amount. 
 
 #### Check refunds
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/mockup_rimborso.png) |In the section **“REFUND MANAGEMENT**, accessible by accessing the menu using the symbol <img src="..//assets/icons/bars.svg" width="16">, you will be able to see your * pending refunds * (i.e. those requested and that the Municipality has yet to take charge) and *refunds processed* (amounts already paid by the Municipality).
+| ![socialpay](/assets/socialpay/mockup_rimborso.png) |In the section **“REFUND MANAGEMENT**, accessible by accessing the menu using the symbol <img src="..//assets/icons/bars.svg" width="16">, you will be able to see your * pending refunds * (i.e. those requested and that the Municipality has yet to take charge) and *refunds processed* (amounts already paid by the Municipality).
 
 **NOTE:** With the status of ***refund processed** it is understood that the Municipality has taken over the reimbursement which will take place according to the banking schedule.
 
 #### Check City Card Balance
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| The application allows you to check the balance of the * Customer-Card *, which can be found at all authorized merchants.<br><br> In the section **CHECK CARD**, accessible by accessing the menu using the symbol <img src="..//assets/icons/bars.svg" width="16">, Press the button **"CHECK NOW"** and capture the **QR CODE** of the customer's card.<br><br> This will display the available balance. | ![socialpay](./assets/socialpay/mockup_controlla.png)
+| The application allows you to check the balance of the * Customer-Card *, which can be found at all authorized merchants.<br><br> In the section **CHECK CARD**, accessible by accessing the menu using the symbol <img src="..//assets/icons/bars.svg" width="16">, Press the button **"CHECK NOW"** and capture the **QR CODE** of the customer's card.<br><br> This will display the available balance. | ![socialpay](/assets/socialpay/mockup_controlla.png)
 
 ### APPENDIX - How to access the portal via Android / IOS
 
 #### Android
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/mockup_android.png) | -Launch Chrome for Android and open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> -Access the **menu** via the symbol <img src="..//assets/icons/menu.svg" width="16"> and then **"Add to home screen”**.<br><br> - Assign the link a name and Chrome to add it to the home screen.<br><br>The icon can be moved wherever you want and the chosen site will appear, like any other app, by touching the link. <br> <br> Chrome for Android loads the website as if it were a "web app" separately from the browser, so you can open it directly from the switcher app.
+| ![socialpay](/assets/socialpay/mockup_android.png) | -Launch Chrome for Android and open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> -Access the **menu** via the symbol <img src="..//assets/icons/menu.svg" width="16"> and then **"Add to home screen”**.<br><br> - Assign the link a name and Chrome to add it to the home screen.<br><br>The icon can be moved wherever you want and the chosen site will appear, like any other app, by touching the link. <br> <br> Chrome for Android loads the website as if it were a "web app" separately from the browser, so you can open it directly from the switcher app.
 
 #### iPhone/iPad
 | <div style="width:250px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| - ALaunch Safari on Apple iOS open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - For technical problems due to Apple, SocialPay cannot be used if it is added to the Home screen of the iPhone or iPad; consequently we recommend typing (or saving in favorites) the url address of the web-app. <br> <br> - We also remind you that Social Pay can only be used by the browser **Safari**. |  ![socialpay](./assets/socialpay/mockup_ios.png) 
+| - ALaunch Safari on Apple iOS open the web page: **[https://nomecomune.socialpay.live/](https://nomecomune.socialpay.live/)**<br><br> - For technical problems due to Apple, SocialPay cannot be used if it is added to the Home screen of the iPhone or iPad; consequently we recommend typing (or saving in favorites) the url address of the web-app. <br> <br> - We also remind you that Social Pay can only be used by the browser **Safari**. |  ![socialpay](/assets/socialpay/mockup_ios.png) 
 
 
 ## Guide for the citizens
@@ -197,7 +197,7 @@ The **Municipality of "*municipalityname*"** which adopts the **SocialPay** syst
 
 Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN code (numeric password) which will be used to finalize purchases at the participating merchants.
 
-![socialpay](./assets/socialpay/card_cittadino.png)
+![socialpay](/assets/socialpay/card_cittadino.png)
 
 **IMPORTANT** It is recommended to keep the Card with the utmost care as it contains truly expendable funds, and not to reveal the pin connected to the Card to anyone.
 
@@ -216,13 +216,13 @@ Each Citizen Card is equipped with **QR-CODE** and protected by a specific PIN c
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-| ![socialpay](./assets/socialpay/gest_accesso.png) | The login is done by loading or dragging the supplied **. Sid file ** and, immediately after, entering the associated password that has been provided to you. |
+| ![socialpay](/assets/socialpay/gest_accesso.png) | The login is done by loading or dragging the supplied **. Sid file ** and, immediately after, entering the associated password that has been provided to you. |
 
 #### Dashboard del gestionale
 
 | <div style="width:350px"></div>| <div style="width:250px"></div>|
 | :---: | :---: |
-|![socialpay](./assets/socialpay/gest_dash.png)|Once logged in, you will be immediately diverted to the **Dashboard (HOME Section)** which displays the general usage data. |
+|![socialpay](/assets/socialpay/gest_dash.png)|Once logged in, you will be immediately diverted to the **Dashboard (HOME Section)** which displays the general usage data. |
 
 **NOTE:** The wording **sEUR "burnt"** indicates that these amounts are no longer available, as they have already been sent * (burnt) * as a refund request.
 
@@ -235,7 +235,7 @@ The USER MANAGEMENT window consists of two sections:
 Use this section to upload multiple users simultaneously. <br> After uploading the **.csv file**, all users within the file will be added to the management system and will be available and viewable in the **"User list" section**. <br> <br> The .csv file is automatically generated during the card creation phase and will consist of the following fields: <br>
 **SERIAL | WALLET | TYPOLOGY | NAME | IDENTIFIER | FAMILY CORE COMPONENTS** <br>
 
-![socialpay](./assets/socialpay/gest_dash.png)
+![socialpay](/assets/socialpay/gest_dash.png)
 
 **NOTE:** In case of duplicate names or data, these names will be ignored by the system.
 
@@ -246,16 +246,16 @@ The available actions are:
 - **MODIFY**
 - **VIEW**
 - **DELETE**
-![socialpay](./assets/socialpay/elenco_utenti.png)
+![socialpay](/assets/socialpay/elenco_utenti.png)
 
 #### **MODIFY** Action
-Through this action, indicated by the symbol <img src="..//assets/icons/draw.svg" width="16">, it is possible to modify user data.![socialpay](./assets/socialpay/modifica.png)
+Through this action, indicated by the symbol <img src="..//assets/icons/draw.svg" width="16">, it is possible to modify user data.![socialpay](/assets/socialpay/modifica.png)
 
 Once the changes have been made, click on **"Save user"** to confirm them.
 
 #### Azione **VISUALIZZA**
 Through this action, indicated by the symbol <img src="..//assets/icons/interface.svg" width="16">, it is possible to view the details of the selected user, his balance and the transaction history. <br> This section also allows you to arrange the sending of amounts in **sEUR** to the selected user. <br> The operation is **instant** and requires you to enter your password.
-![socialpay](./assets/socialpay/modifica.png)
+![socialpay](/assets/socialpay/modifica.png)
 
 ##### * Notes on transaction fees:
 
@@ -276,12 +276,12 @@ Through this action, indicated by the symbol <img src="..//assets/icons/trash.sv
 ### Transaction history
 This section displays all the transactions carried out within the system.
 
-![socialpay](./assets/socialpay/storico.png)
+![socialpay](/assets/socialpay/storico.png)
 
 Within this section, using the appropriate filters, it is possible to search by **address** or **transaction**. <br> By pressing the button **"DOWNLOAD BACKUP"** it is possible to backup the transaction history in object through file in **. csv ** format (Excel). 
 
 ### Manage refund
-By clicking on the **"REFUND ACCOUNT" button**, you are asked to enter the administrator password.![socialpay](./assets/socialpay/rimborso.png)<br>At this point the Merchant will receive a special notification transaction which confirms the bank transfer by the Municipality. <br> This operation is to be carried out **IMMEDIATELY AFTER** having prepared the specific bank transfer for refund. <br> < br> The operation will then be visible on the **"REFUNDED"** column (specifically the field will be automatically filled with **"YES"**).
+By clicking on the **"REFUND ACCOUNT" button**, you are asked to enter the administrator password.![socialpay](/assets/socialpay/rimborso.png)<br>At this point the Merchant will receive a special notification transaction which confirms the bank transfer by the Municipality. <br> This operation is to be carried out **IMMEDIATELY AFTER** having prepared the specific bank transfer for refund. <br> < br> The operation will then be visible on the **"REFUNDED"** column (specifically the field will be automatically filled with **"YES"**).
 In addition, this special transaction will credit the merchant's account with the sum of **0.001LYRA **, which will allow him to request future repayments.
 
 Finally, this function is accompanied by the possibility of adding additional text notes that are sent to the merchant.
@@ -293,7 +293,7 @@ Finally, this function is accompanied by the possibility of adding additional te
 Through this section it is possible to perform operations such as saving and deleting the entire user list.
 To perform the **save** operation, you must click on the **"DOWNLOAD BACKUP"** button.
 The generated file, in .csv format, will allow you to keep a copy of the entire user archive, and it will be necessary to import the archive again.
-![socialpay](./assets/socialpay/impostazioni.png)
+![socialpay](/assets/socialpay/impostazioni.png)
 
 ** Warning **: It is **RECOMMENDED** to make backups of the user list regularly, in order to avoid or at least limit data loss. <br>
 

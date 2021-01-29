@@ -4,7 +4,7 @@
 
 #### Scrypta Manent App - Light Wallet con Blockchain Certification Technology
 ***
-![manent_app](./assets/manent_app/manent_01.jpg)
+![manent_app](/assets/manent_app/manent_01.jpg)
 
 Rendi i tuoi file immutabili con Scrypta Manent e porta sempre con te le tue **LYRA**!
 

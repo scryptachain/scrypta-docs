@@ -14,13 +14,13 @@ Click on *Tools> Open Wallet Configuration File*.
 
 2. Go to *Settings > Unlock Wallet*, the following screen will appear:
 
-![unlock](./assets/staking/unlock.png)
+![unlock](/assets/staking/unlock.png)
 
 Check the anonymization and staking box: *For anonymization and staking only*, enter the passphrase and click on *OK*.
 
 Within a few seconds, a green icon should appear in the wallet symbolizing 'active *staking*'.
 
-![staking activated](./assets/staking/staking_attivo.png)
+![staking activated](/assets/staking/staking_attivo.png)
 
 Depending on when you sent LYRA coin to your wallet, you may have to wait 1 hour, equal to the minimum staking age: * staking minimum age *. When the icon is green and the wallet is active and online, you are entitled to receive rewards.
 

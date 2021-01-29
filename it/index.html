@@ -9,21 +9,25 @@
     <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <style>
-    .ItemTitle span{
-        font-size:16px!important;
-        font-weight:bold!important;
+    .ItemTitle span {
+        font-size: 16px !important;
+        font-weight: bold !important;
     }
-    h1{
-        font-size:2rem!important;
+
+    h1 {
+        font-size: 2rem !important;
     }
-    h2{
-        font-size:1.5rem!important;
-        margin-top:30px!important;
+
+    h2 {
+        font-size: 1.5rem !important;
+        margin-top: 30px !important;
     }
-    h4{
-        font-size:1rem!important;
+
+    h4 {
+        font-size: 1rem !important;
     }
 </style>
+
 <body>
     <div id="docute"></div>
     <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
@@ -187,12 +191,37 @@
                             link: "/idanode/smart-contracts"
                         },
                         {
+                            title: "Documenta",
+                            link: "/idanode/documenta"
+                        },
+                        {
                             title: "Wallet",
                             link: "/idanode/wallet"
                         },
                     ]
                 },
-
+                {
+                    title: 'Smart Contracts',
+                    collapsable: true,
+                    children: [
+                        {
+                            title: "Introduzione",
+                            link: "/smart-contracts/inizio"
+                        },
+                        {
+                            title: "Virtual Machine",
+                            link: "/smart-contracts/scrypta-virtual-machine"
+                        },
+                        {
+                            title: "Playground",
+                            link: "/smart-contracts/playground"
+                        },
+                        {
+                            title: "Sviluppo in locale",
+                            link: "/smart-contracts/sviluppo-locale"
+                        },
+                    ]
+                },
                 {
                     title: 'Planum',
                     collapsable: true,
@@ -314,6 +343,10 @@
                         {
                             title: "Introduzione",
                             link: "/dapps/inizio"
+                        },
+                        {
+                            title: "Manent",
+                            link: "/dapps/manent"
                         },
                         {
                             title: "Socialpay",

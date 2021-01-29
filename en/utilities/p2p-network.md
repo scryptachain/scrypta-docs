@@ -38,7 +38,7 @@ npm start
 ```
 The console response will look something like:
 
-![npm start](./assets/p2pnetwork/npmrun.png)
+![npm start](/assets/p2pnetwork/npmrun.png)
 
 As we can see, the engine loads the identity written on the `.env` file and connects to the bootstrap nodes. If something goes wrong with the nodes or with your connection, you won't see the connection lines:
 
@@ -65,7 +65,7 @@ At this point, all the nodes that receive the message replicate it to the other 
 
 This type of activity can be analyzed by starting the tool on a remote server, whose port (42224) is open:
 
-![](./assets/p2pnetwork/broadcast.png)
+![](/assets/p2pnetwork/broadcast.png)
 
 Anyone who receives the message, before starting the relative *post* call to the *hook*, checks that the message has actually been sent from that address and, if so, transmits the message.
 

@@ -142,7 +142,7 @@ As you can see, the address that wrote the information is actually recalled`LdRQ
 From this moment on, your device (if run from a browser) will have a cached copy and the computational power of the device will actually be used. In no case are these files downloaded to the dApp engine, which will therefore remain lean and serve all assets on-the-fly.
 
 This is a typical engine log:
-![](./assets/dappengine/npmstart.png)
+![](/assets/dappengine/npmstart.png)
 As you can see, all the steps just described are carried out.
 
 **Congratulations, you have finally created a decentralized application!**

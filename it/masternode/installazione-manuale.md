@@ -14,7 +14,7 @@ Se non l'hai già fatto, assicurati di crittografare il tuo desktop wallet.
 
 Vai su *Settings > Encrypt Wallet*.
 
-![encrypt](./assets/masternode/encrypt.png)
+![encrypt](/assets/masternode/encrypt.png)
 
 
 
@@ -39,7 +39,7 @@ Adesso inserisci:
 
  oppure dalla tab "Ricevi" del wallet:
 
-![getnewaddress](./assets/masternode/4.png)
+![getnewaddress](/assets/masternode/4.png)
 
 Questa istruzione genera l'**indirizzo di deposito del masternode** a cui inviare le 15000 LYRA. Appunta anche questo sul file di testo. Se hai masternode multipli, puoi anche geneare più indirizzi e più genkey per ognuno di essi.
 
@@ -55,7 +55,7 @@ E così via.
 
 Ora invia **ESATTAMENTE 15000 LYRA**,  in una singola transazione, all'indirizzo di deposito generato. Deve essere in un'unica transazione! Non sottrarre alcuna fee dall'importo.
 
-![sendcollateral](./assets/masternode/6.png)
+![sendcollateral](/assets/masternode/6.png)
 
 Non è consigliabile inviare direttamente il collateral all'indirizzo masternode da un exchange  in quanto potrebbero essere detrarre determinate commissioni di prelievo con conseguente trasferimento di ammontare inferiore a15000 LYRA.
 
@@ -70,7 +70,7 @@ Se stai sviluppando più di un masternode, è necessario prestare particolare at
 
 Per fare ciò, sul tuo wallet desktop attiva il "**coin control**" : vai su *Settings > Options > Wallet* e clicca su *Enable coin control features*. Ciò consentirà un controllo accurato sui fondi (utxo) da usare per effettuare il tuo prossimo deposito di 15000 LYRA.
 
-![coin-control](./assets/masternode/coin-control.png)
+![coin-control](/assets/masternode/coin-control.png)
 
 Quindi vai alla scheda *Send* , e vedrai le funzioni di controllo delle monete.
 
@@ -94,7 +94,7 @@ Riceverai una risposta simile:
 
 La prima parte è l'ID (**TXID**) della transazione e il secondo numero (in genere 0 o 1) è l'indice **TXOUT**. 
 
-![mnoutputs](./assets/masternode/8.png)
+![mnoutputs](/assets/masternode/8.png)
 
 Ora hai tutte le informazioni necessarie per procedere con lo sviluppo del Masternode:
 
@@ -118,7 +118,7 @@ MN2 48.33.100.21:42222 6THBgtDSDkmQmXX5i2rG7BUQFt8YeEfsNE6CDyjefFX2ZjgLEcJ c98Ji
 
 Dopo aver inserito i dettagli necessari, **salva** il file *masternode.conf* e **riavvia** il tuo wallet in modo da rendere effettive le nuove impostazioni.
 
-![mnconf](./assets/masternode/11.png)
+![mnconf](/assets/masternode/11.png)
 
 > Se si sta creando più di un masternode, il comando *masternode outputs* restituirà diversi hash e indici di transazione. Basta adesso determinare quale è la nuova transazione confrontandola con il tuo *masternode.conf* e verificando che non sia presente in esso. Quindi aggiungi i dettagli corrispondenti per il nuovo masternode.
 > Ricorda di riavviare il tuo wallet ogni volta che modifichi il file masternode.conf.
@@ -220,7 +220,7 @@ masternodeprivkey=YOUR_MASTERNODE_KEY
 ```
 Salva con **Ctrl + X**, conferma con **Y** e premi **Invio**.
 
-![nanovps](./assets/masternode/12.png)
+![nanovps](/assets/masternode/12.png)
 
 ### STEP #5
 Lancia il daemon e avvia il tuo masternode. Inserisci le seguenti istruzioni:
@@ -278,7 +278,7 @@ startmasternode alias 0 MN1
 ```
 dove MN1 è l'etichetta (label) che hai scelto per il tuo masternode
 
-![startmn](./assets/masternode/14.png)
+![startmn](/assets/masternode/14.png)
 
 Adesso il tuo masternode dovrebbe essere attivo (*enabled*)!
 
@@ -294,7 +294,7 @@ Ti apparirà lo stato dei tuoi masternode, *txHash*, *masternode genkey* e l'*in
 
 Se lo "status" è su *ENABLED*, il masternode è correttamente attivo e connesso. Ma segui per scrupolo i passaggi aggiuntivi sul wallet VPS.
 
-![masternode-list-conf](./assets/masternode/masternode-list-conf.png)
+![masternode-list-conf](/assets/masternode/masternode-list-conf.png)
 
 **Sul wallet VPS**, effettua il Login sul tuo server VPS digita la seguente istruzione:
 ```
@@ -302,4 +302,4 @@ lyra-cli masternode status.
 ```
 La risposta di corretto funzionamento del masternode sarà: “*Masternode successfully started*”.
 
-![masternode-list-conf](./assets/masternode/masternode-successfully-started.png)
+![masternode-list-conf](/assets/masternode/masternode-successfully-started.png)

@@ -3,7 +3,7 @@
 Planume is an open-source and permissionless Sidechain Layer that allows you to create, issue and track tokenized resources through a clear interface available to anyone.
 <hr>
 
-![planum](./assets/planum/planum.jpeg)
+![planum](/assets/planum/planum.jpeg)
 
 "Planum", accessible via the link https://planum.dev is a layer parallel to the Scrypta blockchain that allows you to issue your own tokenized resource, store it, manage it and protect it using the same IdANode Scrypta blockchain network.
 Any "tokenized asset", once generated with its own metrics, has its independent life cycle in a protected sidechain level, which operates through the Scrypta blockchain, and which in the future can be exchanged with LYRA and all other tokens .
@@ -13,7 +13,7 @@ Any "tokenized asset", once generated with its own metrics, has its independent 
 The tokenization process is to connect real world resources to the blockchain, converting them into digital resources and providing a verifiable and certain property.
 In a very simple way, we can digitize and convert anything into a supply of digital resources through the "tokenization" process. In doing so, the physical good, once symbolized, becomes "fungible" and can be electronically transferred, fractionated, stored or exchanged between different identities.
 
-![planum](./assets/planum/img_01.png)
+![planum](/assets/planum/img_01.png)
 
 To date, high-value investments such as real estate, works of art such as collectibles or other types of goods that represent economic value, due to different types of restrictions, are often inaccessible to many investors.
 Blockchain tokenization solves this problem, lowering investment barriers and favoring the introduction of new financial capital in the sector of interest.

@@ -55,28 +55,28 @@ Come descritto in precedenza, all'interno di Electio è possibile sviluppare div
 <br>Tuttavia gli step per configurare la votazione nella modalità desiderata sono pressochè simili e verranno illustrate di seguito.
 
 Innanzitutto bisogna accedere alla finestra di creazione della votazione tramite [Electio](https://vote.electio.app/#/), ed effettuare il login tramite .sid file o [Scrypta Extension Browser](https://id.scryptachain.org/).
-![Electio](./assets/electio/login.png)
+![Electio](/assets/electio/login.png)
 <br>Dopo aver inserito la password e completata la procedura di login, il sistema ci richiederà di creare una chiave RSA.
-![Electio](./assets/electio/rsa.png)
+![Electio](/assets/electio/rsa.png)
 <br>Cliccando su "Create Poll Keys", il sistema ci richiederà la password della nostra identità digitale, e subito dopo l'autenticazione ci troveremo nella home page personale di Electio, dove ci verrà mostrato un riepilogo delle attività esistenti.
 <br><br>Al momento il sistema non ha ancora nulla da mostrare, quindi al primo accesso troveremo qualcosa di simile a quanto riportato in figura.
-![Electio](./assets/electio/main_empty.png)
+![Electio](/assets/electio/main_empty.png)
 
 Procediamo con la creazione del nostro primo sondaggio cliccando su **"Create a Poll Now!"**, così da poter proseguire nella  finestra di configurazione della votazione
 .
 <br>Ci troveremo in una pagina simile a questa, dove dovranno essere inseriti tutti i parametri del nostro sondaggio.
-![Electio](./assets/electio/full.png)
+![Electio](/assets/electio/full.png)
 
 
 Come evidenziato in precedenza, Electio ci offre la possibilità di creare tipologie di votazione con diverse impostazioni di visibilità (Public, Authorized o Secret), e tale scelta si effettua dal menù a tendina "*Poll Visibility*".
-![Electio](./assets/electio/type_poll.png)
+![Electio](/assets/electio/type_poll.png)
 
 Selezionando una delle voci presenti nel menù a tendina, Electio adatterà in automatico la tipologia di *poll* da realizzare sulla base delle scelte da noi effettuate, presentandoci i campi richiesti per quella specifica tipologia di votazione.
 
 <br>Con la modalità **"Public"** non ci saranno ulteriori campi da compilare, in quanto il sondaggio sarà completamente pubblico.
 
 <br>Scegliendo le modalità **"Authorized"**, oppure **"Secret"**, comparirà un menu a tendina aggiuntivo che ci chiederà di scegliere l'impostazione per la visibilità del voto (che potrà essere **"Public"** oppure **"Secret"**).
-![Electio](./assets/electio/dropdown.png).
+![Electio](/assets/electio/dropdown.png).
 
 Una volta scelte le impostazioni per tipologia di quesito e tipologia di voto, è possibile procedere con la configurazione vera e propria. Effettuate tutte le scelte richieste dal sistema, procediamo con la creazione del voto.
 

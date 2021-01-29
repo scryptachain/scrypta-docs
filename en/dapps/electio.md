@@ -47,27 +47,27 @@ The voting question can be viewed in the clear, the voter's vote is in the clear
 As previously described, different types of e-voting can be developed within Electio, each with different characteristics.<br>However, the steps to configure the voting in the desired mode are almost similar and will be illustrated below.
 
 First you need to access the voting creation window via [Electio](https://vote.electio.app/#/), and log in via the *.sid* file o [Scrypta Extension Browser](https://id.scryptachain.org/).
-![Electio](./assets/electio/login.png)
+![Electio](/assets/electio/login.png)
 <br>After entering the password and completing the login procedure, the system will ask you to create an RSA key.
-![Electio](./assets/electio/rsa.png)
+![Electio](/assets/electio/rsa.png)
 <br> By clicking on "Create Poll Keys", the system will ask us for the password of our digital identity, and immediately after authentication we will be on the personal home page of Electio, where we will be shown a summary of the existing activities.
 <br><br>At the first access you will find something similar to what is shown in the figure.
-![Electio](./assets/electio/main_empty.png)
+![Electio](/assets/electio/main_empty.png)
 
 Let's proceed with the creation of your first poll by clicking on **"Create a Poll Now!"**, so that you can continue in the voting configuration window.
 
 <br> You will find on a page similar to this one, where all the parameters of our survey must be entered.
-![Electio](./assets/electio/full.png)
+![Electio](/assets/electio/full.png)
 
 As highlighted above, Electio offers us the possibility to create voting types with different visibility settings (Public, Authorized or Secret), and this choice is made from the "*Poll Visibility*" drop-down menu.
-![Electio](./assets/electio/type_poll.png)
+![Electio](/assets/electio/type_poll.png)
 
 By selecting one of the items in the drop-down menu, Electio will automatically adapt the type of poll on the basis of the choices made by us, presenting the fields required for that specific type of vote.
 
 <br>With **"Public"** mode there will be no further fields to fill in, as the survey will be completely public.
 
 <br>Choosing the **"Authorized"** or **"Secret"** modes, an additional drop-down menu will appear asking you to choose the setting for the visibility of the vote (which can be  **"Public"** or **"Secret"**).
-![Electio](./assets/electio/dropdown.png).
+![Electio](/assets/electio/dropdown.png).
 
 Once you have chosen the settings by type of question and type of vote, you can proceed with the creation of the poll.
 
