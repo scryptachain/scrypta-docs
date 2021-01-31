@@ -16,8 +16,6 @@ Go to *Settings > Encrypt Wallet*.
 
 ![encrypt](../.vuepress/public/assets/masternode/encrypt.png)
 
-
-
 > The wallet.dat file represents your electronic wallet which is now encrypted; the password will represent an additional level of security.
 
 > We recommend backing up the wallet to a separate physical or pen drive.

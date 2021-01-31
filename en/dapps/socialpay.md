@@ -253,7 +253,7 @@ Through this action, indicated by the symbol <img src="..//assets/icons/draw.svg
 
 Once the changes have been made, click on **"Save user"** to confirm them.
 
-#### Azione **VISUALIZZA**
+#### **VIEW** Action
 Through this action, indicated by the symbol <img src="..//assets/icons/interface.svg" width="16">, it is possible to view the details of the selected user, his balance and the transaction history. <br> This section also allows you to arrange the sending of amounts in **sEUR** to the selected user. <br> The operation is **instant** and requires you to enter your password.
 ![socialpay](/assets/socialpay/modifica.png)
 
@@ -270,7 +270,7 @@ To carry out all transactions or refund requests, it is necessary to pay transac
 
 **If you plan to carry out more than 100 transactions, it will be necessary to send a quantity of LYRA suitable for the volume of transactions envisaged.** <br>
 
-#### ** DELETE ** Action
+#### **DELETE** Action
 Through this action, indicated by the symbol <img src="..//assets/icons/trash.svg" width="16">, the selected user is deleted from the list. <br> It is recommended to proceed with care by checking the data before deleting.
 
 ### Transaction history
@@ -282,11 +282,11 @@ Within this section, using the appropriate filters, it is possible to search by 
 
 ### Manage refund
 By clicking on the **"REFUND ACCOUNT" button**, you are asked to enter the administrator password.![socialpay](/assets/socialpay/rimborso.png)<br>At this point the Merchant will receive a special notification transaction which confirms the bank transfer by the Municipality. <br> This operation is to be carried out **IMMEDIATELY AFTER** having prepared the specific bank transfer for refund. <br> < br> The operation will then be visible on the **"REFUNDED"** column (specifically the field will be automatically filled with **"YES"**).
-In addition, this special transaction will credit the merchant's account with the sum of **0.001LYRA **, which will allow him to request future repayments.
+In addition, this special transaction will credit the merchant's account with the sum of **0.001LYRA**, which will allow him to request future repayments.
 
 Finally, this function is accompanied by the possibility of adding additional text notes that are sent to the merchant.
 
-**Warning**: The notes accompanying the transactions are written **in clear** in the distributed register of the Scrypta blockchain. <br> It is ** RECCOMENDED ** not to enter sensitive information, which could violate respect for privacy. <br>
+**Warning**: The notes accompanying the transactions are written **in clear** in the distributed register of the Scrypta blockchain. <br> It is **RECCOMENDED** not to enter sensitive information, which could violate respect for privacy. <br>
 
 
 ### Settings
@@ -295,13 +295,15 @@ To perform the **save** operation, you must click on the **"DOWNLOAD BACKUP"** b
 The generated file, in .csv format, will allow you to keep a copy of the entire user archive, and it will be necessary to import the archive again.
 ![socialpay](/assets/socialpay/impostazioni.png)
 
-** Warning **: It is **RECOMMENDED** to make backups of the user list regularly, in order to avoid or at least limit data loss. <br>
+**Warning**: It is **RECOMMENDED** to make backups of the user list regularly, in order to avoid or at least limit data loss. <br>
 
-To perform the **deletion** operation of the archive, it is necessary to click on the ** "DELETE ARCHIVE" button **. At this point, the entire user list will be reset.
+To perform the **deletion** operation of the archive, it is necessary to click on the **"DELETE ARCHIVE" button**. At this point, the entire user list will be reset.
 
 **Warning**: Using this function the current archive **WILL BE COMPLETELY AND DEFINITELY DELETED "**.
-<br> **The cancellation cannot be canceled**.
-<br> Therefore, if you have not previously backed up and deleted the data, the entire archive will go **DESTROYED**.
+<br> 
+**The cancellation cannot be canceled**.
+<br> 
+Therefore, if you have not previously backed up and deleted the data, the entire archive will go **DESTROYED**.
 
 **PROCEED WITH CAUTION.**
 

@@ -7,7 +7,7 @@ The module responsible for all interfacing operations is located in `src/libs/Cr
 
 ### request(method, params  = [])
 
-It allows you to send any call to the wallet through the RPC protocol. The list of possible calls is here: [https://wiki.scryptachain.org/scrypta-full-node/lyra-cli](https://wiki.scryptachain.org/scrypta-full-node/lyra-cli)
+It allows you to send any call to the wallet through the RPC protocol. The list of possible calls is here: [https://scrypta.wiki/en/#/wallet/fullnode](https://scrypta.wiki/en/#/wallet/fullnode)
 
 It is therefore possible, for example, to call the `getnewaddress` method directly through the `request` method:
 ```

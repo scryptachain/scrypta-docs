@@ -40,4 +40,4 @@ Publish a post and tag the profile, among your contacts, to whom you want to sen
 ## Collect your LYRAs
 Want to send LYRAs collected through your interactions and send them directly to your address? Just write a post with: #scryptabot withdraw YourLyraAddress amount.<br><br>
 
-Join Us [qui](https://faucet.scryptachain.org/#/)
+Join Us [Here](https://faucet.scryptachain.org/#/)

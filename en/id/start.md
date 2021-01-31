@@ -38,6 +38,6 @@ Identities (and their address) can be created through:
 
 - [Manent App](../wallet/manent-app.md)
 
-- [ScryptaID Browser Extension](../dapps/extension-browser.md)
+- [ScryptaID Browser Extension](../dapps/start.md)
 
 - [Scrypta Card](../wallet/manent-app.md#scrypta-card)

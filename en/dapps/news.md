@@ -28,7 +28,7 @@ Scrypta News is conceived in combination of [Manent](https://manent.app/) and of
 
 - **Scrypta ID** allows the user to identify and verify their own set of addresses (Github, Google, Linkedin, Twitter, E-Mail, Telephone).
 
-For more information, you can consult the ScryptaID guide at[this link](../id/README.md).
+For more information, you can consult the ScryptaID guide at [this link](../id/start.md).
 
 At this point you can access the form [Scrypta News](https://news.scryptachain.org/), login with your identity, inserting your sid.file or using[**Scrypta Browser Extension**](https://id.scryptachain.org/) and proceed with the publication of the article on blockchain.
 
@@ -89,7 +89,7 @@ As can be seen from the example, a time stamp (timestamp) and digital signature 
 
 
 ## Editing
-Thanks to the Scrypta's [Progressive Data Management](../idanode/progressive-data-management.md) technology, the author is allowed, and exclusively to him, to edit the article. The edited version will be the version displayed as "current version"; previous versions continue to exist only within the Scrypta blockchain.
+Thanks to the Scrypta's [Progressive Data Management](../idanode/pdm.md) technology, the author is allowed, and exclusively to him, to edit the article. The edited version will be the version displayed as "current version"; previous versions continue to exist only within the Scrypta blockchain.
 
 If you want to edit an article, go to the section of your articles by clicking on the relative icon (next to logout). Then click the "pencil" symbol relating to the article to be edited. Make your changes and click on *Write on the blockchain*.
 
