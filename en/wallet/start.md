@@ -25,4 +25,4 @@ In this section you will find guides and details of all Scrypta wallets.
 
 - [Scrypta Full Node](fullnode.md)
 - [Masternode Setup](../masternode/start.md)
-- [Staking Setup](../staking/start.md)
+- [Staking Setup](../staking/introduction.md)
