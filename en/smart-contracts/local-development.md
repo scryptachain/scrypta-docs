@@ -41,7 +41,7 @@ First of all we recommend to fully clone [this] (https://github.com/scryptachain
 ```
 git clone https://github.com/scryptachain/scrypta-smart-contracts
 cd scrypta-smart-contracts
-npm inst
+npm install
 ```
 
 After installing everything we can proceed with starting the local playground by typing the command:
