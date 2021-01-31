@@ -1,4 +1,5 @@
 # Scrypta Smart Contracts
+
 In the Scrypta Blockchain, Smart Contracts are considered to all intents and purposes as *an extension* of the IdaNode, useful for creating additional features.
 
 Inside the IdaNode the npm module `@scrypta/vm` is called which allows you to create a virtual trustless environment and which allows the smart contract to execute code inside the host machine.
@@ -12,7 +13,7 @@ Scrypta Smart Contracts are not directly inspired by Ethereum Smart Contracts. C
 - They are not Ethereum Smart Contracts
 - They are not automatically hosted in all nodes of the network (IdaNodes)
 - They cannot manage LYRA funds or hold private keys
-- They do not write information on behalf of the user but it is the user who writes information within the blockchain: the smart contract can * validate * information and maintain its status or be recalled from a data written directly in the blockchain by the user
+- They do not write information on behalf of the user but it is the user who writes information within the blockchain: the smart contract can *validate* information and maintain its status or be recalled from a data written directly in the blockchain by the user
 - They are not a single entity (smart contracts coexist in all the IdaNodes that replicate them and can only agree on the status in a given block)
 
 ## What Scrypta Smart Contracts are
