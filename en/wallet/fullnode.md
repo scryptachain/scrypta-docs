@@ -210,7 +210,7 @@ In the lower right part you will find these symbols
 - the wallet is syncing with the blockchain.
 
 In order to speed up the sync of the blockchain, we can use the **bootstrap** (a recently updated copy of the blockchain)
-<br> Definitions and more in-depth details on the bootstrap files are provided in the [appropriate section](../scrypta-full-node/setup.html#bootstrap).
+<br> Definitions and more in-depth details on the bootstrap files are provided in the [appropriate section](.fullnode.md#installation).
 
 > Since a lot of data will be downloaded, make sure you have enough space available on your hard disk to save the entire copy of the blockchain.
 <br> The timing of completion of synchronization depends on the connection speed.
@@ -230,7 +230,7 @@ Save the file and restart the wallet. Synchronization should now start without f
 ### Main menu
 This is the menu bar for the main wallet operations, as described below:
 <br>![qt_wallet](/assets/qt_wallet/menu.png)
-- **Overview:** the main dashboard with balance, recent transactions and the **obfuscation** function, which will be explored in the [following sections](../scrypta-full-node/setup.md##additional-features).
+- **Overview:** the main dashboard with balance, recent transactions and the **obfuscation** function, which will be explored in the following sections](fullnode.md##additional-features).
 <br>![qt_wallet](/assets/qt_wallet/overview.png)
 <br>
 
@@ -261,7 +261,7 @@ Through the **FILE** menu you can access functions such as creating new addresse
 <br> **Caution is advised in making changes. Any mistake could irreparably compromise your funds.**
 <br>
 
-- **Menu TOOLS**<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](../scrypta-full-node/setup.html#debug-console) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
+- **Menu TOOLS**<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](fullnode.md#debugconsole) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
 
 
 ## Wallet Encryption
@@ -270,7 +270,7 @@ The encryption of the wallet is one of the main functions as it protects the fun
 <br> In principle, these suggestions and procedures are valid for most other cryptocurrency.
 
 
-The **"Encrypt Wallet"** function, reachable from the **SETTINGS** menu, adds an additional level of security to the wallet, protecting the funds from fraudulent or incorrect submissions, or from other operations that could modify the ownership of the funds contained in the wallet, through the  [dump of private keys](../scrypta-full-node/setup.html#dump-and-import-private-keys) or other security operations.
+The **"Encrypt Wallet"** function, reachable from the **SETTINGS** menu, adds an additional level of security to the wallet, protecting the funds from fraudulent or incorrect submissions, or from other operations that could modify the ownership of the funds contained in the wallet, through the  [dump of private keys](fullnode.md#dump-and-import-private-keys) or other security operations.
 
 The encryption of the wallet is a very simple operation to carry out, however you have to be very careful.
 <br> To proceed with the encryption, from the **SETTINGS** > **ENCRYPT WALLET** menu a window will open as shown below:
@@ -290,24 +290,24 @@ The wallet app will close at the end of the encryption operation.
 <br>![qt_wallet](/assets/qt_wallet/lock.png)
 <br>This indicates that to perform operations such as staking, sending funds, dumping private keys or other main functions, you must simply proceed with the unlocking of the wallet first.
 
-## Lock/Unlock wallet
+## Lock-Unlock-wallet
 To unlock the wallet you need to enter the passphrase used to perform the encryption.
 From the **SETTINGS** menu, selecting **UNLOCK WALLET** the window will open as shown in the image:
 <br>![qt_wallet](/assets/qt_wallet/unlock.png)
 
 Enter the passphrase and press **OK**.
-<br>By ticking the option *"For anonymization and staking only"* the wallet will be unlocked only for the staking and the process of [**obfuscation**](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+<br>By ticking the option *"For anonymization and staking only"* the wallet will be unlocked only for the staking and the process of [**obfuscation**](fullnode.md##additional-features).
 At this point the wallet is unlocked for all operations. This status is indicated by the green padlock in the lower corner.
 <br>![qt_wallet](/assets/qt_wallet/unlocked.png)
 
 ## Wallet Backup
-Once the encryption process is complete, we proceed with making a backup copy of our **wallet.dat**, the file that contains all the information of our digital wallet and all the addresses with the respective private keys.
-<br> To proceed with the backup, from the menu **"FILE"** select **"BACKUP WALLET"** and choose a name and the path on which to save the backup of the wallet.dat file in a safe place.
+Once the encryption process is complete, we proceed with making a backup copy of our **wallet.dat**, the file that contains all the information of our digital wallet and all the addresses with the respective private keys.<br> 
+To proceed with the backup, from the menu **"FILE"** select **"BACKUP WALLET"** and choose a name and the path on which to save the backup of the wallet.dat file in a safe place.
 
 > **ATTENTION:** This backup copy will allow you to recover your funds simply by importing the wallet.dat file on another Scrypta client, so keep it with extreme care and caution.
 
 
-## Debug Console
+## DebugConsole
 
 The debug console of the Scrypta QT wallet is a very useful tool from which you can manually send commands to perform all the operations available within the portfolio.
 Accessible from the menu **"TOOLS"** > **"DEBUG CONSOLE"**, it looks like a terminal window.
@@ -332,7 +332,7 @@ These are among the most important operations that you can perform in your walle
 However, this private key is never exposed by the client for security reasons and must be exported (dumped) through the debug console.
 
 By importing these private keys into a new wallet on another device, the funds contained in it will be made accessible, which therefore will be the exclusive property of the one (or those) who hold the private keys of that specific address.
-<br> To do this and the others listed in this section of the guide, the wallet must be [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
+<br> To do this and the others listed in this section of the guide, the wallet must be [unlocked](fullnode.md#lock-unlock-wallet).
 
 **ATTENTION:** Maximum caution is always recommended when exposing your private keys.
 <br> Making them accessible to third parties means giving them access to your funds.
@@ -360,7 +360,7 @@ If we have a private key and want to import it, simply open the debug console an
 ### Dump the entire wallet
 Through the `**dump wallet**` function, complete export of all private keys for all the addresses generated by your wallet (whether they have already been used or not) saved in encrypted format within the file ***wallet.dat***.
 
-In this regard it is good to make a clarification: the `**dump wallet**` operation has some differences with the operation described previously in the section [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), as the backup saves the encrypted copy of the wallet.dat file.
+In this regard it is good to make a clarification: the `**dump wallet**` operation has some differences with the operation described previously in the section [**"backup wallet"**](fullnode.md#wallet-backup), as the backup saves the encrypted copy of the wallet.dat file.
 <br> By restoring the file ***wallet.dat*** we will have the possibility to import and view the contents of the entire wallet but we will not be able in any way to access the funds contained in it without knowing the encryption password to decipher the wallet .
 <br> With the command `**dump wallet**` you will export a text file **not encrypted** containing the complete list of all the addresses created by the wallet with all the corresponding private keys. Consequently, the owner of that file will be in possession of all the funds contained in it.
 <br> This is why, before proceeding, it was important to explain the difference between the two types of backup, so that we can understand when one mode should be used rather than another.
@@ -484,7 +484,7 @@ Note that the "Library" folder may be hidden.
 
 ## Command List
 
-The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
+The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](fullnode.md#debugconsole) (*Tools menu*).
 
 In the client version it is necessary to indicate `./lyra-cli` before the commands.
 
@@ -836,7 +836,7 @@ Change your wallet passphrase from "oldpassphrase" to "newpassphrase".
 
 To use the testnet version of the Scrypta blockchain you will need to download and install the official wallet. You can find an installation guide in the following section:
 
-[Installation](installation.md) 
+[Installation](start.md) 
 
 Next you will have to start it in Testnet mode.
 
@@ -844,7 +844,7 @@ To do this you need to insert the text line `testnet=1` in the configuration fil
 
 The configuration file is located in the Data Directory which is automatically created the first time the wallet is started.
 
-For more information, consult the relevant section [Data directory](data-directory.md).
+For more information, consult the relevant section [Data directory](data-directory.md). 
 
 ### Steps for starting Scrypta Testnet
 
