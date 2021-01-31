@@ -20,7 +20,7 @@ Un altro aspetto da non sottovalutare è la compatibilità con i dispositivi, la
 
 Una volta realizzata una card wallet, questa può essere utilizzata come strumento per effettuare operazioni all'interno della blockchain in modo semplice, ovvero inserendo la propria password (o PIN) all'interno di un'applicazione fidata. 
 
-Tra tutte, [Manent App](../dapps/manent-app.md) è l'applicazione che permette di testare questa tecnologia, con possibilità di scambiare Lyra *-on the fly-* attraverso la sezione *Ricevi*.
+Tra tutte, [Manent App](../wallet/manent-app.md) è l'applicazione che permette di testare questa tecnologia, con possibilità di scambiare Lyra *-on the fly-* attraverso la sezione *Ricevi*.
 
 Dopo aver inserito l'ammontare da ricevere è possibile richiedere il pagamento della cifra attraverso la card; questa verrà letta e successivamente decodificata grazie all'inserimento della password da parte del debitore.
 
@@ -38,7 +38,7 @@ Qui dovrete prima inizializzare la vostra card QR, dopo potrete richiedere pagam
 
 ## Token e Sidechain
 
-Questa card non contiene, chiaramente, le sole informazioni relative a LYRA, ma contiene tutte le informazioni relative ai token realizzati attraverso il sistema di Sidechain di Scrypta - [**Planum**](../planum/README.md). Questo fa sì che ogni token può effettivamente essere scambiato in modo *fisico* (attraverso la card) utilizzando tecnologia blockchain in modo assolutamente trasparente per l'utente. 
+Questa card non contiene, chiaramente, le sole informazioni relative a LYRA, ma contiene tutte le informazioni relative ai token realizzati attraverso il sistema di Sidechain di Scrypta - [**Planum**](../planum/inizio.md). Questo fa sì che ogni token può effettivamente essere scambiato in modo *fisico* (attraverso la card) utilizzando tecnologia blockchain in modo assolutamente trasparente per l'utente. 
 
 Se vi state chiedendo quali possono essere gli ambiti di applicazione di una tecnologia del genere pensate a: mense aziendali, buoni spesa, gift card, ticket per ristoranti, ticket per eventi e concerti, e così via.
 

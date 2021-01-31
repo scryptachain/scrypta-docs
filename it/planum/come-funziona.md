@@ -2,22 +2,22 @@
 
 ## Uno sguardo più approfondito sulla tecnologia sidechain
 
-Il processo di creazione dei token si compone dei seguenti step, gestiti in modo automatico dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node):
+Il processo di creazione dei token si compone dei seguenti step, gestiti in modo automatico dagli [IdANode](../idanode/inizio.md):
 
 ### Definizione dei campi di Genesi.
 - Creazione di un nuovo indirizzo da [IdANode](https://medium.com/developers/ida-node).
-- Creazione del [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
-- Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
+- Creazione del [Trustlink](../idanode/trustlink).
+- Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](../idanode/trustlink).
 - Scrittura su blockchain della transazione di Genesi.
-- Invio dell’intera token supply dal [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) al creatore della sidechain.
+- Invio dell’intera token supply dal [Trustlink](../idanode/trustlink) al creatore della sidechain.
 
-Con [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
+Con [Trustlink](../idanode/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
 Per garantire l’unicità, l’orizzontalità e la non replicabilità della sidechain, l’indirizzo viene generato *on-the-fly* e la sua chiave privata viene distrutta immediatamente dopo aver scritto la prima transazione di genesi.
 
 Nel momento in cui il Trustlink trasferisce l’intera token supply all’owner, sara’ possibile inviare transazioni usando la prima transazione come USXO, il corrispondente dell’UTXO ma relativo alle sidechain).
 
 > Ci siamo quindi focalizzati a creare una replica del sistema di UTXO usando la blockchain di Scrypta come database e delegando la validazione delle transazioni direttamente agli [IdANode](https://medium.com/developers/ida-node) e agli altri client come [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
-Tutte le informazioni immesse e scritte nella blockchain sono validate dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node) e rese disponibili dal database degli stessi [IdANode](https://wiki.scryptachain.org/developers/ida-node), proprio come le altre informazioni.
+Tutte le informazioni immesse e scritte nella blockchain sono validate dagli [IdANode](../idanode/inizio.md) e rese disponibili dal database degli stessi [IdANode](../idanode/inizio.md)), proprio come le altre informazioni.
 
 ## Emissione di un nuovo token
 

@@ -18,7 +18,7 @@ Per un’esperienza ottimale di usabilità e sicurezza si richiede di scaricare 
 
 ![planum](/assets/planum/manent_link.png)
 Ciò consentirà di creare facilmente la vostra prima identità digitale, oppure di importarne una già esistente.
-*Per completezza, vi invitiamo a consultare la [sezione wiki](https://wiki.scryptachain.org/developers/scryptaid) relativa.*
+*Per completezza, vi invitiamo a consultare la [sezione wiki](../id/inizio.md) relativa.*
 
 Una volta che la vostra identità digitale è stata creata, è possibile effettuare il login a “Planum” con il vostro .sid file o usando [l’estensione per browser Scrypta ID](https://id.scryptachain.org/) (un tool che permette di creare e gestire le identità digitali per usare con facilità le dApps di Scrypta).
 
@@ -71,8 +71,8 @@ Vale la pena fare notare che i costi di emissione e di scambio dei token sono ra
 
 Ciò significa che ciascun trasferimento di token costerà 0,001 LYRA e le fee delle transazioni non sono correlate all'ammontare di token che si vuole generare o trasferire ad altri utenti.
 
-Il trasferimento degli asset avviene in modo quasi istantaneo grazie alla lettura della mempool eseguita dagli [IdANode](https://wiki.scryptachain.org/developers/ida-node) che permettono la validazione delle transazioni anche senza la prima conferma della rete.
-La validazione e’ fatta a livello di [IdANode](https://wiki.scryptachain.org/developers/ida-node), per cui permette di essere sicuri che la transazione trasmessa sia valida e che venga inserita nel primo blocco disponibile.
+Il trasferimento degli asset avviene in modo quasi istantaneo grazie alla lettura della mempool eseguita dagli [IdANode](../ida-node/inizio.md) che permettono la validazione delle transazioni anche senza la prima conferma della rete.
+La validazione e’ fatta a livello di [IdANode](../ida-node/inizio.md), per cui permette di essere sicuri che la transazione trasmessa sia valida e che venga inserita nel primo blocco disponibile.
 
 ***
 
