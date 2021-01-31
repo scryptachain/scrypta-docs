@@ -7,7 +7,7 @@ Il modulo responsabile di tutte le operazioni di interfacciamento si trova in `s
 
 ### request(method, params  = [])
 
-Permette di inviare qualsiasi chiamata al wallet attraverso il protocollo RPC. La lista delle chiamate possibili si trova qui: [https://wiki.scryptachain.org/scrypta-full-node/lyra-cli](https://wiki.scryptachain.org/scrypta-full-node/lyra-cli)
+Permette di inviare qualsiasi chiamata al wallet attraverso il protocollo RPC. La lista delle chiamate possibili si trova qui: [../wallet/fullnode.md)](../wallet/fullnode.md)
 
 E' quindi possibile, ad esempio, richiamare il metodo `getnewaddress` direttamente attraverso il metodo `request`:
 ```

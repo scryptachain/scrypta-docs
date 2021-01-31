@@ -1,6 +1,6 @@
 # Smart Contracts
 
-Per avere una panoramica generale di come funzionano gli Smart Contracts occorre leggere la [guida inziale](/smart-contracts).
+Per avere una panoramica generale di come funzionano gli Smart Contracts occorre leggere la [guida inziale](../smart-contracts/inizio.md).
 
 Di seguito gli endpoint abilitati all'interno dell'IdaNode per interagire con gli Smart Contracts di Scrypta.
 
