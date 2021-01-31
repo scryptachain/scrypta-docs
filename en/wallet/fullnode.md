@@ -334,7 +334,7 @@ However, this private key is never exposed by the client for security reasons an
 By importing these private keys into a new wallet on another device, the funds contained in it will be made accessible, which therefore will be the exclusive property of the one (or those) who hold the private keys of that specific address.
 <br> To do this and the others listed in this section of the guide, the wallet must be [unlocked](../scrypta-full-node/setup.html#lock-unlock-wallet).
 
-** ATTENTION: ** Maximum caution is always recommended when exposing your private keys.
+**ATTENTION:** Maximum caution is always recommended when exposing your private keys.
 <br> Making them accessible to third parties means giving them access to your funds.
 
 We recommend that you always make redundant backups on private keys, as well as keep them in a place that you can always access.
@@ -343,7 +343,7 @@ We recommend that you always make redundant backups on private keys, as well as 
 ### Dump private keys
 
 To dump a private key to a specific address, you must first open the debug console.<br> 
-The command to export the private key of an address is `**dumpprivkey**`.<br> 
+The command to export the private key of an address is `**dumpprivkey**`. <br> 
 Through the command **`dumpprivkey "lyraaddress"`** we are revealed the private key corresponding to the address "lyraaddress".
 
 > Each address has its own private key: if you store your funds in different addresses it is essential that you do the dump for each of the addresses on which there are funds.
