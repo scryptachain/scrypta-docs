@@ -48,7 +48,7 @@ I Dati e file caricati sulla blockchain di Scrypta vengono elaborati dall'infras
 **Hai il nostro pieno supporto!**
 
 Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
-Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-app/manent-support)
+Oppure visita la pagina di [Assistenza]()
 
 
 #### VUOI SAPERNE DI PIU'?
@@ -59,7 +59,7 @@ Oppure visita la pagina di [Assistenza](https://wiki-it.scryptachain.org/manent-
 - Account multipli: Gestisci più account Wallet con una sola app.
 - Ogni singolo dato o documento caricato con Manent avrà un hash: una funzione   matematica che trasforma i dati originali in un’impronta digitale garantendone l’unicità.
 - La tecnologia Blockchain di Timestamp garantisce la data certa di upload, conferendo una marcatura temporale inconfutabile.
-- Qualsiasi file caricato risiede in un archivio decentralizzato basato su **IPFS (Inter Planetary File System)** e **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
+- Qualsiasi file caricato risiede in un archivio decentralizzato basato su **IPFS (Inter Planetary File System)** e **[IdANode](../idanode/inizio.md) (Interconnected dApp Nodes)**.
 ***
 
 ## Guide & Tutorials

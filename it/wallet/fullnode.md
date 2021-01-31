@@ -173,7 +173,7 @@ Una volta scaricato il software, avviate **Lyra-QT**.
 
 Per maggiori informazioni in merito all'installazione, puoi visitare questo link:
 
-[Installazione](installazione.md)
+[Installazione](inizio.md)
 
 
 
@@ -215,7 +215,7 @@ Nella parte bassa a destra invece troverete questi simboli
 - il wallet sta syncando con la blockchain.
 
 Al fine di velocizzare il sync della blockchain, possiamo utilizzare il **bootstrap**, che introduciamo adesso definendolo una copia aggiornata della blockchain ad un tempo piu' recente.
-<br>Definzioni e dettagli piu' approfonditi sui file di bootstrap sono forniti nell'[apposita sezione](../scrypta-full-node/setup.html#bootstrap).
+<br>Definzioni e dettagli piu' approfonditi sui file di bootstrap sono forniti nell'[apposita sezione](fullnode.md#bootstrap).
 
 Poichè verranno scaricati parecchi dati, assicuratevi di avere sufficiente spazio disponibile sul vostro hard-disk per salvare l'intera copia della blockchain.
 <br>A seconda della velocità della connessione, per completare la sincronizzazione potrebbe volerci molto tempo.
@@ -234,7 +234,7 @@ Quindi salvate il file e riavviate il wallet. La sincronizzazione dovrebbe adess
 ### Menu principale
 Questa è la barra del menù per le principali operazioni del wallet, come descritto di seguito:
 <br>![qt_wallet](/assets/qt_wallet/menu.png)
-- **Overview:** la dashboard principale con il balance, le transazioni recenti e la funzione di **obfuscation**, che verrà approfondita [nelle sezioni successive](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+- **Overview:** la dashboard principale con il balance, le transazioni recenti e la funzione di **obfuscation**, che verrà approfondita [nelle sezioni successive](fullnode.md#funzionalita-aggiuntive).
 <br>![qt_wallet](/assets/qt_wallet/overview.png)
 <br>
 
@@ -267,7 +267,7 @@ Attraverso i menu' presenti sulla barra di sistema del software, si hanno altre 
 <br>
 
 - **Menu TOOLS**
-<br>Attraverso il menu **TOOLS** si raggiungono funzioni di monitoraggio del network, l'importantissima [***console di debug***](../scrypta-full-node/setup.html#debug-console) (il terminale interno del vostro wallet Scrypta da cui è possibile inviare comandi per interrogare direttamente il network), e altre opzioni che vi permettono di raggiungere facilmente i file di sistema *.conf* del wallet.
+<br>Attraverso il menu **TOOLS** si raggiungono funzioni di monitoraggio del network, l'importantissima [***console di debug***](fullnode.md#debug-console) (il terminale interno del vostro wallet Scrypta da cui è possibile inviare comandi per interrogare direttamente il network), e altre opzioni che vi permettono di raggiungere facilmente i file di sistema *.conf* del wallet.
 
 
 ## Wallet Encryption
@@ -276,7 +276,7 @@ L'encryption del wallet e' una delle funzioni principali e più importanti in qu
 <br>in linea di principio, tali suggerimenti e procedure sono validi per la gran parte di altre cryptocurrency.
 
 
-La funzione **"Encrypt Wallet"**, raggiungibile dal menu **SETTINGS**, aggiunge un livello aggiuntivo di sicurezza al nostro wallet, proteggendo i fondi da invii fraudolenti o errati, oppure da altre operazioni che potrebbero modificare la proprietà dei fondi contenuti nel wallet (attraverso il [dump delle chiavi private](../scrypta-full-node/setup.html#dump-e-importazione-private-keys)) o altre operazioni di sicurezza.
+La funzione **"Encrypt Wallet"**, raggiungibile dal menu **SETTINGS**, aggiunge un livello aggiuntivo di sicurezza al nostro wallet, proteggendo i fondi da invii fraudolenti o errati, oppure da altre operazioni che potrebbero modificare la proprietà dei fondi contenuti nel wallet (attraverso il [dump delle chiavi private](fullnode.md#dump-e-importazione-private-keys)) o altre operazioni di sicurezza.
 
 L'encryption del wallet e' un'operazione molto semplice da effettuare, tuttavia bisogna fare molta attenzione.
 <br>Per procedere all'encryption, dal menu **SETTINGS** > **ENCRYPT WALLET** si aprirà una finestra come mostrato qui di seguito:
@@ -301,7 +301,7 @@ Dal menu **SETTINGS** scegliamo **UNLOCK WALLET**, si aprirà quindi la finestra
 <br>![qt_wallet](/assets/qt_wallet/unlock.png)
 
 Inserire la passphrase e premere **OK**.
-<br>Flaggando l'opzione *"For anonymization and staking only"*, il wallet verrà sbloccato solo per lo staking e il processo di [**obfuscation**](../scrypta-full-node/setup.html#funzionalita-aggiuntive).
+<br>Flaggando l'opzione *"For anonymization and staking only"*, il wallet verrà sbloccato solo per lo staking e il processo di [**obfuscation**](fullnode.md#funzionalita-aggiuntive).
 A questo punto il vostro wallet e' sbloccato per tutte le operazioni,e tale stato è indicato dal lucchetto verde nell'angolo in basso.
 <br>![qt_wallet](/assets/qt_wallet/unlocked.png)
 
@@ -366,7 +366,7 @@ Se siamo in possesso di una chiave privata e vogliamo procedere alla sua importa
 ### Dump dell'intero wallet
 Attraverso la funzione `**dump wallet**` si effettua l'export completo di tutte le chiavi private per tutti gli indirizzi (siano essi già stati usati o meno) generati dal vostro wallet e salvati in formato cryptato all'interno del file ***wallet.dat***.
 
-A tal proposito è bene fare una precisazione: l'operazione di `**dump wallet**` presenta delle differenze con l'operazione descritta in precedenza nella sezione [**"backup wallet"**](../scrypta-full-node/setup.html#wallet-backup), in quanto il backup salva la copia cryptata del file wallet.dat.
+A tal proposito è bene fare una precisazione: l'operazione di `**dump wallet**` presenta delle differenze con l'operazione descritta in precedenza nella sezione [**"backup wallet"**](fullnode.md#wallet-backup), in quanto il backup salva la copia cryptata del file wallet.dat.
 <br>Ripristinando il file ***wallet.dat*** avremo la possibilità di importare e visualizzare il contenuto dell'intero wallet, ma non potremo in alcun modo accedere ai fondi in esso contenuti senza avere la password di encryption per decifrare il portafoglio.
 <br>Con il comando `**dump wallet**` andiamo ad esportare un file di testo **non cryptato** che contiene la lista completa di tutti gli indirizzi creati dal wallet con tutte le corrispondenti chiavi private, pertanto il possessore di quel file sarà in possesso di tutti i fondi in esso contenuti.
 <br>Ecco perchè, prima di procedere, era importante spiegare la differenza che c'è tra i due tipi di backup, così da poter comprendere quando bisogna utilizzare una modalità piuttosto che un'altra.
@@ -840,7 +840,7 @@ Cambia la passphrase del wallet da "oldpassphrase" a "newpassphrase".
 
 Per utilizzare la versione testnet della blockchain Scrypta avrete bisogno di scaricare ed installare il wallet ufficiale. Potete trovare una guida all'installazione nella seguente sezione:
 
-[Installazione](installazione.md) 
+[Installazione](fullnode.md) 
 
 Successivamente dovrete avviarlo in modalità Testnet.
 

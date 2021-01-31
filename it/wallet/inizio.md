@@ -19,11 +19,11 @@ In questa sezione troverai guide e dettagli di tutti i wallet Scrypta.
 
 - [Manent APP](manent-app.md)
 - [Manent Web](manent-web.md)
-- [Manent Extension](extension.md)
+- [Manent Extension](https://id.scryptachain.org)
 
 ## Desktop Wallet
 
 - [Scrypta Full Node](fullnode.md)
-- [Masternode Setup](../masternode-setup/README.md)
-- [Staking Setup](../staking-setup/README.md)
+- [Masternode Setup](../masternode/inizio.md)
+- [Staking Setup](../staking/inizio.md)
 
