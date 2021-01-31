@@ -18,11 +18,11 @@ Il menu laterale invece mostra le altre 2 pagine disponibili, quella che riporta
 
 ## Editing locale
 
-Usando la prima schermata si potrà quindi creare nuovi contratti locali, il codice verrà salvato all'interno del `localStorage` quindi rimarrà nel vostro PC finchè non decidete di pubblicarlo o _svuotate la cache_. Si raccomanda sempre di effettuare delle copie locali del codice o di lavorare direttamente in locale, se avete intenzione di lavorare con più serenità. Se vuoi subito passare allo sviluppo in locale degli smart contracts vai [qui](/smart-contracts/sviluppo-locale).
+Usando la prima schermata si potrà quindi creare nuovi contratti locali, il codice verrà salvato all'interno del `localStorage` quindi rimarrà nel vostro PC finchè non decidete di pubblicarlo o _svuotate la cache_. Si raccomanda sempre di effettuare delle copie locali del codice o di lavorare direttamente in locale, se avete intenzione di lavorare con più serenità. Se vuoi subito passare allo sviluppo in locale degli smart contracts vai [qui](sviluppo-locale.md).
 
 ## Deploy di un contratto
 
-Non appena sarete pronti per scrivere in blockchain il vostro contratto non vi resterà che premere il pulsante verde `DEPLOY`, inserire la vostra password e aspettare la conferma di avvenuta pubblicazione. Da questo momento in poi chiunque abbia un IdaNode potrà agganciarlo utilizzando il [tool di sviluppo locale](/smart-contracts/sviluppo-locale#rendere-disponibile-il-contratto) oppure l'apposito [endpoint](/idanode/smart-contracts#post-contractspin). Risulta quindi _fondamentale_ avere almeno un proprio IdaNode per mettere realmente in rete degli Smart Contracts.
+Non appena sarete pronti per scrivere in blockchain il vostro contratto non vi resterà che premere il pulsante verde `DEPLOY`, inserire la vostra password e aspettare la conferma di avvenuta pubblicazione. Da questo momento in poi chiunque abbia un IdaNode potrà agganciarlo utilizzando il [tool di sviluppo locale](sviluppo-locale.md#rendere-disponibile-il-contratto) oppure l'apposito [endpoint](/idanode/smart-contracts.md#post-contractspin). Risulta quindi _fondamentale_ avere almeno un proprio IdaNode per mettere realmente in rete degli Smart Contracts.
 
 ## I propri contratti
 

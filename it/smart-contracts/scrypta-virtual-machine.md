@@ -64,7 +64,7 @@ Parlando di blockchain e di Smart Contract non possiamo che accennare ad una del
 
 L'immutabilità è garantita dalla blockchain in quanto il codice non viene direttamente eseguito da un file, ma questo file deve essere prima caricato all'interno di un indirizzo, grazie alle tecniche che conosciamo. Il codice eseguito dalla VM e dall'utente è quindi ben definito e statico e abbiamo la garanzia che il codice è stato pubblicato dal suo autore grazie ad un processo di doppia firma.
 
-Qualsiasi software durante la propria *vita* ha però bisogno di aggiornamenti e questo è un dato di fatto. Grazie alla tecnica del *Progressive Data Management* applicata anche nel tool [`Scrypta-BVC`](/utilities/versioning-cli) è possibile aggiornare il codice sorgente dello Smart Contract pubblicando quindi delle versioni correttive e / o di modifica di funzionalità.
+Qualsiasi software durante la propria *vita* ha però bisogno di aggiornamenti e questo è un dato di fatto. Grazie alla tecnica del *Progressive Data Management* applicata anche nel tool [`Scrypta-BVC`](/utilities/versioning-cli.md) è possibile aggiornare il codice sorgente dello Smart Contract pubblicando quindi delle versioni correttive e / o di modifica di funzionalità.
 
 Questa feature è tuttavia opzionale e viene definita al primo deploy dello Smart Contract.
 

@@ -26,4 +26,4 @@ In breve cercheremo di descrivere cosa sono e cosa non sono gli Smart Contracts 
 - Sebbene non possano scrivere per conto dell'utente, possono *generare* transazioni formalmente valide e demandare la firma ed il broadcast all'utente.
 - Prevedono delle funzionalità di `consenso` per cui ogni client può richiedere se quel nodo è attendibile o meno.
 
-Chiariti questi concetti di base possiamo iniziare possiamo procedere con la spiegazione della [Scrypta Virtual Machine](/smart-contracts/scrypta-virtual-machine).
+Chiariti questi concetti di base possiamo iniziare possiamo procedere con la spiegazione della [Scrypta Virtual Machine](scrypta-virtual-machine.md).

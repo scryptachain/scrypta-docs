@@ -6,12 +6,12 @@ Il processo di creazione dei token si compone dei seguenti step, gestiti in modo
 
 ### Definizione dei campi di Genesi.
 - Creazione di un nuovo indirizzo da [IdANode](https://medium.com/developers/ida-node).
-- Creazione del [Trustlink](../idanode/trustlink).
-- Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](../idanode/trustlink).
+- Creazione del [Trustlink](../idanode/trustlink.md).
+- Invio di un minimo di 1 LYRA da parte dell’owner al [Trustlink](../idanode/trustlink.md).
 - Scrittura su blockchain della transazione di Genesi.
-- Invio dell’intera token supply dal [Trustlink](../idanode/trustlink) al creatore della sidechain.
+- Invio dell’intera token supply dal [Trustlink](../idanode/trustlink.md) al creatore della sidechain.
 
-Con [Trustlink](../idanode/trustlink) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
+Con [Trustlink](../idanode/trustlink.md) si definisce un indirizzo multisignature generato da due o piu’ indirizzi standard, e viene creato tra l’utente che desidera emettere il token e l’IdANode richiamato per la creazione dell’asset tokenizzato.
 Per garantire l’unicità, l’orizzontalità e la non replicabilità della sidechain, l’indirizzo viene generato *on-the-fly* e la sua chiave privata viene distrutta immediatamente dopo aver scritto la prima transazione di genesi.
 
 Nel momento in cui il Trustlink trasferisce l’intera token supply all’owner, sara’ possibile inviare transazioni usando la prima transazione come USXO, il corrispondente dell’UTXO ma relativo alle sidechain).
