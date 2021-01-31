@@ -8,7 +8,7 @@ Scrypta Foundation, durante la fase di emergenza determinatasi per effetto della
 Il sistema, chiamato **"SocialPay"** si propone come soluzione per la rapida erogazione da parte dei comuni nei contronti dei cittadini aventi diritto ai buoni spesa, a seguito della situazione di emergenza generata dal COVID19.
 L'intero progetto è stato rilasciato in **open-source**, questo significa che è possibile generare tutto l'occorrente per emettere e gestire i buoni spesa per il Comune, in completa autonomia.
 
-Visita il [sito web si SocialPay](https://socialpay.live/).
+Visita il [sito web di SocialPay](https://socialpay.live/).
 
 ### Cosa prevede il sistema
 

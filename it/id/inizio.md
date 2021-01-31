@@ -36,9 +36,9 @@ Il payload di identità viene consegnato anche all’utente il quale lo conserve
 
 Le identità (e il relativo address) possono essere create attraverso:
 
-- [Manent App](../dapps/manent-app.md)
+- [Manent App](../dapps/manent.md)
 
-- [ScryptaID Browser Extension](../dapps/extension-browser.md)
+- [ScryptaID Browser Extension](https://id.scryptachain.org)
 
-- [Scrypta Card](../dapps/manent-app.md#scrypta-card)
+- [Scrypta Card](../dapps/manent.md#scrypta-card)
 

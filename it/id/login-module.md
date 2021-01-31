@@ -20,7 +20,7 @@ Ecco una semplice pagina di test per sperimentare il funzionamento del modulo:
 
 Questo strumento è utile per implementare facilmente un sistema di accesso con ScryptaID. Per impostazione predefinita, lo strumento produce un'interfaccia utente in cui l'utente può accedere con:
 
-- [Manent App](../dapps/manent-app.md): utilizzando lo strumento di firma remota
+- [Manent App](../dapps/manent.md): utilizzando lo strumento di firma remota
 - File Sid: importa manualmente il file .sid memorizzato in precedenza
 - QR card: utilizzando una carta stampata
 

@@ -28,7 +28,7 @@ Scrypta News è concepita in combinazione [Manent](https://manent.app/) e [Scryp
 
 - **Scrypta ID** permette all’utente di identificarsi e verificare il proprio set di indirizzi (Github, Google, Linkedin, Twitter, E-Mail, Telefono). 
 
-Per maggiori informazioni, potete consultare la guida di ScryptaID a [questo link](../id/README.md).
+Per maggiori informazioni, potete consultare la guida di ScryptaID a [questo link](../id/inizio.md).
 
 A questo punto è possibile accedere al modulo [Scrypta News](https://news.scryptachain.org/), effettuare il login con la propria identità, inserendo il proprio sid.file o utilizzando [**Scrypta Browser Extension**](https://id.scryptachain.org/) e procedere alla pubblicazione dell’articolo su blockchain.
 
@@ -89,7 +89,7 @@ Come si può vedere dall'esempio, viene impressa una marcatura temporale (timest
 
 
 ## Editing
-Grazie alla tecnologia [Progressive Data Management](../idanode/progressive-data-management.md) di Scrypta, è permesso all’autore, ed esclusivamente ad esso, di editare l'articolo. Quella editata sarà la versione visualizzata come “versione corrente”; le precedenti versioni continuano ad esistere solo all’interno  della blockchain Scrypta.
+Grazie alla tecnologia [Progressive Data Management](../idanode/pdm.md) di Scrypta, è permesso all’autore, ed esclusivamente ad esso, di editare l'articolo. Quella editata sarà la versione visualizzata come “versione corrente”; le precedenti versioni continuano ad esistere solo all’interno  della blockchain Scrypta.
 
 Se volete editare un articolo, recatevi nella sezione dei vostri articoli cliccando sull’icona relativa (accanto a logout). Quindi cliccate il simbolo “matita” relativo all’articolo da editare. Effettuate le modifiche e cliccate su *Write on the blockchain*.
 
