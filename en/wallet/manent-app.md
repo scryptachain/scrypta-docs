@@ -58,7 +58,7 @@ Or visit [Support](https://wiki-it.scryptachain.org/manent-app/manent-support) p
 - Multiple accounts: Manage multiple Wallet accounts with one app.
 - Every single data or document uploaded with Manent will have a hash: a mathematical function that transforms the original data into a fingerprint ensuring its uniqueness.
 - Timestamp's Blockchain technology guarantees the certain upload date, giving an irrefutable time stamp.
-- Any uploaded file resides in a decentralized archive based on **IPFS (Inter Planetary File System)** and **[IdANode](https://wiki.scryptachain.org/developers/ida-node) (Interconnected dApp Nodes)**.
+- Any uploaded file resides in a decentralized archive based on **IPFS (Inter Planetary File System)** and **[IdANode](https://scrypta.wiki/en/#/idanode/start) (Interconnected dApp Nodes)**.
 ***
 
 ## Guides & Tutorials

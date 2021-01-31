@@ -4,7 +4,7 @@
 
 ### Scrypta Manent Web wallet
 
-[Scrypta Manent Web](https://web.manent.app/) is the online version of [Manent App.](../dapps/manent-app.md)
+[Scrypta Manent Web](https://web.manent.app/) is the online version of [Manent App.](../wallet/manent-app.md)
 
 ![manent_web](/assets/manent_web/banner_web.png)
 
