@@ -22,7 +22,7 @@ Usando la prima schermata si potrà quindi creare nuovi contratti locali, il cod
 
 ## Deploy di un contratto
 
-Non appena sarete pronti per scrivere in blockchain il vostro contratto non vi resterà che premere il pulsante verde `DEPLOY`, inserire la vostra password e aspettare la conferma di avvenuta pubblicazione. Da questo momento in poi chiunque abbia un IdaNode potrà agganciarlo utilizzando il [tool di sviluppo locale](sviluppo-locale.md#rendere-disponibile-il-contratto) oppure l'apposito [endpoint](/idanode/smart-contracts.md#post-contractspin). Risulta quindi _fondamentale_ avere almeno un proprio IdaNode per mettere realmente in rete degli Smart Contracts.
+Non appena sarete pronti per scrivere in blockchain il vostro contratto non vi resterà che premere il pulsante verde `DEPLOY`, inserire la vostra password e aspettare la conferma di avvenuta pubblicazione. Da questo momento in poi chiunque abbia un IdaNode potrà agganciarlo utilizzando il [tool di sviluppo locale](sviluppo-locale.md#rendere-disponibile-il-contratto) oppure l'apposito [endpoint](../idanode/smart-contracts.md#post-contractspin). Risulta quindi _fondamentale_ avere almeno un proprio IdaNode per mettere realmente in rete degli Smart Contracts.
 
 ## I propri contratti
 

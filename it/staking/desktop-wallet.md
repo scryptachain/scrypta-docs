@@ -24,7 +24,7 @@ Nel tuo wallet, entro qualche secondo dovresti vedere un'icona verde che simbole
 
 In base a quando hai inviato LYRA coin al tuo portafoglio, potresti dover aspettare 1 ora, che è l'età minima di staking:  *staking minimum age*. Finché vedi l'icona verde e tieni il tuo wallet attivo e online, hai diritto a ricevere ricompense.
 
-Se non compare la finestra di sblocco wallet, ciò significa che il wallet non è ancora crittografato. E' altamente raccomandato farlo, per la tua sicurezza. Consulta la sezione apposita: [Cifratura del wallet](../masternode-setup/installazione-manuale.md).
+Se non compare la finestra di sblocco wallet, ciò significa che il wallet non è ancora crittografato. E' altamente raccomandato farlo, per la tua sicurezza. Consulta la sezione apposita: [Cifratura del wallet](../masternode/installazione-manuale.md).
 
 
 ## Coin Control

@@ -18,7 +18,7 @@ In generale, invece che i rig di mining utilizzati per le classiche blockchain P
 Un output di transazione non speso (UTXO) è un hash di transazione, situato in un wallet che contiene fondi non spesi. Ogni volta che i fondi di un UTXO escono dal wallet per qualsiasi motivo, nel caso di una transazione ad esempio,  viene creato un nuovo UTXO contenente i fondi rimanenti.
 
 Consulta anche la sezione domande frequenti:
-[Staking Faq](../staking-setup/staking-faq.md)
+[Staking Faq](faq.md)
 
 ### Coin Age
 La "Coin Age" (età della moneta) è una proprietà di ogni UTXO, ed è concepibile come il tempo che trascorre dal momento della creazione di un UTXO. E' espressa in numero di "conferme".
