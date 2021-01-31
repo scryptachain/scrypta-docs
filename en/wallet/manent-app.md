@@ -48,7 +48,6 @@ The data and files uploaded on the Scrypta blockchain are processed by the infra
 **You have our full support!**
 
 Do you need help? Send an email to: [**info@scryptachain.org**](mailto:info@scryptachain.org)
-Or visit [Support](https://wiki-it.scryptachain.org/manent-app/manent-support) page
 
 #### WOULD YOU LIKE TO KNOW MORE'?
 - You can use Manent on **multiple devices**.

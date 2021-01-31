@@ -173,7 +173,7 @@ Una volta scaricato il software, avviate **Lyra-QT**.
 
 Per maggiori informazioni in merito all'installazione, puoi visitare questo link:
 
-[Installazione](inizio.md)
+[Installazione](fullnode.md#installazione)
 
 
 
@@ -196,7 +196,7 @@ Di default, è possibile trovare la cartella di sistema ai seguenti percorsi (ve
 
 Per un approfondimento sulla data directory, puoi consultare la seguente sezione:
 
-[Data Directory](data-directory.md)
+[Data Directory](fullnode.md#Directory-dei-Dati)
 
 
 ### Sincronizzazione con la blockchain Scrypta
@@ -317,11 +317,11 @@ La debug console del QT wallet di Scrypta è un utilissimo strumento dal quale s
 Accessibile dal menu **"STRUMENTI"** > **"CONSOLE DI DEBUG"**, si presenta come una finestra di terminale.
 <br>![qt_wallet](/assets/qt_wallet/console.png)
 
-Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](../scrypta-full-node/comandi.md).
+Digitando il comando **help** si aprirà la lista completa dei comandi, di cui è disponibile spiegazione dettagliata nell'[apposita sezione.](fullnode.md#Lista-dei-comandi).
 
 Per una spiegazione esaustiva di tutti i comandi consultate la sezione:
 
-Lista dei Comandi
+[Lista dei Comandi] (fullnode.md#Lista-dei-comandi)
 
 <br>Attraverso la *debug console* è possibile interrogare direttamente la blockchain sullo stato del network, di una transazione, dei masternodes, oppure si possono creare transazioni manuali, settare impostazioni operative o di sicurezza, generare nuovi indirizzi, ma soprattutto gestire le chiavi private e il wallet stesso.
 
@@ -489,7 +489,7 @@ Si noti che la cartella "Library" potrebbe essere nascosta.
 
 ## Lista dei Comandi
 
-I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla [***Debug Console***](../scrypta-full-node/console.md) (*Tools menu*).
+I comandi del wallet elencati qui sono i metodi con i quali è possibile eseguire operazioni con il client LYRA RPC. Sul wallet desktop è possibile utilizzare questi comandi dalla [***Debug Console***](fullnode.md#debug-console) (*Tools menu*).
 
 > Nella versione client è necessario chiamare tutti questi comandi preceduti da `./lyra-cli`
 
@@ -840,7 +840,7 @@ Cambia la passphrase del wallet da "oldpassphrase" a "newpassphrase".
 
 Per utilizzare la versione testnet della blockchain Scrypta avrete bisogno di scaricare ed installare il wallet ufficiale. Potete trovare una guida all'installazione nella seguente sezione:
 
-[Installazione](fullnode.md) 
+[Installazione](fullnode.md#installazione) 
 
 Successivamente dovrete avviarlo in modalità Testnet.
 
@@ -848,7 +848,7 @@ Per fare ciò è necessario inserire la riga di testo `testnet=1` nel file di co
 
 Il file di configurazione si trova nella Directory dei Dati che viene creata automaticamente al primo avvio del wallet. 
 
-Per maggiori informazioni consultate la relativa sezione [Directory dei dati](data-directory.md).
+Per maggiori informazioni consultate la relativa sezione [Directory dei dati](fullnode.md#Directory-dei-Dati).
 
 ### Passaggi per l’avvio di Scrypta Testnet
 

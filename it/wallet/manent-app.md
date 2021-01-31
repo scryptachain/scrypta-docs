@@ -48,8 +48,6 @@ I Dati e file caricati sulla blockchain di Scrypta vengono elaborati dall'infras
 **Hai il nostro pieno supporto!**
 
 Hai bisogno di aiuto? Invia una mail a: [**info@scryptachain.org**](mailto:info@scryptachain.org)
-Oppure visita la pagina di [Assistenza]()
-
 
 #### VUOI SAPERNE DI PIU'?
 - Puoi utilizzare Manent su **più dispositivi**.

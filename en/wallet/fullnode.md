@@ -191,7 +191,7 @@ By default, the system folder can be found at the following locations (verify th
 
 For further information on the data directory, you can consult the following section:
 
-[Data Directory](data-directory.md)
+[Data Directory](fullnode.md#data-directory)
 
 
 ### Synchronization with the Scrypta blockchain
@@ -261,7 +261,7 @@ Through the **FILE** menu you can access functions such as creating new addresse
 <br> **Caution is advised in making changes. Any mistake could irreparably compromise your funds.**
 <br>
 
-- **Menu TOOLS**<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](fullnode.md#debugconsole) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
+- **Menu TOOLS**<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](fullnode.md#debug-console) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
 
 
 ## Wallet Encryption
@@ -484,7 +484,7 @@ Note that the "Library" folder may be hidden.
 
 ## Command List
 
-The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](fullnode.md#debugconsole) (*Tools menu*).
+The wallet commands listed here allow you to perform operations with the LYRA RPC client. On the desktop wallet you can use these commands from the [***Debug Console***](fullnode.md#debug-console) (*Tools menu*).
 
 In the client version it is necessary to indicate `./lyra-cli` before the commands.
 
@@ -844,7 +844,7 @@ To do this you need to insert the text line `testnet=1` in the configuration fil
 
 The configuration file is located in the Data Directory which is automatically created the first time the wallet is started.
 
-For more information, consult the relevant section [Data directory](data-directory.md). 
+For more information, consult the relevant section [Data directory](fullnode.md#data-directory). 
 
 ### Steps for starting Scrypta Testnet
 
