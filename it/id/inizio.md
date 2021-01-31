@@ -31,14 +31,14 @@ Come è possibile intuire, all’interno della blockchain non viene salvato alcu
 
 Il payload di identità viene consegnato anche all’utente il quale lo conserverà all’interno dei propri dispositivi (Card, Mobile, PC) e sarà necessario per i processi di scambio di informazioni personali tra utenti, aziende, enti.
 
-> Attraverso la creazione della propria identità digitale, l'utente potrà inoltre utilizzare facilmente, anche in forma solo pseudonima, tutte le [dApps di Scrypta](../dapps/inizio).
+> Attraverso la creazione della propria identità digitale, l'utente potrà inoltre utilizzare facilmente, anche in forma solo pseudonima, tutte le [dApps di Scrypta](../wallet/manent-app.md).
 
 
 Le identità (e il relativo address) possono essere create attraverso:
 
-- [Manent App](../dapps/manent.md)
+- [Manent App](../wallet/manent-app.md)
 
 - [ScryptaID Browser Extension](https://id.scryptachain.org)
 
-- [Scrypta Card](../dapps/manent.md#scrypta-card)
+- [Scrypta Card](../wallet/manent-app.md#scrypta-card)
 
