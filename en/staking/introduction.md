@@ -18,7 +18,7 @@ Unlike the Proof Of Work blockchains (like Bitcoin), the **Proof of Stake** syst
 > An unspent transaction output (UTXO) is a transaction hash, located on a wallet that contains unspent funds. Every time funds from a UTXO leave the wallet for any reason, for example in the case of a transaction, a new UTXO is created containing the remaining funds.
 
 See also the frequently asked questions section:
-[Staking Faq](../staking-setup/staking-faq.md)
+[Staking Faq](faq.md)
 
 ### Coin Age
 The "Coin Age" is a property of each UTXO and can be represented by the time that has elapsed since the creation of a UTXO. It is expressed in number of "confirmations".

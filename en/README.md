@@ -2,7 +2,6 @@
 
 ![banner](/assets/other/scrypta-banner.png)
 
-
 Scrypta is a **permissionless**, decentralized and public blockchain. Its consensus method is Proof of Stake (PoS), with an additional network of validators called Masternodes.
 
 The open-source philosophy is the basis of the entire Scrypta project. Through [GitHub](https://github.com/scryptachain) it is possible to monitor the daily research and development work carried out by the entire ecosystem.

@@ -24,7 +24,7 @@ Within a few seconds, a green icon should appear in the wallet symbolizing 'acti
 
 Depending on when you sent LYRA coin to your wallet, you may have to wait 1 hour, equal to the minimum staking age: * staking minimum age *. When the icon is green and the wallet is active and online, you are entitled to receive rewards.
 
-If the wallet unlock window does not appear, it means that the wallet is not yet encrypted. It is highly recommended to do this, for your safety. See the appropriate section: [Wallet encryption](../masternode-setup/installazione-manuale.md).
+If the wallet unlock window does not appear, it means that the wallet is not yet encrypted. It is highly recommended to do this, for your safety. See the appropriate section: [Wallet encryption](../masternode/manual-installation.md).
 
 
 ## Coin Control
