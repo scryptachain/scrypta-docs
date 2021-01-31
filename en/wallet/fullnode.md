@@ -18,7 +18,7 @@ Here are the instructions for each operating system:
 
 ### Linux
 
-The easiest way to configure the LYRA wallet on ** Linux ** is to use the pre-compiled executable available on Github. If instead you want to proceed with the compilation of the wallet, it is recommended to use the Docker images already configured:
+The easiest way to configure the LYRA wallet on **Linux** is to use the pre-compiled executable available on Github. If instead you want to proceed with the compilation of the wallet, it is recommended to use the Docker images already configured:
 https://github.com/scryptachain/scrypta/tree/master/docker/linux
 
 Just run one of the scripts to compile a specific or multiple version. We recommend the multiple one as it already contains all the necessary libraries. To run the compilation script just go to the folder and run:
@@ -253,17 +253,15 @@ This is the menu bar for the main wallet operations, as described below:
 ### Menu bar
 Through the menus on the software system bar, you will access other more technical and detailed functions, various configurations and settings.
 
-- **Menu FILE**
-<br> Through the **FILE** menu you can access functions such as creating new addresses, address book of current addresses, signing and verifying messages and, above all, backing up the wallet.
+- **Menu FILE**<br> 
+Through the **FILE** menu you can access functions such as creating new addresses, address book of current addresses, signing and verifying messages and, above all, backing up the wallet.
 <br>
 
-- **Menu SETTINGS**
-<br>Through the **SETTINGS** menu you can access the wallet encryption functions (which we will explain below), lock and unlock an encrypted wallet, change the encryption password, multisend functions and wallet system options.
+- **Menu SETTINGS**<br>Through the **SETTINGS** menu you can access the wallet encryption functions (which we will explain below), lock and unlock an encrypted wallet, change the encryption password, multisend functions and wallet system options.
 <br> **Caution is advised in making changes. Any mistake could irreparably compromise your funds.**
 <br>
 
-- **Menu TOOLS**
-<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](../scrypta-full-node/setup.html#debug-console) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
+- **Menu TOOLS**<br>Through the **TOOLS** menu you can access the network monitoring functions, the very important [***debug console***](../scrypta-full-node/setup.html#debug-console) (the internal terminal of your Scrypta wallet from which it is possible to send commands to directly query the network), and to other options that are useful for easily reaching the wallet's *.conf* system files.
 
 
 ## Wallet Encryption
