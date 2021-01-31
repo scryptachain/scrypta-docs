@@ -71,8 +71,8 @@ Vale la pena fare notare che i costi di emissione e di scambio dei token sono ra
 
 Ciò significa che ciascun trasferimento di token costerà 0,001 LYRA e le fee delle transazioni non sono correlate all'ammontare di token che si vuole generare o trasferire ad altri utenti.
 
-Il trasferimento degli asset avviene in modo quasi istantaneo grazie alla lettura della mempool eseguita dagli [IdANode](../ida-node/inizio.md) che permettono la validazione delle transazioni anche senza la prima conferma della rete.
-La validazione e’ fatta a livello di [IdANode](../ida-node/inizio.md), per cui permette di essere sicuri che la transazione trasmessa sia valida e che venga inserita nel primo blocco disponibile.
+Il trasferimento degli asset avviene in modo quasi istantaneo grazie alla lettura della mempool eseguita dagli [IdANode](../idanode/inizio.md) che permettono la validazione delle transazioni anche senza la prima conferma della rete.
+La validazione e’ fatta a livello di [IdANode](../idanode/inizio.md), per cui permette di essere sicuri che la transazione trasmessa sia valida e che venga inserita nel primo blocco disponibile.
 
 ***
 
