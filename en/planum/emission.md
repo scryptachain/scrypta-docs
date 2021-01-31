@@ -70,8 +70,8 @@ The costs of issuing and exchanging tokens are represented exclusively by the sy
 
 This means that each token transfer will cost 0.001 LYRA and that the transaction fees are therefore not related to the amount of tokens that you want to generate or transfer to other users.
 
-The transfer of assets takes place almost instantly thanks to the mempool reading performed by the [IdANode](https://wiki.scryptachain.org/developers/ida-node) which allow the validation of transactions even without the first confirmation of the network.
-Validation is done at the level of [IdANode](https://wiki.scryptachain.org/developers/ida-node),thus being certain that the transmitted transaction is valid and that it is inserted in the first available block.
+The transfer of assets takes place almost instantly thanks to the mempool reading performed by the [IdANode](https://scrypta.wiki/en/#/idanode/start) which allow the validation of transactions even without the first confirmation of the network.
+Validation is done at the level of [IdANode](https://scrypta.wiki/en/#/idanode/start),thus being certain that the transmitted transaction is valid and that it is inserted in the first available block.
 
 ***
 

@@ -2,14 +2,14 @@
 
 ## A closer look at sidechain technology
 
-The token creation process consists of the following steps, managed automatically by the [IdANode](https://wiki.scryptachain.org/developers/ida-node):
+The token creation process consists of the following steps, managed automatically by the [IdANode](https://scrypta.wiki/en/#/idanode/start):
 
 ### Definition of the Genesis fields.
 - Creating a new address from the [IdANode](https://medium.com/developers/ida-node).
-- Creation of the [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
-- Sending a minimum of 1 LYRA by the owner to [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink).
+- Creation of the [Trustlink](https://scrypta.wiki/en/#/idanode/trustlink).
+- Sending a minimum of 1 LYRA by the owner to [Trustlink](https://scrypta.wiki/en/#/idanode/trustlink).
 - Writing on the blockchain of the Genesis transaction.
-- Sending the entire token supply from the [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) to the creator of the sidechain.
+- Sending the entire token supply from the [Trustlink](https://scrypta.wiki/en/#/idanode/trustlink) to the creator of the sidechain.
 
 The [Trustlink](https://wiki.scryptachain.org/developers/ida-node/trustlink) is a multisignature address, generated from two or more standard addresses, created between the user who wishes to issue the token and the IdANode called up for the creation of the tokenized asset.
 To guarantee the uniqueness, horizontality and non-replicability of the sidechain, the address is generated *on-the-fly* and its private key is destroyed immediately after writing the first genesis transaction.
@@ -19,7 +19,7 @@ When the Trustlink transfers the entire token supply to the owner, it will be po
 When the Trustlink transfers the entire token supply to the owner, it will be possible to send transactions using the first transaction as USXO, the correspondent of UTXO but related to the sidechains).
 
 > We therefore focused on creating a replica of the UTXO system using the Scrypta blockchain as a database and delegating the validation of the transactions directly to the [IdANode](https://medium.com/developers/ida-node) and to other clients such as [Manent App](https://medium.com/manent-scrypta-blockchain-wallet/manent-mobile-app).
-All information entered and written in the blockchain is validated by the [IdANode](https://wiki.scryptachain.org/developers/ida-node) and made available from the database of the [IdANode](https://wiki.scryptachain.org/developers/ida-node) themselves, just like other information.
+All information entered and written in the blockchain is validated by the [IdANode](https://scrypta.wiki/en/#/idanode/start) and made available from the database of the [IdANode](https://scrypta.wiki/en/#/idanode/start) themselves, just like other information.
 
 ## Issuing a new token
 
