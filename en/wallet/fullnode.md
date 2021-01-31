@@ -342,9 +342,9 @@ We recommend that you always make redundant backups on private keys, as well as 
 
 ### Dump private keys
 
-To dump a private key to a specific address, you must first open the debug console.
-<br> The command to export the private key of an address is `**dumpprivkey**`.
-<br> Through the command **`dumpprivkey "lyraaddress"`** we are revealed the private key corresponding to the address "lyraaddress".
+To dump a private key to a specific address, you must first open the debug console.<br> 
+The command to export the private key of an address is `**dumpprivkey**`.<br> 
+Through the command **`dumpprivkey "lyraaddress"`** we are revealed the private key corresponding to the address "lyraaddress".
 
 > Each address has its own private key: if you store your funds in different addresses it is essential that you do the dump for each of the addresses on which there are funds.
 
