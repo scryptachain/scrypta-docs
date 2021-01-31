@@ -169,9 +169,9 @@ Once the software is downloaded, start **Lyra-QT**.
 
 For more information about the installation, you can visit this link:
 
-[Installation](#installation.md)
+[Installation](fullnode.md#installation.md)
 
-At the first start you will be asked to choose the location of the system files where to save your ** wallet.dat ** file and the copy of the blockchain.
+At the first start you will be asked to choose the location of the system files where to save your **wallet.dat** file and the copy of the blockchain.
 Confirm the path proposed by the software or modify it at your choice and proceed.
 <br> Just make sure you have enough space available on the hard disk.
 
