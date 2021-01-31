@@ -165,6 +165,7 @@ Before exploring these features, we will provide a brief description of the firs
 First you need to download the suitable version for your operating system of Scrypta Official Wallet from the [Github repository](https://github.com/scryptachain/scrypta/releases).
 
 Once the software is downloaded, start **Lyra-QT**. 
+<br>
 ![qt_wallet](/assets/qt_wallet/splash.png).
 
 For more information about the installation, you can visit this link:
