@@ -4,10 +4,10 @@ I masternode sono dei full node particolari che svolgono ulteriori funzioni di v
 
 ### Attivare un masternode
 
-Per attivare uno o piu masternode di Scrypta avrai bisogno del [desktop wallet](../wallet/fullnode)  e del collateral richiesto di **15.000 LYRA** per ogni masternode.
+Per attivare uno o piu masternode di Scrypta avrai bisogno del [desktop wallet](../wallet/fullnode.md)  e del collateral richiesto di **15.000 LYRA** per ogni masternode.
 
 Se si desidera procedere per un'installazione manuale, bisogna tenere presente che il processo richiede competenze tecniche, un server VPS con indirizzo IP dedicato e tempo per l'installazione.
 
-La guida per l'installazione manuale la si può trovare [qui](/masternode/installazione-manuale).
+La guida per l'installazione manuale la si può trovare [qui](installazione-manuale.md).
 
-In alternativa è possibile utilizzare servizi di masternode hosting come [The Hub](../masternode/servizi-hosting).
+In alternativa è possibile utilizzare servizi di masternode hosting come [The Hub](hosting.md).

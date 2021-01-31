@@ -11,7 +11,7 @@ Per avviare un masternode su VPS attraverso il servizio offerto da Kalkulus chia
 
 Puoi riferirti alla procedura citata in questa sezione:
 
-[Desktop Wallet Setup](../masternode-setup/installazione-manuale.md)
+[Desktop Wallet Setup](installazione-manuale.md)
 
 
 ## COMA node
