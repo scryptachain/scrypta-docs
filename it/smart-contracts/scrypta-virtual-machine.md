@@ -1,7 +1,5 @@
 # Scrypta Virtual Machine
 
-Questo repository descrive il funzionamento della Scrypta Virtual Machine, le motivazioni della sua creazione e l'implmentazione nel contesto degli IdaNodes che permetteranno di creare ed eseguire "Smart Contracts" (software che vengono eseguiti e che mantengono uno stato all'interno di una rete decentralizzati) creando quindi un numero indefinito di nuovi casi d'uso.
-
 ## Abstract
 
 Scrypta nasce da un fork di PIVX e poggia le sue basi blockchain direttamente sui concetti di Bitcoin (essendo PIVX un fork di Dash, che a sua volta è un fork di Bitcoin). Questo vuol dire che all'interno della blockchain di Scrypta non esiste alcun riferimento al concetto degli Smart Contracts per come sono comunemente immaginati. 
