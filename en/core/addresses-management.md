@@ -154,6 +154,18 @@ let address =  await scrypta.getAddressFromPubKey(key)
 
 */
 ```
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTIxODI2ODFdfQ==
--->
+
+## fundAddress(privateKey, to, amount)
+
+This method allows you to send a specific amount of funds using a private key, it is a simplified version of `send` method and can be used when working with multiple private keys without having encrypted wallets.
+
+The response will be of type `boolean`.
+
+```
+const scrypta = new ScryptaCore
+
+let prv =  'SnvpeER7kdeMFGRimBzV5EJfX2ZfxmAQwin1qAHD2kXb8XRF983g'
+
+let key = scrypta.fundAddress(prv, 'LSJq6a6AMigCiRHGrby4TuHeGirJw2PL5c', 1)
+
+```

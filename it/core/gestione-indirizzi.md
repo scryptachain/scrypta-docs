@@ -154,3 +154,18 @@ let address =  await scrypta.getAddressFromPubKey(key)
 
 */
 ```
+
+## fundAddress(privateKey, to, amount)
+
+Questo metodo permette di inviare una specifica quantità di fondi usando una chiave privata, è una versione semplificata del methodo `send` e può essere usata quando si lavora con più chiavi private senza avere dei wallet criptati.
+
+La risposta sarà di tipo `boolean`.
+
+```
+const scrypta = new ScryptaCore
+
+let prv =  'SnvpeER7kdeMFGRimBzV5EJfX2ZfxmAQwin1qAHD2kXb8XRF983g'
+
+let key = scrypta.fundAddress(prv, 'LSJq6a6AMigCiRHGrby4TuHeGirJw2PL5c', 1)
+
+```
