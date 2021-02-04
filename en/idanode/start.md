@@ -19,12 +19,9 @@ IdANode is a NodeJS application written in TypeScript with a multitude of featur
     
 7.  **Trustlink**: Trustlink operations are managed internally by IdANode, including the creation and writing of information by a Trustlink.
 
+8. **Smart Contracts**: allows external code to be executed thanks to the internal virtual machine.
 
-Other features in development:
-
-1.  **dApp engine**: the addition of the library that allows you to serve the dApps loaded directly on the blockchain. At the moment it is only possible to load them. The dApp engine is an independent module.
-    
-2.  **P2P network**: the addition of the library that allows you to exchange information in real time between the IdANodes and between the clients, so as to have an internal messaging system in Scrypta. It is currently an independent module.
+9. **P2P Network**: allows instant communication between the various clients connected through `@scrypta/core`.
 
 ## Operation overview
 

@@ -19,15 +19,11 @@ IdANode è un'applicazione NodeJS scritta in TypeScript con una moltitudine di f
     
 7.  **Trustlink**: le operazioni relative ai Trustlink sono gestite internamente all'IdANode, tra cui la creazione e la scrittura di informazioni da parte di un Trustlink.
     
+8. **Smart Contracts**: permette di eseguire del codice esterno grazie alla virtual machine interna.
 
-Altre funzionalità in via di sviluppo:
-
-1.  **dApp engine:** l'inclusione della libreria che permette di servire le dApp caricate direttamente sulla blockchain. Al momento è possibile solamente caricarle. Il dApp engine è un modulo indipendente.
-    
-2.  **P2P network**: l'inclusione della libreria che permette di scambiare informazioni in tempo reale tra gli IdANode e tra i client, così da avere un sistema di messaggistica interno a Scrypta. Al momento anche questo è un modulo indipendente.
+9. **P2P Network**: permette la comunicazione istantanea tra i vari client collegati attraverso `@scrypta/core`.
 
 ## Panoramica di funzionamento
-
 
 Il primo script che viene chiamato è il file `Index.ts` , questo file verifica che il wallet ed il database siano raggiungibili, in caso contrario si preoccupa di avviarli ed attendere finchè non lo siano. Questo sistema garantisce un certo grado di automazione nel caso in cui qualche processo dovesse interrompersi inaspettatamente.
 
