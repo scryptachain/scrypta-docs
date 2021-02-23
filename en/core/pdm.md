@@ -85,13 +85,13 @@ var protocol =  ''
 ​let written =  await scrypta.write(password, metadata, collection, refID, protocol)
 ```
 
-## update(password, metadata, collection = '', refID = '', protocol = '', key = '', uuid)
+## update(password, metadata, uuid, collection = '', refID = '', protocol = '', key = '')
 
 This method recalls the precedent of which it is an alias. In this case, however, the uuid field is mandatory, useful to verify that a given duplication is not actually created.
 
 It should be noted that the update of data present in blockchain **is not** an overwriting, all transactions are **immutable**. In fact, the operation that is carried out is that of sequential updating of the data. In case of updated data, the IdANode will always return the last one even if the history can be recovered by passing the parameter _history = **true** _ during the reading phase.
 
-## invalidate(password, key  =  '', uuid)
+## invalidate(key, password, uuid)
 
 Like the previous method, this method calls the write operation. In this case the written data is always composed of the **UUID** and the information **END**. This will be interpreted by the IdANode as a data not to be ** shown during the reading phase. As already specified, however, the **non** information can be deleted from the blockchain and can be recovered by the IdANodes themselves by passing the parameter _history = **true** _ during the reading phase.
 <!--stackedit_data:
