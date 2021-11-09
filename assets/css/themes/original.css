@@ -111,7 +111,7 @@ h6 {
 }
 
 .nav-light .main-nav > li > a .link-ext {
-  background-color: #fff;
+  background-color: rgb(202, 110, 5);
 }
 
 .nav-dark .main-nav > li > a {
@@ -139,7 +139,7 @@ h6 {
 
 @media (min-width: 1200px) {
   .main-header .is-stuck {
-    background: #fff !important;
+    background: rgb(202, 110, 5) !important;
   }
   .mainbar-wrap.is-stuck .social-icon a,
   .mainbar-wrap.is-stuck .header-module .ld-module-trigger,

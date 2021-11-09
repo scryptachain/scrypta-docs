@@ -9,25 +9,31 @@ The exchanges can also be further divided into two categories: exchanges that ac
 For security reasons, exchanges should not be used as electronic wallets. Exchanges are for trading, not for storing cryptocurrencies.
 
 
-It is currently possible to exchange LYRA on:
+It is currently possible to exchange BDCASH:
 
-## WhiteBit
-[LYRA/BTC](https://whitebit.com/trade/LYRA_BTC)
+##  Crex24-Exchange:
+https://crex24.com/exchange/BDCASH-BTC 
 
-[LYRA/EUR](https://whitebit.com/trade/LYRA_EUR)
+## Bololex-Exchange:
+BDCASH/TKM: https://bololex.com/trading/?symbol=BDCASH-TKM
 
-## Mercatox
-[LYRA/BTC](https://mercatox.com/exchange/LYRA/BTC)
+BDCASH/DOGE: https://bololex.com/trading/?symbol=BDCASH-DOGE
 
-[LYRA/USDC](https://mercatox.com/exchange/LYRA/USDC)
+BDCASH/BOLO: https://bololex.com/trading/?symbol=BDCASH-BOLO
 
+## Bitstorage-Exchange:
+BDCASH/USDT: https://bitstorage.finance/market/BDCASH-USDT
 
-## Midas Platform
-[LYRA/BTC](https://midas.investments/exchange/LYRA/BTC)
+BDCASH/ETH: https://bitstorage.finance/market/BDCASH-ETH
 
-## Graviex
-[LYRA/BTC](https://graviex.net/markets/lyrabtc)
+BDCASH/BTC: https://bitstorage.finance/market/BDCASH-BTC
 
-[LYRA/USDT](https://graviex.net/markets/lyrausdt)
+## Assets-Exchange:
+BDCASH/BTC:   https://exchange-assets.com/en/?market=bdcash_btc  
 
-[LYRA/ETH](https://graviex.net/markets/lyraeth)
+BDCASH/S11:   https://exchange-assets.com/en/?market=bdcash_usdt 
+
+BDCASH/S11:   https://exchange-assets.com/en/?market=bdcash_s11 
+
+## BitSails-Exchange:
+BDCASH/BTC: https://www.bitsails.com/market?MarketName=BTC-BDCASH

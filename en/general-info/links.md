@@ -1,85 +1,36 @@
 # Useful links
 
-## Official Websites
+## Main Link:
+[![Website](https://img.shields.io/static/v1?label=Website&message=Show&color=yellow)](https://bdcashprotocol.com) 
 
-[Scrypta Blockchain](http://scryptachain.org/)
+[![Explore](https://img.shields.io/static/v1?label=Explorer&message=Show&color=orange)](https://insight.bdcashprotocol.com)
 
-[Scrypta Foundation](http://scrypta.foundation/)
+[![Documentation](https://img.shields.io/static/v1?label=Documentation&message=Show&color=white)](https://docs.bdcashprotocol.com) 
 
-[Scrypta Consortium](https://scryptaconsortium.org/)
+## Social Network:
+ [![Twitter](https://img.shields.io/static/v1?label=Twitter&message=Follow&color=blue)](https://twitter.com/bdcashprotocol) 
 
-[Wiki EN](https://en.scrypta.wiki)
+ [![ANN Official](https://img.shields.io/static/v1?label=BitcoinTalk&message=Join&color=yellow)](https://bitcointalk.org/index.php?topic=5244522) 
 
-[Wiki IT](https://it.scrypta.wiki)
+ [![Discord](https://img.shields.io/static/v1?label=Discord&message=Join&color=blueviolet)](https://discord.gg/rrr8vFS)
 
-[Github](http://github.com/scryptachain)
+ [![Telegram Officia](https://img.shields.io/static/v1?label=Telegram&message=Join&color=blue)](https://t.me/bdcashprotocol_official) 
 
-[Block Explorer 1](https://explorer.scryptachain.org/)
+ [![Reddit](https://img.shields.io/static/v1?label=Reddit&message=Join&color=orange)](https://www.reddit.com/r/Bdcash/)
 
-[Block Explorer 2](https://chainz.cryptoid.info/lyra/)
+ [![Medium](https://img.shields.io/static/v1?label=Medium&message=Join&color=green)](https://bdcashprotocol.medium.com/) 
+  
 
-## Products
+## Trackers:
 
-[Manent](https://manent.app/)
+[![CoinMarketCap](https://img.shields.io/static/v1?label=CoinMarketCap&message=Check&color=blue)](https://coinmarketcap.com/currencies/bdcash/) 
 
-[Planum](https://planum.dev/)
+[![CoinGecko](https://img.shields.io/static/v1?label=CoinGecko&message=Check&color=green)](https://coingecko.com/coins/bigdata-cash/) 
 
-[ScryptaID](https://scrypta.id)
+[![Coinpaprika](https://img.shields.io/static/v1?label=Coinpaprika&message=Join&color=red)](https://coinpaprika.com/coin/bdcash-bdcash/) 
 
-[Electio](http://electio.app/)
+[![Coinlore](https://img.shields.io/static/v1?label=Coinlore&message=Join&color=9cf)](https://www.coinlore.com/coin/bdcash)
 
-[SocialPay](http://socialpay.live/)
+[![Coinlib](https://img.shields.io/static/v1?label=Coinlib&message=Join&color=Blueblack)](https://coinlib.io/coin/BDCASH/BigDataCash/) 
 
-[News](http://news.scryptachain.org/)
-
-[Browser Extension](https://id.scryptachain.org/)
-
-## Social Media
-
-[Twitter](http://twitter.com/scryptachain)
-
-[Linkedin](https://www.linkedin.com/company/scrypta-foundation/)
-
-[Facebook](http://facebook.com/scryptablockchain)
-
-[YouTube](https://www.youtube.com/channel/UCOANBiYyULoZwmaxjvOnM4Q)
-
-[Medium](http://medium.com/@scryptachain)
-
-[Discord](http://discord.me/scryptachain)
-
-[Telegram](https://t.me/scryptachain_official)
-
-[BitcoinTalk](https://bitcointalk.org/index.php?topic=5110940.0)
-
-## Exchanges
-
-[WhiteBit](https://whitebit.com/trade/LYRA_EUR)
-
-[Graviex](https://graviex.net/markets/lyrabtc)
-
-[Mercatox](http://mercatox.com/exchange/LYRA/BTC)
-
-[Midas](https://midas.investments/exchange/LYRA/BTC)
-
-## Stats
-
-[CoinMarketCap](https://coinmarketcap.com/currencies/scrypta/)
-
-[CoinGecko](https://www.coingecko.com/en/coins/scrypta)
-
-[Masternodes Online](https://masternodes.online/currencies/LYRA/)
-
-[Masternode Buzz](https://coins.masternode.buzz/LYRA)
-
-## Masternode & Staking Platformes
-
-[TheHub](https://thehub.host/)
-
-[Evo Nodes](https://evonodes.com/pool/LYRA)
-
-[Midas](https://midas.investments/shares)
-
-[Node Trittium](https://node.trittium.cc/coin/LYRA)
-
-[NodeHub](https://node.trittium.cc/coin/LYRA)
+[![LivecoinWatch](https://img.shields.io/static/v1?label=LivecoinWatch&message=Join&color=greenblack)](https://www.livecoinwatch.com/price/Bdcash-BDCASH) 
